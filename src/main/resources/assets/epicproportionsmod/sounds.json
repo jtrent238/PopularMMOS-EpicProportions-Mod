@@ -1,0 +1,8 @@
+{
+    "pat_scream_1": {"category": "master","sounds": [{"name": "pat_scream_1","stream": false}]},
+	"jen_scream_1": {"category": "master","sounds": [{"name": "jen_scream_1","stream": false}]},
+	"ninjamaster_hurt": {"category": "master","sounds": [{"name": "ninjamaster_hurt","stream": false}]},
+	"ninjamaster_attack": {"category": "master","sounds": [{"name": "ninjamaster_attack","stream": false}]},
+	"captaincookie_hurt": {"category": "master","sounds": [{"name": "captaincookie_hurt","stream": false}]},
+	"captaincookie_death": {"category": "master","sounds": [{"name": "captaincookie_death","stream": false}]}
+	}
