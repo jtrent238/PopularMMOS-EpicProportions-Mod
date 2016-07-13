@@ -1,5 +1,6 @@
 package com.jtrent238.epicproportions;
 
+import com.jtrent238.epicproportions.entity.Entilyjtrent238;
 import com.jtrent238.epicproportions.entity.EntityBomby;
 import com.jtrent238.epicproportions.entity.EntityCandyMan;
 import com.jtrent238.epicproportions.entity.EntityCaptianCookie;
@@ -46,5 +47,8 @@ public class EntityLoader {
 	  //Captian Cookie Little Registry
 	    EntityRegistry.registerGlobalEntityID(EntityCaptianCookieLittle.class, "EntityCaptianCookieLittle",EntityRegistry.findGlobalUniqueEntityId());
 	    RenderingRegistry.registerEntityRenderingHandler(EntityCaptianCookieLittle.class, new RenderLiving(new ModelVillager(0), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityCaptianCookieLittle.png");}});//The Captian Cookie Little Texture
-	}
+	  //jtrent238 Registry
+	    EntityRegistry.registerGlobalEntityID(Entilyjtrent238.class, "Entilyjtrent238",EntityRegistry.findGlobalUniqueEntityId());
+	    RenderingRegistry.registerEntityRenderingHandler(Entilyjtrent238.class, new RenderLiving(new ModelBiped(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:Entilyjtrent238.png");}});//jtrent238 Texture
+	 }
 }

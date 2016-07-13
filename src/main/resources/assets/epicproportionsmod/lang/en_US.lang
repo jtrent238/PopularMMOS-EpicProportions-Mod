@@ -12,6 +12,21 @@ item.itemCaptainCookieCookie.name=Captain Cookie's Cookie
 	/Weapons & Tools
 item.itemPatSword.name=FuriousDestroyer's Sword
 item.itemJenSword.name=SuperGirlyGamer's Sword
+item.itemPatPick.name=FuriousDestroyer's Pickaxe
+item.itemJenPick.name=SuperGirlyGamer's Pickaxe
+
+	/Armor
+		/Pat
+item.itemPatHelmet.name=FuriousDestroyer's Helment
+item.itemPatChestplate.name=FuriousDestroyer's Chestplate
+item.itemPatLeggings.name=FuriousDestroyer's Leggings
+item.itemPatBoots.name=FuriousDestroyer's Boots
+		/Jen
+item.itemJenHelmet.name=SuperGirlyGamer's Helment
+item.itemJenChestplate.name=SuperGirlyGamer's Chestplate
+item.itemJenLeggings.name=SuperGirlyGamer's Leggings
+item.itemJenBoots.name=SuperGirlyGamer's Boots
+
 
 	/Spawn Eggs
 item.itemSpawnBomby.name=Spawn Bomby §4[WIP]§r
@@ -22,6 +37,7 @@ item.itemSpawnFred2_0.name=Spawn Fred 2.0
 item.itemSpawnNinjaMaster.name=Spawn Ninja Master
 item.itemSpawnCandyMan.name=Spawn §2The Candy Man §r
 item.itemSpawnCookieLittle.name=Spawn Captain Cookie Little §4[WIP]§r
+item.itemSpawnjtrent238.name=Spawn jtrent238
 
 //Blocks
 tile.blockFartBomb.name=Fart Bomb
@@ -43,10 +59,12 @@ entity.EntityCaptianCookieLittle.name=Captain Cookie Little
 
 //Mod Devs And Helpers
 entity.Entityjtrent238.name=jtrent238
+
 //Container
 //Generators
 //Achievements
 //Enchantments
 //Potions
+
 //Creative Tabs
 itemGroup.EpicProportionsMod=jtrent238's Epic Proportions Mod

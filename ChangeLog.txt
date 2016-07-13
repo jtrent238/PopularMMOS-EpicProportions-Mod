@@ -1,5 +1,12 @@
 Epic Proportions Mod ChangeLog
 
+1.0.1.1
+- Added jtrent238
+- Added Pat Pick
+- Added Jen Pick
+- Removed Extra Spawn Eggs
+
+
 1.0.1.0
 - Added Captian Cookie Litte
 - Added Bob 2.0

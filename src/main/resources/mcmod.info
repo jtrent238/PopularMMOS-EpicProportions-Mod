@@ -1,9 +1,9 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
-  "version": "${version}",
+  "modid": "epicproportionsmod",
+  "name": "jtrent238's EpicProportions Mod",
+  "description": "jtrent238's EpicProportions Mod",
+  "version": "com.jtrent238.epicproportions.MODVERSION${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",

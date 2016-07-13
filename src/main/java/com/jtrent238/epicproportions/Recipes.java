@@ -32,6 +32,8 @@ public class Recipes {
 		GameRegistry.addShapedRecipe(new ItemStack(BlockLoader.blockJenIngot), "XXX", "XXX","XXX", 'X', ItemLoader.itemJenIngot);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemPatIngot, 9), "X", 'X', BlockLoader.blockPatIngot);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemJenIngot, 9), "X", 'X', BlockLoader.blockJenIngot);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemJenPick), "XXX", "S", "S", 'X', ItemLoader.itemJenIngot, 'S' , Items.stick);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemPatPick), "XXX", "S", "S", 'X', ItemLoader.itemJenIngot, 'S' , Items.stick);
 		
 	}
 
