@@ -4,5 +4,14 @@
 	"ninjamaster_hurt": {"category": "master","sounds": [{"name": "ninjamaster_hurt","stream": false}]},
 	"ninjamaster_attack": {"category": "master","sounds": [{"name": "ninjamaster_attack","stream": false}]},
 	"captaincookie_hurt": {"category": "master","sounds": [{"name": "captaincookie_hurt","stream": false}]},
-	"captaincookie_death": {"category": "master","sounds": [{"name": "captaincookie_death","stream": false}]}
+	"captaincookie_death": {"category": "master","sounds": [{"name": "captaincookie_death","stream": false}]},
+	"cookie_cd": {"category": "record","sounds": [{"name": "cookie_cd","stream": true}]},
+	"candyman_hurt": {"category": "master","sounds": [{"name": "candyman_hurt","stream": false}]},
+	"candyman_death": {"category": "master","sounds": [{"name": "candyman_death","stream": false}]},
+	"fartbomb_1": {"category": "master","sounds": [{"name": "fartbomb_1","stream": false}]},
+	"fartbomb_2": {"category": "master","sounds": [{"name": "fartbomb_2","stream": false}]},
+	"fartbomb_3": {"category": "master","sounds": [{"name": "fartbomb_3","stream": false}]},
+	"fartbomb_4": {"category": "master","sounds": [{"name": "fartbomb_4","stream": false}]},
+	"fartbomb_5": {"category": "master","sounds": [{"name": "fartbomb_5","stream": false}]},
+	"fartbomb_6": {"category": "master","sounds": [{"name": "fartbomb_6","stream": false}]}
 	}

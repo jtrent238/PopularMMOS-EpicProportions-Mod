@@ -1,0 +1,52 @@
+//jtrent238's Elemental Mod Lang File
+//en_US
+
+//Items
+item.itemgemofepicproportions.name=Gem of Epic Proportions
+item.itemPatIngot.name=FuriousDestroyer's ingot
+item.itemJenIngot.name=SuperGirlyGamer's Ingot
+item.itemJenslips.name=Jen's Lips
+item.itemCaptainCookieCookie.name=Captain Cookie's Cookie
+
+
+	/Weapons & Tools
+item.itemPatSword.name=FuriousDestroyer's Sword
+item.itemJenSword.name=SuperGirlyGamer's Sword
+
+	/Spawn Eggs
+item.itemSpawnBomby.name=Spawn Bomby §4[WIP]§r
+item.itemSpawnCaptianCookie.name=Spawn Captain Cookie
+item.itemSpawnPat.name=Spawn FuriousDestroyer
+item.itemSpawnJen.name=Spawn SuperGirlyGamer
+item.itemSpawnFred2_0.name=Spawn Fred 2.0
+item.itemSpawnNinjaMaster.name=Spawn Ninja Master
+item.itemSpawnCandyMan.name=Spawn §2The Candy Man §r
+item.itemSpawnCookieLittle.name=Spawn Captain Cookie Little §4[WIP]§r
+
+//Blocks
+tile.blockFartBomb.name=Fart Bomb
+tile.blockPatIngot.name=FuriousDestroyer's Block
+tile.blockJenIngot.name=SuperGirlyGamer's Block
+tile.blockPatOre.name=FuriousDestroyer Ore
+tile.blockJenOre.name=SuperGirlyGamer Ore
+
+//Entitys
+entity.EntityBomby.name=Bomby
+entity.EntityCaptianCookie.name=Captain Cookie
+entity.EntityPat.name=FuriousDestroyer
+entity.EntityJen.name=SuperGirlyGamer
+entity.EntityFred2_0.name=Fred 2.0
+entity.EntityNinjaMaster.name=Ninja Master
+entity.EntityCandyMan.name=§2The Candy Man
+entity.EntityCaptianCookieLittle.name=Captain Cookie Little
+
+
+//Mod Devs And Helpers
+entity.Entityjtrent238.name=jtrent238
+//Container
+//Generators
+//Achievements
+//Enchantments
+//Potions
+//Creative Tabs
+itemGroup.EpicProportionsMod=jtrent238's Epic Proportions Mod

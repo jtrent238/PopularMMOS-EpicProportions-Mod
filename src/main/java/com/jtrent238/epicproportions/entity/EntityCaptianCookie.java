@@ -2,9 +2,7 @@ package com.jtrent238.epicproportions.entity;
 
 import java.util.Random;
 
-import com.jtrent238.foodmod.BlockLoader;
-import com.jtrent238.foodmod.Entilyjtrent238;
-import com.jtrent238.foodmod.Entilyjtrent238.Entityjtrent238;
+import com.jtrent238.epicproportions.ItemLoader;
 
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -91,7 +89,7 @@ protected void addRandomArmor(){
 }
 
 protected void dropRareDrop(int par1){
-this.dropItem(Items.nether_star, 1);
+this.dropItem(ItemLoader.itemCaptainCookieCookie, 1);
 }
 
 
@@ -113,7 +111,7 @@ this.dropItem(Items.nether_star, 1);
 	     */
 	    protected void dropFewItems(boolean var1, int var2)
 	    {
-	    	this.entityDropItem(new ItemStack(Items.cookie), 4F);
+	    	this.entityDropItem(new ItemStack(Items.cookie, 16), 4F);
 	    }
 
 	    /**

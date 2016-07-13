@@ -25,11 +25,11 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.world.World;
 import net.minecraftforge.common.DungeonHooks;
 
-public class EntityPat extends EntityGolem implements IBossDisplayData
+public class EntityCandyMan extends EntityGolem implements IBossDisplayData
 {
 	World world = null;
 	private int attackTimer;
-    public EntityPat(World var1)
+    public EntityCandyMan(World var1)
     {
         super(var1);
         world = var1;
@@ -45,7 +45,7 @@ public class EntityPat extends EntityGolem implements IBossDisplayData
         this.targetTasks.addTask(2, new EntityAIHurtByTarget(this, false));
         this.targetTasks.addTask(3, new EntityAINearestAttackableTarget(this, EntityLiving.class, 0, false, true, IMob.mobSelector));
         addRandomArmor();
-        DungeonHooks.addDungeonMob("FuriousDestroyer", 180);
+        DungeonHooks.addDungeonMob("§2The Candy Man", 180);
     }
     
    
@@ -73,11 +73,11 @@ public class EntityPat extends EntityGolem implements IBossDisplayData
 protected void addRandomArmor(){
 
 }
-
+/*
 protected void dropRareDrop(int par1){
-this.dropItem(ItemLoader.itemPatSword, 1);
+this.dropItem(ItemLoader.itemCaptainCookieCookie, 1);
 }
-
+*/
 
 	public boolean isAIEnabled()
 	{
@@ -95,11 +95,12 @@ this.dropItem(ItemLoader.itemPatSword, 1);
     /**
      * Drop items of this living's type
      */
+   /*
     protected void dropFewItems(boolean var1, int var2)
     {
-    	this.entityDropItem(new ItemStack(ItemLoader.itemPatIngot), 2F);
+    	this.entityDropItem(new ItemStack(item, 16), 4F);
     }
-
+*/
     /**
      * Returns the sound this mob makes while it's alive.
      */
@@ -113,7 +114,7 @@ this.dropItem(ItemLoader.itemPatSword, 1);
      */
     protected String getHurtSound()
     {
-        return "epicproportionsmod:pat_scream_1";
+        return "epicproportionsmod:candyman_hurt";
     }
 
     /**
@@ -121,7 +122,7 @@ this.dropItem(ItemLoader.itemPatSword, 1);
      */
     protected String getDeathSound()
     {
-        return "epicproportionsmod:pat_scream_1";
+        return "epicproportionsmod:candyman_death";
     }
 
     public void onStruckByLightning(EntityLightningBolt entityLightningBolt){
@@ -167,7 +168,7 @@ this.dropItem(ItemLoader.itemPatSword, 1);
 	}
 
 	public String getEntityName(){
-		return "FuriousDestroyer";
+		return "§2The Candy Man";
 	}
 
 

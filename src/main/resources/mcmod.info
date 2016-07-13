@@ -1,14 +1,14 @@
 [
 {
-  "modid": "weaponmod";"foodmod";"coremod;"lotsofblocks",
-  "name": "§2jtrent238's Mods",
-  "description": "§2Mods Made By jtrent238",
-  "version": "",
-  "mcversion": "§2 1.7.10",
-  "url": "§2https://youtube.com/thejtrent238",
+  "modid": "examplemod",
+  "name": "Example Mod",
+  "description": "Example placeholder mod.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
   "updateUrl": "",
-  "authorList": ["jtrent238"],
-  "credits": "§2jtrent238",
+  "authorList": ["ExampleDude"],
+  "credits": "The Forge and FML guys, for making this example",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []

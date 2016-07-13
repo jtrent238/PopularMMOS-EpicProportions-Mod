@@ -75,7 +75,7 @@ protected void addRandomArmor(){
 }
 
 protected void dropRareDrop(int par1){
-this.dropItem(Items.nether_star, 1);
+this.dropItem(ItemLoader.itemJenSword, 1);
 }
 
 
@@ -97,8 +97,9 @@ this.dropItem(Items.nether_star, 1);
      */
     protected void dropFewItems(boolean var1, int var2)
     {
-    	this.entityDropItem(new ItemStack(ItemLoader.itemJenIngot), 64);
-    }
+    	this.entityDropItem(new ItemStack(ItemLoader.itemJenIngot), 2F);
+    	this.entityDropItem(new ItemStack(ItemLoader.itemJenslips), 2F);
+    	    }
 
     /**
      * Returns the sound this mob makes while it's alive.
