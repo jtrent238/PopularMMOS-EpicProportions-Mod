@@ -7,6 +7,9 @@ item.itemPatIngot.name=FuriousDestroyer's ingot
 item.itemJenIngot.name=SuperGirlyGamer's Ingot
 item.itemJenslips.name=Jen's Lips
 item.itemCaptainCookieCookie.name=Captain Cookie's Cookie
+item.itemJenStar.name=SuperGirlyGamer Star
+item.itemPatStar.name=FuriousDestroyer Star
+item.itemEpicProportionsStar.name=Epic Proportions Star
 
 
 	/Weapons & Tools
@@ -14,6 +17,12 @@ item.itemPatSword.name=FuriousDestroyer's Sword
 item.itemJenSword.name=SuperGirlyGamer's Sword
 item.itemPatPick.name=FuriousDestroyer's Pickaxe
 item.itemJenPick.name=SuperGirlyGamer's Pickaxe
+item.itemPatAxe.name=FuriousDestroyer's Axe
+item.itemJenAxe.name=SuperGirlyGamer's Axe
+item.itemPatShovel.name=FuriousDestroyer's Shovel
+item.itemJenShovel.name=SuperGirlyGamer's Shovel
+item.itemPatHoe.name=FuriousDestroyer's Hoe
+item.itemJenHoe.name=SuperGirlyGamer's Hoe
 
 	/Armor
 		/Pat

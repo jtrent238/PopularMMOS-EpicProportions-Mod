@@ -31,7 +31,7 @@ public class EpicProportionsMod
 
 	@Instance(MODID)
     public static EpicProportionsMod instance;
-	public static final String MODVERSION = "1.0.1.1";
+	public static final String MODVERSION = "1.0.2.1";
 
 	@ForgeSubscribe(priority = EventPriority.NORMAL)
     public void eventHandler(RenderGameOverlayEvent event) {

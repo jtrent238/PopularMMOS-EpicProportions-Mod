@@ -2,15 +2,17 @@
 {
   "modid": "epicproportionsmod",
   "name": "jtrent238's EpicProportions Mod",
-  "description": "jtrent238's EpicProportions Mod",
+  "description": "This is a mod based on PopularMMOS EpicProportions series. 
+  
+  I am working very hard on this mod making all the textures, models ,editing and cliping sounds for this it is so much work it would be much appreciated if you would diamond and share this mod . ",
   "version": "com.jtrent238.epicproportions.MODVERSION${version}",
   "mcversion": "${mcversion}",
-  "url": "",
-  "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "url": "http://bit.ly/29Ogx5M",
+  "updateUrl": "http://bit.ly/29Ogx5M",
+  "authorList": ["jtrent238"],
+  "credits": "jtrent238",
   "logoFile": "",
   "screenshots": [],
-  "dependencies": []
+  "dependencies": ["jtcoremod"]
 }
 ]
