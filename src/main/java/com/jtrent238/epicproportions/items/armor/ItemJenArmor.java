@@ -26,10 +26,23 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 
-public class ItemJenArmor extends Item
-	{
+public class ItemJenArmor extends ItemArmor{
 
-	public ItemJenArmor(String string, ArmorMaterial jEN_ARMOR, String string2, int i) {
-	}
+	private String textureName;
+	private int armorType;
 	
+
+	public ItemJenArmor(ArmorMaterial diamond, int i, int j) {
+		super(diamond, 0, i);
+	    //this.textureName = textureName;
+	    this.setUnlocalizedName("ItemJenArmor");
+	    this.setTextureName("epicproportionsmod:ItemJenArmor");
+	}
+
+
+	@Override
+	public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type)
+	{
+		return "epicproportionsmod:textures/armor/ItemJenArmor_" + (this.armorType == 2 ? "2" : "1") + ".png";
+		}
 }

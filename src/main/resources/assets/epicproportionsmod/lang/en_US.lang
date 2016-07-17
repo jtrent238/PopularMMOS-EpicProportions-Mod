@@ -23,6 +23,13 @@ item.itemPatShovel.name=FuriousDestroyer's Shovel
 item.itemJenShovel.name=SuperGirlyGamer's Shovel
 item.itemPatHoe.name=FuriousDestroyer's Hoe
 item.itemJenHoe.name=SuperGirlyGamer's Hoe
+item.itemPatStaff.name=FuriousDestroyer's Staff
+item.itemJenStaff.name=SuperGirlyGamer's Staff
+item.itemPatBow.name=FuriousDestroyer's Bow
+item.itemJenBow.name=SuperGirlyGamer's Bow
+item.itemPatArrow.name=FuriousDestroyer's Arrow
+item.itemJenArrow.name=SuperGirlyGamer's Arrow
+
 
 	/Armor
 		/Pat
@@ -35,6 +42,16 @@ item.itemJenHelmet.name=SuperGirlyGamer's Helment
 item.itemJenChestplate.name=SuperGirlyGamer's Chestplate
 item.itemJenLeggings.name=SuperGirlyGamer's Leggings
 item.itemJenBoots.name=SuperGirlyGamer's Boots
+		/Super Pat
+item.itemSuperPatHelmet.name=FuriousDestroyer's Super Helment
+item.itemSuperPatChestplate.name=FuriousDestroyer's Super Chestplate
+item.itemSuperPatLeggings.name=FuriousDestroyer's Super Leggings
+item.itemSuperPatBoots.name=FuriousDestroyer's Super Boots
+		/Super Jen
+item.itemSuperJenHelmet.name=SuperGirlyGamer's Super Helment
+item.itemSuperJenChestplate.name=SuperGirlyGamer's Super Chestplate
+item.itemSuperJenLeggings.name=SuperGirlyGamer's Super Leggings
+item.itemSuperJenBoots.name=SuperGirlyGamer's Super Boots
 
 
 	/Spawn Eggs
@@ -54,6 +71,7 @@ tile.blockPatIngot.name=FuriousDestroyer's Block
 tile.blockJenIngot.name=SuperGirlyGamer's Block
 tile.blockPatOre.name=FuriousDestroyer Ore
 tile.blockJenOre.name=SuperGirlyGamer Ore
+tile.blockPatTNT.name=FuriousDestroyer's TNT
 
 //Entitys
 entity.EntityBomby.name=Bomby

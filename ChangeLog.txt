@@ -1,5 +1,31 @@
 Epic Proportions Mod ChangeLog
 
+1.0.3.1
+- Added FuriousDestroyer Armor
+- Added SuperGirlyGamer Armor
+- Added FuriousDestroyer Super Armor
+- Added SuperGirlyGamer Super Armor
+- Added FuriousDestroyer Bow
+- Added FuriousDestroyer Arrow
+- Added SuperGirlyGamer Bow
+- Added SuperGirlyGamer Arrow
+
+1.0.2.1
+- Added Pat Axe
+- Added Jen Axe
+- Added Glisten Effect To Gem Of Epic Proportions
+- Added SuperGirlyGamer Star
+- Added FuriousDestroyer Star
+- Added Epic Proportions Star
+- Added FuriousDestroyer's Shovel
+- Added SuperGirlyGamer's Shovel
+- Added FuriousDestroyer's Hoe
+- Added SuperGirlyGamer's Hoe
+- Fixed Crafting Of Pat Pickaxe
+- Fixed Crafting Of Jen Pickaxe
+- Fixed Crash When Using Pat Pickaxe
+- Fixed Crash When Using Jen Pickaxe
+
 1.0.1.1
 - Added jtrent238
 - Added Pat Pick

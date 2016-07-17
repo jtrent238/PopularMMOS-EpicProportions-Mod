@@ -20,15 +20,30 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.potion.Potion;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 import net.minecraft.item.ItemStack;
 
-public class ItemPatArmor extends Item{
+public class ItemPatArmor extends ItemArmor{
 
-	public ItemPatArmor(String string, ArmorMaterial pAT_ARMOR, String string2, int i) {
-	}
+	private String textureName;
+	private int armorType;
 	
+
+	public ItemPatArmor(ArmorMaterial diamond, int i, int j) {
+		super(diamond, 0, i);
+	    //this.textureName = textureName;
+	    this.setUnlocalizedName("ItemPatArmor");
+	    this.setTextureName("epicproportionsmod:ItemPatArmor");
+	}
+
+
+	@Override
+	public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type)
+	{
+	    return "epicproportionsmod:textures/armor/ItemPatArmor_" + (this.armorType == 2 ? "2" : "1") + ".png";
+	}
 }

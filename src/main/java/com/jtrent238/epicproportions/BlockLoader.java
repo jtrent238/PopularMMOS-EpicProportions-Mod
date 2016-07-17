@@ -5,6 +5,7 @@ import com.jtrent238.epicproportions.blocks.blockJenIngot;
 import com.jtrent238.epicproportions.blocks.blockJenOre;
 import com.jtrent238.epicproportions.blocks.blockPatIngot;
 import com.jtrent238.epicproportions.blocks.blockPatOre;
+import com.jtrent238.epicproportions.blocks.blockPatTNT;
 import com.jtrent238.epicproportions.items.itemgemofepicproportions;
 
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -19,6 +20,7 @@ public class BlockLoader {
 	public static Block blockJenIngot;
 	public static Block blockPatOre;
 	public static Block blockJenOre;
+	public static Block blockPatTNT;
 	
 	
 	/**
@@ -31,6 +33,7 @@ public class BlockLoader {
 		blockJenIngot = new blockJenIngot(Material.iron).setBlockName("blockJenIngot").setBlockTextureName("epicproportionsmod:blockJenIngot").setHardness(3F).setStepSound(Block.soundTypeStone).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 		blockPatOre = new blockPatOre(Material.ground).setBlockName("blockPatOre").setBlockTextureName("epicproportionsmod:blockPatOre").setHardness(3F).setStepSound(Block.soundTypeStone).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 		blockJenOre = new blockJenOre(Material.ground).setBlockName("blockJenOre").setBlockTextureName("epicproportionsmod:blockJenOre").setHardness(3F).setStepSound(Block.soundTypeStone).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+		blockPatTNT = new blockPatTNT().setBlockName("blockPatTNT").setBlockTextureName("epicproportionsmod:blockPatTNT").setHardness(0F).setStepSound(Block.soundTypeStone).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 		
 		registerBlocks();
 	}
@@ -45,6 +48,7 @@ public class BlockLoader {
 		GameRegistry.registerBlock(blockJenIngot, "blockJenIngot");
 		GameRegistry.registerBlock(blockPatOre, "blockPatOre");
 		GameRegistry.registerBlock(blockJenOre, "blockJenOre");
+		GameRegistry.registerBlock(blockPatTNT, "blockPatTNT");
 			
 	}
 }

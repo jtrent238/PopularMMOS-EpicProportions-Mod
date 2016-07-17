@@ -41,9 +41,25 @@ public class Recipes {
 		GameRegistry.addShapedRecipe(new ItemStack(Blocks.beacon), "GGG", "GPG", "OOO", 'P', ItemLoader.itemPatStar, 'G' , Blocks.glass, 'O' , Blocks.obsidian);
 		GameRegistry.addShapedRecipe(new ItemStack(Blocks.beacon), "GGG", "GJG", "OOO", 'J', ItemLoader.itemJenStar, 'G' , Blocks.glass, 'O' , Blocks.obsidian);
 		GameRegistry.addShapedRecipe(new ItemStack(Blocks.beacon), "GGG", "GEG", "OOO", 'E', ItemLoader.itemEpicProportionsStar, 'G' , Blocks.glass, 'O' , Blocks.obsidian);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemPatHelmet), "XXX", "XBX", 'X', ItemLoader.itemPatIngot);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemPatChestplate), "XBX", "XXX","XXX", 'X', ItemLoader.itemPatIngot);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemPatLeggings), "XXX", "XBX","XBX", 'X', ItemLoader.itemPatIngot);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemPatBoots), "XBX", "XBX", 'X', ItemLoader.itemPatIngot);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemJenHelmet), "XXX", "XBX", 'X', ItemLoader.itemJenIngot);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemJenChestplate), "XBX", "XXX","XXX", 'X', ItemLoader.itemJenIngot);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemJenLeggings), "XXX", "XBX","XBX", 'X', ItemLoader.itemJenIngot);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemJenBoots), "XBX", "XBX", 'X', ItemLoader.itemJenIngot);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemSuperPatHelmet), "PPP", "PXP", "PPP", 'X', ItemLoader.itemPatHelmet, 'P', ItemLoader.itemPatStar);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemSuperPatChestplate), "PPP", "PXP", "PPP", 'X', ItemLoader.itemPatChestplate, 'P', ItemLoader.itemPatStar);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemSuperPatLeggings), "PPP", "PXP", "PPP", 'X', ItemLoader.itemPatLeggings, 'P', ItemLoader.itemPatStar);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemSuperPatBoots), "PPP", "PXP", "PPP", 'X', ItemLoader.itemPatBoots, 'P', ItemLoader.itemPatStar);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemSuperJenHelmet), "JJJ", "JXJ", "JJJ", 'X', ItemLoader.itemPatHelmet, 'J', ItemLoader.itemJenStar);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemSuperJenChestplate), "JJJ", "JXJ", "JJJ", 'X', ItemLoader.itemPatChestplate, 'J', ItemLoader.itemJenStar);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemSuperJenLeggings), "JJJ", "JXJ", "JJJ", 'X', ItemLoader.itemPatLeggings, 'J', ItemLoader.itemJenStar);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemSuperJenBoots), "JJJ", "JXJ", "JJJ", 'X', ItemLoader.itemPatBoots, 'J', ItemLoader.itemJenStar);
 		
 	}
-
+	
 	/**
 	 * Add Shapeless Recipes.
 	 */
