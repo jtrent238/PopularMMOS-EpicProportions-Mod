@@ -1,8 +1,10 @@
 package com.jtrent238.epicproportions.blocks;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 import com.jtrent238.epicproportions.EpicProportionsMod;
+import com.jtrent238.epicproportions.ItemLoader;
 import com.jtrent238.epicproportions.entity.EntilyPatTNTPrimed;
 
 import cpw.mods.fml.relauncher.Side;
@@ -10,12 +12,15 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityTNTPrimed;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.projectile.EntityArrow;
 import net.minecraft.init.Items;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.Explosion;
 import net.minecraft.world.World;
@@ -29,15 +34,25 @@ public class blockPatTNT extends Block
 	private World fart;
 	private Entity fartbomb;
 	private Object EntityPlayer;
+	private int fortune;
+	private World world;
+	private World p_149642_1_;
+	private int p_149642_2_;
+	private int p_149642_3_;
+	private int p_149642_4_;
+	private ItemStack p_149642_5_;
     private static final String __OBFID = "CL_00000324";
 
     public blockPatTNT()
     {
-        super(Material.tnt);
+        super(Material.ground);
         this.setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+        
     }
 
-    /**
+	
+
+	/**
      * Gets the block's texture. Args: side, meta
      */
     @SideOnly(Side.CLIENT)
@@ -172,4 +187,6 @@ public class blockPatTNT extends Block
         this.field_150116_a = p_149651_1_.registerIcon(this.getTextureName() + "_top");
         this.field_150115_b = p_149651_1_.registerIcon(this.getTextureName() + "_bottom");
     }
+    
+    
 }

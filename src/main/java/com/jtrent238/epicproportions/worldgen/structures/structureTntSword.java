@@ -101,38 +101,41 @@ public class structureTntSword
 }
 
 
-public void generateSurface(World world, Random random, int i2, int k2){
+public void generate(World world, Random random, int i2, int k2){
 
 int i = i2 + random.nextInt(15);
 int k = k2 + random.nextInt(15);
 
 int j = world.getHeightValue(i,k)-1;
 
-if((random.nextInt(1000000)+1)<=10000){
+if((random.nextInt(1000000)+1)<=100000000){
 boolean place = true;
 
 for (int y = 0; y<15; y++)
 for (int z = 0; z<12; z++)
 for (int x = 0; x<1; x++)
+
+
 if(world.getBlock(i+x,j+y+1,k+z)!=Blocks.air)
-place = false;
+place = true;
+
 
 if(place){
-world.setBlock(i+0, j+0, k+0, Block.getBlockById(2), 0, 2);
-world.setBlock(i+0, j+0, k+1, Block.getBlockById(2), 0, 2);
-world.setBlock(i+0, j+0, k+2, Block.getBlockById(2), 0, 2);
-world.setBlock(i+0, j+0, k+3, Block.getBlockById(2), 0, 2);
-world.setBlock(i+0, j+0, k+4, Block.getBlockById(3), 0, 2);
-world.setBlock(i+0, j+0, k+5, Block.getBlockById(2), 0, 2);
-world.setBlock(i+0, j+0, k+6, Block.getBlockById(2), 0, 2);
-world.setBlock(i+0, j+0, k+7, Block.getBlockById(3), 0, 2);
-world.setBlock(i+0, j+0, k+8, Block.getBlockById(3), 0, 2);
-world.setBlock(i+0, j+0, k+9, Block.getBlockById(2), 0, 2);
-world.setBlock(i+0, j+0, k+10, Block.getBlockById(2), 0, 2);
-world.setBlock(i+0, j+0, k+11, Block.getBlockById(2), 0, 2);
+//world.setBlock(i+0, j+0, k+0, Block.getBlockById(2), 0, 2);
+//world.setBlock(i+0, j+0, k+1, Block.getBlockById(2), 0, 2);
+//world.setBlock(i+0, j+0, k+2, Block.getBlockById(2), 0, 2);
+//world.setBlock(i+0, j+0, k+3, Block.getBlockById(2), 0, 2);
+//world.setBlock(i+0, j+0, k+4, Block.getBlockById(3), 0, 2);
+//world.setBlock(i+0, j+0, k+5, Block.getBlockById(2), 0, 2);
+//world.setBlock(i+0, j+0, k+6, Block.getBlockById(2), 0, 2);
+//world.setBlock(i+0, j+0, k+7, Block.getBlockById(3), 0, 2);
+//world.setBlock(i+0, j+0, k+8, Block.getBlockById(3), 0, 2);
+//world.setBlock(i+0, j+0, k+9, Block.getBlockById(2), 0, 2);
+//world.setBlock(i+0, j+0, k+10, Block.getBlockById(2), 0, 2);
+//world.setBlock(i+0, j+0, k+11, Block.getBlockById(2), 0, 2);
 world.setBlock(i+0, j+1, k+0, Block.getBlockById(0), 0, 2);
-world.setBlock(i+0, j+1, k+1, Block.getBlockById(0), 0, 2);
-world.setBlock(i+0, j+1, k+2, Block.getBlockById(31), 1, 2);
+//world.setBlock(i+0, j+1, k+1, Block.getBlockById(0), 0, 2);
+//world.setBlock(i+0, j+1, k+2, Block.getBlockById(31), 1, 2);
 world.setBlock(i+0, j+1, k+3, Block.getBlockById(0), 0, 2);
 world.setBlock(i+0, j+1, k+4, Block.getBlockById(5), 0, 2);
 world.setBlock(i+0, j+1, k+5, Block.getBlockById(5), 0, 2);
@@ -153,7 +156,7 @@ world.setBlock(i+0, j+2, k+7, Block.getBlockById(5), 0, 2);
 world.setBlock(i+0, j+2, k+8, Block.getBlockById(0), 0, 2);
 world.setBlock(i+0, j+2, k+9, Block.getBlockById(0), 0, 2);
 world.setBlock(i+0, j+2, k+10, Block.getBlockById(0), 0, 2);
-world.setBlock(i+0, j+2, k+11, Block.getBlockById(18), 1, 2);
+//world.setBlock(i+0, j+2, k+11, Block.getBlockById(18), 1, 2);
 world.setBlock(i+0, j+3, k+0, Block.getBlockById(0), 0, 2);
 world.setBlock(i+0, j+3, k+1, Block.getBlockById(5), 0, 2);
 world.setBlock(i+0, j+3, k+2, Block.getBlockById(5), 0, 2);
@@ -286,7 +289,7 @@ world.setBlock(i+0, j+13, k+8, Block.getBlockById(0), 0, 2);
 world.setBlock(i+0, j+13, k+9, Block.getBlockById(0), 0, 2);
 world.setBlock(i+0, j+13, k+10, Block.getBlockById(0), 0, 2);
 world.setBlock(i+0, j+13, k+11, Block.getBlockById(0), 0, 2);
-world.setBlock(i+0, j+14, k+0, Block.getBlockById(5), 0, 2);
+//world.setBlock(i+0, j+14, k+0, Block.getBlockById(5), 0, 2);
 world.setBlock(i+0, j+14, k+1, Block.getBlockById(0), 0, 2);
 world.setBlock(i+0, j+14, k+2, Block.getBlockById(0), 0, 2);
 world.setBlock(i+0, j+14, k+3, Block.getBlockById(0), 0, 2);
@@ -302,3 +305,4 @@ world.setBlock(i+0, j+14, k+11, Block.getBlockById(0), 0, 2);
 }
 
 }
+

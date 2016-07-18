@@ -10,7 +10,9 @@ item.itemCaptainCookieCookie.name=Captain Cookie's Cookie
 item.itemJenStar.name=SuperGirlyGamer Star
 item.itemPatStar.name=FuriousDestroyer Star
 item.itemEpicProportionsStar.name=Epic Proportions Star
-
+item.itemTNTSwordPlacer.name=TNT Sword
+item.itemBirthdayPresent.name=Birthday Present
+item.itemHouseOfEpicProportionsPlacer.name=House Of Epic Proportions [WIP]
 
 	/Weapons & Tools
 item.itemPatSword.name=FuriousDestroyer's Sword
@@ -43,7 +45,7 @@ item.itemJenChestplate.name=SuperGirlyGamer's Chestplate
 item.itemJenLeggings.name=SuperGirlyGamer's Leggings
 item.itemJenBoots.name=SuperGirlyGamer's Boots
 		/Super Pat
-item.itemSuperPatHelmet.name=FuriousDestroyer's Super Helment
+item.itemSuperPatHelmet.name=FuriousDestroyer's Helment Helment
 item.itemSuperPatChestplate.name=FuriousDestroyer's Super Chestplate
 item.itemSuperPatLeggings.name=FuriousDestroyer's Super Leggings
 item.itemSuperPatBoots.name=FuriousDestroyer's Super Boots
@@ -64,6 +66,7 @@ item.itemSpawnNinjaMaster.name=Spawn Ninja Master
 item.itemSpawnCandyMan.name=Spawn §2The Candy Man §r
 item.itemSpawnCookieLittle.name=Spawn Captain Cookie Little §4[WIP]§r
 item.itemSpawnjtrent238.name=Spawn jtrent238
+item.itemSpawnClown.name=Spawn Clown
 
 //Blocks
 tile.blockFartBomb.name=Fart Bomb
@@ -72,6 +75,9 @@ tile.blockJenIngot.name=SuperGirlyGamer's Block
 tile.blockPatOre.name=FuriousDestroyer Ore
 tile.blockJenOre.name=SuperGirlyGamer Ore
 tile.blockPatTNT.name=FuriousDestroyer's TNT
+tile.blockBirthdayPresent.name=Birthday Present
+tile.blockPatChest.name=FuriousDestroyer's Chest
+tile.blockJenChest.name=SuperGirlyGamer's Chest
 
 //Entitys
 entity.EntityBomby.name=Bomby
@@ -82,12 +88,17 @@ entity.EntityFred2_0.name=Fred 2.0
 entity.EntityNinjaMaster.name=Ninja Master
 entity.EntityCandyMan.name=§2The Candy Man
 entity.EntityCaptianCookieLittle.name=Captain Cookie Little
+entity.EntityClown.name=Clown
 
 
 //Mod Devs And Helpers
 entity.Entityjtrent238.name=jtrent238
 
 //Container
+container.Patchest=FuriousDestroyer's Chest
+container.Jenchest=SuperGirlyGamer's Chest
+container.chestPatDouble=Large FuriousDestroyerChest
+container.chestJenDouble=Large SuperGirlyGamer Chest
 //Generators
 //Achievements
 //Enchantments

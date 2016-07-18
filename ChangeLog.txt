@@ -1,5 +1,16 @@
 Epic Proportions Mod ChangeLog
 
+1.0.4.1
+- Added Birthday Present
+- Added FuriousDestroyer's Chest
+- Added SuperGirlyGamer's Chest
+- Added Clown
+- Fixed TNT Sword Structure
+- Fixed Crafting Of SuperGirlyGamer's Super Armor
+- Can Now Wear Jen's Lips
+- Can Now Get Jen Ingots In Bonus Chest And Dungeon Chest
+- Can Now Get Pat Ingots In Bonus Chest And Dungeon Chest
+
 1.0.3.1
 - Added FuriousDestroyer Armor
 - Added SuperGirlyGamer Armor

@@ -13,5 +13,8 @@
 	"fartbomb_3": {"category": "master","sounds": [{"name": "fartbomb_3","stream": false}]},
 	"fartbomb_4": {"category": "master","sounds": [{"name": "fartbomb_4","stream": false}]},
 	"fartbomb_5": {"category": "master","sounds": [{"name": "fartbomb_5","stream": false}]},
-	"fartbomb_6": {"category": "master","sounds": [{"name": "fartbomb_6","stream": false}]}
+	"fartbomb_6": {"category": "master","sounds": [{"name": "fartbomb_6","stream": false}]},
+	"clown_say": {"category": "master","sounds": [{"name": "clown_say","stream": false}]},
+	"clown_hurt": {"category": "master","sounds": [{"name": "clown_hurt","stream": false}]},
+	"clown_death": {"category": "master","sounds": [{"name": "clown_death","stream": false}]}
 	}

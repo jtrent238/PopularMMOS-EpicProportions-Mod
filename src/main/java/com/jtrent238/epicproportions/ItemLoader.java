@@ -15,15 +15,19 @@ import com.jtrent238.epicproportions.items.armor.ItemJenArmor;
 import com.jtrent238.epicproportions.items.armor.ItemPatArmor;
 import com.jtrent238.epicproportions.items.armor.ItemSuperJenArmor;
 import com.jtrent238.epicproportions.items.armor.ItemSuperPatArmor;
+import com.jtrent238.epicproportions.items.blockplacers.itemBirthdayPresent;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnBomby;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnCandyMan;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnCaptianCookie;
+import com.jtrent238.epicproportions.items.spawners.itemSpawnClown;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnCookieLittle;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnFred2_0;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnJen;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnNinjaMaster;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnPat;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnjtrent238;
+import com.jtrent238.epicproportions.items.structureplacers.itemHouseOfEpicProportionsPlacer;
+import com.jtrent238.epicproportions.items.structureplacers.itemTNTSwordPlacer;
 import com.jtrent238.epicproportions.items.tools.itemJenAxe;
 import com.jtrent238.epicproportions.items.tools.itemJenHoe;
 import com.jtrent238.epicproportions.items.tools.itemJenPick;
@@ -99,8 +103,10 @@ public class ItemLoader {
 	public static Item itemEpicProportionsStar;
 	public static Item itemPatArrow;
 	public static Item itemJenArrow;
+	public static Item itemBirthdayPresent;
 	
-	public static Item itemTNTSwordSpawner;
+	public static Item itemTNTSwordPlacer;
+	public static Item itemHouseOfEpicProportionsPlacer;
 	
 	//Weapons & Tools
 	public static Item itemPatSword;
@@ -129,6 +135,7 @@ public class ItemLoader {
 	public static Item itemSpawnCandyMan;
 	public static Item itemSpawnCookieLittle;
 	public static Item itemSpawnjtrent238;
+	public static Item itemSpawnClown;
 	
 	//Armor
 		//Pat Armor
@@ -170,14 +177,16 @@ public static void LoadItems() {
 	itemgemofepicproportions = new itemgemofepicproportions().setUnlocalizedName("itemgemofepicproportions").setTextureName("epicproportionsmod:itemgemofepicproportions").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itemPatIngot = new itemPatIngot().setUnlocalizedName("itemPatIngot").setTextureName("epicproportionsmod:itemPatIngot").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itemJenIngot = new itemJenIngot().setUnlocalizedName("itemJenIngot").setTextureName("epicproportionsmod:itemJenIngot").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
-	itemJenslips = new itemJenslips().setUnlocalizedName("itemJenslips").setTextureName("epicproportionsmod:itemJenslips").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	itemJenslips = new itemJenslips(ItemArmor.ArmorMaterial.DIAMOND, 0, 0).setUnlocalizedName("itemJenslips").setTextureName("epicproportionsmod:itemJenslips").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itemCaptainCookieCookie = new itemCaptainCookieCookie("cookie_cd").setUnlocalizedName("itemCaptainCookieCookie").setTextureName("epicproportionsmod:itemCaptainCookieCookie").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
-	//itemTNTSwordSpawner = new com.jtrent238.epicproportions.items.structureplacers.itemTNTSwordSpawner().setUnlocalizedName("itemTNTSwordSpawner").setTextureName("epicproportionsmod:itemTNTSwordSpawner").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	itemTNTSwordPlacer = new itemTNTSwordPlacer(0).setUnlocalizedName("itemTNTSwordPlacer").setTextureName("epicproportionsmod:itemTNTSwordPlacer").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itemJenStar = new itemJenStar().setUnlocalizedName("itemJenStar").setTextureName("epicproportionsmod:itemJenStar").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itemPatStar = new itemPatStar().setUnlocalizedName("itemPatStar").setTextureName("epicproportionsmod:itemPatStar").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itemEpicProportionsStar = new itemEpicProportionsStar().setUnlocalizedName("itemEpicProportionsStar").setTextureName("epicproportionsmod:itemEpicProportionsStar").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itemPatArrow = new itemPatArrow().setUnlocalizedName("itemPatArrow").setTextureName("epicproportionsmod:itemPatArrow").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itemJenArrow = new itemJenArrow().setUnlocalizedName("itemJenArrow").setTextureName("epicproportionsmod:itemJenArrow").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	itemBirthdayPresent = new itemBirthdayPresent().setUnlocalizedName("itemBirthdayPresent").setTextureName("epicproportionsmod:itemBirthdayPresent").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	itemHouseOfEpicProportionsPlacer = new itemHouseOfEpicProportionsPlacer(0).setUnlocalizedName("itemHouseOfEpicProportionsPlacer").setTextureName("epicproportionsmod:itemHouseOfEpicProportionsPlacer")/*/.setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
 	
 	//Weapons & Tools
 	itemPatSword = new itemPatSword(ToolMaterial.EMERALD).setUnlocalizedName("itemPatSword").setTextureName("epicproportionsmod:itemPatSword").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
@@ -207,6 +216,7 @@ public static void LoadItems() {
 	itemSpawnCandyMan = new itemSpawnCandyMan().setUnlocalizedName("itemSpawnCandyMan").setTextureName("epicproportionsmod:itemSpawnCandyMan").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itemSpawnCookieLittle = new itemSpawnCookieLittle().setUnlocalizedName("itemSpawnCookieLittle").setTextureName("epicproportionsmod:itemSpawnCookieLittle").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itemSpawnjtrent238 = new itemSpawnjtrent238().setUnlocalizedName("itemSpawnjtrent238").setTextureName("epicproportionsmod:itemSpawnjtrent238").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	itemSpawnClown = new itemSpawnClown().setUnlocalizedName("itemSpawnClown").setTextureName("epicproportionsmod:itemSpawnClown").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	
 	//Armor
 		//PatArmor
@@ -245,12 +255,14 @@ private static void registerItems(){
 	GameRegistry.registerItem(itemJenIngot, itemJenIngot.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemJenslips, itemJenslips.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemCaptainCookieCookie, itemCaptainCookieCookie.getUnlocalizedName().substring(5));
-	//GameRegistry.registerItem(itemTNTSwordSpawner, itemTNTSwordSpawner.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(itemTNTSwordPlacer, itemTNTSwordPlacer.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemJenStar, itemJenStar.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemPatStar, itemPatStar.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemEpicProportionsStar, itemEpicProportionsStar.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemPatArrow, itemPatArrow.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemJenArrow, itemJenArrow.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(itemBirthdayPresent, itemBirthdayPresent.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(itemHouseOfEpicProportionsPlacer, itemHouseOfEpicProportionsPlacer.getUnlocalizedName().substring(5));
 	
 	//Weapons & Tools
 	GameRegistry.registerItem(itemPatSword, itemPatSword.getUnlocalizedName().substring(5));
@@ -279,6 +291,7 @@ private static void registerItems(){
 	GameRegistry.registerItem(itemSpawnCandyMan, itemSpawnCandyMan.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemSpawnCookieLittle, itemSpawnCookieLittle.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemSpawnjtrent238, itemSpawnjtrent238.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(itemSpawnClown, itemSpawnClown.getUnlocalizedName().substring(5));
 	
 	//Armor
 			//PatArmor

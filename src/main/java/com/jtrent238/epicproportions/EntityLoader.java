@@ -8,6 +8,7 @@ import com.jtrent238.epicproportions.entity.EntityBomby;
 import com.jtrent238.epicproportions.entity.EntityCandyMan;
 import com.jtrent238.epicproportions.entity.EntityCaptianCookie;
 import com.jtrent238.epicproportions.entity.EntityCaptianCookieLittle;
+import com.jtrent238.epicproportions.entity.EntityClown;
 import com.jtrent238.epicproportions.entity.EntityFred2_0;
 import com.jtrent238.epicproportions.entity.EntityJen;
 import com.jtrent238.epicproportions.entity.EntityNinjaMaster;
@@ -18,6 +19,7 @@ import net.minecraft.client.model.ModelBiped;
 import net.minecraft.client.model.ModelCreeper;
 import net.minecraft.client.model.ModelPig;
 import net.minecraft.client.model.ModelVillager;
+import net.minecraft.client.model.ModelZombie;
 import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EnumCreatureType;
@@ -83,7 +85,12 @@ public class EntityLoader {
 	  //Jen Arrow Registry
 	    EntityRegistry.registerGlobalEntityID(EntilyJenArrow.class, "EntilyJenArrow",EntityRegistry.findGlobalUniqueEntityId());
 	   
+	  //Clown Registry
+	    EntityRegistry.registerGlobalEntityID(EntityClown.class, "EntityClown",EntityRegistry.findGlobalUniqueEntityId());
+	    RenderingRegistry.registerEntityRenderingHandler(EntityClown.class, new RenderLiving(new ModelZombie(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityClown.png");}});//jtrent238 Texture
+	    EntityRegistry.addSpawn(EntityClown.class, 1, 4, 6, EnumCreatureType.creature, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.forest, BiomeGenBase.plains, BiomeGenBase.beach, BiomeGenBase.mesa, BiomeGenBase.savanna);
+	 
 	}
-	
+	//
 
 }
