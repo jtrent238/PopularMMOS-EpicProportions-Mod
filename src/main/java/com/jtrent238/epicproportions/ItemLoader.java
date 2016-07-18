@@ -26,6 +26,7 @@ import com.jtrent238.epicproportions.items.spawners.itemSpawnJen;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnNinjaMaster;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnPat;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnjtrent238;
+import com.jtrent238.epicproportions.items.structureplacers.itemBombyStructurePlacer;
 import com.jtrent238.epicproportions.items.structureplacers.itemHouseOfEpicProportionsPlacer;
 import com.jtrent238.epicproportions.items.structureplacers.itemTNTSwordPlacer;
 import com.jtrent238.epicproportions.items.tools.itemJenAxe;
@@ -107,6 +108,7 @@ public class ItemLoader {
 	
 	public static Item itemTNTSwordPlacer;
 	public static Item itemHouseOfEpicProportionsPlacer;
+	public static Item itemBombyStructurePlacer;
 	
 	//Weapons & Tools
 	public static Item itemPatSword;
@@ -186,7 +188,8 @@ public static void LoadItems() {
 	itemPatArrow = new itemPatArrow().setUnlocalizedName("itemPatArrow").setTextureName("epicproportionsmod:itemPatArrow").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itemJenArrow = new itemJenArrow().setUnlocalizedName("itemJenArrow").setTextureName("epicproportionsmod:itemJenArrow").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itemBirthdayPresent = new itemBirthdayPresent().setUnlocalizedName("itemBirthdayPresent").setTextureName("epicproportionsmod:itemBirthdayPresent").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
-	itemHouseOfEpicProportionsPlacer = new itemHouseOfEpicProportionsPlacer(0).setUnlocalizedName("itemHouseOfEpicProportionsPlacer").setTextureName("epicproportionsmod:itemHouseOfEpicProportionsPlacer")/*/.setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
+	itemHouseOfEpicProportionsPlacer = new itemHouseOfEpicProportionsPlacer(0).setUnlocalizedName("itemHouseOfEpicProportionsPlacer").setTextureName("epicproportionsmod:itemHouseOfEpicProportionsPlacer").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	itemBombyStructurePlacer = new itemBombyStructurePlacer(0).setUnlocalizedName("itemBombyStructurePlacer").setTextureName("epicproportionsmod:itemBombyStructurePlacer").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	
 	//Weapons & Tools
 	itemPatSword = new itemPatSword(ToolMaterial.EMERALD).setUnlocalizedName("itemPatSword").setTextureName("epicproportionsmod:itemPatSword").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
@@ -263,6 +266,7 @@ private static void registerItems(){
 	GameRegistry.registerItem(itemJenArrow, itemJenArrow.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemBirthdayPresent, itemBirthdayPresent.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemHouseOfEpicProportionsPlacer, itemHouseOfEpicProportionsPlacer.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(itemBombyStructurePlacer, itemBombyStructurePlacer.getUnlocalizedName().substring(5));
 	
 	//Weapons & Tools
 	GameRegistry.registerItem(itemPatSword, itemPatSword.getUnlocalizedName().substring(5));

@@ -1,5 +1,14 @@
 Epic Proportions Mod ChangeLog
 
+1.0.5.1
+- Added TNT Home Structure
+- Added Bomby Structure
+- Added Gold Nugget to Birthday Present
+- Added Gold Apple to Birthday Present
+- Can Now Get Jen Ingots In BlackSmith Chest
+- Can Now Get Pat Ingots In BlackSmith Chest
+- Fixed Clown Texture and Model
+
 1.0.4.1
 - Added Birthday Present
 - Added FuriousDestroyer's Chest

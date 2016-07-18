@@ -78,15 +78,18 @@ public class blockBirthdayPresent extends Block{
     @Override
     public ArrayList<ItemStack> getDrops(World world, int x, int y, int z, int metadata, int fortune) {
         ArrayList<ItemStack> drops = new ArrayList<ItemStack>();
+        drops.add(new ItemStack(Items.gold_nugget, world.rand.nextInt(4) + 1));
         drops.add(new ItemStack(Items.coal, world.rand.nextInt(3) + 1));
         drops.add(new ItemStack(Items.iron_ingot, world.rand.nextInt(2) + 1));
         drops.add(new ItemStack(Items.gold_ingot, world.rand.nextInt(2) + 1));
         drops.add(new ItemStack(Items.dye, world.rand.nextInt(3) + 2, 4));
         drops.add(new ItemStack(Items.redstone, world.rand.nextInt(2) + 2));
-        drops.add(new ItemStack(ItemLoader.itemPatIngot, world.rand.nextInt(2) + 1));
-        drops.add(new ItemStack(ItemLoader.itemJenIngot, world.rand.nextInt(2) + 4));
+        drops.add(new ItemStack(ItemLoader.itemPatIngot, world.rand.nextInt(1) + 1));
+        drops.add(new ItemStack(ItemLoader.itemJenIngot, world.rand.nextInt(1) + 1));
         if (world.rand.nextFloat() < 0.5F)
             drops.add(new ItemStack(Items.diamond));
+        if (world.rand.nextFloat() < 0.3F)
+            drops.add(new ItemStack(Items.golden_apple));
         return drops;
     }
 
