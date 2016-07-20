@@ -1,5 +1,9 @@
 Epic Proportions Mod ChangeLog
 
+1.0.5.2
+- Changed Jen Armor Texture to her Skin
+- Changed Pat Armor Texture to his Skin
+
 1.0.5.1
 - Added TNT Home Structure
 - Added Bomby Structure
