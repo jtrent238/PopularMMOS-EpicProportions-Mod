@@ -1,9 +1,13 @@
 package com.jtrent238.epicproportions;
 
+import com.jtrent238.epicproportions.eventhandler.OnJoinEvent;
 import com.jtrent238.epicproportions.items.structureplacers.itemTNTSwordSpawner;
 import com.jtrent238.epicproportions.render.RenderChests;
 import com.jtrent238.epicproportions.tileentity.TileEntityLoader;
+import com.jtrent238.epicproportions.worldgen.WorldGenModFlower;
 import com.jtrent238.epicproportions.worldgen.structures.structureTntSword;
+
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -13,20 +17,23 @@ import cpw.mods.fml.common.eventhandler.EventPriority;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.crash.CrashReportCategory;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.WeightedRandomChestContent;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.common.ChestGenHooks;
+import net.minecraftforge.common.MinecraftForge;
 
 @Mod(modid="epicproportionsmod", name="jtrent238's EpicProportions Mod", version=("com.jtrent238.epicproportions.MODVERSION"))
 public class EpicProportionsMod
 {
 
-	public static final String MODID = "epicproportionsmod";
 	
+	public static final String MODID = "epicproportionsmod";
     
    
 
@@ -35,7 +42,10 @@ public class EpicProportionsMod
 
 	@Instance(MODID)
     public static EpicProportionsMod instance;
-	public static final String MODVERSION = "1.0.5.1";
+	public static final String MODVERSION = "1.0.6.1";
+	public static final String MODNAME = "jtrent238's EpicProportions Mod";
+	public static CrashReportCategory CRASHINFO;
+	public static NBTTagCompound NBTJOIN;
 
 	@ForgeSubscribe(priority = EventPriority.NORMAL)
     public void eventHandler(RenderGameOverlayEvent event) {
@@ -58,7 +68,13 @@ public class EpicProportionsMod
 @Mod.EventHandler
 public void preInit(FMLPreInitializationEvent event)
 {
+	/*
+	//Achievements
+	Achievements.loadAchievements();
+	Achievements.registerPage();
+    */
 	
+	FMLCommonHandler.instance().bus().register(new OnJoinEvent());
 	}
 
 
@@ -75,6 +91,7 @@ public void init(FMLInitializationEvent event)
 	EntityLoader.LoadEntitys();
 	TileEntityLoader.mainRegistry();
 	RenderChests.RenderTileEntitys();
+	Achievements.loadAchievements();
 	//ModLoader.LoadMods();
 	//InventoryLoader.LoadInventorys();
 	//SoundEvents.LoadSounds();
@@ -123,9 +140,14 @@ public static CreativeTabs EpicProportionsMod = new CreativeTabs("EpicProportion
 	
 ;
 
+
+
+
+
 @Mod.EventHandler
 public void postInit(FMLPostInitializationEvent event) {
 	{
+		MinecraftForge.EVENT_BUS.register(new WorldGenModFlower());
 
 	    Recipes.registerRecpies();
 

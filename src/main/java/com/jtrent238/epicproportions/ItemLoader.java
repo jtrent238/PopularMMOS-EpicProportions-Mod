@@ -18,6 +18,7 @@ import com.jtrent238.epicproportions.items.armor.ItemSuperPatArmor;
 import com.jtrent238.epicproportions.items.blockplacers.itemBirthdayPresent;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnBomby;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnCandyMan;
+import com.jtrent238.epicproportions.items.spawners.itemSpawnCandyPopper;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnCaptianCookie;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnClown;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnCookieLittle;
@@ -25,16 +26,19 @@ import com.jtrent238.epicproportions.items.spawners.itemSpawnFred2_0;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnJen;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnNinjaMaster;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnPat;
+import com.jtrent238.epicproportions.items.spawners.itemSpawnSparky;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnjtrent238;
 import com.jtrent238.epicproportions.items.structureplacers.itemBombyStructurePlacer;
 import com.jtrent238.epicproportions.items.structureplacers.itemHouseOfEpicProportionsPlacer;
 import com.jtrent238.epicproportions.items.structureplacers.itemTNTSwordPlacer;
 import com.jtrent238.epicproportions.items.tools.itemJenAxe;
 import com.jtrent238.epicproportions.items.tools.itemJenHoe;
+import com.jtrent238.epicproportions.items.tools.itemJenMultiTool;
 import com.jtrent238.epicproportions.items.tools.itemJenPick;
 import com.jtrent238.epicproportions.items.tools.itemJenShovel;
 import com.jtrent238.epicproportions.items.tools.itemPatAxe;
 import com.jtrent238.epicproportions.items.tools.itemPatHoe;
+import com.jtrent238.epicproportions.items.tools.itemPatMultiTool;
 import com.jtrent238.epicproportions.items.tools.itemPatPick;
 import com.jtrent238.epicproportions.items.tools.itemPatShovel;
 import com.jtrent238.epicproportions.items.tools.staffs.itemJenStaff;
@@ -125,6 +129,8 @@ public class ItemLoader {
 	public static Item itemJenStaff;
 	public static Item itemPatBow;
 	public static Item itemJenBow;
+	public static Item itemPatMultiTool;
+	public static Item itemJenMultiTool;
 	
 	//SpawnEggs//
 	//public static Item itemSpawnEgg;
@@ -138,6 +144,8 @@ public class ItemLoader {
 	public static Item itemSpawnCookieLittle;
 	public static Item itemSpawnjtrent238;
 	public static Item itemSpawnClown;
+	public static Item itemSpawnCandyPopper;
+	public static Item itemSpawnSparky;
 	
 	//Armor
 		//Pat Armor
@@ -169,7 +177,7 @@ public class ItemLoader {
 	public static ArmorMaterial SUPER_PAT_ARMOR = EnumHelper.addArmorMaterial("PAT_ARMOR", 16, new int[] {3, 8, 6, 3}, 30);
 	public static ArmorMaterial SUPER_JEN_ARMOR = EnumHelper.addArmorMaterial("JEN_ARMOR", 17, new int[] {3, 8, 6, 3}, 30);
 	
-	
+
 
 	/**
 	 * Load Items.
@@ -206,6 +214,9 @@ public static void LoadItems() {
 	itemJenStaff = new itemJenStaff().setUnlocalizedName("itemJenStaff").setTextureName("epicproportionsmod:itemJenStaff").setCreativeTab(EpicProportionsMod.EpicProportionsMod).setFull3D();
 	itemPatBow = new itemPatBow(ToolMaterial.EMERALD).setUnlocalizedName("itemPatBow").setTextureName("epicproportionsmod:itemPatBow").setCreativeTab(EpicProportionsMod.EpicProportionsMod).setFull3D();
 	itemJenBow = new itemJenBow(ToolMaterial.EMERALD).setUnlocalizedName("itemJenBow").setTextureName("epicproportionsmod:itemJenBow").setCreativeTab(EpicProportionsMod.EpicProportionsMod).setFull3D();
+	itemPatMultiTool = new itemPatMultiTool(ToolMaterial.EMERALD).setUnlocalizedName("itemPatMultiTool").setTextureName("epicproportionsmod:itemPatMultiTool").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	itemJenMultiTool = new itemJenMultiTool(ToolMaterial.EMERALD).setUnlocalizedName("itemJenMultiTool").setTextureName("epicproportionsmod:itemJenMultiTool").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	
 	
 	
 	//SpawnEggs//
@@ -220,6 +231,8 @@ public static void LoadItems() {
 	itemSpawnCookieLittle = new itemSpawnCookieLittle().setUnlocalizedName("itemSpawnCookieLittle").setTextureName("epicproportionsmod:itemSpawnCookieLittle").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itemSpawnjtrent238 = new itemSpawnjtrent238().setUnlocalizedName("itemSpawnjtrent238").setTextureName("epicproportionsmod:itemSpawnjtrent238").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itemSpawnClown = new itemSpawnClown().setUnlocalizedName("itemSpawnClown").setTextureName("epicproportionsmod:itemSpawnClown").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	itemSpawnCandyPopper = new itemSpawnCandyPopper().setUnlocalizedName("itemSpawnCandyPopper").setTextureName("epicproportionsmod:itemSpawnCandyPopper").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	itemSpawnSparky = new itemSpawnSparky().setUnlocalizedName("itemSpawnSparky").setTextureName("epicproportionsmod:itemSpawnSparky").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	
 	//Armor
 		//PatArmor
@@ -283,6 +296,9 @@ private static void registerItems(){
 	GameRegistry.registerItem(itemJenStaff, itemJenStaff.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemPatBow, itemPatBow.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemJenBow, itemJenBow.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(itemPatMultiTool, itemPatMultiTool.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(itemJenMultiTool, itemJenMultiTool.getUnlocalizedName().substring(5));
+	
 	
 	//SpawnEggs//
 	//GameRegistry.registerItem(itemSpawnEgg, itemSpawnEgg.getUnlocalizedName().substring(5));
@@ -296,6 +312,8 @@ private static void registerItems(){
 	GameRegistry.registerItem(itemSpawnCookieLittle, itemSpawnCookieLittle.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemSpawnjtrent238, itemSpawnjtrent238.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemSpawnClown, itemSpawnClown.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(itemSpawnCandyPopper, itemSpawnCandyPopper.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(itemSpawnSparky, itemSpawnSparky.getUnlocalizedName().substring(5));
 	
 	//Armor
 			//PatArmor

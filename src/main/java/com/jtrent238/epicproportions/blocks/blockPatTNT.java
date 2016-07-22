@@ -5,6 +5,8 @@ import java.util.Random;
 
 import com.jtrent238.epicproportions.EpicProportionsMod;
 import com.jtrent238.epicproportions.ItemLoader;
+import com.jtrent238.epicproportions.entity.EntilyJenArrow;
+import com.jtrent238.epicproportions.entity.EntilyPatArrow;
 import com.jtrent238.epicproportions.entity.EntilyPatTNTPrimed;
 
 import cpw.mods.fml.relauncher.Side;
@@ -163,6 +165,28 @@ public class blockPatTNT extends Block
         if (p_149670_5_ instanceof EntityArrow && !p_149670_1_.isRemote)
         {
             EntityArrow entityarrow = (EntityArrow)p_149670_5_;
+
+            if (entityarrow.isBurning())
+            {
+                this.func_150114_a(p_149670_1_, p_149670_2_, p_149670_3_, p_149670_4_, 1, entityarrow.shootingEntity instanceof EntityLivingBase ? (EntityLivingBase)entityarrow.shootingEntity : null);
+                p_149670_1_.setBlockToAir(p_149670_2_, p_149670_3_, p_149670_4_);
+            }
+        }
+        
+        if (p_149670_5_ instanceof EntilyPatArrow && !p_149670_1_.isRemote)
+        {
+        	EntilyPatArrow entityarrow = (EntilyPatArrow)p_149670_5_;
+
+            if (entityarrow.isBurning())
+            {
+                this.func_150114_a(p_149670_1_, p_149670_2_, p_149670_3_, p_149670_4_, 1, entityarrow.shootingEntity instanceof EntityLivingBase ? (EntityLivingBase)entityarrow.shootingEntity : null);
+                p_149670_1_.setBlockToAir(p_149670_2_, p_149670_3_, p_149670_4_);
+            }
+        }
+        
+        if (p_149670_5_ instanceof EntilyJenArrow && !p_149670_1_.isRemote)
+        {
+        	EntilyJenArrow entityarrow = (EntilyJenArrow)p_149670_5_;
 
             if (entityarrow.isBurning())
             {

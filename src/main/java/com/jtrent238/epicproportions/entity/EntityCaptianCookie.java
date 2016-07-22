@@ -58,6 +58,9 @@ public class EntityCaptianCookie extends EntityGolem implements IBossDisplayData
 	        this.tasks.addTask(8, new EntityAILookIdle(this));
 	        this.targetTasks.addTask(2, new EntityAIHurtByTarget(this, false));
 	        this.targetTasks.addTask(3, new EntityAINearestAttackableTarget(this, EntityLiving.class, 0, false, true, IMob.mobSelector));
+	       
+	        this.hasCustomNameTag();
+	        this.setCustomNameTag("Captian Cookie");
 	        addRandomArmor();
 	        DungeonHooks.addDungeonMob("Captian Cookie", 180);
 	    }

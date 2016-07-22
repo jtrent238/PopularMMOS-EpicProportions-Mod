@@ -32,6 +32,8 @@ item.itemPatBow.name=FuriousDestroyer's Bow
 item.itemJenBow.name=SuperGirlyGamer's Bow
 item.itemPatArrow.name=FuriousDestroyer's Arrow
 item.itemJenArrow.name=SuperGirlyGamer's Arrow
+item.itemPatMultiTool.name=FuriousDestroyer's MultiTool
+item.itemJenMultiTool.name=SuperGirlyGamer's MultiTool
 
 
 	/Armor
@@ -68,6 +70,8 @@ item.itemSpawnCandyMan.name=Spawn §2The Candy Man §r
 item.itemSpawnCookieLittle.name=Spawn Captain Cookie Little §4[WIP]§r
 item.itemSpawnjtrent238.name=Spawn jtrent238
 item.itemSpawnClown.name=Spawn Clown
+item.itemSpawnCandyPopper.name=Spawn Candy Popper
+item.itemSpawnSparky.name=Spawn Sparky
 
 //Blocks
 tile.blockFartBomb.name=Fart Bomb
@@ -79,6 +83,11 @@ tile.blockPatTNT.name=FuriousDestroyer's TNT
 tile.blockBirthdayPresent.name=Birthday Present
 tile.blockPatChest.name=FuriousDestroyer's Chest
 tile.blockJenChest.name=SuperGirlyGamer's Chest
+tile.blockTrollTNT.name=Troll TNT
+tile.blockFlowerForJen.name=Flower For Jen
+tile.blockFlowerRedHeart.name=Red Heart Flower
+tile.blockFlowerPinkHeart.name=Pink Heart Flower
+tile.blockFlowerRainbow.name=Rainbow Flower
 
 //Entitys
 entity.EntityBomby.name=Bomby
@@ -90,6 +99,8 @@ entity.EntityNinjaMaster.name=Ninja Master
 entity.EntityCandyMan.name=§2The Candy Man
 entity.EntityCaptianCookieLittle.name=Captain Cookie Little
 entity.EntityClown.name=Clown
+entity.EntityCandyPopper.name=Candy Popper
+entity.EntitySparky.name=Sparky
 
 
 //Mod Devs And Helpers
@@ -100,8 +111,29 @@ container.Patchest=FuriousDestroyer's Chest
 container.Jenchest=SuperGirlyGamer's Chest
 container.chestPatDouble=Large FuriousDestroyerChest
 container.chestJenDouble=Large SuperGirlyGamer Chest
+
 //Generators
+
 //Achievements
+	/Welcome To Epic Proportions
+achievement.install=Welcome To Epic Proportions
+achievement.install.desc=Install Epic Proportions Mod
+	/Happy Birthday
+achievement.happybirthday=Happy Birthday!
+achievement.happybirthday.desc=Open a Birthday Present
+	/Flower For Jen
+achievement.flowerforjen=Flower For Jen
+achievement.flowerforjen.desc=Get a Flower For Jen
+	/I Am FuriousDestroyer
+achievement.iampat=I Am FuriousDestroyer
+achievement.iampat.desc=Wear Full Pat Armor
+	/I Am SuperGirlyGamer
+achievement.iamjen=I Am SuperGirlyGamer
+achievement.iamjen.desc=Wear Full Jen Armor
+	/Popped
+achievement.popped=Popped
+achievement.popped.desc=Kill a Candy Popper
+
 //Enchantments
 //Potions
 

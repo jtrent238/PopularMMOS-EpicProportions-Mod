@@ -44,6 +44,8 @@ public class EntityCandyMan extends EntityGolem implements IBossDisplayData
         this.tasks.addTask(8, new EntityAILookIdle(this));
         this.targetTasks.addTask(2, new EntityAIHurtByTarget(this, false));
         this.targetTasks.addTask(3, new EntityAINearestAttackableTarget(this, EntityLiving.class, 0, false, true, IMob.mobSelector));
+        this.hasCustomNameTag();
+        this.setCustomNameTag("§2The Candy Man");
         addRandomArmor();
         DungeonHooks.addDungeonMob("§2The Candy Man", 180);
     }

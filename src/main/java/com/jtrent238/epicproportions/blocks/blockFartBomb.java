@@ -3,6 +3,9 @@ package com.jtrent238.epicproportions.blocks;
 import java.util.Random;
 
 import com.jtrent238.epicproportions.EpicProportionsMod;
+import com.jtrent238.epicproportions.entity.EntilyJenArrow;
+import com.jtrent238.epicproportions.entity.EntilyPatArrow;
+import com.jtrent238.epicproportions.entity.EntityFartBombPrimed;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -95,7 +98,7 @@ public class blockFartBomb extends Block
     {
         if (!p_149723_1_.isRemote)
         {
-            EntityTNTPrimed entitytntprimed = new EntityTNTPrimed(p_149723_1_, (double)((float)p_149723_2_ + 0.5F), (double)((float)p_149723_3_ + 0.5F), (double)((float)p_149723_4_ + 0.5F), p_149723_5_.getExplosivePlacedBy());
+            EntityFartBombPrimed entitytntprimed = new EntityFartBombPrimed(p_149723_1_, (double)((float)p_149723_2_ + 0.5F), (double)((float)p_149723_3_ + 0.5F), (double)((float)p_149723_4_ + 0.5F), p_149723_5_.getExplosivePlacedBy());
             entitytntprimed.fuse = p_149723_1_.rand.nextInt(entitytntprimed.fuse / 4) + entitytntprimed.fuse / 8;
             p_149723_1_.spawnEntityInWorld(entitytntprimed);
         }
@@ -115,9 +118,9 @@ public class blockFartBomb extends Block
         {
             if ((p_150114_5_ & 1) == 1)
             {
-                EntityTNTPrimed entitytntprimed = new EntityTNTPrimed(p_150114_1_, (double)((float)p_150114_2_ + 0.5F), (double)((float)p_150114_3_ + 0.5F), (double)((float)p_150114_4_ + 0.5F), p_150114_6_);
+            	EntityFartBombPrimed entitytntprimed = new EntityFartBombPrimed(p_150114_1_, (double)((float)p_150114_2_ + 0.5F), (double)((float)p_150114_3_ + 0.5F), (double)((float)p_150114_4_ + 0.5F), p_150114_6_);
                 p_150114_1_.spawnEntityInWorld(entitytntprimed);
-                p_150114_1_.playSoundAtEntity(entitytntprimed, "game.tnt.primed", 1.0F, 1.0F);
+                p_150114_1_.playSoundAtEntity(entitytntprimed, "epicproportionsmod:fartbomb_2", 5.0F, 5.0F);
             }
         }
     }
@@ -149,6 +152,28 @@ public class blockFartBomb extends Block
         if (p_149670_5_ instanceof EntityArrow && !p_149670_1_.isRemote)
         {
             EntityArrow entityarrow = (EntityArrow)p_149670_5_;
+
+            if (entityarrow.isBurning())
+            {
+                this.func_150114_a(p_149670_1_, p_149670_2_, p_149670_3_, p_149670_4_, 1, entityarrow.shootingEntity instanceof EntityLivingBase ? (EntityLivingBase)entityarrow.shootingEntity : null);
+                p_149670_1_.setBlockToAir(p_149670_2_, p_149670_3_, p_149670_4_);
+            }
+        }
+        
+        if (p_149670_5_ instanceof EntilyPatArrow && !p_149670_1_.isRemote)
+        {
+        	EntilyPatArrow entityarrow = (EntilyPatArrow)p_149670_5_;
+
+            if (entityarrow.isBurning())
+            {
+                this.func_150114_a(p_149670_1_, p_149670_2_, p_149670_3_, p_149670_4_, 1, entityarrow.shootingEntity instanceof EntityLivingBase ? (EntityLivingBase)entityarrow.shootingEntity : null);
+                p_149670_1_.setBlockToAir(p_149670_2_, p_149670_3_, p_149670_4_);
+            }
+        }
+        
+        if (p_149670_5_ instanceof EntilyJenArrow && !p_149670_1_.isRemote)
+        {
+        	EntilyJenArrow entityarrow = (EntilyJenArrow)p_149670_5_;
 
             if (entityarrow.isBurning())
             {

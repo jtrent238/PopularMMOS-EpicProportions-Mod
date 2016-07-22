@@ -1,5 +1,23 @@
 Epic Proportions Mod ChangeLog
 
+1.0.6.2
+- Added Troll TNT
+- Added Pat MultiTool
+- Added Jen MultiTool
+- Added Candy Popper
+- Added Sparky
+- Added Nametag for FuriousDestroyer
+- Added Nametag for The Candy Man
+- Added Nametag for SuperGirlyGamer
+- Added Nametag for jtrent238
+- Added Nametag for Captian Cookie
+- Added Flower's For Jen
+- Added Pink Heart Flower
+- Added Red Heart Flower
+- Added Rainbow Flower
+- Added Achevements
+- Added Join Chat Info
+
 1.0.5.2
 - Changed Jen Armor Texture to her Skin
 - Changed Pat Armor Texture to his Skin

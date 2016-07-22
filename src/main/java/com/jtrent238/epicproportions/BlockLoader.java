@@ -5,14 +5,17 @@ import com.jtrent238.epicproportions.blocks.blockFartBomb;
 import com.jtrent238.epicproportions.blocks.blockJenChest;
 import com.jtrent238.epicproportions.blocks.blockJenIngot;
 import com.jtrent238.epicproportions.blocks.blockJenOre;
+import com.jtrent238.epicproportions.blocks.blockModFlower;
 import com.jtrent238.epicproportions.blocks.blockPatChest;
 import com.jtrent238.epicproportions.blocks.blockPatIngot;
 import com.jtrent238.epicproportions.blocks.blockPatOre;
 import com.jtrent238.epicproportions.blocks.blockPatTNT;
+import com.jtrent238.epicproportions.blocks.blockTrollTNT;
 import com.jtrent238.epicproportions.items.itemgemofepicproportions;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockFlower;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 
@@ -27,7 +30,13 @@ public class BlockLoader {
 	public static Block blockBirthdayPresent;
 	public static Block blockPatChest;
 	public static Block blockJenChest;
-	
+	public static Block blockTrollTNT;
+	public static Block blockFlowerForJen;
+	public static Block blockFlowerRedHeart;
+	public static Block blockFlowerPinkHeart;
+	public static Block blockFlowerRainbow;
+	//public static final BlockFlower jen_flower = (BlockFlower)Block.blockRegistry.getObject("jen_flower");
+	//public static final BlockFlower jen_flower2 = (BlockFlower)Block.blockRegistry.getObject("jen_flower2");
 	
 	/**
 	 * Load Blocks.
@@ -43,7 +52,12 @@ public class BlockLoader {
 		blockBirthdayPresent = new blockBirthdayPresent(Material.ground).setBlockName("blockBirthdayPresent").setBlockTextureName("epicproportionsmod:blockBirthdayPresent").setHardness(0.5F).setStepSound(Block.soundTypeStone)/*/.setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
 		blockPatChest = new blockPatChest(0).setBlockName("blockPatChest").setBlockTextureName("epicproportionsmod:blockPatChest").setHardness(0.5F).setStepSound(Block.soundTypeWood).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 		blockJenChest = new blockJenChest(0).setBlockName("blockJenChest").setBlockTextureName("epicproportionsmod:blockJenChest").setHardness(0.5F).setStepSound(Block.soundTypeWood).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
-		
+		blockTrollTNT = new blockTrollTNT().setBlockName("blockTrollTNT").setBlockTextureName("epicproportionsmod:blockTrollTNT").setHardness(0F).setStepSound(Block.soundTypeStone).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+		blockFlowerForJen = new blockModFlower(0).setBlockName("blockFlowerForJen");
+		blockFlowerRedHeart = new blockModFlower(1).setBlockName("blockFlowerRedHeart");
+		blockFlowerPinkHeart = new blockModFlower(2).setBlockName("blockFlowerPinkHeart");
+		blockFlowerRainbow = new blockModFlower(3).setBlockName("blockFlowerRainbow");
+
 		
 		
 		registerBlocks();
@@ -63,6 +77,11 @@ public class BlockLoader {
 		GameRegistry.registerBlock(blockBirthdayPresent, "blockBirthdayPresent");
 		GameRegistry.registerBlock(blockPatChest, "blockPatChest");
 		GameRegistry.registerBlock(blockJenChest, "blockJenChest");
-			
+		GameRegistry.registerBlock(blockTrollTNT, "blockTrollTNT");
+		GameRegistry.registerBlock(blockFlowerForJen, "blockFlowerForJen");
+		GameRegistry.registerBlock(blockFlowerRedHeart, "blockFlowerRedHeart");
+		GameRegistry.registerBlock(blockFlowerPinkHeart, "blockFlowerPinkHeart");
+		GameRegistry.registerBlock(blockFlowerRainbow, "blockFlowerRainbow");
+		
 	}
 }

@@ -3,19 +3,24 @@ package com.jtrent238.epicproportions.blocks;
 import java.util.ArrayList;
 import java.util.Random;
 
+import com.jtrent238.epicproportions.Achievements;
 import com.jtrent238.epicproportions.ItemLoader;
 
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
+import net.minecraftforge.event.entity.player.AchievementEvent;
+import net.minecraftforge.event.world.BlockEvent.BreakEvent;
 
 public class blockBirthdayPresent extends Block{
 
@@ -93,6 +98,12 @@ public class blockBirthdayPresent extends Block{
         return drops;
     }
 
-}
+    
+    
+
+ }
+    
+
+
 
 //event.entityPlayer.addChatComponentMessage(new ChatComponentText("§b§lHappy Birthday" + event.entityPlayer.getDisplayName() + "§b§l!"));

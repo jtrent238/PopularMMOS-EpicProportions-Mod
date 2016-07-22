@@ -145,7 +145,8 @@ public class Entilyjtrent238 extends EntityGolem implements IBossDisplayData, IM
         this.tasks.addTask(16, new EntityAIWatchClosest(this, EntityLiving.class, 8.0F));
         this.targetTasks.addTask(2, new EntityAIHurtByTarget(this, false));
         this.targetTasks.addTask(3, new EntityAINearestAttackableTarget(this, EntityLiving.class, 0, false, true, IMob.mobSelector));
-        
+        this.hasCustomNameTag();
+        this.setCustomNameTag("jtrent238");
         addRandomArmor();
         DungeonHooks.addDungeonMob("jtrent238", 180);
     }
