@@ -1,14 +1,12 @@
 [
 {
-  "modid": "epicproportionsmod",
-  "name": "jtrent238's EpicProportions Mod",
-  "description": "This is a mod based on PopularMMOS EpicProportions series. 
-  
-  I am working very hard on this mod making all the textures, models ,editing and cliping sounds for this it is so much work it would be much appreciated if you would diamond and share this mod . ",
-  "version": "com.jtrent238.epicproportions.MODVERSION${version}",
+  "modid": "sugarrush",
+  "name": "jtrent238's SugarRush Mod",
+  "description": "Lots Of Sugar!!!",
+  "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "http://bit.ly/29Ogx5M",
-  "updateUrl": "http://bit.ly/29Ogx5M",
+  "url": "",
+  "updateUrl": "",
   "authorList": ["jtrent238"],
   "credits": "jtrent238",
   "logoFile": "",

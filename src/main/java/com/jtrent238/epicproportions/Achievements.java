@@ -33,7 +33,11 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
     public static Achievement achievementpat;
     public static Achievement achievementjen;
     public static Achievement achievementpopped;
-    
+    public static Achievement achievementcookies;
+    public static Achievement achievementkillpat;
+    public static Achievement achievementkilljen;
+    public static Achievement achievementfunny;
+
     
 
     
@@ -46,11 +50,27 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
     	achievementinstall = new Achievement("achievement.install", "install", 0, 0, new ItemStack(Items.golden_apple, 1), (Achievement)null).initIndependentStat().registerStat();
     	achievementpresent = new Achievement("achievement.happybirthday", "happybirthday", 0, 1, new ItemStack(ItemLoader.itemBirthdayPresent), (Achievement)null).initIndependentStat().registerStat();
     	achievementflowerforjen = new Achievement("achievement.flowerforjen", "flowerforjen", 0, 2, new ItemStack(BlockLoader.blockFlowerForJen), (Achievement)null).initIndependentStat().registerStat();
-    	achievementpat = new Achievement("achievement.iampat", "iampat", 0, 3, new ItemStack(ItemLoader.itemPatHelmet), (Achievement)null).initIndependentStat().registerStat();
-    	achievementjen = new Achievement("achievement.iamjen", "iamjen", 0, 4, new ItemStack(ItemLoader.itemJenHelmet), (Achievement)null).initIndependentStat().registerStat();
+    	achievementpat = new Achievement("achievement.iampat", "iampat", 0, 3, new ItemStack(ItemLoader.itempat), (Achievement)null).initIndependentStat().registerStat();
+    	achievementjen = new Achievement("achievement.iamjen", "iamjen", 0, 4, new ItemStack(ItemLoader.itemjen), (Achievement)null).initIndependentStat().registerStat();
     	achievementpopped = new Achievement("achievement.popped", "popped", 0, 5, new ItemStack(Items.sugar), (Achievement)null).initIndependentStat().registerStat();
+    	achievementcookies = new Achievement("achievement.cookies", "cookies", 0, 6, new ItemStack(Items.cookie), (Achievement)null).initIndependentStat().registerStat();
+    	achievementkillpat = new Achievement("achievement.killpat", "killpat", 0, 7, new ItemStack(ItemLoader.itemJenSword), (Achievement)null).initIndependentStat().registerStat();
+    	achievementkilljen = new Achievement("achievement.killjen", "killjen", 0, 8, new ItemStack(ItemLoader.itemPatSword), (Achievement)null).initIndependentStat().registerStat();
+    	achievementfunny = new Achievement("achievement.funny", "funny", 0, 9, new ItemStack(ItemLoader.itemSpawnClown), (Achievement)null).initIndependentStat().registerStat();
     	
-    	AchievementPage.registerAchievementPage(new AchievementPage(EpicProportionsMod.MODID + EpicProportionsMod.MODVERSION + "Achievements", new Achievement[]{achievementinstall, achievementpresent, achievementflowerforjen, achievementpat, achievementjen, achievementpopped}));
+    	
+    	AchievementPage.registerAchievementPage(new AchievementPage(EpicProportionsMod.MODID + EpicProportionsMod.MODVERSION + "Achievements", new Achievement[]{
+    			achievementinstall, 
+    			achievementpresent, 
+    			achievementflowerforjen, 
+    			achievementpat, 
+    			achievementjen, 
+    			achievementpopped, 
+    			achievementcookies, 
+    			achievementkillpat, 
+    			achievementkilljen, 
+    			achievementfunny
+    			}));
     	
     	
     	FMLCommonHandler.instance().bus().register(new InstallEvent());

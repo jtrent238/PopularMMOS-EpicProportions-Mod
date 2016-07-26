@@ -1,5 +1,10 @@
 Epic Proportions Mod ChangeLog
 
+1.0.6.3
+- Added More Achevements
+- Added Love Flower
+- Tweaked The Startup Event
+
 1.0.6.2
 - Added Troll TNT
 - Added Pat MultiTool

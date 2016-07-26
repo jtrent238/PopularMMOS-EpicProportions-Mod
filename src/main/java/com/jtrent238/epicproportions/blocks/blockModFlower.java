@@ -19,7 +19,7 @@ import net.minecraft.util.IIcon;
 
 public class blockModFlower  extends BlockBush
 {
-    private static final String[][] field_149860_M = new String[][] {{"flower_jen"}, {"flower_heart_red"}, {"flower_heart_pink"}, {"flower_rainbow"}};
+    public static final String[][] field_149860_M = new String[][] {{"flower_jen"}, {"flower_heart_red"}, {"flower_heart_pink"}, {"flower_rainbow"}, {"flower_love"} };
     public static final String[] field_149859_a = new String[] {};
     public static final String[] field_149858_b = new String[] {};
    

@@ -1,7 +1,10 @@
 package com.jtrent238.epicproportions.eventhandler;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.ChatComponentText;
+import sun.applet.Main;
+import sun.rmi.runtime.Log;
 
 import com.jtrent238.epicproportions.Achievements;
 import com.jtrent238.epicproportions.EpicProportionsMod;
@@ -11,11 +14,15 @@ import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.PlayerEvent;
 import cpw.mods.fml.common.gameevent.PlayerEvent.PlayerLoggedInEvent;
 import cpw.mods.fml.common.network.NetworkRegistry;
+import ibxm.Player;
 
 public class OnJoinEvent {
 	
 	
 	private EntityPlayer playerclone;
+	private String arg0;
+	private String arg1;
+	private int arg2;
 
 	@SubscribeEvent
     public void onPlayerLogin(PlayerEvent.PlayerLoggedInEvent event) {
@@ -33,6 +40,14 @@ public class OnJoinEvent {
     	event.player.getBedLocation();
     	event.player.shouldHeal();
     	event.getListenerList();
+    	event.hashCode();
+    	Minecraft.getSystemTime();
+    	Minecraft.isAmbientOcclusionEnabled();
+    	Minecraft.isGuiEnabled();
+    	Minecraft.getMinecraft();
+    	Minecraft.getGLMaximumTextureSize();
+    	Minecraft.isFancyGraphicsEnabled();
+    	//Log.getLog(arg0, arg1, arg2);
     	//event.notifyAll();
     }
 

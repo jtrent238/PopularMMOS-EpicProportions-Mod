@@ -88,6 +88,7 @@ tile.blockFlowerForJen.name=Flower For Jen
 tile.blockFlowerRedHeart.name=Red Heart Flower
 tile.blockFlowerPinkHeart.name=Pink Heart Flower
 tile.blockFlowerRainbow.name=Rainbow Flower
+tile.blockFlowerLove.name=Love Flower
 
 //Entitys
 entity.EntityBomby.name=Bomby
@@ -133,6 +134,18 @@ achievement.iamjen.desc=Wear Full Jen Armor
 	/Popped
 achievement.popped=Popped
 achievement.popped.desc=Kill a Candy Popper
+	/Cookies For Everyone
+achievement.cookies=Cookies For Everyone
+achievement.cookies.desc=Kill Captain Cookie
+	/FuriousDestroyer Died
+achievement.killpat=FuriousDestroyer Died
+achievement.killpat.desc=Kill FuriousDestroyer
+	/SuperGirlyGamer Died
+achievement.killjen=SuperGirlyGamer Died
+achievement.killjen.desc=Kill SuperGirlyGamer
+	/Funny
+achievement.funny=Funny
+achievement.funny.desc=Kill A Clown
 
 //Enchantments
 //Potions
