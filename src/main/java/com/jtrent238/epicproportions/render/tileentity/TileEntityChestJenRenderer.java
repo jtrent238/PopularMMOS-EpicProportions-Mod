@@ -1,4 +1,4 @@
-package com.jtrent238.epicproportions.render;
+package com.jtrent238.epicproportions.render.tileentity;
 
 import java.util.Calendar;
 
@@ -9,28 +9,31 @@ import com.jtrent238.epicproportions.blocks.blockJenChest;
 import com.jtrent238.epicproportions.blocks.blockPatChest;
 import com.jtrent238.epicproportions.tileentity.TileEntityJenChest;
 import com.jtrent238.epicproportions.tileentity.TileEntityPatChest;
-import com.jtrent238.epicproportions.render.tileentity.*;
 
 import cpw.mods.fml.common.FMLLog;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockChest;
 import net.minecraft.client.model.ModelChest;
 import net.minecraft.client.model.ModelLargeChest;
-import net.minecraft.client.renderer.tileentity.TileEntityChestRenderer;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ResourceLocation;
 
-
-public class PatChestRenderer extends TileEntityChestPatRenderer /*/ TileEntitySpecialRenderer/*/
+public class TileEntityChestJenRenderer extends TileEntitySpecialRenderer
 {
-    private static final ResourceLocation field_147505_d = new ResourceLocation("epicproportionsmod:LargePatChest.png");
-    private static final ResourceLocation field_147504_g = new ResourceLocation("epicproportionsmod:PatChest.png");
+
+    private static final ResourceLocation field_147505_d = new ResourceLocation("epicproportionsmod:textures/entity/chest/jen_double.png");
+    private static final ResourceLocation field_147504_g = new ResourceLocation("epicproportionsmod:textures/entity/chest/jen.png");
     private ModelChest field_147510_h = new ModelChest();
     private ModelChest field_147511_i = new ModelLargeChest();
     private boolean field_147509_j;
+	private ResourceLocation field_147503_f;
+	private ResourceLocation field_147506_e;
+	private ResourceLocation field_147507_b;
+	private ResourceLocation field_147508_c;
     private static final String __OBFID = "CL_00000965";
 
-    public PatChestRenderer()
+    public TileEntityChestJenRenderer()
     {
         Calendar calendar = Calendar.getInstance();
 
@@ -40,60 +43,78 @@ public class PatChestRenderer extends TileEntityChestPatRenderer /*/ TileEntityS
         }
     }
 
-    public void renderTileEntityAt(TileEntityPatChest p_147502_1_, double p_147502_2_, double p_147502_4_, double p_147502_6_, float p_147502_8_)
+    public void renderTileEntityAt(TileEntityJenChest p_147500_1_, double p_147500_2_, double p_147500_4_, double p_147500_6_, float p_147500_8_)
     {
         int i;
 
-        if (!p_147502_1_.hasWorldObj())
+        if (!p_147500_1_.hasWorldObj())
         {
             i = 0;
         }
         else
         {
-            Block block = p_147502_1_.getBlockType();
-            i = p_147502_1_.getBlockMetadata();
+            Block block = p_147500_1_.getBlockType();
+            i = p_147500_1_.getBlockMetadata();
 
-            if (block instanceof blockPatChest && i == 0)
+            if (block instanceof blockJenChest && i == 0)
             {
                 try
                 {
-                ((blockPatChest)block).func_149954_e(p_147502_1_.getWorldObj(), p_147502_1_.xCoord, p_147502_1_.yCoord, p_147502_1_.zCoord);
+                ((blockJenChest)block).func_149954_e(p_147500_1_.getWorldObj(), p_147500_1_.xCoord, p_147500_1_.yCoord, p_147500_1_.zCoord);
                 }
                 catch (ClassCastException e)
                 {
-                    FMLLog.severe("Attempted to render a chest at %d,  %d, %d that was not a chest", p_147502_1_.xCoord, p_147502_1_.yCoord, p_147502_1_.zCoord);
+                    FMLLog.severe("Attempted to render a chest at %d,  %d, %d that was not a chest", p_147500_1_.xCoord, p_147500_1_.yCoord, p_147500_1_.zCoord);
                 }
-                i = p_147502_1_.getBlockMetadata();
+                i = p_147500_1_.getBlockMetadata();
             }
 
-            p_147502_1_.checkForAdjacentChests();
+            p_147500_1_.checkForAdjacentChests();
         }
 
-        if (p_147502_1_.adjacentChestZNeg == null && p_147502_1_.adjacentChestXNeg == null)
+        if (p_147500_1_.adjacentChestZNeg == null && p_147500_1_.adjacentChestXNeg == null)
         {
             ModelChest modelchest;
 
-            if (p_147502_1_.adjacentChestXPos == null && p_147502_1_.adjacentChestZPos == null)
+            if (p_147500_1_.adjacentChestXPos == null && p_147500_1_.adjacentChestZPos == null)
             {
                 modelchest = this.field_147510_h;
 
-              
+                if (p_147500_1_.func_145980_j() == 1)
+                {
+                    this.bindTexture(field_147506_e);
+                }
+                else if (this.field_147509_j)
+                {
+                    this.bindTexture(field_147503_f);
+                }
+                else
+                {
                     this.bindTexture(field_147504_g);
-                
+                }
             }
             else
             {
                 modelchest = this.field_147511_i;
 
-               
+                if (p_147500_1_.func_145980_j() == 1)
+                {
+                    this.bindTexture(field_147507_b);
+                }
+                else if (this.field_147509_j)
+                {
+                    this.bindTexture(field_147508_c);
+                }
+                else
+                {
                     this.bindTexture(field_147505_d);
-                
+                }
             }
 
             GL11.glPushMatrix();
             GL11.glEnable(GL12.GL_RESCALE_NORMAL);
             GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
-            GL11.glTranslatef((float)p_147502_2_, (float)p_147502_4_ + 1.0F, (float)p_147502_6_ + 1.0F);
+            GL11.glTranslatef((float)p_147500_2_, (float)p_147500_4_ + 1.0F, (float)p_147500_6_ + 1.0F);
             GL11.glScalef(1.0F, -1.0F, -1.0F);
             GL11.glTranslatef(0.5F, 0.5F, 0.5F);
             short short1 = 0;
@@ -118,24 +139,24 @@ public class PatChestRenderer extends TileEntityChestPatRenderer /*/ TileEntityS
                 short1 = -90;
             }
 
-            if (i == 2 && p_147502_1_.adjacentChestXPos != null)
+            if (i == 2 && p_147500_1_.adjacentChestXPos != null)
             {
                 GL11.glTranslatef(1.0F, 0.0F, 0.0F);
             }
 
-            if (i == 5 && p_147502_1_.adjacentChestZPos != null)
+            if (i == 5 && p_147500_1_.adjacentChestZPos != null)
             {
                 GL11.glTranslatef(0.0F, 0.0F, -1.0F);
             }
 
             GL11.glRotatef((float)short1, 0.0F, 1.0F, 0.0F);
             GL11.glTranslatef(-0.5F, -0.5F, -0.5F);
-            float f1 = p_147502_1_.prevLidAngle + (p_147502_1_.lidAngle - p_147502_1_.prevLidAngle) * p_147502_8_;
+            float f1 = p_147500_1_.prevLidAngle + (p_147500_1_.lidAngle - p_147500_1_.prevLidAngle) * p_147500_8_;
             float f2;
 
-            if (p_147502_1_.adjacentChestZNeg != null)
+            if (p_147500_1_.adjacentChestZNeg != null)
             {
-                f2 = p_147502_1_.adjacentChestZNeg.prevLidAngle + (p_147502_1_.adjacentChestZNeg.lidAngle - p_147502_1_.adjacentChestZNeg.prevLidAngle) * p_147502_8_;
+                f2 = p_147500_1_.adjacentChestZNeg.prevLidAngle + (p_147500_1_.adjacentChestZNeg.lidAngle - p_147500_1_.adjacentChestZNeg.prevLidAngle) * p_147500_8_;
 
                 if (f2 > f1)
                 {
@@ -143,9 +164,9 @@ public class PatChestRenderer extends TileEntityChestPatRenderer /*/ TileEntityS
                 }
             }
 
-            if (p_147502_1_.adjacentChestXNeg != null)
+            if (p_147500_1_.adjacentChestXNeg != null)
             {
-                f2 = p_147502_1_.adjacentChestXNeg.prevLidAngle + (p_147502_1_.adjacentChestXNeg.lidAngle - p_147502_1_.adjacentChestXNeg.prevLidAngle) * p_147502_8_;
+                f2 = p_147500_1_.adjacentChestXNeg.prevLidAngle + (p_147500_1_.adjacentChestXNeg.lidAngle - p_147500_1_.adjacentChestXNeg.prevLidAngle) * p_147500_8_;
 
                 if (f2 > f1)
                 {
@@ -165,6 +186,6 @@ public class PatChestRenderer extends TileEntityChestPatRenderer /*/ TileEntityS
 
     public void renderTileEntityAt(TileEntity p_147500_1_, double p_147500_2_, double p_147500_4_, double p_147500_6_, float p_147500_8_)
     {
-        this.renderTileEntityAt((TileEntityPatChest)p_147500_1_, p_147500_2_, p_147500_4_, p_147500_6_, p_147500_8_);
+        this.renderTileEntityAt((TileEntityJenChest)p_147500_1_, p_147500_2_, p_147500_4_, p_147500_6_, p_147500_8_);
     }
 }

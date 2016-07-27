@@ -59,7 +59,7 @@ public class TileEntityChestPatRenderer extends TileEntitySpecialRenderer
             {
                 try
                 {
-                ((BlockChest)block).func_149954_e(p_147500_1_.getWorldObj(), p_147500_1_.xCoord, p_147500_1_.yCoord, p_147500_1_.zCoord);
+                ((blockPatChest)block).func_149954_e(p_147500_1_.getWorldObj(), p_147500_1_.xCoord, p_147500_1_.yCoord, p_147500_1_.zCoord);
                 }
                 catch (ClassCastException e)
                 {

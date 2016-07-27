@@ -72,6 +72,7 @@ item.itemSpawnjtrent238.name=Spawn jtrent238
 item.itemSpawnClown.name=Spawn Clown
 item.itemSpawnCandyPopper.name=Spawn Candy Popper
 item.itemSpawnSparky.name=Spawn Sparky
+item.itemSpawnKitty.name=Spawn Kitty
 
 //Blocks
 tile.blockFartBomb.name=Fart Bomb
@@ -102,6 +103,7 @@ entity.EntityCaptianCookieLittle.name=Captain Cookie Little
 entity.EntityClown.name=Clown
 entity.EntityCandyPopper.name=Candy Popper
 entity.EntitySparky.name=Sparky
+entity.EntityKitty.name=Kitty
 
 
 //Mod Devs And Helpers

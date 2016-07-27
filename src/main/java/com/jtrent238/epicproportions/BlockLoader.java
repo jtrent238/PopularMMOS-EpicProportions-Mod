@@ -1,6 +1,7 @@
 package com.jtrent238.epicproportions;
 
 import com.jtrent238.epicproportions.blocks.blockBirthdayPresent;
+import com.jtrent238.epicproportions.blocks.blockBombySpawner;
 import com.jtrent238.epicproportions.blocks.blockFartBomb;
 import com.jtrent238.epicproportions.blocks.blockJenChest;
 import com.jtrent238.epicproportions.blocks.blockJenIngot;
@@ -36,6 +37,7 @@ public class BlockLoader {
 	public static Block blockFlowerPinkHeart;
 	public static Block blockFlowerRainbow;
 	public static Block blockFlowerLove;
+	public static Block blockBombySpawner;
 	//public static final BlockFlower jen_flower = (BlockFlower)Block.blockRegistry.getObject("jen_flower");
 	//public static final BlockFlower jen_flower2 = (BlockFlower)Block.blockRegistry.getObject("jen_flower2");
 	
@@ -59,7 +61,8 @@ public class BlockLoader {
 		blockFlowerPinkHeart = new blockModFlower(2).setBlockName("blockFlowerPinkHeart").setBlockTextureName("epicproportionsmod:" + blockModFlower.field_149860_M);
 		blockFlowerRainbow = new blockModFlower(3).setBlockName("blockFlowerRainbow").setBlockTextureName("epicproportionsmod:" + blockModFlower.field_149860_M);
 		blockFlowerLove = new blockModFlower(4).setBlockName("blockFlowerLove").setBlockTextureName("epicproportionsmod:" + blockModFlower.field_149860_M);
-
+		blockBombySpawner = new blockBombySpawner().setBlockName("blockBombySpawner").setBlockTextureName("epicproportionsmod:blockBombySpawner").setHardness(3F)/*/.setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
+		
 		
 		
 		registerBlocks();
@@ -85,6 +88,7 @@ public class BlockLoader {
 		GameRegistry.registerBlock(blockFlowerPinkHeart, "blockFlowerPinkHeart");
 		GameRegistry.registerBlock(blockFlowerRainbow, "blockFlowerRainbow");
 		GameRegistry.registerBlock(blockFlowerLove, "blockFlowerLove");
+		GameRegistry.registerBlock(blockBombySpawner, "blockBombySpawner");
 		
 	}
 }

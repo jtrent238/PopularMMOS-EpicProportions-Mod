@@ -24,6 +24,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.DamageSource;
 import net.minecraft.world.World;
 import net.minecraftforge.common.DungeonHooks;
+import net.minecraft.client.model.ModelBiped;
 
 public class EntityPat extends EntityGolem implements IBossDisplayData
 {
@@ -46,6 +47,7 @@ public class EntityPat extends EntityGolem implements IBossDisplayData
         this.targetTasks.addTask(3, new EntityAINearestAttackableTarget(this, EntityLiving.class, 0, false, true, IMob.mobSelector));
         this.hasCustomNameTag();
         this.setCustomNameTag("FuriousDestroyer");
+        
         addRandomArmor();
         DungeonHooks.addDungeonMob("FuriousDestroyer", 180);
     }

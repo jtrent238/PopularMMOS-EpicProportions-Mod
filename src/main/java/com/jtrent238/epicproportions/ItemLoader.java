@@ -26,6 +26,7 @@ import com.jtrent238.epicproportions.items.spawners.itemSpawnClown;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnCookieLittle;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnFred2_0;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnJen;
+import com.jtrent238.epicproportions.items.spawners.itemSpawnKitty;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnNinjaMaster;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnPat;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnSparky;
@@ -150,6 +151,7 @@ public class ItemLoader {
 	public static Item itemSpawnClown;
 	public static Item itemSpawnCandyPopper;
 	public static Item itemSpawnSparky;
+	public static Item itemSpawnKitty;
 	
 	//Armor
 		//Pat Armor
@@ -239,6 +241,7 @@ public static void LoadItems() {
 	itemSpawnClown = new itemSpawnClown().setUnlocalizedName("itemSpawnClown").setTextureName("epicproportionsmod:itemSpawnClown").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itemSpawnCandyPopper = new itemSpawnCandyPopper().setUnlocalizedName("itemSpawnCandyPopper").setTextureName("epicproportionsmod:itemSpawnCandyPopper").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itemSpawnSparky = new itemSpawnSparky().setUnlocalizedName("itemSpawnSparky").setTextureName("epicproportionsmod:itemSpawnSparky").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	itemSpawnKitty = new itemSpawnKitty().setUnlocalizedName("itemSpawnKitty").setTextureName("epicproportionsmod:itemSpawnKitty").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	
 	//Armor
 		//PatArmor
@@ -322,6 +325,7 @@ private static void registerItems(){
 	GameRegistry.registerItem(itemSpawnClown, itemSpawnClown.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemSpawnCandyPopper, itemSpawnCandyPopper.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemSpawnSparky, itemSpawnSparky.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(itemSpawnKitty, itemSpawnKitty.getUnlocalizedName().substring(5));
 	
 	//Armor
 			//PatArmor

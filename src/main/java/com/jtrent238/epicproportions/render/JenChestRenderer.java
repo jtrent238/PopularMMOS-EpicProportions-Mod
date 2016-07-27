@@ -6,6 +6,10 @@ import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL12;
 
 import com.jtrent238.epicproportions.blocks.blockJenChest;
+import com.jtrent238.epicproportions.model.ModelJenChest;
+import com.jtrent238.epicproportions.model.ModelLargeJenChest;
+import com.jtrent238.epicproportions.render.tileentity.TileEntityChestJenRenderer;
+import com.jtrent238.epicproportions.render.tileentity.TileEntityChestPatRenderer;
 import com.jtrent238.epicproportions.tileentity.TileEntityJenChest;
 
 import cpw.mods.fml.common.FMLLog;
@@ -16,12 +20,12 @@ import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ResourceLocation;
 
-public class JenChestRenderer  extends TileEntitySpecialRenderer
+public class JenChestRenderer  extends TileEntityChestJenRenderer /*/ TileEntitySpecialRenderer/*/
 {
     private static final ResourceLocation field_147505_d = new ResourceLocation("epicproportionsmod:LargeJenChest.png");
     private static final ResourceLocation field_147504_g = new ResourceLocation("epicproportionsmod:JenChest.png");
-    private ModelChest field_147510_h = new ModelChest();
-    private ModelChest field_147511_i = new ModelLargeChest();
+    private ModelJenChest field_147510_h = new ModelJenChest();
+    private ModelLargeJenChest field_147511_i = new ModelLargeJenChest();
     private boolean field_147509_j;
     private static final String __OBFID = "CL_00000965";
 
@@ -56,7 +60,7 @@ public class JenChestRenderer  extends TileEntitySpecialRenderer
                 }
                 catch (ClassCastException e)
                 {
-                    FMLLog.severe("Attempted to render a chest at %d,  %d, %d that was not a chest", p_147502_1_.xCoord, p_147502_1_.yCoord, p_147502_1_.zCoord);
+                    FMLLog.severe("Attempted to render a Jen chest at %d,  %d, %d that was not a jen chest", p_147502_1_.xCoord, p_147502_1_.yCoord, p_147502_1_.zCoord);
                 }
                 i = p_147502_1_.getBlockMetadata();
             }
@@ -66,7 +70,7 @@ public class JenChestRenderer  extends TileEntitySpecialRenderer
 
         if (p_147502_1_.adjacentChestZNeg == null && p_147502_1_.adjacentChestXNeg == null)
         {
-            ModelChest modelchest;
+            ModelJenChest modelchest;
 
             if (p_147502_1_.adjacentChestXPos == null && p_147502_1_.adjacentChestZPos == null)
             {

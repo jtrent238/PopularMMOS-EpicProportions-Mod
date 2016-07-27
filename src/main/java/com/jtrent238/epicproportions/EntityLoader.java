@@ -12,6 +12,7 @@ import com.jtrent238.epicproportions.entity.EntityCaptianCookieLittle;
 import com.jtrent238.epicproportions.entity.EntityClown;
 import com.jtrent238.epicproportions.entity.EntityFred2_0;
 import com.jtrent238.epicproportions.entity.EntityJen;
+import com.jtrent238.epicproportions.entity.EntityKitty;
 import com.jtrent238.epicproportions.entity.EntityNinjaMaster;
 import com.jtrent238.epicproportions.entity.EntityPat;
 import com.jtrent238.epicproportions.entity.EntitySparky;
@@ -20,27 +21,35 @@ import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import net.minecraft.client.model.ModelBiped;
 import net.minecraft.client.model.ModelCreeper;
+import net.minecraft.client.model.ModelOcelot;
 import net.minecraft.client.model.ModelPig;
 import net.minecraft.client.model.ModelVillager;
 import net.minecraft.client.model.ModelWolf;
 import net.minecraft.client.model.ModelZombie;
+import net.minecraft.client.renderer.entity.RenderCreeper;
 import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.entity.passive.EntitySheep;
 
+import com.jtrent238.epicproportions.model.ModelBomby;
 import com.jtrent238.epicproportions.model.ModelCandyPopper;
 import com.jtrent238.epicproportions.model.ModelFred2_0;
+import com.jtrent238.epicproportions.model.ModelKitty;
+import com.jtrent238.epicproportions.render.RenderBomby;
+
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.biome.BiomeGenBase;
 
 public class EntityLoader {
 
 	
+
+
 	public static void LoadEntitys() {
 	//Bomby Registry
 	    EntityRegistry.registerGlobalEntityID(EntityBomby.class, "EntityBomby",EntityRegistry.findGlobalUniqueEntityId());
-	    RenderingRegistry.registerEntityRenderingHandler(EntityBomby.class, new RenderLiving(new ModelCreeper(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityBomby.png");}});//Sets Bomby Texture
+	    RenderingRegistry.registerEntityRenderingHandler(EntityBomby.class, new RenderBomby(){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityBomby.png");}});//Sets Bomby Texture
 	
 	//Captian Cookie Registry
 	    EntityRegistry.registerGlobalEntityID(EntityCaptianCookie.class, "EntityCaptianCookie",EntityRegistry.findGlobalUniqueEntityId());
@@ -78,7 +87,7 @@ public class EntityLoader {
 	  //jtrent238 Registry
 	    EntityRegistry.registerGlobalEntityID(Entilyjtrent238.class, "Entilyjtrent238",EntityRegistry.findGlobalUniqueEntityId());
 	    RenderingRegistry.registerEntityRenderingHandler(Entilyjtrent238.class, new RenderLiving(new ModelBiped(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:Entilyjtrent238.png");}});//jtrent238 Texture
-	    EntityRegistry.addSpawn(Entilyjtrent238.class, 1, 4, 6, EnumCreatureType.creature, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.forest, BiomeGenBase.plains, BiomeGenBase.beach, BiomeGenBase.mesa, BiomeGenBase.savanna);
+	    EntityRegistry.addSpawn(Entilyjtrent238.class, 1, 1, 1, EnumCreatureType.creature, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.forest, BiomeGenBase.plains, BiomeGenBase.beach, BiomeGenBase.mesa, BiomeGenBase.savanna);
 	 
 	   // EntityRegistry.addSpawn(EntityPat.class, 25, 4, 6, EnumCreatureType.creature, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.icePlains);
 	/*  
@@ -102,6 +111,10 @@ public class EntityLoader {
 	    //Sparky Registry
 	    EntityRegistry.registerGlobalEntityID(EntitySparky.class, "EntitySparky",EntityRegistry.findGlobalUniqueEntityId());
 	    RenderingRegistry.registerEntityRenderingHandler(EntitySparky.class, new RenderLiving(new ModelWolf(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntitySparky.png");}});//Sparky Texture
+	    
+	    //Kitty Registry
+	    EntityRegistry.registerGlobalEntityID(EntityKitty.class, "EntityKitty",EntityRegistry.findGlobalUniqueEntityId());
+	    RenderingRegistry.registerEntityRenderingHandler(EntityKitty.class, new RenderLiving(new ModelKitty(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityKitty.png");}});//Kitty Texture
 	
 	}
 	//

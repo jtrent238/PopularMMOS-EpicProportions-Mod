@@ -1,9 +1,18 @@
 Epic Proportions Mod ChangeLog
 
+1.0.6.4
+- Added Kitty
+- Removed Random Creative Tabs
+- Fixed Version Info
+- Fixed Bomby (*Model Is Still Broke*)
+- Lowered Spawnrate of jtrent238
+- Added More Drops for jtrent238
+
 1.0.6.3
 - Added More Achevements
 - Added Love Flower
 - Tweaked The Startup Event
+- Tweaked The Loot Chests
 
 1.0.6.2
 - Added Troll TNT

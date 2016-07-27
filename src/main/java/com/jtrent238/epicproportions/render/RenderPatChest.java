@@ -6,6 +6,8 @@ import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL12;
 
 import com.jtrent238.epicproportions.blocks.blockPatChest;
+import com.jtrent238.epicproportions.model.ModelLargePatChest;
+import com.jtrent238.epicproportions.model.ModelPatChest;
 import com.jtrent238.epicproportions.tileentity.TileEntityPatChest;
 
 import cpw.mods.fml.common.FMLLog;
@@ -20,8 +22,8 @@ public class RenderPatChest extends TileEntitySpecialRenderer
 {
     private static final ResourceLocation field_147505_d = new ResourceLocation("epicproportionsmod:LargePatChest.png");
     private static final ResourceLocation field_147504_g = new ResourceLocation("epicproportionsmod:PatChest.png");
-    private ModelChest field_147510_h = new ModelChest();
-    private ModelChest field_147511_i = new ModelLargeChest();
+    private ModelPatChest field_147510_h = new ModelPatChest();
+    private ModelLargePatChest field_147511_i = new ModelLargePatChest();
     private boolean field_147509_j;
     private static final String __OBFID = "CL_00000965";
 
@@ -66,7 +68,7 @@ public class RenderPatChest extends TileEntitySpecialRenderer
 
         if (p_147502_1_.adjacentChestZNeg == null && p_147502_1_.adjacentChestXNeg == null)
         {
-            ModelChest modelchest;
+            ModelPatChest modelchest;
 
             if (p_147502_1_.adjacentChestXPos == null && p_147502_1_.adjacentChestZPos == null)
             {

@@ -98,6 +98,7 @@ import com.jtrent238.epicproportions.ItemLoader;
 @SuppressWarnings("unchecked")
 public class Entilyjtrent238 extends EntityGolem implements IBossDisplayData, IMerchant, INpc
 {
+	//private static Map jtrent238SellingList;
 	World world = null;
 	private int attackTimer;
 	/** This villager's current customer. */
@@ -118,10 +119,19 @@ public class Entilyjtrent238 extends EntityGolem implements IBossDisplayData, IM
     /** Last player to trade with this villager, used for aggressivity. */
     private String lastBuyingPlayer;
     private boolean isLookingForHome;
+	private EntityPlayer theCustomer;
+	private MerchantRecipeList theRecipes;
+	private static ArrayList recipeList;
+	private static Object villager;
+	private EntityPlayer p_70932_1_;
+	private MerchantRecipeList p_70930_1_;
+	private ArrayList merchantrecipelist;
+	private int p_70950_1_;
     /** Selling list of Villagers items. */
-    public static final Map villagersSellingList = new HashMap();
+    public static final Map jtrent238SellingList = new HashMap();
     /** Selling list of Blacksmith items. */
     private static final String __OBFID = "CL_00001707";
+	private static final Map villagersSellingList = jtrent238SellingList;
     public Entilyjtrent238(World var1)
     {
         super(var1);
@@ -235,7 +245,31 @@ this.dropItem(Items.nether_star, 2);
         this.entityDropItem(new ItemStack(Items.reeds, 12), 2.10F);
         this.entityDropItem(new ItemStack(Items.tnt_minecart, 12), 3.0F);
         this.entityDropItem(new ItemStack(Items.map, 12), 3.1F);
-	    
+    	this.entityDropItem(new ItemStack(Items.chicken, 16), 3.2F);
+        this.entityDropItem(new ItemStack(Items.bowl, 16), 3.3F);
+        this.entityDropItem(new ItemStack(Items.command_block_minecart, 5), 3.4F);
+        this.entityDropItem(new ItemStack(Items.blaze_powder, 8), 3.5F);
+        this.entityDropItem(new ItemStack(Items.wooden_hoe, 32), 3.6F);
+        this.entityDropItem(new ItemStack(Items.golden_carrot, 8), 3.7F);
+        this.entityDropItem(new ItemStack(Items.chainmail_boots, 12), 3.8F);
+        this.entityDropItem(new ItemStack(Items.shears, 3), 3.9F);
+        this.entityDropItem(new ItemStack(Items.wooden_axe, 6), 4.0F);
+        this.entityDropItem(new ItemStack(Items.quartz, 16), 4.1F);
+        this.entityDropItem(new ItemStack(Items.iron_sword, 8), 4.2F);
+        this.entityDropItem(new ItemStack(Items.gold_ingot, 1), 4.3F);
+        this.entityDropItem(new ItemStack(Items.record_stal, 64), 4.4F);
+        this.entityDropItem(new ItemStack(Items.repeater, 16), 4.5F);
+        this.entityDropItem(new ItemStack(Items.golden_chestplate, 8), 4.6F);
+        this.entityDropItem(new ItemStack(Items.fishing_rod, 6), 4.7F);
+        this.entityDropItem(new ItemStack(Items.map, 12), 4.8F);
+        this.entityDropItem(new ItemStack(Items.writable_book, 12), 4.9F);
+        this.entityDropItem(new ItemStack(Items.arrow, 12), 5.0F);
+        this.entityDropItem(new ItemStack(Items.wheat_seeds, 12), 5.1F);
+        this.entityDropItem(new ItemStack(Items.iron_hoe, 12), 5.2F);
+        this.entityDropItem(new ItemStack(Items.iron_axe, 12), 5.3F);
+        this.entityDropItem(new ItemStack(Items.melon_seeds, 12), 5.4F);
+        this.entityDropItem(new ItemStack(Items.record_ward, 12), 5.5F);
+        this.entityDropItem(new ItemStack(Items.leather_chestplate, 12), 5.6F);
 		
 		 }
 
@@ -263,7 +297,7 @@ this.dropItem(Items.nether_star, 2);
         return "mob.villager.death";
     }
 
-
+/*
     public void onStruckByLightning(EntityLightningBolt entityLightningBolt){
 		int i = (int)this.posX;
 		int j = (int)this.posY;
@@ -314,9 +348,10 @@ this.dropItem(Items.nether_star, 2);
 /**
 * Will return how many at most can spawn in a chunk at once.
 */
+	
 public int getMaxSpawnedInChunk()
 {
-   return 4;
+   return 1;
 }
 
 /**
@@ -352,6 +387,7 @@ protected void entityInit()
 /**
  * (abstract) Protected helper method to write subclass entity data to NBT.
  */
+
 public void writeEntityToNBT(NBTTagCompound p_70014_1_)
 {
     super.writeEntityToNBT(p_70014_1_);
@@ -367,6 +403,7 @@ public void writeEntityToNBT(NBTTagCompound p_70014_1_)
 /**
  * (abstract) Protected helper method to read subclass entity data from NBT.
  */
+
 public void readEntityFromNBT(NBTTagCompound p_70037_1_)
 {
     super.readEntityFromNBT(p_70037_1_);
@@ -380,20 +417,24 @@ public void readEntityFromNBT(NBTTagCompound p_70037_1_)
     }
 }
 
+
 public void setCustomer(EntityPlayer p_70932_1_)
 {
     this.buyingPlayer = p_70932_1_;
 }
+
 
 public EntityPlayer getCustomer()
 {
     return this.buyingPlayer;
 }
 
+
 public boolean isTrading()
 {
     return this.buyingPlayer != null;
 }
+
 
 public void useRecipe(MerchantRecipe p_70933_1_)
 {
@@ -422,6 +463,7 @@ public void useRecipe(MerchantRecipe p_70933_1_)
     }
 }
 
+/*
 public void func_110297_a_(ItemStack p_110297_1_)
 {
     if (!this.worldObj.isRemote && this.livingSoundTime > -this.getTalkInterval() + 20)
@@ -438,6 +480,7 @@ public void func_110297_a_(ItemStack p_110297_1_)
         }
     }
 }
+*/
 
 public MerchantRecipeList getRecipes(EntityPlayer p_70934_1_)
 {
@@ -449,70 +492,223 @@ public MerchantRecipeList getRecipes(EntityPlayer p_70934_1_)
     return this.buyingList;
 }
 
-/**
- * Adjusts the probability of obtaining a given recipe being offered by a villager
- */
-private float adjustProbability(float p_82188_1_)
+private void addDefaultEquipmentAndRecipies(int p_70950_1_)
 {
-    float f1 = p_82188_1_ + this.field_82191_bN;
-    return f1 > 0.9F ? 0.9F - (f1 - 0.9F) : f1;
-}
+	
+	if (this.buyingList != null)
+    {
+        this.field_82191_bN = MathHelper.sqrt_float((float)this.buyingList.size()) * 0.2F;
+    }
+    else
+    {
+        this.field_82191_bN = 0.0F;
+    }
 
-/**
- * based on the villagers profession add items, equipment, and recipies adds par1 random items to the list of things
- * that the villager wants to buy. (at most 1 of each wanted type is added)
- */
-private void addDefaultEquipmentAndRecipies(int p_70950_1_){
-
+    MerchantRecipeList merchantrecipelist;
+    merchantrecipelist = new MerchantRecipeList();
+    //VillagerRegistry.manageVillagerTrades(merchantrecipelist, this, this.getProfession(), this.rand);
+    int k;
+    //label50:
+    
+        
             func_146091_a(Items.wheat, this.rand, this.adjustProbability(0.9F));
             func_146091_a(Item.getItemFromBlock(Blocks.wool), this.rand, this.adjustProbability(0.5F));
             func_146091_a(Items.chicken, this.rand, this.adjustProbability(0.5F));
             func_146091_a(Items.cooked_fished, this.rand, this.adjustProbability(0.4F));
             
+            if (this.rand.nextFloat() < this.adjustProbability(0.5F))
+            {
+                merchantrecipelist.add(new MerchantRecipe(new ItemStack(ItemLoader.itemJenSword, 10), new ItemStack(Items.emerald), new ItemStack(Items.flint, 4 + this.rand.nextInt(2), 0)));
+            }
+
+          //  break;
+            /*
+        case 1:
+            func_146091_a(merchantrecipelist, Items.paper, this.rand, this.adjustProbability(0.8F));
+            func_146091_a(merchantrecipelist, Items.book, this.rand, this.adjustProbability(0.8F));
+            func_146091_a(merchantrecipelist, Items.written_book, this.rand, this.adjustProbability(0.3F));
+            func_146089_b(merchantrecipelist, Item.getItemFromBlock(Blocks.bookshelf), this.rand, this.adjustProbability(0.8F));
+            func_146089_b(merchantrecipelist, Item.getItemFromBlock(Blocks.glass), this.rand, this.adjustProbability(0.2F));
+            func_146089_b(merchantrecipelist, Items.compass, this.rand, this.adjustProbability(0.2F));
+            func_146089_b(merchantrecipelist, Items.clock, this.rand, this.adjustProbability(0.2F));
+
+            if (this.rand.nextFloat() < this.adjustProbability(0.07F))
+            {
+                Enchantment enchantment = Enchantment.enchantmentsBookList[this.rand.nextInt(Enchantment.enchantmentsBookList.length)];
+                int i1 = MathHelper.getRandomIntegerInRange(this.rand, enchantment.getMinLevel(), enchantment.getMaxLevel());
+                ItemStack itemstack = Items.enchanted_book.getEnchantedItemStack(new EnchantmentData(enchantment, i1));
+                k = 2 + this.rand.nextInt(5 + i1 * 10) + 3 * i1;
+                merchantrecipelist.add(new MerchantRecipe(new ItemStack(Items.book), new ItemStack(Items.emerald, k), itemstack));
+            }
+
+            break;
+            */
+            /*
+        case 2:
+            func_146089_b(merchantrecipelist, Items.ender_eye, this.rand, this.adjustProbability(0.3F));
+            func_146089_b(merchantrecipelist, Items.experience_bottle, this.rand, this.adjustProbability(0.2F));
+            func_146089_b(merchantrecipelist, Items.redstone, this.rand, this.adjustProbability(0.4F));
+            func_146089_b(merchantrecipelist, Item.getItemFromBlock(Blocks.glowstone), this.rand, this.adjustProbability(0.3F));
+            Item[] aitem = new Item[] {Items.iron_sword, Items.diamond_sword, Items.iron_chestplate, Items.diamond_chestplate, Items.iron_axe, Items.diamond_axe, Items.iron_pickaxe, Items.diamond_pickaxe};
+            Item[] aitem1 = aitem;
+            int j = aitem.length;
+            k = 0;
+
+            while (true)
+            {
+                if (k >= j)
+                {
+                    break label50;
+                }
+
+                Item item = aitem1[k];
+
+                if (this.rand.nextFloat() < this.adjustProbability(0.05F))
+                {
+                    merchantrecipelist.add(new MerchantRecipe(new ItemStack(item, 1, 0), new ItemStack(Items.emerald, 2 + this.rand.nextInt(3), 0), EnchantmentHelper.addRandomEnchantment(this.rand, new ItemStack(item, 1, 0), 5 + this.rand.nextInt(15))));
+                }
+
+                ++k;
+            }
+            */
+            /*
+        case 3:
+            func_146091_a(merchantrecipelist, Items.coal, this.rand, this.adjustProbability(0.7F));
+            func_146091_a(merchantrecipelist, Items.iron_ingot, this.rand, this.adjustProbability(0.5F));
+            func_146091_a(merchantrecipelist, Items.gold_ingot, this.rand, this.adjustProbability(0.5F));
+            func_146091_a(merchantrecipelist, Items.diamond, this.rand, this.adjustProbability(0.5F));
+            func_146089_b(merchantrecipelist, Items.iron_sword, this.rand, this.adjustProbability(0.5F));
+            func_146089_b(merchantrecipelist, Items.diamond_sword, this.rand, this.adjustProbability(0.5F));
+            func_146089_b(merchantrecipelist, Items.iron_axe, this.rand, this.adjustProbability(0.3F));
+            func_146089_b(merchantrecipelist, Items.diamond_axe, this.rand, this.adjustProbability(0.3F));
+            func_146089_b(merchantrecipelist, Items.iron_pickaxe, this.rand, this.adjustProbability(0.5F));
+            func_146089_b(merchantrecipelist, Items.diamond_pickaxe, this.rand, this.adjustProbability(0.5F));
+            func_146089_b(merchantrecipelist, Items.iron_shovel, this.rand, this.adjustProbability(0.2F));
+            func_146089_b(merchantrecipelist, Items.diamond_shovel, this.rand, this.adjustProbability(0.2F));
+            func_146089_b(merchantrecipelist, Items.iron_hoe, this.rand, this.adjustProbability(0.2F));
+            func_146089_b(merchantrecipelist, Items.diamond_hoe, this.rand, this.adjustProbability(0.2F));
+            func_146089_b(merchantrecipelist, Items.iron_boots, this.rand, this.adjustProbability(0.2F));
+            func_146089_b(merchantrecipelist, Items.diamond_boots, this.rand, this.adjustProbability(0.2F));
+            func_146089_b(merchantrecipelist, Items.iron_helmet, this.rand, this.adjustProbability(0.2F));
+            func_146089_b(merchantrecipelist, Items.diamond_helmet, this.rand, this.adjustProbability(0.2F));
+            func_146089_b(merchantrecipelist, Items.iron_chestplate, this.rand, this.adjustProbability(0.2F));
+            func_146089_b(merchantrecipelist, Items.diamond_chestplate, this.rand, this.adjustProbability(0.2F));
+            func_146089_b(merchantrecipelist, Items.iron_leggings, this.rand, this.adjustProbability(0.2F));
+            func_146089_b(merchantrecipelist, Items.diamond_leggings, this.rand, this.adjustProbability(0.2F));
+            func_146089_b(merchantrecipelist, Items.chainmail_boots, this.rand, this.adjustProbability(0.1F));
+            func_146089_b(merchantrecipelist, Items.chainmail_helmet, this.rand, this.adjustProbability(0.1F));
+            func_146089_b(merchantrecipelist, Items.chainmail_chestplate, this.rand, this.adjustProbability(0.1F));
+            func_146089_b(merchantrecipelist, Items.chainmail_leggings, this.rand, this.adjustProbability(0.1F));
+            break;
+        case 4:
+            func_146091_a(merchantrecipelist, Items.coal, this.rand, this.adjustProbability(0.7F));
+            func_146091_a(merchantrecipelist, Items.porkchop, this.rand, this.adjustProbability(0.5F));
+            func_146091_a(merchantrecipelist, Items.beef, this.rand, this.adjustProbability(0.5F));
+            func_146089_b(merchantrecipelist, Items.saddle, this.rand, this.adjustProbability(0.1F));
+            func_146089_b(merchantrecipelist, Items.leather_chestplate, this.rand, this.adjustProbability(0.3F));
+            func_146089_b(merchantrecipelist, Items.leather_boots, this.rand, this.adjustProbability(0.3F));
+            func_146089_b(merchantrecipelist, Items.leather_helmet, this.rand, this.adjustProbability(0.3F));
+            func_146089_b(merchantrecipelist, Items.leather_leggings, this.rand, this.adjustProbability(0.3F));
+            func_146089_b(merchantrecipelist, Items.cooked_porkchop, this.rand, this.adjustProbability(0.3F));
+            func_146089_b(merchantrecipelist, Items.cooked_beef, this.rand, this.adjustProbability(0.3F));
+            */
+    }
+{
+    //if (merchantrecipelist.isEmpty())
+    {
+        //func_146091_a(Items.gold_ingot, this.rand, 1.0F);
     }
 
+    //Collections.shuffle(merchantrecipelist);
 
+    if (this.buyingList == null)
+    {
+        this.buyingList = new MerchantRecipeList();
+    }
+
+    for (int l = 0; l < p_70950_1_ && l < merchantrecipelist.size(); ++l)
+    {
+        //this.buyingList.addToListWithCheck((MerchantRecipe)merchantrecipelist.get(l));
+    }
+
+    	
+	jtrent238SellingList.put(Items.coal, new Tuple(Integer.valueOf(16), Integer.valueOf(24)));
+	//recipeList.add(new MerchantRecipe(new ItemStack(Items.emerald, 2), new ItemStack(ItemLoader.itemBirthdayPresent, 1)));
+	//recipeList.add(ItemLoader.itemBirthdayPresent);
+	//recipeList.add(ItemLoader.itemBombyStructurePlacer);
+	//recipeList.add(ItemLoader.itemJenAxe);
+	//recipeList.add(ItemLoader.itemBombyStructurePlacer);
+	//recipeList.add(ItemLoader.itemEpicProportionsStar);
+}
+
+/**
+ * Adjusts the probability of obtaining a given recipe being offered by a villager
+ */
+/*
+private float adjustProbability(float p_82188_1_)
+{
+    float f1 = p_82188_1_ + this.field_82191_bN;
+    return f1 > 0.9F ? 0.9F - (f1 - 0.9F) : f1;
+}
+*/
+/**
+ * based on the villagers profession add items, equipment, and recipies adds par1 random items to the list of things
+ * that the villager wants to buy. (at most 1 of each wanted type is added)
+ */
+/*
+private void addDefaultEquipmentAndRecipies(int p_70950_1_){
+
+            func_146091_a(Items.wheat, this.rand, this.adjustProbability(100F));
+
+    }
+*/
+/*
 private int trades() {
 	return 0;
 }
+*/
 
 @SideOnly(Side.CLIENT)
 public void setRecipes(MerchantRecipeList p_70930_1_) {}
 
 public static void func_146091_a(Item p_146091_1_, Random p_146091_2_, float p_146091_3_)
 {
-	villagersSellingList.put(Items.coal, new Tuple(Integer.valueOf(16), Integer.valueOf(24)));
-    villagersSellingList.put(Items.iron_ingot, new Tuple(Integer.valueOf(8), Integer.valueOf(10)));
-    villagersSellingList.put(Items.gold_ingot, new Tuple(Integer.valueOf(8), Integer.valueOf(10)));
-    villagersSellingList.put(Items.diamond, new Tuple(Integer.valueOf(4), Integer.valueOf(6)));
-    villagersSellingList.put(Items.paper, new Tuple(Integer.valueOf(24), Integer.valueOf(36)));
-    villagersSellingList.put(Items.book, new Tuple(Integer.valueOf(11), Integer.valueOf(13)));
-    villagersSellingList.put(Items.written_book, new Tuple(Integer.valueOf(1), Integer.valueOf(1)));
-    villagersSellingList.put(Items.ender_pearl, new Tuple(Integer.valueOf(3), Integer.valueOf(4)));
-    villagersSellingList.put(Items.ender_eye, new Tuple(Integer.valueOf(2), Integer.valueOf(3)));
-    villagersSellingList.put(Items.porkchop, new Tuple(Integer.valueOf(14), Integer.valueOf(18)));
-    villagersSellingList.put(Items.beef, new Tuple(Integer.valueOf(14), Integer.valueOf(18)));
-    villagersSellingList.put(Items.chicken, new Tuple(Integer.valueOf(14), Integer.valueOf(18)));
-    villagersSellingList.put(Items.cooked_fished, new Tuple(Integer.valueOf(9), Integer.valueOf(13)));
-    villagersSellingList.put(Items.wheat_seeds, new Tuple(Integer.valueOf(34), Integer.valueOf(48)));
-    villagersSellingList.put(Items.melon_seeds, new Tuple(Integer.valueOf(30), Integer.valueOf(38)));
-    villagersSellingList.put(Items.pumpkin_seeds, new Tuple(Integer.valueOf(30), Integer.valueOf(38)));
-    villagersSellingList.put(Items.wheat, new Tuple(Integer.valueOf(18), Integer.valueOf(22)));
-    villagersSellingList.put(Item.getItemFromBlock(Blocks.wool), new Tuple(Integer.valueOf(14), Integer.valueOf(22)));
-    villagersSellingList.put(Items.rotten_flesh, new Tuple(Integer.valueOf(36), Integer.valueOf(64)));
+	jtrent238SellingList.put(Items.coal, new Tuple(Integer.valueOf(16), Integer.valueOf(24)));
+	//recipeList.add(new MerchantRecipe(new ItemStack(Items.emerald, 2), new ItemStack(ItemLoader.itemBirthdayPresent, 1)));
+	//recipeList.add(ItemLoader.itemBirthdayPresent);
+	//recipeList.add(ItemLoader.itemBombyStructurePlacer);
+	//recipeList.add(ItemLoader.itemJenAxe);
+	//recipeList.add(ItemLoader.itemBombyStructurePlacer);
+	//recipeList.add(ItemLoader.itemEpicProportionsStar);
+	
+	
     
 }
 
+@Override
+public void func_110297_a_(ItemStack p_110297_1_) {
+	new ItemStack(Items.emerald, 2);
+	new ItemStack(Items.baked_potato, 2);
+	new ItemStack(Items.beef, 2);
+	new ItemStack(Items.blaze_rod, 2);
+	new ItemStack(Items.bowl, 2);
+	
+}
+
+
+/*
 private static ItemStack func_146088_a(Item p_146088_0_, Random p_146088_1_)
 {
     return new ItemStack(p_146088_0_, func_146092_b(p_146088_0_, p_146088_1_), 0);
 }
-
+*/
+/*
 private static int func_146092_b(Item p_146092_0_, Random p_146092_1_)
 {
-    Tuple tuple = (Tuple)villagersSellingList.get(p_146092_0_);
+    Tuple tuple = (Tuple)jtrent238SellingList.get(p_146092_0_);
     return tuple == null ? 1 : (((Integer)tuple.getFirst()).intValue() >= ((Integer)tuple.getSecond()).intValue() ? ((Integer)tuple.getFirst()).intValue() : ((Integer)tuple.getFirst()).intValue() + p_146092_1_.nextInt(((Integer)tuple.getSecond()).intValue() - ((Integer)tuple.getFirst()).intValue()));
 }
+*/
 /*
 public static void func_146089_b(Item p_146089_1_, Random p_146089_2_, float p_146089_3_)
 {
@@ -537,9 +733,92 @@ public static void func_146089_b(Item p_146089_1_, Random p_146089_2_, float p_1
     }
 }
 */
+/*
 private static int func_146090_c(Item p_146089_1_, Random p_146089_2_) {
 	return 0;
 }
+*/
+/*
+private boolean isTrading() {
+	return true;
+}
+*/
+/*
+@Override
+public void setCustomer(EntityPlayer p_70932_1_) {
+	
+}
+*/
+/*
+@Override
+public EntityPlayer getCustomer() {
+	
+	return p_70932_1_;
+}
+*/
+/*
+@Override
+public MerchantRecipeList getRecipes(EntityPlayer p_70934_1_) {
+	
+	recipeList.add(new MerchantRecipe(new ItemStack(Items.emerald, 2), new ItemStack(ItemLoader.itemBirthdayPresent, 1)));
+	
+	return p_70930_1_;
+}
+*/
+/*
+@Override
+public void setRecipes(MerchantRecipeList p_70930_1_) {
+	
+	recipeList.add(new MerchantRecipe(new ItemStack(Items.emerald, 2), new ItemStack(ItemLoader.itemBirthdayPresent, 1)));
+	
+}
+*/
+/*
+@Override
+public void useRecipe(MerchantRecipe p_70933_1_) {
+	
+}
+*/
+/*
+@Override
+public void func_110297_a_(ItemStack p_110297_1_) {
+	
+}
 
 
+}
+*/
+
+/**
+ * Adjusts the probability of obtaining a given recipe being offered by a villager
+ */
+private float adjustProbability(float p_82188_1_)
+{
+    float f1 = p_82188_1_ + this.field_82191_bN;
+    return f1 > 0.9F ? 0.9F - (f1 - 0.9F) : f1;
+}
+
+static
+{
+	jtrent238SellingList.put(Items.coal, new Tuple(Integer.valueOf(16), Integer.valueOf(24)));
+	jtrent238SellingList.put(Items.iron_ingot, new Tuple(Integer.valueOf(8), Integer.valueOf(10)));
+    villagersSellingList.put(Items.gold_ingot, new Tuple(Integer.valueOf(8), Integer.valueOf(10)));
+    villagersSellingList.put(Items.diamond, new Tuple(Integer.valueOf(4), Integer.valueOf(6)));
+    villagersSellingList.put(Items.paper, new Tuple(Integer.valueOf(24), Integer.valueOf(36)));
+    villagersSellingList.put(Items.book, new Tuple(Integer.valueOf(11), Integer.valueOf(13)));
+    villagersSellingList.put(Items.written_book, new Tuple(Integer.valueOf(1), Integer.valueOf(1)));
+    villagersSellingList.put(Items.ender_pearl, new Tuple(Integer.valueOf(3), Integer.valueOf(4)));
+    villagersSellingList.put(Items.ender_eye, new Tuple(Integer.valueOf(2), Integer.valueOf(3)));
+    villagersSellingList.put(Items.porkchop, new Tuple(Integer.valueOf(14), Integer.valueOf(18)));
+    villagersSellingList.put(Items.beef, new Tuple(Integer.valueOf(14), Integer.valueOf(18)));
+    villagersSellingList.put(Items.chicken, new Tuple(Integer.valueOf(14), Integer.valueOf(18)));
+    villagersSellingList.put(Items.cooked_fished, new Tuple(Integer.valueOf(9), Integer.valueOf(13)));
+    villagersSellingList.put(Items.wheat_seeds, new Tuple(Integer.valueOf(34), Integer.valueOf(48)));
+    villagersSellingList.put(Items.melon_seeds, new Tuple(Integer.valueOf(30), Integer.valueOf(38)));
+    villagersSellingList.put(Items.pumpkin_seeds, new Tuple(Integer.valueOf(30), Integer.valueOf(38)));
+    villagersSellingList.put(Items.wheat, new Tuple(Integer.valueOf(18), Integer.valueOf(22)));
+    villagersSellingList.put(Item.getItemFromBlock(Blocks.wool), new Tuple(Integer.valueOf(14), Integer.valueOf(22)));
+    villagersSellingList.put(Items.rotten_flesh, new Tuple(Integer.valueOf(36), Integer.valueOf(64)));
+    
+}
 }
