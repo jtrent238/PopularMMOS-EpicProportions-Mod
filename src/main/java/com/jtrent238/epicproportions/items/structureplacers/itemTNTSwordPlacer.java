@@ -3,9 +3,11 @@ package com.jtrent238.epicproportions.items.structureplacers;
 import com.jtrent238.epicproportions.EpicProportionsMod;
 
 import net.minecraft.block.Block;
+import net.minecraft.client.Minecraft;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.projectile.EntitySnowball;
+import net.minecraft.inventory.IInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
@@ -25,7 +27,7 @@ public int getItemEnchantability()
 }
 public int getMaxItemUseDuration(ItemStack par1ItemStack)
 {
-    return 0;
+    return 1;
 }
 public float getStrVsBlock(ItemStack par1ItemStack, Block par2Block)
 {
@@ -221,10 +223,24 @@ if(place){
 }
 }
 
+
 return true;
 }
 
 
-
+public void removeItem(EntityPlayer ep, ItemStack removeitem) {
+	IInventory inv = ep.inventory;
+	for(int i=0; i < inv.getSizeInventory(); i++)
+	{
+		if(inv.getStackInSlot(i) != null)
+		{
+			ItemStack j = inv.getStackInSlot(i);
+			if(j.getItem() != null && j.getItem() == removeitem.getItem())
+			{
+				inv.setInventorySlotContents(i, null);
+			}
+		}
+	}
+}
 
 }

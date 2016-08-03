@@ -4,6 +4,7 @@ import com.jtrent238.epicproportions.ItemLoader;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemArmor;
@@ -17,7 +18,8 @@ public class ItemSuperJenArmor  extends ItemArmor{
 
 	private String textureName;
 	private int armorType;
-	
+	private static final int enchant = ItemLoader.superenchantlvl;
+
 
 	public ItemSuperJenArmor(ArmorMaterial diamond, int i, int j) {
 		super(diamond, 0, i);
@@ -60,4 +62,18 @@ public class ItemSuperJenArmor  extends ItemArmor{
 	    player.addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 40));
 	 	player.addPotionEffect(new PotionEffect(Potion.jump.id, 40));
 	 }
+	 
+		public void onCreated(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer)
+	    {
+			par1ItemStack.addEnchantment(Enchantment.unbreaking, enchant);
+			par1ItemStack.addEnchantment(Enchantment.aquaAffinity, enchant);
+			par1ItemStack.addEnchantment(Enchantment.blastProtection, enchant);
+			par1ItemStack.addEnchantment(Enchantment.featherFalling, enchant);
+			par1ItemStack.addEnchantment(Enchantment.fireProtection, enchant);
+			par1ItemStack.addEnchantment(Enchantment.projectileProtection, enchant);
+			par1ItemStack.addEnchantment(Enchantment.protection, enchant);
+			par1ItemStack.addEnchantment(Enchantment.respiration, enchant);
+			par1ItemStack.addEnchantment(Enchantment.thorns, enchant);
+			
+	}
 }

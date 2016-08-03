@@ -1,4 +1,4 @@
-//jtrent238's Elemental Mod Lang File
+//jtrent238's Epic Proportions Mod Lang File
 //en_US
 
 //Items
@@ -14,6 +14,14 @@ item.itemTNTSwordPlacer.name=TNT Sword
 item.itemBirthdayPresent.name=Birthday Present
 item.itemHouseOfEpicProportionsPlacer.name=House Of Epic Proportions [WIP]
 item.itemBombyStructurePlacer.name=Bomby Structure
+item.itemJensHoleStructurePlacer_1.name=Jen's Hole 1 [WIP]
+item.itemJensHoleStructurePlacer_2.name=Jen's Hole 2 [WIP]
+item.itemJensHoleStructurePlacer_3.name=Jen's Hole 3 [WIP]
+item.itemJensHoleStructurePlacer_4.name=Jen's Hole 4 [WIP]
+item.itemJensHoleStructurePlacer_5.name=Jen's Hole 5 [WIP]
+item.itemSwordOfEpicProportions_Part1.name=Sword Of Epic Proportions Part 1
+item.itemSwordOfEpicProportions_Part2.name=Sword Of Epic Proportions Part 2
+item.itemSwordOfEpicProportions_Part3.name=Sword Of Epic Proportions Part 3
 
 	/Weapons & Tools
 item.itemPatSword.name=FuriousDestroyer's Sword
@@ -35,6 +43,23 @@ item.itemJenArrow.name=SuperGirlyGamer's Arrow
 item.itemPatMultiTool.name=FuriousDestroyer's MultiTool
 item.itemJenMultiTool.name=SuperGirlyGamer's MultiTool
 
+item.itemSuperPatSword.name=FuriousDestroyer's Super Sword
+item.itemSuperJenSword.name=SuperGirlyGamer's Super Sword
+item.itemSuperPatPick.name=FuriousDestroyer's Super Pickaxe
+item.itemSuperJenPick.name=SuperGirlyGamer's Super Pickaxe
+item.itemSuperPatAxe.name=FuriousDestroyer's Super Axe
+item.itemSuperJenAxe.name=SuperGirlyGamer's Super Axe
+item.itemSuperPatShovel.name=FuriousDestroyer's Super Shovel
+item.itemSuperJenShovel.name=SuperGirlyGamer's Super Shovel
+item.itemSuperPatHoe.name=FuriousDestroyer's Super Hoe
+item.itemSuperJenHoe.name=SuperGirlyGamer's Super Hoe
+item.itemSuperPatMultiTool.name=FuriousDestroyer's Super MultiTool
+item.itemSuperJenMultiTool.name=SuperGirlyGamer's Super MultiTool
+item.itemSwordOfEpicProportions.name=Sword Of Epic Proportions
+item.itemPickOfEpicProportions.name=Pickaxe Of Epic Proportions
+item.itemShovelOfEpicProportions.name=Shovel Of Epic Proportions
+item.itemHoeOfEpicProportions.name=Hoe Of Epic Proportions
+item.itemAxeOfEpicProportions.name=Axe Of Epic Proportions
 
 	/Armor
 		/Pat
@@ -60,19 +85,27 @@ item.itemSuperJenBoots.name=SuperGirlyGamer's Super Boots
 
 
 	/Spawn Eggs
-item.itemSpawnBomby.name=Spawn Bomby §4[WIP]§r
+item.itemSpawnBomby.name=Spawn Bomby [WIP]
 item.itemSpawnCaptianCookie.name=Spawn Captain Cookie
 item.itemSpawnPat.name=Spawn FuriousDestroyer
 item.itemSpawnJen.name=Spawn SuperGirlyGamer
-item.itemSpawnFred2_0.name=Spawn Fred 2.0
+item.itemSpawnFred2_0.name=Spawn Fred 2.0 [WIP]
 item.itemSpawnNinjaMaster.name=Spawn Ninja Master
 item.itemSpawnCandyMan.name=Spawn §2The Candy Man §r
 item.itemSpawnCookieLittle.name=Spawn Captain Cookie Little §4[WIP]§r
 item.itemSpawnjtrent238.name=Spawn jtrent238
 item.itemSpawnClown.name=Spawn Clown
-item.itemSpawnCandyPopper.name=Spawn Candy Popper
+item.itemSpawnCandyPopper.name=Spawn Candy Popper [WIP]
 item.itemSpawnSparky.name=Spawn Sparky
 item.itemSpawnKitty.name=Spawn Kitty
+item.itemSpawnKami.name=Spawn Kami [WIP]
+item.itemSpawnPopo.name=Spawn Popo [WIP]
+item.itemSpawnBanana.name=Spawn Banana
+item.itemSpawnBlockling.name=Spawn Small Blockling [WIP]
+item.itemSpawnVillagerOfEpicProportions.name=Spawn Villager Of EpicPropotions [WIP]
+item.itemSpawnPatVillager.name=Spawn FuriousDestroyer Villager [WIP]
+item.itemSpawnJenVillager.name=Spawn SuperGirlyGamer Villager [WIP]
+
 
 //Blocks
 tile.blockFartBomb.name=Fart Bomb
@@ -104,7 +137,10 @@ entity.EntityClown.name=Clown
 entity.EntityCandyPopper.name=Candy Popper
 entity.EntitySparky.name=Sparky
 entity.EntityKitty.name=Kitty
-
+entity.EntityKami.name=Kami
+entity.EntityPopo.name=Popo
+entity.EntityBanana.name=Banana
+entity.EntityBlockling_Small.name=Small Blockling
 
 //Mod Devs And Helpers
 entity.Entityjtrent238.name=jtrent238
@@ -151,6 +187,10 @@ achievement.funny.desc=Kill A Clown
 
 //Enchantments
 //Potions
+//ToolTips
+tooltip.epicproportionsmod.itemSwordOfEpicProportions_Part_1=Combine with other Parts to make 
+tooltip.epicproportionsmod.itemSwordOfEpicProportions_Part_2=The Sword of EpicPropotions
+
 
 //Creative Tabs
 itemGroup.EpicProportionsMod=jtrent238's Epic Proportions Mod

@@ -94,9 +94,10 @@ import net.minecraft.init.*;
 import java.util.*;
 
 import com.jtrent238.epicproportions.ItemLoader;
+import com.jtrent238.epicproportions.TradeHandler;
 
 @SuppressWarnings("unchecked")
-public class Entilyjtrent238 extends EntityGolem implements IBossDisplayData, IMerchant, INpc
+public class Entilyjtrent238 extends EntityVillager// implements IBossDisplayData, IMerchant, INpc
 {
 	//private static Map jtrent238SellingList;
 	World world = null;
@@ -123,15 +124,21 @@ public class Entilyjtrent238 extends EntityGolem implements IBossDisplayData, IM
 	private MerchantRecipeList theRecipes;
 	private static ArrayList recipeList;
 	private static Object villager;
+	private static MerchantRecipeList mylist;
+	private static MerchantRecipeList trades;
 	private EntityPlayer p_70932_1_;
 	private MerchantRecipeList p_70930_1_;
 	private ArrayList merchantrecipelist;
 	private int p_70950_1_;
-    /** Selling list of Villagers items. */
+	private String tradehandler;
+	private IExtendedEntityProperties properties;
+	private CrashReportCategory CrashInfo_Entilyjtrent238;
+	/** Selling list of Villagers items. */
     public static final Map jtrent238SellingList = new HashMap();
     /** Selling list of Blacksmith items. */
     private static final String __OBFID = "CL_00001707";
 	private static final Map villagersSellingList = jtrent238SellingList;
+	private static final MerchantRecipeList list = mylist;
     public Entilyjtrent238(World var1)
     {
         super(var1);
@@ -157,19 +164,48 @@ public class Entilyjtrent238 extends EntityGolem implements IBossDisplayData, IM
         this.targetTasks.addTask(3, new EntityAINearestAttackableTarget(this, EntityLiving.class, 0, false, true, IMob.mobSelector));
         this.hasCustomNameTag();
         this.setCustomNameTag("jtrent238");
+        this.registerExtendedProperties(tradehandler, properties);
         addRandomArmor();
         DungeonHooks.addDungeonMob("jtrent238", 180);
+        this.setProfession(22);
+        this.registerVillageTradeHandler(22, new TradeHandler());
+        this.getProfession();
+        //this.addEntityCrashInfo(CrashInfo_Entilyjtrent238);
+
+        
+
     }
     
-    @SideOnly(Side.CLIENT)
-	public void registerRenderers(){
-		RenderingRegistry.registerEntityRenderingHandler(Entilyjtrent238.class, new RenderLiving(new ModelBiped(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:Entilyjtrent238.png");}
 
+    
+
+	private void registerVillageTradeHandler(int i, TradeHandler tradeHandler2) {
+
+		
+	}
+
+
+
+
+	@SideOnly(Side.CLIENT)
+	public void registerRenderers(){
+		RenderingRegistry.registerEntityRenderingHandler(Entilyjtrent238.class, new RenderLiving(new ModelBiped(), 0){private int jtrent238;
+
+		protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:Entilyjtrent238.png");}
+		/*
+		@SideOnly(Side.CLIENT)
+		public void villagerHandler(){
+			VillagerRegistry.instance().registerVillagerId(jtrent238);
+	    	VillagerRegistry.instance().registerVillageTradeHandler(0, new TradeHandler());
+	    	VillagerRegistry.instance().getRegisteredVillagers(); 
+	    	VillagerRegistry.instance().registerVillagerSkin(0, new ResourceLocation("epicproportionsmod", "test.png"));
+	   }
+*//*
 public void doRender(EntityLiving par1EntityLiving, double par2, double par4, double par6, float par8, float par9){
 super.doRender(par1EntityLiving, par2, par4, par6, par8, par9);
 BossStatus.setBossStatus((Entilyjtrent238)par1EntityLiving, true);
 }
-
+*/
 });
     }
     protected void applyEntityAttributes()
@@ -199,6 +235,7 @@ protected void addRandomArmor(){
 
 protected void dropRareDrop(int par1){
 this.dropItem(Items.nether_star, 2);
+this.dropItem(ItemLoader.itemSwordOfEpicProportions_Part1, 1);
 }
 
 
@@ -356,7 +393,7 @@ public int getMaxSpawnedInChunk()
 
 /**
  * Called when a player interacts with a mob. e.g. gets milk from a cow, gets into the saddle on a pig.
- */
+ *//*
 public boolean interact(EntityPlayer p_70085_1_)
 {
     ItemStack itemstack = p_70085_1_.inventory.getCurrentItem();
@@ -376,18 +413,18 @@ public boolean interact(EntityPlayer p_70085_1_)
     {
         return super.interact(p_70085_1_);
     }
-}
-
+}*/
+/*
 protected void entityInit()
 {
     super.entityInit();
     this.dataWatcher.addObject(16, Integer.valueOf(0));
 }
-
+*/
 /**
  * (abstract) Protected helper method to write subclass entity data to NBT.
  */
-
+/*
 public void writeEntityToNBT(NBTTagCompound p_70014_1_)
 {
     super.writeEntityToNBT(p_70014_1_);
@@ -399,11 +436,11 @@ public void writeEntityToNBT(NBTTagCompound p_70014_1_)
         p_70014_1_.setTag("Offers", this.buyingList.getRecipiesAsTags());
     }
 }
-
+*/
 /**
  * (abstract) Protected helper method to read subclass entity data from NBT.
  */
-
+/*
 public void readEntityFromNBT(NBTTagCompound p_70037_1_)
 {
     super.readEntityFromNBT(p_70037_1_);
@@ -462,7 +499,7 @@ public void useRecipe(MerchantRecipe p_70933_1_)
         this.wealth += p_70933_1_.getItemToBuy().stackSize;
     }
 }
-
+*/
 /*
 public void func_110297_a_(ItemStack p_110297_1_)
 {
@@ -481,7 +518,7 @@ public void func_110297_a_(ItemStack p_110297_1_)
     }
 }
 */
-
+/*
 public MerchantRecipeList getRecipes(EntityPlayer p_70934_1_)
 {
     if (this.buyingList == null)
@@ -490,8 +527,8 @@ public MerchantRecipeList getRecipes(EntityPlayer p_70934_1_)
     }
 
     return this.buyingList;
-}
-
+}*/
+/*
 private void addDefaultEquipmentAndRecipies(int p_70950_1_)
 {
 	
@@ -506,21 +543,21 @@ private void addDefaultEquipmentAndRecipies(int p_70950_1_)
 
     MerchantRecipeList merchantrecipelist;
     merchantrecipelist = new MerchantRecipeList();
-    //VillagerRegistry.manageVillagerTrades(merchantrecipelist, this, this.getProfession(), this.rand);
-    int k;
-    //label50:
+    VillagerRegistry.manageVillagerTrades(merchantrecipelist, this, this.getProfession(), this.rand);
+   int k;
+    label50:
     
-        
+        /*
             func_146091_a(Items.wheat, this.rand, this.adjustProbability(0.9F));
             func_146091_a(Item.getItemFromBlock(Blocks.wool), this.rand, this.adjustProbability(0.5F));
             func_146091_a(Items.chicken, this.rand, this.adjustProbability(0.5F));
             func_146091_a(Items.cooked_fished, this.rand, this.adjustProbability(0.4F));
-            
-            if (this.rand.nextFloat() < this.adjustProbability(0.5F))
+            */
+         /*   if (this.rand.nextFloat() < this.adjustProbability(0.5F))
             {
                 merchantrecipelist.add(new MerchantRecipe(new ItemStack(ItemLoader.itemJenSword, 10), new ItemStack(Items.emerald), new ItemStack(Items.flint, 4 + this.rand.nextInt(2), 0)));
             }
-
+*/
           //  break;
             /*
         case 1:
@@ -612,7 +649,7 @@ private void addDefaultEquipmentAndRecipies(int p_70950_1_)
             func_146089_b(merchantrecipelist, Items.cooked_porkchop, this.rand, this.adjustProbability(0.3F));
             func_146089_b(merchantrecipelist, Items.cooked_beef, this.rand, this.adjustProbability(0.3F));
             */
-    }
+    //}
 {
     //if (merchantrecipelist.isEmpty())
     {
@@ -620,7 +657,7 @@ private void addDefaultEquipmentAndRecipies(int p_70950_1_)
     }
 
     //Collections.shuffle(merchantrecipelist);
-
+/*
     if (this.buyingList == null)
     {
         this.buyingList = new MerchantRecipeList();
@@ -630,9 +667,9 @@ private void addDefaultEquipmentAndRecipies(int p_70950_1_)
     {
         //this.buyingList.addToListWithCheck((MerchantRecipe)merchantrecipelist.get(l));
     }
-
+*/
     	
-	jtrent238SellingList.put(Items.coal, new Tuple(Integer.valueOf(16), Integer.valueOf(24)));
+	//jtrent238SellingList.put(Items.coal, new Tuple(Integer.valueOf(16), Integer.valueOf(24)));
 	//recipeList.add(new MerchantRecipe(new ItemStack(Items.emerald, 2), new ItemStack(ItemLoader.itemBirthdayPresent, 1)));
 	//recipeList.add(ItemLoader.itemBirthdayPresent);
 	//recipeList.add(ItemLoader.itemBombyStructurePlacer);
@@ -667,7 +704,7 @@ private int trades() {
 	return 0;
 }
 */
-
+/*
 @SideOnly(Side.CLIENT)
 public void setRecipes(MerchantRecipeList p_70930_1_) {}
 
@@ -684,7 +721,8 @@ public static void func_146091_a(Item p_146091_1_, Random p_146091_2_, float p_1
 	
     
 }
-
+*/
+/*
 @Override
 public void func_110297_a_(ItemStack p_110297_1_) {
 	new ItemStack(Items.emerald, 2);
@@ -694,7 +732,7 @@ public void func_110297_a_(ItemStack p_110297_1_) {
 	new ItemStack(Items.bowl, 2);
 	
 }
-
+*/
 
 /*
 private static ItemStack func_146088_a(Item p_146088_0_, Random p_146088_1_)
@@ -792,7 +830,7 @@ public void func_110297_a_(ItemStack p_110297_1_) {
 /**
  * Adjusts the probability of obtaining a given recipe being offered by a villager
  */
-private float adjustProbability(float p_82188_1_)
+/*private float adjustProbability(float p_82188_1_)
 {
     float f1 = p_82188_1_ + this.field_82191_bN;
     return f1 > 0.9F ? 0.9F - (f1 - 0.9F) : f1;
@@ -821,4 +859,22 @@ static
     villagersSellingList.put(Items.rotten_flesh, new Tuple(Integer.valueOf(36), Integer.valueOf(64)));
     
 }
+*/
+/*
+@Override
+public void setRecipes(MerchantRecipeList p_70930_1_) {
+	recipeList.add(new MerchantRecipe(new ItemStack(Items.emerald, 2), new ItemStack(Items.apple, 1)));
+	
+}
+
+@Override
+public void func_110297_a_(ItemStack p_110297_1_) {
+	
+}
+
+@Override
+public MerchantRecipeList getRecipes(EntityPlayer p_70934_1_) {
+	
+	return Entilyjtrent238.trades;
+}*/
 }

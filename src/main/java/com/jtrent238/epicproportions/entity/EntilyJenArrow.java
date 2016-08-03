@@ -605,7 +605,7 @@ public class EntilyJenArrow  extends Entity implements IProjectile
     /**
      * returns EntityDamageSourceIndirect of an arrow
      */
-    public static DamageSource causeArrowDamage(EntityArrow p_76353_0_, Entity p_76353_1_)
+    public static DamageSource causeArrowDamage(EntilyJenArrow p_76353_0_, Entity p_76353_1_)
     {
         return (new EntityDamageSourceIndirect("arrow", p_76353_0_, p_76353_1_)).setProjectile();
     }

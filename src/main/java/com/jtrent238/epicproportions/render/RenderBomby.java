@@ -20,7 +20,7 @@ extends RenderLiving /*/extends RenderLiving/*/
     private static final ResourceLocation armoredBombyTextures = new ResourceLocation("textures/entity/creeper/creeper_armor.png");
     private static final ResourceLocation BombyTextures = new ResourceLocation("textures/entity/creeper/creeper.png");
     /** The creeper model. */
-    private ModelBase bombyModel = new ModelBomby(2.0F);
+    private ModelBase bombyModel = new ModelBomby();
     private static final String __OBFID = "CL_00000985";
 
     public RenderBomby()

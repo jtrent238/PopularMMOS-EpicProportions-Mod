@@ -170,31 +170,31 @@ public class EntitySparky  extends EntityWolf/*/extends EntityTameable/*/
             this.setCollarColor(p_70037_1_.getByte("CollarColor"));
         }
     }
-*/
+
     /**
      * Returns the sound this mob makes while it's alive.
      */
-    /*
+    
     protected String getLivingSound()
     {
-        return this.isAngry() ? "mob.wolf.growl" : (this.rand.nextInt(3) == 0 ? (this.isTamed() && this.dataWatcher.getWatchableObjectFloat(18) < 10.0F ? "mob.wolf.whine" : "mob.wolf.panting") : "mob.wolf.bark");
+        return this.isAngry() ? "sparky_growl" : (this.rand.nextInt(3) == 0 ? (this.isTamed() && this.dataWatcher.getWatchableObjectFloat(18) < 10.0F ? "sparky_whine" : "sparky_panting") : "sparky_bark");
     }
-*/
+
     /**
      * Returns the sound this mob makes when it is hurt.
      */
    
-    /*protected String getHurtSound()
+    protected String getHurtSound()
     {
-        return "mob.wolf.hurt";
+        return "sparky_hurt";
     }
-*/
+
     /**
      * Returns the sound this mob makes on death.
      */
     protected String getDeathSound()
     {
-        return "mob.wolf.death";
+        return "sparky_death";
     }
 
     /**

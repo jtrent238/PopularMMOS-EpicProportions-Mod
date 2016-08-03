@@ -17,12 +17,20 @@ import net.minecraft.item.EnumAction;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
+import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.world.World;
 
 public class itemPatSword extends ItemSword
 {
 
+	private static final int mySwordDamage = 999999999;
+	private static final ToolMaterial material = ToolMaterial.EMERALD;
+	private Object field_150934_a;
+
 	public itemPatSword(ToolMaterial EMERALD) {
 		super(EMERALD);
+		this.field_150934_a = mySwordDamage + material.getDamageVsEntity();
 	}
+	
+	
 }

@@ -2,20 +2,25 @@ package com.jtrent238.epicproportions;
 
 import java.util.Random;
 
+import com.jtrent238.epicproportions.common.CommonProxy;
+//import com.jtrent238.coremod.CommonProxy;
 import com.jtrent238.epicproportions.eventhandler.OnJoinEvent;
 import com.jtrent238.epicproportions.items.structureplacers.itemTNTSwordSpawner;
-import com.jtrent238.epicproportions.render.RenderChests;
+import com.jtrent238.epicproportions.network.MyMessage;
 import com.jtrent238.epicproportions.tileentity.TileEntityLoader;
+import com.jtrent238.epicproportions.worldgen.ModWorldGen;
 import com.jtrent238.epicproportions.worldgen.WorldGenModFlower;
 import com.jtrent238.epicproportions.worldgen.structures.structureTntSword;
 
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Instance;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.eventhandler.EventPriority;
+import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.VillagerRegistry;
 import cpw.mods.fml.relauncher.Side;
@@ -35,6 +40,8 @@ import net.minecraftforge.common.MinecraftForge;
 public class EpicProportionsMod
 {
 
+	@SidedProxy(clientSide="com.jtrent238.epicproportions.client.ClientProxy", serverSide="com.jtrent238.epicproportions.common.CommonProxy")
+	public static CommonProxy proxy;
 	
 	public static final String MODID = "epicproportionsmod";
     
@@ -45,59 +52,30 @@ public class EpicProportionsMod
 
 	@Instance(MODID)
     public static EpicProportionsMod instance;
-	public static final String MODVERSION = "1.0.6.4";
+	public static final String MODVERSION = "1.1.6.4";
 	public static final String MODNAME = "jtrent238's EpicProportions Mod";
 	public static final String MODAUTHOR = "jtrent238";
+	public static final String MC = "[1.7.10]";
+	
 	public static CrashReportCategory CRASHINFO;
 	public static NBTTagCompound NBTJOIN;
 
 
 
 	private Object obj;
-
-
-
 	private String villageblacksmith;
-
-
-
 	private Random rnd;
-
-
-
 	private String dungeon;
-
-
-
 	private String bonus;
-
-
-
 	private String stronglib;
-
-
-
 	private String strongcross;
-
-
-
 	private String dispenser;
-
-
-
 	private String strongholdcorridor;
-
-
-
 	private String junglechest;
-
-
-
 	private String desertchest;
-
-
-
 	private String minecorridor;
+
+	private Object network;
 
 	@ForgeSubscribe(priority = EventPriority.NORMAL)
     public void eventHandler(RenderGameOverlayEvent event) {
@@ -126,8 +104,15 @@ public void preInit(FMLPreInitializationEvent event)
 	Achievements.registerPage();
     */
 	
-	FMLCommonHandler.instance().bus().register(new OnJoinEvent());
-	}
+	//FMLCommonHandler.instance().bus().register(new OnJoinEvent());
+	
+	 network = NetworkRegistry.INSTANCE.newSimpleChannel("MyChannel");
+     //network.registerMessage(MyMessage.Handler.class, MyMessage.class, 0, Side.SERVER);
+     // network.registerMessage(SecondMessage.Handler.class, SecondMessage.class, 1, Side.CLIENT);
+     // ...
+	
+
+}
 
 
 private void setHarvestLevel(String string, int i) {
@@ -138,16 +123,21 @@ private void setHarvestLevel(String string, int i) {
 @Mod.EventHandler
 public void init(FMLInitializationEvent event)
 {
+	proxy.init(event);
 	BlockLoader.loadBlocks();
 	ItemLoader.LoadItems();
 	EntityLoader.LoadEntitys();
 	TileEntityLoader.mainRegistry();
-	RenderChests.RenderTileEntitys();
+	
+	
 	Achievements.loadAchievements();
 	//ModLoader.LoadMods();
 	//InventoryLoader.LoadInventorys();
 	//SoundEvents.LoadSounds();
 	Recipes.registerRecpies();
+	
+	GameRegistry.registerWorldGenerator(new ModWorldGen(), 0);
+
 	
 	ChestGenHooks.getInfo(ChestGenHooks.BONUS_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.itemJenIngot), 0, 1, 1));
 	ChestGenHooks.getInfo(ChestGenHooks.BONUS_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.itemPatIngot), 0, 1, 1));
@@ -245,9 +235,11 @@ public void init(FMLInitializationEvent event)
 	//GameRegistry.registerWorldGenerator(mStructureGenerator);
 
 	// iterate through all the villager types and add their new trades
-		for (int i = 0; i < 5; ++i) {
+		/*for (int i = 0; i < 5; ++i) {
 			VillagerRegistry.instance().registerVillageTradeHandler(i, new TradeHandler());
-		}
+		}*/
+		
+		
 }
 
 
@@ -287,7 +279,7 @@ public static CreativeTabs EpicProportionsMod = new CreativeTabs("EpicProportion
 @Mod.EventHandler
 public void postInit(FMLPostInitializationEvent event) {
 	{
-		MinecraftForge.EVENT_BUS.register(new WorldGenModFlower());
+		MinecraftForge.EVENT_BUS.register(new WorldGenModFlower(null));
 	    Recipes.registerRecpies();
 
 	}

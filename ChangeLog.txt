@@ -1,5 +1,58 @@
 Epic Proportions Mod ChangeLog
 
+1.1.6.4
+- Added Crafting Recipe for Jen Staff
+- Added Crafting Recipe for Pat Staff
+- Added Crafting Recipe for Jen Shovel
+- Added Crafting Recipe for Pat Shovel
+- Added Crafting Recipe for Pat Hoe
+- Added Crafting Recipe for Jen Hoe
+- Added Crafting Recipe for Pat MultiTool
+- Added Crafting Recipe for Jen MultiTool
+- Added Sounds for Pat Staff
+- Added Sounds for Jen Staff
+- Added Jen's Hole 1 - 5 *WIP*
+- Added Kami
+- Added Popo
+- Added Banana
+- Added Super Pat Sword
+- Added Super Jen Sword
+- Added Super Pat Pickaxe
+- Added Super Jen Pickaxe
+- Added Super Pat Axe
+- Added Super Jen Axe
+- Added Super Pat Shovel
+- Added Super Jen Shovel
+- Added Super Pat Hoe
+- Added Super Jen Hoe
+- Added Super Pat MultiTool
+- Added Super Jen MultiTool
+- Added Enchants When Crafting Super Armor
+- Added Blockling
+- Added Sword Of Epic Proportions
+- Added Villager Of Epic Proportions
+- Added Pat Villager
+- Added Jen Villager
+- Added Pickaxe Of Epic Proportions
+- Added Shovel Of Epic Proportions
+- Added Hoe Of Epic Proportions
+- Added Axe Of Epic Proportions
+- Changed Sparky Sounds
+- Fixed Jen Staff shooting (Shoots in Right direction now)
+- Fixed TNT Sword Crafting
+- Fixed Jen Block Not Powering Beacon
+- Fixed Pat Block Not Powering Beacon
+- Fixed/Added a few [WIP] Tags
+- Fixed Fred 2.0 Model (Head Centered)
+- Fixed Title in en_US.lang File
+- Fixed Server Crash [java.lang.ClassNotFoundException: net.minecraft.client.renderer.entity.Render]
+- Lowered Spawnrate Of Pat
+- Lowered Spawnrate Of Jen
+- Removed jtrent238's Core Mod From Mod Files
+- Mod NOW WORKS on Server!!!
+- jtrent238 Now has Trades
+
+
 1.0.6.4
 - Added Kitty
 - Removed Random Creative Tabs

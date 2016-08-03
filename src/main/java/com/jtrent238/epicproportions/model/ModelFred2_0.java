@@ -76,7 +76,7 @@ public class ModelFred2_0 extends ModelBase
       setRotation(Arm2, 0F, 0F, 0F);
       Head = new ModelRenderer(this, 0, 0);
       Head.addBox(0F, 0F, 0F, 8, 8, 8);
-      Head.setRotationPoint(-4F, -15F, 0F);
+      Head.setRotationPoint(-4F, -15F, -3F);
       Head.setTextureSize(64, 32);
       Head.mirror = true;
       setRotation(Head, 0F, 0F, 0F);

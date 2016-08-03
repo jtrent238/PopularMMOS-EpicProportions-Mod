@@ -15,10 +15,14 @@ import com.jtrent238.epicproportions.blocks.blockTrollTNT;
 import com.jtrent238.epicproportions.items.itemgemofepicproportions;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import javafx.scene.paint.Color;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockFlower;
+import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
+import net.minecraft.world.IBlockAccess;
 
 public class BlockLoader {
 
@@ -38,8 +42,12 @@ public class BlockLoader {
 	public static Block blockFlowerRainbow;
 	public static Block blockFlowerLove;
 	public static Block blockBombySpawner;
+
+	public static final Block.SoundType soundTypeStone = new Block.SoundType("block_squish", 1.0F, 1.0F);
+	
 	//public static final BlockFlower jen_flower = (BlockFlower)Block.blockRegistry.getObject("jen_flower");
 	//public static final BlockFlower jen_flower2 = (BlockFlower)Block.blockRegistry.getObject("jen_flower2");
+	
 	
 	/**
 	 * Load Blocks.
@@ -47,8 +55,8 @@ public class BlockLoader {
 	public static void loadBlocks() {
 		
 		blockFartBomb = new blockFartBomb().setBlockName("blockFartBomb").setBlockTextureName("epicproportionsmod:blockFartBomb").setHardness(0F).setStepSound(Block.soundTypeStone).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
-		blockPatIngot = new blockPatIngot(Material.iron).setBlockName("blockPatIngot").setBlockTextureName("epicproportionsmod:blockPatIngot").setHardness(3F).setStepSound(Block.soundTypeStone).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
-		blockJenIngot = new blockJenIngot(Material.iron).setBlockName("blockJenIngot").setBlockTextureName("epicproportionsmod:blockJenIngot").setHardness(3F).setStepSound(Block.soundTypeStone).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+		blockPatIngot = new blockPatIngot(MapColor.diamondColor).setBlockName("blockPatIngot").setBlockTextureName("epicproportionsmod:blockPatIngot").setHardness(3F).setStepSound(Block.soundTypeStone).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+		blockJenIngot = new blockJenIngot(MapColor.pinkColor).setBlockName("blockJenIngot").setBlockTextureName("epicproportionsmod:blockJenIngot").setHardness(3F).setStepSound(Block.soundTypeStone).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 		blockPatOre = new blockPatOre(Material.ground).setBlockName("blockPatOre").setBlockTextureName("epicproportionsmod:blockPatOre").setHardness(3F).setStepSound(Block.soundTypeStone).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 		blockJenOre = new blockJenOre(Material.ground).setBlockName("blockJenOre").setBlockTextureName("epicproportionsmod:blockJenOre").setHardness(3F).setStepSound(Block.soundTypeStone).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 		blockPatTNT = new blockPatTNT().setBlockName("blockPatTNT").setBlockTextureName("epicproportionsmod:blockPatTNT").setHardness(0F).setStepSound(Block.soundTypeStone).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
@@ -91,4 +99,6 @@ public class BlockLoader {
 		GameRegistry.registerBlock(blockBombySpawner, "blockBombySpawner");
 		
 	}
+	
+	
 }

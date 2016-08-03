@@ -16,5 +16,13 @@
 	"fartbomb_6": {"category": "master","sounds": [{"name": "fartbomb_6","stream": false}]},
 	"clown_say": {"category": "master","sounds": [{"name": "clown_say","stream": false}]},
 	"clown_hurt": {"category": "master","sounds": [{"name": "clown_hurt","stream": false}]},
-	"clown_death": {"category": "master","sounds": [{"name": "clown_death","stream": false}]}
+	"clown_death": {"category": "master","sounds": [{"name": "clown_death","stream": false}]},
+	"block_squish": {"category": "master","sounds": [{"name": "block_squish","stream": false}]},
+	"sparky_death": {"category": "master","sounds": [{"name": "sparky_death","stream": false}]},
+	"sparky_hurt": {"category": "master","sounds": [{"name": "sparky_hurt","stream": false}]},
+	"sparky_growl": {"category": "master","sounds": [{"name": "sparky_growl","stream": false}]},
+	"sparky_bark": {"category": "master","sounds": [{"name": "sparky_bark","stream": false}]},
+	"sparky_whine": {"category": "master","sounds": [{"name": "sparky_whine","stream": false}]},
+	"pat_staff_thunder": {"category": "master","sounds": [{"name": "pat_staff_thunder","stream": false}]},
+	"jen_staff_thunder": {"category": "master","sounds": [{"name": "jen_staff_thunder","stream": false}]}
 	}

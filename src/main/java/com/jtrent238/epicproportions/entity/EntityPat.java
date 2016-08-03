@@ -21,6 +21,7 @@ import net.minecraft.entity.monster.IMob;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.DamageSource;
 import net.minecraft.world.World;
 import net.minecraftforge.common.DungeonHooks;
@@ -182,6 +183,11 @@ this.dropItem(ItemLoader.itemPatStar, 1);
 public int getMaxSpawnedInChunk()
 {
    return 4;
+}
+
+
+public void setSyncDataCompound(NBTTagCompound entitySyncDataCompound) {
+	
 }
 
 

@@ -5,6 +5,9 @@ import cpw.mods.fml.relauncher.SideOnly;
 import java.util.Iterator;
 import java.util.List;
 import java.util.UUID;
+
+import com.jtrent238.epicproportions.entity.ai.EntityAISitPet;
+
 import net.minecraft.entity.DataWatcher;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityCreature;
