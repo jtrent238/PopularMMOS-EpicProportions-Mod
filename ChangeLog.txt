@@ -1,5 +1,11 @@
 Epic Proportions Mod ChangeLog
 
+1.1.6.5
+- Added Texture for Fred 2.0
+- Fixed Fred 2.0 Model
+- Fixed Conflicts With Achevement ("achievement.install") in other mods
+- Changed Fred 2.0 Spawn Egg Texture
+
 1.1.6.4
 - Added Crafting Recipe for Jen Staff
 - Added Crafting Recipe for Pat Staff

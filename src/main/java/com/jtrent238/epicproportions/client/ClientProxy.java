@@ -1,5 +1,6 @@
 package com.jtrent238.epicproportions.client;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.ModelBiped;
 import net.minecraft.client.model.ModelCow;
 import net.minecraft.client.model.ModelCreeper;
@@ -10,10 +11,13 @@ import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.client.renderer.entity.RenderSnowball;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.Item;
+import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.MinecraftForgeClient;
 
+import com.jtrent238.epicproportions.Achievements;
 import com.jtrent238.epicproportions.BlockLoader;
+import com.jtrent238.epicproportions.EpicProportionsMod;
 import com.jtrent238.epicproportions.ServerProxy;
 import com.jtrent238.epicproportions.TradeHandler;
 import com.jtrent238.epicproportions.common.CommonProxy;
@@ -26,6 +30,7 @@ import com.jtrent238.epicproportions.entity.EntityCandyPopper;
 import com.jtrent238.epicproportions.entity.EntityCaptianCookie;
 import com.jtrent238.epicproportions.entity.EntityCaptianCookieLittle;
 import com.jtrent238.epicproportions.entity.EntityClown;
+import com.jtrent238.epicproportions.entity.EntityFred2_0;
 import com.jtrent238.epicproportions.entity.EntityJen;
 import com.jtrent238.epicproportions.entity.EntityKami;
 import com.jtrent238.epicproportions.entity.EntityKitty;
@@ -36,6 +41,7 @@ import com.jtrent238.epicproportions.entity.EntitySparky;
 import com.jtrent238.epicproportions.eventhandler.OnJoinEvent;
 import com.jtrent238.epicproportions.model.ModelBlockling_Small;
 import com.jtrent238.epicproportions.model.ModelCandyPopper;
+import com.jtrent238.epicproportions.model.ModelFred2_0;
 import com.jtrent238.epicproportions.model.ModelKitty;
 import com.jtrent238.epicproportions.model.ModelPopo1;
 import com.jtrent238.epicproportions.render.ItemRenderJenChest;
@@ -53,6 +59,8 @@ import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import cpw.mods.fml.common.gameevent.PlayerEvent;
 import cpw.mods.fml.common.registry.VillagerRegistry;
 import cpw.mods.fml.relauncher.SideOnly;
 
@@ -87,6 +95,7 @@ public class ClientProxy extends CommonProxy {
 	    RenderingRegistry.registerEntityRenderingHandler(EntityPopo.class, new RenderLiving(new ModelPopo1(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityPopo.png");}});//Popo Render
 	    RenderingRegistry.registerEntityRenderingHandler(EntityBanana.class, new RenderLiving(new ModelCow(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityBanana.png");}});//Banana Render
 	    RenderingRegistry.registerEntityRenderingHandler(EntityBlockling_Small.class, new RenderLiving(new ModelBlockling_Small(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityBlockling_Small.png");}});//Small Blockling Render
+	    RenderingRegistry.registerEntityRenderingHandler(EntityFred2_0.class, new RenderLiving(new ModelFred2_0(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityFred2_0.png");}});//Small Blockling Render
 	    
     	VillagerRegistry.instance().registerVillagerSkin(22, new ResourceLocation("epicproportionsmod", "VillagerOfEpicProportions.png"));
     	VillagerRegistry.instance().registerVillagerSkin(23, new ResourceLocation("epicproportionsmod", "JenVillager.png"));
@@ -98,9 +107,35 @@ public class ClientProxy extends CommonProxy {
 
 		RenderChests.RenderTileEntitys();
 
-		FMLCommonHandler.instance().bus().register(new OnJoinEvent());
+		//FMLCommonHandler.instance().bus().register(new OnJoinEvent());
 		//FMLCommonHandler.instance().bus().register(new GameSettings());
     	
   }
-	
+  
+  @SubscribeEvent
+  public void onPlayerLogin(PlayerEvent.PlayerLoggedInEvent event) {
+
+  	event.player.addChatComponentMessage(new ChatComponentText("§b§lHello" + " " + "§e§l" + event.player.getDisplayName() + "§b§l!"));
+  	event.player.addChatComponentMessage(new ChatComponentText(/*/event.player.getDisplayName() + /*/"§a§l" + EpicProportionsMod.MODNAME + " " + "§2§lMade By:jtrent238"));
+  	event.player.addChatComponentMessage(new ChatComponentText(/*/event.player.getDisplayName() + /*/"§6§lYou are running" + "§b§l" + " " + EpicProportionsMod.MODVERSION + " " + "§6§lof" + "§6§l" + " " + EpicProportionsMod.MODNAME + "!"));
+  	//event.player.addChatComponentMessage(new ChatComponentText("§e§lLearn more at: §b§lhttp://bit.ly/FoodModWiki"));
+  	event.player.triggerAchievement(Achievements.achievementinstall);
+  	//event.player.addEntityCrashInfo(EpicProportionsMod.CRASHINFO);
+  	//event.player.clonePlayer(playerclone, true);
+  	event.player.extinguish();
+  	event.player.getDisplayName();
+  	//event.player.writeToNBT(EpicProportionsMod.NBTJOIN);
+  	event.player.getBedLocation();
+  	event.player.shouldHeal();
+  	event.getListenerList();
+  	event.hashCode();
+  	Minecraft.getSystemTime();
+  	Minecraft.isAmbientOcclusionEnabled();
+  	Minecraft.isGuiEnabled();
+  	Minecraft.getMinecraft();
+  	Minecraft.getGLMaximumTextureSize();
+  	Minecraft.isFancyGraphicsEnabled();
+  	//Log.getLog(arg0, arg1, arg2);
+  	//event.notifyAll();
+  }
 }
