@@ -1,4 +1,5 @@
-# PopularMMOS-EpicProportions-Mod [![Build Status](https://travis-ci.org/jtrent238/PopularMMOS-EpicProportions-Mod.svg?branch=master)](https://travis-ci.org/jtrent238/PopularMMOS-EpicProportions-Mod)[ ![Codeship Status for jtrent238/PopularMMOS-EpicProportions-Mod](https://codeship.com/projects/1003c190-4e1a-0134-ccf6-4e2c8cfaa9af/status?branch=master)](https://codeship.com/projects/170713)
+# PopularMMOS-EpicProportions-Mod [![Build Status](https://travis-ci.org/jtrent238/PopularMMOS-EpicProportions-Mod.svg?branch=master)](https://travis-ci.org/jtrent238/PopularMMOS-EpicProportions-Mod) [ ![Codeship Status for jtrent238/PopularMMOS-EpicProportions-Mod](https://codeship.com/projects/1003c190-4e1a-0134-ccf6-4e2c8cfaa9af/status?branch=master)](https://codeship.com/projects/170713) [![Build status](https://ci.appveyor.com/api/projects/status/6v8rpljgtauw2693?svg=true)](https://ci.appveyor.com/project/jtrent238/popularmmos-epicproportions-mod)
+
 This is a mod based on PopularMMOS EpicProportions series. 
 
 There is an addon to the luckyblock mod that uses this mod and it is: 
