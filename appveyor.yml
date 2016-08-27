@@ -1,8 +1,3 @@
-assembly_info:
-  patch: true
-  assembly_version: '{version}'
-  assembly_file_version: '{version}'
-  assembly_informational_version: '{version}-rc1'
 environment:
   # these variables are common to all jobs
   common_var1: value1
