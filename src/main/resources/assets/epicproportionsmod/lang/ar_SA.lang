@@ -1,0 +1,299 @@
+// Jtrent238 في ملف ملحمة النسب وزارة الدفاع لانج
+// ar_SA
+
+// الأصناف
+item.itemgemofepicproportions.name = جوهرة من ملحمة النسب
+item.itemPatIngot.name = سبيكة FuriousDestroyer ل
+item.itemJenIngot.name = سبيكة SuperGirlyGamer ل
+item.itemJenslips.name = الشفاه جين ل
+item.itemCaptainCookieCookie.name = كوكي كوكي الكابتن ل
+item.itemJenStar.name = SuperGirlyGamer ستار
+item.itemPatStar.name = FuriousDestroyer ستار
+item.itemEpicProportionsStar.name = ملحمة النسب ستار
+item.itemTNTSwordPlacer.name = تي ان تي السيف
+item.itemBirthdayPresent.name = هدية عيد ميلاد
+item.itemHouseOfEpicProportionsPlacer.name = بيت ملحمة النسب [WIP]
+item.itemBombyStructurePlacer.name = Bomby هيكل
+item.itemJensHoleStructurePlacer_1.name = جين لهول 1 [WIP]
+item.itemJensHoleStructurePlacer_2.name = جين لهول 2 [WIP]
+item.itemJensHoleStructurePlacer_3.name = جين لهول 3 [WIP]
+item.itemJensHoleStructurePlacer_4.name = جين لهول 4 [WIP]
+item.itemJensHoleStructurePlacer_5.name = جين لهول 5 [WIP]
+item.itemSwordOfEpicProportions_Part1.name = سيف ملحمة النسب الجزء 1
+item.itemSwordOfEpicProportions_Part2.name = سيف ملحمة النسب الجزء 2
+item.itemSwordOfEpicProportions_Part3.name = سيف ملحمة النسب الجزء 3
+item.itempatdoor.name = FuriousDestroyer الباب
+item.itemjendoor.name = SuperGirlyGamer الباب
+item.itempatapple.name = FuriousDestroyer أبل
+item.itemjenapple.name = SuperGirlyGamer أبل
+item.itemPatmeat_raw.name = FuriousDestroyer اللحوم الخام
+item.itemPatmeat_cooked.name = FuriousDestroyer اللحوم المطبوخة
+item.itemJenmeat_raw.name = SuperGirlyGamer اللحوم الخام
+item.itemJenmeat_cooked.name = SuperGirlyGamer اللحوم المطبوخة
+item.ItemCookedPufferFish.name = ينفوخية المطبوخ
+item.itemModInfo.name = معلومات وزارة الدفاع
+item.itemPickOfEpicProportions_Part1.name = الفأس من ملحمة النسب الجزء 1
+item.itemPickOfEpicProportions_Part2.name = الفأس من ملحمة النسب الجزء 2
+item.itemPickOfEpicProportions_Part3.name = الفأس من ملحمة النسب الجزء 3
+item.itemPatWellPlacer.name = FuriousDestroyer حسنا
+item.itemJenWellPlacer.name = SuperGirlyGamer حسنا
+item.itemPatGun.name = FuriousDestroyer بندقية
+item.itemJenGun.name = SuperGirlyGamer بندقية
+item.itemBirthdayPresent_Green.name = هدية عيد ميلاد
+item.itemShovelOfEpicProportions_Part1.name = المجرفة من ملحمة النسب الجزء 1
+item.itemShovelOfEpicProportions_Part2.name = المجرفة من ملحمة النسب الجزء 2
+item.itemShovelOfEpicProportions_Part3.name = المجرفة من ملحمة النسب الجزء 3
+item.itemTNTLauncher.name = تي ان تي قاذفة
+item.itemPatTNTLauncher.name = FuriousDestroyer تي ان تي قاذفة
+item.itemTrollTNTLauncher.name = ترول تي ان تي قاذفة
+item.itemFartBombLauncher.name = الريح قنبلة قاذفة
+item.itemNukeLauncher.name = نوك قاذفة
+
+/ الأسلحة وأدوات
+item.itemPatSword.name = السيف FuriousDestroyer ل
+item.itemJenSword.name = السيف SuperGirlyGamer ل
+item.itemPatPick.name = الفأس FuriousDestroyer ل
+item.itemJenPick.name = الفأس SuperGirlyGamer ل
+item.itemPatAxe.name = فأس FuriousDestroyer ل
+item.itemJenAxe.name = فأس SuperGirlyGamer ل
+item.itemPatShovel.name = المجرفة FuriousDestroyer ل
+item.itemJenShovel.name = المجرفة SuperGirlyGamer ل
+item.itemPatHoe.name = هوي FuriousDestroyer ل
+item.itemJenHoe.name = هوي SuperGirlyGamer ل
+item.itemPatStaff.name = الموظفين FuriousDestroyer ل
+item.itemJenStaff.name = الموظفين SuperGirlyGamer ل
+item.itemPatBow.name = القوس FuriousDestroyer ل
+item.itemJenBow.name = القوس SuperGirlyGamer ل
+item.itemPatArrow.name = السهم FuriousDestroyer ل
+item.itemJenArrow.name = السهم SuperGirlyGamer ل
+item.itemPatMultiTool.name = MultiTool FuriousDestroyer ل
+item.itemJenMultiTool.name = MultiTool SuperGirlyGamer ل
+
+item.itemSuperPatSword.name = FuriousDestroyer سوبر السيف
+item.itemSuperJenSword.name = SuperGirlyGamer سوبر السيف
+item.itemSuperPatPick.name = FuriousDestroyer سوبر الفأس
+item.itemSuperJenPick.name = SuperGirlyGamer سوبر الفأس
+item.itemSuperPatAxe.name = FuriousDestroyer سوبر فأس
+item.itemSuperJenAxe.name = SuperGirlyGamer سوبر فأس
+item.itemSuperPatShovel.name = FuriousDestroyer سوبر المجرفة
+item.itemSuperJenShovel.name = SuperGirlyGamer سوبر المجرفة
+item.itemSuperPatHoe.name = FuriousDestroyer سوبر مجرفة
+item.itemSuperJenHoe.name = SuperGirlyGamer سوبر مجرفة
+item.itemSuperPatMultiTool.name = FuriousDestroyer سوبر MultiTool
+item.itemSuperJenMultiTool.name = SuperGirlyGamer سوبر MultiTool
+item.itemSwordOfEpicProportions.name = سيف ملحمة النسب
+item.itemPickOfEpicProportions.name = الفأس من ملحمة النسب
+item.itemShovelOfEpicProportions.name = المجرفة من ملحمة النسب
+item.itemHoeOfEpicProportions.name = مجرفة من ملحمة النسب
+item.itemAxeOfEpicProportions.name = فأس من ملحمة النسب
+
+/ درع
+/ بات
+item.itemPatHelmet.name = Helment FuriousDestroyer ل
+item.itemPatChestplate.name = Chestplate FuriousDestroyer ل
+item.itemPatLeggings.name = اللباس FuriousDestroyer ل
+item.itemPatBoots.name = أحذية FuriousDestroyer ل
+/ جين
+item.itemJenHelmet.name = Helment SuperGirlyGamer ل
+item.itemJenChestplate.name = Chestplate SuperGirlyGamer ل
+item.itemJenLeggings.name = اللباس SuperGirlyGamer ل
+item.itemJenBoots.name = أحذية SuperGirlyGamer ل
+/ سوبر بات
+item.itemSuperPatHelmet.name = FuriousDestroyer في Helment Helment
+item.itemSuperPatChestplate.name = FuriousDestroyer سوبر Chestplate
+item.itemSuperPatLeggings.name = FuriousDestroyer سوبر اللباس
+item.itemSuperPatBoots.name = FuriousDestroyer سوبر أحذية
+/ سوبر جين
+item.itemSuperJenHelmet.name = SuperGirlyGamer سوبر Helment
+item.itemSuperJenChestplate.name = SuperGirlyGamer سوبر Chestplate
+item.itemSuperJenLeggings.name = SuperGirlyGamer سوبر اللباس
+item.itemSuperJenBoots.name = SuperGirlyGamer سوبر أحذية
+
+
+/ تفرخ البيض
+item.itemSpawnBomby.name = البيضة Bomby [WIP]
+item.itemSpawnCaptianCookie.name = البيضة الكابتن كوكي
+item.itemSpawnPat.name = البيضة FuriousDestroyer
+item.itemSpawnJen.name = البيضة SuperGirlyGamer
+item.itemSpawnFred2_0.name = البيضة فريد 2.0 [WIP]
+item.itemSpawnNinjaMaster.name = البيضة النينجا ماستر
+item.itemSpawnCandyMan.name = البيضة وكاندي مان
+item.itemSpawnCookieLittle.name = البيضة الكابتن كوكي ليتل [WIP]
+item.itemSpawnjtrent238.name = البيضة jtrent238
+item.itemSpawnClown.name = البيضة المهرج
+item.itemSpawnCandyPopper.name = البيضة كاندي بوبر [WIP]
+item.itemSpawnSparky.name = البيضة حيوي
+item.itemSpawnKitty.name = البيضة كيتي
+item.itemSpawnKami.name = البيضة كامي [WIP]
+item.itemSpawnPopo.name = البيضة بوبو [WIP]
+item.itemSpawnBanana.name = البيضة الموز
+item.itemSpawnBlockling.name = البيضة Blockling الصغيرة [WIP]
+item.itemSpawnVillagerOfEpicProportions.name = البيضة قروي من EpicPropotions [WIP]
+item.itemSpawnPatVillager.name = البيضة FuriousDestroyer قروي [WIP]
+item.itemSpawnJenVillager.name = البيضة SuperGirlyGamer قروي [WIP]
+
+
+// بنات
+tile.blockFartBomb.name = الريح قنبلة
+كتلة tile.blockPatIngot.name = FuriousDestroyer ل
+كتلة tile.blockJenIngot.name = SuperGirlyGamer ل
+tile.blockPatOre.name = FuriousDestroyer خام
+tile.blockJenOre.name = SuperGirlyGamer خام
+تي ان تي tile.blockPatTNT.name = FuriousDestroyer ل
+tile.blockBirthdayPresent.name = هدية عيد ميلاد
+tile.blockPatChest.name = FuriousDestroyer في الصدر [WIP]
+tile.blockJenChest.name = SuperGirlyGamer في الصدر [WIP]
+tile.blockTrollTNT.name = ترول تي ان تي
+tile.blockFlowerForJen.name = زهرة لجين
+tile.blockFlowerRedHeart.name = الأحمر زهرة القلب
+tile.blockFlowerPinkHeart.name = الوردي زهرة القلب
+tile.blockFlowerRainbow.name = زهرة قوس قزح
+tile.blockFlowerLove.name = الحب زهرة
+tile.blockFlowerChocolate.name = الشوكولاته زهرة
+tile.blockBirthdayPresent_Green.name = هدية عيد ميلاد
+tile.BlockNuke.name = الاسرائيلية المصرية في خطر
+
+// الكيان
+entity.EntityBomby.name = Bomby
+entity.EntityCaptianCookie.name = الكابتن كوكي
+entity.EntityPat.name = FuriousDestroyer
+entity.EntityJen.name = SuperGirlyGamer
+entity.EntityFred2_0.name = فريد 2.0
+entity.EntityNinjaMaster.name = النينجا ماستر
+entity.EntityCandyMan.name = وكاندي مان
+entity.EntityCaptianCookieLittle.name = الكابتن كوكي الصغير
+entity.EntityClown.name = المهرج
+entity.EntityCandyPopper.name = كاندي بوبر
+entity.EntitySparky.name = حيوي
+entity.EntityKitty.name = كيتي
+entity.EntityKami.name = كامي
+entity.EntityPopo.name = بوبو
+entity.EntityBanana.name = الموز
+entity.EntityBlockling_Small.name = Blockling الصغيرة
+
+// وزارة الدفاع المشروعات الإنمائية والمساعدون
+entity.Entityjtrent238.name = jtrent238
+
+// الحاويات
+container.Patchest = FuriousDestroyer في الصدر [WIP]
+container.Jenchest = SuperGirlyGamer في الصدر [WIP]
+container.chestPatDouble = كبير FuriousDestroyerChest [WIP]
+container.chestJenDouble = كبير SuperGirlyGamer الصدر [WIP]
+
+// مولدات
+
+// الإنجازات
+/ مرحبا بكم في ملحمة النسب
+achievement.install = مرحبا بكم في ملحمة النسب
+achievement.install.desc = تثبيت ملحمة النسب وزارة الدفاع
+/ عيد ميلاد سعيد
+achievement.happybirthday = عيد ميلاد سعيد!
+achievement.happybirthday.desc = فتح هدية عيد ميلاد
+/ زهرة لجين
+achievement.flowerforjen = زهرة لجين
+achievement.flowerforjen.desc = الحصول على زهرة لجين
+/ أنا FuriousDestroyer
+achievement.iampat = أنا FuriousDestroyer
+achievement.iampat.desc = ملابس كاملة بات درع
+/ أنا SuperGirlyGamer
+achievement.iamjen = أنا SuperGirlyGamer
+achievement.iamjen.desc = ملابس كاملة جين درع
+/ برزت
+achievement.popped = برزت
+achievement.popped.desc = اقتل كاندي بوبر
+/ الكوكيز للجميع
+achievement.cookies = الكوكيز للجميع
+achievement.cookies.desc = قتل الكابتن كوكي
+/ مات FuriousDestroyer
+achievement.killpat = FuriousDestroyer مات
+achievement.killpat.desc = قتل FuriousDestroyer
+/ مات SuperGirlyGamer
+achievement.killjen = SuperGirlyGamer مات
+achievement.killjen.desc = قتل SuperGirlyGamer
+/ مضحك
+achievement.funny = مضحك
+achievement.funny.desc = قتل المهرج
+/ بات ستار
+ستار achievement.patstar = FuriousDestroyer ل
+achievement.patstar.desc = الحصول على قطرة نادرة من FuriousDestroyer
+/ جين ستار
+ستار achievement.jenstar = SuperGirlyGamer ل
+achievement.jenstar.desc = الحصول على قطرة نادرة من SuperGirlyGamer
+/ بات درع
+درع achievement.patarmor = SuperGirlyGamer ل
+achievement.patarmor.desc =
+/ جين درع
+درع achievement.jenarmor = SuperGirlyGamer ل
+achievement.jenarmor.desc =
+/ سوبر بات درع
+achievement.patarmor_super = SuperGirlyGamer سوبر درع
+achievement.patarmor_super.desc =
+/ سوبر جين درع
+achievement.jenarmor_super = SuperGirlyGamer سوبر درع
+achievement.jenarmor_super.desc =
+/ سيف ملحمة النسب
+achievement.swordofepicproportions = سيف ملحمة Propotions
+achievement.swordofepicproportions.desc = كرافت سيف ملحمة Propotions
+/ الفأس من ملحمة النسب
+achievement.pickaxeofepicproportions = الفأس من ملحمة Propotions
+achievement.pickaxeofepicproportions.desc = الحرفية والفأس من ملحمة Propotions
+/ فأس من ملحمة النسب
+achievement.axeofepicproportions = فأس من ملحمة Propotions
+achievement.axeofepicproportions.desc = كرافت الفأس من ملحمة Propotions
+/ مجرفة من ملحمة النسب
+achievement.shovelofepicproportions = المجرفة من ملحمة Propotions
+achievement.shovelofepicproportions.desc = الحرفية والمجرفة من ملحمة Propotions
+/ مجرفة من ملحمة النسب
+achievement.hoeofepicproportions = مجرفة من ملحمة Propotions
+achievement.hoeofepicproportions.desc = الحرفية ومجرفة من ملحمة Propotions
+
+// إحصائيات
+stat.presentsbroken = نونبر من هدايا تماما
+
+// الافتتان
+// الجرع
+// تلميحات الأدوات
+tooltip.epicproportionsmod.itemSwordOfEpicProportions_Part_1 = مع الجمع بين أجزاء أخرى لجعل
+tooltip.epicproportionsmod.itemSwordOfEpicProportions_Part_2 = السيف من EpicPropotions
+tooltip.epicproportionsmod.itemPickOfEpicProportions_Part_1 = مع الجمع بين أجزاء أخرى لجعل
+tooltip.epicproportionsmod.itemPickOfEpicProportions_Part_2 = والفأس من EpicPropotions
+tooltip.epicproportionsmod.itemShovelOfEpicProportions_Part_1 = مع الجمع بين أجزاء أخرى لجعل
+tooltip.epicproportionsmod.itemShovelOfEpicProportions_Part_2 = والمجرفة من EpicPropotions
+
+
+= tooltip.epicproportionsmod.itemSwordOfEpicProportions.captiancookie.no لا تعطي لCaptian كوكي !!!
+tooltip.epicproportionsmod.itemBirthdayPresent.bday = سعيد Birtday!
+tooltip.epicproportionsmod.itemBirthdayPresent.inside = أنا أتساءل ما يمكن أن يكون في الداخل؟
+tooltip.epicproportionsmod.itemBirthdayPresent_Green.bday = سعيد Birtday!
+tooltip.epicproportionsmod.itemBirthdayPresent_Green.inside = أنا أتساءل ما يمكن أن يكون في الداخل؟
+tooltip.epicproportionsmod.itemPatGun.ammotype = يستهلك FuriousDestroyer السهم
+tooltip.epicproportionsmod.itemJenGun.ammotype = يستهلك SuperGirlyGamer السهم
+tooltip.epicproportionsmod.itemTNTLauncher.ammotype = تستهلك مادة تي ان تي
+tooltip.epicproportionsmod.itemPatTNTLauncher.ammotype = يستهلك FuriousDestroyer تي ان تي
+tooltip.epicproportionsmod.itemTrollTNTLauncher.ammotype = يستهلك ترول تي ان تي
+tooltip.epicproportionsmod.itemFartBombLauncher.ammotype = يستهلك الريح قنبلة
+tooltip.epicproportionsmod.itemNukeLauncher.ammotype = يستهلك الاسرائيلية المصرية في خطر
+
+/ بات الصدر تحذير
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.0 = **************** تحذير ********************* ***
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.1 = لم يتم تكوين هذا الصدر بشكل صحيح
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.3 = هذا الشطرنج لا تخزن المخزون بشكل صحيح
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.5 = أي شئ داخل سيتم حذف على الخروج العالمية.
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.6 = ************************************** *********
+/ جين الصدر تحذير
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.0 = **************** تحذير ********************* ***
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.1 = لم يتم تكوين هذا الصدر بشكل صحيح
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.3 = هذا الشطرنج لا تخزن المخزون بشكل صحيح
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.5 = أي شئ داخل سيتم حذف على الخروج العالمية.
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.6 = ************************************** *********
+
+
+// علامات الإبداعية
+itemGroup.EpicProportionsMod = jtrent238 في ملحمة النسب وزارة الدفاع
+
+// متفرقات
+com.jtrent238.epicproportions.lib.LogHelper = ملحمة النسب وزارة الدفاع دخول

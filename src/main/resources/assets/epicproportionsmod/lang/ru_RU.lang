@@ -1,0 +1,299 @@
+// Эпическая Пропорции Mod Lang Файл Jtrent238 в
+// ru_RU
+
+// Элементы
+item.itemgemofepicproportions.name = Gem эпических пропорций
+item.itemPatIngot.name = FuriousDestroyer слитка в
+item.itemJenIngot.name = Слиток SuperGirlyGamer в
+item.itemJenslips.name = Губы Джен
+item.itemCaptainCookieCookie.name = Cookie капитана Пирожка
+item.itemJenStar.name = SuperGirlyGamer Star
+item.itemPatStar.name = FuriousDestroyer Star
+item.itemEpicProportionsStar.name = пропорциями Звезда Эпическая
+item.itemTNTSwordPlacer.name = TNT Sword
+item.itemBirthdayPresent.name = Подарок на день рождения
+item.itemHouseOfEpicProportionsPlacer.name = Дом эпических пропорций [WIP]
+item.itemBombyStructurePlacer.name = Bomby Структура
+item.itemJensHoleStructurePlacer_1.name = Джен Отверстие 1 [WIP]
+item.itemJensHoleStructurePlacer_2.name = Джен Отверстие 2 [WIP]
+item.itemJensHoleStructurePlacer_3.name = Джен Отверстие 3 [WIP]
+item.itemJensHoleStructurePlacer_4.name = Джен Отверстие 4 [WIP]
+item.itemJensHoleStructurePlacer_5.name = Джен Отверстие 5 [WIP]
+item.itemSwordOfEpicProportions_Part1.name = Меч эпических пропорций Часть 1
+item.itemSwordOfEpicProportions_Part2.name = Меч эпических пропорций Часть 2
+item.itemSwordOfEpicProportions_Part3.name = Меч эпических пропорций Часть 3
+item.itempatdoor.name = FuriousDestroyer Дверь
+item.itemjendoor.name = SuperGirlyGamer Дверь
+item.itempatapple.name = FuriousDestroyer компании Apple
+item.itemjenapple.name = SuperGirlyGamer компании Apple
+item.itemPatmeat_raw.name = FuriousDestroyer Meat Raw
+item.itemPatmeat_cooked.name = Приготовленные FuriousDestroyer Мясо
+item.itemJenmeat_raw.name = SuperGirlyGamer Meat Raw
+item.itemJenmeat_cooked.name = Приготовленные SuperGirlyGamer Мясо
+item.ItemCookedPufferFish.name = Приготовленные Pufferfish
+item.itemModInfo.name = Mod Информация
+item.itemPickOfEpicProportions_Part1.name = Pickaxe эпических Пропорции Часть 1
+item.itemPickOfEpicProportions_Part2.name = Pickaxe эпических Пропорции Часть 2
+item.itemPickOfEpicProportions_Part3.name = Pickaxe эпических Пропорции Часть 3
+item.itemPatWellPlacer.name = FuriousDestroyer Ну
+item.itemJenWellPlacer.name = SuperGirlyGamer Ну
+item.itemPatGun.name = FuriousDestroyer Gun
+item.itemJenGun.name = SuperGirlyGamer Gun
+item.itemBirthdayPresent_Green.name = Подарок на день рождения
+item.itemShovelOfEpicProportions_Part1.name = лопату эпических пропорций Часть 1
+item.itemShovelOfEpicProportions_Part2.name = лопату эпических пропорций Часть 2
+item.itemShovelOfEpicProportions_Part3.name = лопату эпических пропорций Часть 3
+item.itemTNTLauncher.name = TNT Launcher
+item.itemPatTNTLauncher.name = FuriousDestroyer TNT Launcher
+item.itemTrollTNTLauncher.name = Troll TNT Launcher
+item.itemFartBombLauncher.name = бомба Фарт Launcher
+item.itemNukeLauncher.name = Nuke Launcher
+
+/ Оружие и инструменты
+item.itemPatSword.name = Меч FuriousDestroyer в
+item.itemJenSword.name = Меч SuperGirlyGamer в
+item.itemPatPick.name = кирку FuriousDestroyer в
+item.itemJenPick.name = кирку SuperGirlyGamer в
+item.itemPatAxe.name = Axe FuriousDestroyer в
+item.itemJenAxe.name = Axe SuperGirlyGamer в
+item.itemPatShovel.name = лопату FuriousDestroyer в
+item.itemJenShovel.name = лопату SuperGirlyGamer в
+item.itemPatHoe.name = Hoe FuriousDestroyer в
+item.itemJenHoe.name = Hoe SuperGirlyGamer в
+item.itemPatStaff.name = Персонал FuriousDestroyer в
+item.itemJenStaff.name = Персонал SuperGirlyGamer в
+item.itemPatBow.name = Лук FuriousDestroyer в
+item.itemJenBow.name = Лук SuperGirlyGamer в
+item.itemPatArrow.name = Стрелка FuriousDestroyer в
+item.itemJenArrow.name = Стрелка SuperGirlyGamer в
+item.itemPatMultiTool.name = MultiTool FuriousDestroyer в
+item.itemJenMultiTool.name = MultiTool SuperGirlyGamer в
+
+item.itemSuperPatSword.name = FuriousDestroyer Супер Меч
+item.itemSuperJenSword.name = SuperGirlyGamer Супер Меч
+item.itemSuperPatPick.name = FuriousDestroyer Супер кирка
+item.itemSuperJenPick.name = SuperGirlyGamer Супер кирка
+item.itemSuperPatAxe.name = FuriousDestroyer Супер Axe
+item.itemSuperJenAxe.name = SuperGirlyGamer Супер Axe
+item.itemSuperPatShovel.name = FuriousDestroyer Супер лопата
+item.itemSuperJenShovel.name = SuperGirlyGamer Супер лопата
+item.itemSuperPatHoe.name = FuriousDestroyer Супер Культиватор
+item.itemSuperJenHoe.name = SuperGirlyGamer Супер Культиватор
+item.itemSuperPatMultiTool.name = FuriousDestroyer Супер MultiTool
+item.itemSuperJenMultiTool.name = SuperGirlyGamer Супер MultiTool
+item.itemSwordOfEpicProportions.name = Меч эпических пропорций
+item.itemPickOfEpicProportions.name = кирку эпических пропорций
+item.itemShovelOfEpicProportions.name = лопату эпических пропорций
+item.itemHoeOfEpicProportions.name = Культиватор эпических пропорций
+item.itemAxeOfEpicProportions.name = Axe эпических пропорций
+
+/ Доспехи
+/ Pat
+item.itemPatHelmet.name = Helment FuriousDestroyer в
+item.itemPatChestplate.name = Бригантина FuriousDestroyer в
+item.itemPatLeggings.name = Леггинсы FuriousDestroyer в
+item.itemPatBoots.name = Сапоги FuriousDestroyer в
+/ Jen
+item.itemJenHelmet.name = Helment SuperGirlyGamer в
+item.itemJenChestplate.name = Бригантина SuperGirlyGamer в
+item.itemJenLeggings.name = Леггинсы SuperGirlyGamer в
+item.itemJenBoots.name = Сапоги SuperGirlyGamer в
+/ Super Пат
+item.itemSuperPatHelmet.name = FuriousDestroyer в Helment Helment
+item.itemSuperPatChestplate.name = FuriousDestroyer Супер Бригантина
+item.itemSuperPatLeggings.name = FuriousDestroyer Супер Леггинсы
+item.itemSuperPatBoots.name = FuriousDestroyer супер сапоги
+/ Super Jen
+item.itemSuperJenHelmet.name = SuperGirlyGamer Супер Helment
+item.itemSuperJenChestplate.name = SuperGirlyGamer Супер Бригантина
+item.itemSuperJenLeggings.name = SuperGirlyGamer Супер Леггинсы
+item.itemSuperJenBoots.name = SuperGirlyGamer супер сапоги
+
+
+/ Spawn Яйца
+item.itemSpawnBomby.name = Spawn Bomby [WIP]
+item.itemSpawnCaptianCookie.name = Spawn Капитан Cookie
+item.itemSpawnPat.name = Spawn FuriousDestroyer
+item.itemSpawnJen.name = Spawn SuperGirlyGamer
+item.itemSpawnFred2_0.name = Spawn Фред 2.0 [WIP]
+item.itemSpawnNinjaMaster.name = Spawn Ninja Master
+item.itemSpawnCandyMan.name = нерест Candy Man
+item.itemSpawnCookieLittle.name = Spawn Капитан Cookie Маленький [WIP]
+item.itemSpawnjtrent238.name = Spawn jtrent238
+item.itemSpawnClown.name = Spawn клоун
+item.itemSpawnCandyPopper.name = Spawn Конфеты Поппер [WIP]
+item.itemSpawnSparky.name = Spawn Спарки
+item.itemSpawnKitty.name = Spawn Китти
+item.itemSpawnKami.name = Spawn Ками [WIP]
+item.itemSpawnPopo.name = Spawn Попо [WIP]
+item.itemSpawnBanana.name = Spawn Banana
+item.itemSpawnBlockling.name = Spawn Малый Blockling [WIP]
+item.itemSpawnVillagerOfEpicProportions.name = Spawn Villager Of EpicPropotions [WIP]
+item.itemSpawnPatVillager.name = Spawn FuriousDestroyer Селянин [WIP]
+item.itemSpawnJenVillager.name = Spawn SuperGirlyGamer Селянин [WIP]
+
+
+// Блоки
+tile.blockFartBomb.name = бомба Фарт
+Блок tile.blockPatIngot.name = FuriousDestroyer в
+Блок tile.blockJenIngot.name = SuperGirlyGamer в
+tile.blockPatOre.name = FuriousDestroyer руда
+tile.blockJenOre.name = SuperGirlyGamer руда
+tile.blockPatTNT.name = FuriousDestroyer в TNT
+tile.blockBirthdayPresent.name = подарок на день рождения
+Грудь tile.blockPatChest.name = FuriousDestroyer в [WIP]
+Грудь tile.blockJenChest.name = SuperGirlyGamer в [WIP]
+tile.blockTrollTNT.name = Troll TNT
+tile.blockFlowerForJen.name = Цветок для Jen
+tile.blockFlowerRedHeart.name = Красный цветок сердца
+tile.blockFlowerPinkHeart.name = розовый цветок сердца
+tile.blockFlowerRainbow.name = Радуга цветов
+tile.blockFlowerLove.name = Love Flower
+tile.blockFlowerChocolate.name = Шоколад Цветок
+tile.blockBirthdayPresent_Green.name = подарок на день рождения
+tile.BlockNuke.name = Nuke
+
+// Entitys
+entity.EntityBomby.name = Bomby
+entity.EntityCaptianCookie.name = Капитан Cookie
+entity.EntityPat.name = FuriousDestroyer
+entity.EntityJen.name = SuperGirlyGamer
+entity.EntityFred2_0.name = 2,0 Фред
+entity.EntityNinjaMaster.name = Ninja Master
+entity.EntityCandyMan.name = The Candy Man
+entity.EntityCaptianCookieLittle.name = Капитан Cookie Маленький
+entity.EntityClown.name = Clown
+entity.EntityCandyPopper.name = Конфеты Поппер
+entity.EntitySparky.name = Спарки
+entity.EntityKitty.name = Kitty
+entity.EntityKami.name = Ками
+entity.EntityPopo.name = Попо
+entity.EntityBanana.name = Banana
+entity.EntityBlockling_Small.name = Малый Blockling
+
+// Mod Devs И Помощники
+entity.Entityjtrent238.name = jtrent238
+
+// Контейнер
+Грудь container.Patchest = FuriousDestroyer в [WIP]
+Грудь container.Jenchest = SuperGirlyGamer в [WIP]
+container.chestPatDouble = Большой FuriousDestroyerChest [WIP]
+container.chestJenDouble = Большой SuperGirlyGamer сундук [WIP]
+
+// Генераторы
+
+// Достижения
+/ Welcome To эпического масштаба
+achievement.install = Welcome To эпического масштаба
+achievement.install.desc = Установить Эпическая Пропорции Mod
+/ С Днем Рождения
+achievement.happybirthday = С Днем Рождения!
+achievement.happybirthday.desc = Открыть подарок на день рождения
+/ Цветок для Jen
+achievement.flowerforjen = Цветок для Jen
+achievement.flowerforjen.desc = Get Цветок для Jen
+/ I Am FuriousDestroyer
+achievement.iampat = I Am FuriousDestroyer
+achievement.iampat.desc = Носить Pat Броня
+/ I Am SuperGirlyGamer
+achievement.iamjen = I Am SuperGirlyGamer
+achievement.iamjen.desc = Носить Jen Броня
+/ Popped
+achievement.popped = Popped
+achievement.popped.desc = Убить конфеты Поппера
+/ Печенье Каждый
+achievement.cookies = Куки Для Всех
+achievement.cookies.desc = Убить Капитан Cookie
+/ FuriousDestroyer Умер
+achievement.killpat = FuriousDestroyer Умер
+achievement.killpat.desc = убийство FuriousDestroyer
+/ SuperGirlyGamer Умер
+achievement.killjen = SuperGirlyGamer Умер
+achievement.killjen.desc = убийство SuperGirlyGamer
+/ Смешные
+achievement.funny = Смешной
+achievement.funny.desc = убить клоуна
+/ Pat Star
+Звезда achievement.patstar = FuriousDestroyer в
+achievement.patstar.desc = Получить редкие капли из FuriousDestroyer
+/ Джен Star
+Звезда achievement.jenstar = SuperGirlyGamer в
+achievement.jenstar.desc = Получить редкие капли из SuperGirlyGamer
+/ Pat Броня
+Броня achievement.patarmor = SuperGirlyGamer в
+achievement.patarmor.desc =
+/ Джен Доспехи
+Броня achievement.jenarmor = SuperGirlyGamer в
+achievement.jenarmor.desc =
+/ Super Пат Броня
+achievement.patarmor_super = SuperGirlyGamer Супер Броня
+achievement.patarmor_super.desc =
+/ Super Джен Броня
+achievement.jenarmor_super = SuperGirlyGamer Супер Броня
+achievement.jenarmor_super.desc =
+/ Меч эпических пропорций
+achievement.swordofepicproportions = Меч эпических Propotions
+achievement.swordofepicproportions.desc = Ремесло Меч эпических Propotions
+/ Pickaxe эпических пропорций
+achievement.pickaxeofepicproportions = Pickaxe эпических Propotions
+achievement.pickaxeofepicproportions.desc = Craft КИРКУ эпических Propotions
+/ Axe эпических пропорций
+achievement.axeofepicproportions = Axe эпических Propotions
+achievement.axeofepicproportions.desc = Craft Топор эпических Propotions
+/ Лопата эпических пропорций
+achievement.shovelofepicproportions = Лопата эпических Propotions
+achievement.shovelofepicproportions.desc = Craft Лопата эпических Propotions
+/ Культиватор эпических пропорций
+achievement.hoeofepicproportions = Культиватор эпических Propotions
+achievement.hoeofepicproportions.desc = Craft мотыгой эпических Propotions
+
+// Статистика
+stat.presentsbroken = Nunber подарков открыт
+
+// Enchantments
+// зелий
+// ToolTips
+tooltip.epicproportionsmod.itemSwordOfEpicProportions_Part_1 = Объединить с другими частями, чтобы сделать
+tooltip.epicproportionsmod.itemSwordOfEpicProportions_Part_2 = Меч EpicPropotions
+tooltip.epicproportionsmod.itemPickOfEpicProportions_Part_1 = Объединить с другими частями, чтобы сделать
+tooltip.epicproportionsmod.itemPickOfEpicProportions_Part_2 = кирку из EpicPropotions
+tooltip.epicproportionsmod.itemShovelOfEpicProportions_Part_1 = Объединить с другими частями, чтобы сделать
+tooltip.epicproportionsmod.itemShovelOfEpicProportions_Part_2 = лопату EpicPropotions
+
+
+tooltip.epicproportionsmod.itemSwordOfEpicProportions.captiancookie.no = Не давайте Captian Cookie !!!
+tooltip.epicproportionsmod.itemBirthdayPresent.bday = Happy Birtday!
+tooltip.epicproportionsmod.itemBirthdayPresent.inside = Интересно, что может быть внутри?
+tooltip.epicproportionsmod.itemBirthdayPresent_Green.bday = Happy Birtday!
+tooltip.epicproportionsmod.itemBirthdayPresent_Green.inside = Интересно, что может быть внутри?
+tooltip.epicproportionsmod.itemPatGun.ammotype = Потребляет FuriousDestroyer Arrow
+tooltip.epicproportionsmod.itemJenGun.ammotype = Потребляет SuperGirlyGamer Arrow
+tooltip.epicproportionsmod.itemTNTLauncher.ammotype = Потребляет TNT
+tooltip.epicproportionsmod.itemPatTNTLauncher.ammotype = Потребляет FuriousDestroyer TNT
+tooltip.epicproportionsmod.itemTrollTNTLauncher.ammotype = Потребляет Тролль TNT
+tooltip.epicproportionsmod.itemFartBombLauncher.ammotype = Потребляет бомба Фарт
+tooltip.epicproportionsmod.itemNukeLauncher.ammotype = Потребляет Nuke
+
+/ Pat Грудь Предупреждение
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.0 = **************** ПРЕДУПРЕЖДЕНИЕ ********************* ***
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.1 = Этот сундук не настроен должным образом
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.3 = Этот Чес не хранит инвентаризации Правильно
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.5 = Все, что внутри будет удален на World выходе.
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.6 = ************************************** *********
+/ Джен Грудь Внимание
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.0 = **************** ПРЕДУПРЕЖДЕНИЕ ********************* ***
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.1 = Этот сундук не настроен должным образом
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.3 = Этот Чес не хранит инвентаризации Правильно
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.5 = Все, что внутри будет удален на World выходе.
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.6 = ************************************** *********
+
+
+// Творческие вкладки
+itemGroup.EpicProportionsMod = jtrent238 непомерные Пропорции Mod
+
+// Разное
+com.jtrent238.epicproportions.lib.LogHelper = Эпическая Пропорции Mod Вход

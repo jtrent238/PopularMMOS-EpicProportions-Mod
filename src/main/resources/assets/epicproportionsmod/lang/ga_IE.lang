@@ -1,0 +1,299 @@
+// Epic Comhréir Mod Lang Comhad Jtrent238 ar
+// ga_IE
+
+// Míreanna
+item.itemgemofepicproportions.name = Gem na Epic Comhréir
+item.itemPatIngot.name = tinne FuriousDestroyer ar
+item.itemJenIngot.name = tinne SuperGirlyGamer ar
+item.itemJenslips.name = Liopaí Jen ar
+item.itemCaptainCookieCookie.name = Cookie Captaen Cookie ar
+item.itemJenStar.name = SuperGirlyGamer Star
+item.itemPatStar.name = FuriousDestroyer Star
+item.itemEpicProportionsStar.name = Epic Comhréir Star
+item.itemTNTSwordPlacer.name = TNT Sword
+item.itemBirthdayPresent.name = Breithlá I láthair
+item.itemHouseOfEpicProportionsPlacer.name = House Of Epic Comhréir [WIP]
+item.itemBombyStructurePlacer.name = Struchtúr Bomby
+item.itemJensHoleStructurePlacer_1.name = Jen ar Poll 1 [WIP]
+item.itemJensHoleStructurePlacer_2.name = Jen ar Poll 2 [WIP]
+item.itemJensHoleStructurePlacer_3.name = Jen ar Poll 3 [WIP]
+item.itemJensHoleStructurePlacer_4.name = Jen ar Poll 4 [WIP]
+item.itemJensHoleStructurePlacer_5.name = Jen ar Poll 5 [WIP]
+item.itemSwordOfEpicProportions_Part1.name = Sword As Epic Comhréir Cuid 1
+item.itemSwordOfEpicProportions_Part2.name = Sword As Epic Comhréir Cuid 2
+item.itemSwordOfEpicProportions_Part3.name = Sword As Epic Comhréir Cuid 3
+item.itempatdoor.name = FuriousDestroyer Doras
+item.itemjendoor.name = SuperGirlyGamer Doras
+item.itempatapple.name = FuriousDestroyer Apple
+item.itemjenapple.name = SuperGirlyGamer Apple
+item.itemPatmeat_raw.name = FuriousDestroyer Feola Raw
+item.itemPatmeat_cooked.name = FuriousDestroyer Feola cócaráilte
+item.itemJenmeat_raw.name = SuperGirlyGamer Feola Raw
+item.itemJenmeat_cooked.name = SuperGirlyGamer Feola cócaráilte
+item.ItemCookedPufferFish.name = pufferfish cócaráilte
+item.itemModInfo.name = Faisnéis Mod
+item.itemPickOfEpicProportions_Part1.name = pickaxe Of Epic Comhréir Cuid 1
+item.itemPickOfEpicProportions_Part2.name = pickaxe Of Epic Comhréir Cuid 2
+item.itemPickOfEpicProportions_Part3.name = pickaxe Of Epic Comhréir Cuid 3
+item.itemPatWellPlacer.name = FuriousDestroyer Well
+item.itemJenWellPlacer.name = SuperGirlyGamer Well
+item.itemPatGun.name = FuriousDestroyer Gun
+item.itemJenGun.name = SuperGirlyGamer Gun
+item.itemBirthdayPresent_Green.name = Breithlá I láthair
+item.itemShovelOfEpicProportions_Part1.name = Shovel Of Epic Comhréir Cuid 1
+item.itemShovelOfEpicProportions_Part2.name = Shovel Of Epic Comhréir Cuid 2
+item.itemShovelOfEpicProportions_Part3.name = Shovel Of Epic Comhréir Cuid 3
+item.itemTNTLauncher.name = TNT Launcher
+item.itemPatTNTLauncher.name = FuriousDestroyer TNT Launcher
+item.itemTrollTNTLauncher.name = Troll TNT Launcher
+item.itemFartBombLauncher.name = Fart Buama Launcher
+item.itemNukeLauncher.name = Nuke Launcher
+
+/ Airm & Uirlisí
+item.itemPatSword.name = Sword FuriousDestroyer ar
+item.itemJenSword.name = Sword SuperGirlyGamer ar
+item.itemPatPick.name = pickaxe FuriousDestroyer ar
+item.itemJenPick.name = pickaxe SuperGirlyGamer ar
+item.itemPatAxe.name = Tua FuriousDestroyer ar
+item.itemJenAxe.name = Tua SuperGirlyGamer ar
+item.itemPatShovel.name = Shovel FuriousDestroyer ar
+item.itemJenShovel.name = Shovel SuperGirlyGamer ar
+item.itemPatHoe.name = Hoe FuriousDestroyer ar
+item.itemJenHoe.name = Hoe SuperGirlyGamer ar
+item.itemPatStaff.name = Foireann FuriousDestroyer ar
+item.itemJenStaff.name = Foireann SuperGirlyGamer ar
+item.itemPatBow.name = Bow FuriousDestroyer ar
+item.itemJenBow.name = Bow SuperGirlyGamer ar
+item.itemPatArrow.name = Arrow FuriousDestroyer ar
+item.itemJenArrow.name = Arrow SuperGirlyGamer ar
+item.itemPatMultiTool.name = MultiTool FuriousDestroyer ar
+item.itemJenMultiTool.name = MultiTool SuperGirlyGamer ar
+
+item.itemSuperPatSword.name = FuriousDestroyer Super Sword
+item.itemSuperJenSword.name = SuperGirlyGamer Super Sword
+item.itemSuperPatPick.name = FuriousDestroyer Super pickaxe
+item.itemSuperJenPick.name = SuperGirlyGamer Super pickaxe
+item.itemSuperPatAxe.name = FuriousDestroyer Super Axe
+item.itemSuperJenAxe.name = SuperGirlyGamer Super Axe
+item.itemSuperPatShovel.name = FuriousDestroyer Super Shovel
+item.itemSuperJenShovel.name = SuperGirlyGamer Super Shovel
+item.itemSuperPatHoe.name = FuriousDestroyer Super Hoe
+item.itemSuperJenHoe.name = SuperGirlyGamer Super Hoe
+item.itemSuperPatMultiTool.name = FuriousDestroyer Super MultiTool
+item.itemSuperJenMultiTool.name = SuperGirlyGamer Super MultiTool
+item.itemSwordOfEpicProportions.name = Sword As Epic Comhréir
+item.itemPickOfEpicProportions.name = pickaxe Of Epic Comhréir
+item.itemShovelOfEpicProportions.name = Shovel Of Epic Comhréir
+item.itemHoeOfEpicProportions.name = Hoe Of Epic Comhréir
+item.itemAxeOfEpicProportions.name = tua Of Epic Comhréir
+
+/ Armor
+/ Pat
+item.itemPatHelmet.name = Helment FuriousDestroyer ar
+item.itemPatChestplate.name = Chestplate FuriousDestroyer ar
+item.itemPatLeggings.name = luiteoga FuriousDestroyer ar
+item.itemPatBoots.name = Buataisí FuriousDestroyer ar
+/ Jen
+item.itemJenHelmet.name = Helment SuperGirlyGamer ar
+item.itemJenChestplate.name = Chestplate SuperGirlyGamer ar
+item.itemJenLeggings.name = luiteoga SuperGirlyGamer ar
+item.itemJenBoots.name = Buataisí SuperGirlyGamer ar
+/ Super Pat
+item.itemSuperPatHelmet.name = FuriousDestroyer ar Helment Helment
+item.itemSuperPatChestplate.name = FuriousDestroyer Super Chestplate
+item.itemSuperPatLeggings.name = FuriousDestroyer Super Luiteoga
+item.itemSuperPatBoots.name = Super Buataisí FuriousDestroyer ar
+/ Super Jen
+item.itemSuperJenHelmet.name = SuperGirlyGamer Super Helment
+item.itemSuperJenChestplate.name = SuperGirlyGamer Super Chestplate
+item.itemSuperJenLeggings.name = SuperGirlyGamer Super Luiteoga
+item.itemSuperJenBoots.name = Super Buataisí SuperGirlyGamer ar
+
+
+/ Sceith Uibheacha
+item.itemSpawnBomby.name = Spawn Bomby [WIP]
+item.itemSpawnCaptianCookie.name = sceith Captaen Cookie
+item.itemSpawnPat.name = Spawn FuriousDestroyer
+item.itemSpawnJen.name = Spawn SuperGirlyGamer
+item.itemSpawnFred2_0.name = sceith Fred 2.0 [WIP]
+item.itemSpawnNinjaMaster.name = sceith Ninja Máistir
+item.itemSpawnCandyMan.name = Spawn An Fear Candy
+item.itemSpawnCookieLittle.name = sceith Captaen Cookie Little [WIP]
+item.itemSpawnjtrent238.name = Spawn jtrent238
+item.itemSpawnClown.name = sceith Clown
+item.itemSpawnCandyPopper.name = sceith Candy Popper [WIP]
+item.itemSpawnSparky.name = sceith Sparky
+item.itemSpawnKitty.name = sceith Kitty
+item.itemSpawnKami.name = sceith Kami [WIP]
+item.itemSpawnPopo.name = sceith Popo [WIP]
+item.itemSpawnBanana.name = sceith Banana
+item.itemSpawnBlockling.name = sceith Beaga Blockling [WIP]
+item.itemSpawnVillagerOfEpicProportions.name = sceith villager As EpicPropotions [WIP]
+item.itemSpawnPatVillager.name = sceith FuriousDestroyer villager [WIP]
+item.itemSpawnJenVillager.name = sceith SuperGirlyGamer villager [WIP]
+
+
+// Bloic
+tile.blockFartBomb.name = Fart Buama
+Bloc tile.blockPatIngot.name = FuriousDestroyer ar
+Bloc tile.blockJenIngot.name = SuperGirlyGamer ar
+tile.blockPatOre.name = FuriousDestroyer Ore
+tile.blockJenOre.name = SuperGirlyGamer Ore
+TNT tile.blockPatTNT.name = FuriousDestroyer ar
+tile.blockBirthdayPresent.name = Breithlá I láthair
+Cliabh tile.blockPatChest.name = FuriousDestroyer s [WIP]
+Cliabh tile.blockJenChest.name = SuperGirlyGamer s [WIP]
+tile.blockTrollTNT.name = Troll TNT
+tile.blockFlowerForJen.name = Flower Do Jen
+tile.blockFlowerRedHeart.name = Flower Chroí Dearg
+tile.blockFlowerPinkHeart.name = Pink Flower Chroí
+tile.blockFlowerRainbow.name = Rainbow Flower
+tile.blockFlowerLove.name = Grá Flower
+tile.blockFlowerChocolate.name = Flower Seacláid
+tile.blockBirthdayPresent_Green.name = Breithlá I láthair
+tile.BlockNuke.name = Nuke
+
+// Entitys
+entity.EntityBomby.name = Bomby
+entity.EntityCaptianCookie.name = Captaen Cookie
+entity.EntityPat.name = FuriousDestroyer
+entity.EntityJen.name = SuperGirlyGamer
+entity.EntityFred2_0.name = Fred 2.0
+entity.EntityNinjaMaster.name = Master Ninja
+entity.EntityCandyMan.name = An Fear Candy
+entity.EntityCaptianCookieLittle.name = Captaen Cookie Little
+entity.EntityClown.name = Clown
+entity.EntityCandyPopper.name = Popper Candy
+entity.EntitySparky.name = Sparky
+entity.EntityKitty.name = Kitty
+entity.EntityKami.name = Kami
+entity.EntityPopo.name = Popo
+entity.EntityBanana.name = Banana
+entity.EntityBlockling_Small.name = Blockling Beag
+
+// Devs Mod And Cúntóirí
+entity.Entityjtrent238.name = jtrent238
+
+// coimeádán
+Cliabh container.Patchest = FuriousDestroyer s [WIP]
+Cliabh container.Jenchest = SuperGirlyGamer s [WIP]
+container.chestPatDouble = Móra FuriousDestroyerChest [WIP]
+container.chestJenDouble = Móra SuperGirlyGamer cliabh [WIP]
+
+// Gineadóirí
+
+// Éachtaí
+/ Fáilte Go Epic Comhréir
+achievement.install = Fáilte Go Epic Comhréir
+achievement.install.desc = Suiteáil Epic Comhréir Mod
+/ Breithlá Shona
+achievement.happybirthday = Breithlá shona!
+achievement.happybirthday.desc = Oscail I láthair Breithlá
+/ Flower Do Jen
+achievement.flowerforjen = Flower Do Jen
+achievement.flowerforjen.desc = Faigh a Flower Do Jen
+/ I Am FuriousDestroyer
+achievement.iampat = Am I FuriousDestroyer
+achievement.iampat.desc = Caith Iomlán Pat Armor
+/ I Am SuperGirlyGamer
+achievement.iamjen = Am I SuperGirlyGamer
+achievement.iamjen.desc = Caith Iomlán Jen Armor
+/ popped
+achievement.popped = popped
+achievement.popped.desc = Kill a Popper Candy
+/ Fianáin For Everyone
+achievement.cookies = Fianáin For Everyone
+achievement.cookies.desc = Kill Captaen Cookie
+/ FuriousDestroyer Bás
+achievement.killpat = FuriousDestroyer Fuair ​​bás
+achievement.killpat.desc = Kill FuriousDestroyer
+/ SuperGirlyGamer Bás
+achievement.killjen = SuperGirlyGamer Fuair ​​bás
+achievement.killjen.desc = Kill SuperGirlyGamer
+/ Greannmhar
+achievement.funny = Greannmhar
+achievement.funny.desc = Kill A Clown
+/ Pat Star
+Star achievement.patstar = FuriousDestroyer ar
+achievement.patstar.desc = Faigh an titim annamh ó FuriousDestroyer
+/ Jen Star
+Star achievement.jenstar = SuperGirlyGamer ar
+achievement.jenstar.desc = Faigh an titim annamh ó SuperGirlyGamer
+/ Pat Armor
+Armor achievement.patarmor = SuperGirlyGamer ar
+achievement.patarmor.desc =
+/ Jen Armor
+Armor achievement.jenarmor = SuperGirlyGamer ar
+achievement.jenarmor.desc =
+/ Super Pat Armor
+achievement.patarmor_super = SuperGirlyGamer Super Armor
+achievement.patarmor_super.desc =
+/ Super Jen Armor
+achievement.jenarmor_super = SuperGirlyGamer Super Armor
+achievement.jenarmor_super.desc =
+/ Sword As Epic Comhréir
+achievement.swordofepicproportions = Sword As Epic Propotions
+achievement.swordofepicproportions.desc = Ceardaíochta An Sword As Epic Propotions
+/ Pickaxe Of Epic Comhréir
+achievement.pickaxeofepicproportions = pickaxe Of Epic Propotions
+achievement.pickaxeofepicproportions.desc = Ceardaíochta An pickaxe Of Epic Propotions
+/ Tua Of Epic Comhréir
+achievement.axeofepicproportions = Tua As Epic Propotions
+achievement.axeofepicproportions.desc = Ceardaíochta An tua Of Epic Propotions
+/ Shovel Of Epic Comhréir
+achievement.shovelofepicproportions = Shovel Of Epic Propotions
+achievement.shovelofepicproportions.desc = Ceardaíochta An Shovel Of Epic Propotions
+/ Hoe Of Epic Comhréir
+achievement.hoeofepicproportions = Hoe Of Epic Propotions
+achievement.hoeofepicproportions.desc = Ceardaíochta An Hoe Of Epic Propotions
+
+// Stats
+stat.presentsbroken = Nunber Of Presents Osclaíodh
+
+// enchantments
+// potions
+// leideanna
+tooltip.epicproportionsmod.itemSwordOfEpicProportions_Part_1 = Chomhcheangail le Codanna eile a dhéanamh
+tooltip.epicproportionsmod.itemSwordOfEpicProportions_Part_2 = Tá an Sword EpicPropotions
+tooltip.epicproportionsmod.itemPickOfEpicProportions_Part_1 = Chomhcheangail le Codanna eile a dhéanamh
+tooltip.epicproportionsmod.itemPickOfEpicProportions_Part_2 = Tá an pickaxe na EpicPropotions
+tooltip.epicproportionsmod.itemShovelOfEpicProportions_Part_1 = Chomhcheangail le Codanna eile a dhéanamh
+tooltip.epicproportionsmod.itemShovelOfEpicProportions_Part_2 = Tá an Shovel na EpicPropotions
+
+
+tooltip.epicproportionsmod.itemSwordOfEpicProportions.captiancookie.no = Ná thabhairt do Captian Cookie !!!
+tooltip.epicproportionsmod.itemBirthdayPresent.bday = Birtday Shona!
+tooltip.epicproportionsmod.itemBirthdayPresent.inside = N'fheadar cad a d'fhéadfadh a bheith taobh istigh?
+tooltip.epicproportionsmod.itemBirthdayPresent_Green.bday = Birtday Shona!
+tooltip.epicproportionsmod.itemBirthdayPresent_Green.inside = N'fheadar cad a d'fhéadfadh a bheith taobh istigh?
+tooltip.epicproportionsmod.itemPatGun.ammotype = ídíonn FuriousDestroyer Arrow
+tooltip.epicproportionsmod.itemJenGun.ammotype = ídíonn SuperGirlyGamer Arrow
+tooltip.epicproportionsmod.itemTNTLauncher.ammotype = Ídíonn TNT
+tooltip.epicproportionsmod.itemPatTNTLauncher.ammotype = ídíonn FuriousDestroyer TNT
+tooltip.epicproportionsmod.itemTrollTNTLauncher.ammotype = ídíonn Troll TNT
+tooltip.epicproportionsmod.itemFartBombLauncher.ammotype = ídíonn Fart Buama
+tooltip.epicproportionsmod.itemNukeLauncher.ammotype = ídíonn Nuke
+
+/ Pat cliabh Warning
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.0 = **************** RABHADH ********************* ***
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.1 = Níl an cliabh cumraithe i gceart
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.3 = Seo ireann Níl an Store Fardal Gceart
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.5 = Rud ar bith a taobh istigh a scriosadh ar an Domhain scoir.
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.6 = ************************************** *********
+/ Jen cliabh Warning
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.0 = **************** RABHADH ********************* ***
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.1 = Níl an cliabh cumraithe i gceart
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.3 = Seo ireann Níl an Store Fardal Gceart
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.5 = Rud ar bith a taobh istigh a scriosadh ar an Domhain scoir.
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.6 = ************************************** *********
+
+
+// Creative Cluaisíní
+itemGroup.EpicProportionsMod = jtrent238 s Epic Comhréir Mod
+
+// Misc
+com.jtrent238.epicproportions.lib.LogHelper = Epic Comhréir Mod Logáil
