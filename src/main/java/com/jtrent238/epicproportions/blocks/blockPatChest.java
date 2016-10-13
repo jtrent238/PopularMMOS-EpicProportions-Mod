@@ -3,8 +3,10 @@ package com.jtrent238.epicproportions.blocks;
 import static net.minecraftforge.common.util.ForgeDirection.DOWN;
 
 import java.util.Iterator;
+import java.util.List;
 import java.util.Random;
 
+import com.jtrent238.epicproportions.EpicProportionsMod;
 import com.jtrent238.epicproportions.inventory.InventoryLargePatChest;
 import com.jtrent238.epicproportions.tileentity.TileEntityPatChest;
 
@@ -28,7 +30,9 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.TileEntityChest;
 import net.minecraft.util.AxisAlignedBB;
+import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.MathHelper;
+import net.minecraft.util.StatCollector;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
@@ -46,6 +50,18 @@ public class blockPatChest extends BlockContainer
         this.setBlockBounds(0.0625F, 0.0F, 0.0625F, 0.9375F, 0.875F, 0.9375F);
     }
 
+    @SideOnly(Side.CLIENT)
+	 public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean isHeld) {
+	 list.add(EnumChatFormatting.RED + StatCollector.translateToLocal("tooltip." + EpicProportionsMod.MODID + "." + "blockPatChest" + "." + "Warning" + "." + "noinventory" + "." + "0"));
+	 list.add(EnumChatFormatting.RED + StatCollector.translateToLocal("tooltip." + EpicProportionsMod.MODID + "." + "blockPatChest" + "." + "Warning" + "." + "noinventory" + "." + "1"));
+	 list.add(EnumChatFormatting.RED + StatCollector.translateToLocal("tooltip." + EpicProportionsMod.MODID + "." + "blockPatChest" + "." + "Warning" + "." + "noinventory" + "." + "2"));
+	 list.add(EnumChatFormatting.RED + StatCollector.translateToLocal("tooltip." + EpicProportionsMod.MODID + "." + "blockPatChest" + "." + "Warning" + "." + "noinventory" + "." + "3"));
+	 list.add(EnumChatFormatting.RED + StatCollector.translateToLocal("tooltip." + EpicProportionsMod.MODID + "." + "blockPatChest" + "." + "Warning" + "." + "noinventory" + "." + "4"));
+	 list.add(EnumChatFormatting.RED + StatCollector.translateToLocal("tooltip." + EpicProportionsMod.MODID + "." + "blockPatChest" + "." + "Warning" + "." + "noinventory" + "." + "5"));
+	 list.add(EnumChatFormatting.RED + StatCollector.translateToLocal("tooltip." + EpicProportionsMod.MODID + "." + "blockPatChest" + "." + "Warning" + "." + "noinventory" + "." + "6"));
+				
+	  }
+    
     /**
      * Is this block (a) opaque and (b) a full 1m cube?  This determines whether or not to render the shared face of two
      * adjacent blocks and also whether the player can attach torches, redstone wire, etc to this block.
@@ -573,4 +589,6 @@ public class blockPatChest extends BlockContainer
     {
         this.blockIcon = p_149651_1_.registerIcon("epicproportionsmod:blockPatIngot");
     }
+    
+
 }

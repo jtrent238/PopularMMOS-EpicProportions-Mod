@@ -22,6 +22,44 @@ item.itemJensHoleStructurePlacer_5.name=Jen's Hole 5 [WIP]
 item.itemSwordOfEpicProportions_Part1.name=Sword Of Epic Proportions Part 1
 item.itemSwordOfEpicProportions_Part2.name=Sword Of Epic Proportions Part 2
 item.itemSwordOfEpicProportions_Part3.name=Sword Of Epic Proportions Part 3
+item.itempatdoor.name=FuriousDestroyer Door
+item.itemjendoor.name=SuperGirlyGamer Door
+item.itempatapple.name=FuriousDestroyer Apple
+item.itemjenapple.name=SuperGirlyGamer Apple
+item.itemPatmeat_raw.name=FuriousDestroyer Meat Raw
+item.itemPatmeat_cooked.name=FuriousDestroyer Meat Cooked
+item.itemJenmeat_raw.name=SuperGirlyGamer Meat Raw
+item.itemJenmeat_cooked.name=SuperGirlyGamer Meat Cooked
+item.ItemCookedPufferFish.name=Cooked PufferFish
+item.itemModInfo.name=Mod Information
+item.itemPickOfEpicProportions_Part1.name=Pickaxe Of Epic Proportions Part 1
+item.itemPickOfEpicProportions_Part2.name=Pickaxe Of Epic Proportions Part 2
+item.itemPickOfEpicProportions_Part3.name=Pickaxe Of Epic Proportions Part 3
+item.itemPatWellPlacer.name=FuriousDestroyer Well
+item.itemJenWellPlacer.name=SuperGirlyGamer Well
+item.itemPatGun.name=FuriousDestroyer Gun
+item.itemJenGun.name=SuperGirlyGamer Gun
+item.itemBirthdayPresent_Green.name=Birthday Present
+item.itemShovelOfEpicProportions_Part1.name=Shovel Of Epic Proportions Part 1 
+item.itemShovelOfEpicProportions_Part2.name=Shovel Of Epic Proportions Part 2
+item.itemShovelOfEpicProportions_Part3.name=Shovel Of Epic Proportions Part 3
+item.itemTNTLauncher.name=TNT Launcher
+item.itemPatTNTLauncher.name=FuriousDestroyer TNT Launcher
+item.itemTrollTNTLauncher.name=Troll TNT Launcher
+item.itemFartBombLauncher.name=Fart Bomb Launcher
+item.itemNukeLauncher.name=Nuke Launcher
+item.itemTNTCastlePlacer.name=TNT Castle
+item.itemStatue.name=Statue
+item.itemPatStatue.name=FuriousDestroyer Statue
+item.itemJenStatue.name=SuperGirlyGamer Statue
+item.itemCaptianCookieStatue.name=Captain Cookie Statue
+item.itemNinjaMasterStatue.name=Ninja Master Statue
+item.itemTheCandyManStatue.name=The Candy Man Statue
+item.itemjtrent238Statue.name=jtrent238 Statue
+item.itembombyStatue.name=Bomby Statue
+item.itemkittyStatue.name=Kitty Statue
+item.itemsparkyStatue.name=Sparky Statue
+item.itemCaptianCookieLittleStatue.name=Captian Cookie Little Statue
 
 	/Weapons & Tools
 item.itemPatSword.name=FuriousDestroyer's Sword
@@ -91,8 +129,8 @@ item.itemSpawnPat.name=Spawn FuriousDestroyer
 item.itemSpawnJen.name=Spawn SuperGirlyGamer
 item.itemSpawnFred2_0.name=Spawn Fred 2.0 [WIP]
 item.itemSpawnNinjaMaster.name=Spawn Ninja Master
-item.itemSpawnCandyMan.name=Spawn §2The Candy Man §r
-item.itemSpawnCookieLittle.name=Spawn Captain Cookie Little §4[WIP]§r
+item.itemSpawnCandyMan.name=Spawn The Candy Man
+item.itemSpawnCookieLittle.name=Spawn Captain Cookie Little [WIP]
 item.itemSpawnjtrent238.name=Spawn jtrent238
 item.itemSpawnClown.name=Spawn Clown
 item.itemSpawnCandyPopper.name=Spawn Candy Popper [WIP]
@@ -105,7 +143,8 @@ item.itemSpawnBlockling.name=Spawn Small Blockling [WIP]
 item.itemSpawnVillagerOfEpicProportions.name=Spawn Villager Of EpicPropotions [WIP]
 item.itemSpawnPatVillager.name=Spawn FuriousDestroyer Villager [WIP]
 item.itemSpawnJenVillager.name=Spawn SuperGirlyGamer Villager [WIP]
-
+item.itemSpawnJenGolem.name=Spawn SuperGirlyGamer Golem
+item.itemSpawnPatGolem.name=Spawn FuriousDestroyer Golem
 
 //Blocks
 tile.blockFartBomb.name=Fart Bomb
@@ -115,14 +154,19 @@ tile.blockPatOre.name=FuriousDestroyer Ore
 tile.blockJenOre.name=SuperGirlyGamer Ore
 tile.blockPatTNT.name=FuriousDestroyer's TNT
 tile.blockBirthdayPresent.name=Birthday Present
-tile.blockPatChest.name=FuriousDestroyer's Chest
-tile.blockJenChest.name=SuperGirlyGamer's Chest
+tile.blockPatChest.name=FuriousDestroyer's Chest [WIP]
+tile.blockJenChest.name=SuperGirlyGamer's Chest [WIP]
 tile.blockTrollTNT.name=Troll TNT
 tile.blockFlowerForJen.name=Flower For Jen
 tile.blockFlowerRedHeart.name=Red Heart Flower
 tile.blockFlowerPinkHeart.name=Pink Heart Flower
 tile.blockFlowerRainbow.name=Rainbow Flower
 tile.blockFlowerLove.name=Love Flower
+tile.blockFlowerChocolate.name=Chocolate Flower
+tile.blockBirthdayPresent_Green.name=Birthday Present
+tile.BlockNuke.name=Nuke
+tile.BlockPatStatue.name=FuriousDestroyer Statue
+tile.BlockJenStatue.name=SuperGirlyGamer Statue
 
 //Entitys
 entity.EntityBomby.name=Bomby
@@ -131,7 +175,7 @@ entity.EntityPat.name=FuriousDestroyer
 entity.EntityJen.name=SuperGirlyGamer
 entity.EntityFred2_0.name=Fred 2.0
 entity.EntityNinjaMaster.name=Ninja Master
-entity.EntityCandyMan.name=§2The Candy Man
+entity.EntityCandyMan.name=The Candy Man
 entity.EntityCaptianCookieLittle.name=Captain Cookie Little
 entity.EntityClown.name=Clown
 entity.EntityCandyPopper.name=Candy Popper
@@ -146,10 +190,10 @@ entity.EntityBlockling_Small.name=Small Blockling
 entity.Entityjtrent238.name=jtrent238
 
 //Container
-container.Patchest=FuriousDestroyer's Chest
-container.Jenchest=SuperGirlyGamer's Chest
-container.chestPatDouble=Large FuriousDestroyerChest
-container.chestJenDouble=Large SuperGirlyGamer Chest
+container.Patchest=FuriousDestroyer's Chest [WIP]
+container.Jenchest=SuperGirlyGamer's Chest [WIP]
+container.chestPatDouble=Large FuriousDestroyerChest [WIP]
+container.chestJenDouble=Large SuperGirlyGamer Chest [WIP]
 
 //Generators
 
@@ -184,13 +228,87 @@ achievement.killjen.desc=Kill SuperGirlyGamer
 	/Funny
 achievement.funny=Funny
 achievement.funny.desc=Kill A Clown
+	/Pat Star
+achievement.patstar=FuriousDestroyer's Star
+achievement.patstar.desc=Get the rare drop from FuriousDestroyer
+	/Jen Star
+achievement.jenstar=SuperGirlyGamer's Star
+achievement.jenstar.desc=Get the rare drop from SuperGirlyGamer
+	/Pat Armor
+achievement.patarmor=SuperGirlyGamer's Armor
+achievement.patarmor.desc=
+	/Jen Armor
+achievement.jenarmor=SuperGirlyGamer's Armor
+achievement.jenarmor.desc=
+	/Super Pat Armor
+achievement.patarmor_super=SuperGirlyGamer's Super Armor
+achievement.patarmor_super.desc=
+	/Super Jen Armor
+achievement.jenarmor_super=SuperGirlyGamer's Super Armor
+achievement.jenarmor_super.desc=
+	/Sword Of Epic Proportions
+achievement.swordofepicproportions=Sword Of Epic Propotions
+achievement.swordofepicproportions.desc=Craft The Sword Of Epic Propotions
+	/Pickaxe Of Epic Proportions
+achievement.pickaxeofepicproportions=Pickaxe Of Epic Propotions
+achievement.pickaxeofepicproportions.desc=Craft The Pickaxe Of Epic Propotions
+	/Axe Of Epic Proportions
+achievement.axeofepicproportions=Axe Of Epic Propotions
+achievement.axeofepicproportions.desc=Craft The Axe Of Epic Propotions
+	/Shovel Of Epic Proportions
+achievement.shovelofepicproportions=Shovel Of Epic Propotions
+achievement.shovelofepicproportions.desc=Craft The Shovel Of Epic Propotions
+	/Hoe Of Epic Proportions
+achievement.hoeofepicproportions=Hoe Of Epic Propotions
+achievement.hoeofepicproportions.desc=Craft The Hoe Of Epic Propotions
+
+//Stats
+stat.presentsbroken=Nunber Of Presents Opened
 
 //Enchantments
 //Potions
 //ToolTips
 tooltip.epicproportionsmod.itemSwordOfEpicProportions_Part_1=Combine with other Parts to make 
 tooltip.epicproportionsmod.itemSwordOfEpicProportions_Part_2=The Sword of EpicPropotions
+tooltip.epicproportionsmod.itemPickOfEpicProportions_Part_1=Combine with other Parts to make 
+tooltip.epicproportionsmod.itemPickOfEpicProportions_Part_2=The Pickaxe of EpicPropotions
+tooltip.epicproportionsmod.itemShovelOfEpicProportions_Part_1=Combine with other Parts to make 
+tooltip.epicproportionsmod.itemShovelOfEpicProportions_Part_2=The Shovel of EpicPropotions
+
+
+tooltip.epicproportionsmod.itemSwordOfEpicProportions.captiancookie.no=Do not give to Captian Cookie!!!
+tooltip.epicproportionsmod.itemBirthdayPresent.bday=Happy Birtday!
+tooltip.epicproportionsmod.itemBirthdayPresent.inside=I wonder what could be inside?
+tooltip.epicproportionsmod.itemBirthdayPresent_Green.bday=Happy Birtday!
+tooltip.epicproportionsmod.itemBirthdayPresent_Green.inside=I wonder what could be inside?
+tooltip.epicproportionsmod.itemPatGun.ammotype=Consumes FuriousDestroyer Arrow
+tooltip.epicproportionsmod.itemJenGun.ammotype=Consumes SuperGirlyGamer Arrow
+tooltip.epicproportionsmod.itemTNTLauncher.ammotype=Consumes TNT
+tooltip.epicproportionsmod.itemPatTNTLauncher.ammotype=Consumes FuriousDestroyer TNT
+tooltip.epicproportionsmod.itemTrollTNTLauncher.ammotype=Consumes Troll TNT
+tooltip.epicproportionsmod.itemFartBombLauncher.ammotype=Consumes Fart Bomb
+tooltip.epicproportionsmod.itemNukeLauncher.ammotype=Consumes Nuke
+
+	/Pat Chest Warning
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.0=****************WARNING************************
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.1=This Chest is not Configured Properly
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.4=***********************************************
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.3=This Ches Does Not Store Inventory Properly
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.4=***********************************************
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.5=Anything inside will be deleted on World exit.
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.6=***********************************************
+	/Jen Chest Warning
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.0=****************WARNING************************
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.1=This Chest is not Configured Properly
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.4=***********************************************
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.3=This Ches Does Not Store Inventory Properly
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.4=***********************************************
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.5=Anything inside will be deleted on World exit.
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.6=***********************************************
 
 
 //Creative Tabs
 itemGroup.EpicProportionsMod=jtrent238's Epic Proportions Mod
+
+//Misc
+com.jtrent238.epicproportions.lib.LogHelper=Epic Proportions Mod Log

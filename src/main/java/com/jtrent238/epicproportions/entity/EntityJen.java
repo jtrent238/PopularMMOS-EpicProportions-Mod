@@ -102,6 +102,8 @@ this.dropItem(ItemLoader.itemJenStar, 1);
     {
     	this.entityDropItem(new ItemStack(ItemLoader.itemJenIngot), 2F);
     	this.entityDropItem(new ItemStack(ItemLoader.itemJenslips), 2F);
+    	this.entityDropItem(new ItemStack(ItemLoader.itemJenmeat_raw), 2F);
+        
     	    }
 
     /**

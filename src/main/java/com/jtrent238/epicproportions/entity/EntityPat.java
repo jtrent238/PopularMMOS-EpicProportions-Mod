@@ -104,6 +104,8 @@ this.dropItem(ItemLoader.itemPatStar, 1);
     protected void dropFewItems(boolean var1, int var2)
     {
     	this.entityDropItem(new ItemStack(ItemLoader.itemPatIngot), 2F);
+    	this.entityDropItem(new ItemStack(ItemLoader.itemPatmeat_raw), 2F);
+        
     }
 
     /**

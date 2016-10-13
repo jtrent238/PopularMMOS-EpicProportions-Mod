@@ -11,6 +11,8 @@ import net.minecraft.world.World;
 
 public class itemPatStaff extends Item{
 
+	
+	
 	public ItemStack onItemRightClick(ItemStack itemstack, World world, EntityPlayer entityplayer)
 	{
 		itemstack.damageItem(10, entityplayer);

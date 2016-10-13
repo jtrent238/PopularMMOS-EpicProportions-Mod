@@ -4,23 +4,39 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.ModelBiped;
 import net.minecraft.client.model.ModelCow;
 import net.minecraft.client.model.ModelCreeper;
+import net.minecraft.client.model.ModelIronGolem;
 import net.minecraft.client.model.ModelSheep1;
 import net.minecraft.client.model.ModelVillager;
 import net.minecraft.client.model.ModelWolf;
+import net.minecraft.client.renderer.entity.RenderArrow;
 import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.client.renderer.entity.RenderSnowball;
+import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
+import net.minecraft.client.resources.SkinManager;
+import net.minecraft.crash.CrashReport;
 import net.minecraft.entity.Entity;
+import net.minecraft.event.ClickEvent;
 import net.minecraft.item.Item;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.ChatComponentText;
+import net.minecraft.util.ChatStyle;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.MinecraftForgeClient;
+
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import com.jtrent238.epicproportions.Achievements;
 import com.jtrent238.epicproportions.BlockLoader;
 import com.jtrent238.epicproportions.EpicProportionsMod;
 import com.jtrent238.epicproportions.ServerProxy;
 import com.jtrent238.epicproportions.TradeHandler;
+import com.jtrent238.epicproportions.VersionChecker;
 import com.jtrent238.epicproportions.common.CommonProxy;
+import com.jtrent238.epicproportions.entity.EntilyJenArrow;
+import com.jtrent238.epicproportions.entity.EntilyPatArrow;
 import com.jtrent238.epicproportions.entity.Entilyjtrent238;
 import com.jtrent238.epicproportions.entity.EntityBanana;
 import com.jtrent238.epicproportions.entity.EntityBlockling_Small;
@@ -32,46 +48,72 @@ import com.jtrent238.epicproportions.entity.EntityCaptianCookieLittle;
 import com.jtrent238.epicproportions.entity.EntityClown;
 import com.jtrent238.epicproportions.entity.EntityFred2_0;
 import com.jtrent238.epicproportions.entity.EntityJen;
+import com.jtrent238.epicproportions.entity.EntityJenGolem;
 import com.jtrent238.epicproportions.entity.EntityKami;
 import com.jtrent238.epicproportions.entity.EntityKitty;
 import com.jtrent238.epicproportions.entity.EntityNinjaMaster;
 import com.jtrent238.epicproportions.entity.EntityPat;
+import com.jtrent238.epicproportions.entity.EntityPatGolem;
 import com.jtrent238.epicproportions.entity.EntityPopo;
 import com.jtrent238.epicproportions.entity.EntitySparky;
 import com.jtrent238.epicproportions.eventhandler.OnJoinEvent;
+import com.jtrent238.epicproportions.eventhandler.OnOpenPresentEvent;
+import com.jtrent238.epicproportions.eventhandler.OnPickupJenFlowerEvent;
+import com.jtrent238.epicproportions.eventhandler.OnPickupJenStarEvent;
+import com.jtrent238.epicproportions.eventhandler.OnPickupPatStarEvent;
 import com.jtrent238.epicproportions.model.ModelBlockling_Small;
 import com.jtrent238.epicproportions.model.ModelCandyPopper;
 import com.jtrent238.epicproportions.model.ModelFred2_0;
+import com.jtrent238.epicproportions.model.ModelJenGolem;
 import com.jtrent238.epicproportions.model.ModelKitty;
+import com.jtrent238.epicproportions.model.ModelPatGolem;
 import com.jtrent238.epicproportions.model.ModelPopo1;
 import com.jtrent238.epicproportions.render.ItemRenderJenChest;
 import com.jtrent238.epicproportions.render.ItemRenderPatChest;
 import com.jtrent238.epicproportions.render.JenChestRenderer;
 import com.jtrent238.epicproportions.render.PatChestRenderer;
 import com.jtrent238.epicproportions.render.RenderChests;
+import com.jtrent238.epicproportions.render.RenderJenArrow;
 import com.jtrent238.epicproportions.render.RenderJenChest;
+import com.jtrent238.epicproportions.render.RenderJenStatue;
+import com.jtrent238.epicproportions.render.RenderPatArrow;
 import com.jtrent238.epicproportions.render.RenderPatChest;
+import com.jtrent238.epicproportions.render.RenderPatStatue;
 import com.jtrent238.epicproportions.tileentity.TileEntityJenChest;
+import com.jtrent238.epicproportions.tileentity.TileEntityJenStatue;
+import com.jtrent238.epicproportions.tileentity.TileEntityLoader;
 import com.jtrent238.epicproportions.tileentity.TileEntityPatChest;
+import com.jtrent238.epicproportions.tileentity.TileEntityPatStatue;
+import com.sun.media.jfxmedia.logging.Logger;
 
 import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.eventhandler.EventPriority;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.PlayerEvent;
+import cpw.mods.fml.common.gameevent.TickEvent.PlayerTickEvent;
 import cpw.mods.fml.common.registry.VillagerRegistry;
 import cpw.mods.fml.relauncher.SideOnly;
 
 
 public class ClientProxy extends CommonProxy {
-  public void init(FMLInitializationEvent e) {
+  
+    private static Minecraft theMinecraft;
+
+ 
+	
+ 	
+	public void init(FMLInitializationEvent e) {
     super.init (e);
     //System.out.print("client init fired!");
     
     // Register client-specific stuff (e.g. renderer & packet-handler callback etc)
   
+    
 
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityJenChest.class, new JenChestRenderer());
 		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockLoader.blockJenChest), new ItemRenderJenChest());
@@ -96,46 +138,107 @@ public class ClientProxy extends CommonProxy {
 	    RenderingRegistry.registerEntityRenderingHandler(EntityBanana.class, new RenderLiving(new ModelCow(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityBanana.png");}});//Banana Render
 	    RenderingRegistry.registerEntityRenderingHandler(EntityBlockling_Small.class, new RenderLiving(new ModelBlockling_Small(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityBlockling_Small.png");}});//Small Blockling Render
 	    RenderingRegistry.registerEntityRenderingHandler(EntityFred2_0.class, new RenderLiving(new ModelFred2_0(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityFred2_0.png");}});//Small Blockling Render
+	    RenderingRegistry.registerEntityRenderingHandler(EntityPatGolem.class, new RenderLiving(new ModelPatGolem(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityPatGolem.png");}});//Pat Golem Render
+	    RenderingRegistry.registerEntityRenderingHandler(EntityJenGolem.class, new RenderLiving(new ModelJenGolem(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityJenGolem.png");}});//Jen Golem Render
+		   
+	    RenderingRegistry.registerEntityRenderingHandler(EntilyPatArrow.class, new RenderPatArrow(){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityPatArrow.png");}});//Pat Arrow Render #1
+	    RenderingRegistry.registerEntityRenderingHandler(EntilyJenArrow.class, new RenderJenArrow(){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityJenArrow.png");}});//Jen Arrow Render #1
+	    RenderingRegistry.registerEntityRenderingHandler(EntilyPatArrow.class, new RenderPatArrow());//Pat Arrow Render #2
+	    RenderingRegistry.registerEntityRenderingHandler(EntilyJenArrow.class, new RenderJenArrow());//Jen Arrow Render #2
 	    
     	VillagerRegistry.instance().registerVillagerSkin(22, new ResourceLocation("epicproportionsmod", "VillagerOfEpicProportions.png"));
     	VillagerRegistry.instance().registerVillagerSkin(23, new ResourceLocation("epicproportionsmod", "JenVillager.png"));
     	VillagerRegistry.instance().registerVillagerSkin(24, new ResourceLocation("epicproportionsmod", "PatVillager.png"));
     	VillagerRegistry.instance().registerVillagerSkin(25, new ResourceLocation("epicproportionsmod", "TESTVILLAGER.png"));
 
+    	
+    	TileEntitySpecialRenderer render0 = new RenderPatStatue();
+    	ClientRegistry.bindTileEntitySpecialRenderer(TileEntityPatStatue.class, render0);
+    	TileEntitySpecialRenderer render1 = new RenderJenStatue();
+    	ClientRegistry.bindTileEntitySpecialRenderer(TileEntityJenStatue.class, render1);
+    	
 	
 		//return RenderingRegistry.addNewArmourRendererPrefix(armor);
 
 		RenderChests.RenderTileEntitys();
-
-		//FMLCommonHandler.instance().bus().register(new OnJoinEvent());
+		TileEntityLoader.mainRegistry();
+		
+		FMLCommonHandler.instance().bus().register(new OnJoinEvent());
+		FMLCommonHandler.instance().bus().register(new OnPickupJenFlowerEvent());
+		FMLCommonHandler.instance().bus().register(new OnPickupJenStarEvent());
+		FMLCommonHandler.instance().bus().register(new OnPickupPatStarEvent());
+		FMLCommonHandler.instance().bus().register(new OnOpenPresentEvent());
+		//FMLCommonHandler.instance().bus().register(new GuiMainMenu());
+		
+		
 		//FMLCommonHandler.instance().bus().register(new GameSettings());
     	
+		
+		
   }
   
-  @SubscribeEvent
-  public void onPlayerLogin(PlayerEvent.PlayerLoggedInEvent event) {
+  /**
+   * Wrapper around displayCrashReportInternal
+   */
+  public void displayCrashReport(CrashReport p_71377_1_)
+  {
+      File file1 = new File(getMinecraft().mcDataDir, "crash-reports");
+      File file2 = new File(file1, "crash-" + (new SimpleDateFormat("yyyy-MM-dd_HH.mm.ss")).format(new Date()) + (EpicProportionsMod.MODID) + "-client.txt");
+      System.out.println(p_71377_1_.getCompleteReport());
 
-  	event.player.addChatComponentMessage(new ChatComponentText("§b§lHello" + " " + "§e§l" + event.player.getDisplayName() + "§b§l!"));
-  	event.player.addChatComponentMessage(new ChatComponentText(/*/event.player.getDisplayName() + /*/"§a§l" + EpicProportionsMod.MODNAME + " " + "§2§lMade By:jtrent238"));
-  	event.player.addChatComponentMessage(new ChatComponentText(/*/event.player.getDisplayName() + /*/"§6§lYou are running" + "§b§l" + " " + EpicProportionsMod.MODVERSION + " " + "§6§lof" + "§6§l" + " " + EpicProportionsMod.MODNAME + "!"));
-  	//event.player.addChatComponentMessage(new ChatComponentText("§e§lLearn more at: §b§lhttp://bit.ly/FoodModWiki"));
-  	event.player.triggerAchievement(Achievements.achievementinstall);
-  	//event.player.addEntityCrashInfo(EpicProportionsMod.CRASHINFO);
-  	//event.player.clonePlayer(playerclone, true);
-  	event.player.extinguish();
-  	event.player.getDisplayName();
-  	//event.player.writeToNBT(EpicProportionsMod.NBTJOIN);
-  	event.player.getBedLocation();
-  	event.player.shouldHeal();
-  	event.getListenerList();
-  	event.hashCode();
-  	Minecraft.getSystemTime();
-  	Minecraft.isAmbientOcclusionEnabled();
-  	Minecraft.isGuiEnabled();
-  	Minecraft.getMinecraft();
-  	Minecraft.getGLMaximumTextureSize();
-  	Minecraft.isFancyGraphicsEnabled();
-  	//Log.getLog(arg0, arg1, arg2);
-  	//event.notifyAll();
+      int retVal;
+      if (p_71377_1_.getFile() != null)
+      {
+          System.out.println("#@!@# Game crashed! Crash report saved to: #@!@# " + p_71377_1_.getFile());
+          retVal = -1;
+      }
+      else if (p_71377_1_.saveToFile(file2))
+      {
+          System.out.println("#@!@# Game crashed! Crash report saved to: #@!@# " + file2.getAbsolutePath());
+          retVal = -1;
+      }
+      else
+      {
+          System.out.println("#@?@# Game crashed! Crash report could not be saved. #@?@#");
+          retVal = -2;
+      }
+      FMLCommonHandler.instance().handleExit(retVal);
   }
+
+  /**
+   * Return the singleton Minecraft instance for the game
+   */
+  public static Minecraft getMinecraft()
+  {
+      /** Set to 'this' in Minecraft constructor; used by some settings get methods */
+      return theMinecraft;
+  }
+
+  public void postInit(FMLPostInitializationEvent e) {
+	 
+	  EpicProportionsMod.versionChecker = new VersionChecker();
+	    Thread versionCheckThread = new Thread(EpicProportionsMod.versionChecker, "Version Check");
+	    versionCheckThread.start();
+  }
+  
+  
+  @SubscribeEvent(priority=EventPriority.NORMAL, receiveCanceled=true)
+  public void onEvent(PlayerTickEvent event)
+  {
+    
+      if (!EpicProportionsMod.haveWarnedVersionOutOfDate && event.player.worldObj.isRemote 
+            && !EpicProportionsMod.versionChecker.isLatestVersion())
+      {
+          ClickEvent versionCheckChatClickEvent = new ClickEvent(ClickEvent.Action.OPEN_URL, 
+                "http://www.planetminecraft.com/mod/popularmmos-epicproportions-mod-season-9/");
+          ChatStyle clickableChatStyle = new ChatStyle().setChatClickEvent(versionCheckChatClickEvent);
+          ChatComponentText versionWarningChatComponent = 
+                new ChatComponentText("Your EpicProportions Mod is not latest version!  Click here to update.");
+          versionWarningChatComponent.setChatStyle(clickableChatStyle);
+          event.player.addChatMessage(versionWarningChatComponent);
+          EpicProportionsMod.haveWarnedVersionOutOfDate = true;
+      }
+    
+  }
+  
 }

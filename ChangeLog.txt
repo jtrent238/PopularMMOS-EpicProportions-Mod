@@ -1,5 +1,87 @@
 Epic Proportions Mod ChangeLog
 
+pre-1.2.6.5
+- Added Pat Door
+- Added Jen Door
+- Added Pat Apple
+- Added Jen Apple
+- Added Achevement Pat Star
+- Added Achevement Jen Star
+- Added Achevement Pat Armor
+- Added Achevement Super Pat Armor
+- Added Achevement Jen Armor
+- Added Achevement Super Jen Armor
+- Added Achevement Pickaxe Of EpicProportions
+- Added Achevement Axe Of EpicProportions
+- Added Achevement Shovel Of EpicProportions
+- Added Achevement Hoe Of EpicProportions
+- Added "Number of Presents Broken" Stat
+- Added Log Helper
+- Added Texture For Pat Chest
+- Added Texture For Jen Chest
+- Added Config File
+- Added FuriousDestroyer Meat Raw
+- Added FuriousDestroyer Meat Cooked
+- Added SuperGirlyGamer Meat Raw
+- Added SuperGirlyGamer Meat Cooked
+- Added Sword Of Epic Proportions Achevement
+- Added Chocolate Flower
+- Added Pickaxe Of Epic Proportions Part 1
+- Added Pickaxe Of Epic Proportions Part 2
+- Added Pickaxe Of Epic Proportions Part 3
+- Added Crafting Recipe for Pickaxe Of Epic Proportions
+- Added FuriousDestroyer well
+- Added SuperGirlyGamer Well
+- Added FuriousDestroyer Gun
+- Added SuperGirlyGamer Gun
+- Added Shovel Of Epic Proportions Part 1 
+- Added Shovel Of Epic Proportions Part 2
+- Added Shovel Of Epic Proportions Part 3
+- Added TNT Launcher
+- Added FuriousDestroyer TNT Launcher
+- Added Troll TNT Launcher
+- Added Fart Bomb Launcher
+- Added FuriousDestroyer Sword to BlackSmith Chest
+- Added SuperGirlyGamer Sword to BlackSmith Chest
+- Added Nuke
+- Added Nuke Launcher
+- Added Hungarian Language File
+- Added Arabic Language File
+- Added Czech Language File
+- Added Polish Language File
+- Added Russian Language File
+- Added Slovak Language File
+- Added French Language File
+- Added Irish Language File
+- Added Spanish Language File
+- Added Joke Book
+- Added Birthday Present to Mineshaft Corridor Chest
+- Added Birthday Present to Pyramid Desert Chest
+- Added Birthday Present to Pyramid Jungle Chest
+- Added Birthday Present to Stronghold Corridor Chest
+- Added Birthday Present to Stronghold Crossing Chest
+- Added Birthday Present to Stronghold Library Chest
+- Added TNT Castle
+- Added Statue
+- Added FuriousDestroyer Statue
+- Added SuperGirlyGamer Statue
+- Added Captian Cookie Statue
+- Added Ninja Master Statue
+- Added The Candy Man Statue
+- Added jtrent238 Statue
+- Added Bomby Statue
+- Added Sparky Statue
+- Added Kitty Statue
+- Added Captian Cooke Little Statue
+- Added SuperGirlyGamer Golem
+- Added FuriousDestroyer Golem
+- Fixed Onjoin Info Text
+- Fixed "Welcome To Epic Proportions" Achevement
+- Removed the crafting recipe for TNT Sword
+- Changed the texture of FuriousDestroyer TNT
+
+
+
 1.1.6.5
 - Added Texture for Fred 2.0
 - Fixed Fred 2.0 Model

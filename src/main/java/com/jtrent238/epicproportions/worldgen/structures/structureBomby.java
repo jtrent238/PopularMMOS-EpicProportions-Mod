@@ -18,7 +18,8 @@ int k = k2 + random.nextInt(15);
 
 int j = world.getHeightValue(i,k)-1;
 
-if((random.nextInt(1000000)+1)<=100000){
+/*/if((random.nextInt(1000000)+1)<=100000){/*/
+if((random.nextInt(100)+1)<=1000000000){
 boolean place = true;
 
 for (int y = 0; y<15; y++)

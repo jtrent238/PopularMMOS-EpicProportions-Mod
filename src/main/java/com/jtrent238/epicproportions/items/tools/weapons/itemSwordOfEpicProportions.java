@@ -1,7 +1,10 @@
 package com.jtrent238.epicproportions.items.tools.weapons;
 
+import java.util.List;
+
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
+import com.jtrent238.epicproportions.EpicProportionsMod;
 import com.jtrent238.epicproportions.ItemLoader;
 
 import cpw.mods.fml.relauncher.Side;
@@ -13,6 +16,8 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.util.EnumChatFormatting;
+import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 
 public class itemSwordOfEpicProportions extends ItemSword
@@ -79,5 +84,12 @@ public class itemSwordOfEpicProportions extends ItemSword
 		par1ItemStack.addEnchantment(Enchantment.sharpness, enchant);
     }
     */
+    
+    @Override
+	 @SideOnly(Side.CLIENT)
+	 public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean isHeld) {
+	 list.add(EnumChatFormatting.RED + StatCollector.translateToLocal("tooltip." + EpicProportionsMod.MODID + "." + "itemSwordOfEpicProportions" + "." + "captiancookie" + "." + "no"));
+	
+	  }
 }
 

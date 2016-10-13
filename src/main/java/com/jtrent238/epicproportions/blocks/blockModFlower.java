@@ -2,6 +2,7 @@ package com.jtrent238.epicproportions.blocks;
 
 import java.util.List;
 
+import com.jtrent238.epicproportions.Achievements;
 import com.jtrent238.epicproportions.BlockLoader;
 import com.jtrent238.epicproportions.EpicProportionsMod;
 
@@ -12,14 +13,17 @@ import net.minecraft.block.BlockFlower;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
+import net.minecraft.world.World;
 
 public class blockModFlower  extends BlockBush
 {
-    public static final String[][] field_149860_M = new String[][] {{"flower_jen"}, {"flower_heart_red"}, {"flower_heart_pink"}, {"flower_rainbow"}, {"flower_love"} };
+    public static final String[][] field_149860_M = new String[][] {{"flower_jen"}, {"flower_heart_red"}, {"flower_heart_pink"}, {"flower_rainbow"}, {"flower_love"}, {"flower_chocolate"} };
     public static final String[] field_149859_a = new String[] {};
     public static final String[] field_149858_b = new String[] {};
    
@@ -136,5 +140,7 @@ public class blockModFlower  extends BlockBush
 
         return 0;
     }
+    
+    
     
 }

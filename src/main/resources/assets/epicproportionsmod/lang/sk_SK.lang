@@ -1,0 +1,299 @@
+// Jtrent238 je epických rozmerov Mod Lang File
+// sk_SK
+
+// položky
+item.itemgemofepicproportions.name = Gem epických rozmerov
+item.itemPatIngot.name = FuriousDestroyer je ingot
+item.itemJenIngot.name = SuperGirlyGamer je ingot
+item.itemJenslips.name = Jenin pery
+item.itemCaptainCookieCookie.name = kapitána Cookie Cookie
+item.itemJenStar.name = SuperGirlyGamer hviezda
+item.itemPatStar.name = FuriousDestroyer hviezda
+item.itemEpicProportionsStar.name = epických rozmerov hviezda
+item.itemTNTSwordPlacer.name = TNT Sword
+item.itemBirthdayPresent.name = darček k narodeninám
+item.itemHouseOfEpicProportionsPlacer.name = Dom epických rozmerov [WIP]
+item.itemBombyStructurePlacer.name = bomby Štruktúra
+item.itemJensHoleStructurePlacer_1.name = Jenin diera 1 [WIP]
+item.itemJensHoleStructurePlacer_2.name = Otvor 2 Jenin [WIP]
+item.itemJensHoleStructurePlacer_3.name = Jenin diera 3 [WIP]
+item.itemJensHoleStructurePlacer_4.name = Otvor 4 Jenin [WIP]
+item.itemJensHoleStructurePlacer_5.name = Jenin diera 5 [WIP]
+item.itemSwordOfEpicProportions_Part1.name = Sword epických rozmerov časť 1
+item.itemSwordOfEpicProportions_Part2.name = Sword epických rozmerov Časť 2
+item.itemSwordOfEpicProportions_Part3.name = Sword epických rozmerov Časť 3
+item.itempatdoor.name = FuriousDestroyer dvere
+item.itemjendoor.name = SuperGirlyGamer dvere
+item.itempatapple.name = FuriousDestroyer Apple
+item.itemjenapple.name = SuperGirlyGamer Apple
+item.itemPatmeat_raw.name = FuriousDestroyer mäso Raw
+item.itemPatmeat_cooked.name = FuriousDestroyer mäso varené
+item.itemJenmeat_raw.name = SuperGirlyGamer mäso Raw
+item.itemJenmeat_cooked.name = SuperGirlyGamer mäso varené
+item.ItemCookedPufferFish.name = Varené pufferfish
+item.itemModInfo.name = Mod Informácie
+item.itemPickOfEpicProportions_Part1.name = krompáčom epických rozmerov Part 1
+item.itemPickOfEpicProportions_Part2.name = krompáčom epických rozmerov Part 2
+item.itemPickOfEpicProportions_Part3.name = krompáčom epických rozmerov Časť 3
+item.itemPatWellPlacer.name = FuriousDestroyer Well
+item.itemJenWellPlacer.name = SuperGirlyGamer Well
+item.itemPatGun.name = FuriousDestroyer Gun
+item.itemJenGun.name = SuperGirlyGamer Gun
+item.itemBirthdayPresent_Green.name = darček k narodeninám
+item.itemShovelOfEpicProportions_Part1.name = Lopata epických rozmerov časť 1
+item.itemShovelOfEpicProportions_Part2.name = Lopata epických rozmerov časť 2
+item.itemShovelOfEpicProportions_Part3.name = Lopata epických rozmerov časti 3
+item.itemTNTLauncher.name = TNT Launcher
+item.itemPatTNTLauncher.name = FuriousDestroyer TNT Launcher
+item.itemTrollTNTLauncher.name = Troll TNT Launcher
+item.itemFartBombLauncher.name = prd Bomb Launcher
+item.itemNukeLauncher.name = Nuke Launcher
+
+/ Zbrane a nástroje
+item.itemPatSword.name = FuriousDestroyer meč
+item.itemJenSword.name = SuperGirlyGamer meč
+item.itemPatPick.name = FuriousDestroyer je krompáčom
+item.itemJenPick.name = SuperGirlyGamer je krompáčom
+item.itemPatAxe.name = FuriousDestroyer je Axe
+item.itemJenAxe.name = SuperGirlyGamer je Axe
+item.itemPatShovel.name = FuriousDestroyer je Lopata
+item.itemJenShovel.name = SuperGirlyGamer je Lopata
+item.itemPatHoe.name = FuriousDestroyer je Hoe
+item.itemJenHoe.name = SuperGirlyGamer je Hoe
+item.itemPatStaff.name = FuriousDestroyer Palica
+item.itemJenStaff.name = SuperGirlyGamer Palica
+item.itemPatBow.name = FuriousDestroyer lúk
+item.itemJenBow.name = SuperGirlyGamer lúk
+item.itemPatArrow.name = FuriousDestroyer Arrow
+item.itemJenArrow.name = SuperGirlyGamer Arrow
+item.itemPatMultiTool.name = FuriousDestroyer je vícenožové
+item.itemJenMultiTool.name = SuperGirlyGamer je vícenožové
+
+item.itemSuperPatSword.name = FuriousDestroyer Super Sword
+item.itemSuperJenSword.name = SuperGirlyGamer Super Sword
+item.itemSuperPatPick.name = FuriousDestroyer Super krompáčom
+item.itemSuperJenPick.name = SuperGirlyGamer Super krompáčom
+item.itemSuperPatAxe.name = FuriousDestroyer Super Axe
+item.itemSuperJenAxe.name = SuperGirlyGamer Super Axe
+item.itemSuperPatShovel.name = FuriousDestroyer Super Lopata
+item.itemSuperJenShovel.name = SuperGirlyGamer Super Lopata
+item.itemSuperPatHoe.name = FuriousDestroyer Super Hoe
+item.itemSuperJenHoe.name = SuperGirlyGamer Super Hoe
+item.itemSuperPatMultiTool.name = FuriousDestroyer Super vícenožové
+item.itemSuperJenMultiTool.name = SuperGirlyGamer Super vícenožové
+item.itemSwordOfEpicProportions.name = Sword epických rozmerov
+item.itemPickOfEpicProportions.name = krompáčom epických rozmerov
+item.itemShovelOfEpicProportions.name = Lopata epických rozmerov
+item.itemHoeOfEpicProportions.name = Hoe epických rozmerov
+item.itemAxeOfEpicProportions.name = Axe epických rozmerov
+
+/ Armor
+/ Pat
+item.itemPatHelmet.name = FuriousDestroyer je Helment
+item.itemPatChestplate.name = FuriousDestroyer je Chestplate
+item.itemPatLeggings.name = FuriousDestroyer je Legíny
+item.itemPatBoots.name = FuriousDestroyer svoje topánky
+/ Len
+item.itemJenHelmet.name = SuperGirlyGamer je Helment
+item.itemJenChestplate.name = SuperGirlyGamer je Chestplate
+item.itemJenLeggings.name = SuperGirlyGamer je Legíny
+item.itemJenBoots.name = SuperGirlyGamer svoje topánky
+/ Super Pat
+item.itemSuperPatHelmet.name = FuriousDestroyer je Helment Helment
+item.itemSuperPatChestplate.name = FuriousDestroyer Super Chestplate
+item.itemSuperPatLeggings.name = FuriousDestroyer Super Legíny
+item.itemSuperPatBoots.name = FuriousDestroyer Super topánky
+/ Super Len
+item.itemSuperJenHelmet.name = SuperGirlyGamer Super Helment
+item.itemSuperJenChestplate.name = SuperGirlyGamer Super Chestplate
+item.itemSuperJenLeggings.name = SuperGirlyGamer Super Legíny
+item.itemSuperJenBoots.name = SuperGirlyGamer Super topánky
+
+
+/ Poter Vajcia
+item.itemSpawnBomby.name = poter Bomby [WIP]
+item.itemSpawnCaptianCookie.name = Spawn kapitána Cookie
+item.itemSpawnPat.name = poter FuriousDestroyer
+item.itemSpawnJen.name = poter SuperGirlyGamer
+item.itemSpawnFred2_0.name = Spawn Fred 2.0 [WIP]
+item.itemSpawnNinjaMaster.name = Spawn ninja majster
+item.itemSpawnCandyMan.name = poter The Candy Man
+item.itemSpawnCookieLittle.name = poter kapitán Cookie Malý [WIP]
+item.itemSpawnjtrent238.name = poter jtrent238
+item.itemSpawnClown.name = Spawn klaun
+item.itemSpawnCandyPopper.name = poter Candy Popper [WIP]
+item.itemSpawnSparky.name = Spawn Sparky
+item.itemSpawnKitty.name = Spawn Kitty
+item.itemSpawnKami.name = poter Kami [WIP]
+item.itemSpawnPopo.name = poter Popo [WIP]
+item.itemSpawnBanana.name = Spawn Banana
+item.itemSpawnBlockling.name = poter Small Blockling [WIP]
+item.itemSpawnVillagerOfEpicProportions.name = Spawn Of dedinčan EpicPropotions [WIP]
+item.itemSpawnPatVillager.name = poter FuriousDestroyer Dedinčan [WIP]
+item.itemSpawnJenVillager.name = poter SuperGirlyGamer Dedinčan [WIP]
+
+
+// Blocks
+tile.blockFartBomb.name = Fart Bomb
+tile.blockPatIngot.name = FuriousDestroyer Block
+tile.blockJenIngot.name = SuperGirlyGamer Block
+tile.blockPatOre.name = FuriousDestroyer Ore
+tile.blockJenOre.name = SuperGirlyGamer Ore
+tile.blockPatTNT.name = FuriousDestroyer je TNT
+tile.blockBirthdayPresent.name = darček k narodeninám
+tile.blockPatChest.name = FuriousDestroyer Truhla [WIP]
+tile.blockJenChest.name = SuperGirlyGamer Truhla [WIP]
+tile.blockTrollTNT.name = Troll TNT
+tile.blockFlowerForJen.name = Flower Pre Len
+tile.blockFlowerRedHeart.name = Red Heart Flower
+tile.blockFlowerPinkHeart.name = Pink Heart Flower
+tile.blockFlowerRainbow.name = dúha Flower
+tile.blockFlowerLove.name = Láska Kvetina
+tile.blockFlowerChocolate.name = Čokoláda Kvetina
+tile.blockBirthdayPresent_Green.name = darček k narodeninám
+tile.BlockNuke.name = Nuke
+
+// Entitys
+entity.EntityBomby.name = Bomby
+entity.EntityCaptianCookie.name = kapitán Cookie
+entity.EntityPat.name = FuriousDestroyer
+entity.EntityJen.name = SuperGirlyGamer
+entity.EntityFred2_0.name = 2,0 Fred
+entity.EntityNinjaMaster.name = Ninja majster
+entity.EntityCandyMan.name = The Candy Man
+entity.EntityCaptianCookieLittle.name = kapitán Cookie Malý
+entity.EntityClown.name = Klaun
+entity.EntityCandyPopper.name = Candy Popper
+entity.EntitySparky.name = Sparky
+entity.EntityKitty.name = Kitty
+entity.EntityKami.name = Kami
+entity.EntityPopo.name = Popo
+entity.EntityBanana.name = Banana
+entity.EntityBlockling_Small.name = Malý Blockling
+
+// Mod Devs a pomocníci
+entity.Entityjtrent238.name = jtrent238
+
+// Container
+container.Patchest = FuriousDestroyer Truhla [WIP]
+container.Jenchest = SuperGirlyGamer Truhla [WIP]
+container.chestPatDouble = Veľký FuriousDestroyerChest [WIP]
+container.chestJenDouble = Veľký SuperGirlyGamer Chest [WIP]
+
+// generátory
+
+// Úspechy
+/ Welcome To epických rozmerov
+achievement.install = Vitajte v epických rozmerov
+achievement.install.desc = Inštalovať epických rozmerov Mod
+/ Všetko najlepšie k narodeninám
+achievement.happybirthday = Všetko najlepšie k narodeninám!
+achievement.happybirthday.desc = Otvorenie darček k narodeninám
+/ Flower Pre Len
+achievement.flowerforjen = Flower Pre Len
+achievement.flowerforjen.desc = Získať Flower Pre Len
+/ I Am FuriousDestroyer
+achievement.iampat = I Am FuriousDestroyer
+achievement.iampat.desc = Wear Plný Pat Armor
+/ I Am SuperGirlyGamer
+achievement.iamjen = I Am SuperGirlyGamer
+achievement.iamjen.desc = Wear Plný Len Armor
+/ vyskočila
+achievement.popped = odoberie
+achievement.popped.desc = zabiť Candy Popper
+/ Cookies pre každého
+achievement.cookies = Cookies pre každého
+achievement.cookies.desc = zabiť kapitána Cookie
+/ FuriousDestroyer Zomrel
+achievement.killpat = FuriousDestroyer zomrel
+achievement.killpat.desc = zabiť FuriousDestroyer
+/ SuperGirlyGamer Zomrel
+achievement.killjen = SuperGirlyGamer zomrel
+achievement.killjen.desc = zabiť SuperGirlyGamer
+/ Funny
+achievement.funny = Funny
+achievement.funny.desc = zabiť klauna
+/ Pat hviezda
+achievement.patstar = FuriousDestroyer hviezda
+achievement.patstar.desc = Získajte vzácnu kvapku zo FuriousDestroyer
+/ Len hviezda
+achievement.jenstar = SuperGirlyGamer hviezda
+achievement.jenstar.desc = Získajte vzácnu kvapku zo SuperGirlyGamer
+/ Pat Armor
+achievement.patarmor = SuperGirlyGamer brnenie
+achievement.patarmor.desc =
+/ Len Armor
+achievement.jenarmor = SuperGirlyGamer brnenie
+achievement.jenarmor.desc =
+/ Super Pat Armor
+achievement.patarmor_super = SuperGirlyGamer Super Armor
+achievement.patarmor_super.desc =
+/ Super Len Armor
+achievement.jenarmor_super = SuperGirlyGamer Super Armor
+achievement.jenarmor_super.desc =
+/ Sword epických rozmerov
+achievement.swordofepicproportions = Sword epického Propotions
+achievement.swordofepicproportions.desc = Craft Meč epického Propotions
+/ Krompáč epických rozmerov
+achievement.pickaxeofepicproportions = krompáčom epického Propotions
+achievement.pickaxeofepicproportions.desc = plavidiel, ktorých krompáčom epického Propotions
+/ Axe epických rozmerov
+achievement.axeofepicproportions = Axe epického Propotions
+achievement.axeofepicproportions.desc = Craft Axe epického Propotions
+/ Lopata epických rozmerov
+achievement.shovelofepicproportions = Lopata epického Propotions
+achievement.shovelofepicproportions.desc = Craft lopatou epického Propotions
+/ Hoe epických rozmerov
+achievement.hoeofepicproportions = Hoe epického Propotions
+achievement.hoeofepicproportions.desc = Craft Hoe epického Propotions
+
+// Štatistiky
+stat.presentsbroken = Nunber darčekov Otvorené
+
+// kúzla
+// elixírov
+// popisy
+tooltip.epicproportionsmod.itemSwordOfEpicProportions_Part_1 = Kombinovať s inými časťami, aby sa
+tooltip.epicproportionsmod.itemSwordOfEpicProportions_Part_2 = mečom EpicPropotions
+tooltip.epicproportionsmod.itemPickOfEpicProportions_Part_1 = Kombinovať s inými časťami, aby sa
+tooltip.epicproportionsmod.itemPickOfEpicProportions_Part_2 = The krompáčom a EpicPropotions
+tooltip.epicproportionsmod.itemShovelOfEpicProportions_Part_1 = Kombinovať s inými časťami, aby sa
+tooltip.epicproportionsmod.itemShovelOfEpicProportions_Part_2 = lopatu z EpicPropotions
+
+
+tooltip.epicproportionsmod.itemSwordOfEpicProportions.captiancookie.no = Nedávajte Captian Cookie !!!
+tooltip.epicproportionsmod.itemBirthdayPresent.bday = Šťastný Birtday!
+tooltip.epicproportionsmod.itemBirthdayPresent.inside = Zaujímalo by ma, čo by mohlo byť vo vnútri?
+tooltip.epicproportionsmod.itemBirthdayPresent_Green.bday = Šťastný Birtday!
+tooltip.epicproportionsmod.itemBirthdayPresent_Green.inside = Zaujímalo by ma, čo by mohlo byť vo vnútri?
+tooltip.epicproportionsmod.itemPatGun.ammotype = Spotrebitelia Arrow FuriousDestroyer
+tooltip.epicproportionsmod.itemJenGun.ammotype = Spotrebitelia Arrow SuperGirlyGamer
+tooltip.epicproportionsmod.itemTNTLauncher.ammotype = Spotrebuje TNT
+tooltip.epicproportionsmod.itemPatTNTLauncher.ammotype = Spotrebitelia FuriousDestroyer TNT
+tooltip.epicproportionsmod.itemTrollTNTLauncher.ammotype = Spotrebitelia Troll TNT
+tooltip.epicproportionsmod.itemFartBombLauncher.ammotype = Spotrebitelia Fart Bomb
+tooltip.epicproportionsmod.itemNukeLauncher.ammotype = Spotrebitelia Nuke
+
+/ Pat Hrudník Varovanie
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.0 = **************** POZOR ********************* ***
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.1 = Tento Hrudník nie je správne nakonfigurovaný
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.3 = toto Chesa neukladá Inventory správne
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.5 = Niečo vnútri budú vymazané pri príležitosti Svetového zjazde.
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.6 = ************************************** *********
+/ Len Hrudník Varovanie
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.0 = **************** POZOR ********************* ***
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.1 = Tento Hrudník nie je správne nakonfigurovaný
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.3 = toto Chesa neukladá Inventory správne
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.5 = Niečo vnútri budú vymazané pri príležitosti Svetového zjazde.
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.6 = ************************************** *********
+
+
+// Creative Záložky
+itemGroup.EpicProportionsMod = jtrent238 epické proporcie Mod
+
+// Rôzne
+com.jtrent238.epicproportions.lib.LogHelper = epických rozmerov Mod Log

@@ -7,7 +7,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 
 public class ServerProxy {
 
-	private static final String modid = "epicproportionsmod";
+	private static final String modid = (EpicProportionsMod.MODID);
 	
 	public void registerRenderThings() {
 

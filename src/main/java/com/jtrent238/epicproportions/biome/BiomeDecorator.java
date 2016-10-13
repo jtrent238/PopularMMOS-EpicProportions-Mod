@@ -1,6 +1,9 @@
 package com.jtrent238.epicproportions.biome;
 
 import java.util.Random;
+
+import com.jtrent238.epicproportions.BlockLoader;
+
 import net.minecraft.block.BlockFlower;
 import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
@@ -52,6 +55,10 @@ public class BiomeDecorator
     public WorldGenerator redstoneGen;
     /** Field that holds diamond WorldGenMinable */
     public WorldGenerator diamondGen;
+    /** Field that holds PatOre WorldGenMinable */
+    private WorldGenMinable patOreGen;
+    /** Field that holds JenOre WorldGenMinable */
+    private WorldGenMinable jenOreGen;
     /** Field that holds Lapis WorldGenMinable */
     public WorldGenerator lapisGen;
     public WorldGenFlowers yellowFlowerGen;
@@ -102,10 +109,12 @@ public class BiomeDecorator
     public int bigMushroomsPerChunk;
     /** True if decorator should generate surface lava & water */
     public boolean generateLakes;
+	
     private static final String __OBFID = "CL_00000164";
 
     public BiomeDecorator()
     {
+    		/*
         this.sandGen = new WorldGenSand(Blocks.sand, 7);
         this.gravelAsSandGen = new WorldGenSand(Blocks.gravel, 6);
         this.dirtGen = new WorldGenMinable(Blocks.dirt, 32);
@@ -115,6 +124,10 @@ public class BiomeDecorator
         this.goldGen = new WorldGenMinable(Blocks.gold_ore, 8);
         this.redstoneGen = new WorldGenMinable(Blocks.redstone_ore, 7);
         this.diamondGen = new WorldGenMinable(Blocks.diamond_ore, 7);
+        	*/
+        this.patOreGen = new WorldGenMinable(BlockLoader.blockPatOre, 64);
+        this.jenOreGen =new WorldGenMinable(BlockLoader.blockJenOre, 64);
+        	/*
         this.lapisGen = new WorldGenMinable(Blocks.lapis_ore, 6);
         this.yellowFlowerGen = new WorldGenFlowers(Blocks.yellow_flower);
         this.mushroomBrownGen = new WorldGenFlowers(Blocks.brown_mushroom);
@@ -129,6 +142,7 @@ public class BiomeDecorator
         this.sandPerChunk2 = 3;
         this.clayPerChunk = 1;
         this.generateLakes = true;
+        	*/
     }
 
     public void decorateChunk(World p_150512_1_, Random p_150512_2_, BiomeGenBase p_150512_3_, int p_150512_4_, int p_150512_5_)
@@ -391,6 +405,7 @@ public class BiomeDecorator
     protected void generateOres()
     {
         MinecraftForge.ORE_GEN_BUS.post(new OreGenEvent.Pre(currentWorld, randomGenerator, chunk_X, chunk_Z));
+        	/*
         if (TerrainGen.generateOre(currentWorld, randomGenerator, dirtGen, chunk_X, chunk_Z, DIRT))
         this.genStandardOre1(20, this.dirtGen, 0, 256);
         if (TerrainGen.generateOre(currentWorld, randomGenerator, gravelGen, chunk_X, chunk_Z, GRAVEL))
@@ -405,8 +420,15 @@ public class BiomeDecorator
         this.genStandardOre1(8, this.redstoneGen, 0, 16);
         if (TerrainGen.generateOre(currentWorld, randomGenerator, diamondGen, chunk_X, chunk_Z, DIAMOND))
         this.genStandardOre1(1, this.diamondGen, 0, 16);
+        	*/
+        if (TerrainGen.generateOre(currentWorld, randomGenerator, patOreGen, chunk_X, chunk_Z, COAL))
+            this.genStandardOre1(1, this.diamondGen, 0, 128);
+        if (TerrainGen.generateOre(currentWorld, randomGenerator, jenOreGen, chunk_X, chunk_Z, COAL))
+            this.genStandardOre1(1, this.diamondGen, 0, 128);
+        	/*
         if (TerrainGen.generateOre(currentWorld, randomGenerator, lapisGen, chunk_X, chunk_Z, LAPIS))
         this.genStandardOre2(1, this.lapisGen, 16, 16);
+        	*/
         MinecraftForge.ORE_GEN_BUS.post(new OreGenEvent.Post(currentWorld, randomGenerator, chunk_X, chunk_Z));
     }
 

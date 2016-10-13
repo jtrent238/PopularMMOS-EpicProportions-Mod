@@ -65,7 +65,7 @@ public class Recipes {
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemSuperJenChestplate), "JJJ", "JXJ", "JJJ", 'X', ItemLoader.itemJenChestplate, 'J', ItemLoader.itemJenStar);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemSuperJenLeggings), "JJJ", "JXJ", "JJJ", 'X', ItemLoader.itemJenLeggings, 'J', ItemLoader.itemJenStar);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemSuperJenBoots), "JJJ", "JXJ", "JJJ", 'X', ItemLoader.itemJenBoots, 'J', ItemLoader.itemJenStar);
-		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemTNTSwordPlacer), "BTB", "BWB", "WBW", 'T', Blocks.tnt, 'W', Blocks.planks);	
+		//GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemTNTSwordPlacer), "BTB", "BWB", "WBW", 'T', Blocks.tnt, 'W', Blocks.planks);	
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemPatStaff), "SBB", "BIB", "BBI", 'I', ItemLoader.itemPatIngot, 'S', ItemLoader.itemPatStar);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemJenStaff), "SBB", "BIB", "BBI", 'I', ItemLoader.itemJenIngot, 'S', ItemLoader.itemJenStar);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemSuperJenSword), "JJJ", "JXJ", "JJJ", 'X', ItemLoader.itemJenSword, 'J', ItemLoader.itemJenStar);
@@ -83,6 +83,17 @@ public class Recipes {
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemSwordOfEpicProportions), "BB1", "B2B", "3BB", '1', ItemLoader.itemSwordOfEpicProportions_Part1, '2', ItemLoader.itemSwordOfEpicProportions_Part2, '3', ItemLoader.itemSwordOfEpicProportions_Part3);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemSwordOfEpicProportions_Part2), "SSS", "SXS", "SSS", 'X', ItemLoader.itemSuperPatSword, 'S', ItemLoader.itemEpicProportionsStar);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemSwordOfEpicProportions_Part3), "SSS", "SXS", "SSS", 'X', ItemLoader.itemSuperJenSword, 'S', ItemLoader.itemEpicProportionsStar);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itempatdoor), "IIB", "IIB", "IIB", 'I', ItemLoader.itemPatIngot);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itempatdoor), "BII", "BII", "BII", 'I', ItemLoader.itemPatIngot);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemjendoor), "IIB", "IIB", "IIB", 'I', ItemLoader.itemJenIngot);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemjendoor), "BII", "BII", "BII", 'I', ItemLoader.itemJenIngot);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemPickOfEpicProportions), "BB1", "B2B", "3BB", '1', ItemLoader.itemPickOfEpicProportions_Part1, '2', ItemLoader.itemPickOfEpicProportions_Part2, '3', ItemLoader.itemPickOfEpicProportions_Part3);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemPickOfEpicProportions_Part2), "SSS", "SXS", "SSS", 'X', ItemLoader.itemSuperPatPick, 'S', ItemLoader.itemEpicProportionsStar);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemPickOfEpicProportions_Part3), "SSS", "SXS", "SSS", 'X', ItemLoader.itemSuperJenPick, 'S', ItemLoader.itemEpicProportionsStar);
+		
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemShovelOfEpicProportions), "BB3", "B2B", "1BB", '1', ItemLoader.itemShovelOfEpicProportions_Part1, '2', ItemLoader.itemShovelOfEpicProportions_Part2, '3', ItemLoader.itemShovelOfEpicProportions_Part3);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemShovelOfEpicProportions_Part2), "SSS", "SXS", "SSS", 'X', ItemLoader.itemSuperPatShovel, 'S', ItemLoader.itemEpicProportionsStar);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemShovelOfEpicProportions_Part3), "SSS", "SXS", "SSS", 'X', ItemLoader.itemSuperJenShovel, 'S', ItemLoader.itemEpicProportionsStar);
 		
 	}
 	
@@ -98,6 +109,9 @@ public class Recipes {
 	private static void addsmeltigrecipies(){
 		GameRegistry.addSmelting(BlockLoader.blockPatOre, new ItemStack (ItemLoader.itemPatIngot, 1), 2F );
 		GameRegistry.addSmelting(BlockLoader.blockJenOre, new ItemStack (ItemLoader.itemJenIngot, 1), 2F );
+		GameRegistry.addSmelting(ItemLoader.itemJenmeat_raw, new ItemStack (ItemLoader.itemJenmeat_cooked, 1), 2F );
+		GameRegistry.addSmelting(ItemLoader.itemPatmeat_raw, new ItemStack (ItemLoader.itemPatmeat_cooked, 1), 2F );
+		GameRegistry.addSmelting(new ItemStack(Items.fish, 3), new ItemStack (ItemLoader.ItemCookedPufferFish, 1), 2F );
 			   }
 	
 	}

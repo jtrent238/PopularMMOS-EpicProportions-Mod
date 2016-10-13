@@ -20,6 +20,8 @@ import net.minecraft.item.EnumAction;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.nbt.NBTTagList;
 import net.minecraft.world.World;
 
 public class itemSuperPatSword extends ItemSword
@@ -79,6 +81,20 @@ public class itemSuperPatSword extends ItemSword
     public void onCreated(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer)
     {
 		par1ItemStack.addEnchantment(Enchantment.unbreaking, enchant);
+		par1ItemStack.addEnchantment(Enchantment.fireAspect, enchant);
+		par1ItemStack.addEnchantment(Enchantment.knockback, enchant);
+		par1ItemStack.addEnchantment(Enchantment.looting, enchant);
+		par1ItemStack.addEnchantment(Enchantment.smite, enchant);
+		par1ItemStack.addEnchantment(Enchantment.sharpness, enchant);
+    }
+    
+    /**
+     * Adds an enchantment with a desired level on the ItemStack.
+     * @param par1ItemStack 
+     */
+    public void addEnchantment(Enchantment p_77966_1_, int p_77966_2_, ItemStack par1ItemStack)
+    {
+    	par1ItemStack.addEnchantment(Enchantment.unbreaking, enchant);
 		par1ItemStack.addEnchantment(Enchantment.fireAspect, enchant);
 		par1ItemStack.addEnchantment(Enchantment.knockback, enchant);
 		par1ItemStack.addEnchantment(Enchantment.looting, enchant);

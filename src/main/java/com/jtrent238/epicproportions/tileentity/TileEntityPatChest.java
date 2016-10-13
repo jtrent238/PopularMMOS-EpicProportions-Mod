@@ -26,7 +26,7 @@ import net.minecraft.util.AxisAlignedBB;
 
 public class TileEntityPatChest extends TileEntity implements IInventory
 {
-    private ItemStack[] chestContents = new ItemStack[36];
+    public ItemStack[] chestContents = new ItemStack[36];
     /** Determines if the check for adjacent chests has taken place. */
     public boolean adjacentChestChecked;
     /** Contains the chest tile located adjacent to this one (if any) */
@@ -44,10 +44,11 @@ public class TileEntityPatChest extends TileEntity implements IInventory
     /** The number of players currently using this chest */
     public int numPlayersUsing;
     /** Server sync counter (once per 20 ticks) */
-    private int ticksSinceSync;
-    private int cachedChestType;
-    private String customName;
-    private static final String __OBFID = "CL_00000346";
+    public int ticksSinceSync;
+    public int cachedChestType;
+    public String customName;
+	private String owner;
+    public static final String __OBFID = "CL_00000346";
 
     public TileEntityPatChest()
     {
@@ -165,7 +166,22 @@ public class TileEntityPatChest extends TileEntity implements IInventory
     {
         this.customName = p_145976_1_;
     }
-
+    
+    public void setOwner(String owner) {
+		this.owner = owner;
+		markDirty();
+	}
+	
+	@Override public void readFromNBT(NBTTagCompound compound) {
+		super.readFromNBT(compound);
+		this.owner = compound.hasKey("owner") ? compound.getString("owner") : "";
+	}
+	
+	@Override public void writeToNBT(NBTTagCompound compound) {
+		super.writeToNBT(compound);
+		compound.setString("owner", owner);
+	}
+/*
     public void readFromNBT(NBTTagCompound p_145839_1_)
     {
         super.readFromNBT(p_145839_1_);
@@ -188,6 +204,8 @@ public class TileEntityPatChest extends TileEntity implements IInventory
             }
         }
     }
+    
+    
 
     public void writeToNBT(NBTTagCompound p_145841_1_)
     {
@@ -212,7 +230,7 @@ public class TileEntityPatChest extends TileEntity implements IInventory
             p_145841_1_.setString("CustomName", this.customName);
         }
     }
-
+*/
     /**
      * Returns the maximum stack size for a inventory slot.
      */
@@ -239,7 +257,7 @@ public class TileEntityPatChest extends TileEntity implements IInventory
         this.adjacentChestChecked = false;
     }
 
-    private void func_145978_a(TileEntityPatChest p_145978_1_, int p_145978_2_)
+    public void func_145978_a(TileEntityPatChest p_145978_1_, int p_145978_2_)
     {
         if (p_145978_1_.isInvalid())
         {
@@ -334,7 +352,7 @@ public class TileEntityPatChest extends TileEntity implements IInventory
         }
     }
 
-    private boolean func_145977_a(int p_145977_1_, int p_145977_2_, int p_145977_3_)
+    public boolean func_145977_a(int p_145977_1_, int p_145977_2_, int p_145977_3_)
     {
         if (this.worldObj == null)
         {

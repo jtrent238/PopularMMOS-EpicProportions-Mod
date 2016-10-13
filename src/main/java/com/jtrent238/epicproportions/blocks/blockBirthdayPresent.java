@@ -4,13 +4,18 @@ import java.util.ArrayList;
 import java.util.Random;
 
 import com.jtrent238.epicproportions.Achievements;
+import com.jtrent238.epicproportions.CustomPresentDrops;
+import com.jtrent238.epicproportions.EpicProportionsMod;
 import com.jtrent238.epicproportions.ItemLoader;
+import com.jtrent238.epicproportions.Stats;
 
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import cpw.mods.fml.common.gameevent.PlayerEvent;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
@@ -19,7 +24,9 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
+import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.event.entity.player.AchievementEvent;
+import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.event.world.BlockEvent.BreakEvent;
 
 public class blockBirthdayPresent extends Block{
@@ -32,6 +39,7 @@ public class blockBirthdayPresent extends Block{
 	private int meta;
 	private int least_quantity;
 	private int most_quantity;
+	
 
     
 	public blockBirthdayPresent(Material ground) {
@@ -95,13 +103,36 @@ public class blockBirthdayPresent extends Block{
             drops.add(new ItemStack(Items.diamond));
         if (world.rand.nextFloat() < 0.3F)
             drops.add(new ItemStack(Items.golden_apple));
+        
+        	//Custom Drops
+        if (Configuration.allowedProperties.equals(EpicProportionsMod.BIRTHDAYPRESENT_CUSTOM_DROPS) != true)
+        {
+        	/*
+        drops.add(new ItemStack(CustomPresentDrops.Common, world.rand.nextInt(CustomPresentDrops.DropChance_Common) + CustomPresentDrops.Amount_Common));
+        if (world.rand.nextFloat() < CustomPresentDrops.DropChance_Rare)
+            drops.add(new ItemStack(CustomPresentDrops.Rare));
+            */
+        	
+        }
+        	//Custom Drops
         return drops;
     }
 
     
-    
+    @SideOnly(Side.CLIENT)
+    public void presentOpened(BlockEvent.BreakEvent event){
+    	EntityPlayer event1 = Minecraft.getMinecraft().thePlayer;
+    		/*
+    	if(true){
+    	if(entity instanceof EntityPlayer)((EntityPlayer)entity).addStat(Achievements.achievementpresent, l);
+    	}
+    		 */
+    	event1.addStat(Stats.presentsbroken, 1);
+    	event1.triggerAchievement(Achievements.achievementpresent);
+    	event1.addChatComponentMessage(new ChatComponentText("§b§lHappy Birthday" + event1.getDisplayName() + "§b§l!"));
 
  }
+}
     
 
 

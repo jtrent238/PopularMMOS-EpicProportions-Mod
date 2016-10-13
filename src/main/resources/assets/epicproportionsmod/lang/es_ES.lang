@@ -1,0 +1,299 @@
+// Archivo proporciones épicas Mod Lang Jtrent238
+// es_ES
+
+// Items
+item.itemgemofepicproportions.name = joya de proporciones épicas
+item.itemPatIngot.name = lingote de FuriousDestroyer
+item.itemJenIngot.name = Lingote de SuperGirlyGamer
+item.itemJenslips.name = Labios de Jen
+item.itemCaptainCookieCookie.name = Cookies del capitán de la galleta
+item.itemJenStar.name = SuperGirlyGamer estrella
+item.itemPatStar.name = FuriousDestroyer estrella
+item.itemEpicProportionsStar.name = proporciones épicas estrella
+item.itemTNTSwordPlacer.name = TNT Espada
+item.itemBirthdayPresent.name = Regalo de cumpleaños
+item.itemHouseOfEpicProportionsPlacer.name = Cámara de proporciones épicas [WIP]
+item.itemBombyStructurePlacer.name = Estructura Bomby
+item.itemJensHoleStructurePlacer_1.name = 1 Agujero de Jen [WIP]
+item.itemJensHoleStructurePlacer_2.name = Agujero de Jen 2 [WIP]
+item.itemJensHoleStructurePlacer_3.name = Agujero de Jen 3 [WIP]
+item.itemJensHoleStructurePlacer_4.name = Agujero de Jen 4 [WIP]
+item.itemJensHoleStructurePlacer_5.name = 5 Agujero de Jen [WIP]
+item.itemSwordOfEpicProportions_Part1.name = Espada de proporciones épicas Parte 1
+item.itemSwordOfEpicProportions_Part2.name = Espada de proporciones épicas Parte 2
+item.itemSwordOfEpicProportions_Part3.name = Espada de proporciones épicas Parte 3
+item.itempatdoor.name = FuriousDestroyer Puerta
+item.itemjendoor.name = SuperGirlyGamer Puerta
+item.itempatapple.name = FuriousDestroyer de Apple
+item.itemjenapple.name = SuperGirlyGamer de Apple
+item.itemPatmeat_raw.name = FuriousDestroyer la carne cruda
+item.itemPatmeat_cooked.name = Cooked Meat FuriousDestroyer
+item.itemJenmeat_raw.name = SuperGirlyGamer la carne cruda
+item.itemJenmeat_cooked.name = Cooked Meat SuperGirlyGamer
+item.ItemCookedPufferFish.name = pez globo cocido
+item.itemModInfo.name = Información de la MOD
+item.itemPickOfEpicProportions_Part1.name = Pico de proporciones épicas Parte 1
+item.itemPickOfEpicProportions_Part2.name = Pico de proporciones épicas Parte 2
+item.itemPickOfEpicProportions_Part3.name = Pico de proporciones épicas Parte 3
+item.itemPatWellPlacer.name = FuriousDestroyer Bueno
+item.itemJenWellPlacer.name = SuperGirlyGamer Bueno
+item.itemPatGun.name = FuriousDestroyer pistola
+item.itemJenGun.name = SuperGirlyGamer pistola
+item.itemBirthdayPresent_Green.name = Regalo de cumpleaños
+item.itemShovelOfEpicProportions_Part1.name = Pala de proporciones épicas Parte 1
+item.itemShovelOfEpicProportions_Part2.name = Pala de proporciones épicas Parte 2
+item.itemShovelOfEpicProportions_Part3.name = Pala de proporciones épicas Parte 3
+item.itemTNTLauncher.name = TNT Launcher
+item.itemPatTNTLauncher.name = FuriousDestroyer TNT Launcher
+item.itemTrollTNTLauncher.name = Troll TNT Launcher
+item.itemFartBombLauncher.name = Pedo Bomba Launcher
+item.itemNukeLauncher.name = Nuke Launcher
+
+/ Armas y Herramientas
+item.itemPatSword.name = Espada de FuriousDestroyer
+item.itemJenSword.name = Espada de SuperGirlyGamer
+item.itemPatPick.name = Pico de FuriousDestroyer
+item.itemJenPick.name = Pico de SuperGirlyGamer
+item.itemPatAxe.name = Hacha de FuriousDestroyer
+item.itemJenAxe.name = Hacha de SuperGirlyGamer
+item.itemPatShovel.name = Pala de FuriousDestroyer
+item.itemJenShovel.name = Pala de SuperGirlyGamer
+item.itemPatHoe.name = azada de FuriousDestroyer
+item.itemJenHoe.name = azada de SuperGirlyGamer
+item.itemPatStaff.name = Personal de FuriousDestroyer
+item.itemJenStaff.name = Personal de SuperGirlyGamer
+item.itemPatBow.name = arco de FuriousDestroyer
+item.itemJenBow.name = arco de SuperGirlyGamer
+item.itemPatArrow.name = Flecha de FuriousDestroyer
+item.itemJenArrow.name = Flecha de SuperGirlyGamer
+item.itemPatMultiTool.name = MultiTool de FuriousDestroyer
+item.itemJenMultiTool.name = MultiTool de SuperGirlyGamer
+
+item.itemSuperPatSword.name = FuriousDestroyer de Súper Espada
+item.itemSuperJenSword.name = SuperGirlyGamer de Súper Espada
+item.itemSuperPatPick.name = FuriousDestroyer de Súper Pico
+item.itemSuperJenPick.name = SuperGirlyGamer de Súper Pico
+item.itemSuperPatAxe.name = FuriousDestroyer de Súper Axe
+item.itemSuperJenAxe.name = SuperGirlyGamer de Súper Axe
+item.itemSuperPatShovel.name = FuriousDestroyer de Súper Pala
+item.itemSuperJenShovel.name = SuperGirlyGamer de Súper Pala
+item.itemSuperPatHoe.name = FuriousDestroyer de Súper azada
+item.itemSuperJenHoe.name = SuperGirlyGamer de Súper azada
+item.itemSuperPatMultiTool.name = FuriousDestroyer de Súper MultiTool
+item.itemSuperJenMultiTool.name = SuperGirlyGamer de Súper MultiTool
+item.itemSwordOfEpicProportions.name = Espada de proporciones épicas
+item.itemPickOfEpicProportions.name = Pico de proporciones épicas
+item.itemShovelOfEpicProportions.name = Pala de proporciones épicas
+item.itemHoeOfEpicProportions.name = azada de proporciones épicas
+item.itemAxeOfEpicProportions.name = Hacha de proporciones épicas
+
+/ Armadura
+/ Pat
+item.itemPatHelmet.name = Helment de FuriousDestroyer
+item.itemPatChestplate.name = Peto de FuriousDestroyer
+item.itemPatLeggings.name = polainas de la FuriousDestroyer
+item.itemPatBoots.name = Botas de FuriousDestroyer
+/ Jen
+item.itemJenHelmet.name = Helment de SuperGirlyGamer
+item.itemJenChestplate.name = Peto de SuperGirlyGamer
+item.itemJenLeggings.name = polainas de la SuperGirlyGamer
+item.itemJenBoots.name = Botas de SuperGirlyGamer
+/ Súper Pat
+item.itemSuperPatHelmet.name = FuriousDestroyer de Helment Helment
+item.itemSuperPatChestplate.name = FuriousDestroyer de Súper Peto
+item.itemSuperPatLeggings.name = FuriousDestroyer de Súper polainas
+item.itemSuperPatBoots.name = FuriousDestroyer de Súper Botas
+/ Súper Jen
+item.itemSuperJenHelmet.name = SuperGirlyGamer de Súper Helment
+item.itemSuperJenChestplate.name = SuperGirlyGamer de Súper Peto
+item.itemSuperJenLeggings.name = SuperGirlyGamer de Súper polainas
+item.itemSuperJenBoots.name = SuperGirlyGamer de Súper Botas
+
+
+/ Huevos freza
+item.itemSpawnBomby.name = freza Bomby [WIP]
+item.itemSpawnCaptianCookie.name = freza capitán de la galleta
+item.itemSpawnPat.name = freza FuriousDestroyer
+item.itemSpawnJen.name = freza SuperGirlyGamer
+item.itemSpawnFred2_0.name = freza Fred 2.0 [WIP]
+item.itemSpawnNinjaMaster.name = freza Ninja Master
+item.itemSpawnCandyMan.name = freza El hombre de caramelo
+item.itemSpawnCookieLittle.name = freza capitán de la galleta Poco [WIP]
+item.itemSpawnjtrent238.name = freza jtrent238
+item.itemSpawnClown.name = freza del payaso
+item.itemSpawnCandyPopper.name = freza caramelo Popper [WIP]
+item.itemSpawnSparky.name = freza Sparky
+item.itemSpawnKitty.name = freza del gatito
+item.itemSpawnKami.name = freza Kami [WIP]
+item.itemSpawnPopo.name = freza Popo [WIP]
+item.itemSpawnBanana.name = freza plátano
+item.itemSpawnBlockling.name = freza Pequeño Blockling [WIP]
+item.itemSpawnVillagerOfEpicProportions.name = freza Villager De EpicPropotions [WIP]
+item.itemSpawnPatVillager.name = freza FuriousDestroyer Villager [WIP]
+item.itemSpawnJenVillager.name = freza SuperGirlyGamer Villager [WIP]
+
+
+// Bloques
+tile.blockFartBomb.name = Bomba Pedo
+Bloque tile.blockPatIngot.name = de FuriousDestroyer
+Bloque tile.blockJenIngot.name = de SuperGirlyGamer
+tile.blockPatOre.name = FuriousDestroyer Ore
+tile.blockJenOre.name = SuperGirlyGamer Ore
+TNT = tile.blockPatTNT.name de FuriousDestroyer
+Presente tile.blockBirthdayPresent.name = cumpleaños
+tile.blockPatChest.name = FuriousDestroyer de pecho [WIP]
+tile.blockJenChest.name = SuperGirlyGamer de pecho [WIP]
+tile.blockTrollTNT.name = Troll TNT
+tile.blockFlowerForJen.name = flor para Jen
+tile.blockFlowerRedHeart.name = flor roja del corazón
+tile.blockFlowerPinkHeart.name = flor rosada del corazón
+tile.blockFlowerRainbow.name = flor del arco iris
+tile.blockFlowerLove.name = flor del amor
+tile.blockFlowerChocolate.name = flor de chocolate
+Presente tile.blockBirthdayPresent_Green.name = cumpleaños
+tile.BlockNuke.name = Nuke
+
+// Entitys
+entity.EntityBomby.name = Bomby
+entity.EntityCaptianCookie.name = Capitán Cookies
+entity.EntityPat.name = FuriousDestroyer
+entity.EntityJen.name = SuperGirlyGamer
+entity.EntityFred2_0.name = 2.0 Fred
+entity.EntityNinjaMaster.name = Ninja Master
+entity.EntityCandyMan.name = El hombre de caramelo
+entity.EntityCaptianCookieLittle.name = Capitán Galleta Poco
+entity.EntityClown.name = payaso
+entity.EntityCandyPopper.name = caramelo Popper
+entity.EntitySparky.name = Sparky
+entity.EntityKitty.name = gatito
+entity.EntityKami.name = Kami
+entity.EntityPopo.name = Popo
+entity.EntityBanana.name = plátano
+entity.EntityBlockling_Small.name = Pequeño Blockling
+
+// Mod Devs y ayudantes
+entity.Entityjtrent238.name = jtrent238
+
+// Contenedor
+container.Patchest = FuriousDestroyer de pecho [WIP]
+container.Jenchest = SuperGirlyGamer de pecho [WIP]
+container.chestPatDouble = Grande FuriousDestroyerChest [WIP]
+container.chestJenDouble = Grande SuperGirlyGamer Pecho [WIP]
+
+// Generadores
+
+// Logros
+/ Bienvenido a proporciones épicas
+achievement.install = Bienvenido a proporciones épicas
+achievement.install.desc = Instalar proporciones épicas Mod
+/ Feliz cumpleaños
+achievement.happybirthday = Feliz Cumpleaños!
+achievement.happybirthday.desc = Abrir un presente de cumpleaños
+/ Flor para Jen
+achievement.flowerforjen = flor para Jen
+achievement.flowerforjen.desc = Obtener una flor para Jen
+/ I Am FuriousDestroyer
+achievement.iampat = I Am FuriousDestroyer
+achievement.iampat.desc = desgaste total Pat Armor
+/ I Am SuperGirlyGamer
+achievement.iamjen = I Am SuperGirlyGamer
+achievement.iamjen.desc = desgaste total Jen Armor
+/ metimos
+achievement.popped = metimos
+achievement.popped.desc = Matar a un caramelo Popper
+/ Cookies para cada uno
+achievement.cookies = cookies para todo el mundo
+achievement.cookies.desc = muertes del capitán de la galleta
+/ FuriousDestroyer Fallecida
+achievement.killpat = FuriousDestroyer Fallecida
+achievement.killpat.desc = Kill FuriousDestroyer
+/ SuperGirlyGamer Fallecida
+achievement.killjen = SuperGirlyGamer Fallecida
+achievement.killjen.desc = Kill SuperGirlyGamer
+/ divertido
+achievement.funny = divertido
+achievement.funny.desc = Kill Un payaso
+/ Pat estrella
+Estrella achievement.patstar = de FuriousDestroyer
+achievement.patstar.desc = Obtener la caída de raras FuriousDestroyer
+/ Jen estrella
+Estrella achievement.jenstar = de SuperGirlyGamer
+achievement.jenstar.desc = Obtener la caída de raras SuperGirlyGamer
+/ Pat Armor
+Armadura de achievement.patarmor = SuperGirlyGamer
+achievement.patarmor.desc =
+/ Jen Armor
+Armadura de achievement.jenarmor = SuperGirlyGamer
+achievement.jenarmor.desc =
+/ Súper Pat Armor
+Súper armadura de achievement.patarmor_super = SuperGirlyGamer
+achievement.patarmor_super.desc =
+/ Súper Jen Armor
+Súper armadura de achievement.jenarmor_super = SuperGirlyGamer
+achievement.jenarmor_super.desc =
+/ Espada de proporciones épicas
+achievement.swordofepicproportions = Espada de Epic Propotions
+achievement.swordofepicproportions.desc = Craft La Espada de Epic Propotions
+/ Pico de proporciones épicas
+achievement.pickaxeofepicproportions = Pico de Epic Propotions
+achievement.pickaxeofepicproportions.desc = Craft El Pico de Epic Propotions
+/ Hacha de proporciones épicas
+achievement.axeofepicproportions = Hacha de Epic Propotions
+achievement.axeofepicproportions.desc = Craft El Hacha de Epic Propotions
+/ Pala de proporciones épicas
+achievement.shovelofepicproportions = Pala de Epic Propotions
+achievement.shovelofepicproportions.desc = Craft La Pala de Epic Propotions
+/ Azada de proporciones épicas
+achievement.hoeofepicproportions = azada de Epic Propotions
+achievement.hoeofepicproportions.desc = Craft la azada de Epic Propotions
+
+// Estadísticas
+stat.presentsbroken = Nunber De Presentes Abierto
+
+// encantamientos
+// pociones
+// información sobre herramientas
+tooltip.epicproportionsmod.itemSwordOfEpicProportions_Part_1 = combinan con otros elementos para hacer
+tooltip.epicproportionsmod.itemSwordOfEpicProportions_Part_2 = La Espada de EpicPropotions
+tooltip.epicproportionsmod.itemPickOfEpicProportions_Part_1 = combinan con otros elementos para hacer
+tooltip.epicproportionsmod.itemPickOfEpicProportions_Part_2 = El Pico de EpicPropotions
+tooltip.epicproportionsmod.itemShovelOfEpicProportions_Part_1 = combinan con otros elementos para hacer
+tooltip.epicproportionsmod.itemShovelOfEpicProportions_Part_2 = La Pala de EpicPropotions
+
+
+tooltip.epicproportionsmod.itemSwordOfEpicProportions.captiancookie.no = No le dé a Captaín galleta !!!
+tooltip.epicproportionsmod.itemBirthdayPresent.bday = feliz Birtday!
+tooltip.epicproportionsmod.itemBirthdayPresent.inside = Me pregunto lo que podría ser en el interior?
+tooltip.epicproportionsmod.itemBirthdayPresent_Green.bday = feliz Birtday!
+tooltip.epicproportionsmod.itemBirthdayPresent_Green.inside = Me pregunto lo que podría ser en el interior?
+tooltip.epicproportionsmod.itemPatGun.ammotype = Consume FuriousDestroyer Flecha
+tooltip.epicproportionsmod.itemJenGun.ammotype = Consume SuperGirlyGamer Flecha
+tooltip.epicproportionsmod.itemTNTLauncher.ammotype = Consume TNT
+tooltip.epicproportionsmod.itemPatTNTLauncher.ammotype = Consume FuriousDestroyer TNT
+TNT tooltip.epicproportionsmod.itemTrollTNTLauncher.ammotype = Consume Troll
+Bomba tooltip.epicproportionsmod.itemFartBombLauncher.ammotype = Consume Pedo
+tooltip.epicproportionsmod.itemNukeLauncher.ammotype = Consume Nuke
+
+/ Advertencia Pat Pecho
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.0 = **************** ADVERTENCIA ********************* ***
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.1 = Esta pecho no está configurado correctamente
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.3 = Este Ches no almacena inventario correctamente
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.5 = Cualquier cosa en el interior se elimina al salir Mundial.
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.6 = ************************************** *********
+/ Advertencia Jen Pecho
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.0 = **************** ADVERTENCIA ********************* ***
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.1 = Esta pecho no está configurado correctamente
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.3 = Este Ches no almacena inventario correctamente
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.5 = Cualquier cosa en el interior se elimina al salir Mundial.
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.6 = ************************************** *********
+
+
+// creativas aquí
+itemGroup.EpicProportionsMod = jtrent238 de proporciones épicas Mod
+
+// Varios
+com.jtrent238.epicproportions.lib.LogHelper = proporciones épicas Mod Entrar

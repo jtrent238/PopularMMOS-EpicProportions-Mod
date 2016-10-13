@@ -24,5 +24,11 @@
 	"sparky_bark": {"category": "master","sounds": [{"name": "sparky_bark","stream": false}]},
 	"sparky_whine": {"category": "master","sounds": [{"name": "sparky_whine","stream": false}]},
 	"pat_staff_thunder": {"category": "master","sounds": [{"name": "pat_staff_thunder","stream": false}]},
-	"jen_staff_thunder": {"category": "master","sounds": [{"name": "jen_staff_thunder","stream": false}]}
+	"jen_staff_thunder": {"category": "master","sounds": [{"name": "jen_staff_thunder","stream": false}]},
+	"TNTLauncher_boom": {"category": "master","sounds": [{"name": "TNTLauncher_boom","stream": false}]},
+	"PatTNTLauncher_boom": {"category": "master","sounds": [{"name": "PatTNTLauncher_boom","stream": false}]},
+	"TrollTNTLauncher_boom": {"category": "master","sounds": [{"name": "TrollTNTLauncher_boom","stream": false}]},
+	"FartBombLauncher_boom": {"category": "master","sounds": [{"name": "FartBombLauncher_boom","stream": false}]},
+	"NukeLauncher_boom": {"category": "master","sounds": [{"name": "NukeLauncher_boom","stream": false}]},
+	"Launcher_boom": {"category": "master","sounds": [{"name": "Launcher_boom","stream": false}]}
 	}

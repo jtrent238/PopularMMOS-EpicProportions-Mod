@@ -2,6 +2,7 @@ package com.jtrent238.epicproportions.entity;
 
 import java.util.Random;
 
+import com.jtrent238.epicproportions.Achievements;
 import com.jtrent238.epicproportions.ItemLoader;
 
 import cpw.mods.fml.client.registry.RenderingRegistry;
@@ -43,6 +44,8 @@ public class EntityCaptianCookie extends EntityGolem implements IBossDisplayData
 	{
 		World world = null;
 		private int attackTimer;
+		private DamageSource damageSource;
+		private EntityPlayer entityAttackedBy;
 	    public EntityCaptianCookie(World var1)
 	    {
 	        super(var1);
@@ -87,6 +90,24 @@ public class EntityCaptianCookie extends EntityGolem implements IBossDisplayData
 	        this.playSound("", 1.0F, 1.0F);
 	        return flag;
 	    }
+	    
+	    public boolean attackEntityFrom()
+	    {
+			
+	    	if (getHealth() <= 0.0F)
+	    	{
+	    	    onDeath(damageSource);
+	    	    if (entityAttackedBy instanceof EntityPlayer)
+	    	    {
+	    	        ((EntityPlayer)entityAttackedBy)
+	    	              .addStat(Achievements.achievementcookies, 1);
+	    	    }
+	    	}
+	    	
+	    	return hasAttacked;
+	    }
+	    
+	    
 protected void addRandomArmor(){
 
 }
