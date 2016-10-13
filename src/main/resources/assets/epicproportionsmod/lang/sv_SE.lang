@@ -1,0 +1,615 @@
+<<<<<<< HEAD
+// Jtrent238 s episka proportioner Mod Lang fil
+// se_SV
+
+// Items
+item.itemgemofepicproportions.name = Gem av episka proportioner
+item.itemPatIngot.name = FuriousDestroyer s götet
+item.itemJenIngot.name = SuperGirlyGamer s Göt
+item.itemJenslips.name = Jen läppar
+item.itemCaptainCookieCookie.name = kapten Cookie cookie
+item.itemJenStar.name = SuperGirlyGamer Star
+item.itemPatStar.name = FuriousDestroyer Star
+item.itemEpicProportionsStar.name = episka proportioner Star
+item.itemTNTSwordPlacer.name = TNT Svärd
+item.itemBirthdayPresent.name = Födelsedagspresent
+item.itemHouseOfEpicProportionsPlacer.name = Hus av episka proportioner [WIP]
+item.itemBombyStructurePlacer.name = Bomby Struktur
+item.itemJensHoleStructurePlacer_1.name = Jen Hole 1 [WIP]
+item.itemJensHoleStructurePlacer_2.name = Jen Hole 2 [WIP]
+item.itemJensHoleStructurePlacer_3.name = Jen Hole 3 [WIP]
+item.itemJensHoleStructurePlacer_4.name = Jen Hole 4 [WIP]
+item.itemJensHoleStructurePlacer_5.name = Jen Hole 5 [WIP]
+item.itemSwordOfEpicProportions_Part1.name = Svärd av episka proportioner Del 1
+item.itemSwordOfEpicProportions_Part2.name = Svärd av episka proportioner Del 2
+item.itemSwordOfEpicProportions_Part3.name = Svärd av episka proportioner Del 3
+item.itempatdoor.name = FuriousDestroyer Door
+item.itemjendoor.name = SuperGirlyGamer Door
+item.itempatapple.name = FuriousDestroyer Apple
+item.itemjenapple.name = SuperGirlyGamer Apple
+item.itemPatmeat_raw.name = FuriousDestroyer Meat Råmaterial
+item.itemPatmeat_cooked.name = FuriousDestroyer kött kokt
+item.itemJenmeat_raw.name = SuperGirlyGamer Meat Råmaterial
+item.itemJenmeat_cooked.name = SuperGirlyGamer kött kokt
+item.ItemCookedPufferFish.name = Kokt pufferfish
+item.itemModInfo.name = Mod Information
+item.itemPickOfEpicProportions_Part1.name = Pickaxe av episka proportioner Del 1
+item.itemPickOfEpicProportions_Part2.name = Pickaxe av episka proportioner Del 2
+item.itemPickOfEpicProportions_Part3.name = Pickaxe av episka proportioner Del 3
+item.itemPatWellPlacer.name = FuriousDestroyer Well
+item.itemJenWellPlacer.name = SuperGirlyGamer Well
+item.itemPatGun.name = FuriousDestroyer Gun
+item.itemJenGun.name = SuperGirlyGamer Gun
+item.itemBirthdayPresent_Green.name = Födelsedagspresent
+item.itemShovelOfEpicProportions_Part1.name = skyffeln av episka proportioner Del 1
+item.itemShovelOfEpicProportions_Part2.name = skyffeln av episka proportioner Del 2
+item.itemShovelOfEpicProportions_Part3.name = skyffeln av episka proportioner Del 3
+item.itemTNTLauncher.name = TNT launcher
+item.itemPatTNTLauncher.name = FuriousDestroyer TNT launcher
+item.itemTrollTNTLauncher.name = Troll TNT launcher
+item.itemFartBombLauncher.name = Fart Bomb Launcher
+item.itemNukeLauncher.name = Nuke Launcher
+item.itemTNTCastlePlacer.name = TNT Castle
+item.itemStatue.name = Statue
+item.itemPatStatue.name = FuriousDestroyer Statue
+item.itemJenStatue.name = SuperGirlyGamer Statue
+item.itemCaptianCookieStatue.name = kapten Cookie Statue
+item.itemNinjaMasterStatue.name = Ninja ledar- Statue
+item.itemTheCandyManStatue.name = The Candy Man Statue
+item.itemjtrent238Statue.name = jtrent238 Statue
+item.itembombyStatue.name = Bomby Statue
+item.itemkittyStatue.name = Kitty Statue
+item.itemsparkyStatue.name = Sparky Statue
+item.itemCaptianCookieLittleStatue.name = Captian Cookie Little Statue
+
+/ Vapen & Verktyg
+item.itemPatSword.name = FuriousDestroyer svärd
+item.itemJenSword.name = SuperGirlyGamer svärd
+item.itemPatPick.name = FuriousDestroyer s Pickaxe
+item.itemJenPick.name = SuperGirlyGamer s Pickaxe
+item.itemPatAxe.name = FuriousDestroyer yxa
+item.itemJenAxe.name = SuperGirlyGamer yxa
+item.itemPatShovel.name = FuriousDestroyer s Shovel
+item.itemJenShovel.name = SuperGirlyGamer s Shovel
+item.itemPatHoe.name = FuriousDestroyer s Hoe
+item.itemJenHoe.name = SuperGirlyGamer s Hoe
+item.itemPatStaff.name = FuriousDestroyer stab
+item.itemJenStaff.name = SuperGirlyGamer stab
+item.itemPatBow.name = FuriousDestroyer s Bow
+item.itemJenBow.name = SuperGirlyGamer s Bow
+item.itemPatArrow.name = FuriousDestroyer pil
+item.itemJenArrow.name = SuperGirlyGamer pil
+item.itemPatMultiTool.name = FuriousDestroyer s Multitool
+item.itemJenMultiTool.name = SuperGirlyGamer s Multitool
+
+item.itemSuperPatSword.name = FuriousDestroyer Super svärd
+item.itemSuperJenSword.name = SuperGirlyGamer Super svärd
+item.itemSuperPatPick.name = FuriousDestroyer Super Pickaxe
+item.itemSuperJenPick.name = SuperGirlyGamer Super Pickaxe
+item.itemSuperPatAxe.name = FuriousDestroyer Super Yxa
+item.itemSuperJenAxe.name = SuperGirlyGamer Super Yxa
+item.itemSuperPatShovel.name = FuriousDestroyer Super spade
+item.itemSuperJenShovel.name = SuperGirlyGamer Super spade
+item.itemSuperPatHoe.name = FuriousDestroyer Super Hoe
+item.itemSuperJenHoe.name = SuperGirlyGamer Super Hoe
+item.itemSuperPatMultiTool.name = FuriousDestroyer Super Multitool
+item.itemSuperJenMultiTool.name = SuperGirlyGamer Super Multitool
+item.itemSwordOfEpicProportions.name = Svärd av episka proportioner
+item.itemPickOfEpicProportions.name = Pickaxe av episka proportioner
+item.itemShovelOfEpicProportions.name = skyffeln av episka proportioner
+item.itemHoeOfEpicProportions.name = Hoe av episka proportioner
+item.itemAxeOfEpicProportions.name = Axe av episka proportioner
+
+/ Armor
+/ passande
+item.itemPatHelmet.name = FuriousDestroyer s Helment
+item.itemPatChestplate.name = FuriousDestroyer s Chestplate
+item.itemPatLeggings.name = FuriousDestroyer damasker
+item.itemPatBoots.name = FuriousDestroyer s Boots
+/ Jen
+item.itemJenHelmet.name = SuperGirlyGamer s Helment
+item.itemJenChestplate.name = SuperGirlyGamer s Chestplate
+item.itemJenLeggings.name = SuperGirlyGamer damasker
+item.itemJenBoots.name = SuperGirlyGamer s Boots
+/ Super Pat
+item.itemSuperPatHelmet.name = FuriousDestroyer s Helment Helment
+item.itemSuperPatChestplate.name = FuriousDestroyer Super Chestplate
+item.itemSuperPatLeggings.name = FuriousDestroyer Super Leggings
+item.itemSuperPatBoots.name = FuriousDestroyer Super Boots
+/ Super Jen
+item.itemSuperJenHelmet.name = SuperGirlyGamer Super Helment
+item.itemSuperJenChestplate.name = SuperGirlyGamer Super Chestplate
+item.itemSuperJenLeggings.name = SuperGirlyGamer Super Leggings
+item.itemSuperJenBoots.name = SuperGirlyGamer Super Boots
+
+
+/ Spawn Ägg
+item.itemSpawnBomby.name = Spawn Bomby [WIP]
+item.itemSpawnCaptianCookie.name = Spawn kapten Cookie
+item.itemSpawnPat.name = Spawn FuriousDestroyer
+item.itemSpawnJen.name = Spawn SuperGirlyGamer
+item.itemSpawnFred2_0.name = Spawn Fred 2,0 [WIP]
+item.itemSpawnNinjaMaster.name = Spawn Ninja ledar-
+item.itemSpawnCandyMan.name = Spawn The Candy Man
+item.itemSpawnCookieLittle.name = Spawn kapten Cookie Little [WIP]
+item.itemSpawnjtrent238.name = Spawn jtrent238
+item.itemSpawnClown.name = Spawn Clown
+item.itemSpawnCandyPopper.name = Spawn Candy Popper [WIP]
+item.itemSpawnSparky.name = Spawn Sparky
+item.itemSpawnKitty.name = Spawn Kitty
+item.itemSpawnKami.name = Spawn Kami [WIP]
+item.itemSpawnPopo.name = Spawn Popo [WIP]
+item.itemSpawnBanana.name = Spawn Banan
+item.itemSpawnBlockling.name = Spawn Small Blockling [WIP]
+item.itemSpawnVillagerOfEpicProportions.name = Spawn Ager Of EpicPropotions [WIP]
+item.itemSpawnPatVillager.name = Spawn FuriousDestroyer Ager [WIP]
+item.itemSpawnJenVillager.name = Spawn SuperGirlyGamer Ager [WIP]
+item.itemSpawnJenGolem.name = Spawn SuperGirlyGamer Golem
+item.itemSpawnPatGolem.name = Spawn FuriousDestroyer Golem
+
+// Blocks
+tile.blockFartBomb.name = Fart Bomb
+tile.blockPatIngot.name = FuriousDestroyer s Block
+tile.blockJenIngot.name = SuperGirlyGamer s Block
+tile.blockPatOre.name = FuriousDestroyer Ore
+tile.blockJenOre.name = SuperGirlyGamer Ore
+tile.blockPatTNT.name = FuriousDestroyer s TNT
+tile.blockBirthdayPresent.name = Födelsedagspresent
+tile.blockPatChest.name = FuriousDestroyer kista [WIP]
+tile.blockJenChest.name = SuperGirlyGamer kista [WIP]
+tile.blockTrollTNT.name = Troll TNT
+tile.blockFlowerForJen.name = blomma för Jen
+tile.blockFlowerRedHeart.name = rött hjärta Flower
+tile.blockFlowerPinkHeart.name = rosa hjärta Flower
+tile.blockFlowerRainbow.name = Rainbow Flower
+tile.blockFlowerLove.name = Love Flower
+tile.blockFlowerChocolate.name = Choklad Blomma
+tile.blockBirthdayPresent_Green.name = Födelsedagspresent
+tile.BlockNuke.name = Nuke
+tile.BlockPatStatue.name = FuriousDestroyer Statue
+tile.BlockJenStatue.name = SuperGirlyGamer Statue
+
+// Entitys
+entity.EntityBomby.name = Bomby
+entity.EntityCaptianCookie.name = kapten Cookie
+entity.EntityPat.name = FuriousDestroyer
+entity.EntityJen.name = SuperGirlyGamer
+entity.EntityFred2_0.name = Fred 2,0
+entity.EntityNinjaMaster.name = Ninja ledar-
+entity.EntityCandyMan.name = The Candy Man
+entity.EntityCaptianCookieLittle.name = kapten Cookie Little
+entity.EntityClown.name = Clown
+entity.EntityCandyPopper.name = Candy Popper
+entity.EntitySparky.name = Sparky
+entity.EntityKitty.name = Kitty
+entity.EntityKami.name = Kami
+entity.EntityPopo.name = Popo
+entity.EntityBanana.name = Banan
+entity.EntityBlockling_Small.name = Liten Blockling
+
+// Mod Devs och medhjälpare
+entity.Entityjtrent238.name = jtrent238
+
+//Behållare
+container.Patchest = FuriousDestroyer kista [WIP]
+container.Jenchest = SuperGirlyGamer kista [WIP]
+container.chestPatDouble = Large FuriousDestroyerChest [WIP]
+container.chestJenDouble = Large SuperGirlyGamer Chest [WIP]
+
+// Generatorer
+
+//Framgångar
+/ Välkommen till episka proportioner
+achievement.install = Välkommen till episka proportioner
+achievement.install.desc = Installera episka proportioner Mod
+/Grattis på födelsedagen
+achievement.happybirthday = Grattis på födelsedagen!
+achievement.happybirthday.desc = Öppna en födelsedagspresent
+/ Blomma för Jen
+achievement.flowerforjen = blomma för Jen
+achievement.flowerforjen.desc = Få en blomma för Jen
+/ I Am FuriousDestroyer
+achievement.iampat = Jag FuriousDestroyer
+achievement.iampat.desc = bära hela Pat Armor
+/ I Am SuperGirlyGamer
+achievement.iamjen = Jag SuperGirlyGamer
+achievement.iamjen.desc = Wear Full Jen Armor
+/Poppade
+achievement.popped = Popped
+achievement.popped.desc = Döda en Candy Popper
+/ Cookies för alla
+achievement.cookies = Cookies för alla
+achievement.cookies.desc = Kill kapten Cookie
+/ FuriousDestroyer Död
+achievement.killpat = FuriousDestroyer Död
+achievement.killpat.desc = Kill FuriousDestroyer
+/ SuperGirlyGamer Död
+achievement.killjen = SuperGirlyGamer Död
+achievement.killjen.desc = Kill SuperGirlyGamer
+/ Funny
+achievement.funny = Funny
+achievement.funny.desc = Kill A Clown
+/ Pat Star
+achievement.patstar = FuriousDestroyer s Star
+achievement.patstar.desc = Få sällsynt droppe från FuriousDestroyer
+/ Jen Star
+achievement.jenstar = SuperGirlyGamer s Star
+achievement.jenstar.desc = Få sällsynt droppe från SuperGirlyGamer
+/ Pat Armor
+achievement.patarmor = SuperGirlyGamer s Armor
+achievement.patarmor.desc =
+/ Jen Armor
+achievement.jenarmor = SuperGirlyGamer s Armor
+achievement.jenarmor.desc =
+/ Super Pat Armor
+achievement.patarmor_super = SuperGirlyGamer Super Armor
+achievement.patarmor_super.desc =
+/ Super Jen Armor
+achievement.jenarmor_super = SuperGirlyGamer Super Armor
+achievement.jenarmor_super.desc =
+/ Sword av episka proportioner
+achievement.swordofepicproportions = Svärd av Epic Propotions
+achievement.swordofepicproportions.desc = Craft Svärd av Epic Propotions
+/ Pickaxe av episka proportioner
+achievement.pickaxeofepicproportions = Pickaxe av Epic Propotions
+achievement.pickaxeofepicproportions.desc = Craft Den Pickaxe av Epic Propotions
+/ Axe av episka proportioner
+achievement.axeofepicproportions = Axe av Epic Propotions
+achievement.axeofepicproportions.desc = Craft The Axe av Epic Propotions
+/ Shovel av episka proportioner
+achievement.shovelofepicproportions = skopan på Epic Propotions
+achievement.shovelofepicproportions.desc = Craft skopan på Epic Propotions
+/ Hoe av episka proportioner
+achievement.hoeofepicproportions = Hoe av Epic Propotions
+achievement.hoeofepicproportions.desc = Craft Hoe av Epic Propotions
+
+// Stats
+stat.presentsbroken = nunber av gåvor Öppnade
+
+// förtroll
+// Potions
+// verktygstips
+tooltip.epicproportionsmod.itemSwordOfEpicProportions_Part_1 = Kombinera med andra delar för att göra
+tooltip.epicproportionsmod.itemSwordOfEpicProportions_Part_2 = Svärd av EpicPropotions
+tooltip.epicproportionsmod.itemPickOfEpicProportions_Part_1 = Kombinera med andra delar för att göra
+tooltip.epicproportionsmod.itemPickOfEpicProportions_Part_2 = Den Pickaxe av EpicPropotions
+tooltip.epicproportionsmod.itemShovelOfEpicProportions_Part_1 = Kombinera med andra delar för att göra
+tooltip.epicproportionsmod.itemShovelOfEpicProportions_Part_2 = Den skyffeln av EpicPropotions
+
+
+tooltip.epicproportionsmod.itemSwordOfEpicProportions.captiancookie.no = inte ge Captian Cookie !!!
+tooltip.epicproportionsmod.itemBirthdayPresent.bday = lycklig Birtday!
+tooltip.epicproportionsmod.itemBirthdayPresent.inside = Jag undrar vad som skulle vara inne?
+tooltip.epicproportionsmod.itemBirthdayPresent_Green.bday = lycklig Birtday!
+tooltip.epicproportionsmod.itemBirthdayPresent_Green.inside = Jag undrar vad som skulle vara inne?
+tooltip.epicproportionsmod.itemPatGun.ammotype = Förbrukar FuriousDestroyer Arrow
+tooltip.epicproportionsmod.itemJenGun.ammotype = Förbrukar SuperGirlyGamer Arrow
+tooltip.epicproportionsmod.itemTNTLauncher.ammotype = Förbrukar TNT
+tooltip.epicproportionsmod.itemPatTNTLauncher.ammotype = Förbrukar FuriousDestroyer TNT
+tooltip.epicproportionsmod.itemTrollTNTLauncher.ammotype = Förbrukar Troll TNT
+tooltip.epicproportionsmod.itemFartBombLauncher.ammotype = Förbrukar fis bomb
+tooltip.epicproportionsmod.itemNukeLauncher.ammotype = Förbrukar Nuke
+
+/ Pat Chest Varning
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.0 = **************** VARNING ********************* ***
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.1 = Denna Bröst inte korrekt konfigurerad
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.3 = Detta Ches lagrar inte Inventory ordentligt
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.5 = något inuti kommer att tas bort på Världs exit.
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.6 = ************************************** *********
+/ Jen Chest Varning
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.0 = **************** VARNING ********************* ***
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.1 = Denna Bröst inte korrekt konfigurerad
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.3 = Detta Ches lagrar inte Inventory ordentligt
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.5 = något inuti kommer att tas bort på Världs exit.
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.6 = ************************************** *********
+
+
+// Creative Tabs
+itemGroup.EpicProportionsMod = jtrent238 s episka proportioner Mod
+
+// Misc
+=======
+// Jtrent238 s episka proportioner Mod Lang fil
+// se_SV
+
+// Items
+item.itemgemofepicproportions.name = Gem av episka proportioner
+item.itemPatIngot.name = FuriousDestroyer s götet
+item.itemJenIngot.name = SuperGirlyGamer s Göt
+item.itemJenslips.name = Jen läppar
+item.itemCaptainCookieCookie.name = kapten Cookie cookie
+item.itemJenStar.name = SuperGirlyGamer Star
+item.itemPatStar.name = FuriousDestroyer Star
+item.itemEpicProportionsStar.name = episka proportioner Star
+item.itemTNTSwordPlacer.name = TNT Svärd
+item.itemBirthdayPresent.name = Födelsedagspresent
+item.itemHouseOfEpicProportionsPlacer.name = Hus av episka proportioner [WIP]
+item.itemBombyStructurePlacer.name = Bomby Struktur
+item.itemJensHoleStructurePlacer_1.name = Jen Hole 1 [WIP]
+item.itemJensHoleStructurePlacer_2.name = Jen Hole 2 [WIP]
+item.itemJensHoleStructurePlacer_3.name = Jen Hole 3 [WIP]
+item.itemJensHoleStructurePlacer_4.name = Jen Hole 4 [WIP]
+item.itemJensHoleStructurePlacer_5.name = Jen Hole 5 [WIP]
+item.itemSwordOfEpicProportions_Part1.name = Svärd av episka proportioner Del 1
+item.itemSwordOfEpicProportions_Part2.name = Svärd av episka proportioner Del 2
+item.itemSwordOfEpicProportions_Part3.name = Svärd av episka proportioner Del 3
+item.itempatdoor.name = FuriousDestroyer Door
+item.itemjendoor.name = SuperGirlyGamer Door
+item.itempatapple.name = FuriousDestroyer Apple
+item.itemjenapple.name = SuperGirlyGamer Apple
+item.itemPatmeat_raw.name = FuriousDestroyer Meat Råmaterial
+item.itemPatmeat_cooked.name = FuriousDestroyer kött kokt
+item.itemJenmeat_raw.name = SuperGirlyGamer Meat Råmaterial
+item.itemJenmeat_cooked.name = SuperGirlyGamer kött kokt
+item.ItemCookedPufferFish.name = Kokt pufferfish
+item.itemModInfo.name = Mod Information
+item.itemPickOfEpicProportions_Part1.name = Pickaxe av episka proportioner Del 1
+item.itemPickOfEpicProportions_Part2.name = Pickaxe av episka proportioner Del 2
+item.itemPickOfEpicProportions_Part3.name = Pickaxe av episka proportioner Del 3
+item.itemPatWellPlacer.name = FuriousDestroyer Well
+item.itemJenWellPlacer.name = SuperGirlyGamer Well
+item.itemPatGun.name = FuriousDestroyer Gun
+item.itemJenGun.name = SuperGirlyGamer Gun
+item.itemBirthdayPresent_Green.name = Födelsedagspresent
+item.itemShovelOfEpicProportions_Part1.name = skyffeln av episka proportioner Del 1
+item.itemShovelOfEpicProportions_Part2.name = skyffeln av episka proportioner Del 2
+item.itemShovelOfEpicProportions_Part3.name = skyffeln av episka proportioner Del 3
+item.itemTNTLauncher.name = TNT launcher
+item.itemPatTNTLauncher.name = FuriousDestroyer TNT launcher
+item.itemTrollTNTLauncher.name = Troll TNT launcher
+item.itemFartBombLauncher.name = Fart Bomb Launcher
+item.itemNukeLauncher.name = Nuke Launcher
+
+/ Vapen & Verktyg
+item.itemPatSword.name = FuriousDestroyer svärd
+item.itemJenSword.name = SuperGirlyGamer svärd
+item.itemPatPick.name = FuriousDestroyer s Pickaxe
+item.itemJenPick.name = SuperGirlyGamer s Pickaxe
+item.itemPatAxe.name = FuriousDestroyer yxa
+item.itemJenAxe.name = SuperGirlyGamer yxa
+item.itemPatShovel.name = FuriousDestroyer s Shovel
+item.itemJenShovel.name = SuperGirlyGamer s Shovel
+item.itemPatHoe.name = FuriousDestroyer s Hoe
+item.itemJenHoe.name = SuperGirlyGamer s Hoe
+item.itemPatStaff.name = FuriousDestroyer stab
+item.itemJenStaff.name = SuperGirlyGamer stab
+item.itemPatBow.name = FuriousDestroyer s Bow
+item.itemJenBow.name = SuperGirlyGamer s Bow
+item.itemPatArrow.name = FuriousDestroyer pil
+item.itemJenArrow.name = SuperGirlyGamer pil
+item.itemPatMultiTool.name = FuriousDestroyer s Multitool
+item.itemJenMultiTool.name = SuperGirlyGamer s Multitool
+
+item.itemSuperPatSword.name = FuriousDestroyer Super svärd
+item.itemSuperJenSword.name = SuperGirlyGamer Super svärd
+item.itemSuperPatPick.name = FuriousDestroyer Super Pickaxe
+item.itemSuperJenPick.name = SuperGirlyGamer Super Pickaxe
+item.itemSuperPatAxe.name = FuriousDestroyer Super Yxa
+item.itemSuperJenAxe.name = SuperGirlyGamer Super Yxa
+item.itemSuperPatShovel.name = FuriousDestroyer Super spade
+item.itemSuperJenShovel.name = SuperGirlyGamer Super spade
+item.itemSuperPatHoe.name = FuriousDestroyer Super Hoe
+item.itemSuperJenHoe.name = SuperGirlyGamer Super Hoe
+item.itemSuperPatMultiTool.name = FuriousDestroyer Super Multitool
+item.itemSuperJenMultiTool.name = SuperGirlyGamer Super Multitool
+item.itemSwordOfEpicProportions.name = Svärd av episka proportioner
+item.itemPickOfEpicProportions.name = Pickaxe av episka proportioner
+item.itemShovelOfEpicProportions.name = skyffeln av episka proportioner
+item.itemHoeOfEpicProportions.name = Hoe av episka proportioner
+item.itemAxeOfEpicProportions.name = Axe av episka proportioner
+
+/ Armor
+/ passande
+item.itemPatHelmet.name = FuriousDestroyer s Helment
+item.itemPatChestplate.name = FuriousDestroyer s Chestplate
+item.itemPatLeggings.name = FuriousDestroyer damasker
+item.itemPatBoots.name = FuriousDestroyer s Boots
+/ Jen
+item.itemJenHelmet.name = SuperGirlyGamer s Helment
+item.itemJenChestplate.name = SuperGirlyGamer s Chestplate
+item.itemJenLeggings.name = SuperGirlyGamer damasker
+item.itemJenBoots.name = SuperGirlyGamer s Boots
+/ Super Pat
+item.itemSuperPatHelmet.name = FuriousDestroyer s Helment Helment
+item.itemSuperPatChestplate.name = FuriousDestroyer Super Chestplate
+item.itemSuperPatLeggings.name = FuriousDestroyer Super Leggings
+item.itemSuperPatBoots.name = FuriousDestroyer Super Boots
+/ Super Jen
+item.itemSuperJenHelmet.name = SuperGirlyGamer Super Helment
+item.itemSuperJenChestplate.name = SuperGirlyGamer Super Chestplate
+item.itemSuperJenLeggings.name = SuperGirlyGamer Super Leggings
+item.itemSuperJenBoots.name = SuperGirlyGamer Super Boots
+
+
+/ Spawn Ägg
+item.itemSpawnBomby.name = Spawn Bomby [WIP]
+item.itemSpawnCaptianCookie.name = Spawn kapten Cookie
+item.itemSpawnPat.name = Spawn FuriousDestroyer
+item.itemSpawnJen.name = Spawn SuperGirlyGamer
+item.itemSpawnFred2_0.name = Spawn Fred 2,0 [WIP]
+item.itemSpawnNinjaMaster.name = Spawn Ninja ledar-
+item.itemSpawnCandyMan.name = Spawn The Candy Man
+item.itemSpawnCookieLittle.name = Spawn kapten Cookie Little [WIP]
+item.itemSpawnjtrent238.name = Spawn jtrent238
+item.itemSpawnClown.name = Spawn Clown
+item.itemSpawnCandyPopper.name = Spawn Candy Popper [WIP]
+item.itemSpawnSparky.name = Spawn Sparky
+item.itemSpawnKitty.name = Spawn Kitty
+item.itemSpawnKami.name = Spawn Kami [WIP]
+item.itemSpawnPopo.name = Spawn Popo [WIP]
+item.itemSpawnBanana.name = Spawn Banan
+item.itemSpawnBlockling.name = Spawn Small Blockling [WIP]
+item.itemSpawnVillagerOfEpicProportions.name = Spawn Ager Of EpicPropotions [WIP]
+item.itemSpawnPatVillager.name = Spawn FuriousDestroyer Ager [WIP]
+item.itemSpawnJenVillager.name = Spawn SuperGirlyGamer Ager [WIP]
+
+
+// Blocks
+tile.blockFartBomb.name = Fart Bomb
+tile.blockPatIngot.name = FuriousDestroyer s Block
+tile.blockJenIngot.name = SuperGirlyGamer s Block
+tile.blockPatOre.name = FuriousDestroyer Ore
+tile.blockJenOre.name = SuperGirlyGamer Ore
+tile.blockPatTNT.name = FuriousDestroyer s TNT
+tile.blockBirthdayPresent.name = Födelsedagspresent
+tile.blockPatChest.name = FuriousDestroyer kista [WIP]
+tile.blockJenChest.name = SuperGirlyGamer kista [WIP]
+tile.blockTrollTNT.name = Troll TNT
+tile.blockFlowerForJen.name = blomma för Jen
+tile.blockFlowerRedHeart.name = rött hjärta Flower
+tile.blockFlowerPinkHeart.name = rosa hjärta Flower
+tile.blockFlowerRainbow.name = Rainbow Flower
+tile.blockFlowerLove.name = Love Flower
+tile.blockFlowerChocolate.name = Choklad Blomma
+tile.blockBirthdayPresent_Green.name = Födelsedagspresent
+tile.BlockNuke.name = Nuke
+
+// Entitys
+entity.EntityBomby.name = Bomby
+entity.EntityCaptianCookie.name = kapten Cookie
+entity.EntityPat.name = FuriousDestroyer
+entity.EntityJen.name = SuperGirlyGamer
+entity.EntityFred2_0.name = Fred 2,0
+entity.EntityNinjaMaster.name = Ninja ledar-
+entity.EntityCandyMan.name = The Candy Man
+entity.EntityCaptianCookieLittle.name = kapten Cookie Little
+entity.EntityClown.name = Clown
+entity.EntityCandyPopper.name = Candy Popper
+entity.EntitySparky.name = Sparky
+entity.EntityKitty.name = Kitty
+entity.EntityKami.name = Kami
+entity.EntityPopo.name = Popo
+entity.EntityBanana.name = Banan
+entity.EntityBlockling_Small.name = Liten Blockling
+
+// Mod Devs och medhjälpare
+entity.Entityjtrent238.name = jtrent238
+
+//Behållare
+container.Patchest = FuriousDestroyer kista [WIP]
+container.Jenchest = SuperGirlyGamer kista [WIP]
+container.chestPatDouble = Large FuriousDestroyerChest [WIP]
+container.chestJenDouble = Large SuperGirlyGamer Chest [WIP]
+
+// Generatorer
+
+//Framgångar
+/ Välkommen till episka proportioner
+achievement.install = Välkommen till episka proportioner
+achievement.install.desc = Installera episka proportioner Mod
+/Grattis på födelsedagen
+achievement.happybirthday = Grattis på födelsedagen!
+achievement.happybirthday.desc = Öppna en födelsedagspresent
+/ Blomma för Jen
+achievement.flowerforjen = blomma för Jen
+achievement.flowerforjen.desc = Få en blomma för Jen
+/ I Am FuriousDestroyer
+achievement.iampat = Jag FuriousDestroyer
+achievement.iampat.desc = bära hela Pat Armor
+/ I Am SuperGirlyGamer
+achievement.iamjen = Jag SuperGirlyGamer
+achievement.iamjen.desc = Wear Full Jen Armor
+/Poppade
+achievement.popped = Popped
+achievement.popped.desc = Döda en Candy Popper
+/ Cookies för alla
+achievement.cookies = Cookies för alla
+achievement.cookies.desc = Kill kapten Cookie
+/ FuriousDestroyer Död
+achievement.killpat = FuriousDestroyer Död
+achievement.killpat.desc = Kill FuriousDestroyer
+/ SuperGirlyGamer Död
+achievement.killjen = SuperGirlyGamer Död
+achievement.killjen.desc = Kill SuperGirlyGamer
+/ Funny
+achievement.funny = Funny
+achievement.funny.desc = Kill A Clown
+/ Pat Star
+achievement.patstar = FuriousDestroyer s Star
+achievement.patstar.desc = Få sällsynt droppe från FuriousDestroyer
+/ Jen Star
+achievement.jenstar = SuperGirlyGamer s Star
+achievement.jenstar.desc = Få sällsynt droppe från SuperGirlyGamer
+/ Pat Armor
+achievement.patarmor = SuperGirlyGamer s Armor
+achievement.patarmor.desc =
+/ Jen Armor
+achievement.jenarmor = SuperGirlyGamer s Armor
+achievement.jenarmor.desc =
+/ Super Pat Armor
+achievement.patarmor_super = SuperGirlyGamer Super Armor
+achievement.patarmor_super.desc =
+/ Super Jen Armor
+achievement.jenarmor_super = SuperGirlyGamer Super Armor
+achievement.jenarmor_super.desc =
+/ Sword av episka proportioner
+achievement.swordofepicproportions = Svärd av Epic Propotions
+achievement.swordofepicproportions.desc = Craft Svärd av Epic Propotions
+/ Pickaxe av episka proportioner
+achievement.pickaxeofepicproportions = Pickaxe av Epic Propotions
+achievement.pickaxeofepicproportions.desc = Craft Den Pickaxe av Epic Propotions
+/ Axe av episka proportioner
+achievement.axeofepicproportions = Axe av Epic Propotions
+achievement.axeofepicproportions.desc = Craft The Axe av Epic Propotions
+/ Shovel av episka proportioner
+achievement.shovelofepicproportions = skopan på Epic Propotions
+achievement.shovelofepicproportions.desc = Craft skopan på Epic Propotions
+/ Hoe av episka proportioner
+achievement.hoeofepicproportions = Hoe av Epic Propotions
+achievement.hoeofepicproportions.desc = Craft Hoe av Epic Propotions
+
+// Stats
+stat.presentsbroken = nunber av gåvor Öppnade
+
+// förtroll
+// Potions
+// verktygstips
+tooltip.epicproportionsmod.itemSwordOfEpicProportions_Part_1 = Kombinera med andra delar för att göra
+tooltip.epicproportionsmod.itemSwordOfEpicProportions_Part_2 = Svärd av EpicPropotions
+tooltip.epicproportionsmod.itemPickOfEpicProportions_Part_1 = Kombinera med andra delar för att göra
+tooltip.epicproportionsmod.itemPickOfEpicProportions_Part_2 = Den Pickaxe av EpicPropotions
+tooltip.epicproportionsmod.itemShovelOfEpicProportions_Part_1 = Kombinera med andra delar för att göra
+tooltip.epicproportionsmod.itemShovelOfEpicProportions_Part_2 = Den skyffeln av EpicPropotions
+
+
+tooltip.epicproportionsmod.itemSwordOfEpicProportions.captiancookie.no = inte ge Captian Cookie !!!
+tooltip.epicproportionsmod.itemBirthdayPresent.bday = lycklig Birtday!
+tooltip.epicproportionsmod.itemBirthdayPresent.inside = Jag undrar vad som skulle vara inne?
+tooltip.epicproportionsmod.itemBirthdayPresent_Green.bday = lycklig Birtday!
+tooltip.epicproportionsmod.itemBirthdayPresent_Green.inside = Jag undrar vad som skulle vara inne?
+tooltip.epicproportionsmod.itemPatGun.ammotype = Förbrukar FuriousDestroyer Arrow
+tooltip.epicproportionsmod.itemJenGun.ammotype = Förbrukar SuperGirlyGamer Arrow
+tooltip.epicproportionsmod.itemTNTLauncher.ammotype = Förbrukar TNT
+tooltip.epicproportionsmod.itemPatTNTLauncher.ammotype = Förbrukar FuriousDestroyer TNT
+tooltip.epicproportionsmod.itemTrollTNTLauncher.ammotype = Förbrukar Troll TNT
+tooltip.epicproportionsmod.itemFartBombLauncher.ammotype = Förbrukar fis bomb
+tooltip.epicproportionsmod.itemNukeLauncher.ammotype = Förbrukar Nuke
+
+/ Pat Chest Varning
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.0 = **************** VARNING ********************* ***
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.1 = Denna Bröst inte korrekt konfigurerad
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.3 = Detta Ches lagrar inte Inventory ordentligt
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.5 = något inuti kommer att tas bort på Världs exit.
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.6 = ************************************** *********
+/ Jen Chest Varning
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.0 = **************** VARNING ********************* ***
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.1 = Denna Bröst inte korrekt konfigurerad
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.3 = Detta Ches lagrar inte Inventory ordentligt
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.5 = något inuti kommer att tas bort på Världs exit.
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.6 = ************************************** *********
+
+
+// Creative Tabs
+itemGroup.EpicProportionsMod = jtrent238 s episka proportioner Mod
+
+// Misc
+>>>>>>> Ursprung / master
+com.jtrent238.epicproportions.lib.LogHelper = episka proportioner Mod Log
