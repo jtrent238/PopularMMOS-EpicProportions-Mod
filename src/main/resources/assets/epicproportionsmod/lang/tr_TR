@@ -1,0 +1,615 @@
+<<<<<<< BAŞ
+// Jtrent238 Epic Oranları Mod Lang Dosyası
+// tr
+
+// Öğeler
+item.itemgemofepicproportions.name destansı Gem =
+item.itemPatIngot.name FuriousDestroyer en külçe =
+item.itemJenIngot.name SuperGirlyGamer en Külçe =
+item.itemJenslips.name Jen Lips =
+item.itemCaptainCookieCookie.name Kaptan Cookie en Cookie =
+item.itemJenStar.name SuperGirlyGamer Yıldız =
+item.itemPatStar.name FuriousDestroyer Yıldız =
+item.itemEpicProportionsStar.name Epic Oranları Yıldız =
+item.itemTNTSwordPlacer.name TNT Kılıç =
+item.itemBirthdayPresent.name doğum günü hediyesi =
+Destansı item.itemHouseOfEpicProportionsPlacer.name = Ev [WIP]
+item.itemBombyStructurePlacer.name Bomby Yapısı =
+item.itemJensHoleStructurePlacer_1.name = Jen Delik 1 [WIP]
+item.itemJensHoleStructurePlacer_2.name = Jen Delik 2 [WIP]
+item.itemJensHoleStructurePlacer_3.name = Jen Hole 3 [WIP]
+item.itemJensHoleStructurePlacer_4.name = Jen Hole 4 [WIP]
+item.itemJensHoleStructurePlacer_5.name = Jen Hole 5 [WIP]
+Epic Oranları Bölüm 1 Of item.itemSwordOfEpicProportions_Part1.name = Kılıç
+Epic Oranları Bölüm 2 Of item.itemSwordOfEpicProportions_Part2.name = Kılıç
+Epic Oranları 3 Bölüm Of item.itemSwordOfEpicProportions_Part3.name = Kılıç
+item.itempatdoor.name FuriousDestroyer Kapı =
+item.itemjendoor.name SuperGirlyGamer Kapı =
+item.itempatapple.name FuriousDestroyer Apple =
+item.itemjenapple.name SuperGirlyGamer Apple =
+item.itemPatmeat_raw.name FuriousDestroyer Et Raw =
+item.itemPatmeat_cooked.name FuriousDestroyer Et Pişmiş =
+item.itemJenmeat_raw.name SuperGirlyGamer Et Raw =
+item.itemJenmeat_cooked.name SuperGirlyGamer Et Pişmiş =
+item.ItemCookedPufferFish.name = Pişmiş pufferfish
+item.itemModInfo.name Mod Bilgi =
+item.itemPickOfEpicProportions_Part1.name = Kazma Destanı Of Oranları Bölüm 1
+item.itemPickOfEpicProportions_Part2.name = Kazma Destanı Of Oranları Bölüm 2
+item.itemPickOfEpicProportions_Part3.name = Kazma Destanı Of Oranları Bölüm 3
+item.itemPatWellPlacer.name FuriousDestroyer Well =
+item.itemJenWellPlacer.name SuperGirlyGamer Well =
+item.itemPatGun.name FuriousDestroyer Gun =
+item.itemJenGun.name SuperGirlyGamer Gun =
+item.itemBirthdayPresent_Green.name doğum günü hediyesi =
+item.itemShovelOfEpicProportions_Part1.name Epic Oranları Bölüm 1 Of Küreği =
+item.itemShovelOfEpicProportions_Part2.name Epic Oranlar Bölüm 2 Of Küreği =
+item.itemShovelOfEpicProportions_Part3.name Epic Oranları Bölüm 3 Of Küreği =
+item.itemTNTLauncher.name TNT Launcher =
+item.itemPatTNTLauncher.name FuriousDestroyer TNT Launcher =
+item.itemTrollTNTLauncher.name Troll TNT Launcher =
+item.itemFartBombLauncher.name Fart Bomba Launcher =
+item.itemNukeLauncher.name Nuke Launcher =
+item.itemTNTCastlePlacer.name TNT Castle =
+item.itemStatue.name = Heykeli
+item.itemPatStatue.name FuriousDestroyer Heykeli =
+item.itemJenStatue.name SuperGirlyGamer Heykeli =
+item.itemCaptianCookieStatue.name Kaptan Çerez Heykeli =
+item.itemNinjaMasterStatue.name Ninja Usta Heykeli =
+item.itemTheCandyManStatue.name Candy Man Heykeli =
+item.itemjtrent238Statue.name = jtrent238 Heykeli
+item.itembombyStatue.name Bomby Heykeli =
+item.itemkittyStatue.name = Kitty Heykeli
+item.itemsparkyStatue.name Sparky Heykeli =
+item.itemCaptianCookieLittleStatue.name Captian Çerez Küçük Heykeli =
+
+/ Silah ve Araçları
+item.itemPatSword.name FuriousDestroyer en Kılıç =
+item.itemJenSword.name SuperGirlyGamer en Kılıç =
+item.itemPatPick.name FuriousDestroyer en Kazma =
+item.itemJenPick.name SuperGirlyGamer en Kazma =
+item.itemPatAxe.name FuriousDestroyer en Axe =
+item.itemJenAxe.name SuperGirlyGamer en Axe =
+item.itemPatShovel.name FuriousDestroyer en Küreği =
+item.itemJenShovel.name SuperGirlyGamer en Küreği =
+item.itemPatHoe.name FuriousDestroyer en Hoe =
+item.itemJenHoe.name SuperGirlyGamer en Hoe =
+item.itemPatStaff.name FuriousDestroyer en Çalışanlar =
+item.itemJenStaff.name SuperGirlyGamer en Çalışanlar =
+item.itemPatBow.name FuriousDestroyer en Bow =
+item.itemJenBow.name SuperGirlyGamer en Bow =
+item.itemPatArrow.name FuriousDestroyer en Ok =
+item.itemJenArrow.name SuperGirlyGamer en Ok =
+item.itemPatMultiTool.name FuriousDestroyer en Multitool =
+item.itemJenMultiTool.name SuperGirlyGamer en Multitool =
+
+item.itemSuperPatSword.name FuriousDestroyer Süper Sword =
+item.itemSuperJenSword.name SuperGirlyGamer Süper Sword =
+item.itemSuperPatPick.name FuriousDestroyer Süper Kazma =
+item.itemSuperJenPick.name SuperGirlyGamer Süper Kazma =
+item.itemSuperPatAxe.name FuriousDestroyer Süper Axe =
+item.itemSuperJenAxe.name SuperGirlyGamer Süper Axe =
+item.itemSuperPatShovel.name FuriousDestroyer Süper Shovel =
+item.itemSuperJenShovel.name SuperGirlyGamer Süper Shovel =
+item.itemSuperPatHoe.name FuriousDestroyer Süper Hoe =
+item.itemSuperJenHoe.name SuperGirlyGamer Süper Hoe =
+item.itemSuperPatMultiTool.name FuriousDestroyer Süper Çok Amaçlı =
+item.itemSuperJenMultiTool.name SuperGirlyGamer Süper Çok Amaçlı =
+Destansı item.itemSwordOfEpicProportions.name = Kılıç
+item.itemPickOfEpicProportions.name destansı Kazma =
+item.itemShovelOfEpicProportions.name destansı Shovel =
+Destansı item.itemHoeOfEpicProportions.name = Hoe
+item.itemAxeOfEpicProportions.name destansı Axe =
+
+/Zırh
+/ Pat
+item.itemPatHelmet.name FuriousDestroyer en Helment =
+item.itemPatChestplate.name FuriousDestroyer en Chestplate =
+item.itemPatLeggings.name FuriousDestroyer en Leggings =
+item.itemPatBoots.name FuriousDestroyer en Boots =
+/ Jen
+item.itemJenHelmet.name SuperGirlyGamer en Helment =
+item.itemJenChestplate.name SuperGirlyGamer en Chestplate =
+item.itemJenLeggings.name SuperGirlyGamer en Leggings =
+item.itemJenBoots.name SuperGirlyGamer en Boots =
+/ Süper Pat
+item.itemSuperPatHelmet.name FuriousDestroyer en Helment Helment =
+item.itemSuperPatChestplate.name FuriousDestroyer Süper Chestplate =
+item.itemSuperPatLeggings.name FuriousDestroyer Süper Leggings =
+item.itemSuperPatBoots.name FuriousDestroyer Süper Boots =
+/ Süper Jen
+item.itemSuperJenHelmet.name SuperGirlyGamer Süper Helment =
+item.itemSuperJenChestplate.name SuperGirlyGamer Süper Chestplate =
+item.itemSuperJenLeggings.name SuperGirlyGamer Süper Leggings =
+item.itemSuperJenBoots.name SuperGirlyGamer Süper Boots =
+
+
+/ Spawn Yumurta
+item.itemSpawnBomby.name = Spawn Bomby [WIP]
+item.itemSpawnCaptianCookie.name Spawn Kaptan Cookie =
+item.itemSpawnPat.name = Spawn FuriousDestroyer
+item.itemSpawnJen.name = Spawn SuperGirlyGamer
+item.itemSpawnFred2_0.name Spawn Fred 2.0 = [WIP]
+item.itemSpawnNinjaMaster.name Spawn Ninja Usta =
+item.itemSpawnCandyMan.name = Spawn Candy Man
+item.itemSpawnCookieLittle.name = Spawn Kaptan Çerez Küçük [WIP]
+item.itemSpawnjtrent238.name = Spawn jtrent238
+item.itemSpawnClown.name Spawn Palyaço =
+item.itemSpawnCandyPopper.name = Spawn Şeker Popper [WIP]
+item.itemSpawnSparky.name Spawn Sparky =
+item.itemSpawnKitty.name Spawn Kitty =
+item.itemSpawnKami.name = Spawn Kami [WIP]
+item.itemSpawnPopo.name = Spawn Popo [WIP]
+item.itemSpawnBanana.name Spawn Banana =
+item.itemSpawnBlockling.name = Spawn Küçük Blockling [WIP]
+item.itemSpawnVillagerOfEpicProportions.name EpicPropotions Of Spawn Köylüyü [WIP] =
+item.itemSpawnPatVillager.name = Spawn FuriousDestroyer Köylü [WIP]
+item.itemSpawnJenVillager.name = Spawn SuperGirlyGamer Köylü [WIP]
+item.itemSpawnJenGolem.name Spawn SuperGirlyGamer Golem =
+item.itemSpawnPatGolem.name Spawn FuriousDestroyer Golem =
+
+// Bloklar
+tile.blockFartBomb.name = Fart Bomba
+tile.blockPatIngot.name = FuriousDestroyer Block
+tile.blockJenIngot.name = SuperGirlyGamer Block
+tile.blockPatOre.name = FuriousDestroyer Cevher
+tile.blockJenOre.name = SuperGirlyGamer Cevher
+tile.blockPatTNT.name = FuriousDestroyer TNT
+tile.blockBirthdayPresent.name = Doğum Günü Hediyesi
+tile.blockPatChest.name = FuriousDestroyer Sandığı [WIP]
+tile.blockJenChest.name = SuperGirlyGamer Sandığı [WIP]
+tile.blockTrollTNT.name = Troll TNT
+Jen için tile.blockFlowerForJen.name = Çiçek
+tile.blockFlowerRedHeart.name = Kırmızı Kalp Çiçek
+tile.blockFlowerPinkHeart.name = Pembe Kalp Çiçek
+tile.blockFlowerRainbow.name = Gökkuşağı Çiçek
+tile.blockFlowerLove.name = Aşk Çiçeği
+tile.blockFlowerChocolate.name = Çikolata Çiçek
+tile.blockBirthdayPresent_Green.name = Doğum Günü Hediyesi
+tile.BlockNuke.name = Nuke
+tile.BlockPatStatue.name = FuriousDestroyer Heykeli
+tile.BlockJenStatue.name = SuperGirlyGamer Heykeli
+
+// Entitys
+entity.EntityBomby.name = Bomby
+entity.EntityCaptianCookie.name = Kaptan Çerez
+entity.EntityPat.name = FuriousDestroyer
+entity.EntityJen.name = SuperGirlyGamer
+entity.EntityFred2_0.name = Fred 2.0
+entity.EntityNinjaMaster.name = Ninja Usta
+entity.EntityCandyMan.name Şeker Man =
+entity.EntityCaptianCookieLittle.name = Kaptan Çerez Küçük
+entity.EntityClown.name = Palyaço
+entity.EntityCandyPopper.name = Şeker Popper
+entity.EntitySparky.name = Sparky
+entity.EntityKitty.name = Kitty
+entity.EntityKami.name = Kami
+entity.EntityPopo.name = Popo
+entity.EntityBanana.name = Muz
+entity.EntityBlockling_Small.name = Küçük Blockling
+
+// Mod Devs Ve Yardımcılar
+entity.Entityjtrent238.name = jtrent238
+
+// Konteyner
+container.Patchest = FuriousDestroyer Sandığı [WIP]
+container.Jenchest = SuperGirlyGamer Sandığı [WIP]
+container.chestPatDouble = Büyük FuriousDestroyerChest [WIP]
+container.chestJenDouble = Büyük SuperGirlyGamer Göğüs [WIP]
+
+// Jeneratörler
+
+//Başarılar
+Destansı boyutlardaki / Karşılama
+Destansı boyutlardaki achievement.install = hoşgeldiniz
+achievement.install.desc = Yükleme Epic Oranları Mod
+/Doğum günün kutlu olsun
+achievement.happybirthday = Mutlu Yıllar!
+achievement.happybirthday.desc = doğum günü hediyesi açın
+/ Çiçek İçin Jen
+Jen için achievement.flowerforjen = Çiçek
+achievement.flowerforjen.desc = Get Jen için bir çiçek
+/ Ben FuriousDestroyer Am
+achievement.iampat = I FuriousDestroyer Am
+achievement.iampat.desc = Tam Pat Armor Wear
+/ Ben SuperGirlyGamer Am
+achievement.iamjen = I SuperGirlyGamer Am
+achievement.iamjen.desc = Tam Jen Armor Wear
+/ attı
+achievement.popped = attı
+achievement.popped.desc = Bir Şeker Popper öldür
+Herkes İçin / Çerezler
+achievement.cookies = Çerezler Herkes İçin
+achievement.cookies.desc = öldür Kaptan Çerez
+/ FuriousDestroyer Öldü
+achievement.killpat = FuriousDestroyer Öldü
+achievement.killpat.desc = öldür FuriousDestroyer
+/ SuperGirlyGamer Öldü
+achievement.killjen = SuperGirlyGamer Öldü
+achievement.killjen.desc = öldür SuperGirlyGamer
+/ Komik
+achievement.funny = Komik
+achievement.funny.desc = öldür A Palyaço
+/ Pat Yıldız
+achievement.patstar = FuriousDestroyer Star
+achievement.patstar.desc = FuriousDestroyer nadir damla alın
+/ Jen Yıldız
+achievement.jenstar = SuperGirlyGamer Star
+achievement.jenstar.desc = SuperGirlyGamer nadir damla alın
+/ Pat Zırh
+achievement.patarmor = SuperGirlyGamer Zırh
+achievement.patarmor.desc =
+/ Jen Zırh
+achievement.jenarmor = SuperGirlyGamer Zırh
+achievement.jenarmor.desc =
+/ Süper Pat Zırh
+achievement.patarmor_super = SuperGirlyGamer Süper Zırh
+achievement.patarmor_super.desc =
+/ Süper Jen Zırh
+achievement.jenarmor_super = SuperGirlyGamer Süper Zırh
+achievement.jenarmor_super.desc =
+Destansı / Kılıç
+Epic propotions achievement.swordofepicproportions = Kılıç
+Epic propotions achievement.swordofepicproportions.desc = Craft Kılıç
+Destansı / Kazma
+Epic propotions achievement.pickaxeofepicproportions = kazma
+Epic propotions achievement.pickaxeofepicproportions.desc = Craft kazma
+Destansı / Axe
+achievement.axeofepicproportions = Axe Epic propotions
+Epic propotions achievement.axeofepicproportions.desc = Craft Axe
+Destansı / Kürek
+Epic propotions achievement.shovelofepicproportions = Kürek
+Epic propotions achievement.shovelofepicproportions.desc = Craft Kürek
+Destansı / Hoe
+Epic propotions achievement.hoeofepicproportions = Hoe
+Epic propotions achievement.hoeofepicproportions.desc = Craft Hoe
+
+// İstatistikleri
+stat.presentsbroken = Presents Of Nunber Açıldı
+
+// Enchantments
+// İksir
+// Araç Açıklaması
+tooltip.epicproportionsmod.itemSwordOfEpicProportions_Part_1 = yapmak için diğer Parçaları birleştirin
+tooltip.epicproportionsmod.itemSwordOfEpicProportions_Part_2 EpicPropotions Kılıcını =
+tooltip.epicproportionsmod.itemPickOfEpicProportions_Part_1 = yapmak için diğer parçalar ile birleştirin
+tooltip.epicproportionsmod.itemPickOfEpicProportions_Part_2 EpicPropotions arasında Kazma =
+tooltip.epicproportionsmod.itemShovelOfEpicProportions_Part_1 = yapmak için diğer Parçaları birleştirin
+tooltip.epicproportionsmod.itemShovelOfEpicProportions_Part_2 EpicPropotions ve Shovel =
+
+
+tooltip.epicproportionsmod.itemSwordOfEpicProportions.captiancookie.no = Captian Cookie vermeyin !!!
+tooltip.epicproportionsmod.itemBirthdayPresent.bday = Mutlu Birtday!
+tooltip.epicproportionsmod.itemBirthdayPresent.inside = içimde ne olabilir acaba?
+tooltip.epicproportionsmod.itemBirthdayPresent_Green.bday = Mutlu Birtday!
+tooltip.epicproportionsmod.itemBirthdayPresent_Green.inside = içimde ne olabilir acaba?
+tooltip.epicproportionsmod.itemPatGun.ammotype = Tüketir FuriousDestroyer Ok
+tooltip.epicproportionsmod.itemJenGun.ammotype = Tüketir SuperGirlyGamer Ok
+tooltip.epicproportionsmod.itemTNTLauncher.ammotype = TNT tüketir
+tooltip.epicproportionsmod.itemPatTNTLauncher.ammotype = Tüketir FuriousDestroyer TNT
+tooltip.epicproportionsmod.itemTrollTNTLauncher.ammotype = Tüketir Troll TNT
+tooltip.epicproportionsmod.itemFartBombLauncher.ammotype = Tüketir Fart Bomb
+tooltip.epicproportionsmod.itemNukeLauncher.ammotype = Tüketir Nuke
+
+/ Pat Göğüs Uyarı
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.0 = **************** UYARI ********************* ***
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.1 = Bu Göğüs düzgün yapılandırılmış değil
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.3 = Bu Ches düzgün Envanter Mağaza Not
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.5 = Her şey içinde Dünya çıkışta silinecektir.
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.6 = ************************************** *********
+/ Jen Göğüs Uyarı
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.0 = **************** UYARI ********************* ***
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.1 = Bu Göğüs düzgün yapılandırılmış değil
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.3 = Bu Ches düzgün Envanter Mağaza Not
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.5 = Her şey içinde Dünya çıkışta silinecektir.
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.6 = ************************************** *********
+
+
+// Yaratıcı Sekmeler
+itemGroup.EpicProportionsMod = jtrent238 Epic Oranları Mod
+
+// Çeşitli
+=======
+// Jtrent238 Epic Oranları Mod Lang Dosyası
+// tr
+
+// Öğeler
+item.itemgemofepicproportions.name destansı Gem =
+item.itemPatIngot.name FuriousDestroyer en külçe =
+item.itemJenIngot.name SuperGirlyGamer en Külçe =
+item.itemJenslips.name Jen Lips =
+item.itemCaptainCookieCookie.name Kaptan Cookie en Cookie =
+item.itemJenStar.name SuperGirlyGamer Yıldız =
+item.itemPatStar.name FuriousDestroyer Yıldız =
+item.itemEpicProportionsStar.name Epic Oranları Yıldız =
+item.itemTNTSwordPlacer.name TNT Kılıç =
+item.itemBirthdayPresent.name doğum günü hediyesi =
+Destansı item.itemHouseOfEpicProportionsPlacer.name = Ev [WIP]
+item.itemBombyStructurePlacer.name Bomby Yapısı =
+item.itemJensHoleStructurePlacer_1.name = Jen Delik 1 [WIP]
+item.itemJensHoleStructurePlacer_2.name = Jen Delik 2 [WIP]
+item.itemJensHoleStructurePlacer_3.name = Jen Hole 3 [WIP]
+item.itemJensHoleStructurePlacer_4.name = Jen Hole 4 [WIP]
+item.itemJensHoleStructurePlacer_5.name = Jen Hole 5 [WIP]
+Epic Oranları Bölüm 1 Of item.itemSwordOfEpicProportions_Part1.name = Kılıç
+Epic Oranları Bölüm 2 Of item.itemSwordOfEpicProportions_Part2.name = Kılıç
+Epic Oranları 3 Bölüm Of item.itemSwordOfEpicProportions_Part3.name = Kılıç
+item.itempatdoor.name FuriousDestroyer Kapı =
+item.itemjendoor.name SuperGirlyGamer Kapı =
+item.itempatapple.name FuriousDestroyer Apple =
+item.itemjenapple.name SuperGirlyGamer Apple =
+item.itemPatmeat_raw.name FuriousDestroyer Et Raw =
+item.itemPatmeat_cooked.name FuriousDestroyer Et Pişmiş =
+item.itemJenmeat_raw.name SuperGirlyGamer Et Raw =
+item.itemJenmeat_cooked.name SuperGirlyGamer Et Pişmiş =
+item.ItemCookedPufferFish.name = Pişmiş pufferfish
+item.itemModInfo.name Mod Bilgi =
+item.itemPickOfEpicProportions_Part1.name = Kazma Destanı Of Oranları Bölüm 1
+item.itemPickOfEpicProportions_Part2.name = Kazma Destanı Of Oranları Bölüm 2
+item.itemPickOfEpicProportions_Part3.name = Kazma Destanı Of Oranları Bölüm 3
+item.itemPatWellPlacer.name FuriousDestroyer Well =
+item.itemJenWellPlacer.name SuperGirlyGamer Well =
+item.itemPatGun.name FuriousDestroyer Gun =
+item.itemJenGun.name SuperGirlyGamer Gun =
+item.itemBirthdayPresent_Green.name doğum günü hediyesi =
+item.itemShovelOfEpicProportions_Part1.name Epic Oranları Bölüm 1 Of Küreği =
+item.itemShovelOfEpicProportions_Part2.name Epic Oranları Bölüm 2 Of Küreği =
+item.itemShovelOfEpicProportions_Part3.name Epic Oranları Bölüm 3 Of Küreği =
+item.itemTNTLauncher.name TNT Launcher =
+item.itemPatTNTLauncher.name FuriousDestroyer TNT Launcher =
+item.itemTrollTNTLauncher.name Troll TNT Launcher =
+item.itemFartBombLauncher.name Fart Bomba Launcher =
+item.itemNukeLauncher.name Nuke Launcher =
+
+/ Silah ve Araçları
+item.itemPatSword.name FuriousDestroyer en Kılıç =
+item.itemJenSword.name SuperGirlyGamer en Kılıç =
+item.itemPatPick.name FuriousDestroyer en Kazma =
+item.itemJenPick.name SuperGirlyGamer en Kazma =
+item.itemPatAxe.name FuriousDestroyer en Axe =
+item.itemJenAxe.name SuperGirlyGamer en Axe =
+item.itemPatShovel.name FuriousDestroyer en Küreği =
+item.itemJenShovel.name SuperGirlyGamer en Küreği =
+item.itemPatHoe.name FuriousDestroyer en Hoe =
+item.itemJenHoe.name SuperGirlyGamer en Hoe =
+item.itemPatStaff.name FuriousDestroyer en Çalışanlar =
+item.itemJenStaff.name SuperGirlyGamer en Çalışanlar =
+item.itemPatBow.name FuriousDestroyer en Bow =
+item.itemJenBow.name SuperGirlyGamer en Bow =
+item.itemPatArrow.name FuriousDestroyer en Ok =
+item.itemJenArrow.name SuperGirlyGamer en Ok =
+item.itemPatMultiTool.name FuriousDestroyer en Multitool =
+item.itemJenMultiTool.name SuperGirlyGamer en Multitool =
+
+item.itemSuperPatSword.name FuriousDestroyer Süper Sword =
+item.itemSuperJenSword.name SuperGirlyGamer Süper Sword =
+item.itemSuperPatPick.name FuriousDestroyer Süper Kazma =
+item.itemSuperJenPick.name SuperGirlyGamer Süper Kazma =
+item.itemSuperPatAxe.name FuriousDestroyer Süper Axe =
+item.itemSuperJenAxe.name SuperGirlyGamer Süper Axe =
+item.itemSuperPatShovel.name FuriousDestroyer Süper Shovel =
+item.itemSuperJenShovel.name SuperGirlyGamer Süper Shovel =
+item.itemSuperPatHoe.name FuriousDestroyer Süper Hoe =
+item.itemSuperJenHoe.name SuperGirlyGamer Süper Hoe =
+item.itemSuperPatMultiTool.name FuriousDestroyer Süper Çok Amaçlı =
+item.itemSuperJenMultiTool.name SuperGirlyGamer Süper Çok Amaçlı =
+Destansı item.itemSwordOfEpicProportions.name = Kılıç
+item.itemPickOfEpicProportions.name destansı Kazma =
+item.itemShovelOfEpicProportions.name destansı Küreği =
+Destansı item.itemHoeOfEpicProportions.name = Hoe
+item.itemAxeOfEpicProportions.name destansı Axe =
+
+/Zırh
+/ Pat
+item.itemPatHelmet.name FuriousDestroyer en Helment =
+item.itemPatChestplate.name FuriousDestroyer en Chestplate =
+item.itemPatLeggings.name FuriousDestroyer en Leggings =
+item.itemPatBoots.name FuriousDestroyer en Boots =
+/ Jen
+item.itemJenHelmet.name SuperGirlyGamer en Helment =
+item.itemJenChestplate.name SuperGirlyGamer en Chestplate =
+item.itemJenLeggings.name SuperGirlyGamer en Leggings =
+item.itemJenBoots.name SuperGirlyGamer en Boots =
+/ Süper Pat
+item.itemSuperPatHelmet.name FuriousDestroyer en Helment Helment =
+item.itemSuperPatChestplate.name FuriousDestroyer Süper Chestplate =
+item.itemSuperPatLeggings.name FuriousDestroyer Süper Leggings =
+item.itemSuperPatBoots.name FuriousDestroyer Süper Boots =
+/ Süper Jen
+item.itemSuperJenHelmet.name SuperGirlyGamer Süper Helment =
+item.itemSuperJenChestplate.name SuperGirlyGamer Süper Chestplate =
+item.itemSuperJenLeggings.name SuperGirlyGamer Süper Leggings =
+item.itemSuperJenBoots.name SuperGirlyGamer Süper Boots =
+
+
+/ Spawn Yumurta
+item.itemSpawnBomby.name = Spawn Bomby [WIP]
+item.itemSpawnCaptianCookie.name Spawn Kaptan Cookie =
+item.itemSpawnPat.name = Spawn FuriousDestroyer
+item.itemSpawnJen.name = Spawn SuperGirlyGamer
+item.itemSpawnFred2_0.name Spawn Fred 2.0 = [WIP]
+item.itemSpawnNinjaMaster.name Spawn Ninja Usta =
+item.itemSpawnCandyMan.name = Spawn Candy Man
+item.itemSpawnCookieLittle.name = Spawn Kaptan Çerez Küçük [WIP]
+item.itemSpawnjtrent238.name = Spawn jtrent238
+item.itemSpawnClown.name Spawn Palyaço =
+item.itemSpawnCandyPopper.name = Spawn Şeker Popper [WIP]
+item.itemSpawnSparky.name Spawn Sparky =
+item.itemSpawnKitty.name Spawn Kitty =
+item.itemSpawnKami.name = Spawn Kami [WIP]
+item.itemSpawnPopo.name = Spawn Popo [WIP]
+item.itemSpawnBanana.name Spawn Banana =
+item.itemSpawnBlockling.name = Spawn Küçük Blockling [WIP]
+item.itemSpawnVillagerOfEpicProportions.name EpicPropotions Of Spawn Köylüyü [WIP] =
+item.itemSpawnPatVillager.name = Spawn FuriousDestroyer Köylü [WIP]
+item.itemSpawnJenVillager.name = Spawn SuperGirlyGamer Köylü [WIP]
+
+
+// Bloklar
+tile.blockFartBomb.name = Fart Bomba
+tile.blockPatIngot.name = FuriousDestroyer Block
+tile.blockJenIngot.name = SuperGirlyGamer Block
+tile.blockPatOre.name = FuriousDestroyer Cevher
+tile.blockJenOre.name = SuperGirlyGamer Cevher
+tile.blockPatTNT.name = FuriousDestroyer TNT
+tile.blockBirthdayPresent.name = Doğum Günü Hediyesi
+tile.blockPatChest.name = FuriousDestroyer Sandığı [WIP]
+tile.blockJenChest.name = SuperGirlyGamer Sandığı [WIP]
+tile.blockTrollTNT.name = Troll TNT
+Jen için tile.blockFlowerForJen.name = Çiçek
+tile.blockFlowerRedHeart.name = Kırmızı Kalp Çiçek
+tile.blockFlowerPinkHeart.name = Pembe Kalp Çiçek
+tile.blockFlowerRainbow.name = Gökkuşağı Çiçek
+tile.blockFlowerLove.name = Aşk Çiçeği
+tile.blockFlowerChocolate.name = Çikolata Çiçek
+tile.blockBirthdayPresent_Green.name = Doğum Günü Hediyesi
+tile.BlockNuke.name = Nuke
+
+// Entitys
+entity.EntityBomby.name = Bomby
+entity.EntityCaptianCookie.name = Kaptan Çerez
+entity.EntityPat.name = FuriousDestroyer
+entity.EntityJen.name = SuperGirlyGamer
+entity.EntityFred2_0.name = Fred 2,0
+entity.EntityNinjaMaster.name = Ninja Usta
+entity.EntityCandyMan.name Şeker Man =
+entity.EntityCaptianCookieLittle.name = Kaptan Çerez Küçük
+entity.EntityClown.name = Palyaço
+entity.EntityCandyPopper.name = Şeker Popper
+entity.EntitySparky.name = Sparky
+entity.EntityKitty.name = Kitty
+entity.EntityKami.name = Kami
+entity.EntityPopo.name = Popo
+entity.EntityBanana.name = Muz
+entity.EntityBlockling_Small.name = Küçük Blockling
+
+// Mod Devs ve yardımcıları
+entity.Entityjtrent238.name = jtrent238
+
+// Konteyner
+container.Patchest = FuriousDestroyer Sandığı [WIP]
+container.Jenchest = SuperGirlyGamer Sandığı [WIP]
+container.chestPatDouble = Büyük FuriousDestroyerChest [WIP]
+container.chestJenDouble = Büyük SuperGirlyGamer Göğüs [WIP]
+
+// Jeneratörler
+
+//Başarılar
+Destansı boyutlardaki / Karşılama
+Destansı boyutlardaki achievement.install = hoşgeldiniz
+achievement.install.desc = Yükleme Epic Oranları Mod
+/Doğum günün kutlu olsun
+achievement.happybirthday = Mutlu Yıllar!
+achievement.happybirthday.desc = doğum günü hediyesi açın
+/ Çiçek İçin Jen
+Jen için achievement.flowerforjen = Çiçek
+achievement.flowerforjen.desc = Get Jen için bir çiçek
+/ Ben FuriousDestroyer Am
+achievement.iampat = I FuriousDestroyer Am
+achievement.iampat.desc = Tam Pat Armor Wear
+/ Ben SuperGirlyGamer Am
+achievement.iamjen = I SuperGirlyGamer Am
+achievement.iamjen.desc = Tam Jen Armor Wear
+/ attı
+achievement.popped = attı
+achievement.popped.desc = Bir Şeker Popper öldür
+Herkes İçin / Çerezler
+achievement.cookies = Çerezler Herkes İçin
+achievement.cookies.desc = öldür Kaptan Çerez
+/ FuriousDestroyer Öldü
+achievement.killpat = FuriousDestroyer Öldü
+achievement.killpat.desc = öldür FuriousDestroyer
+/ SuperGirlyGamer Öldü
+achievement.killjen = SuperGirlyGamer Öldü
+achievement.killjen.desc = öldür SuperGirlyGamer
+/ Komik
+achievement.funny = Komik
+achievement.funny.desc = öldür A Palyaço
+/ Pat Yıldız
+achievement.patstar = FuriousDestroyer Star
+achievement.patstar.desc = FuriousDestroyer nadir damla alın
+/ Jen Yıldız
+achievement.jenstar = SuperGirlyGamer Star
+achievement.jenstar.desc = SuperGirlyGamer nadir damla alın
+/ Pat Zırh
+achievement.patarmor = SuperGirlyGamer Zırh
+achievement.patarmor.desc =
+/ Jen Zırh
+achievement.jenarmor = SuperGirlyGamer Zırh
+achievement.jenarmor.desc =
+/ Süper Pat Zırh
+achievement.patarmor_super = SuperGirlyGamer Süper Zırh
+achievement.patarmor_super.desc =
+/ Süper Jen Zırh
+achievement.jenarmor_super = SuperGirlyGamer Süper Zırh
+achievement.jenarmor_super.desc =
+Destansı / Kılıç
+Epic propotions achievement.swordofepicproportions = Kılıç
+Epic propotions achievement.swordofepicproportions.desc = Craft Kılıç
+Destansı / Kazma
+Epic propotions achievement.pickaxeofepicproportions = kazma
+Epic propotions achievement.pickaxeofepicproportions.desc = Craft kazma
+Destansı / Axe
+achievement.axeofepicproportions = Axe Epic propotions
+Epic propotions achievement.axeofepicproportions.desc = Craft Axe
+Destansı / Kürek
+Epic propotions achievement.shovelofepicproportions = Kürek
+Epic propotions achievement.shovelofepicproportions.desc = Craft Kürek
+Destansı / Hoe
+Epic propotions achievement.hoeofepicproportions = Hoe
+Epic propotions achievement.hoeofepicproportions.desc = Craft Hoe
+
+// İstatistikleri
+stat.presentsbroken = Presents Of Nunber Açıldı
+
+// Enchantments
+// İksir
+// Araç Açıklaması
+tooltip.epicproportionsmod.itemSwordOfEpicProportions_Part_1 = yapmak için diğer Parçaları birleştirin
+tooltip.epicproportionsmod.itemSwordOfEpicProportions_Part_2 EpicPropotions Kılıcını =
+tooltip.epicproportionsmod.itemPickOfEpicProportions_Part_1 = yapmak için diğer Parçaları birleştirin
+tooltip.epicproportionsmod.itemPickOfEpicProportions_Part_2 EpicPropotions arasında Kazma =
+tooltip.epicproportionsmod.itemShovelOfEpicProportions_Part_1 = yapmak için diğer Parçaları birleştirin
+tooltip.epicproportionsmod.itemShovelOfEpicProportions_Part_2 EpicPropotions ve Shovel =
+
+
+tooltip.epicproportionsmod.itemSwordOfEpicProportions.captiancookie.no = Captian Cookie vermeyin !!!
+tooltip.epicproportionsmod.itemBirthdayPresent.bday = Mutlu Birtday!
+tooltip.epicproportionsmod.itemBirthdayPresent.inside = içimde ne olabilir acaba?
+tooltip.epicproportionsmod.itemBirthdayPresent_Green.bday = Mutlu Birtday!
+tooltip.epicproportionsmod.itemBirthdayPresent_Green.inside = içimde ne olabilir acaba?
+tooltip.epicproportionsmod.itemPatGun.ammotype = Tüketir FuriousDestroyer Ok
+tooltip.epicproportionsmod.itemJenGun.ammotype = Tüketir SuperGirlyGamer Ok
+tooltip.epicproportionsmod.itemTNTLauncher.ammotype = TNT tüketir
+tooltip.epicproportionsmod.itemPatTNTLauncher.ammotype = Tüketir FuriousDestroyer TNT
+tooltip.epicproportionsmod.itemTrollTNTLauncher.ammotype = Tüketir Troll TNT
+tooltip.epicproportionsmod.itemFartBombLauncher.ammotype = Tüketir Fart Bomba
+tooltip.epicproportionsmod.itemNukeLauncher.ammotype = Tüketir Nuke
+
+/ Pat Göğüs Uyarı
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.0 = **************** UYARI ********************* ***
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.1 = Bu Göğüs düzgün yapılandırılmış değil
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.3 = Bu Ches düzgün Envanter Mağaza Not
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.5 = Her şey içinde Dünya çıkışta silinecektir.
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.6 = ************************************** *********
+/ Jen Göğüs Uyarı
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.0 = **************** UYARI ********************* ***
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.1 = Bu Göğüs düzgün yapılandırılmış değil
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.3 = Bu Ches düzgün Envanter Mağaza Not
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.5 = Her şey içinde Dünya çıkışta silinecektir.
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.6 = ************************************** *********
+
+
+// Yaratıcı Sekmeler
+itemGroup.EpicProportionsMod = jtrent238 Epic Oranları Mod
+
+// Çeşitli
+>>>>>>> Köken / master
+com.jtrent238.epicproportions.lib.LogHelper = Epic Oranları Mod Giriş
