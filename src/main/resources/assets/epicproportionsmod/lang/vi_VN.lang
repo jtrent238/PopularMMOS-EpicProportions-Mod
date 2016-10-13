@@ -1,0 +1,615 @@
+<<<<<<< TRỤ
+// Epic Proportions Mod Lang file jtrent238 của
+// en_US
+
+//Hạng mục
+item.itemgemofepicproportions.name = Gem của Epic Proportions
+item.itemPatIngot.name = phôi FuriousDestroyer của
+item.itemJenIngot.name = Ingot SuperGirlyGamer của
+item.itemJenslips.name = Lips của Jen
+item.itemCaptainCookieCookie.name = Cookie Captain Cookie
+item.itemJenStar.name = SuperGirlyGamer sao
+item.itemPatStar.name = FuriousDestroyer sao
+item.itemEpicProportionsStar.name = Epic Proportions sao
+item.itemTNTSwordPlacer.name = TNT Gươm
+item.itemBirthdayPresent.name = Birthday hiện tại
+item.itemHouseOfEpicProportionsPlacer.name = House Of Epic Proportions [WIP]
+item.itemBombyStructurePlacer.name = Bomby cấu
+item.itemJensHoleStructurePlacer_1.name = Jen lỗ 1 [WIP]
+item.itemJensHoleStructurePlacer_2.name = Jen Lỗ 2 [WIP]
+item.itemJensHoleStructurePlacer_3.name = Jen Lỗ 3 [WIP]
+item.itemJensHoleStructurePlacer_4.name = Jen lỗ 4 [WIP]
+item.itemJensHoleStructurePlacer_5.name = Jen lỗ 5 [WIP]
+item.itemSwordOfEpicProportions_Part1.name = Thanh gươm của Epic Proportions Phần 1
+item.itemSwordOfEpicProportions_Part2.name = Thanh gươm của Epic Proportions Phần 2
+item.itemSwordOfEpicProportions_Part3.name = Thanh gươm của Epic Proportions Phần 3
+item.itempatdoor.name = FuriousDestroyer Door
+item.itemjendoor.name = SuperGirlyGamer Door
+item.itempatapple.name = FuriousDestroyer của Apple
+item.itemjenapple.name = SuperGirlyGamer của Apple
+item.itemPatmeat_raw.name = FuriousDestroyer Thịt liệu
+item.itemPatmeat_cooked.name = FuriousDestroyer thịt nấu chín
+item.itemJenmeat_raw.name = SuperGirlyGamer Thịt liệu
+item.itemJenmeat_cooked.name = SuperGirlyGamer thịt nấu chín
+item.ItemCookedPufferFish.name = cá nóc nấu chín
+item.itemModInfo.name = Thông tin Mod
+item.itemPickOfEpicProportions_Part1.name = Pickaxe Trong Epic Proportions Phần 1
+item.itemPickOfEpicProportions_Part2.name = Pickaxe Trong Epic Proportions Phần 2
+item.itemPickOfEpicProportions_Part3.name = Pickaxe Trong Epic Proportions Phần 3
+item.itemPatWellPlacer.name = FuriousDestroyer Vâng
+item.itemJenWellPlacer.name = SuperGirlyGamer Vâng
+item.itemPatGun.name = FuriousDestroyer Gun
+item.itemJenGun.name = SuperGirlyGamer Gun
+item.itemBirthdayPresent_Green.name = Birthday hiện tại
+item.itemShovelOfEpicProportions_Part1.name = Shovel Trong Epic Proportions Phần 1
+item.itemShovelOfEpicProportions_Part2.name = Shovel Trong Epic Proportions Phần 2
+item.itemShovelOfEpicProportions_Part3.name = Shovel Trong Epic Proportions Phần 3
+item.itemTNTLauncher.name = TNT Launcher
+item.itemPatTNTLauncher.name = FuriousDestroyer TNT Launcher
+item.itemTrollTNTLauncher.name = Troll TNT Launcher
+item.itemFartBombLauncher.name = Fart Bomb Launcher
+item.itemNukeLauncher.name = Nuke Launcher
+item.itemTNTCastlePlacer.name = TNT Castle
+item.itemStatue.name = Tượng
+item.itemPatStatue.name = FuriousDestroyer Tượng
+item.itemJenStatue.name = SuperGirlyGamer Tượng
+item.itemCaptianCookieStatue.name = Captain Cookie Tượng
+item.itemNinjaMasterStatue.name = Ninja Tượng Thạc sĩ
+item.itemTheCandyManStatue.name = Các Candy Man Tượng
+item.itemjtrent238Statue.name = jtrent238 Tượng
+item.itembombyStatue.name = Bomby Tượng
+item.itemkittyStatue.name = Kitty Tượng
+item.itemsparkyStatue.name = Sparky Tượng
+item.itemCaptianCookieLittleStatue.name = Captian Cookie ít Tượng
+
+/ Vũ khí & Công cụ
+item.itemPatSword.name = Gươm FuriousDestroyer của
+item.itemJenSword.name = Gươm SuperGirlyGamer của
+item.itemPatPick.name = Pickaxe FuriousDestroyer của
+item.itemJenPick.name = Pickaxe SuperGirlyGamer của
+item.itemPatAxe.name = Axe FuriousDestroyer của
+item.itemJenAxe.name = Axe SuperGirlyGamer của
+item.itemPatShovel.name = Shovel FuriousDestroyer của
+item.itemJenShovel.name = Shovel SuperGirlyGamer của
+item.itemPatHoe.name = Hòe FuriousDestroyer của
+item.itemJenHoe.name = Hòe SuperGirlyGamer của
+item.itemPatStaff.name = Nhân viên FuriousDestroyer của
+item.itemJenStaff.name = Nhân viên SuperGirlyGamer của
+item.itemPatBow.name = Bow FuriousDestroyer của
+item.itemJenBow.name = Bow SuperGirlyGamer của
+item.itemPatArrow.name = mũi tên FuriousDestroyer của
+item.itemJenArrow.name = mũi tên SuperGirlyGamer của
+item.itemPatMultiTool.name = MultiTool FuriousDestroyer của
+item.itemJenMultiTool.name = MultiTool SuperGirlyGamer của
+
+item.itemSuperPatSword.name = Siêu Kiếm FuriousDestroyer của
+item.itemSuperJenSword.name = Siêu Kiếm SuperGirlyGamer của
+item.itemSuperPatPick.name = Siêu Pickaxe FuriousDestroyer của
+item.itemSuperJenPick.name = Siêu Pickaxe SuperGirlyGamer của
+item.itemSuperPatAxe.name = Siêu Axe FuriousDestroyer của
+item.itemSuperJenAxe.name = Siêu Axe SuperGirlyGamer của
+item.itemSuperPatShovel.name = Siêu Shovel FuriousDestroyer của
+item.itemSuperJenShovel.name = Siêu Shovel SuperGirlyGamer của
+item.itemSuperPatHoe.name = Siêu Hòe FuriousDestroyer của
+item.itemSuperJenHoe.name = Siêu Hòe SuperGirlyGamer của
+item.itemSuperPatMultiTool.name = Siêu MultiTool FuriousDestroyer của
+item.itemSuperJenMultiTool.name = Siêu MultiTool SuperGirlyGamer của
+item.itemSwordOfEpicProportions.name = Thanh gươm của Epic Proportions
+item.itemPickOfEpicProportions.name = Pickaxe Trong Epic Proportions
+item.itemShovelOfEpicProportions.name = Shovel Trong Epic Proportions
+item.itemHoeOfEpicProportions.name = Hòe Trong Epic Proportions
+item.itemAxeOfEpicProportions.name = Axe Trong Epic Proportions
+
+/ Armor
+/ Pat
+item.itemPatHelmet.name = helment FuriousDestroyer của
+item.itemPatChestplate.name = Chestplate FuriousDestroyer của
+item.itemPatLeggings.name = xà cạp FuriousDestroyer của
+item.itemPatBoots.name = Boots FuriousDestroyer của
+/ Jen
+item.itemJenHelmet.name = helment SuperGirlyGamer của
+item.itemJenChestplate.name = Chestplate SuperGirlyGamer của
+item.itemJenLeggings.name = xà cạp SuperGirlyGamer của
+item.itemJenBoots.name = Boots SuperGirlyGamer của
+/ Super Pat
+item.itemSuperPatHelmet.name = helment helment FuriousDestroyer của
+item.itemSuperPatChestplate.name = Siêu Chestplate FuriousDestroyer của
+item.itemSuperPatLeggings.name = siêu xà cạp FuriousDestroyer của
+item.itemSuperPatBoots.name = Siêu Boots FuriousDestroyer của
+/ Super Jen
+item.itemSuperJenHelmet.name = Siêu helment SuperGirlyGamer của
+item.itemSuperJenChestplate.name = Siêu Chestplate SuperGirlyGamer của
+item.itemSuperJenLeggings.name = siêu xà cạp SuperGirlyGamer của
+item.itemSuperJenBoots.name = Siêu Boots SuperGirlyGamer của
+
+
+/ Đẻ trứng Trứng
+item.itemSpawnBomby.name = đẻ trứng Bomby [WIP]
+item.itemSpawnCaptianCookie.name = đẻ trứng Captain Cookie
+item.itemSpawnPat.name = đẻ trứng FuriousDestroyer
+item.itemSpawnJen.name = đẻ trứng SuperGirlyGamer
+item.itemSpawnFred2_0.name = đẻ trứng Fred 2.0 [WIP]
+item.itemSpawnNinjaMaster.name = đẻ trứng Ninja Thạc sĩ
+item.itemSpawnCandyMan.name = đẻ trứng Các Candy Man
+item.itemSpawnCookieLittle.name = đẻ trứng Captain Cookie nhỏ [WIP]
+item.itemSpawnjtrent238.name = đẻ trứng jtrent238
+item.itemSpawnClown.name = đẻ trứng Clown
+item.itemSpawnCandyPopper.name = đẻ trứng Kẹo Popper [WIP]
+item.itemSpawnSparky.name = đẻ trứng Sparky
+item.itemSpawnKitty.name = đẻ trứng Kitty
+item.itemSpawnKami.name = đẻ trứng Kami [WIP]
+item.itemSpawnPopo.name = đẻ trứng Popo [WIP]
+item.itemSpawnBanana.name = đẻ trứng Banana
+item.itemSpawnBlockling.name = đẻ trứng nhỏ Blockling [WIP]
+item.itemSpawnVillagerOfEpicProportions.name = đẻ trứng Villager Trong EpicPropotions [WIP]
+item.itemSpawnPatVillager.name = đẻ trứng FuriousDestroyer Villager [WIP]
+item.itemSpawnJenVillager.name = đẻ trứng SuperGirlyGamer Villager [WIP]
+item.itemSpawnJenGolem.name = đẻ trứng SuperGirlyGamer Golem
+item.itemSpawnPatGolem.name = đẻ trứng FuriousDestroyer Golem
+
+// Blocks
+tile.blockFartBomb.name = Fart Bomb
+Khối tile.blockPatIngot.name = FuriousDestroyer của
+Khối tile.blockJenIngot.name = SuperGirlyGamer của
+tile.blockPatOre.name = FuriousDestroyer Ore
+tile.blockJenOre.name = SuperGirlyGamer Ore
+TNT tile.blockPatTNT.name = FuriousDestroyer của
+tile.blockBirthdayPresent.name = Birthday hiện tại
+tile.blockPatChest.name = FuriousDestroyer của ngực [WIP]
+tile.blockJenChest.name = SuperGirlyGamer của ngực [WIP]
+tile.blockTrollTNT.name = Troll TNT
+tile.blockFlowerForJen.name = hoa Đối với Jen
+tile.blockFlowerRedHeart.name = Red tim hoa
+tile.blockFlowerPinkHeart.name = hồng tim hoa
+tile.blockFlowerRainbow.name = Cầu vồng hoa
+tile.blockFlowerLove.name = Tình yêu hoa
+tile.blockFlowerChocolate.name = Sôcôla hoa
+tile.blockBirthdayPresent_Green.name = Birthday hiện tại
+tile.BlockNuke.name = Nuke
+tile.BlockPatStatue.name = FuriousDestroyer Tượng
+tile.BlockJenStatue.name = SuperGirlyGamer Tượng
+
+// Entitys
+entity.EntityBomby.name = Bomby
+entity.EntityCaptianCookie.name = Captain Cookie
+entity.EntityPat.name = FuriousDestroyer
+entity.EntityJen.name = SuperGirlyGamer
+entity.EntityFred2_0.name = Fred 2.0
+entity.EntityNinjaMaster.name = Ninja Thạc sĩ
+entity.EntityCandyMan.name = Các Candy Man
+entity.EntityCaptianCookieLittle.name = Captain Cookie nhỏ
+entity.EntityClown.name = Clown
+entity.EntityCandyPopper.name = kẹo Popper
+entity.EntitySparky.name = Sparky
+entity.EntityKitty.name = Kitty
+entity.EntityKami.name = Kami
+entity.EntityPopo.name = Popo
+entity.EntityBanana.name = Banana
+entity.EntityBlockling_Small.name = Blockling nhỏ
+
+// Mod Devs Và Helpers
+entity.Entityjtrent238.name = jtrent238
+
+//Thùng hàng
+container.Patchest = FuriousDestroyer của ngực [WIP]
+container.Jenchest = SuperGirlyGamer của ngực [WIP]
+container.chestPatDouble = Lớn FuriousDestroyerChest [WIP]
+container.chestJenDouble = Lớn SuperGirlyGamer ngực [WIP]
+
+// Máy phát điện
+
+//Thành tựu
+/ Welcome To Epic Proportions
+achievement.install = Welcome To Epic Proportions
+achievement.install.desc = Cài đặt Epic Proportions Mod
+/Chúc mừng sinh nhật
+achievement.happybirthday = Chúc mừng sinh nhật!
+achievement.happybirthday.desc = Mở một hiện tại sinh nhật
+/ Hoa Đối với Jen
+achievement.flowerforjen = hoa Đối với Jen
+achievement.flowerforjen.desc = Get a Flower Đối với Jen
+/ Tôi Là FuriousDestroyer
+achievement.iampat = Tôi Là FuriousDestroyer
+achievement.iampat.desc = Mang Full Pat Armor
+/ Tôi Là SuperGirlyGamer
+achievement.iamjen = Tôi Là SuperGirlyGamer
+achievement.iamjen.desc = Mang Full Jen Armor
+/ popped
+achievement.popped = Popped
+achievement.popped.desc = Kill a Kẹo Popper
+/ Cookies cho mọi người
+achievement.cookies = Cookies cho mọi người
+achievement.cookies.desc = Kill Captain Cookie
+/ FuriousDestroyer chết
+achievement.killpat = FuriousDestroyer chết
+achievement.killpat.desc = Kill FuriousDestroyer
+/ SuperGirlyGamer chết
+achievement.killjen = SuperGirlyGamer chết
+achievement.killjen.desc = Kill SuperGirlyGamer
+/Buồn cười
+achievement.funny = vui
+achievement.funny.desc = Kill A Clown
+/ Pat sao
+Sao achievement.patstar = FuriousDestroyer của
+achievement.patstar.desc = Lấy thả hiếm hoi từ FuriousDestroyer
+/ Jen sao
+Sao achievement.jenstar = SuperGirlyGamer của
+achievement.jenstar.desc = Lấy thả hiếm hoi từ SuperGirlyGamer
+/ Pat Armor
+Armor achievement.patarmor = SuperGirlyGamer của
+achievement.patarmor.desc =
+/ Jen Armor
+Armor achievement.jenarmor = SuperGirlyGamer của
+achievement.jenarmor.desc =
+/ Super Pat Armor
+Siêu Armor achievement.patarmor_super = SuperGirlyGamer của
+achievement.patarmor_super.desc =
+/ Super Jen Armor
+Siêu Armor achievement.jenarmor_super = SuperGirlyGamer của
+achievement.jenarmor_super.desc =
+/ Thanh gươm của Epic Proportions
+achievement.swordofepicproportions = Thanh gươm của Epic Propotions
+achievement.swordofepicproportions.desc = Craft The Sword of Epic Propotions
+/ Pickaxe Trong Epic Proportions
+achievement.pickaxeofepicproportions = Pickaxe Trong Epic Propotions
+achievement.pickaxeofepicproportions.desc = Craft Các Pickaxe Trong Epic Propotions
+/ Axe Trong Epic Proportions
+achievement.axeofepicproportions = Axe Trong Epic Propotions
+achievement.axeofepicproportions.desc = Craft The Axe Trong Epic Propotions
+/ Shovel Trong Epic Proportions
+achievement.shovelofepicproportions = Shovel Trong Epic Propotions
+achievement.shovelofepicproportions.desc = Craft Các Shovel Trong Epic Propotions
+/ Hòe Trong Epic Proportions
+achievement.hoeofepicproportions = Hòe Trong Epic Propotions
+achievement.hoeofepicproportions.desc = Craft Các Hòe Trong Epic Propotions
+
+// thống kê số liệu
+stat.presentsbroken = Nunber Trong Quà Mở
+
+// bùa
+// Potions
+// ToolTips
+tooltip.epicproportionsmod.itemSwordOfEpicProportions_Part_1 = Kết hợp với bộ phận khác để làm cho
+tooltip.epicproportionsmod.itemSwordOfEpicProportions_Part_2 = The Sword of EpicPropotions
+tooltip.epicproportionsmod.itemPickOfEpicProportions_Part_1 = Kết hợp với bộ phận khác để làm cho
+tooltip.epicproportionsmod.itemPickOfEpicProportions_Part_2 = Các Pickaxe của EpicPropotions
+tooltip.epicproportionsmod.itemShovelOfEpicProportions_Part_1 = Kết hợp với bộ phận khác để làm cho
+tooltip.epicproportionsmod.itemShovelOfEpicProportions_Part_2 = Các Shovel của EpicPropotions
+
+
+tooltip.epicproportionsmod.itemSwordOfEpicProportions.captiancookie.no = Không cho đến Captian Cookie !!!
+tooltip.epicproportionsmod.itemBirthdayPresent.bday = Chúc mừng birtday!
+tooltip.epicproportionsmod.itemBirthdayPresent.inside = Tôi tự hỏi những gì có thể được bên trong?
+tooltip.epicproportionsmod.itemBirthdayPresent_Green.bday = Chúc mừng birtday!
+tooltip.epicproportionsmod.itemBirthdayPresent_Green.inside = Tôi tự hỏi những gì có thể được bên trong?
+tooltip.epicproportionsmod.itemPatGun.ammotype = Tốn FuriousDestroyer mũi tên
+tooltip.epicproportionsmod.itemJenGun.ammotype = Tốn SuperGirlyGamer mũi tên
+tooltip.epicproportionsmod.itemTNTLauncher.ammotype = Tiêu thụ TNT
+tooltip.epicproportionsmod.itemPatTNTLauncher.ammotype = Tốn FuriousDestroyer TNT
+tooltip.epicproportionsmod.itemTrollTNTLauncher.ammotype = Tốn Troll TNT
+tooltip.epicproportionsmod.itemFartBombLauncher.ammotype = Tốn Fart Bomb
+tooltip.epicproportionsmod.itemNukeLauncher.ammotype = Tốn Nuke
+
+/ Cảnh báo Pat ngực
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.0 = **************** CẢNH BÁO ********************* ***
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.1 = ngực này không được cấu hình đúng cách
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.3 = Ches này Có Không Lưu trữ tồn kho đúng
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.5 = Bất cứ điều gì bên trong sẽ bị xóa trên lối ra thế giới.
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.6 = ************************************** *********
+/ Cảnh báo Jen ngực
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.0 = **************** CẢNH BÁO ********************* ***
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.1 = ngực này không được cấu hình đúng cách
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.3 = Ches này Có Không Lưu trữ tồn kho đúng
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.5 = Bất cứ điều gì bên trong sẽ bị xóa trên lối ra thế giới.
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.6 = ************************************** *********
+
+
+// Creative Tabs
+itemGroup.EpicProportionsMod = jtrent238 của Epic Proportions Mod
+
+// misc
+=======
+// Epic Proportions Mod Lang file jtrent238 của
+// en_US
+
+//Hạng mục
+item.itemgemofepicproportions.name = Gem của Epic Proportions
+item.itemPatIngot.name = phôi FuriousDestroyer của
+item.itemJenIngot.name = Ingot SuperGirlyGamer của
+item.itemJenslips.name = Lips của Jen
+item.itemCaptainCookieCookie.name = Cookie Captain Cookie
+item.itemJenStar.name = SuperGirlyGamer sao
+item.itemPatStar.name = FuriousDestroyer sao
+item.itemEpicProportionsStar.name = Epic Proportions sao
+item.itemTNTSwordPlacer.name = TNT Gươm
+item.itemBirthdayPresent.name = Birthday hiện tại
+item.itemHouseOfEpicProportionsPlacer.name = House Of Epic Proportions [WIP]
+item.itemBombyStructurePlacer.name = Bomby cấu
+item.itemJensHoleStructurePlacer_1.name = Jen lỗ 1 [WIP]
+item.itemJensHoleStructurePlacer_2.name = Jen Lỗ 2 [WIP]
+item.itemJensHoleStructurePlacer_3.name = Jen Lỗ 3 [WIP]
+item.itemJensHoleStructurePlacer_4.name = Jen lỗ 4 [WIP]
+item.itemJensHoleStructurePlacer_5.name = Jen lỗ 5 [WIP]
+item.itemSwordOfEpicProportions_Part1.name = Thanh gươm của Epic Proportions Phần 1
+item.itemSwordOfEpicProportions_Part2.name = Thanh gươm của Epic Proportions Phần 2
+item.itemSwordOfEpicProportions_Part3.name = Thanh gươm của Epic Proportions Phần 3
+item.itempatdoor.name = FuriousDestroyer Door
+item.itemjendoor.name = SuperGirlyGamer Door
+item.itempatapple.name = FuriousDestroyer của Apple
+item.itemjenapple.name = SuperGirlyGamer của Apple
+item.itemPatmeat_raw.name = FuriousDestroyer Thịt liệu
+item.itemPatmeat_cooked.name = FuriousDestroyer thịt nấu chín
+item.itemJenmeat_raw.name = SuperGirlyGamer Thịt liệu
+item.itemJenmeat_cooked.name = SuperGirlyGamer thịt nấu chín
+item.ItemCookedPufferFish.name = cá nóc nấu chín
+item.itemModInfo.name = Thông tin Mod
+item.itemPickOfEpicProportions_Part1.name = Pickaxe Trong Epic Proportions Phần 1
+item.itemPickOfEpicProportions_Part2.name = Pickaxe Trong Epic Proportions Phần 2
+item.itemPickOfEpicProportions_Part3.name = Pickaxe Trong Epic Proportions Phần 3
+item.itemPatWellPlacer.name = FuriousDestroyer Vâng
+item.itemJenWellPlacer.name = SuperGirlyGamer Vâng
+item.itemPatGun.name = FuriousDestroyer Gun
+item.itemJenGun.name = SuperGirlyGamer Gun
+item.itemBirthdayPresent_Green.name = Birthday hiện tại
+item.itemShovelOfEpicProportions_Part1.name = Shovel Trong Epic Proportions Phần 1
+item.itemShovelOfEpicProportions_Part2.name = Shovel Trong Epic Proportions Phần 2
+item.itemShovelOfEpicProportions_Part3.name = Shovel Trong Epic Proportions Phần 3
+item.itemTNTLauncher.name = TNT Launcher
+item.itemPatTNTLauncher.name = FuriousDestroyer TNT Launcher
+item.itemTrollTNTLauncher.name = Troll TNT Launcher
+item.itemFartBombLauncher.name = Fart Bomb Launcher
+item.itemNukeLauncher.name = Nuke Launcher
+
+/ Vũ khí & Công cụ
+item.itemPatSword.name = Gươm FuriousDestroyer của
+item.itemJenSword.name = Gươm SuperGirlyGamer của
+item.itemPatPick.name = Pickaxe FuriousDestroyer của
+item.itemJenPick.name = Pickaxe SuperGirlyGamer của
+item.itemPatAxe.name = Axe FuriousDestroyer của
+item.itemJenAxe.name = Axe SuperGirlyGamer của
+item.itemPatShovel.name = Shovel FuriousDestroyer của
+item.itemJenShovel.name = Shovel SuperGirlyGamer của
+item.itemPatHoe.name = Hòe FuriousDestroyer của
+item.itemJenHoe.name = Hòe SuperGirlyGamer của
+item.itemPatStaff.name = Nhân viên FuriousDestroyer của
+item.itemJenStaff.name = Nhân viên SuperGirlyGamer của
+item.itemPatBow.name = Bow FuriousDestroyer của
+item.itemJenBow.name = Bow SuperGirlyGamer của
+item.itemPatArrow.name = mũi tên FuriousDestroyer của
+item.itemJenArrow.name = mũi tên SuperGirlyGamer của
+item.itemPatMultiTool.name = MultiTool FuriousDestroyer của
+item.itemJenMultiTool.name = MultiTool SuperGirlyGamer của
+
+item.itemSuperPatSword.name = Siêu Kiếm FuriousDestroyer của
+item.itemSuperJenSword.name = Siêu Kiếm SuperGirlyGamer của
+item.itemSuperPatPick.name = Siêu Pickaxe FuriousDestroyer của
+item.itemSuperJenPick.name = Siêu Pickaxe SuperGirlyGamer của
+item.itemSuperPatAxe.name = Siêu Axe FuriousDestroyer của
+item.itemSuperJenAxe.name = Siêu Axe SuperGirlyGamer của
+item.itemSuperPatShovel.name = Siêu Shovel FuriousDestroyer của
+item.itemSuperJenShovel.name = Siêu Shovel SuperGirlyGamer của
+item.itemSuperPatHoe.name = Siêu Hòe FuriousDestroyer của
+item.itemSuperJenHoe.name = Siêu Hòe SuperGirlyGamer của
+item.itemSuperPatMultiTool.name = Siêu MultiTool FuriousDestroyer của
+item.itemSuperJenMultiTool.name = Siêu MultiTool SuperGirlyGamer của
+item.itemSwordOfEpicProportions.name = Thanh gươm của Epic Proportions
+item.itemPickOfEpicProportions.name = Pickaxe Trong Epic Proportions
+item.itemShovelOfEpicProportions.name = Shovel Trong Epic Proportions
+item.itemHoeOfEpicProportions.name = Hòe Trong Epic Proportions
+item.itemAxeOfEpicProportions.name = Axe Trong Epic Proportions
+
+/ Armor
+/ Pat
+item.itemPatHelmet.name = helment FuriousDestroyer của
+item.itemPatChestplate.name = Chestplate FuriousDestroyer của
+item.itemPatLeggings.name = xà cạp FuriousDestroyer của
+item.itemPatBoots.name = Boots FuriousDestroyer của
+/ Jen
+item.itemJenHelmet.name = helment SuperGirlyGamer của
+item.itemJenChestplate.name = Chestplate SuperGirlyGamer của
+item.itemJenLeggings.name = xà cạp SuperGirlyGamer của
+item.itemJenBoots.name = Boots SuperGirlyGamer của
+/ Super Pat
+item.itemSuperPatHelmet.name = helment helment FuriousDestroyer của
+item.itemSuperPatChestplate.name = Siêu Chestplate FuriousDestroyer của
+item.itemSuperPatLeggings.name = siêu xà cạp FuriousDestroyer của
+item.itemSuperPatBoots.name = Siêu Boots FuriousDestroyer của
+/ Super Jen
+item.itemSuperJenHelmet.name = Siêu helment SuperGirlyGamer của
+item.itemSuperJenChestplate.name = Siêu Chestplate SuperGirlyGamer của
+item.itemSuperJenLeggings.name = siêu xà cạp SuperGirlyGamer của
+item.itemSuperJenBoots.name = Siêu Boots SuperGirlyGamer của
+
+
+/ Đẻ trứng Trứng
+item.itemSpawnBomby.name = đẻ trứng Bomby [WIP]
+item.itemSpawnCaptianCookie.name = đẻ trứng Captain Cookie
+item.itemSpawnPat.name = đẻ trứng FuriousDestroyer
+item.itemSpawnJen.name = đẻ trứng SuperGirlyGamer
+item.itemSpawnFred2_0.name = đẻ trứng Fred 2.0 [WIP]
+item.itemSpawnNinjaMaster.name = đẻ trứng Ninja Thạc sĩ
+item.itemSpawnCandyMan.name = đẻ trứng Các Candy Man
+item.itemSpawnCookieLittle.name = đẻ trứng Captain Cookie nhỏ [WIP]
+item.itemSpawnjtrent238.name = đẻ trứng jtrent238
+item.itemSpawnClown.name = đẻ trứng Clown
+item.itemSpawnCandyPopper.name = đẻ trứng Kẹo Popper [WIP]
+item.itemSpawnSparky.name = đẻ trứng Sparky
+item.itemSpawnKitty.name = đẻ trứng Kitty
+item.itemSpawnKami.name = đẻ trứng Kami [WIP]
+item.itemSpawnPopo.name = đẻ trứng Popo [WIP]
+item.itemSpawnBanana.name = đẻ trứng Banana
+item.itemSpawnBlockling.name = đẻ trứng nhỏ Blockling [WIP]
+item.itemSpawnVillagerOfEpicProportions.name = đẻ trứng Villager Trong EpicPropotions [WIP]
+item.itemSpawnPatVillager.name = đẻ trứng FuriousDestroyer Villager [WIP]
+item.itemSpawnJenVillager.name = đẻ trứng SuperGirlyGamer Villager [WIP]
+
+
+// Blocks
+tile.blockFartBomb.name = Fart Bomb
+Khối tile.blockPatIngot.name = FuriousDestroyer của
+Khối tile.blockJenIngot.name = SuperGirlyGamer của
+tile.blockPatOre.name = FuriousDestroyer Ore
+tile.blockJenOre.name = SuperGirlyGamer Ore
+TNT tile.blockPatTNT.name = FuriousDestroyer của
+tile.blockBirthdayPresent.name = Birthday hiện tại
+tile.blockPatChest.name = FuriousDestroyer của ngực [WIP]
+tile.blockJenChest.name = SuperGirlyGamer của ngực [WIP]
+tile.blockTrollTNT.name = Troll TNT
+tile.blockFlowerForJen.name = hoa Đối với Jen
+tile.blockFlowerRedHeart.name = Red tim hoa
+tile.blockFlowerPinkHeart.name = hồng tim hoa
+tile.blockFlowerRainbow.name = Cầu vồng hoa
+tile.blockFlowerLove.name = Tình yêu hoa
+tile.blockFlowerChocolate.name = Sôcôla hoa
+tile.blockBirthdayPresent_Green.name = Birthday hiện tại
+tile.BlockNuke.name = Nuke
+
+// Entitys
+entity.EntityBomby.name = Bomby
+entity.EntityCaptianCookie.name = Captain Cookie
+entity.EntityPat.name = FuriousDestroyer
+entity.EntityJen.name = SuperGirlyGamer
+entity.EntityFred2_0.name = Fred 2.0
+entity.EntityNinjaMaster.name = Ninja Thạc sĩ
+entity.EntityCandyMan.name = Các Candy Man
+entity.EntityCaptianCookieLittle.name = Captain Cookie nhỏ
+entity.EntityClown.name = Clown
+entity.EntityCandyPopper.name = kẹo Popper
+entity.EntitySparky.name = Sparky
+entity.EntityKitty.name = Kitty
+entity.EntityKami.name = Kami
+entity.EntityPopo.name = Popo
+entity.EntityBanana.name = Banana
+entity.EntityBlockling_Small.name = Blockling nhỏ
+
+// Mod Devs Và Helpers
+entity.Entityjtrent238.name = jtrent238
+
+//Thùng hàng
+container.Patchest = FuriousDestroyer của ngực [WIP]
+container.Jenchest = SuperGirlyGamer của ngực [WIP]
+container.chestPatDouble = Lớn FuriousDestroyerChest [WIP]
+container.chestJenDouble = Lớn SuperGirlyGamer ngực [WIP]
+
+// Máy phát điện
+
+//Thành tựu
+/ Welcome To Epic Proportions
+achievement.install = Welcome To Epic Proportions
+achievement.install.desc = Cài đặt Epic Proportions Mod
+/Chúc mừng sinh nhật
+achievement.happybirthday = Chúc mừng sinh nhật!
+achievement.happybirthday.desc = Mở một hiện tại sinh nhật
+/ Hoa Đối với Jen
+achievement.flowerforjen = hoa Đối với Jen
+achievement.flowerforjen.desc = Get a Flower Đối với Jen
+/ Tôi Là FuriousDestroyer
+achievement.iampat = Tôi Là FuriousDestroyer
+achievement.iampat.desc = Mang Full Pat Armor
+/ Tôi Là SuperGirlyGamer
+achievement.iamjen = Tôi Là SuperGirlyGamer
+achievement.iamjen.desc = Mang Full Jen Armor
+/ popped
+achievement.popped = Popped
+achievement.popped.desc = Kill a Kẹo Popper
+/ Cookies cho mọi người
+achievement.cookies = Cookies cho mọi người
+achievement.cookies.desc = Kill Captain Cookie
+/ FuriousDestroyer chết
+achievement.killpat = FuriousDestroyer chết
+achievement.killpat.desc = Kill FuriousDestroyer
+/ SuperGirlyGamer chết
+achievement.killjen = SuperGirlyGamer chết
+achievement.killjen.desc = Kill SuperGirlyGamer
+/Buồn cười
+achievement.funny = vui
+achievement.funny.desc = Kill A Clown
+/ Pat sao
+Sao achievement.patstar = FuriousDestroyer của
+achievement.patstar.desc = Lấy thả hiếm hoi từ FuriousDestroyer
+/ Jen sao
+Sao achievement.jenstar = SuperGirlyGamer của
+achievement.jenstar.desc = Lấy thả hiếm hoi từ SuperGirlyGamer
+/ Pat Armor
+Armor achievement.patarmor = SuperGirlyGamer của
+achievement.patarmor.desc =
+/ Jen Armor
+Armor achievement.jenarmor = SuperGirlyGamer của
+achievement.jenarmor.desc =
+/ Super Pat Armor
+Siêu Armor achievement.patarmor_super = SuperGirlyGamer của
+achievement.patarmor_super.desc =
+/ Super Jen Armor
+Siêu Armor achievement.jenarmor_super = SuperGirlyGamer của
+achievement.jenarmor_super.desc =
+/ Thanh gươm của Epic Proportions
+achievement.swordofepicproportions = Thanh gươm của Epic Propotions
+achievement.swordofepicproportions.desc = Craft The Sword of Epic Propotions
+/ Pickaxe Trong Epic Proportions
+achievement.pickaxeofepicproportions = Pickaxe Trong Epic Propotions
+achievement.pickaxeofepicproportions.desc = Craft Các Pickaxe Trong Epic Propotions
+/ Axe Trong Epic Proportions
+achievement.axeofepicproportions = Axe Trong Epic Propotions
+achievement.axeofepicproportions.desc = Craft The Axe Trong Epic Propotions
+/ Shovel Trong Epic Proportions
+achievement.shovelofepicproportions = Shovel Trong Epic Propotions
+achievement.shovelofepicproportions.desc = Craft Các Shovel Trong Epic Propotions
+/ Hòe Trong Epic Proportions
+achievement.hoeofepicproportions = Hòe Trong Epic Propotions
+achievement.hoeofepicproportions.desc = Craft Các Hòe Trong Epic Propotions
+
+// thống kê số liệu
+stat.presentsbroken = Nunber Trong Quà Mở
+
+// bùa
+// Potions
+// ToolTips
+tooltip.epicproportionsmod.itemSwordOfEpicProportions_Part_1 = Kết hợp với bộ phận khác để làm cho
+tooltip.epicproportionsmod.itemSwordOfEpicProportions_Part_2 = The Sword of EpicPropotions
+tooltip.epicproportionsmod.itemPickOfEpicProportions_Part_1 = Kết hợp với bộ phận khác để làm cho
+tooltip.epicproportionsmod.itemPickOfEpicProportions_Part_2 = Các Pickaxe của EpicPropotions
+tooltip.epicproportionsmod.itemShovelOfEpicProportions_Part_1 = Kết hợp với bộ phận khác để làm cho
+tooltip.epicproportionsmod.itemShovelOfEpicProportions_Part_2 = Các Shovel của EpicPropotions
+
+
+tooltip.epicproportionsmod.itemSwordOfEpicProportions.captiancookie.no = Không cho đến Captian Cookie !!!
+tooltip.epicproportionsmod.itemBirthdayPresent.bday = Chúc mừng birtday!
+tooltip.epicproportionsmod.itemBirthdayPresent.inside = Tôi tự hỏi những gì có thể được bên trong?
+tooltip.epicproportionsmod.itemBirthdayPresent_Green.bday = Chúc mừng birtday!
+tooltip.epicproportionsmod.itemBirthdayPresent_Green.inside = Tôi tự hỏi những gì có thể được bên trong?
+tooltip.epicproportionsmod.itemPatGun.ammotype = Tốn FuriousDestroyer mũi tên
+tooltip.epicproportionsmod.itemJenGun.ammotype = Tốn SuperGirlyGamer mũi tên
+tooltip.epicproportionsmod.itemTNTLauncher.ammotype = Tiêu thụ TNT
+tooltip.epicproportionsmod.itemPatTNTLauncher.ammotype = Tốn FuriousDestroyer TNT
+tooltip.epicproportionsmod.itemTrollTNTLauncher.ammotype = Tốn Troll TNT
+tooltip.epicproportionsmod.itemFartBombLauncher.ammotype = Tốn Fart Bomb
+tooltip.epicproportionsmod.itemNukeLauncher.ammotype = Tốn Nuke
+
+/ Cảnh báo Pat ngực
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.0 = **************** CẢNH BÁO ********************* ***
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.1 = ngực này không được cấu hình đúng cách
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.3 = Ches này Có Không Lưu trữ tồn kho đúng
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.5 = Bất cứ điều gì bên trong sẽ bị xóa trên lối ra thế giới.
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.6 = ************************************** *********
+/ Cảnh báo Jen ngực
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.0 = **************** CẢNH BÁO ********************* ***
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.1 = ngực này không được cấu hình đúng cách
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.3 = Ches này Có Không Lưu trữ tồn kho đúng
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.4 = ************************************** *********
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.5 = Bất cứ điều gì bên trong sẽ bị xóa trên lối ra thế giới.
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.6 = ************************************** *********
+
+
+// Creative Tabs
+itemGroup.EpicProportionsMod = jtrent238 của Epic Proportions Mod
+
+// misc
+>>>>>>> Nguồn gốc / master
+com.jtrent238.epicproportions.lib.LogHelper = Epic Proportions Mod Đăng nhập
