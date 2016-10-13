@@ -1,0 +1,615 @@
+<<<<<<< CAPITELLUM
+// Jtrent238 de heroicos proportiones Lang File Mod
+en //
+
+// Items
+Gemma de heroicos proportiones item.itemgemofepicproportions.name =
+item.itemPatIngot.name regula s = FuriousDestroyer
+item.itemJenIngot.name = s SuperGirlyGamer Ingot
+Aliquam ore item.itemJenslips.name =
+Quisque dux item.itemCaptainCookieCookie.name = s Quisque
+item.itemJenStar.name SuperGirlyGamer stella =
+item.itemPatStar.name FuriousDestroyer stella =
+item.itemEpicProportionsStar.name heroicos proportiones stella =
+item.itemTNTSwordPlacer.name = TNT gladio
+item.itemBirthdayPresent.name = natalis praesens
+item.itemHouseOfEpicProportionsPlacer.name = Of heroicos proportiones [WIP]
+Structure Bomby item.itemBombyStructurePlacer.name =
+Aliquam item.itemJensHoleStructurePlacer_1.name = I in foramen [WIP]
+Aliquam item.itemJensHoleStructurePlacer_2.name = s Sanctus II [WIP]
+Aliquam item.itemJensHoleStructurePlacer_3.name = s Sanctus III [WIP]
+Aliquam item.itemJensHoleStructurePlacer_4.name = s Sanctus IV [WIP]
+Aliquam item.itemJensHoleStructurePlacer_5.name = s foramen V [WIP]
+item.itemSwordOfEpicProportions_Part1.name = gladium de heroicos proportiones Part I
+item.itemSwordOfEpicProportions_Part2.name = gladium de heroicos proportiones Part II
+item.itemSwordOfEpicProportions_Part3.name = gladium de heroicos proportiones Pars III
+item.itempatdoor.name FuriousDestroyer ostium =
+item.itemjendoor.name SuperGirlyGamer ostium =
+item.itempatapple.name = FuriousDestroyer Apple
+item.itemjenapple.name = SuperGirlyGamer Apple
+item.itemPatmeat_raw.name = FuriousDestroyer eo crudum quid,
+item.itemPatmeat_cooked.name = FuriousDestroyer carnem coctam
+item.itemJenmeat_raw.name = SuperGirlyGamer eo crudum quid,
+item.itemJenmeat_cooked.name = SuperGirlyGamer carnem coctam
+Cocta Pufferfish item.ItemCookedPufferFish.name =
+item.itemModInfo.name Information = Mod
+item.itemPickOfEpicProportions_Part1.name = pickaxe de heroicos proportiones Part I
+item.itemPickOfEpicProportions_Part2.name = pickaxe de heroicos proportiones Part II
+item.itemPickOfEpicProportions_Part3.name = pickaxe de heroicos proportiones Pars III
+Bene FuriousDestroyer item.itemPatWellPlacer.name =
+Bene SuperGirlyGamer item.itemJenWellPlacer.name =
+item.itemPatGun.name = Canones FuriousDestroyer
+item.itemJenGun.name = Canones SuperGirlyGamer
+item.itemBirthdayPresent_Green.name = natalis praesens
+item.itemShovelOfEpicProportions_Part1.name = shovel heroicos proportiones Part I
+item.itemShovelOfEpicProportions_Part2.name = shovel heroicos proportiones Part II
+item.itemShovelOfEpicProportions_Part3.name = shovel heroicos proportiones Pars III
+item.itemTNTLauncher.name = TNT Launcher
+item.itemPatTNTLauncher.name = FuriousDestroyer TNT Launcher
+Troll TNT Launcher item.itemTrollTNTLauncher.name =
+item.itemFartBombLauncher.name = game Fast Launcher
+item.itemNukeLauncher.name = Nuke Launcher
+item.itemTNTCastlePlacer.name TNT castrum =
+Statue = item.itemStatue.name
+Statue = item.itemPatStatue.name FuriousDestroyer
+Statue = item.itemJenStatue.name SuperGirlyGamer
+Quisque Statue = Carl item.itemCaptianCookieStatue.name
+item.itemNinjaMasterStatue.name Ninja Magister Statue =
+The Statue = item.itemTheCandyManStatue.name Candy hominis,
+Statue = item.itemjtrent238Statue.name jtrent238
+Statue = item.itembombyStatue.name Bomby
+Statue = item.itemkittyStatue.name Kitty
+Statue = item.itemsparkyStatue.name Sparky
+Statue = item.itemCaptianCookieLittleStatue.name captian Quisque Gloria
+
+/ & Arma Tools
+item.itemPatSword.name = FuriousDestroyer gladium
+item.itemJenSword.name = SuperGirlyGamer gladium
+item.itemPatPick.name = s FuriousDestroyer pickaxe
+item.itemJenPick.name = s SuperGirlyGamer pickaxe
+item.itemPatAxe.name = FuriousDestroyer in Axe
+item.itemJenAxe.name = SuperGirlyGamer in Axe
+item.itemPatShovel.name = s FuriousDestroyer Shovel
+item.itemJenShovel.name = s SuperGirlyGamer Shovel
+Hoe est FuriousDestroyer item.itemPatHoe.name =
+Hoe est SuperGirlyGamer item.itemJenHoe.name =
+item.itemPatStaff.name FuriousDestroyer virga =
+item.itemJenStaff.name SuperGirlyGamer virga =
+item.itemPatBow.name FuriousDestroyer arcus =
+item.itemJenBow.name SuperGirlyGamer arcus =
+Sagitta = item.itemPatArrow.name FuriousDestroyer
+Sagitta = item.itemJenArrow.name SuperGirlyGamer
+item.itemPatMultiTool.name = s FuriousDestroyer Multitool
+item.itemJenMultiTool.name = s SuperGirlyGamer Multitool
+
+item.itemSuperPatSword.name FuriousDestroyer s = Super gladio
+item.itemSuperJenSword.name SuperGirlyGamer s = Super gladio
+item.itemSuperPatPick.name FuriousDestroyer s = Super pickaxe
+item.itemSuperJenPick.name SuperGirlyGamer s = Super pickaxe
+item.itemSuperPatAxe.name = Super FuriousDestroyer in Axe
+item.itemSuperJenAxe.name = Super SuperGirlyGamer in Axe
+item.itemSuperPatShovel.name FuriousDestroyer s = Super Shovel
+item.itemSuperJenShovel.name SuperGirlyGamer s = Super Shovel
+item.itemSuperPatHoe.name FuriousDestroyer s = Super Hoe
+item.itemSuperJenHoe.name SuperGirlyGamer s = Super Hoe
+item.itemSuperPatMultiTool.name FuriousDestroyer s = Super Multitool
+item.itemSuperJenMultiTool.name SuperGirlyGamer s = Super Multitool
+item.itemSwordOfEpicProportions.name = gladium de heroicos proportiones
+item.itemPickOfEpicProportions.name = pickaxe de heroicos proportiones
+item.itemShovelOfEpicProportions.name = shovel heroicos proportiones
+Hoe de heroicos proportiones item.itemHoeOfEpicProportions.name =
+Interroga de heroicos proportiones item.itemAxeOfEpicProportions.name =
+
+/ Armor
+/ Pat
+item.itemPatHelmet.name = s FuriousDestroyer Helment
+item.itemPatChestplate.name = s FuriousDestroyer Chestplate
+item.itemPatLeggings.name = s FuriousDestroyer Leggings
+item.itemPatBoots.name = FuriousDestroyer tabernus
+/ Aliquam
+item.itemJenHelmet.name = s SuperGirlyGamer Helment
+item.itemJenChestplate.name = s SuperGirlyGamer Chestplate
+item.itemJenLeggings.name = s SuperGirlyGamer Leggings
+item.itemJenBoots.name = SuperGirlyGamer tabernus
+/ Super Pat
+item.itemSuperPatHelmet.name = s FuriousDestroyer Helment Helment
+item.itemSuperPatChestplate.name FuriousDestroyer s = Super Chestplate
+item.itemSuperPatLeggings.name FuriousDestroyer s = Super Leggings
+item.itemSuperPatBoots.name FuriousDestroyer s = Super Boots
+/ Super Aliquam
+item.itemSuperJenHelmet.name SuperGirlyGamer s = Super Helment
+item.itemSuperJenChestplate.name SuperGirlyGamer s = Super Chestplate
+item.itemSuperJenLeggings.name SuperGirlyGamer s = Super Leggings
+item.itemSuperJenBoots.name SuperGirlyGamer s = Super Boots
+
+
+/ Spawn Eggs
+item.itemSpawnBomby.name = Spawn Bomby [WIP]
+Quisque dux Spawn item.itemSpawnCaptianCookie.name =
+item.itemSpawnPat.name = Spawn FuriousDestroyer
+item.itemSpawnJen.name = Spawn SuperGirlyGamer
+item.itemSpawnFred2_0.name = 2.0 Spawn Fred [WIP]
+Magister Ninja Spawn item.itemSpawnNinjaMaster.name =
+item.itemSpawnCandyMan.name = Spawn Candy est homo
+Quisque item.itemSpawnCookieLittle.name = Carl Carmina Spawn [WIP]
+item.itemSpawnjtrent238.name = Spawn jtrent238
+item.itemSpawnClown.name = Spawn Clown
+item.itemSpawnCandyPopper.name = Spawn Candy Popper [WIP]
+item.itemSpawnSparky.name = Spawn Sparky
+item.itemSpawnKitty.name = Spawn Kitty
+item.itemSpawnKami.name = Spawn Rami [WIP]
+item.itemSpawnPopo.name = Spawn Popo [WIP]
+ARIERA Spawn item.itemSpawnBanana.name =
+Small Blockling Spawn item.itemSpawnBlockling.name = [WIP]
+item.itemSpawnVillagerOfEpicProportions.name = De Spawn Villager EpicPropotions [WIP]
+item.itemSpawnPatVillager.name = Spawn FuriousDestroyer Villager [WIP]
+item.itemSpawnJenVillager.name = Spawn SuperGirlyGamer Villager [WIP]
+item.itemSpawnJenGolem.name = Spawn SuperGirlyGamer Golem
+item.itemSpawnPatGolem.name = Spawn FuriousDestroyer Golem
+
+// Blocks
+tile.blockFartBomb.name game Fast =
+= Acta est tile.blockPatIngot.name FuriousDestroyer
+= Acta est tile.blockJenIngot.name SuperGirlyGamer
+Ore FuriousDestroyer tile.blockPatOre.name =
+Ore SuperGirlyGamer tile.blockJenOre.name =
+tile.blockPatTNT.name = FuriousDestroyer de TNT
+tile.blockBirthdayPresent.name = natalis praesens
+tile.blockPatChest.name = FuriousDestroyer pectore [WIP]
+tile.blockJenChest.name = SuperGirlyGamer pectore [WIP]
+Troll TNT tile.blockTrollTNT.name =
+tile.blockFlowerForJen.name = Flos quia Aliquam
+tile.blockFlowerRedHeart.name = Rubrum Cor Flower
+tile.blockFlowerPinkHeart.name = Pink Cor Flower
+O = tile.blockFlowerRainbow.name Flower
+Flos est tile.blockFlowerLove.name =
+Chocolate tile.blockFlowerChocolate.name = Flower
+tile.blockBirthdayPresent_Green.name = natalis praesens
+tile.BlockNuke.name Nuke =
+Statue = tile.BlockPatStatue.name FuriousDestroyer
+Statue = tile.BlockJenStatue.name SuperGirlyGamer
+
+// entitys
+entity.EntityBomby.name Bomby =
+Quisque dux entity.EntityCaptianCookie.name =
+entity.EntityPat.name FuriousDestroyer =
+entity.EntityJen.name SuperGirlyGamer =
+Fred entity.EntityFred2_0.name = 2.0
+Magister Ninja entity.EntityNinjaMaster.name =
+entity.EntityCandyMan.name = Candy est homo
+Quisque entity.EntityCaptianCookieLittle.name = Carl Carmina
+entity.EntityClown.name Clown =
+entity.EntityCandyPopper.name = Candy Popper
+entity.EntitySparky.name Sparky =
+entity.EntityKitty.name Kitty =
+Rami entity.EntityKami.name =
+entity.EntityPopo.name Popo =
+ARIERA entity.EntityBanana.name =
+Small Blockling entity.EntityBlockling_Small.name =
+
+// Devs et adiutores Mod
+entity.Entityjtrent238.name jtrent238 =
+
+// Container
+container.Patchest = FuriousDestroyer pectore [WIP]
+container.Jenchest = SuperGirlyGamer pectore [WIP]
+Large FuriousDestroyerChest container.chestPatDouble = [WIP]
+Large SuperGirlyGamer Archa container.chestJenDouble = [WIP]
+
+// Generators
+
+// Gestarum
+/ Welcome to heroicos proportiones
+Welcome to heroicos proportiones achievement.install =
+Install achievement.install.desc = heroicos proportiones Mod
+/Felix natalis
+Donec achievement.happybirthday =!
+aperi achievement.happybirthday.desc = a natalis praesens
+/ Flower In Aliquam
+achievement.flowerforjen = Flos quia Aliquam
+Aliquam a enim = achievement.flowerforjen.desc Flower
+/ Ego sum FuriousDestroyer
+Sum = I achievement.iampat FuriousDestroyer
+Pat armaturam Full = achievement.iampat.desc gere,
+/ Ego sum SuperGirlyGamer
+Sum = I achievement.iamjen SuperGirlyGamer
+Aliquam armaturam Full = achievement.iamjen.desc gere,
+/ Popped
+achievement.popped Popped =
+achievement.popped.desc = interfice a Candy Popper
+/ Crustulum pro Suae quisque
+Omnis enim achievement.cookies = Crustulum
+Mors Veni Quisque achievement.cookies.desc =
+/ FuriousDestroyer mortuus est
+achievement.killpat = FuriousDestroyer mortuus est
+Mors FuriousDestroyer achievement.killpat.desc =
+/ SuperGirlyGamer mortuus est
+achievement.killjen = SuperGirlyGamer mortuus est
+Mors SuperGirlyGamer achievement.killjen.desc =
+/ Funny
+Funny achievement.funny =
+achievement.funny.desc = occidere Clown
+/ Pat stella
+achievement.patstar = FuriousDestroyer stella scriptor
+Adepto achievement.patstar.desc = rare stilla FuriousDestroyer
+/ Aliquam stella
+achievement.jenstar = SuperGirlyGamer stella scriptor
+Adepto achievement.jenstar.desc = rare stilla SuperGirlyGamer
+/ Pat Armor
+achievement.patarmor SuperGirlyGamer arma =
+achievement.patarmor.desc =
+/ Aliquam Armor
+achievement.jenarmor SuperGirlyGamer arma =
+achievement.jenarmor.desc =
+/ Super Pat Armor
+achievement.patarmor_super SuperGirlyGamer s = Super Armor
+achievement.patarmor_super.desc =
+/ Super armaturam Aliquam
+achievement.jenarmor_super SuperGirlyGamer s = Super Armor
+achievement.jenarmor_super.desc =
+/ Gladium de heroicos proportiones
+achievement.swordofepicproportions = Gladium heroicos Propotions
+achievement.swordofepicproportions.desc = craft of epic in gladio Propotions
+/ Pickaxe de heroicos proportiones
+achievement.pickaxeofepicproportions = pickaxe heroicos Propotions
+achievement.pickaxeofepicproportions.desc = craft of epic in pickaxe Propotions
+/ Axe de heroicos proportiones
+achievement.axeofepicproportions = Axe heroicos Propotions
+achievement.axeofepicproportions.desc = craft of epic in Axe Propotions
+/ Shovel heroicos proportiones
+achievement.shovelofepicproportions = shovel Epic Propotions
+achievement.shovelofepicproportions.desc = rutrum craft of epic Propotions
+/ Sarculo heroicos proportiones
+achievement.hoeofepicproportions = sarculo Epic Propotions
+achievement.hoeofepicproportions.desc = Craft sarculo Epic Propotions
+
+// Stats
+Aperuit donis Nunber stat.presentsbroken =
+
+Incantationes //
+// Potions
+// ToolTips
+Combinant ut cum reliquis tooltip.epicproportionsmod.itemSwordOfEpicProportions_Part_1 =
+tooltip.epicproportionsmod.itemSwordOfEpicProportions_Part_2 = gladius de EpicPropotions
+Combinant ut cum reliquis tooltip.epicproportionsmod.itemPickOfEpicProportions_Part_1 =
+tooltip.epicproportionsmod.itemPickOfEpicProportions_Part_2 = The pickaxe de EpicPropotions
+Combinant ut cum reliquis tooltip.epicproportionsmod.itemShovelOfEpicProportions_Part_1 =
+tooltip.epicproportionsmod.itemShovelOfEpicProportions_Part_2 = rutrum de EpicPropotions
+
+
+date = tooltip.epicproportionsmod.itemSwordOfEpicProportions.captiancookie.no non captian Quisque !!!
+tooltip.epicproportionsmod.itemBirthdayPresent.bday = Beatus Birtday!
+tooltip.epicproportionsmod.itemBirthdayPresent.inside = Miror quid intra?
+tooltip.epicproportionsmod.itemBirthdayPresent_Green.bday = Beatus Birtday!
+tooltip.epicproportionsmod.itemBirthdayPresent_Green.inside = Miror quid intra?
+Sagitta = tooltip.epicproportionsmod.itemPatGun.ammotype Consumes FuriousDestroyer
+Sagitta = tooltip.epicproportionsmod.itemJenGun.ammotype Consumes SuperGirlyGamer
+tooltip.epicproportionsmod.itemTNTLauncher.ammotype = Consumes TNT
+tooltip.epicproportionsmod.itemPatTNTLauncher.ammotype = Consumes FuriousDestroyer TNT
+tooltip.epicproportionsmod.itemTrollTNTLauncher.ammotype = Consumes Troglodytarum TNT
+tooltip.epicproportionsmod.itemFartBombLauncher.ammotype game Fast Consumes =
+tooltip.epicproportionsmod.itemNukeLauncher.ammotype = Consumes Nuke
+
+/ Pat Archa Warning
+CAVE tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.0 = **************** ********************* ***
+arca autem non est proprie Configured tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.1 =
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.4 ************************************** = *********
+numquid non haec Ches tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.3 = Inventory proprie Store
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.4 ************************************** = *********
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.5 = Quae fuerit intus in mundo exit delevit.
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.6 ************************************** = *********
+/ Aliquam Archa Warning
+CAVE tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.0 = **************** ********************* ***
+arca autem non est proprie Configured tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.1 =
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.4 ************************************** = *********
+numquid non haec Ches tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.3 = Inventory proprie Store
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.4 ************************************** = *********
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.5 = Quae fuerit intus in mundo exit delevit.
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.6 ************************************** = *********
+
+
+// Creative Tabs
+itemGroup.EpicProportionsMod = jtrent238 de heroicos proportiones Mod
+
+Music //
+=======
+// Jtrent238 de heroicos proportiones Lang File Mod
+en //
+
+// Items
+Gemma de heroicos proportiones item.itemgemofepicproportions.name =
+item.itemPatIngot.name regula s = FuriousDestroyer
+item.itemJenIngot.name = s SuperGirlyGamer Ingot
+Aliquam ore item.itemJenslips.name =
+Quisque dux item.itemCaptainCookieCookie.name = s Quisque
+item.itemJenStar.name SuperGirlyGamer stella =
+item.itemPatStar.name FuriousDestroyer stella =
+item.itemEpicProportionsStar.name heroicos proportiones stella =
+item.itemTNTSwordPlacer.name = TNT gladio
+item.itemBirthdayPresent.name = natalis praesens
+item.itemHouseOfEpicProportionsPlacer.name = Of heroicos proportiones [WIP]
+Structure Bomby item.itemBombyStructurePlacer.name =
+Aliquam item.itemJensHoleStructurePlacer_1.name = I in foramen [WIP]
+Aliquam item.itemJensHoleStructurePlacer_2.name = s Sanctus II [WIP]
+Aliquam item.itemJensHoleStructurePlacer_3.name = s Sanctus III [WIP]
+Aliquam item.itemJensHoleStructurePlacer_4.name = s Sanctus IV [WIP]
+Aliquam item.itemJensHoleStructurePlacer_5.name = s foramen V [WIP]
+item.itemSwordOfEpicProportions_Part1.name = gladium de heroicos proportiones Part I
+item.itemSwordOfEpicProportions_Part2.name = gladium de heroicos proportiones Part II
+item.itemSwordOfEpicProportions_Part3.name = gladium de heroicos proportiones Pars III
+item.itempatdoor.name FuriousDestroyer ostium =
+item.itemjendoor.name SuperGirlyGamer ostium =
+item.itempatapple.name = FuriousDestroyer Apple
+item.itemjenapple.name = SuperGirlyGamer Apple
+item.itemPatmeat_raw.name = FuriousDestroyer eo crudum quid,
+item.itemPatmeat_cooked.name = FuriousDestroyer carnem coctam
+item.itemJenmeat_raw.name = SuperGirlyGamer eo crudum quid,
+item.itemJenmeat_cooked.name = SuperGirlyGamer carnem coctam
+Cocta Pufferfish item.ItemCookedPufferFish.name =
+item.itemModInfo.name Information = Mod
+item.itemPickOfEpicProportions_Part1.name = pickaxe de heroicos proportiones Part I
+item.itemPickOfEpicProportions_Part2.name = pickaxe de heroicos proportiones Part II
+item.itemPickOfEpicProportions_Part3.name = pickaxe de heroicos proportiones Pars III
+Bene FuriousDestroyer item.itemPatWellPlacer.name =
+Bene SuperGirlyGamer item.itemJenWellPlacer.name =
+item.itemPatGun.name = Canones FuriousDestroyer
+item.itemJenGun.name = Canones SuperGirlyGamer
+item.itemBirthdayPresent_Green.name = natalis praesens
+item.itemShovelOfEpicProportions_Part1.name = shovel heroicos proportiones Part I
+item.itemShovelOfEpicProportions_Part2.name = shovel heroicos proportiones Part II
+item.itemShovelOfEpicProportions_Part3.name = shovel heroicos proportiones Pars III
+item.itemTNTLauncher.name = TNT Launcher
+item.itemPatTNTLauncher.name = FuriousDestroyer TNT Launcher
+Troll TNT Launcher item.itemTrollTNTLauncher.name =
+item.itemFartBombLauncher.name = game Fast Launcher
+item.itemNukeLauncher.name = Nuke Launcher
+
+/ & Arma Tools
+item.itemPatSword.name = FuriousDestroyer gladium
+item.itemJenSword.name = SuperGirlyGamer gladium
+item.itemPatPick.name = s FuriousDestroyer pickaxe
+item.itemJenPick.name = s SuperGirlyGamer pickaxe
+item.itemPatAxe.name = FuriousDestroyer in Axe
+item.itemJenAxe.name = SuperGirlyGamer in Axe
+item.itemPatShovel.name = s FuriousDestroyer Shovel
+item.itemJenShovel.name = s SuperGirlyGamer Shovel
+Hoe est FuriousDestroyer item.itemPatHoe.name =
+Hoe est SuperGirlyGamer item.itemJenHoe.name =
+item.itemPatStaff.name FuriousDestroyer virga =
+item.itemJenStaff.name SuperGirlyGamer virga =
+item.itemPatBow.name FuriousDestroyer arcus =
+item.itemJenBow.name SuperGirlyGamer arcus =
+Sagitta = item.itemPatArrow.name FuriousDestroyer
+Sagitta = item.itemJenArrow.name SuperGirlyGamer
+item.itemPatMultiTool.name = s FuriousDestroyer Multitool
+item.itemJenMultiTool.name = s SuperGirlyGamer Multitool
+
+item.itemSuperPatSword.name FuriousDestroyer s = Super gladio
+item.itemSuperJenSword.name SuperGirlyGamer s = Super gladio
+item.itemSuperPatPick.name FuriousDestroyer s = Super pickaxe
+item.itemSuperJenPick.name SuperGirlyGamer s = Super pickaxe
+item.itemSuperPatAxe.name = Super FuriousDestroyer in Axe
+item.itemSuperJenAxe.name = Super SuperGirlyGamer in Axe
+item.itemSuperPatShovel.name FuriousDestroyer s = Super Shovel
+item.itemSuperJenShovel.name SuperGirlyGamer s = Super Shovel
+item.itemSuperPatHoe.name FuriousDestroyer s = Super Hoe
+item.itemSuperJenHoe.name SuperGirlyGamer s = Super Hoe
+item.itemSuperPatMultiTool.name FuriousDestroyer s = Super Multitool
+item.itemSuperJenMultiTool.name SuperGirlyGamer s = Super Multitool
+item.itemSwordOfEpicProportions.name = gladium de heroicos proportiones
+item.itemPickOfEpicProportions.name = pickaxe de heroicos proportiones
+item.itemShovelOfEpicProportions.name = shovel heroicos proportiones
+Hoe de heroicos proportiones item.itemHoeOfEpicProportions.name =
+Interroga de heroicos proportiones item.itemAxeOfEpicProportions.name =
+
+/ Armor
+/ Pat
+item.itemPatHelmet.name = s FuriousDestroyer Helment
+item.itemPatChestplate.name = s FuriousDestroyer Chestplate
+item.itemPatLeggings.name = s FuriousDestroyer Leggings
+item.itemPatBoots.name = FuriousDestroyer tabernus
+/ Aliquam
+item.itemJenHelmet.name = s SuperGirlyGamer Helment
+item.itemJenChestplate.name = s SuperGirlyGamer Chestplate
+item.itemJenLeggings.name = s SuperGirlyGamer Leggings
+item.itemJenBoots.name = SuperGirlyGamer tabernus
+/ Super Pat
+item.itemSuperPatHelmet.name = s FuriousDestroyer Helment Helment
+item.itemSuperPatChestplate.name FuriousDestroyer s = Super Chestplate
+item.itemSuperPatLeggings.name FuriousDestroyer s = Super Leggings
+item.itemSuperPatBoots.name FuriousDestroyer s = Super Boots
+/ Super Aliquam
+item.itemSuperJenHelmet.name SuperGirlyGamer s = Super Helment
+item.itemSuperJenChestplate.name SuperGirlyGamer s = Super Chestplate
+item.itemSuperJenLeggings.name SuperGirlyGamer s = Super Leggings
+item.itemSuperJenBoots.name SuperGirlyGamer s = Super Boots
+
+
+/ Spawn Eggs
+item.itemSpawnBomby.name = Spawn Bomby [WIP]
+Quisque dux Spawn item.itemSpawnCaptianCookie.name =
+item.itemSpawnPat.name = Spawn FuriousDestroyer
+item.itemSpawnJen.name = Spawn SuperGirlyGamer
+item.itemSpawnFred2_0.name = 2.0 Spawn Fred [WIP]
+Magister Ninja Spawn item.itemSpawnNinjaMaster.name =
+item.itemSpawnCandyMan.name = Spawn Candy est homo
+Quisque item.itemSpawnCookieLittle.name = Carl Carmina Spawn [WIP]
+item.itemSpawnjtrent238.name = Spawn jtrent238
+item.itemSpawnClown.name = Spawn Clown
+item.itemSpawnCandyPopper.name = Spawn Candy Popper [WIP]
+item.itemSpawnSparky.name = Spawn Sparky
+item.itemSpawnKitty.name = Spawn Kitty
+item.itemSpawnKami.name = Spawn Rami [WIP]
+item.itemSpawnPopo.name = Spawn Popo [WIP]
+ARIERA Spawn item.itemSpawnBanana.name =
+Small Blockling Spawn item.itemSpawnBlockling.name = [WIP]
+item.itemSpawnVillagerOfEpicProportions.name = De Spawn Villager EpicPropotions [WIP]
+item.itemSpawnPatVillager.name = Spawn FuriousDestroyer Villager [WIP]
+item.itemSpawnJenVillager.name = Spawn SuperGirlyGamer Villager [WIP]
+
+
+// Blocks
+tile.blockFartBomb.name game Fast =
+= Acta est tile.blockPatIngot.name FuriousDestroyer
+= Acta est tile.blockJenIngot.name SuperGirlyGamer
+Ore FuriousDestroyer tile.blockPatOre.name =
+Ore SuperGirlyGamer tile.blockJenOre.name =
+tile.blockPatTNT.name = FuriousDestroyer de TNT
+tile.blockBirthdayPresent.name = natalis praesens
+tile.blockPatChest.name = FuriousDestroyer pectore [WIP]
+tile.blockJenChest.name = SuperGirlyGamer pectore [WIP]
+Troll TNT tile.blockTrollTNT.name =
+tile.blockFlowerForJen.name = Flos quia Aliquam
+tile.blockFlowerRedHeart.name = Rubrum Cor Flower
+tile.blockFlowerPinkHeart.name = Pink Cor Flower
+O = tile.blockFlowerRainbow.name Flower
+Flos est tile.blockFlowerLove.name =
+Chocolate tile.blockFlowerChocolate.name = Flower
+tile.blockBirthdayPresent_Green.name = natalis praesens
+tile.BlockNuke.name Nuke =
+
+// entitys
+entity.EntityBomby.name Bomby =
+Quisque dux entity.EntityCaptianCookie.name =
+entity.EntityPat.name FuriousDestroyer =
+entity.EntityJen.name SuperGirlyGamer =
+Fred entity.EntityFred2_0.name = 2.0
+Magister Ninja entity.EntityNinjaMaster.name =
+entity.EntityCandyMan.name = Candy est homo
+Quisque entity.EntityCaptianCookieLittle.name = Carl Carmina
+entity.EntityClown.name Clown =
+entity.EntityCandyPopper.name = Candy Popper
+entity.EntitySparky.name Sparky =
+entity.EntityKitty.name Kitty =
+Rami entity.EntityKami.name =
+entity.EntityPopo.name Popo =
+ARIERA entity.EntityBanana.name =
+Small Blockling entity.EntityBlockling_Small.name =
+
+// Devs et adiutores Mod
+entity.Entityjtrent238.name jtrent238 =
+
+// Container
+container.Patchest = FuriousDestroyer pectore [WIP]
+container.Jenchest = SuperGirlyGamer pectore [WIP]
+Large FuriousDestroyerChest container.chestPatDouble = [WIP]
+Large SuperGirlyGamer Archa container.chestJenDouble = [WIP]
+
+// Generators
+
+// Gestarum
+/ Welcome to heroicos proportiones
+Welcome to heroicos proportiones achievement.install =
+Install achievement.install.desc = heroicos proportiones Mod
+/Felix natalis
+Donec achievement.happybirthday =!
+aperi achievement.happybirthday.desc = a natalis praesens
+/ Flower In Aliquam
+achievement.flowerforjen = Flos quia Aliquam
+Aliquam a enim = achievement.flowerforjen.desc Flower
+/ Ego sum FuriousDestroyer
+Sum = I achievement.iampat FuriousDestroyer
+Pat armaturam Full = achievement.iampat.desc gere,
+/ Ego sum SuperGirlyGamer
+Sum = I achievement.iamjen SuperGirlyGamer
+Aliquam armaturam Full = achievement.iamjen.desc gere,
+/ Popped
+achievement.popped Popped =
+achievement.popped.desc = interfice a Candy Popper
+/ Crustulum pro Suae quisque
+Omnis enim achievement.cookies = Crustulum
+Mors Veni Quisque achievement.cookies.desc =
+/ FuriousDestroyer mortuus est
+achievement.killpat = FuriousDestroyer mortuus est
+Mors FuriousDestroyer achievement.killpat.desc =
+/ SuperGirlyGamer mortuus est
+achievement.killjen = SuperGirlyGamer mortuus est
+Mors SuperGirlyGamer achievement.killjen.desc =
+/ Funny
+Funny achievement.funny =
+achievement.funny.desc = occidere Clown
+/ Pat stella
+achievement.patstar = FuriousDestroyer stella scriptor
+Adepto achievement.patstar.desc = rare stilla FuriousDestroyer
+/ Aliquam stella
+achievement.jenstar = SuperGirlyGamer stella scriptor
+Adepto achievement.jenstar.desc = rare stilla SuperGirlyGamer
+/ Pat Armor
+achievement.patarmor SuperGirlyGamer arma =
+achievement.patarmor.desc =
+/ Aliquam Armor
+achievement.jenarmor SuperGirlyGamer arma =
+achievement.jenarmor.desc =
+/ Super Pat Armor
+achievement.patarmor_super SuperGirlyGamer s = Super Armor
+achievement.patarmor_super.desc =
+/ Super armaturam Aliquam
+achievement.jenarmor_super SuperGirlyGamer s = Super Armor
+achievement.jenarmor_super.desc =
+/ Gladium de heroicos proportiones
+achievement.swordofepicproportions = Gladium heroicos Propotions
+achievement.swordofepicproportions.desc = craft of epic in gladio Propotions
+/ Pickaxe de heroicos proportiones
+achievement.pickaxeofepicproportions = pickaxe heroicos Propotions
+achievement.pickaxeofepicproportions.desc = craft of epic in pickaxe Propotions
+/ Axe de heroicos proportiones
+achievement.axeofepicproportions = Axe heroicos Propotions
+achievement.axeofepicproportions.desc = craft of epic in Axe Propotions
+/ Shovel heroicos proportiones
+achievement.shovelofepicproportions = shovel Epic Propotions
+achievement.shovelofepicproportions.desc = rutrum craft of epic Propotions
+/ Sarculo heroicos proportiones
+achievement.hoeofepicproportions = sarculo Epic Propotions
+achievement.hoeofepicproportions.desc = Craft sarculo Epic Propotions
+
+// Stats
+Aperuit donis Nunber stat.presentsbroken =
+
+Incantationes //
+// Potions
+// ToolTips
+Combinant ut cum reliquis tooltip.epicproportionsmod.itemSwordOfEpicProportions_Part_1 =
+tooltip.epicproportionsmod.itemSwordOfEpicProportions_Part_2 = gladius de EpicPropotions
+Combinant ut cum reliquis tooltip.epicproportionsmod.itemPickOfEpicProportions_Part_1 =
+tooltip.epicproportionsmod.itemPickOfEpicProportions_Part_2 = The pickaxe de EpicPropotions
+Combinant ut cum reliquis tooltip.epicproportionsmod.itemShovelOfEpicProportions_Part_1 =
+tooltip.epicproportionsmod.itemShovelOfEpicProportions_Part_2 = rutrum de EpicPropotions
+
+
+date = tooltip.epicproportionsmod.itemSwordOfEpicProportions.captiancookie.no non captian Quisque !!!
+tooltip.epicproportionsmod.itemBirthdayPresent.bday = Beatus Birtday!
+tooltip.epicproportionsmod.itemBirthdayPresent.inside = Miror quid intra?
+tooltip.epicproportionsmod.itemBirthdayPresent_Green.bday = Beatus Birtday!
+tooltip.epicproportionsmod.itemBirthdayPresent_Green.inside = Miror quid intra?
+Sagitta = tooltip.epicproportionsmod.itemPatGun.ammotype Consumes FuriousDestroyer
+Sagitta = tooltip.epicproportionsmod.itemJenGun.ammotype Consumes SuperGirlyGamer
+tooltip.epicproportionsmod.itemTNTLauncher.ammotype = Consumes TNT
+tooltip.epicproportionsmod.itemPatTNTLauncher.ammotype = Consumes FuriousDestroyer TNT
+tooltip.epicproportionsmod.itemTrollTNTLauncher.ammotype = Consumes Troglodytarum TNT
+tooltip.epicproportionsmod.itemFartBombLauncher.ammotype game Fast Consumes =
+tooltip.epicproportionsmod.itemNukeLauncher.ammotype = Consumes Nuke
+
+/ Pat Archa Warning
+CAVE tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.0 = **************** ********************* ***
+arca autem non est proprie Configured tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.1 =
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.4 ************************************** = *********
+numquid non haec Ches tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.3 = Inventory proprie Store
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.4 ************************************** = *********
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.5 = Quae fuerit intus in mundo exit delevit.
+tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.6 ************************************** = *********
+/ Aliquam Archa Warning
+CAVE tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.0 = **************** ********************* ***
+arca autem non est proprie Configured tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.1 =
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.4 ************************************** = *********
+numquid non haec Ches tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.3 = Inventory proprie Store
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.4 ************************************** = *********
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.5 = Quae fuerit intus in mundo exit delevit.
+tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.6 ************************************** = *********
+
+
+// Creative Tabs
+itemGroup.EpicProportionsMod = jtrent238 de heroicos proportiones Mod
+
+Music //
+>>>>>>> Originem / dominum
+Log com.jtrent238.epicproportions.lib.LogHelper = heroicos proportiones Mod
