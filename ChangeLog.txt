@@ -54,6 +54,12 @@ pre-1.2.6.5
 - Added French Language File
 - Added Irish Language File
 - Added Spanish Language File
+- Added Ukrainian Language File
+- Added Vietnamese Language File
+- Added Swedish Language File
+- Added Turkish Language File
+- Added Latin Language File
+- Added Serbian Language File
 - Added Joke Book
 - Added Birthday Present to Mineshaft Corridor Chest
 - Added Birthday Present to Pyramid Desert Chest
