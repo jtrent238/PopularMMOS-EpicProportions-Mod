@@ -14,6 +14,7 @@ import com.jtrent238.epicproportions.items.itemPatStar;
 import com.jtrent238.epicproportions.items.itemPickOfEpicProportions_Part1;
 import com.jtrent238.epicproportions.items.itemPickOfEpicProportions_Part2;
 import com.jtrent238.epicproportions.items.itemPickOfEpicProportions_Part3;
+import com.jtrent238.epicproportions.items.itemPotion;
 import com.jtrent238.epicproportions.items.itemShovelOfEpicProportions_Part1;
 import com.jtrent238.epicproportions.items.itemShovelOfEpicProportions_Part2;
 import com.jtrent238.epicproportions.items.itemShovelOfEpicProportions_Part3;
@@ -39,6 +40,7 @@ import com.jtrent238.epicproportions.items.spawners.itemSpawnBomby;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnCandyMan;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnCandyPopper;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnCaptianCookie;
+import com.jtrent238.epicproportions.items.spawners.itemSpawnCaptianCookie_Evil;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnClown;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnCookieLittle;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnFred2_0;
@@ -216,6 +218,7 @@ public class ItemLoader {
 	public static Item itemkittyStatue;
 	public static Item itemsparkyStatue;
 	public static Item itemCaptianCookieLittleStatue;
+	public static Item itemPotion;
 	
 	
 	//Weapons & Tools
@@ -294,6 +297,7 @@ public class ItemLoader {
 	public static Item itemSpawnJenVillager;
 	public static Item itemSpawnPatGolem;
 	public static Item itemSpawnJenGolem;
+	public static Item itemSpawnCaptianCookie_Evil;
 	
 	//Armor
 		//Pat Armor
@@ -357,8 +361,6 @@ public static void LoadItems() {
 	itemSwordOfEpicProportions_Part1 = new itemSwordOfEpicProportions_Part1().setUnlocalizedName("itemSwordOfEpicProportions_Part1").setTextureName("epicproportionsmod:itemSwordOfEpicProportions_Part1").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itemSwordOfEpicProportions_Part2 = new itemSwordOfEpicProportions_Part2().setUnlocalizedName("itemSwordOfEpicProportions_Part2").setTextureName("epicproportionsmod:itemSwordOfEpicProportions_Part2").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itemSwordOfEpicProportions_Part3 = new itemSwordOfEpicProportions_Part3().setUnlocalizedName("itemSwordOfEpicProportions_Part3").setTextureName("epicproportionsmod:itemSwordOfEpicProportions_Part3").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
-	itemSwordOfEpicProportions_Part3 = new itemSwordOfEpicProportions_Part3().setUnlocalizedName("itemSwordOfEpicProportions_Part3").setTextureName("epicproportionsmod:itemSwordOfEpicProportions_Part3").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
-	itemSwordOfEpicProportions_Part3 = new itemSwordOfEpicProportions_Part3().setUnlocalizedName("itemSwordOfEpicProportions_Part3").setTextureName("epicproportionsmod:itemSwordOfEpicProportions_Part3").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itemHoeOfEpicProportions = new itemHoeOfEpicProportions(ToolMaterial.EMERALD).setUnlocalizedName("itemHoeOfEpicProportions").setTextureName("epicproportionsmod:itemHoeOfEpicProportions").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itemAxeOfEpicProportions = new itemAxeOfEpicProportions(ToolMaterial.EMERALD).setUnlocalizedName("itemAxeOfEpicProportions").setTextureName("epicproportionsmod:itemAxeOfEpicProportions").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itempatdoor = new ItemPatDoor(Material.iron).setUnlocalizedName("itempatdoor").setTextureName("epicproportionsmod:ItemDoor_pat").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
@@ -386,17 +388,18 @@ public static void LoadItems() {
 	itemNukeLauncher = new itemNukeLauncher().setUnlocalizedName("itemNukeLauncher").setTextureName("epicproportionsmod:itemNukeLauncher").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itemTellMeRandomJoke = new itemTellMeRandomJoke().setUnlocalizedName("itemTellMeRandomJoke").setTextureName("book_normal"/*/"epicproportionsmod:itemTellMeRandomJoke"/*/).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itemTNTCastlePlacer = new itemTNTCastlePlacer(0).setUnlocalizedName("itemTNTCastlePlacer").setTextureName("epicproportionsmod:itemTNTCastlePlacer").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
-	itemStatue = new itemStatue().setUnlocalizedName("itemStatue").setTextureName("epicproportionsmod:itemStatue").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
-	itemPatStatue = new itemPatStatue().setUnlocalizedName("itemPatStatue").setTextureName("epicproportionsmod:itemPatStatue").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
-	itemJenStatue = new itemJenStatue().setUnlocalizedName("itemJenStatue").setTextureName("epicproportionsmod:itemJenStatue").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
-	itemCaptianCookieStatue = new itemCaptianCookieStatue().setUnlocalizedName("itemCaptianCookieStatue").setTextureName("epicproportionsmod:itemCaptianCookieStatue").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
-	itemNinjaMasterStatue = new itemNinjaMasterStatue().setUnlocalizedName("itemNinjaMasterStatue").setTextureName("epicproportionsmod:itemNinjaMasterStatue").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
-	itemTheCandyManStatue = new itemTheCandyManStatue().setUnlocalizedName("itemTheCandyManStatue").setTextureName("epicproportionsmod:itemTheCandyManStatue").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
-	itemjtrent238Statue = new itemjtrent238Statue().setUnlocalizedName("itemjtrent238Statue").setTextureName("epicproportionsmod:itemjtrent238Statue").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
-	itembombyStatue = new itembombyStatue().setUnlocalizedName("itembombyStatue").setTextureName("epicproportionsmod:itembombyStatue").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
-	itemkittyStatue = new itemkittyStatue().setUnlocalizedName("itemkittyStatue").setTextureName("epicproportionsmod:itemkittyStatue").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
-	itemsparkyStatue = new itemsparkyStatue().setUnlocalizedName("itemsparkyStatue").setTextureName("epicproportionsmod:itemsparkyStatue").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
-	itemCaptianCookieLittleStatue = new itemCaptianCookieLittleStatue().setUnlocalizedName("itemCaptianCookieLittleStatue").setTextureName("epicproportionsmod:itemCaptianCookieLittleStatue").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	itemStatue = new itemStatue().setUnlocalizedName("itemStatue").setTextureName("epicproportionsmod:itemStatue")/*/.setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
+	itemPatStatue = new itemPatStatue().setUnlocalizedName("itemPatStatue").setTextureName("epicproportionsmod:itemPatStatue")/*/.setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
+	itemJenStatue = new itemJenStatue().setUnlocalizedName("itemJenStatue").setTextureName("epicproportionsmod:itemJenStatue")/*/.setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
+	itemCaptianCookieStatue = new itemCaptianCookieStatue().setUnlocalizedName("itemCaptianCookieStatue").setTextureName("epicproportionsmod:itemCaptianCookieStatue")/*/.setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
+	itemNinjaMasterStatue = new itemNinjaMasterStatue().setUnlocalizedName("itemNinjaMasterStatue").setTextureName("epicproportionsmod:itemNinjaMasterStatue")/*/.setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
+	itemTheCandyManStatue = new itemTheCandyManStatue().setUnlocalizedName("itemTheCandyManStatue").setTextureName("epicproportionsmod:itemTheCandyManStatue")/*/.setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
+	itemjtrent238Statue = new itemjtrent238Statue().setUnlocalizedName("itemjtrent238Statue").setTextureName("epicproportionsmod:itemjtrent238Statue")/*/.setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
+	itembombyStatue = new itembombyStatue().setUnlocalizedName("itembombyStatue").setTextureName("epicproportionsmod:itembombyStatue")/*/.setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
+	itemkittyStatue = new itemkittyStatue().setUnlocalizedName("itemkittyStatue").setTextureName("epicproportionsmod:itemkittyStatue")/*/.setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
+	itemsparkyStatue = new itemsparkyStatue().setUnlocalizedName("itemsparkyStatue").setTextureName("epicproportionsmod:itemsparkyStatue")/*/.setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
+	itemCaptianCookieLittleStatue = new itemCaptianCookieLittleStatue().setUnlocalizedName("itemCaptianCookieLittleStatue")/*/.setTextureName("epicproportionsmod:itemCaptianCookieLittleStatue").setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
+	//itemPotion = new itemPotion().setUnlocalizedName("itemPotion").setTextureName("epicproportionsmod:itemPotion").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	
 	
 	//Weapons & Tools
@@ -458,6 +461,8 @@ public static void LoadItems() {
 	itemSpawnJenVillager = new itemSpawnJenVillager().setUnlocalizedName("itemSpawnJenVillager").setTextureName("epicproportionsmod:itemSpawnJenVillager").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itemSpawnPatGolem = new itemSpawnPatGolem().setUnlocalizedName("itemSpawnPatGolem").setTextureName("epicproportionsmod:itemSpawnPatGolem").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itemSpawnJenGolem = new itemSpawnJenGolem().setUnlocalizedName("itemSpawnJenGolem").setTextureName("epicproportionsmod:itemSpawnJenGolem").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	itemSpawnCaptianCookie_Evil = new itemSpawnCaptianCookie_Evil().setUnlocalizedName("itemSpawnCaptianCookie_Evil").setTextureName("epicproportionsmod:itemSpawnCaptianCookie_Evil").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	
 	
 	//Armor
 		//PatArmor
@@ -544,7 +549,7 @@ private static void registerItems(){
 	GameRegistry.registerItem(itemFartBombLauncher, itemFartBombLauncher.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemNukeLauncher, itemNukeLauncher.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemTellMeRandomJoke, itemTellMeRandomJoke.getUnlocalizedName().substring(5));
-	GameRegistry.registerItem(itemTellMeRandomJoke, itemTellMeRandomJoke.getUnlocalizedName().substring(5));
+	//GameRegistry.registerItem(itemTellMeRandomJoke, itemTellMeRandomJoke.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemTNTCastlePlacer, itemTNTCastlePlacer.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemStatue, itemStatue.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemPatStatue, itemPatStatue.getUnlocalizedName().substring(5));
@@ -557,6 +562,7 @@ private static void registerItems(){
 	GameRegistry.registerItem(itemkittyStatue, itemkittyStatue.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemsparkyStatue, itemsparkyStatue.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemCaptianCookieLittleStatue, itemCaptianCookieLittleStatue.getUnlocalizedName().substring(5));
+	//GameRegistry.registerItem(itemPotion, itemPotion.getUnlocalizedName().substring(5));
 	
 	
 
@@ -621,6 +627,7 @@ private static void registerItems(){
 	GameRegistry.registerItem(itemSpawnJenVillager, itemSpawnJenVillager.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemSpawnPatGolem, itemSpawnPatGolem.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemSpawnJenGolem, itemSpawnJenGolem.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(itemSpawnCaptianCookie_Evil, itemSpawnCaptianCookie_Evil.getUnlocalizedName().substring(5));
 	
 	
 	

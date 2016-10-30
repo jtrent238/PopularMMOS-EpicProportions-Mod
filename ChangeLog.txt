@@ -1,6 +1,6 @@
 Epic Proportions Mod ChangeLog
 
-pre-1.2.6.5
+1.2.6.5
 - Added Pat Door
 - Added Jen Door
 - Added Pat Apple
@@ -68,21 +68,54 @@ pre-1.2.6.5
 - Added Birthday Present to Stronghold Crossing Chest
 - Added Birthday Present to Stronghold Library Chest
 - Added TNT Castle
-- Added Statue
-- Added FuriousDestroyer Statue
-- Added SuperGirlyGamer Statue
-- Added Captian Cookie Statue
-- Added Ninja Master Statue
-- Added The Candy Man Statue
-- Added jtrent238 Statue
-- Added Bomby Statue
-- Added Sparky Statue
-- Added Kitty Statue
-- Added Captian Cooke Little Statue
+- Added Statue [**NOT In Creative**]
+- Added FuriousDestroyer Statue [**NOT In Creative**]
+- Added SuperGirlyGamer Statue [**NOT In Creative**]
+- Added Captian Cookie Statue [**NOT In Creative**]
+- Added Ninja Master Statue [**NOT In Creative**]
+- Added The Candy Man Statue [**NOT In Creative**]
+- Added jtrent238 Statue [**NOT In Creative**]
+- Added Bomby Statue [**NOT In Creative**]
+- Added Sparky Statue [**NOT In Creative**]
+- Added Kitty Statue [**NOT In Creative**]
+- Added Captian Cooke Little Statue [**NOT In Creative**]
 - Added SuperGirlyGamer Golem
 - Added FuriousDestroyer Golem
+- Added Evil Captian Cookie
+- Added Mod Support For Tinkers Construct
+- Added Halloween Addon
+- Added Spooky FuriousDestroyer (Halloween Addon)
+- Added Spooky SuperGirlyGamer (Halloween Addon)
+- Added Spooky Essence (Halloween Addon)
+- Added Spooky Ingot (Halloween Addon)
+- Added Spooky Ingot Block (Halloween Addon)
+- Added Spooky Essence Ore (Halloween Addon)
+- Added Halloween Pail (Halloween Addon)
+- Added Creeper Halloween Pail (Halloween Addon)
+- Added FuriousDestroyer Halloween Pail (Halloween Addon)
+- Added SuperGirlyGamer Halloween Pail (Halloween Addon)
+- Added Chocolate Bar (Halloween Addon)
+- Added White Chocolate Bar (Halloween Addon)
+- Added Red Lollipop (Halloween Addon)
+- Added Orange Lollipop (Halloween Addon)
+- Added Pink Lollipop (Halloween Addon)
+- Added Green Lollipop (Halloween Addon)
+- Added Blue Lollipop (Halloween Addon)
+- Added Purple Lollipop (Halloween Addon)
+- Added Yellow Lollipop (Halloween Addon)
+- Added CandyCorn (Halloween Addon)
+- Added LifeSaver (Halloween Addon)
+- Added M&M's (Halloween Addon)
+- Added Jelly Beans (Halloween Addon)
+- Added Halloween Peeps (Halloween Addon)
+- Added Snickers Bar (Halloween Addon)
+- Added Twix Bar (Halloween Addon)
+- Added Candy Drops To The Candy Man [Drops From Halloween Addon]
+- Added Pail Drop To FuriousDestroyer [Drops From Halloween Addon]
+- Added Pail Drop To SuperGirlyGamer [Drops From Halloween Addon]
 - Fixed Onjoin Info Text
 - Fixed "Welcome To Epic Proportions" Achevement
+- Tweaked jtrent238's Drops [Now only drops 16 Diamonds]
 - Removed the crafting recipe for TNT Sword
 - Changed the texture of FuriousDestroyer TNT
 

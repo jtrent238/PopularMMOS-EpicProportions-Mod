@@ -1,15 +1,17 @@
-package com.jtrent238.epicproportions.blocks;
+package com.jtrent238.epicproportions.blocks.statues;
 
+import com.jtrent238.epicproportions.tileentity.TileEntityJenStatue;
 import com.jtrent238.epicproportions.tileentity.TileEntityPatStatue;
+import com.jtrent238.epicproportions.tileentity.TileEntitySparkyStatue;
 
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 
-public class BlockPatStatue extends BlockContainer{
+public class BlockSparkyStatue extends BlockContainer{
 
-	public BlockPatStatue(Material p_i45394_1_) {
+	public BlockSparkyStatue(Material p_i45394_1_) {
 		super(p_i45394_1_);
 	}
 
@@ -28,7 +30,7 @@ public class BlockPatStatue extends BlockContainer{
 	
 	@Override
 	public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_) {
-		return new TileEntityPatStatue();
+		return new TileEntitySparkyStatue();
 	}
 
 }

@@ -1,0 +1,4 @@
+name=example_item
+item=16
+amount=2
+chance=1

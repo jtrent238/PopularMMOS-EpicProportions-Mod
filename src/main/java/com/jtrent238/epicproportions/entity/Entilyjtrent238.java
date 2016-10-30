@@ -139,6 +139,11 @@ public class Entilyjtrent238 extends EntityVillager// implements IBossDisplayDat
     private static final String __OBFID = "CL_00001707";
 	private static final Map villagersSellingList = jtrent238SellingList;
 	private static final MerchantRecipeList list = mylist;
+	private static final float floater = 0F;
+	private Item drop;
+	private int meta;
+	private int least_quantity;
+	private int most_quantity;
     public Entilyjtrent238(World var1)
     {
         super(var1);
@@ -252,13 +257,28 @@ this.dropItem(ItemLoader.itemSwordOfEpicProportions_Part1, 1);
         return false;
     }
     
+    public Item getItemDropped(int metadata, Random random, int fortune) {
+        return this.drop; 
+    }
+	
+	public int damageDropped(int metadata) {
+	    return this.meta;
+	}
+
+	public int quantityDropped(int meta, int fortune, Random random) {
+	    if (this.least_quantity >= this.most_quantity)
+	        return this.least_quantity;
+	    return this.least_quantity + random.nextInt(this.most_quantity - this.least_quantity + fortune + 1);
+	}
+	
     /**
      * Drop items of this living's type
      */
     protected void dropFewItems(boolean var1, int var2)
     {
     	this.entityDropItem(new ItemStack(Items.diamond, 16), 0F);
-        this.entityDropItem(new ItemStack(Items.apple, 16), 1F);
+        /*
+    	this.entityDropItem(new ItemStack(Items.apple, 16), 1F);
         this.entityDropItem(new ItemStack(Items.written_book, 5), 1.1F);
         this.entityDropItem(new ItemStack(Items.bread, 8), 1.2F);
         this.entityDropItem(new ItemStack(Items.potionitem, 32), 1.3F);
@@ -307,9 +327,171 @@ this.dropItem(ItemLoader.itemSwordOfEpicProportions_Part1, 1);
         this.entityDropItem(new ItemStack(Items.melon_seeds, 12), 5.4F);
         this.entityDropItem(new ItemStack(Items.record_ward, 12), 5.5F);
         this.entityDropItem(new ItemStack(Items.leather_chestplate, 12), 5.6F);
-		
+        */
 		 }
+    
+    /**
+     * Drop items of this living's type
+     * @return 
+     */
 
+    public ArrayList<ItemStack> getDrops(World world, int x, int y, int z, int metadata, int fortune) {
+        ArrayList<ItemStack> drops = new ArrayList<ItemStack>();
+        
+        if (world.rand.nextFloat() < 0.1F)
+        	this.entityDropItem(new ItemStack(Items.diamond, 16), floater);
+        
+        if (world.rand.nextFloat() < 0.2F)
+           this.entityDropItem(new ItemStack(Items.apple, 16), floater);
+        
+        if (world.rand.nextFloat() < 0.3F)
+           this.entityDropItem(new ItemStack(Items.written_book, 5), floater);
+        
+        if (world.rand.nextFloat() < 0.4F)
+           this.entityDropItem(new ItemStack(Items.bread, 8), floater);
+        
+        if (world.rand.nextFloat() < 0.5F)
+           this.entityDropItem(new ItemStack(Items.potionitem, 32), floater);
+        
+        if (world.rand.nextFloat() < 0.6F)
+           this.entityDropItem(new ItemStack(Items.emerald, 8), floater);
+        
+        if (world.rand.nextFloat() < 0.7F)
+           this.entityDropItem(new ItemStack(Items.baked_potato, 12), floater);
+        
+        if (world.rand.nextFloat() < 0.8F)
+           this.entityDropItem(new ItemStack(Items.blaze_rod, 3), floater);
+        
+        if (world.rand.nextFloat() < 0.9F)
+           this.entityDropItem(new ItemStack(Items.beef, 6), floater);
+        
+        if (world.rand.nextFloat() < 0.10F)
+           this.entityDropItem(new ItemStack(Items.flint, 16), floater);
+        
+        if (world.rand.nextFloat() < 0.11F)
+           this.entityDropItem(new ItemStack(Items.potato, 8), floater);
+        
+        if (world.rand.nextFloat() < 0.12F)
+           this.entityDropItem(new ItemStack(Items.bucket, 1), floater);
+        
+        if (world.rand.nextFloat() < 0.13F)
+           this.entityDropItem(new ItemStack(Items.speckled_melon, 64), floater);
+        
+        if (world.rand.nextFloat() < 0.14F)
+           this.entityDropItem(new ItemStack(Items.painting, 16), floater);
+        
+        if (world.rand.nextFloat() < 0.15F)
+           this.entityDropItem(new ItemStack(Items.golden_carrot, 8), floater);
+        
+        if (world.rand.nextFloat() < 0.16F)
+           this.entityDropItem(new ItemStack(Items.porkchop, 6), floater);
+        
+        if (world.rand.nextFloat() < 0.17F)
+           this.entityDropItem(new ItemStack(Items.item_frame, 12), floater);
+        
+        if (world.rand.nextFloat() < 0.18F)
+           this.entityDropItem(new ItemStack(Items.bone, 12), floater);
+        
+        if (world.rand.nextFloat() < 0.19F)
+           this.entityDropItem(new ItemStack(Items.fish, 12), floater);
+        
+        if (world.rand.nextFloat() < 0.20F)
+           this.entityDropItem(new ItemStack(Items.gunpowder, 12), floater);
+        
+        if (world.rand.nextFloat() < 0.21F)
+           this.entityDropItem(new ItemStack(Items.lava_bucket, 12), floater);
+        
+        if (world.rand.nextFloat() < 0.22F)
+           this.entityDropItem(new ItemStack(Items.lead, 12), floater);
+        
+        if (world.rand.nextFloat() < 0.23F)
+           this.entityDropItem(new ItemStack(Items.reeds, 12), floater);
+        
+        if (world.rand.nextFloat() < 0.24F)
+           this.entityDropItem(new ItemStack(Items.tnt_minecart, 12), floater);
+        
+        if (world.rand.nextFloat() < 0.25F)
+           this.entityDropItem(new ItemStack(Items.map, 12), floater);
+        
+        if (world.rand.nextFloat() < 0.26F)
+           this.entityDropItem(new ItemStack(Items.chicken, 16), floater);
+        
+        if (world.rand.nextFloat() < 0.27F)
+           this.entityDropItem(new ItemStack(Items.bowl, 16), floater);
+        
+        if (world.rand.nextFloat() < 0.28F)
+           this.entityDropItem(new ItemStack(Items.command_block_minecart, 5), floater);
+        
+        if (world.rand.nextFloat() < 0.29F)
+           this.entityDropItem(new ItemStack(Items.blaze_powder, 8), floater);
+        
+        if (world.rand.nextFloat() < 0.30F)
+           this.entityDropItem(new ItemStack(Items.wooden_hoe, 32), floater);
+        
+        if (world.rand.nextFloat() < 0.31F)
+           this.entityDropItem(new ItemStack(Items.golden_carrot, 8), floater);
+        
+        if (world.rand.nextFloat() < 0.32F)
+           this.entityDropItem(new ItemStack(Items.chainmail_boots, 12), floater);
+        
+        if (world.rand.nextFloat() < 0.33F)
+           this.entityDropItem(new ItemStack(Items.shears, 3), floater);
+        
+        if (world.rand.nextFloat() < 0.34F)
+           this.entityDropItem(new ItemStack(Items.wooden_axe, 6), floater);
+        
+        if (world.rand.nextFloat() < 0.35F)
+           this.entityDropItem(new ItemStack(Items.quartz, 16), floater);
+        
+        if (world.rand.nextFloat() < 0.36F)
+           this.entityDropItem(new ItemStack(Items.iron_sword, 8), floater);
+        
+        if (world.rand.nextFloat() < 0.37F)
+           this.entityDropItem(new ItemStack(Items.gold_ingot, 1), floater);
+        
+        if (world.rand.nextFloat() < 0.38F)
+           this.entityDropItem(new ItemStack(Items.record_stal, 64), floater);
+        
+        if (world.rand.nextFloat() < 0.39F)
+           this.entityDropItem(new ItemStack(Items.repeater, 16), floater);
+        
+        if (world.rand.nextFloat() < 0.40F)
+           this.entityDropItem(new ItemStack(Items.golden_chestplate, 8), floater);
+        
+        if (world.rand.nextFloat() < 0.41F)
+           this.entityDropItem(new ItemStack(Items.fishing_rod, 6), floater);
+        
+        if (world.rand.nextFloat() < 0.42F)
+           this.entityDropItem(new ItemStack(Items.map, 12), floater);
+        
+        if (world.rand.nextFloat() < 0.43F)
+           this.entityDropItem(new ItemStack(Items.writable_book, 12), floater);
+        
+        if (world.rand.nextFloat() < 0.44F)
+           this.entityDropItem(new ItemStack(Items.arrow, 12), floater);
+        
+        if (world.rand.nextFloat() < 0.45F)
+           this.entityDropItem(new ItemStack(Items.wheat_seeds, 12), floater);
+        
+        if (world.rand.nextFloat() < 0.46F)
+           this.entityDropItem(new ItemStack(Items.iron_hoe, 12), floater);
+        
+        if (world.rand.nextFloat() < 0.47F)
+           this.entityDropItem(new ItemStack(Items.iron_axe, 12), floater);
+        
+        if (world.rand.nextFloat() < 0.48F)
+           this.entityDropItem(new ItemStack(Items.melon_seeds, 12), floater);
+        
+        if (world.rand.nextFloat() < 0.49F)
+           this.entityDropItem(new ItemStack(Items.record_ward, 12), floater);
+        
+        if (world.rand.nextFloat() < 0.50F)
+           this.entityDropItem(new ItemStack(Items.leather_chestplate, 12), floater);
+        
+        		
+        return drops;
+    }
+    
     /**
      * Returns the sound this mob makes while it's alive.
      */

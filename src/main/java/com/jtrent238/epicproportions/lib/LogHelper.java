@@ -75,6 +75,18 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 		               e.printStackTrace(System.err);
 		           }
 		       }
+		    
+		    if (Loader.isModLoaded("TConstruct")) {
+		    	System.out.println("Tinkers Construct Mod Loaded");
+				try {
+		            LogHelper.log(Level.INFO, "Loaded Tinkers Construct Mod");
+		        }
+		        catch (Exception e) {
+		            LogHelper.log(Level.SEVERE, "Could not load Tinkers Construct Mod");
+		            e.printStackTrace(System.err);
+		        }
+		    
+				}
 
 		{
 			

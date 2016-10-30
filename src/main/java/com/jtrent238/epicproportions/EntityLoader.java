@@ -12,6 +12,7 @@ import com.jtrent238.epicproportions.entity.EntityCandyMan;
 import com.jtrent238.epicproportions.entity.EntityCandyPopper;
 import com.jtrent238.epicproportions.entity.EntityCaptianCookie;
 import com.jtrent238.epicproportions.entity.EntityCaptianCookieLittle;
+import com.jtrent238.epicproportions.entity.EntityCaptianCookie_Evil;
 import com.jtrent238.epicproportions.entity.EntityClown;
 import com.jtrent238.epicproportions.entity.EntityFred2_0;
 import com.jtrent238.epicproportions.entity.EntityJen;
@@ -77,6 +78,8 @@ public class EntityLoader {
 	    //RenderingRegistry.registerEntityRenderingHandler(EntityCaptianCookie.class, new RenderLiving(new ModelBiped(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityCaptianCookie.png");}});//Sets CaptianCookie Texture
 	    EntityRegistry.addSpawn(EntityCaptianCookie.class, 5, 4, 6, EnumCreatureType.creature, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.forest, BiomeGenBase.plains, BiomeGenBase.beach, BiomeGenBase.mesa, BiomeGenBase.savanna, BiomeGenBase.desert, BiomeGenBase.desertHills);
 		
+	//Evil Captian Cookie Registry
+	    EntityRegistry.registerGlobalEntityID(EntityCaptianCookie_Evil.class, "EntityCaptianCookie_Evil",EntityRegistry.findGlobalUniqueEntityId());
 	//Pat Registry
 	    EntityRegistry.registerGlobalEntityID(EntityPat.class, "EntityPat",EntityRegistry.findGlobalUniqueEntityId());
 	    //RenderingRegistry.registerEntityRenderingHandler(EntityPat.class, new RenderLiving(new ModelBiped(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityPat.png");}});//Sets Pat Texture

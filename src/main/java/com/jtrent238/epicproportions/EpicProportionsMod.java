@@ -1,6 +1,10 @@
 package com.jtrent238.epicproportions;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Random;
 import java.util.logging.Level;
 
@@ -76,8 +80,9 @@ public class EpicProportionsMod
 	public static CrashReportCategory CRASHINFO;
 	public static NBTTagCompound NBTJOIN;
 
-
-
+	public static boolean isTConstructModLoaded;
+	public static boolean isHalloweenLoaded;
+	
 	private Object obj;
 	private String villageblacksmith;
 	private Random rnd;
@@ -118,7 +123,7 @@ public class EpicProportionsMod
 
 	private Object ITEM_ID_1;
 
-	private boolean BIRTHDAYPRESENT_CREATIVE;
+	public static boolean BIRTHDAYPRESENT_CREATIVE;
 	private boolean JTRENT238_SPAWN;
 
 	private boolean ENABLE_SWORD_OF_EPICPROPORTIONS;
@@ -129,6 +134,8 @@ public class EpicProportionsMod
 	private int VILLAGER_ID_3;
 	private int VILLAGER_ID_4;
 	private Object BLOCK_ID_1;
+
+
 	public static boolean BIRTHDAYPRESENT_CUSTOM_DROPS;
 
 	public static final String CATEGORY_TWEAKS = "tweaks";
@@ -160,6 +167,53 @@ public class EpicProportionsMod
 @Mod.EventHandler
 public void preInit(FMLPreInitializationEvent event)
 {
+	//***********************************************************************************
+	/*
+	 * Is Mods Loaded Start
+	 */
+	
+	isTConstructModLoaded = Loader.isModLoaded("TConstruct");
+	
+	if (isTConstructModLoaded) {
+		
+		System.out.println("Tinkers Construct Mod Loaded");
+		try {
+            LogHelper.log(Level.INFO, "Loaded Tinkers Construct Mod");
+        }
+        catch (Exception e) {
+            LogHelper.log(Level.SEVERE, "Could not load Tinkers Construct Mod");
+            e.printStackTrace(System.err);
+        }
+    
+		}
+	
+	/*
+	 * Is Mods Loaded End
+	 */
+	//***********************************************************************************
+	/*
+	 * Is Addons Loaded Start
+	 */
+	
+	isHalloweenLoaded = Loader.isModLoaded("epicproportionsmod_halloween");
+	
+	if (isHalloweenLoaded) {
+		
+		System.out.println("Halloween Addon Loaded");
+		try {
+            LogHelper.log(Level.INFO, "Loaded Halloween Addon");
+        }
+        catch (Exception e) {
+            LogHelper.log(Level.SEVERE, "Could not load Halloween Addon");
+            e.printStackTrace(System.err);
+        }
+    
+		}
+	
+	/*
+	 * Is Addons Loaded End
+	 */
+	//***********************************************************************************
 	
 	Configuration config = new Configuration(event.getSuggestedConfigurationFile());
 	event.getModConfigurationDirectory();
@@ -222,6 +276,7 @@ public void preInit(FMLPreInitializationEvent event)
 	
 	//loadConfiguration(configFile);
 	
+	System.out.println("epicproportionsmod >>> Configuration File Loaded");
 	
 	/*
 	//Achievements
@@ -372,6 +427,7 @@ public void postInit(FMLPostInitializationEvent event) {
 		MinecraftForge.EVENT_BUS.register(new CustomPresentDrops());
 		MinecraftForge.EVENT_BUS.register(new VersionChecker());
 		MinecraftForge.EVENT_BUS.register(new CommandModInfo());
+		MinecraftForge.EVENT_BUS.register(new PotionLoader(33, false, 8171462));
         
 		
 		//MinecraftForge.EVENT_BUS.register(new RenderGuiHandler());
@@ -384,6 +440,10 @@ public void postInit(FMLPostInitializationEvent event) {
 	
 	
 }
+
+
+
+
 					/*
 public void modsLoaded(FMLPostInitializationEvent event) {
     if (Loader.isModLoaded("jtcoremod")) {

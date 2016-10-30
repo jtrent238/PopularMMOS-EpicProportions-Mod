@@ -1,0 +1,59 @@
+//jtrent238's Epic Proportions Mod Lang File
+//en_US
+
+//Items
+item.itemSpookyEssence.name=Spooky Essence
+item.itemSpookyIngot.name=Spooky Ingot
+item.itemHalloweenPail.name=Halloween Pail
+item.itemHalloweenPail_Pat.name=FuriousDestroyer Halloween Pail
+item.itemHalloweenPail_Jen.name=SuperGirlyGamer Halloween Pail
+item.itemHalloweenPail_Creeper.name=Creeper Halloween Pail
+item.itemCandy_0.name=Chocolate Bar
+item.itemCandy_1.name=White Chocolate Bar
+item.itemCandy_2.name=Red Lollipop
+item.itemCandy_3.name=Orange Lollipop
+item.itemCandy_4.name=Pink Lollipop
+item.itemCandy_5.name=Green Lollipop
+item.itemCandy_6.name=Blue Lollipop
+item.itemCandy_7.name=Purple Lollipop
+item.itemCandy_8.name=Yellow Lollipop
+item.itemCandy_9.name=CandyCorn
+item.itemCandy_10.name=LifeSaver
+item.itemCandy_11.name=M&M's
+item.itemCandy_12.name=Jelly Beans
+item.itemCandy_13.name=Halloween Peeps
+item.itemCandy_14.name=Snickers Bar
+item.itemCandy_15.name=Twix Bar
+	/Weapons & Tools
+	/Armor
+		/Pat
+		/Jen
+		/Super Pat
+		/Super Jen
+
+	/Spawn Eggs
+item.itemSpawnSpookyPat.name=Spawn Spooky FuriousDestroyer
+item.itemSpawnSpookyJen.name=Spawn Spooky SuperGirlyGamer
+
+//Blocks
+tile.blockSpookyIngot.name=Spooky Ingot Block
+tile.blockSpookyEssenceOre.name=Spooky Essence Ore
+
+//Entitys
+entity.EntitySpookyPat.name=Spooky FuriousDestroyer
+entity.EntitySpookyJen.name=Spooky SuperGirlyGamer
+
+//Mod Devs And Helpers
+entity.Entityjtrent238.name=jtrent238
+
+//Container
+//Generators
+//Achievements
+//Enchantments
+//Potions
+//ToolTips
+
+//Creative Tabs
+itemGroup.EpicProportionsMod_Halloween=jtrent238's Epic Proportions Mod Halloween Addon
+
+//Misc

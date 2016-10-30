@@ -1,5 +1,9 @@
 package com.jtrent238.epicproportions.blocks;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -9,8 +13,11 @@ import com.jtrent238.epicproportions.EpicProportionsMod;
 import com.jtrent238.epicproportions.ItemLoader;
 import com.jtrent238.epicproportions.Stats;
 
+import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.PlayerEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.common.registry.GameRegistry.ObjectHolder;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -44,8 +51,14 @@ public class blockBirthdayPresent extends Block{
     
 	public blockBirthdayPresent(Material ground) {
 		super(ground);
+		this.getEnableStats();
 		
 		}
+	
+	public boolean enableStats(){
+		
+		return true;
+	}
 	
 	@Override
     public Item getItemDropped(int metadata, Random random, int fortune) {
@@ -88,6 +101,13 @@ public class blockBirthdayPresent extends Block{
         this.most_quantity = most_quantity;
     }
     
+  
+  
+    public static final Item CopperIngot = GameRegistry.findItem("TConstruct", "CopperIngot");
+    public static final ItemStack CopperIngotItemStack = new ItemStack(CopperIngot);
+    public static final Item TinIngot = GameRegistry.findItem("TConstruct", "TinIngot");
+    public static final ItemStack TinIngotItemStack = new ItemStack(TinIngot);
+
     @Override
     public ArrayList<ItemStack> getDrops(World world, int x, int y, int z, int metadata, int fortune) {
         ArrayList<ItemStack> drops = new ArrayList<ItemStack>();
@@ -104,9 +124,24 @@ public class blockBirthdayPresent extends Block{
         if (world.rand.nextFloat() < 0.3F)
             drops.add(new ItemStack(Items.golden_apple));
         
+        
+        if (EpicProportionsMod.isTConstructModLoaded) {
+        	
+        	GameRegistry.findItem("TConstruct", "CopperIngot");
+            GameRegistry.findItem("TConstruct", "TinIngot");
+
+        	drops.add(new ItemStack(GameRegistry.findItem("TConstruct", "CopperIngot"), world.rand.nextInt(1) + 1));
+            drops.add(new ItemStack(GameRegistry.findItem("TConstruct", "TinIngot"), world.rand.nextInt(1) + 1));
+            
+            drops.add(new ItemStack(CopperIngot, world.rand.nextInt(1) + 1));
+            drops.add(new ItemStack(TinIngot, world.rand.nextInt(1) + 1));
+    		
+    		}
+        
         	//Custom Drops
-        if (Configuration.allowedProperties.equals(EpicProportionsMod.BIRTHDAYPRESENT_CUSTOM_DROPS) != true)
+        if (Configuration.allowedProperties.equals(EpicProportionsMod.BIRTHDAYPRESENT_CUSTOM_DROPS) == true)
         {
+        	System.out.println("Custom Birthday Present Drops Enabled ***This is still Work In Progress!***");
         	/*
         drops.add(new ItemStack(CustomPresentDrops.Common, world.rand.nextInt(CustomPresentDrops.DropChance_Common) + CustomPresentDrops.Amount_Common));
         if (world.rand.nextFloat() < CustomPresentDrops.DropChance_Rare)
@@ -114,9 +149,16 @@ public class blockBirthdayPresent extends Block{
             */
         	
         }
-        	//Custom Drops
+      //Creative Drops
+        if (Configuration.allowedProperties.equals(EpicProportionsMod.BIRTHDAYPRESENT_CREATIVE) == true)
+        {
+        	System.out.println("Creative Birthday Present Drops Enabled ***This is still Work In Progress!***");
+        }
+        
+        
         return drops;
     }
+    
 
     
     @SideOnly(Side.CLIENT)
@@ -132,6 +174,66 @@ public class blockBirthdayPresent extends Block{
     	event1.addChatComponentMessage(new ChatComponentText("§b§lHappy Birthday" + event1.getDisplayName() + "§b§l!"));
 
  }
+    
+    
+    
+    protected void readArrays(String parName)
+    {
+        BufferedReader readIn = null;
+    	try 
+        {
+            System.out.println("Reading file = "+parName+".txt");
+            readIn = new BufferedReader(new InputStreamReader(getClass().getClassLoader()
+                .getResourceAsStream("assets/epicproportionsmod/birthday_presents"+parName+".txt"), "UTF-8"));
+            Integer name = Integer.valueOf(readIn.readLine());
+            Integer item = Integer.valueOf(readIn.readLine());
+            Integer amount = Integer.valueOf(readIn.readLine());
+            Integer chance = Integer.valueOf(readIn.readLine());
+            String[][][] blockNameArray = new String[item][amount][chance];
+            int[][][] blockMetaArray = new int[item][amount][chance];
+            System.out.println("Custom Present Drops = "+name+" "+item+", "+amount+", "+chance);
+            for (int indY = 0; indY < amount; indY++) // Y first to organize in vertical layers
+            {
+                for (int indX = 0; item < item; item++)
+                {
+                    for (int indZ = 0; indZ < chance; indZ++)
+                    {
+                        blockNameArray[indX][indY][indZ] = readIn.readLine();
+                        blockMetaArray[indX][indY][indZ] = Integer.valueOf(readIn.readLine());
+                    }
+                }
+            }
+        } 
+        catch (FileNotFoundException e) 
+        {
+            // replace this with better exception handling
+
+            e.printStackTrace();
+        } 
+        catch (IOException e) 
+        {
+            // replace this with better exception handling
+
+
+            e.printStackTrace();
+        }
+        // remember to close the stream to avoid memory leaks     
+
+
+        try 
+        {
+            readIn.close();
+        } 
+        catch (IOException e)
+        {
+           // replace this with better exception handling
+
+
+            e.printStackTrace();
+        }
+    }
+    
+    
 }
     
 

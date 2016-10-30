@@ -10,7 +10,9 @@ import com.jtrent238.epicproportions.tileentity.TileEntityPatChest;
 import com.jtrent238.epicproportions.worldgen.ModWorldGen;
 
 import cpw.mods.fml.common.FMLCommonHandler;
+import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLServerStartingEvent;
 import cpw.mods.fml.common.network.simpleimpl.MessageContext;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.entity.player.EntityPlayer;
@@ -31,8 +33,17 @@ public class CommonProxy {
         //MinecraftForge.EVENT_BUS.register(new MyEventHandler());
         //System.out.print("common init fired!");
 	
-		LogHelper.init();
+		//LogHelper.init();
 		}
+	
+	@EventHandler
+	public void serverLoad(FMLServerStartingEvent event)
+	{
+	    // register server commands
+
+	event.registerServerCommand(new CommandModInfo());
+	}
+	
 	/*
 private static final String modid = "epicproportionsmod";
 	
@@ -55,6 +66,7 @@ private static final String modid = "epicproportionsmod";
 	
 	*/
 
+	
 	public EntityPlayer getPlayerEntityFromContext(MessageContext ctx) {
 		return null;
 	}

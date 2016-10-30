@@ -2,6 +2,7 @@ package com.jtrent238.epicproportions.entity;
 
 import com.jtrent238.epicproportions.ItemLoader;
 
+import cpw.mods.fml.common.Loader;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -20,6 +21,7 @@ import net.minecraft.entity.monster.EntityGolem;
 import net.minecraft.entity.monster.IMob;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.DamageSource;
 import net.minecraft.world.World;
@@ -29,6 +31,7 @@ public class EntityCandyMan extends EntityGolem implements IBossDisplayData
 {
 	World world = null;
 	private int attackTimer;
+	public static boolean Halloweenloaded;
     public EntityCandyMan(World var1)
     {
         super(var1);
@@ -80,6 +83,37 @@ protected void dropRareDrop(int par1){
 this.dropItem(ItemLoader.itemCaptainCookieCookie, 1);
 }
 */
+
+/**
+ * Drop 0-2 items of this living's type. @param par1 - Whether this entity has recently been hit by a player. @param
+ * par2 - Level of Looting used to kill this mob.
+ */
+protected void dropFewItems(boolean p_70628_1_, int p_70628_2_)
+{
+	
+	Halloweenloaded = Loader.isModLoaded("epicproportionsmod_halloween");
+	
+	if (Halloweenloaded){
+
+		this.entityDropItem(new ItemStack(com.jtrent238.epicproportions.addons.halloween.ItemLoader.itemCandy_0), 2F);
+		this.entityDropItem(new ItemStack(com.jtrent238.epicproportions.addons.halloween.ItemLoader.itemCandy_1), 2F);
+		this.entityDropItem(new ItemStack(com.jtrent238.epicproportions.addons.halloween.ItemLoader.itemCandy_2), 2F);
+		this.entityDropItem(new ItemStack(com.jtrent238.epicproportions.addons.halloween.ItemLoader.itemCandy_3), 2F);
+		this.entityDropItem(new ItemStack(com.jtrent238.epicproportions.addons.halloween.ItemLoader.itemCandy_4), 2F);
+		this.entityDropItem(new ItemStack(com.jtrent238.epicproportions.addons.halloween.ItemLoader.itemCandy_5), 2F);
+		this.entityDropItem(new ItemStack(com.jtrent238.epicproportions.addons.halloween.ItemLoader.itemCandy_6), 2F);
+		this.entityDropItem(new ItemStack(com.jtrent238.epicproportions.addons.halloween.ItemLoader.itemCandy_7), 2F);
+		this.entityDropItem(new ItemStack(com.jtrent238.epicproportions.addons.halloween.ItemLoader.itemCandy_8), 2F);
+		this.entityDropItem(new ItemStack(com.jtrent238.epicproportions.addons.halloween.ItemLoader.itemCandy_9), 2F);
+		this.entityDropItem(new ItemStack(com.jtrent238.epicproportions.addons.halloween.ItemLoader.itemCandy_10), 2F);
+		this.entityDropItem(new ItemStack(com.jtrent238.epicproportions.addons.halloween.ItemLoader.itemCandy_11), 2F);
+		this.entityDropItem(new ItemStack(com.jtrent238.epicproportions.addons.halloween.ItemLoader.itemCandy_12), 2F);
+		this.entityDropItem(new ItemStack(com.jtrent238.epicproportions.addons.halloween.ItemLoader.itemCandy_13), 2F);
+		this.entityDropItem(new ItemStack(com.jtrent238.epicproportions.addons.halloween.ItemLoader.itemCandy_14), 2F);
+		this.entityDropItem(new ItemStack(com.jtrent238.epicproportions.addons.halloween.ItemLoader.itemCandy_15), 2F);
+
+	}
+}
 
 	public boolean isAIEnabled()
 	{

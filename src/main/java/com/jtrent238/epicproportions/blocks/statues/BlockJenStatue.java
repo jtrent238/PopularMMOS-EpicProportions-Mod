@@ -1,4 +1,4 @@
-package com.jtrent238.epicproportions.blocks;
+package com.jtrent238.epicproportions.blocks.statues;
 
 import com.jtrent238.epicproportions.tileentity.TileEntityJenStatue;
 import com.jtrent238.epicproportions.tileentity.TileEntityPatStatue;

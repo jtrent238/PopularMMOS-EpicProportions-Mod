@@ -2,11 +2,9 @@ package com.jtrent238.epicproportions;
 
 import com.jtrent238.epicproportions.blocks.BlockFred2_0Spawner;
 import com.jtrent238.epicproportions.blocks.BlockJenDoor;
-import com.jtrent238.epicproportions.blocks.BlockJenStatue;
 import com.jtrent238.epicproportions.blocks.BlockModDoor;
 import com.jtrent238.epicproportions.blocks.BlockNuke;
 import com.jtrent238.epicproportions.blocks.BlockPatDoor;
-import com.jtrent238.epicproportions.blocks.BlockPatStatue;
 import com.jtrent238.epicproportions.blocks.BlockStatue;
 import com.jtrent238.epicproportions.blocks.blockBirthdayPresent;
 import com.jtrent238.epicproportions.blocks.blockBirthdayPresent_Green;
@@ -21,6 +19,10 @@ import com.jtrent238.epicproportions.blocks.blockPatIngot;
 import com.jtrent238.epicproportions.blocks.blockPatOre;
 import com.jtrent238.epicproportions.blocks.blockPatTNT;
 import com.jtrent238.epicproportions.blocks.blockTrollTNT;
+import com.jtrent238.epicproportions.blocks.statues.BlockCaptianCookieStatue;
+import com.jtrent238.epicproportions.blocks.statues.BlockJenStatue;
+import com.jtrent238.epicproportions.blocks.statues.BlockPatStatue;
+import com.jtrent238.epicproportions.blocks.statues.BlockSparkyStatue;
 import com.jtrent238.epicproportions.items.itemgemofepicproportions;
 
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -60,6 +62,9 @@ public class BlockLoader {
 	public static Block BlockStatue;
 	public static Block BlockPatStatue;
 	public static Block BlockJenStatue;
+	public static Block BlockCaptianCookieStatue;
+	public static Block BlockSparkyStatue;
+	
 	
 	public static final Block.SoundType soundTypeStone = new Block.SoundType("block_squish", 1.0F, 1.0F);
 	
@@ -94,9 +99,11 @@ public class BlockLoader {
 		blockFlowerChocolate = new blockModFlower(5).setBlockName("blockFlowerChocolate").setBlockTextureName("epicproportionsmod:" + blockModFlower.field_149860_M);
 		BlockFred2_0Spawner = new BlockFred2_0Spawner().setBlockName("BlockFred2_0Spawner").setBlockTextureName("epicproportionsmod:BlockFred2_0Spawner").setHardness(3F)/*/.setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
 		BlockNuke = new BlockNuke().setBlockName("BlockNuke").setBlockTextureName("epicproportionsmod:BlockNuke").setHardness(0F).setStepSound(Block.soundTypeStone).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
-		BlockPatStatue = new BlockStatue(Material.rock).setBlockName("BlockStatue").setBlockTextureName("epicproportionsmod:BlockStatue").setHardness(1F).setStepSound(Block.soundTypeStone).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
-		BlockPatStatue = new BlockPatStatue(Material.rock).setBlockName("BlockPatStatue").setBlockTextureName("epicproportionsmod:EntityPat").setHardness(1F).setStepSound(Block.soundTypeStone).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
-		BlockJenStatue = new BlockJenStatue(Material.rock).setBlockName("BlockJenStatue").setBlockTextureName("epicproportionsmod:EntityJen").setHardness(1F).setStepSound(Block.soundTypeStone).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+		BlockStatue = new BlockStatue(Material.rock).setBlockName("BlockStatue").setBlockTextureName("epicproportionsmod:BlockStatue").setHardness(1F).setStepSound(Block.soundTypeStone)/*/.setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
+		BlockPatStatue = new BlockPatStatue(Material.rock).setBlockName("BlockPatStatue").setBlockTextureName("epicproportionsmod:EntityPat").setHardness(1F).setStepSound(Block.soundTypeStone)/*/.setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
+		BlockJenStatue = new BlockJenStatue(Material.rock).setBlockName("BlockJenStatue").setBlockTextureName("epicproportionsmod:EntityJen").setHardness(1F).setStepSound(Block.soundTypeStone)/*/.setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
+		BlockCaptianCookieStatue = new BlockCaptianCookieStatue(Material.rock).setBlockName("BlockCaptianCookieStatue").setBlockTextureName("epicproportionsmod:EntityCaptianCookieStatue").setHardness(1F).setStepSound(Block.soundTypeStone)/*/.setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
+		BlockSparkyStatue = new BlockSparkyStatue(Material.rock).setBlockName("BlockSparkyStatue").setBlockTextureName("epicproportionsmod:BlockSparkyStatue").setHardness(1F).setStepSound(Block.soundTypeStone)/*/.setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
 		
 		
 		
@@ -133,6 +140,8 @@ public class BlockLoader {
 		//GameRegistry.registerBlock(BlockStatue, "BlockStatue");
 		GameRegistry.registerBlock(BlockPatStatue, "BlockPatStatue");
 		GameRegistry.registerBlock(BlockJenStatue, "BlockJenStatue");
+		GameRegistry.registerBlock(BlockCaptianCookieStatue, "BlockCaptianCookieStatue");
+		GameRegistry.registerBlock(BlockSparkyStatue, "BlockSparkyStatue");
 		
 	}
 	

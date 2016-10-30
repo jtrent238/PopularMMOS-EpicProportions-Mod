@@ -2,6 +2,7 @@ package com.jtrent238.epicproportions.entity;
 
 import com.jtrent238.epicproportions.ItemLoader;
 
+import cpw.mods.fml.common.Loader;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -29,6 +30,7 @@ public class EntityJen extends EntityGolem implements IBossDisplayData
 {
 	World world = null;
 	private int attackTimer;
+	private boolean Halloweenloaded;
     public EntityJen(World var1)
     {
         super(var1);
@@ -103,6 +105,14 @@ this.dropItem(ItemLoader.itemJenStar, 1);
     	this.entityDropItem(new ItemStack(ItemLoader.itemJenIngot), 2F);
     	this.entityDropItem(new ItemStack(ItemLoader.itemJenslips), 2F);
     	this.entityDropItem(new ItemStack(ItemLoader.itemJenmeat_raw), 2F);
+    	
+    	Halloweenloaded = Loader.isModLoaded("epicproportionsmod_halloween");
+    	
+    	if (Halloweenloaded){
+
+    		this.entityDropItem(new ItemStack(com.jtrent238.epicproportions.addons.halloween.ItemLoader.itemHalloweenPail_Jen), 2F);
+    		
+    	}
         
     	    }
 
