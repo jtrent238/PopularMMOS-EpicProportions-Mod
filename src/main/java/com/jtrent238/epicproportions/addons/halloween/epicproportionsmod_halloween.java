@@ -38,7 +38,7 @@ public class epicproportionsmod_halloween
 
 	@Instance(MODID)
     public static epicproportionsmod_halloween instance;
-	public static final String MODVERSION = "pre-1.0.0.0";
+	public static final String MODVERSION = "1.0.0.1";
 	public static final String MODNAME = "jtrent238's EpicProportions Mod - Halloween Addon";
 	public static final String ADDONNAME = "Halloween Addon";
 	public static final String MODAUTHOR = "jtrent238";
@@ -72,6 +72,7 @@ public void init(FMLInitializationEvent event)
 	BlockLoader.loadBlocks();
 	Recipes.registerRecpies();
 	EntityLoader.LoadEntitys();
+	OreDict.addores();
 	//Achievements.loadAchievements();
 	//Stats.RegisterStats();
 
@@ -84,7 +85,7 @@ public static CreativeTabs EpicProportionsMod_Halloween = new CreativeTabs("Epic
 {
 	public Item getTabIconItem() {
 
-		return new ItemStack(Blocks.lit_pumpkin).getItem();
+		return new ItemStack(ItemLoader.itemHalloweenPail).getItem();
 	}
 	public boolean hasSearchBar(){
 		return false;

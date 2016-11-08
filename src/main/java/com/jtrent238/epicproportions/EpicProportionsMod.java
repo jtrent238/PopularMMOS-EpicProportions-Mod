@@ -7,6 +7,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Random;
 import java.util.logging.Level;
+import java.util.logging.LogManager;
+import java.util.logging.Logger;
 
 import com.jtrent238.epicproportions.biome.BiomeDecorator;
 import com.jtrent238.epicproportions.command.CommandModInfo;
@@ -20,6 +22,9 @@ import com.jtrent238.epicproportions.render.RenderGuiHandler;
 import com.jtrent238.epicproportions.tileentity.TileEntityLoader;
 import com.jtrent238.epicproportions.worldgen.ModWorldGen;
 import com.jtrent238.epicproportions.worldgen.WorldGenModFlower;
+import com.jtrent238.epicproportions.worldgen.WorldGenPumpkin_Jen;
+import com.jtrent238.epicproportions.worldgen.WorldGenPumpkin_Pat;
+import com.jtrent238.epicproportions.worldgen.structures.StructureVillagePieces;
 import com.jtrent238.epicproportions.worldgen.structures.structureTntSword;
 
 import akka.Main;
@@ -64,18 +69,22 @@ public class EpicProportionsMod
 	public static VersionChecker versionChecker;
 	public static boolean haveWarnedVersionOutOfDate = false;
 
+	 
 	//structureTntSword jtrent238_0 = new structureTntSword();
 	//itemTNTSwordSpawner jtrent238_1 = new itemTNTSwordSpawner();
 
 	@Instance(MODID)
     public static EpicProportionsMod instance;
-	public static final String MODVERSION = "pre-1.2.6.5";
+
+	public static final String MODVERSION = "1.2.7.5";
 
 	private static final String APIVERSION_NA = "API Not Currently Available.";
 	public static final String APIVERSION = APIVERSION_NA/*/"0.0.0.0"/*/;
 	public static final String MODNAME = "jtrent238's EpicProportions Mod";
 	public static final String MODAUTHOR = "jtrent238";
 	public static final String MC = "1.7.10";
+	
+	public static final LogManager logger = LogManager.getLogManager();
 	
 	public static CrashReportCategory CRASHINFO;
 	public static NBTTagCompound NBTJOIN;
@@ -338,7 +347,20 @@ public void init(FMLInitializationEvent event)
 	Achievements.loadAchievements();
 	Stats.RegisterStats();
 	CrashReportHelper.getCrash();
-
+	OreDict.addores();
+	
+	/*
+	isTConstructModLoaded = Loader.isModLoaded("TConstruct");
+	
+	if (isTConstructModLoaded) {
+		
+		TConstruct.addOreDictionarySmelteryRecipes();
+		
+        }
+    */
+		
+	
+	
 	//BlockLoader.loadBlocks();
 	//ItemLoader.LoadItems();
 	//EntityLoader.LoadEntitys();
@@ -352,7 +374,7 @@ public void init(FMLInitializationEvent event)
 	//SoundEvents.LoadSounds();
 	//Recipes.registerRecpies();
 	
-	GameRegistry.registerWorldGenerator(new ModWorldGen(), 1000000);
+	GameRegistry.registerWorldGenerator(new ModWorldGen(), 22);
 
 	
 	ChestGenHooks.getInfo(ChestGenHooks.BONUS_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.itemJenIngot), 0, 1, 1));
@@ -428,6 +450,13 @@ public void postInit(FMLPostInitializationEvent event) {
 		MinecraftForge.EVENT_BUS.register(new VersionChecker());
 		MinecraftForge.EVENT_BUS.register(new CommandModInfo());
 		MinecraftForge.EVENT_BUS.register(new PotionLoader(33, false, 8171462));
+		MinecraftForge.EVENT_BUS.register(new PotionLoader(33, false, 8171462));
+		MinecraftForge.EVENT_BUS.register(new WorldGenPumpkin_Pat());
+		MinecraftForge.EVENT_BUS.register(new WorldGenPumpkin_Jen());
+		MinecraftForge.EVENT_BUS.register(new StructureVillagePieces());
+		
+		MinecraftForge.EVENT_BUS.register(new Yggdrasil());
+		
         
 		
 		//MinecraftForge.EVENT_BUS.register(new RenderGuiHandler());

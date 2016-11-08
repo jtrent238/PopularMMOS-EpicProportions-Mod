@@ -195,6 +195,7 @@ this.dropItem(ItemLoader.itemCaptainCookieCookie, 1);
 			
 		}
 
+			/*
 		public boolean interact(EntityPlayer entity2){
 			int i = (int)this.posX;
 			int j = (int)this.posY;
@@ -203,7 +204,32 @@ this.dropItem(ItemLoader.itemCaptainCookieCookie, 1);
 			
 			return true;
 		}
-
+		 	*/
+		
+		  /**
+		    * Called when a player interacts with a mob. e.g. gets milk from a cow, gets into the saddle on a pig.
+		    */
+		   public boolean interact(EntityPlayer p_70085_1_, World world,EntityPlayer entityplayer)
+		   {
+		       ItemStack itemstack = p_70085_1_.inventory.getCurrentItem();
+		       boolean flag = itemstack != null && itemstack.getItem() == ItemLoader.itemSwordOfEpicProportions;
+		       
+		       this.kill();
+		       this.spawnExplosionParticle();
+		       
+		       if(!world.isRemote)
+		       {
+		    	   EntityCaptianCookie_Evil par1 = new EntityCaptianCookie_Evil(world); //Just change"MyEntityCow" to any entity you would like to spawn
+		       par1.setPosition(p_70085_1_.posX, p_70085_1_.posY+2,p_70085_1_.posZ+2); //These are the coordinates where he will appear 
+		       world.spawnEntityInWorld(par1);
+		       }
+		       
+		       
+		           return true;
+		       }
+		       
+		   
+		   
 		public String getEntityName(){
 			return "Captian Cookie";
 		}
@@ -217,5 +243,6 @@ this.dropItem(ItemLoader.itemCaptainCookieCookie, 1);
        return 4;
    }
    
+ 
    
 }

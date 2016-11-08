@@ -23,6 +23,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.entity.EntityClientPlayerMP;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
@@ -46,12 +47,15 @@ public class blockBirthdayPresent extends Block{
 	private int meta;
 	private int least_quantity;
 	private int most_quantity;
+	private boolean Halloweenloaded;
+	private boolean isTConstructModLoaded;
 	
 
     
 	public blockBirthdayPresent(Material ground) {
 		super(ground);
 		this.getEnableStats();
+		this.presentOpened();
 		
 		}
 	
@@ -124,19 +128,29 @@ public class blockBirthdayPresent extends Block{
         if (world.rand.nextFloat() < 0.3F)
             drops.add(new ItemStack(Items.golden_apple));
         
+        isTConstructModLoaded = Loader.isModLoaded("isTConstructModLoaded");
         
         if (EpicProportionsMod.isTConstructModLoaded) {
         	
-        	GameRegistry.findItem("TConstruct", "CopperIngot");
-            GameRegistry.findItem("TConstruct", "TinIngot");
+        	GameRegistry.findItem("TConstruct", "materials:9");
+            GameRegistry.findItem("TConstruct", "materials:10");
 
-        	drops.add(new ItemStack(GameRegistry.findItem("TConstruct", "CopperIngot"), world.rand.nextInt(1) + 1));
-            drops.add(new ItemStack(GameRegistry.findItem("TConstruct", "TinIngot"), world.rand.nextInt(1) + 1));
+        	drops.add(new ItemStack(GameRegistry.findItem("TConstruct", "materials:9"), world.rand.nextInt(1) + 1));
+            drops.add(new ItemStack(GameRegistry.findItem("TConstruct", "materials:10"), world.rand.nextInt(1) + 1));
             
             drops.add(new ItemStack(CopperIngot, world.rand.nextInt(1) + 1));
             drops.add(new ItemStack(TinIngot, world.rand.nextInt(1) + 1));
     		
     		}
+        
+        Halloweenloaded = Loader.isModLoaded("epicproportionsmod_halloween");
+    	
+    	if (Halloweenloaded){
+
+    		drops.add(new ItemStack(com.jtrent238.epicproportions.addons.halloween.ItemLoader.itemSpookyIngot, world.rand.nextInt(1) + 1));
+    		drops.add(new ItemStack(com.jtrent238.epicproportions.addons.halloween.ItemLoader.itemSpookyEssence, world.rand.nextInt(1) + 1));
+            
+    	}
         
         	//Custom Drops
         if (Configuration.allowedProperties.equals(EpicProportionsMod.BIRTHDAYPRESENT_CUSTOM_DROPS) == true)
@@ -162,16 +176,16 @@ public class blockBirthdayPresent extends Block{
 
     
     @SideOnly(Side.CLIENT)
-    public void presentOpened(BlockEvent.BreakEvent event){
-    	EntityPlayer event1 = Minecraft.getMinecraft().thePlayer;
+    public void presentOpened(){
+    	EntityClientPlayerMP event1 = Minecraft.getMinecraft().thePlayer;
     		/*
     	if(true){
     	if(entity instanceof EntityPlayer)((EntityPlayer)entity).addStat(Achievements.achievementpresent, l);
     	}
     		 */
-    	event1.addStat(Stats.presentsbroken, 1);
-    	event1.triggerAchievement(Achievements.achievementpresent);
-    	event1.addChatComponentMessage(new ChatComponentText("§b§lHappy Birthday" + event1.getDisplayName() + "§b§l!"));
+    	//event1.addStat(Stats.presentsbroken, 1);
+    	//event1.triggerAchievement(Achievements.achievementpresent);
+    	//event1.addChatComponentMessage(new ChatComponentText("§b§lHappy Birthday" + event1.getDisplayName() + "§b§l!"));
 
  }
     

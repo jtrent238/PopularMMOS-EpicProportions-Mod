@@ -8,6 +8,7 @@ import com.jtrent238.epicproportions.EpicProportionsMod;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockBush;
 import net.minecraft.block.BlockFlower;
 import net.minecraft.block.material.Material;
@@ -19,7 +20,9 @@ import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraftforge.common.EnumPlantType;
 
 public class blockModFlower  extends BlockBush
 {
@@ -141,6 +144,16 @@ public class blockModFlower  extends BlockBush
         return 0;
     }
     
-    
+    @Override
+    public EnumPlantType getPlantType (IBlockAccess world, int x, int y, int z)
+    {
+        return EnumPlantType.Plains;
+    }
+
+    @Override
+    public Block getPlant (IBlockAccess world, int x, int y, int z)
+    {
+        return this;
+    }
     
 }

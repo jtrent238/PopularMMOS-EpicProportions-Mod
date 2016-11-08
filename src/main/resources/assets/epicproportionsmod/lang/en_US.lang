@@ -60,6 +60,8 @@ item.itembombyStatue.name=Bomby Statue
 item.itemkittyStatue.name=Kitty Statue
 item.itemsparkyStatue.name=Sparky Statue
 item.itemCaptianCookieLittleStatue.name=Captian Cookie Little Statue
+item.ItemPatCake.name=FuriousDestroyer Cake
+item.ItemJenCake.name=SuperGirlyGamer Cake
 
 	/Weapons & Tools
 item.itemPatSword.name=FuriousDestroyer's Sword
@@ -145,6 +147,7 @@ item.itemSpawnPatVillager.name=Spawn FuriousDestroyer Villager [WIP]
 item.itemSpawnJenVillager.name=Spawn SuperGirlyGamer Villager [WIP]
 item.itemSpawnJenGolem.name=Spawn SuperGirlyGamer Golem
 item.itemSpawnPatGolem.name=Spawn FuriousDestroyer Golem
+item.itemSpawnCaptianCookie_Evil.name=Spawn Evil Captian Cookie [WIP]
 
 //Blocks
 tile.blockFartBomb.name=Fart Bomb
@@ -165,10 +168,16 @@ tile.blockFlowerLove.name=Love Flower
 tile.blockFlowerChocolate.name=Chocolate Flower
 tile.blockBirthdayPresent_Green.name=Birthday Present
 tile.BlockNuke.name=Nuke
+tile.BlockPumpkinPat.name=FuriousDestroyer Pumpkin
+tile.BlockPumpkinPat_lit.name=FuriousDestroyer Jack o'Lantern
+tile.BlockPumpkinJen.name=SuperGirlyGamer Pumpkin
+tile.BlockPumpkinJen_lit.name=SuperGirlyGamer Jack o'Lantern
 tile.BlockPatStatue.name=FuriousDestroyer Statue
 tile.BlockJenStatue.name=SuperGirlyGamer Statue
 tile.BlockCaptianCookieStatue.name=Captain Cookie Statue
 tile.BlockSparkyStatue.name=Sparky Statue
+tile.BlockPatCake.name=FuriousDestroyer Cake
+tile.BlockJenCake.name=SuperGirlyGamer Cake
 
 //Entitys
 entity.EntityBomby.name=Bomby

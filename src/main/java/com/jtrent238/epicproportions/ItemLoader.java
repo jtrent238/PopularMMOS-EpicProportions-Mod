@@ -34,6 +34,10 @@ import com.jtrent238.epicproportions.items.armor.ItemSuperJenArmor;
 import com.jtrent238.epicproportions.items.armor.ItemSuperPatArmor;
 import com.jtrent238.epicproportions.items.blockplacers.itemBirthdayPresent;
 import com.jtrent238.epicproportions.items.blockplacers.itemBirthdayPresent_Green;
+import com.jtrent238.epicproportions.items.cakes.ItemJenCake;
+import com.jtrent238.epicproportions.items.cakes.ItemPatCake;
+import com.jtrent238.epicproportions.items.seeds.ItemPumpkinJen_Seeds;
+import com.jtrent238.epicproportions.items.seeds.ItemPumpkinPat_Seeds;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnBanana;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnBlockling;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnBomby;
@@ -159,13 +163,16 @@ import com.jtrent238.weaponmod.Itemcheeseknife;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.common.EnumPlantType;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemRecord;
+import net.minecraft.item.ItemSeeds;
 import net.minecraft.potion.Potion;
 
 public class ItemLoader {
@@ -219,6 +226,8 @@ public class ItemLoader {
 	public static Item itemsparkyStatue;
 	public static Item itemCaptianCookieLittleStatue;
 	public static Item itemPotion;
+	public static Item ItemPumpkinPat_Seeds;
+	public static Item ItemPumpkinJen_Seeds;
 	
 	
 	//Weapons & Tools
@@ -271,6 +280,9 @@ public class ItemLoader {
 	public static Item itemTrollTNTLauncher;
 	public static Item itemFartBombLauncher;
 	public static Item itemNukeLauncher;
+	public static Item ItemPatCake;
+	public static Item ItemJenCake;
+	
 	
 	
 	//SpawnEggs//
@@ -400,6 +412,10 @@ public static void LoadItems() {
 	itemsparkyStatue = new itemsparkyStatue().setUnlocalizedName("itemsparkyStatue").setTextureName("epicproportionsmod:itemsparkyStatue")/*/.setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
 	itemCaptianCookieLittleStatue = new itemCaptianCookieLittleStatue().setUnlocalizedName("itemCaptianCookieLittleStatue")/*/.setTextureName("epicproportionsmod:itemCaptianCookieLittleStatue").setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
 	//itemPotion = new itemPotion().setUnlocalizedName("itemPotion").setTextureName("epicproportionsmod:itemPotion").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	ItemPumpkinPat_Seeds = new ItemPumpkinPat_Seeds(BlockLoader.BlockPumpkinPat, Blocks.farmland).setUnlocalizedName("ItemPumpkinPat_Seeds").setTextureName("epicproportionsmod:ItemPumpkinPat_Seeds").setCreativeTab(/*/EpicProportionsMod.EpicProportionsMod/*/(null));
+	ItemPumpkinJen_Seeds = new ItemPumpkinJen_Seeds(BlockLoader.BlockPumpkinJen, Blocks.farmland).setUnlocalizedName("ItemPumpkinJen_Seeds").setTextureName("epicproportionsmod:ItemPumpkinJen_Seeds").setCreativeTab(/*/EpicProportionsMod.EpicProportionsMod/*/(null));
+	ItemPatCake = new ItemPatCake().setUnlocalizedName("ItemPatCake").setTextureName("epicproportionsmod:ItemPatCake").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	ItemJenCake = new ItemJenCake().setUnlocalizedName("ItemJenCake").setTextureName("epicproportionsmod:ItemJenCake").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	
 	
 	//Weapons & Tools
@@ -563,6 +579,10 @@ private static void registerItems(){
 	GameRegistry.registerItem(itemsparkyStatue, itemsparkyStatue.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemCaptianCookieLittleStatue, itemCaptianCookieLittleStatue.getUnlocalizedName().substring(5));
 	//GameRegistry.registerItem(itemPotion, itemPotion.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(ItemPumpkinPat_Seeds, ItemPumpkinPat_Seeds.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(ItemPumpkinJen_Seeds, ItemPumpkinJen_Seeds.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(ItemPatCake, ItemPatCake.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(ItemJenCake, ItemJenCake.getUnlocalizedName().substring(5));
 	
 	
 

@@ -1,5 +1,30 @@
 Epic Proportions Mod ChangeLog
 
+1.2.7.5
+- Added Spooky Ingot To Birthday Present
+- Added Spooky Essence To Birthday Present
+- Added FuriousDestroyer Pumpkin
+- Added FuriousDestroyer Jack O Lanteren
+- Added SuperGirlyGamer Pumpkin
+- Added SuperGirlyGamer Jack O Lanteren
+- Added Crafting Recipe For FuriousDestroyer Apple
+- Added Crafting Recipe For SuperGirlyGamer Apple
+- Added FuriousDestroyer Ore to OreDictionary
+- Added SuperGirlyGamer Ore to OreDictionary
+- Added Spooky Ore to OreDictionary (Halloween Addon)
+- Added FuriousDestroyer Cake
+- Added SuperGirlyGamer Cake
+- Changed Halloween Addon Creative Tab Icon
+- Fixed Evil Captian Cookie Freezing The Game
+- Fixed Evil Captian Cookie Spawn Egg Text
+- Fixed Clown Not Spawning
+- Fixed Kami Not Spawning
+- Fixed Kitty Not Spawning
+- Fixed Sparky Not Spawning
+- Fixed Popo Not Spawning
+- Fixed Fred 2.0 Not Spawning
+
+
 1.2.6.5
 - Added Pat Door
 - Added Jen Door

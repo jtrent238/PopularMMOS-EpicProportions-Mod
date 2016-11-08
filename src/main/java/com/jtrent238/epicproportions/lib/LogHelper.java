@@ -23,35 +23,35 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 		public static void init() {
 			
 			LogHelper.log(Level.ALL, null);
-			/*
+			
 			LogHelper.log(Level.INFO, "Preparing items");
-				//ItemLoader.LoadItems();
+				ItemLoader.LoadItems();
 			LogHelper.log(Level.INFO, "Items loaded");
 
 			LogHelper.log(Level.INFO, "Preparing blocks");
-				//BlockLoader.loadBlocks();
+				BlockLoader.loadBlocks();
 			LogHelper.log(Level.INFO, "Blocks loaded");
 
 			LogHelper.log(Level.INFO, "Preparing recipes");
-				//Recipes.registerRecpies();
+				Recipes.registerRecpies();
 			LogHelper.log(Level.INFO, "Recipes loaded");
 			
 			LogHelper.log(Level.INFO, "Preparing Entitys");
-				//EntityLoader.LoadEntitys();
+				EntityLoader.LoadEntitys();
 			LogHelper.log(Level.INFO, "Entitys loaded");
 			
 			LogHelper.log(Level.INFO, "Preparing TileEntitys");
-				//TileEntityLoader.mainRegistry();
+				TileEntityLoader.mainRegistry();
 			LogHelper.log(Level.INFO, "TileEntitys loaded");
 			
 			LogHelper.log(Level.INFO, "Preparing Achievements");
-				//Achievements.loadAchievements();
+				Achievements.loadAchievements();
 			LogHelper.log(Level.INFO, "Achievements loaded");
 			
 			LogHelper.log(Level.INFO, "Preparing Stats");
-				//Stats.RegisterStats();
+				Stats.RegisterStats();
 			LogHelper.log(Level.INFO, "Stats loaded");
-			*/
+			
 				/*
 			LogHelper.log(Level.INFO, "Preparing ChestGenHooks");
 			ChestGenHooksMod.Register();
@@ -65,32 +65,11 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 		}
 
 
-		public void modsLoaded(FMLPostInitializationEvent event) {
-		    if (Loader.isModLoaded("jtcoremod")) {
-		           try {
-		               LogHelper.log(Level.INFO, "Loaded jtrent238 Core Mod");
-		           }
-		           catch (Exception e) {
-		               LogHelper.log(Level.SEVERE, "Could not load jtrent238 Core Mod");
-		               e.printStackTrace(System.err);
-		           }
-		       }
-		    
-		    if (Loader.isModLoaded("TConstruct")) {
-		    	System.out.println("Tinkers Construct Mod Loaded");
-				try {
-		            LogHelper.log(Level.INFO, "Loaded Tinkers Construct Mod");
-		        }
-		        catch (Exception e) {
-		            LogHelper.log(Level.SEVERE, "Could not load Tinkers Construct Mod");
-		            e.printStackTrace(System.err);
-		        }
-		    
-				}
+		
 
 		{
 			
 		}
 
 		}
-		}
+		

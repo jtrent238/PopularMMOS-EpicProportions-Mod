@@ -1,5 +1,6 @@
 package com.jtrent238.epicproportions;
 
+
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.GameRegistry.Type;
 import net.minecraft.block.Block;
@@ -10,6 +11,8 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemPotion;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
+
+
 
 public class Recipes {
 
@@ -90,10 +93,11 @@ public class Recipes {
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemPickOfEpicProportions), "BB1", "B2B", "3BB", '1', ItemLoader.itemPickOfEpicProportions_Part1, '2', ItemLoader.itemPickOfEpicProportions_Part2, '3', ItemLoader.itemPickOfEpicProportions_Part3);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemPickOfEpicProportions_Part2), "SSS", "SXS", "SSS", 'X', ItemLoader.itemSuperPatPick, 'S', ItemLoader.itemEpicProportionsStar);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemPickOfEpicProportions_Part3), "SSS", "SXS", "SSS", 'X', ItemLoader.itemSuperJenPick, 'S', ItemLoader.itemEpicProportionsStar);
-		
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemShovelOfEpicProportions), "BB3", "B2B", "1BB", '1', ItemLoader.itemShovelOfEpicProportions_Part1, '2', ItemLoader.itemShovelOfEpicProportions_Part2, '3', ItemLoader.itemShovelOfEpicProportions_Part3);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemShovelOfEpicProportions_Part2), "SSS", "SXS", "SSS", 'X', ItemLoader.itemSuperPatShovel, 'S', ItemLoader.itemEpicProportionsStar);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemShovelOfEpicProportions_Part3), "SSS", "SXS", "SSS", 'X', ItemLoader.itemSuperJenShovel, 'S', ItemLoader.itemEpicProportionsStar);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itempatapple), "PPP", "PXP", "PPP", 'X', Items.apple, 'P', ItemLoader.itemPatIngot);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemjenapple), "JJJ", "JXJ", "JJJ", 'X', Items.apple, 'J', ItemLoader.itemJenIngot);
 		
 	}
 	
@@ -114,6 +118,11 @@ public class Recipes {
 		GameRegistry.addSmelting(new ItemStack(Items.fish, 3), new ItemStack (ItemLoader.ItemCookedPufferFish, 1), 2F );
 			   }
 	
+	public static void addOreDictionarySmelteryRecipes ()
+    {
+
+		
+}
 	}
 
 	
