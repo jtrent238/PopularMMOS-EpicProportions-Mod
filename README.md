@@ -16,3 +16,5 @@ I am working very hard on this mod making all the textures, models ,editing and 
 ## [Addons](https://github.com/jtrent238/PopularMMOS-EpicProportions-Mod/wiki/Addons)
 
 ## [All Downloads](https://jtrent238.github.io/PopularMMOS-EpicProportions-Mod/)
+
+## [F.A.Q.?](https://github.com/jtrent238/PopularMMOS-EpicProportions-Mod/wiki/FAQ)
