@@ -18,3 +18,5 @@ I am working very hard on this mod making all the textures, models ,editing and 
 ## [All Downloads](https://jtrent238.github.io/PopularMMOS-EpicProportions-Mod/)
 
 ## [F.A.Q.?](https://github.com/jtrent238/PopularMMOS-EpicProportions-Mod/wiki/FAQ)
+
+<center><a href="https://www.patreon.com/jtrent238" title=""><br /><img src="http://project2nd.com/img/Logo_Patreon.png" alt="" border="0"/><br/></a></center>
