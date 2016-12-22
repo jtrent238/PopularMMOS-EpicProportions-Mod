@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import com.jtrent238.epicproportions.EntityLoader;
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.entity.Entity;
@@ -22,7 +24,7 @@ import net.minecraft.world.World;
 public abstract class Fred2_0SpawnerBaseLogic {
     /** The delay to spawn. */
     public int spawnDelay = 20;
-    private String entityTypeName = "EntityBomby";
+    private Entity entityTypeName = EntityLoader.EntityFred2_0;
     /** List of entities to spawn. */
     private List potentialEntitySpawns;
     public double field_98287_c;
@@ -38,31 +40,30 @@ public abstract class Fred2_0SpawnerBaseLogic {
     /** The range coefficient for spawning entities around. */
     private int spawnRange = 4;
 	private net.minecraft.tileentity.MobSpawnerBaseLogic.WeightedRandomMinecart randomEntity;
+	private Entity EntityFred2_0;
     private static final String __OBFID = "CL_00000129";
 
     /**
      * Gets the entity name that should be spawned.
      */
-    public String getEntityNameToSpawn()
+    public Entity getEntityNameToSpawn()
     {
         if (this.getRandomEntity() == null)
         {
             if (this.entityTypeName.equals("Minecart"))
             {
-                this.entityTypeName = "MinecartRideable";
+                this.entityTypeName = EntityFred2_0;
             }
 
             return this.entityTypeName;
         }
-        else
-        {
-            return this.getRandomEntity().entityTypeName;
-        }
+		return EntityFred2_0;
+        
     }
 
-    public void setEntityName(String p_98272_1_)
+    public void setEntityName(Entity EntityFred2_0)
     {
-        this.entityTypeName = p_98272_1_;
+        this.entityTypeName = EntityFred2_0;
     }
 
     /**
@@ -112,7 +113,7 @@ public abstract class Fred2_0SpawnerBaseLogic {
 
                 for (int i = 0; i < this.spawnCount; ++i)
                 {
-                    Entity entity = EntityList.createEntityByName(this.getEntityNameToSpawn(), this.getSpawnerWorld());
+                    Entity entity = EntityLoader.EntityFred2_0;
 
                     if (entity == null)
                     {
@@ -242,7 +243,7 @@ public abstract class Fred2_0SpawnerBaseLogic {
 
     public void readFromNBT(NBTTagCompound p_98270_1_)
     {
-        this.entityTypeName = p_98270_1_.getString("EntityId");
+        this.entityTypeName = EntityLoader.EntityFred2_0;
         this.spawnDelay = p_98270_1_.getShort("Delay");
 
         if (p_98270_1_.hasKey("SpawnPotentials", 9))
@@ -295,7 +296,7 @@ public abstract class Fred2_0SpawnerBaseLogic {
 
     public void writeToNBT(NBTTagCompound p_98280_1_)
     {
-        p_98280_1_.setString("EntityId", this.getEntityNameToSpawn());
+        //p_98280_1_.setString("EntityId", this.getEntityNameToSpawn());
         p_98280_1_.setShort("Delay", (short)this.spawnDelay);
         p_98280_1_.setShort("MinSpawnDelay", (short)this.minSpawnDelay);
         p_98280_1_.setShort("MaxSpawnDelay", (short)this.maxSpawnDelay);
@@ -353,7 +354,7 @@ public abstract class Fred2_0SpawnerBaseLogic {
     {
         if (this.field_98291_j == null)
         {
-            Entity entity = EntityList.createEntityByName(this.getEntityNameToSpawn(), (World)null);
+            Entity entity = EntityLoader.EntityFred2_0;
             entity = this.func_98265_a(entity);
             this.field_98291_j = entity;
         }

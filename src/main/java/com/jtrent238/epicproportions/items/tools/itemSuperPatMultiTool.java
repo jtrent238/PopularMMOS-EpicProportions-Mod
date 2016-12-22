@@ -11,6 +11,7 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.enchantment.Enchantment;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemPickaxe;
@@ -23,6 +24,7 @@ import net.minecraftforge.event.entity.player.UseHoeEvent;
 public class itemSuperPatMultiTool extends ItemPickaxe {
 
 	private static final int enchant = ItemLoader.superenchantlvl;
+	private boolean hasenchanted;
 
 
     public itemSuperPatMultiTool(ToolMaterial material) {
@@ -95,5 +97,30 @@ public class itemSuperPatMultiTool extends ItemPickaxe {
 		par1ItemStack.addEnchantment(Enchantment.smite, enchant);
 		
 }
+    /**
+     * Called each tick as long the item is on a player inventory. Uses by maps to check if is on a player hand and
+     * update it's contents.
+     */
+    /*
+    public void onUpdate(ItemStack par1ItemStack, World p_77663_2_, Entity p_77663_3_, int p_77663_4_, boolean p_77663_5_) 
+    {
+    	if(hasenchanted == false){
+    		par1ItemStack.addEnchantment(Enchantment.efficiency, enchant);
+    		par1ItemStack.addEnchantment(Enchantment.fortune, enchant);
+    		par1ItemStack.addEnchantment(Enchantment.unbreaking, enchant);
+    		par1ItemStack.addEnchantment(Enchantment.fireAspect, enchant);
+    		par1ItemStack.addEnchantment(Enchantment.knockback, enchant);
+    		par1ItemStack.addEnchantment(Enchantment.looting, enchant);
+    		par1ItemStack.addEnchantment(Enchantment.smite, enchant);
+    	this.hasenchanted(true);
+    	}
+    	
+    	return;
+    }
 
+
+	private void hasenchanted(boolean b) {
+		
+	}
+	*/
 }

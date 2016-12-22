@@ -1,11 +1,15 @@
 package com.jtrent238.epicproportions.worldgen;
 
 import java.util.Random;
+import java.util.logging.Level;
 
 import com.jtrent238.epicproportions.BlockLoader;
+import com.jtrent238.epicproportions.EpicProportionsMod;
+import com.jtrent238.epicproportions.lib.LogHelper;
 import com.jtrent238.epicproportions.util.BlockPos;
 
 import cpw.mods.fml.common.IWorldGenerator;
+import cpw.mods.fml.common.Loader;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
@@ -20,37 +24,54 @@ import net.minecraft.world.gen.feature.WorldGenerator;
 
 
 public class ModWorldGen implements IWorldGenerator {
-	private Object gen_pat_ore;
-
 	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {
-        switch(world.provider.dimensionId){
-        case -1:
-            generateNether(world, random, chunkX * 16, chunkZ * 16);
-            break;
-        case 0:
-            generateSurface(world, random, chunkX * 16, chunkZ * 16);
-            break;
-		case 1:
-            generateEnd(world, random, chunkX * 16, chunkZ * 16);
-            break;
-        }
+	    switch (world.provider.dimensionId) {
+	    case 0: //Overworld
+	    	this.runGenerator(this.gen_pat_ore, world, random, chunkX, chunkZ, 20, 0, 64);
+	    	this.runGenerator(this.gen_jen_ore, world, random, chunkX, chunkZ, 20, 0, 64);
+	    				/*
+	    	isHalloweenLoaded = Loader.isModLoaded("epicproportionsmod_halloween");
+	    	if (isHalloweenLoaded) {
+	    		this.runGenerator(this.gen_spooky_ore, world, random, chunkX, chunkZ, 20, 0, 64);
+					}
+		
+			isChristmasLoaded = Loader.isModLoaded("epicproportionsmod_christmas");
+			if (isChristmasLoaded) {
+				this.runGenerator(this.gen_candycane_ore, world, random, chunkX, chunkZ, 20, 0, 64);
+					}
+	    	 			*/
+	        break;
+	    case -1: //Nether
+
+	        break;
+	    case 1: //End
+
+	        break;
+	    }
 	}
+    
+	private boolean isHalloweenLoaded;
+	private boolean isChristmasLoaded;
+	
+	private WorldGenerator gen_pat_ore; //Generates FuriousDestroyer Ore (used in Overworld)
+	private WorldGenerator gen_jen_ore; //Generates SuperGirlyGamer Ore (used in Overworld)
+	///private WorldGenMinable gen_spooky_ore;//Generates Spooky Ore (used in Overworld)
+	//private WorldGenMinable gen_candycane_ore;//Generates CandyCane Ore (used in Overworld)
 
-	private void generateEnd(World world, Random rand, int chunkX, int chunkZ) {}
-
-	private void generateSurface(World world, Random rand, int chunkX, int chunkZ) {
-        for(int k = 0; k < 10; k++){
-        	int firstBlockXCoord = chunkX + rand.nextInt(16);
-        	int firstBlockYCoord = rand.nextInt(64);
-        	int firstBlockZCoord = chunkZ + rand.nextInt(16);
-        	
-        	(new WorldGenMinable(BlockLoader.blockPatOre, 0)).generate(world, rand, firstBlockXCoord, firstBlockYCoord, firstBlockZCoord);
-        	(new WorldGenMinable(BlockLoader.blockJenOre, 0)).generate(world, rand, firstBlockXCoord, firstBlockYCoord, firstBlockZCoord);
-            }
+	public ModWorldGen() {
+	    this.gen_pat_ore = new WorldGenMinable(BlockLoader.blockPatOre, 8);
+	    this.gen_jen_ore = new WorldGenMinable(BlockLoader.blockJenOre, 8);
+	    			
+	    			/*
+		if (isHalloweenLoaded) {
+			this.gen_spooky_ore = new WorldGenMinable(com.jtrent238.epicproportions.addons.halloween.BlockLoader.blockSpookyEssenceOre, 8);
+						}
+		if (isChristmasLoaded) {
+			this.gen_candycane_ore = new WorldGenMinable(com.jtrent238.epicproportions.addons.christmas.BlockLoader.BlockCandyCaneOre, 8);
+						}
+					*/
 	}
-
-	private void generateNether(World world, Random rand, int chunkX, int chunkZ) {}
 	
 	private void runGenerator(WorldGenerator generator, World world, Random rand, int chunk_X, int chunk_Z, int chancesToSpawn, int minHeight, int maxHeight) {
 	    if (minHeight < 0 || maxHeight > 256 || minHeight > maxHeight)
@@ -61,8 +82,10 @@ public class ModWorldGen implements IWorldGenerator {
 	        int x = chunk_X * 16 + rand.nextInt(16);
 	        int y = minHeight + rand.nextInt(heightDiff);
 	        int z = chunk_Z * 16 + rand.nextInt(16);
-	        //generator.generate(world, rand, new BlockPos(x, y, z));
+	        generator.generate(world, rand, x, y, z);
 	    }
 	}
+
+	
 	
 }

@@ -63,6 +63,7 @@ public class EntityLoader {
 
 
 	
+	public static final Entity EntityFred2_0 = null;
 	private static int jtrent238;
 	public static int Ted;
 	private static String MyEntityID_1;
@@ -112,8 +113,11 @@ public class EntityLoader {
 	  //jtrent238 Registry
 	    EntityRegistry.registerGlobalEntityID(Entilyjtrent238.class, "Entilyjtrent238", jtrent238/*/EntityRegistry.findGlobalUniqueEntityId()/*/);
 	   // RenderingRegistry.registerEntityRenderingHandler(Entilyjtrent238.class, new RenderLiving(new ModelBiped(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:Entilyjtrent238.png");}});//jtrent238 Texture
+	   
+	    if(EpicProportionsMod.JTRENT238_SPAWN == true){
 	    EntityRegistry.addSpawn(Entilyjtrent238.class, 1, 1, 1, EnumCreatureType.creature, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.forest, BiomeGenBase.plains, BiomeGenBase.beach, BiomeGenBase.mesa, BiomeGenBase.savanna, BiomeGenBase.desert, BiomeGenBase.desertHills);
-	    	/*VillagerRegistry.instance().registerVillagerId(jtrent238);
+	    	}
+	    /*VillagerRegistry.instance().registerVillagerId(jtrent238);
 	    	VillagerRegistry.instance().registerVillageTradeHandler(8, new TradeHandler());
 	    	VillagerRegistry.instance().getRegisteredVillagers(); 
 	    	VillagerRegistry.instance().registerVillagerSkin(8, new ResourceLocation("epicproportionsmod", "test.png"));
@@ -178,31 +182,36 @@ public class EntityLoader {
 	    
 	    
 	  //VillagerOfEpicProportions Registry
-	    VillagerRegistry.instance().registerVillagerId(22);
-    	VillagerRegistry.instance().registerVillageTradeHandler(22, new TradeHandler());
+	    VillagerRegistry.instance().registerVillagerId(EpicProportionsMod.getVILLAGER_ID_1());
+    	VillagerRegistry.instance().registerVillageTradeHandler(EpicProportionsMod.getVILLAGER_ID_1(), new TradeHandler());
     	VillagerRegistry.instance().getRegisteredVillagers(); 
     	VillagerRegistry.instance().getClass();
 	
     	//JenVillager Registry
-	    VillagerRegistry.instance().registerVillagerId(23);
-    	VillagerRegistry.instance().registerVillageTradeHandler(23, new TradeHandler());
+	    VillagerRegistry.instance().registerVillagerId(EpicProportionsMod.getVILLAGER_ID_2());
+    	VillagerRegistry.instance().registerVillageTradeHandler(EpicProportionsMod.getVILLAGER_ID_2(), new TradeHandler());
     	VillagerRegistry.instance().getRegisteredVillagers(); 
     	VillagerRegistry.instance().getClass();
 	
 	
     	//PatVillager Registry
-	    VillagerRegistry.instance().registerVillagerId(24);
-    	VillagerRegistry.instance().registerVillageTradeHandler(24, new TradeHandler());
+	    VillagerRegistry.instance().registerVillagerId(EpicProportionsMod.getVILLAGER_ID_3());
+    	VillagerRegistry.instance().registerVillageTradeHandler(EpicProportionsMod.getVILLAGER_ID_3(), new TradeHandler());
     	VillagerRegistry.instance().getRegisteredVillagers(); 
     	VillagerRegistry.instance().getClass();
     	
+    	
     	//TEST Registry
-	    VillagerRegistry.instance().registerVillagerId(25);
-    	VillagerRegistry.instance().registerVillageTradeHandler(25, new TradeHandler());
+	    VillagerRegistry.instance().registerVillagerId(EpicProportionsMod.getVILLAGER_ID_4());
+    	VillagerRegistry.instance().registerVillageTradeHandler(EpicProportionsMod.getVILLAGER_ID_4(), new TradeHandler());
     	VillagerRegistry.instance().getRegisteredVillagers(); 
     	VillagerRegistry.instance().getClass();
 	
-    	
+    	//Santa Registry
+	    VillagerRegistry.instance().registerVillagerId(64/*/EpicProportionsMod.getVILLAGER_ID_5()/*/);
+    	VillagerRegistry.instance().registerVillageTradeHandler(64/*/EpicProportionsMod.getVILLAGER_ID_5()/*/, new TradeHandler());
+    	VillagerRegistry.instance().getRegisteredVillagers(); 
+    	VillagerRegistry.instance().getClass();
 
     	}
 	{

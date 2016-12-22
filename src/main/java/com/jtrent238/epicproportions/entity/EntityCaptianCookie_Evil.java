@@ -252,6 +252,8 @@ this.dropItem(ItemLoader.itemCaptainCookieCookie, 1);
 	    {
 	    	this.entityDropItem(new ItemStack(Items.cookie, 16 * 2), 4F);
 	    	this.entityDropItem(new ItemStack(Items.nether_star, 32), 2F);
+	    	this.entityDropItem(new ItemStack(ItemLoader.itemSwordOfEpicProportions, 1), 2F);
+	    	
 
 	    }
 

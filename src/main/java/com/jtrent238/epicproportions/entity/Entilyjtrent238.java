@@ -169,7 +169,7 @@ public class Entilyjtrent238 extends EntityVillager// implements IBossDisplayDat
         this.targetTasks.addTask(3, new EntityAINearestAttackableTarget(this, EntityLiving.class, 0, false, true, IMob.mobSelector));
         this.hasCustomNameTag();
         this.setCustomNameTag("jtrent238");
-        this.registerExtendedProperties(tradehandler, properties);
+        //this.registerExtendedProperties(tradehandler, properties);
         addRandomArmor();
         DungeonHooks.addDungeonMob("jtrent238", 180);
         this.setProfession(22);

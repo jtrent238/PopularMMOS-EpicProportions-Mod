@@ -12,7 +12,7 @@ item.itemPatStar.name=FuriousDestroyer Star
 item.itemEpicProportionsStar.name=Epic Proportions Star
 item.itemTNTSwordPlacer.name=TNT Sword
 item.itemBirthdayPresent.name=Birthday Present
-item.itemHouseOfEpicProportionsPlacer.name=House Of Epic Proportions [WIP]
+item.itemHouseOfEpicProportionsPlacer.name=House Of Epic Proportions
 item.itemBombyStructurePlacer.name=Bomby Structure
 item.itemJensHoleStructurePlacer_1.name=Jen's Hole 1 [WIP]
 item.itemJensHoleStructurePlacer_2.name=Jen's Hole 2 [WIP]
@@ -62,6 +62,13 @@ item.itemsparkyStatue.name=Sparky Statue
 item.itemCaptianCookieLittleStatue.name=Captian Cookie Little Statue
 item.ItemPatCake.name=FuriousDestroyer Cake
 item.ItemJenCake.name=SuperGirlyGamer Cake
+item.ItemMegaBirthdayPresentPlacer.name=Mega Birthday Present
+item.ItemPatBucket.name=FuriousDestroyer Bucket
+item.ItemPatBucket_water.name=FuriousDestroyer Bucket of Water
+item.ItemPatBucket_lava.name=FuriousDestroyer Bucket of Lava
+item.ItemJenBucket.name=SuperGirlyGamer Bucket
+item.ItemJenBucket_water.name=SuperGirlyGamer Bucket of Water
+item.ItemJenBucket_lava.name=SuperGirlyGamer Bucket of Lava
 
 	/Weapons & Tools
 item.itemPatSword.name=FuriousDestroyer's Sword
@@ -288,9 +295,9 @@ tooltip.epicproportionsmod.itemShovelOfEpicProportions_Part_2=The Shovel of Epic
 
 
 tooltip.epicproportionsmod.itemSwordOfEpicProportions.captiancookie.no=Do not give to Captian Cookie!!!
-tooltip.epicproportionsmod.itemBirthdayPresent.bday=Happy Birtday!
+tooltip.epicproportionsmod.itemBirthdayPresent.bday=Happy Birthday!
 tooltip.epicproportionsmod.itemBirthdayPresent.inside=I wonder what could be inside?
-tooltip.epicproportionsmod.itemBirthdayPresent_Green.bday=Happy Birtday!
+tooltip.epicproportionsmod.itemBirthdayPresent_Green.bday=Happy Birthday!
 tooltip.epicproportionsmod.itemBirthdayPresent_Green.inside=I wonder what could be inside?
 tooltip.epicproportionsmod.itemPatGun.ammotype=Consumes FuriousDestroyer Arrow
 tooltip.epicproportionsmod.itemJenGun.ammotype=Consumes SuperGirlyGamer Arrow
@@ -299,6 +306,9 @@ tooltip.epicproportionsmod.itemPatTNTLauncher.ammotype=Consumes FuriousDestroyer
 tooltip.epicproportionsmod.itemTrollTNTLauncher.ammotype=Consumes Troll TNT
 tooltip.epicproportionsmod.itemFartBombLauncher.ammotype=Consumes Fart Bomb
 tooltip.epicproportionsmod.itemNukeLauncher.ammotype=Consumes Nuke
+tooltip.epicproportionsmod.ItemMegaBirthdayPresentPlacer.bday=Happy Birthday!
+tooltip.epicproportionsmod.ItemMegaBirthdayPresentPlacer.inside=I wonder what could be inside?
+tooltip.epicproportionsmod.ItemMegaBirthdayPresentPlacer.big=Happy Birthday!
 
 	/Pat Chest Warning
 tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.0=****************WARNING************************
@@ -323,3 +333,4 @@ itemGroup.EpicProportionsMod=jtrent238's Epic Proportions Mod
 
 //Misc
 com.jtrent238.epicproportions.lib.LogHelper=Epic Proportions Mod Log
+commands.modinfo.usage=/modinfo

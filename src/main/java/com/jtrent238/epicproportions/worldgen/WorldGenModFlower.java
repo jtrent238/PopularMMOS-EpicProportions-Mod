@@ -4,6 +4,7 @@ import java.util.Random;
 
 import com.jtrent238.epicproportions.BlockLoader;
 
+import cpw.mods.fml.common.IWorldGenerator;
 import net.minecraft.block.Block;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.BiomeGenBase;

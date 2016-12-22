@@ -24,6 +24,7 @@ item.itemCandy_12.name=Jelly Beans
 item.itemCandy_13.name=Halloween Peeps
 item.itemCandy_14.name=Snickers Bar
 item.itemCandy_15.name=Twix Bar
+
 	/Weapons & Tools
 	/Armor
 		/Pat
@@ -35,7 +36,6 @@ item.itemCandy_15.name=Twix Bar
 item.itemSpawnSpookyPat.name=Spawn Spooky FuriousDestroyer
 item.itemSpawnSpookyJen.name=Spawn Spooky SuperGirlyGamer
 
-//Blocks
 tile.blockSpookyIngot.name=Spooky Ingot Block
 tile.blockSpookyEssenceOre.name=Spooky Essence Ore
 
@@ -55,5 +55,4 @@ entity.Entityjtrent238.name=jtrent238
 
 //Creative Tabs
 itemGroup.EpicProportionsMod_Halloween=jtrent238's Epic Proportions Mod Halloween Addon
-
 //Misc

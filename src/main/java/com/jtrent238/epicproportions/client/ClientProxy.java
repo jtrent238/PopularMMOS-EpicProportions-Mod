@@ -104,7 +104,10 @@ import cpw.mods.fml.relauncher.SideOnly;
 public class ClientProxy extends CommonProxy {
   
     private static Minecraft theMinecraft;
-
+ 
+    // Version checking instance
+ 	public static VersionChecker versionChecker;
+ 	public static boolean haveWarnedVersionOutOfDate = false;
  
 	
  	
@@ -179,47 +182,11 @@ public class ClientProxy extends CommonProxy {
 		
   }
   
-  /**
-   * Wrapper around displayCrashReportInternal
-   */
-  public void displayCrashReport(CrashReport p_71377_1_)
-  {
-      File file1 = new File(getMinecraft().mcDataDir, "crash-reports");
-      File file2 = new File(file1, "crash-" + (new SimpleDateFormat("yyyy-MM-dd_HH.mm.ss")).format(new Date()) + (EpicProportionsMod.MODID) + "-client.txt");
-      System.out.println(p_71377_1_.getCompleteReport());
-
-      int retVal;
-      if (p_71377_1_.getFile() != null)
-      {
-          System.out.println("#@!@# Game crashed! Crash report saved to: #@!@# " + p_71377_1_.getFile());
-          retVal = -1;
-      }
-      else if (p_71377_1_.saveToFile(file2))
-      {
-          System.out.println("#@!@# Game crashed! Crash report saved to: #@!@# " + file2.getAbsolutePath());
-          retVal = -1;
-      }
-      else
-      {
-          System.out.println("#@?@# Game crashed! Crash report could not be saved. #@?@#");
-          retVal = -2;
-      }
-      FMLCommonHandler.instance().handleExit(retVal);
-  }
-
-  /**
-   * Return the singleton Minecraft instance for the game
-   */
-  public static Minecraft getMinecraft()
-  {
-      /** Set to 'this' in Minecraft constructor; used by some settings get methods */
-      return theMinecraft;
-  }
 
   public void postInit(FMLPostInitializationEvent e) {
 	 
-	  EpicProportionsMod.versionChecker = new VersionChecker();
-	    Thread versionCheckThread = new Thread(EpicProportionsMod.versionChecker, "Version Check");
+	  ClientProxy.versionChecker = new VersionChecker();
+	    Thread versionCheckThread = new Thread(ClientProxy.versionChecker, "Version Check");
 	    versionCheckThread.start();
   }
   
@@ -228,8 +195,8 @@ public class ClientProxy extends CommonProxy {
   public void onEvent(PlayerTickEvent event)
   {
     
-      if (!EpicProportionsMod.haveWarnedVersionOutOfDate && event.player.worldObj.isRemote 
-            && !EpicProportionsMod.versionChecker.isLatestVersion())
+      if (!ClientProxy.haveWarnedVersionOutOfDate && event.player.worldObj.isRemote 
+            && !ClientProxy.versionChecker.isLatestVersion())
       {
           ClickEvent versionCheckChatClickEvent = new ClickEvent(ClickEvent.Action.OPEN_URL, 
                 "http://www.planetminecraft.com/mod/popularmmos-epicproportions-mod-season-9/");
@@ -238,7 +205,7 @@ public class ClientProxy extends CommonProxy {
                 new ChatComponentText("Your EpicProportions Mod is not latest version!  Click here to update.");
           versionWarningChatComponent.setChatStyle(clickableChatStyle);
           event.player.addChatMessage(versionWarningChatComponent);
-          EpicProportionsMod.haveWarnedVersionOutOfDate = true;
+          ClientProxy.haveWarnedVersionOutOfDate = true;
       }
     
   }

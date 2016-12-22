@@ -12,12 +12,14 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
+import scala.reflect.api.Trees.ThisApi;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
 
 public class ItemSuperPatArmor  extends ItemArmor{
 
 	private String textureName;
 	private int armorType;
+	private boolean hasenchanted;
 	private static final int enchant = ItemLoader.superenchantlvl;
 
 
@@ -77,4 +79,34 @@ public class ItemSuperPatArmor  extends ItemArmor{
 			par1ItemStack.addEnchantment(Enchantment.thorns, enchant);
 			
 	}
+	 
+	 
+	    /**
+	     * Called each tick as long the item is on a player inventory. Uses by maps to check if is on a player hand and
+	     * update it's contents.
+	     */
+	 /*   public void onUpdate(ItemStack p_77663_1_, World p_77663_2_, Entity p_77663_3_, int p_77663_4_, boolean p_77663_5_) 
+	    {
+	    	if(hasenchanted == false){
+	    	p_77663_1_.addEnchantment(Enchantment.unbreaking, enchant);
+	    	p_77663_1_.addEnchantment(Enchantment.aquaAffinity, enchant);
+	    	p_77663_1_.addEnchantment(Enchantment.blastProtection, enchant);
+	    	p_77663_1_.addEnchantment(Enchantment.featherFalling, enchant);
+	    	p_77663_1_.addEnchantment(Enchantment.fireProtection, enchant);
+	    	p_77663_1_.addEnchantment(Enchantment.projectileProtection, enchant);
+	    	p_77663_1_.addEnchantment(Enchantment.protection, enchant);
+	    	p_77663_1_.addEnchantment(Enchantment.respiration, enchant);
+	    	p_77663_1_.addEnchantment(Enchantment.thorns, enchant);
+	    	this.hasenchanted(true);
+	    	}
+	    	
+	    	return;
+	    }
+
+
+		private void hasenchanted(boolean b) {
+			
+		}
+*/
+
 }

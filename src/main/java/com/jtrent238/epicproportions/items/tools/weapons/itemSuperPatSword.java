@@ -92,7 +92,7 @@ public class itemSuperPatSword extends ItemSword
      * Adds an enchantment with a desired level on the ItemStack.
      * @param par1ItemStack 
      */
-    public void addEnchantment(Enchantment p_77966_1_, int p_77966_2_, ItemStack par1ItemStack)
+ /*   public void addEnchantment(Enchantment p_77966_1_, int p_77966_2_, ItemStack par1ItemStack)
     {
     	par1ItemStack.addEnchantment(Enchantment.unbreaking, enchant);
 		par1ItemStack.addEnchantment(Enchantment.fireAspect, enchant);
@@ -100,6 +100,6 @@ public class itemSuperPatSword extends ItemSword
 		par1ItemStack.addEnchantment(Enchantment.looting, enchant);
 		par1ItemStack.addEnchantment(Enchantment.smite, enchant);
 		par1ItemStack.addEnchantment(Enchantment.sharpness, enchant);
-    }
+    }*/
 }
 

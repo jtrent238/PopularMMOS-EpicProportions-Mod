@@ -1,0 +1,8 @@
+{
+    "Santa_HoHoHo": {"category": "master","sounds": [{"name": "Santa_HoHoHo","stream": false}]},
+	"Santa_MerryChristmas": {"category": "master","sounds": [{"name": "Santa_MerryChristmas","stream": false}]},
+	"Santa_Hit": {"category": "master","sounds": [{"name": "Santa_Hit","stream": false}]},
+	"GingerBreadMan_Hit": {"category": "master","sounds": [{"name": "GingerBreadMan_Hit","stream": false}]},
+	"JingleBells_Jingle": {"category": "master","sounds": [{"name": "JingleBells_Jingle","stream": false}]},
+	"SnowWand_Blow": {"category": "master","sounds": [{"name": "SnowWand_Blow","stream": false}]}
+	}

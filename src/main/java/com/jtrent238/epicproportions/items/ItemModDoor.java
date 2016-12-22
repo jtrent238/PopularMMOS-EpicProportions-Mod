@@ -45,13 +45,17 @@ public class ItemModDoor extends Item
             {
                 block = BlockLoader.BlockPatDoor;
             }
+            else
+            {
+                block = BlockLoader.BlockPatDoor;
+            }
             if (this.DoorType == DoorType.jen)
             {
                 block = BlockLoader.BlockJenDoor;
             }
             else
             {
-                block = BlockLoader.BlockPatDoor;
+                block = BlockLoader.BlockJenDoor;
             }
 
             if (p_77648_2_.canPlayerEdit(p_77648_4_, p_77648_5_, p_77648_6_, p_77648_7_, p_77648_1_) && p_77648_2_.canPlayerEdit(p_77648_4_, p_77648_5_ + 1, p_77648_6_, p_77648_7_, p_77648_1_))

@@ -1,7 +1,9 @@
 package com.jtrent238.epicproportions.tileentity;
 
 import com.jtrent238.epicproportions.BlockLoader;
+import com.jtrent238.epicproportions.entity.EntityFred2_0;
 
+import net.minecraft.entity.Entity;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.Packet;
 import net.minecraft.network.play.server.S35PacketUpdateTileEntity;
@@ -34,9 +36,9 @@ public class TileEntityFred2_0Spawner    extends TileEntity
         {
             return TileEntityFred2_0Spawner.this.zCoord;
         }
-        public void setRandomEntity(MobSpawnerBaseLogic.WeightedRandomMinecart p_98277_1_)
+        public void setEntity(Entity p_98277_1_)
         {
-            super.setRandomEntity(p_98277_1_);
+            super.setEntityName(p_98277_1_);
 
             if (this.getSpawnerWorld() != null)
             {

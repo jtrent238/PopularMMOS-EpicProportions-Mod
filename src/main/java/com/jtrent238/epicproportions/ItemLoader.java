@@ -1,5 +1,6 @@
 package com.jtrent238.epicproportions;
 
+import com.jtrent238.epicproportions.items.ItemEpicProportionsPainting;
 import com.jtrent238.epicproportions.items.ItemJenDoor;
 import com.jtrent238.epicproportions.items.ItemModDoor;
 import com.jtrent238.epicproportions.items.ItemModInfo;
@@ -34,6 +35,12 @@ import com.jtrent238.epicproportions.items.armor.ItemSuperJenArmor;
 import com.jtrent238.epicproportions.items.armor.ItemSuperPatArmor;
 import com.jtrent238.epicproportions.items.blockplacers.itemBirthdayPresent;
 import com.jtrent238.epicproportions.items.blockplacers.itemBirthdayPresent_Green;
+import com.jtrent238.epicproportions.items.buckets.ItemJenBucket;
+import com.jtrent238.epicproportions.items.buckets.ItemJenBucket_lava;
+import com.jtrent238.epicproportions.items.buckets.ItemJenBucket_water;
+import com.jtrent238.epicproportions.items.buckets.ItemPatBucket;
+import com.jtrent238.epicproportions.items.buckets.ItemPatBucket_lava;
+import com.jtrent238.epicproportions.items.buckets.ItemPatBucket_water;
 import com.jtrent238.epicproportions.items.cakes.ItemJenCake;
 import com.jtrent238.epicproportions.items.cakes.ItemPatCake;
 import com.jtrent238.epicproportions.items.seeds.ItemPumpkinJen_Seeds;
@@ -72,6 +79,7 @@ import com.jtrent238.epicproportions.items.statues.itembombyStatue;
 import com.jtrent238.epicproportions.items.statues.itemjtrent238Statue;
 import com.jtrent238.epicproportions.items.statues.itemkittyStatue;
 import com.jtrent238.epicproportions.items.statues.itemsparkyStatue;
+import com.jtrent238.epicproportions.items.structureplacers.ItemMegaBirthdayPresentPlacer;
 import com.jtrent238.epicproportions.items.structureplacers.itemBombyStructurePlacer;
 import com.jtrent238.epicproportions.items.structureplacers.itemHouseOfEpicProportionsPlacer;
 import com.jtrent238.epicproportions.items.structureplacers.itemJenWellPlacer;
@@ -171,6 +179,7 @@ import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.EnumPlantType;
 import net.minecraft.item.ItemFood;
+import net.minecraft.item.ItemMonsterPlacer;
 import net.minecraft.item.ItemRecord;
 import net.minecraft.item.ItemSeeds;
 import net.minecraft.potion.Potion;
@@ -228,6 +237,18 @@ public class ItemLoader {
 	public static Item itemPotion;
 	public static Item ItemPumpkinPat_Seeds;
 	public static Item ItemPumpkinJen_Seeds;
+	public static Item ItemEpicProportionsPainting;
+	public static Item ItemMegaBirthdayPresentPlacer;
+	public static Item ItemPatCake;
+	public static Item ItemJenCake;
+	public static Item ItemPatBucket; 
+	public static Item ItemPatBucket_water; 
+	public static Item ItemPatBucket_lava;
+	public static Item ItemJenBucket;
+	public static Item ItemJenBucket_water;
+	public static Item ItemJenBucket_lava;
+
+
 	
 	
 	//Weapons & Tools
@@ -280,8 +301,7 @@ public class ItemLoader {
 	public static Item itemTrollTNTLauncher;
 	public static Item itemFartBombLauncher;
 	public static Item itemNukeLauncher;
-	public static Item ItemPatCake;
-	public static Item ItemJenCake;
+
 	
 	
 	
@@ -340,6 +360,7 @@ public class ItemLoader {
 	
 	public static ArmorMaterial SUPER_PAT_ARMOR = EnumHelper.addArmorMaterial("PAT_ARMOR", 16, new int[] {3, 8, 6, 3}, 30);
 	public static ArmorMaterial SUPER_JEN_ARMOR = EnumHelper.addArmorMaterial("JEN_ARMOR", 17, new int[] {3, 8, 6, 3}, 30);
+
 	
 	public static final int superenchantlvl = 1000000;
 
@@ -416,6 +437,14 @@ public static void LoadItems() {
 	ItemPumpkinJen_Seeds = new ItemPumpkinJen_Seeds(BlockLoader.BlockPumpkinJen, Blocks.farmland).setUnlocalizedName("ItemPumpkinJen_Seeds").setTextureName("epicproportionsmod:ItemPumpkinJen_Seeds").setCreativeTab(/*/EpicProportionsMod.EpicProportionsMod/*/(null));
 	ItemPatCake = new ItemPatCake().setUnlocalizedName("ItemPatCake").setTextureName("epicproportionsmod:ItemPatCake").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	ItemJenCake = new ItemJenCake().setUnlocalizedName("ItemJenCake").setTextureName("epicproportionsmod:ItemJenCake").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	ItemEpicProportionsPainting = new ItemEpicProportionsPainting(null).setUnlocalizedName("ItemEpicProportionsPainting").setTextureName("epicproportionsmod:ItemEpicProportionsPainting")/*/.setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
+	ItemMegaBirthdayPresentPlacer  = new ItemMegaBirthdayPresentPlacer(0).setUnlocalizedName("ItemMegaBirthdayPresentPlacer").setTextureName("epicproportionsmod:ItemMegaBirthdayPresentPlacer").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	ItemPatBucket  = new ItemPatBucket(Blocks.air).setUnlocalizedName("ItemPatBucket").setTextureName("epicproportionsmod:ItemPatBucket").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	ItemPatBucket_water  = new ItemPatBucket_water(Blocks.flowing_water).setUnlocalizedName("ItemPatBucket_water").setTextureName("epicproportionsmod:ItemPatBucket_water").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	ItemPatBucket_lava  = new ItemPatBucket_lava(Blocks.flowing_lava).setUnlocalizedName("ItemPatBucket_lava").setTextureName("epicproportionsmod:ItemPatBucket_lava").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	ItemJenBucket  = new ItemJenBucket(Blocks.air).setUnlocalizedName("ItemJenBucket").setTextureName("epicproportionsmod:ItemJenBucket").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	ItemJenBucket_water  = new ItemJenBucket_water(Blocks.flowing_water).setUnlocalizedName("ItemJenBucket_water").setTextureName("epicproportionsmod:ItemJenBucket_water").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	ItemJenBucket_lava  = new ItemJenBucket_lava(Blocks.flowing_lava).setUnlocalizedName("ItemJenBucket_lava").setTextureName("epicproportionsmod:ItemJenBucket_lava").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	
 	
 	//Weapons & Tools
@@ -504,6 +533,7 @@ public static void LoadItems() {
 	itemSuperJenBoots = new ItemSuperJenArmor(ItemArmor.ArmorMaterial.DIAMOND, 3, 3).setUnlocalizedName("itemSuperJenBoots").setTextureName("epicproportionsmod:itemSuperJenBoots").setCreativeTab(EpicProportionsMod.EpicProportionsMod);; // 3 for boots
 
 
+
 		registerItems();
 }
 
@@ -534,9 +564,6 @@ private static void registerItems(){
 	GameRegistry.registerItem(itemJensHoleStructurePlacer_3, itemJensHoleStructurePlacer_3.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemJensHoleStructurePlacer_4, itemJensHoleStructurePlacer_4.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemJensHoleStructurePlacer_5, itemJensHoleStructurePlacer_5.getUnlocalizedName().substring(5));
-	GameRegistry.registerItem(itemSwordOfEpicProportions_Part1, itemSwordOfEpicProportions_Part1.getUnlocalizedName().substring(5));
-	GameRegistry.registerItem(itemSwordOfEpicProportions_Part2, itemSwordOfEpicProportions_Part2.getUnlocalizedName().substring(5));
-	GameRegistry.registerItem(itemSwordOfEpicProportions_Part3, itemSwordOfEpicProportions_Part3.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemPickOfEpicProportions, itemPickOfEpicProportions.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemShovelOfEpicProportions, itemShovelOfEpicProportions.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemHoeOfEpicProportions, itemHoeOfEpicProportions.getUnlocalizedName().substring(5));
@@ -583,6 +610,14 @@ private static void registerItems(){
 	GameRegistry.registerItem(ItemPumpkinJen_Seeds, ItemPumpkinJen_Seeds.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(ItemPatCake, ItemPatCake.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(ItemJenCake, ItemJenCake.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(ItemEpicProportionsPainting, ItemEpicProportionsPainting.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(ItemMegaBirthdayPresentPlacer, ItemMegaBirthdayPresentPlacer.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(ItemPatBucket, ItemPatBucket.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(ItemJenBucket, ItemJenBucket.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(ItemPatBucket_water, ItemPatBucket_water.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(ItemPatBucket_lava, ItemPatBucket_lava.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(ItemJenBucket_water, ItemJenBucket_water.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(ItemJenBucket_lava, ItemJenBucket_lava.getUnlocalizedName().substring(5));
 	
 	
 
@@ -605,21 +640,90 @@ private static void registerItems(){
 	GameRegistry.registerItem(itemJenBow, itemJenBow.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemPatMultiTool, itemPatMultiTool.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemJenMultiTool, itemJenMultiTool.getUnlocalizedName().substring(5));
-	GameRegistry.registerItem(itemSuperPatSword, itemSuperPatSword.getUnlocalizedName().substring(5));
-	GameRegistry.registerItem(itemSuperJenSword, itemSuperJenSword.getUnlocalizedName().substring(5));
-	GameRegistry.registerItem(itemSuperPatPick, itemSuperPatPick.getUnlocalizedName().substring(5));
-	GameRegistry.registerItem(itemSuperJenPick, itemSuperJenPick.getUnlocalizedName().substring(5));
-	GameRegistry.registerItem(itemSuperPatAxe, itemSuperPatAxe.getUnlocalizedName().substring(5));
-	GameRegistry.registerItem(itemSuperJenAxe, itemSuperJenAxe.getUnlocalizedName().substring(5));
-	GameRegistry.registerItem(itemSuperPatShovel, itemSuperPatShovel.getUnlocalizedName().substring(5));
-	GameRegistry.registerItem(itemSuperJenShovel, itemSuperJenShovel.getUnlocalizedName().substring(5));
-	GameRegistry.registerItem(itemSuperPatHoe, itemSuperPatHoe.getUnlocalizedName().substring(5));
-	GameRegistry.registerItem(itemSuperJenHoe, itemSuperJenHoe.getUnlocalizedName().substring(5));
-	GameRegistry.registerItem(itemSuperPatMultiTool, itemSuperPatMultiTool.getUnlocalizedName().substring(5));
-	GameRegistry.registerItem(itemSuperJenMultiTool, itemSuperJenMultiTool.getUnlocalizedName().substring(5));
-	GameRegistry.registerItem(itemSwordOfEpicProportions, itemSwordOfEpicProportions.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemPatGun, itemPatGun.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemJenGun, itemJenGun.getUnlocalizedName().substring(5));
+	
+	if(EpicProportionsMod.ENABLE_SUPER_PAT_MULTITOOL == true){
+		
+		GameRegistry.registerItem(itemSuperPatMultiTool, itemSuperPatMultiTool.getUnlocalizedName().substring(5));
+		
+	}
+	
+	if(EpicProportionsMod.ENABLE_SUPER_JEN_MULTITOOL == true){
+		
+		GameRegistry.registerItem(itemSuperJenMultiTool, itemSuperJenMultiTool.getUnlocalizedName().substring(5));
+		
+	}
+	
+	if(EpicProportionsMod.ENABLE_SUPER_JEN_SWORD == true){
+		
+		GameRegistry.registerItem(itemSuperJenSword, itemSuperJenSword.getUnlocalizedName().substring(5));
+		
+	}
+	
+	if(EpicProportionsMod.ENABLE_SUPER_JEN_PICKAXE == true){
+		
+		GameRegistry.registerItem(itemSuperJenPick, itemSuperJenPick.getUnlocalizedName().substring(5));
+		
+	}
+	
+	if(EpicProportionsMod.ENABLE_SUPER_JEN_SHOVEL == true){
+		
+		GameRegistry.registerItem(itemSuperJenShovel, itemSuperJenShovel.getUnlocalizedName().substring(5));
+		
+	}
+	
+	if(EpicProportionsMod.ENABLE_SUPER_JEN_AXE == true){
+		
+		GameRegistry.registerItem(itemSuperJenAxe, itemSuperJenAxe.getUnlocalizedName().substring(5));
+		
+	}
+	
+	if(EpicProportionsMod.ENABLE_SUPER_JEN_HOE == true){
+
+		GameRegistry.registerItem(itemSuperJenHoe, itemSuperJenHoe.getUnlocalizedName().substring(5));
+		
+	}
+	
+	if(EpicProportionsMod.ENABLE_SUPER_PAT_SWORD == true){
+		
+		GameRegistry.registerItem(itemSuperPatSword, itemSuperPatSword.getUnlocalizedName().substring(5));
+		
+	}
+	
+	if(EpicProportionsMod.ENABLE_SUPER_PAT_PICKAXE == true){
+		
+		GameRegistry.registerItem(itemSuperPatPick, itemSuperPatPick.getUnlocalizedName().substring(5));
+		
+	}
+	
+	if(EpicProportionsMod.ENABLE_SUPER_PAT_SHOVEL == true){
+		
+		GameRegistry.registerItem(itemSuperPatShovel, itemSuperPatShovel.getUnlocalizedName().substring(5));
+		
+	}
+	
+	if(EpicProportionsMod.ENABLE_SUPER_PAT_AXE == true){
+		
+		GameRegistry.registerItem(itemSuperPatAxe, itemSuperPatAxe.getUnlocalizedName().substring(5));
+		
+	}
+	
+	if(EpicProportionsMod.ENABLE_SUPER_PAT_HOE == true){
+		
+		GameRegistry.registerItem(itemSuperPatHoe, itemSuperPatHoe.getUnlocalizedName().substring(5));
+		
+	}
+
+	
+	if(EpicProportionsMod.ENABLE_SWORD_OF_EPICPROPORTIONS == true){
+		
+		GameRegistry.registerItem(itemSwordOfEpicProportions_Part1, itemSwordOfEpicProportions_Part1.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(itemSwordOfEpicProportions_Part2, itemSwordOfEpicProportions_Part2.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(itemSwordOfEpicProportions_Part3, itemSwordOfEpicProportions_Part3.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(itemSwordOfEpicProportions, itemSwordOfEpicProportions.getUnlocalizedName().substring(5));
+		
+		}
 	
 	
 	
@@ -663,17 +767,27 @@ private static void registerItems(){
 	GameRegistry.registerItem(itemJenChestplate, itemJenChestplate.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemJenLeggings, itemJenLeggings.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemJenBoots, itemJenBoots.getUnlocalizedName().substring(5));
-			//Super PatArmor
-	GameRegistry.registerItem(itemSuperPatHelmet, itemSuperPatHelmet.getUnlocalizedName().substring(5));
-	GameRegistry.registerItem(itemSuperPatChestplate, itemSuperPatChestplate.getUnlocalizedName().substring(5));
-	GameRegistry.registerItem(itemSuperPatLeggings, itemSuperPatLeggings.getUnlocalizedName().substring(5));
-	GameRegistry.registerItem(itemSuperPatBoots, itemSuperPatBoots.getUnlocalizedName().substring(5));
-			//Super JenArmor
-	GameRegistry.registerItem(itemSuperJenHelmet, itemSuperJenHelmet.getUnlocalizedName().substring(5));
-	GameRegistry.registerItem(itemSuperJenChestplate, itemSuperJenChestplate.getUnlocalizedName().substring(5));
-	GameRegistry.registerItem(itemSuperJenLeggings, itemSuperJenLeggings.getUnlocalizedName().substring(5));
-	GameRegistry.registerItem(itemSuperJenBoots, itemSuperJenBoots.getUnlocalizedName().substring(5));
 	
+		if(EpicProportionsMod.ENABLE_SUPER_JEN_ARMOR == true){
+		
+		//Super JenArmor
+		GameRegistry.registerItem(itemSuperJenHelmet, itemSuperJenHelmet.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(itemSuperJenChestplate, itemSuperJenChestplate.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(itemSuperJenLeggings, itemSuperJenLeggings.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(itemSuperJenBoots, itemSuperJenBoots.getUnlocalizedName().substring(5));
+		
+				}
+	
+		if(EpicProportionsMod.ENABLE_SUPER_PAT_ARMOR == true){
+		
+		//Super PatArmor
+		GameRegistry.registerItem(itemSuperPatHelmet, itemSuperPatHelmet.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(itemSuperPatChestplate, itemSuperPatChestplate.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(itemSuperPatLeggings, itemSuperPatLeggings.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(itemSuperPatBoots, itemSuperPatBoots.getUnlocalizedName().substring(5));
+		
+				}
+			
 }
 
 }

@@ -2,6 +2,7 @@ package com.jtrent238.epicproportions.items.tools;
 
 
 import net.minecraft.enchantment.Enchantment;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemHoe;
 import net.minecraft.item.ItemSpade;
@@ -17,6 +18,7 @@ import net.minecraft.world.World;
 public class itemSuperPatHoe extends ItemHoe{
 
 	private static final int enchant = ItemLoader.superenchantlvl;
+	private boolean hasenchanted;
 
 	public itemSuperPatHoe(ToolMaterial EMERALD) {
 		super(EMERALD);
@@ -33,7 +35,24 @@ public class itemSuperPatHoe extends ItemHoe{
 		par1ItemStack.addEnchantment(Enchantment.unbreaking, enchant);
 
 }
-	
+	/**
+     * Called each tick as long the item is on a player inventory. Uses by maps to check if is on a player hand and
+     * update it's contents.
+     */
+   /* public void onUpdate(ItemStack par1ItemStack, World p_77663_2_, Entity p_77663_3_, int p_77663_4_, boolean p_77663_5_) 
+    {
+    	if(hasenchanted == false){
+    		par1ItemStack.addEnchantment(Enchantment.unbreaking, enchant);
+    	this.hasenchanted(true);
+    	}
+    	
+    	return;
+    }
+
+
+	private void hasenchanted(boolean b) {
+		
+	}*/
 }
 
 

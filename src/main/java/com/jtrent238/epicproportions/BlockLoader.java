@@ -1,5 +1,6 @@
 package com.jtrent238.epicproportions;
 
+import com.jtrent238.epicproportions.blocks.BlockBirthdayPresent_Custom;
 import com.jtrent238.epicproportions.blocks.BlockFred2_0Spawner;
 import com.jtrent238.epicproportions.blocks.BlockJenDoor;
 import com.jtrent238.epicproportions.blocks.BlockModDoor;
@@ -50,6 +51,7 @@ public class BlockLoader {
 	public static Block blockPatTNT;
 	public static Block blockBirthdayPresent;
 	public static Block blockBirthdayPresent_Green;
+	public static Block BlockBirthdayPresent_Custom;
 	public static Block blockPatChest;
 	public static Block blockJenChest;
 	public static Block blockTrollTNT;
@@ -79,6 +81,7 @@ public class BlockLoader {
 	
 	
 	
+	
 	public static final Block.SoundType soundTypeStone = new Block.SoundType("block_squish", 1.0F, 1.0F);
 	
 	//public static final BlockFlower jen_flower = (BlockFlower)Block.blockRegistry.getObject("jen_flower");
@@ -98,6 +101,8 @@ public class BlockLoader {
 		blockPatTNT = new blockPatTNT().setBlockName("blockPatTNT").setBlockTextureName("epicproportionsmod:blockPatTNT").setHardness(0F).setStepSound(Block.soundTypeStone).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 		blockBirthdayPresent = new blockBirthdayPresent(Material.ground).setBlockName("blockBirthdayPresent").setBlockTextureName("epicproportionsmod:blockBirthdayPresent").setHardness(0.5F).setStepSound(Block.soundTypeStone)/*/.setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
 		blockBirthdayPresent_Green = new blockBirthdayPresent_Green(Material.ground).setBlockName("blockBirthdayPresent_Green").setBlockTextureName("epicproportionsmod:blockBirthdayPresent_Green").setHardness(0.5F).setStepSound(Block.soundTypeStone)/*/.setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
+		//BlockBirthdayPresent_Custom = new BlockBirthdayPresent_Custom(Material.ground).setBlockName(BlockBirthdayPresent_Custom.getCustomname).setBlockTextureName("epicproportionsmod:" + BlockBirthdayPresent_Custom.getCustomName).setHardness(0.5F).setStepSound(Block.soundTypeStone).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+		
 		blockPatChest = new blockPatChest(0).setBlockName("blockPatChest").setBlockTextureName("epicproportionsmod:blockPatChest").setHardness(0.5F).setStepSound(Block.soundTypeWood).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 		blockJenChest = new blockJenChest(0).setBlockName("blockJenChest").setBlockTextureName("epicproportionsmod:blockJenChest").setHardness(0.5F).setStepSound(Block.soundTypeWood).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 		blockTrollTNT = new blockTrollTNT().setBlockName("blockTrollTNT").setBlockTextureName("epicproportionsmod:blockTrollTNT").setHardness(0F).setStepSound(Block.soundTypeStone).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
@@ -168,6 +173,11 @@ public class BlockLoader {
 		GameRegistry.registerBlock(BlockModStem, "BlockModStem");
 		GameRegistry.registerBlock(BlockPatCake, "BlockPatCake");
 		GameRegistry.registerBlock(BlockJenCake, "BlockJenCake");
+		
+
+		if(EpicProportionsMod.BIRTHDAYPRESENT_CUSTOM == true){
+			GameRegistry.registerBlock(BlockBirthdayPresent_Custom, "BlockBirthdayPresent_Custom");
+		}
 		
 	}
 	

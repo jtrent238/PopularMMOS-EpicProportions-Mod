@@ -32,6 +32,7 @@ import net.minecraft.entity.effect.EntityLightningBolt;
 import net.minecraft.entity.monster.EntityGolem;
 import net.minecraft.entity.monster.IMob;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.DamageSource;
@@ -209,6 +210,7 @@ this.dropItem(ItemLoader.itemCaptainCookieCookie, 1);
 		  /**
 		    * Called when a player interacts with a mob. e.g. gets milk from a cow, gets into the saddle on a pig.
 		    */
+				/*
 		   public boolean interact(EntityPlayer p_70085_1_, World world,EntityPlayer entityplayer)
 		   {
 		       ItemStack itemstack = p_70085_1_.inventory.getCurrentItem();
@@ -227,8 +229,41 @@ this.dropItem(ItemLoader.itemCaptainCookieCookie, 1);
 		       
 		           return true;
 		       }
-		       
-		   
+				 */
+		   /**
+		     * Called when a player interacts with a mob. e.g. gets milk from a cow, gets into the saddle on a pig.
+		     */
+		    public boolean interact(EntityPlayer p_70085_1_)
+		    {
+		        ItemStack itemstack = p_70085_1_.inventory.getCurrentItem();
+
+		        if (itemstack != null && itemstack.getItem() == ItemLoader.itemSwordOfEpicProportions)
+		        {
+		            if (itemstack.stackSize-- == 1)
+		            {
+		            	if(!world.isRemote)
+		 		       {
+		 		    	   EntityCaptianCookie_Evil par1 = new EntityCaptianCookie_Evil(world); //Just change"MyEntityCow" to any entity you would like to spawn
+		 		       par1.setPosition(p_70085_1_.posX, p_70085_1_.posY+2,p_70085_1_.posZ+2); //These are the coordinates where he will appear 
+		 		       world.spawnEntityInWorld(par1);
+		 		       	this.kill();
+			 		    this.spawnExplosionParticle();
+		 		       }
+		            	
+		            }
+		            else if (!p_70085_1_.inventory.addItemStackToInventory(new ItemStack(Blocks.air)))
+		            {
+		                p_70085_1_.dropPlayerItemWithRandomChoice(new ItemStack(Blocks.air, 1, 0), false);
+		            }
+
+		            return true;
+		        }
+		        else
+		        {
+		            return super.interact(p_70085_1_);
+		        }
+		    }
+
 		   
 		public String getEntityName(){
 			return "Captian Cookie";

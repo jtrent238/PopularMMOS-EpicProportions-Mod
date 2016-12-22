@@ -7,6 +7,7 @@ import com.jtrent238.epicproportions.ItemLoader;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.enchantment.Enchantment;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.player.EntityPlayer;
@@ -20,6 +21,8 @@ public class itemSuperJenSword extends ItemSword
 	private static final int enchant = ItemLoader.superenchantlvl;
 
 	private double field_150934_a;
+
+	private boolean hasenchanted;
 
 	public itemSuperJenSword(ToolMaterial EMERALD) {
 		super(EMERALD);
@@ -78,5 +81,30 @@ public class itemSuperJenSword extends ItemSword
 		par1ItemStack.addEnchantment(Enchantment.smite, enchant);
 		par1ItemStack.addEnchantment(Enchantment.sharpness, enchant);
     }
+    
+    /**
+     * Called each tick as long the item is on a player inventory. Uses by maps to check if is on a player hand and
+     * update it's contents.
+     */
+   /* public void onUpdate(ItemStack p_77663_1_, World p_77663_2_, Entity p_77663_3_, int p_77663_4_, boolean p_77663_5_) 
+    {
+    	if(hasenchanted == false){
+    		p_77663_1_.addEnchantment(Enchantment.unbreaking, enchant);
+    		p_77663_1_.addEnchantment(Enchantment.fireAspect, enchant);
+    		p_77663_1_.addEnchantment(Enchantment.knockback, enchant);
+    		p_77663_1_.addEnchantment(Enchantment.looting, enchant);
+    		p_77663_1_.addEnchantment(Enchantment.smite, enchant);
+    		p_77663_1_.addEnchantment(Enchantment.sharpness, enchant);
+    	this.hasenchanted(true);
+    	}
+    	
+    	return;
+    }
+
+
+	private void hasenchanted(boolean b) {
+		
+	}
+*/
 }
 

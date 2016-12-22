@@ -98,6 +98,12 @@ public class Recipes {
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemShovelOfEpicProportions_Part3), "SSS", "SXS", "SSS", 'X', ItemLoader.itemSuperJenShovel, 'S', ItemLoader.itemEpicProportionsStar);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itempatapple), "PPP", "PXP", "PPP", 'X', Items.apple, 'P', ItemLoader.itemPatIngot);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemjenapple), "JJJ", "JXJ", "JJJ", 'X', Items.apple, 'J', ItemLoader.itemJenIngot);
+		GameRegistry.addShapedRecipe(new ItemStack(BlockLoader.blockPatTNT), "XXX", "XTX", "XXX", 'X', ItemLoader.itemPatIngot, 'T' , Blocks.tnt);
+		GameRegistry.addShapedRecipe(new ItemStack(BlockLoader.blockTrollTNT), "XXX", "XTX", "XXX", 'X', Blocks.dirt, 'T' , Blocks.tnt);
+		GameRegistry.addShapedRecipe(new ItemStack(BlockLoader.blockFartBomb), "XXX", "GTG", "XXX", 'X', Blocks.dirt, 'T' , Blocks.tnt, 'G', Blocks.gravel);
+		GameRegistry.addShapedRecipe(new ItemStack(BlockLoader.BlockNuke), "XXX", "XTX", "XXX", 'X', BlockLoader.blockPatTNT, 'T' , ItemLoader.itemPatStar);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemJenBucket), "XBX", "BXB", 'X', ItemLoader.itemJenIngot);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemPatBucket), "XBX", "BXB", 'X', ItemLoader.itemPatIngot);
 		
 	}
 	
@@ -115,7 +121,7 @@ public class Recipes {
 		GameRegistry.addSmelting(BlockLoader.blockJenOre, new ItemStack (ItemLoader.itemJenIngot, 1), 2F );
 		GameRegistry.addSmelting(ItemLoader.itemJenmeat_raw, new ItemStack (ItemLoader.itemJenmeat_cooked, 1), 2F );
 		GameRegistry.addSmelting(ItemLoader.itemPatmeat_raw, new ItemStack (ItemLoader.itemPatmeat_cooked, 1), 2F );
-		GameRegistry.addSmelting(new ItemStack(Items.fish, 3), new ItemStack (ItemLoader.ItemCookedPufferFish, 1), 2F );
+		GameRegistry.addSmelting(new ItemStack(Items.fish, 1, 3), new ItemStack (ItemLoader.ItemCookedPufferFish, 1), 2F );
 			   }
 	
 	public static void addOreDictionarySmelteryRecipes ()

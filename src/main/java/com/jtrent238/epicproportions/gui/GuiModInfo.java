@@ -9,6 +9,8 @@ import net.minecraft.util.ResourceLocation;
 
 public class GuiModInfo extends Gui
 {
+	public static final int GuiModInfo_ID = 1645;
+	
 	private static ResourceLocation res_string;
 	private static final ResourceLocation res = res_string;
 	String text0 = "******************************************************************" ;

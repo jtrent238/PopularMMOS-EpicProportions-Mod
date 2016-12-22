@@ -1,5 +1,76 @@
 Epic Proportions Mod ChangeLog
 
+1.3.7.5
+- Added Christmas Addon
+- Added Candy Cane (Christmas Addon)
+- Added Candy Cane Ingot (Christmas Addon)
+- Added Christmas Tree (Christmas Addon)
+- Added Red Christmas Stocking (Christmas Addon)
+- Added Gree Christmas Stocking (Christmas Addon)
+- Added Candy Cane Ore (Christmas Addon)
+- Added Santa (Christmas Addon)
+- Added Gingerbread Man [Item] (Christmas Addon)
+- Added Gingerbread Man [Entity] (Christmas Addon)
+- Added Gumdrops (Christmas Addon)
+- Added Candy Cane Block (Christmas Addon)
+- Added Gingerbread Sword (Christmas Addon)
+- Added Gingerbread Pickaxe (Christmas Addon)
+- Added Gingerbread Axe (Christmas Addon)
+- Added Gingerbread Shovel (Christmas Addon)
+- Added Gingerbread Hoe (Christmas Addon)
+- Added Gingerbread Block (Christmas Addon)
+- Added Frosted Glass (Christmas Addon)
+- Added Frosted Glass Pane (Christmas Addon)
+- Added So when given Captian Cookie SOEP Evil CC Spawns
+- Added Mod Info File (Generates on game run)
+- Added Mega Birthday Present
+- Added Red Christmas Light (Christmas Addon)
+- Added Green Christmas Light (Christmas Addon)
+- Added Orange Christmas Light (Christmas Addon)
+- Added Lime Christmas Light (Christmas Addon)
+- Added Light blue Christmas Light (Christmas Addon)
+- Added White Christmas Light (Christmas Addon)
+- Added Magenta Christmas Light (Christmas Addon)
+- Added Purple Christmas Light (Christmas Addon)
+- Added Blue Christmas Light (Christmas Addon)
+- Added Pink Christmas Light (Christmas Addon)
+- Added Yellow Christmas Light (Christmas Addon)
+- Added Cyan Christmas Light (Christmas Addon)
+- Added Filament (Christmas Addon)
+- Added Fruit Cake (Christmas Addon)
+- Added Jingle Bells (Christmas Addon)
+- Added Snow Wand (Christmas Addon)
+- Added CandyCane Sword (Christmas Addon)
+- Added CandyCane Pickaxe (Christmas Addon)
+- Added CandyCane Axe (Christmas Addon)
+- Added CandyCane Shovel (Christmas Addon)
+- Added CandyCane Hoe (Christmas Addon)
+- Added CandyCane Helmet (Christmas Addon)
+- Added CandyCane Chestplate (Christmas Addon)
+- Added CandyCane Leggings (Christmas Addon)
+- Added CandyCane Boots (Christmas Addon)
+- Added Gingerbread Helmet (Christmas Addon)
+- Added Gingerbread Chestplate (Christmas Addon)
+- Added Gingerbread Leggings (Christmas Addon)
+- Added Gingerbread Boots (Christmas Addon)
+- Added Giant Snowball (Christmas Addon)
+- Added FuriousDestroyer Bucket
+- Added FuriousDestroyer Bucket of Water
+- Added FuriousDestroyer Bucket of Lava
+- Added SuperGirlyGamer Bucket
+- Added SuperGirlyGamer Bucket of Water
+- Added SuperGirlyGamer Bucket of Lava
+- Added Developer Mode
+- Added Crafting Recipe For Troll TNT
+- Added Crafting Recipe For Fart Bomb
+- Added Crafting Recipe For FuriousDestroyer TNT
+- Added Crafting Recipe For Nuke
+- Fixed House of EpicProportions
+- Fixed "Happy Birthday" being misspelled on Birthday Presents
+- Fixed Nuke Texture
+- Fixed Ores Not Generating
+
+
 1.2.7.5
 - Added Spooky Ingot To Birthday Present
 - Added Spooky Essence To Birthday Present

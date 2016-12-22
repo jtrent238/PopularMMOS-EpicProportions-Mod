@@ -1,0 +1,116 @@
+//jtrent238's Epic Proportions Mod Lang File
+//en_US
+
+//Items
+item.ItemCandyCane.name=Candy Cane
+item.ItemCandyCaneIngot.name=Candy Cane Ingot
+item.ItemChristmasTree.name=Christmas Tree
+item.ItemStocking_red.name=Red Christmas Stocking
+item.ItemStocking_green.name=Green Christmas Stocking
+item.ItemGingerBreadMan.name=Gingerbread Man
+item.ItemGumDrop.name=Gumdrops
+item.ItemGingerbreadDoor.name=Gingerbread Door
+item.ItemBulb.red.name=Red Chistmas Light
+item.ItemBulb.green.name=Green Christmas Light
+item.ItemBulb.orange.name=Orange Christmas Light
+item.ItemBulb.lime.name=Lime Christmas Light
+item.ItemBulb.lightBlue.name=Light blue Christmas Light
+item.ItemBulb.white.name=White Christmas Light
+item.ItemBulb.magenta.name=Magenta Christmas Light
+item.ItemBulb.purple.name=Purple Christmas Light
+item.ItemBulb.blue.name=Blue Christmas Light
+item.ItemBulb.pink.name=Pink Christmas Light
+item.ItemBulb.yellow.name=Yellow Christmas Light
+item.ItemBulb.cyan.name=Cyan Christmas Light
+Item.ItemFilament.name=Filament
+item.ItemFruitCake.name=Fruit Cake
+item.ItemJingleBells.name=Jingle Bells
+item.ItemSnowWand.name=Snow Wand
+item.ItemCandyCaneSword.name=CandyCane Sword
+item.ItemCandyCanePickaxe.name=CandyCane Pickaxe
+item.ItemCandyCaneAxe.name=CandyCane Axe
+item.ItemCandyCaneShovel.name=CandyCane Shovel
+item.ItemCandyCaneHoe.name=CandyCane Hoe
+item.ItemCandyCaneHelm.name=CandyCane Helment
+item.ItemCandyCaneChest.name=CandyCane Chestplate
+item.ItemCandyCaneLegs.name=CandyCane Leggings
+item.ItemCandyCaneBoots.name=CandyCane Boots
+item.ItemGingerBreadHelm.name=Gingerbread Helment
+item.ItemGingerBreadChest.name=Gingerbread Chestplate
+item.ItemGingerBreadLegs.name=Gingerbread Leggings
+item.ItemGingerBreadBoots.name=Gingerbread Boots
+item.ItemGiantSnowball.name=Giant Snowball
+
+
+
+
+	/Weapons & Tools
+item.ItemGingerBreadSword.name=Gingerbread Sword
+item.ItemGingerBreadPickaxe.name=Gingerbread Pickaxe
+item.ItemGingerBreadAxe.name=Gingerbread Axe
+item.ItemGingerBreadShovel.name=Gingerbread Shovel
+item.ItemGingerBreadHoe.name=Gingerbread Hoe
+
+	/Armor
+	/Spawn Eggs
+item.ItemSpawnSanta.name=Spawn Santa
+item.ItemSpawnGingerBreadMan.name=Spawn Gingerbread Man
+item.ItemSpawnXmasCapitanCookie.name=Spawn Christmas Captian Cookie
+item.ItemSpawnXmasPat.name=Spawn Christmas Pat
+item.ItemSpawnXmasJen.name=Spawn Christmas Jen
+
+
+//Blocks
+tile.BlockChristmasPresents_Red.name=Red Christmas Presents
+tile.BlockChristmasTree.name=Christmas Tree
+tile.BlockCandyCaneOre.name=CandyCane Ore
+tile.BlockCandyCane.name=CandyCane Block
+tile.BlockLights.name=Christmas Lights
+tile.BlockGingerBread.name=Gingerbread Block
+tile.BlockFrostedGlass.name=Frosted Glass
+tile.BlockFrostedGlassPane.name=Frosted Glass Pane
+tile.BlockBulb.red.name=Red Chistmas Light
+tile.BlockBulb.green.name=Green Christmas Light
+tile.BlockBulb.orange.name=Orange Christmas Light
+tile.BlockBulb.lime.name=Lime Christmas Light
+tile.BlockBulb.lightBlue.name=Light blue Christmas Light
+tile.BlockBulb.white.name=White Christmas Light
+tile.BlockBulb.magenta.name=Magenta Christmas Light
+tile.BlockBulb.purple.name=Purple Christmas Light
+tile.BlockBulb.blue.name=Blue Christmas Light
+tile.BlockBulb.pink.name=Pink Christmas Light
+tile.BlockBulb.yellow.name=Yellow Christmas Light
+tile.BlockBulb.cyan.name=Cyan Christmas Light
+
+//Entitys
+entity.EntitySanta.name=Santa
+entity.EntityGingerBreadMan.name=Gingerbread Man
+entity.EntityXmasCaptainCookie.name=Christmas Captian Cookie
+entity.EntityXmasPat.name=Christmas FuriousDestroyer
+entity.EntityXmasJen.name=Christmas SuperGirlyGamer
+
+//Mod Devs And Helpers
+entity.Entityjtrent238.name=jtrent238
+
+//Container
+//Generators
+//Achievements
+//Enchantments
+//Potions
+
+//ToolTips
+tooltip.epicproportionsmod_christmas.ItemStocking.texture=I Know Its Horrable,
+tooltip.epicproportionsmod_christmas.ItemStocking.dealwithit=Deal With It!
+
+//Creative Tabs
+itemGroup.EpicProportionsMod_Christmas=jtrent238's Epic Proportions Mod Christmas Addon
+
+//Achievements
+	/Welcome To Epic Proportions
+achievement.JingleBells=Jingle Bells
+achievement.JingleBells.desc=Ring Jingle Bells
+
+//Stats
+stat.JingleBellsJingled=Jingle Bells Jingled
+
+//Misc

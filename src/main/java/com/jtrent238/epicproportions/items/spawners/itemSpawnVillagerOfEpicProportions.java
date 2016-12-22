@@ -1,5 +1,6 @@
 package com.jtrent238.epicproportions.items.spawners;
 
+import com.jtrent238.epicproportions.EpicProportionsMod;
 import com.jtrent238.epicproportions.entity.EntityBlockling_Small;
 
 import cpw.mods.fml.relauncher.Side;
@@ -23,7 +24,7 @@ public class itemSpawnVillagerOfEpicProportions        extends Item
     {
     if(!world.isRemote)
     {
-    	EntityVillager par1 = new EntityVillager(world, 22); //Just change"MyEntityCow" to any entity you would like to spawn
+    	EntityVillager par1 = new EntityVillager(world, EpicProportionsMod.getVILLAGER_ID_1()); //Just change"MyEntityCow" to any entity you would like to spawn
     par1.setPosition(entityplayer.posX, entityplayer.posY+2,entityplayer.posZ+2); //These are the coordinates where he will appear 
     world.spawnEntityInWorld(par1);
     }

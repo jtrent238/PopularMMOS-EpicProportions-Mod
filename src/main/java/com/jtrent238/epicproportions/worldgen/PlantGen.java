@@ -12,7 +12,7 @@ public class PlantGen extends WorldGenerator
     /** The ID of the plant block used in this plant generator. */
     public final Block plant;
     public final int metadata;
-    public int chances = 64;
+    public int chances = 6400;
     int xSize = 8;
     int ySize = 4;
     int zSize = 8;

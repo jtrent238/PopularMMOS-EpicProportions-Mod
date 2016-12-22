@@ -4,6 +4,7 @@ import com.jtrent238.epicproportions.ConfigHandler;
 import com.jtrent238.epicproportions.EpicProportionsMod;
 import com.jtrent238.epicproportions.client.SaveHandler;
 import com.jtrent238.epicproportions.command.CommandModInfo;
+import com.jtrent238.epicproportions.gui.handler.GuiModInfoHandler;
 import com.jtrent238.epicproportions.lib.LogHelper;
 import com.jtrent238.epicproportions.tileentity.TileEntityJenChest;
 import com.jtrent238.epicproportions.tileentity.TileEntityPatChest;
@@ -13,6 +14,7 @@ import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
+import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.network.simpleimpl.MessageContext;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.entity.player.EntityPlayer;
@@ -34,6 +36,7 @@ public class CommonProxy {
         //System.out.print("common init fired!");
 	
 		//LogHelper.init();
+		NetworkRegistry.INSTANCE.registerGuiHandler(EpicProportionsMod.instance, new GuiModInfoHandler());
 		}
 	
 	@EventHandler

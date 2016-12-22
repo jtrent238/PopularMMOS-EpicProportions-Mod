@@ -25,14 +25,19 @@ import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.EntityClientPlayerMP;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.stats.StatList;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.IIcon;
+import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.World;
 import net.minecraftforge.common.config.Configuration;
+import net.minecraftforge.event.ForgeEventFactory;
 import net.minecraftforge.event.entity.player.AchievementEvent;
 import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.event.world.BlockEvent.BreakEvent;
@@ -55,7 +60,7 @@ public class blockBirthdayPresent extends Block{
 	public blockBirthdayPresent(Material ground) {
 		super(ground);
 		this.getEnableStats();
-		this.presentOpened();
+		//this.presentOpened();
 		
 		}
 	
@@ -63,6 +68,55 @@ public class blockBirthdayPresent extends Block{
 		
 		return true;
 	}
+	/*
+	public void breakBlock(World par1World, int par2, int par3, int par4, EntityLivingBase par5EntityLivingBase, ItemStack par6ItemStack)
+	  {
+	    ((EntityPlayer)par5EntityLivingBase).triggerAchievement(Achievements.achievementpresent);
+	    ((EntityPlayer)par5EntityLivingBase).addStat(Stats.presentsbroken, 1);
+	  }
+	*/
+	
+	   /**
+     * Called when the player destroys a block with an item that can harvest it. (i, j, k) are the coordinates of the
+     * block and l is the block's subtype/damage.
+     */
+    public void breakBlock(World p_149636_1_, EntityPlayer p_149636_2_, int p_149636_3_, int p_149636_4_, int p_149636_5_, int p_149636_6_)
+    {
+        p_149636_2_.addStat(StatList.mineBlockStatArray[getIdFromBlock(this)], 1);
+        p_149636_2_.addStat(Stats.presentsbroken, 1);
+        p_149636_2_.triggerAchievement(Achievements.achievementpresent);
+        p_149636_2_.addExperience(15);
+        p_149636_2_.addExhaustion(0.025F);
+/*
+        if (this.canSilkHarvest(p_149636_1_, p_149636_2_, p_149636_3_, p_149636_4_, p_149636_5_, p_149636_6_) && EnchantmentHelper.getSilkTouchModifier(p_149636_2_))
+        {
+            ArrayList<ItemStack> items = new ArrayList<ItemStack>();
+            ItemStack itemstack = this.createStackedBlock(p_149636_6_);
+
+            if (itemstack != null)
+            {
+                items.add(itemstack);
+            }
+
+            ForgeEventFactory.fireBlockHarvesting(items, p_149636_1_, this, p_149636_3_, p_149636_4_, p_149636_5_, p_149636_6_, 0, 1.0f, true, p_149636_2_);
+            for (ItemStack is : items)
+            {
+                this.dropBlockAsItem(p_149636_1_, p_149636_3_, p_149636_4_, p_149636_5_, is);
+            }
+        }
+        else
+        {
+            harvesters.set(p_149636_2_);
+            int i1 = EnchantmentHelper.getFortuneModifier(p_149636_2_);
+            this.dropBlockAsItem(p_149636_1_, p_149636_3_, p_149636_4_, p_149636_5_, p_149636_6_, i1);
+            harvesters.set(null);
+        }
+        */
+    }
+	public ItemStack getPickBlock(MovingObjectPosition target, World world, int x, int y, int z)
+	  {
+	    return new ItemStack(ItemLoader.itemBirthdayPresent);
+	  }
 	
 	@Override
     public Item getItemDropped(int metadata, Random random, int fortune) {
@@ -130,7 +184,7 @@ public class blockBirthdayPresent extends Block{
         
         isTConstructModLoaded = Loader.isModLoaded("isTConstructModLoaded");
         
-        if (EpicProportionsMod.isTConstructModLoaded) {
+        if (/*/EpicProportionsMod./*/isTConstructModLoaded) {
         	
         	GameRegistry.findItem("TConstruct", "materials:9");
             GameRegistry.findItem("TConstruct", "materials:10");
@@ -164,7 +218,7 @@ public class blockBirthdayPresent extends Block{
         	
         }
       //Creative Drops
-        if (Configuration.allowedProperties.equals(EpicProportionsMod.BIRTHDAYPRESENT_CREATIVE) == true)
+        if (EpicProportionsMod.BIRTHDAYPRESENT_CREATIVE == true)
         {
         	System.out.println("Creative Birthday Present Drops Enabled ***This is still Work In Progress!***");
         }
@@ -198,7 +252,7 @@ public class blockBirthdayPresent extends Block{
         {
             System.out.println("Reading file = "+parName+".txt");
             readIn = new BufferedReader(new InputStreamReader(getClass().getClassLoader()
-                .getResourceAsStream("assets/epicproportionsmod/birthday_presents"+parName+".txt"), "UTF-8"));
+                .getResourceAsStream("assets/epicproportionsmod/birthday_presents/items"+parName+".txt"), "UTF-8"));
             Integer name = Integer.valueOf(readIn.readLine());
             Integer item = Integer.valueOf(readIn.readLine());
             Integer amount = Integer.valueOf(readIn.readLine());

@@ -7,6 +7,8 @@ import java.net.URL;
 
 import org.apache.commons.io.IOUtils;
 
+import com.jtrent238.epicproportions.client.ClientProxy;
+
 import cpw.mods.fml.common.eventhandler.EventPriority;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.TickEvent.PlayerTickEvent;
@@ -78,8 +80,8 @@ public class VersionChecker implements Runnable
 public void onEvent(PlayerTickEvent event)
 {
   
-    if (!EpicProportionsMod.haveWarnedVersionOutOfDate && event.player.worldObj.isRemote 
-          && !EpicProportionsMod.versionChecker.isLatestVersion())
+    if (!ClientProxy.haveWarnedVersionOutOfDate && event.player.worldObj.isRemote 
+          && !ClientProxy.versionChecker.isLatestVersion())
     {
         ClickEvent versionCheckChatClickEvent = new ClickEvent(ClickEvent.Action.OPEN_URL, 
               "http://www.planetminecraft.com/mod/popularmmos-epicproportions-mod-season-9/");
@@ -88,7 +90,7 @@ public void onEvent(PlayerTickEvent event)
               new ChatComponentText("§4§l" + "Your EpicProportions Mod is not latest version!  Click here to update.");
         versionWarningChatComponent.setChatStyle(clickableChatStyle);
         event.player.addChatMessage(versionWarningChatComponent);
-        EpicProportionsMod.haveWarnedVersionOutOfDate = true;
+        ClientProxy.haveWarnedVersionOutOfDate = true;
     }
   
 }

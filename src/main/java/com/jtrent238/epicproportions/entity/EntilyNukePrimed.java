@@ -94,7 +94,7 @@ public class EntilyNukePrimed extends Entity
 
     private void explode()
     {
-        float f = 10000F;
+        float f = 1000F;
         this.worldObj.createExplosion(this, this.posX, this.posY, this.posZ, f, true);
     }
 
