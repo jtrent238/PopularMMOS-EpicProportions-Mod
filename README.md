@@ -1,5 +1,5 @@
 # PopularMMOS-EpicProportions-Mod 
-[![Build Status](https://travis-ci.org/jtrent238/PopularMMOS-EpicProportions-Mod.svg?branch=master)](https://travis-ci.org/jtrent238/PopularMMOS-EpicProportions-Mod) [ ![Codeship Status for jtrent238/PopularMMOS-EpicProportions-Mod](https://codeship.com/projects/1003c190-4e1a-0134-ccf6-4e2c8cfaa9af/status?branch=master)](https://codeship.com/projects/170713) [![Build status](https://ci.appveyor.com/api/projects/status/6v8rpljgtauw2693?svg=true)](https://ci.appveyor.com/project/jtrent238/popularmmos-epicproportions-mod) [![Test Coverage](https://codeclimate.com/github/jtrent238/PopularMMOS-EpicProportions-Mod/badges/coverage.svg)](https://codeclimate.com/github/jtrent238/PopularMMOS-EpicProportions-Mod/coverage) [![codecov](https://codecov.io/gh/jtrent238/PopularMMOS-EpicProportions-Mod/branch/master/graph/badge.svg)](https://codecov.io/gh/jtrent238/PopularMMOS-EpicProportions-Mod) [![Coverage Badge](https://api.shippable.com/projects/57c0e31e5f41330f00d60535/coverageBadge?branch=master)](https://app.shippable.com/projects/57c0e31e5f41330f00d60535) [![Coverage Status](https://coveralls.io/repos/github/jtrent238/PopularMMOS-EpicProportions-Mod/badge.svg)](https://coveralls.io/github/jtrent238/PopularMMOS-EpicProportions-Mod)
+[![Build Status](https://travis-ci.org/jtrent238/PopularMMOS-EpicProportions-Mod.svg?branch=master)](https://travis-ci.org/jtrent238/PopularMMOS-EpicProportions-Mod) [ ![Codeship Status for jtrent238/PopularMMOS-EpicProportions-Mod](https://codeship.com/projects/1003c190-4e1a-0134-ccf6-4e2c8cfaa9af/status?branch=master)](https://codeship.com/projects/170713) 
 
 
 This is a mod based on PopularMMOS EpicProportions series. 
@@ -16,3 +16,7 @@ I am working very hard on this mod making all the textures, models ,editing and 
 ## [Addons](https://github.com/jtrent238/PopularMMOS-EpicProportions-Mod/wiki/Addons)
 
 ## [All Downloads](https://jtrent238.github.io/PopularMMOS-EpicProportions-Mod/)
+
+## [F.A.Q.?](https://github.com/jtrent238/PopularMMOS-EpicProportions-Mod/wiki/FAQ)
+
+<center><a href="https://www.patreon.com/jtrent238" title=""><br /><img src="http://project2nd.com/img/Logo_Patreon.png" alt="" border="0"/><br/></a></center>
