@@ -1,4 +1,5 @@
-item.gemofepicproportions=Gem of Epic Proportioons
+item.gemofepicproportions.name=Gem of Epic Proportioons
+item.epicproportionsstar.name=Epicproportions Star
 
 //Pat Stuff
 item.pat_ingot.name=FuriousDestroyer Ingot
@@ -11,6 +12,7 @@ item.pat_pickaxe.name=FuriousDestroyer Pickaxe
 item.pat_shovel.name=FuriousDestroyer Shovel
 item.pat_axe.name=FuriousDestroyer Axe
 item.pat_hoe.name=FuriousDestroyer Hoe
-tile.pat_ore.name=FuriousDestroyer Ore
-tile.pat_block.name=FuriousDestroyer Block
+tile.pat_ore=FuriousDestroyer Ore
+tile.pat_block=FuriousDestroyer Block
+
 

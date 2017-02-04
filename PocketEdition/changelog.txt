@@ -1,0 +1,19 @@
+Epic Proportions Mod - PE ChangeLog
+
+1.0.0.0
+
+- Added Gem of Epic Proportioons
+- Added FuriousDestroyer Ingot
+- Added FuriousDestroyer Helment
+- Added FuriousDestroyer Chestplate
+- Added FuriousDestroyer Leggings
+- Added FuriousDestroyer Boots
+- Added FuriousDestroyer Sword
+- Added FuriousDestroyer Pickaxe
+- Added FuriousDestroyer Shovel
+- Added FuriousDestroyer Axe
+- Added FuriousDestroyer Hoe
+- Added FuriousDestroyer Ore
+- Added FuriousDestroyer Block
+- Added Epicproportions Star
+- Fixed some issues with Pat Ingot and Gem Of Epicproportions
