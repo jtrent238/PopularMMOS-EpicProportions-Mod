@@ -210,6 +210,15 @@ public class EntitySparky  extends EntityWolf/*/extends EntityTameable/*/
         return Item.getItemById(-1);
     }
 
+
+    /**
+     * Determines whether Bomby can explode or not.
+     */
+    public boolean canExplode()
+    {
+        return (this.dataWatcher.getWatchableObjectByte(16) & 2) != 0;
+    }
+
     /**
      * Called frequently so the entity can update its state every tick as required. For example, zombies and skeletons
      * use this to react to sunlight and start to burn.

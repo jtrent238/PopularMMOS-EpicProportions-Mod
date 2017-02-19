@@ -3,6 +3,8 @@ package com.jtrent238.epicproportions.addons.christmas;
 
 import com.jtrent238.epicproportions.ForgeSubscribe;
 import com.jtrent238.epicproportions.addons.christmas.common.CommonProxy;
+import com.jtrent238.epicproportions.addons.halloween.epicproportionsmod_halloween;
+import com.jtrent238.epicproportions.api.API;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Instance;
@@ -27,6 +29,8 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;
 
 @Mod(modid="epicproportionsmod_christmas", name="jtrent238's EpicProportions Mod - Christmas Addon", version=(epicproportionsmod_christmas.MODVERSION), dependencies="after:epicproportionsmod")
+@API(owner = "jtrent238", provides = "EpicproportionsModAPI", apiVersion = com.jtrent238.epicproportions.EpicProportionsMod.APIVERSION, addonName = epicproportionsmod_christmas.ADDONNAME, addonID = epicproportionsmod_christmas.ADDONID)
+
 public class epicproportionsmod_christmas
 {
 

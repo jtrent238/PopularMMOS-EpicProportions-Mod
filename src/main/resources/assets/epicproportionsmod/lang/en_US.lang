@@ -69,6 +69,7 @@ item.ItemPatBucket_lava.name=FuriousDestroyer Bucket of Lava
 item.ItemJenBucket.name=SuperGirlyGamer Bucket
 item.ItemJenBucket_water.name=SuperGirlyGamer Bucket of Water
 item.ItemJenBucket_lava.name=SuperGirlyGamer Bucket of Lava
+item.ItemBirthdayPresentTester.name=Birthday Present Tester
 
 	/Weapons & Tools
 item.itemPatSword.name=FuriousDestroyer's Sword
@@ -185,6 +186,12 @@ tile.BlockCaptianCookieStatue.name=Captain Cookie Statue
 tile.BlockSparkyStatue.name=Sparky Statue
 tile.BlockPatCake.name=FuriousDestroyer Cake
 tile.BlockJenCake.name=SuperGirlyGamer Cake
+tile.blockBirthdayPresent_Bad.name=Evil Birthday Present
+tile.BlockPatGrass.name=FuriousDestroyer Grass
+tile.BlockPatDirt.name=FuriousDestroyer Dirt
+tile.BlockJenGrass.name=SuperGirlyGamer Grass 
+tile.BlockJenDirt.name=SuperGirlyGamer Dirt 
+
 
 //Entitys
 entity.EntityBomby.name=Bomby
@@ -299,6 +306,8 @@ tooltip.epicproportionsmod.itemBirthdayPresent.bday=Happy Birthday!
 tooltip.epicproportionsmod.itemBirthdayPresent.inside=I wonder what could be inside?
 tooltip.epicproportionsmod.itemBirthdayPresent_Green.bday=Happy Birthday!
 tooltip.epicproportionsmod.itemBirthdayPresent_Green.inside=I wonder what could be inside?
+tooltip.epicproportionsmod.itemBirthdayPresent_Bad.bday=I would not open this if I were you!
+tooltip.epicproportionsmod.itemBirthdayPresent_Bad.inside=I wonder what could be inside?
 tooltip.epicproportionsmod.itemPatGun.ammotype=Consumes FuriousDestroyer Arrow
 tooltip.epicproportionsmod.itemJenGun.ammotype=Consumes SuperGirlyGamer Arrow
 tooltip.epicproportionsmod.itemTNTLauncher.ammotype=Consumes TNT

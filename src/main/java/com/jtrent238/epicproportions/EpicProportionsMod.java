@@ -14,8 +14,12 @@ import java.util.logging.Logger;
 
 import com.jtrent238.epicproportions.biome.BiomeDecorator;
 import com.jtrent238.epicproportions.blocks.blockModFlower;
+import com.jtrent238.epicproportions.command.CommandChangelog;
 import com.jtrent238.epicproportions.command.CommandModInfo;
 import com.jtrent238.epicproportions.common.CommonProxy;
+import com.jtrent238.epicproportions.dim.Dimension;
+import com.jtrent238.epicproportions.dim.EpicProportionsBiomes;
+import com.jtrent238.epicproportions.dim.WorldProviderEpicProportions;
 import com.jtrent238.epicproportions.eventhandler.OnJoinEvent;
 import com.jtrent238.epicproportions.items.structureplacers.itemTNTSwordSpawner;
 import com.jtrent238.epicproportions.lib.LogHelper;
@@ -24,11 +28,15 @@ import com.jtrent238.epicproportions.lib.WriteModInfoToFile;
 import com.jtrent238.epicproportions.network.MyMessage;
 import com.jtrent238.epicproportions.render.RenderGuiHandler;
 import com.jtrent238.epicproportions.tileentity.TileEntityLoader;
+import com.jtrent238.epicproportions.world.biome.BiomeGenJen;
+import com.jtrent238.epicproportions.world.biome.BiomeGenPat;
+import com.jtrent238.epicproportions.world.type.WorldTypeEpicProportions;
 import com.jtrent238.epicproportions.worldgen.ModWorldGen;
 import com.jtrent238.epicproportions.worldgen.WorldGenModFlower;
 import com.jtrent238.epicproportions.worldgen.WorldGenPumpkin_Jen;
 import com.jtrent238.epicproportions.worldgen.WorldGenPumpkin_Pat;
 import com.jtrent238.epicproportions.worldgen.structures.StructureVillagePieces;
+import com.jtrent238.epicproportions.worldgen.structures.WorldGenBomby;
 import com.jtrent238.epicproportions.worldgen.structures.structureTntSword;
 
 import akka.Main;
@@ -36,11 +44,13 @@ import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.IWorldGenerator;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.event.FMLServerStartingEvent;
 import cpw.mods.fml.common.eventhandler.EventPriority;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -50,6 +60,9 @@ import cpw.mods.fml.relauncher.SideOnly;
 import jdk.nashorn.internal.objects.annotations.Getter;
 import net.fybertech.meddle.MeddleMod;
 import net.minecraft.block.Block;
+import net.minecraft.command.CommandBase;
+import net.minecraft.command.ICommandManager;
+import net.minecraft.command.ServerCommandManager;
 import net.minecraft.crash.CrashReportCategory;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
@@ -58,12 +71,18 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.launchwrapper.ITweaker;
 import net.minecraft.launchwrapper.LaunchClassLoader;
 import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.WeightedRandomChestContent;
+import net.minecraft.world.WorldType;
+import net.minecraft.world.biome.BiomeGenBase;
+import net.minecraft.world.gen.feature.WorldGenerator;
+import net.minecraft.world.gen.structure.MapGenStructureIO;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.common.ChestGenHooks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.common.config.Property;
+import net.minecraftforge.event.terraingen.BiomeEvent;
 
 @Mod(modid="epicproportionsmod", name="jtrent238's EpicProportions Mod", version=(EpicProportionsMod.MODVERSION))
 @MeddleMod(id="epicproportionsmod", name="jtrent238's EpicProportions Mod", version=(EpicProportionsMod.MODVERSION), author="jtrent238")
@@ -89,13 +108,15 @@ public class EpicProportionsMod implements ITweaker
 	@Instance(MODID)
     public static EpicProportionsMod instance;
 
-	public static final String MODVERSION = "1.3.7.5";
+	public static final String MODVERSION = "1.3.7.6";
 
-	private static final String APIVERSION_NA = "API Not Currently Available.";
-	public static final String APIVERSION = APIVERSION_NA/*/"0.0.0.0"/*/;
+	public static final String APIVERSION = "1.0.0.0";
 	public static final String MODNAME = "jtrent238's EpicProportions Mod";
 	public static final String MODAUTHOR = "jtrent238";
 	public static final String MC = "1.7.10";
+	
+	public static final String WIKI_URL = "https://github.com/jtrent238/PopularMMOS-EpicProportions-Mod/wiki";
+	public static final String CHANGELOG_URL = "";
 	
 	//public static final LogManager logger = LogManager.getLogManager();
 	public static final Class<LogHelper> logger = LogHelper.class;
@@ -165,6 +186,16 @@ public class EpicProportionsMod implements ITweaker
 
 	private String[] args;
 
+	private ServerCommandManager command;
+
+	private boolean ENABLE_BOMBY_STRUCTURE_GEN;
+
+	public static int DIM_EPICPROPORTIONS;
+
+	
+
+	static boolean ENABLE_PRESENT_TESTER;
+
 	static boolean ENABLE_SUPER_PAT_MULTITOOL;
 	static boolean ENABLE_SUPER_JEN_MULTITOOL;
 	static boolean ENABLE_SUPER_JEN_SWORD;
@@ -197,12 +228,20 @@ public class EpicProportionsMod implements ITweaker
 	public static final String CATEGORY_INFO = "information";
 	public static final String CATEGORY_BLOCKS = "blocks";
 	public static final String CATEGORY_DEVMODE = "Developer Mode";
+	public static final String CATEGORY_BIOMEIDS = "BiomeIds";
+	public static final String CATEGORY_DIMIDS = "DimentionIds";
 	
+	private static int BIOME_ID_PAT;
+	private static int BIOME_ID_JEN;
 	
+	public static final BiomeGenBase pat = (new BiomeGenPat(BIOME_ID_PAT)).setColor(9286496).setBiomeName("FuriousDestroyer");
+	public static final BiomeGenBase jen = (new BiomeGenJen(BIOME_ID_JEN)).setColor(9286496).setBiomeName("SuperGirlyGamer");
 	
 	
 	@ForgeSubscribe(priority = EventPriority.NORMAL)
     public void eventHandler(RenderGameOverlayEvent event) {
+		
+		
 		
 	}
 	
@@ -218,6 +257,7 @@ public class EpicProportionsMod implements ITweaker
 	
 	//@Getter
 		
+	public static WorldType WorldTypeEpicProportions = new WorldTypeEpicProportions(15, "EpicProportions");
 
 @Mod.EventHandler
 public void preInit(FMLPreInitializationEvent event) throws IOException
@@ -348,10 +388,13 @@ public void preInit(FMLPreInitializationEvent event) throws IOException
 	ENABLE_SUPER_JEN_HOE = config.get(CATEGORY_TWEAKS, "Enable Super SuperGirlyGamer Hoe", true).getBoolean(true);
 	ENABLE_SUPER_JEN_MULTITOOL = config.get(CATEGORY_TWEAKS, "Enable Super SuperGirlyGamer MultiTool", true).getBoolean(true);
 	
+	ENABLE_BOMBY_STRUCTURE_GEN =  config.get(CATEGORY_TWEAKS, "Enable Bomby Structure Generation", true).getBoolean(true);
 	
 	ENABLE_DETAILED_MOD_INFO = config.get(CATEGORY_TWEAKS, "Enable Detail Mod Info", false).getBoolean(false);
 	ENABLE_DEVMODE = config.get(CATEGORY_DEVMODE, "Enable Dev Mode", false).getBoolean(false);
 	ENABLE_DEVLOGGING = config.get(CATEGORY_DEVMODE, "Enable Dev Logging", false).getBoolean(false);
+	
+	ENABLE_PRESENT_TESTER  =  config.get(CATEGORY_TWEAKS, "Enable Birthday Present Tester", true).getBoolean(true);
 	
 		//Entity Ids
 			/*
@@ -392,6 +435,16 @@ public void preInit(FMLPreInitializationEvent event) throws IOException
 	//BLOCK_ID_1 = config.getInt(BlockLoader.blockFartBomb, CATEGORY_BLOCKS, defaultValue, minValue, maxValue, comment);
 		//Block Ids
 	
+	//Biome IDS
+	setBIOME_ID_PAT(config.getInt("FuriousDestroyer Biome", CATEGORY_BIOMEIDS, 72, 70, 100, "Biome ID:"));
+	setBIOME_ID_JEN(config.getInt("SuperGirlyGamer Biome", CATEGORY_BIOMEIDS, 73, 70, 100, "Biome ID:"));
+	//Biome IDS
+	
+	//Dimenstion IDS
+	DIM_EPICPROPORTIONS(config.getInt("EpicProportions Dim", CATEGORY_DIMIDS, 206, 200, 300, "Dimention ID:"));
+	
+	//Dimenstion IDS
+	
 	config.addCustomCategoryComment(CATEGORY_INFO, "This Configfile is still [WIP] and may not work properly. ***Some things won't work!");
 	config.addCustomCategoryComment(CATEGORY_DEVMODE, "Developer Mode Settings ***WARNING MAY BREAK YOUR GAME!***");
 	//config.getCategoryNames();
@@ -431,6 +484,13 @@ public void preInit(FMLPreInitializationEvent event) throws IOException
 	}
 */
 
+	
+	
+
+	private void DIM_EPICPROPORTIONS(int int1) {
+	
+}
+
 	/**
 	 * Load our config file and set default values
 	 */
@@ -468,7 +528,9 @@ public void init(FMLInitializationEvent event)
 	Stats.RegisterStats();
 	CrashReportHelper.getCrash();
 	OreDict.addores();
-	
+	BiomeDict.registerBiomes();
+	Dimension.registerWorldProvider();
+	Dimension.registerDimensions();
 	
 	/*
 	isTConstructModLoaded = Loader.isModLoaded("TConstruct");
@@ -499,7 +561,21 @@ public void init(FMLInitializationEvent event)
 	//String p_149857_0_ = null;
 	//GameRegistry.registerWorldGenerator((IWorldGenerator) new WorldGenModFlower(blockModFlower.func_149857_e(p_149857_0_)), 0);
 	
-	
+    if(ENABLE_BOMBY_STRUCTURE_GEN == true){
+    	MapGenStructureIO.registerStructure(WorldGenBomby.class, "generateBombyStructure");
+    	GameRegistry.registerWorldGenerator(new WorldGenBomby(), 0);
+    	
+    	if(ENABLE_DEVLOGGING == true){
+    		System.out.println("Bomby Structure Registered");
+    	}
+    }
+    
+    
+    /*
+    GameRegistry.registerWorldGenerator((IWorldGenerator) new WorldGenPumpkin_Pat(), 0);
+    GameRegistry.registerWorldGenerator((IWorldGenerator) new WorldGenPumpkin_Jen(), 0);
+	*/
+    
 	ChestGenHooks.getInfo(ChestGenHooks.BONUS_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.itemJenIngot), 0, 1, 1));
 	ChestGenHooks.getInfo(ChestGenHooks.BONUS_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.itemPatIngot), 0, 1, 1));
 	ChestGenHooks.getInfo(ChestGenHooks.BONUS_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.itemBirthdayPresent), 0, 1, 1));
@@ -535,6 +611,10 @@ public void init(FMLInitializationEvent event)
 	bombyStructure.addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.itemJenSword), 0, 1, 4));
 	bombyStructure.addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.itemPatIngot), 0, 1, 2));
 	bombyStructure.addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.itemJenPick), 0, 1, 1));
+	
+	//ChestGenHooks.getInfo("bombyStructure");
+	//WeightedRandomChestContent.generateChestContents(p_76293_0_, p_76293_1_, p_76293_2_, p_76293_3_);
+	
 	
 	//NetworkRegistry.instance().registerGuiHandler(instance, guiHandler);
 	//GameRegistry.registerWorldGenerator(mStructureGenerator);
@@ -574,6 +654,10 @@ public static CreativeTabs EpicProportionsMod = new CreativeTabs("EpicProportion
 	}
 	
 ;
+
+
+
+
 
 		/*
 		 * Development Creative Tab
@@ -637,20 +721,35 @@ public void postInit(FMLPostInitializationEvent event) {
 		//MinecraftForge.EVENT_BUS.register(new Yggdrasil());
 		MinecraftForge.EVENT_BUS.register(new LogHelper());
 		//MinecraftForge.EVENT_BUS.register(new CommandModInfo());
-        
-		
+        MinecraftForge.EVENT_BUS.register(new BiomeGenPat(63));
+        MinecraftForge.EVENT_BUS.register(new BiomeGenJen(64));
+        MinecraftForge.EVENT_BUS.register(new WorldProviderEpicProportions());
+        //MinecraftForge.EVENT_BUS.register(new EpicProportionsBiomes(ENTITY_ID_0, null));
 		//MinecraftForge.EVENT_BUS.register(new RenderGuiHandler());
 		MinecraftForge.ORE_GEN_BUS.register(new BiomeDecorator());
         
 	    Recipes.registerRecpies();
 
+	    MinecraftForge.EVENT_BUS.register(new CommandChangelog());
 	    
+	    //MUhTTawz.maAzeRcL();
 	}
 	
 	
 }
 
-
+@EventHandler
+public void serverStart(FMLServerStartingEvent event)
+{
+     MinecraftServer server = MinecraftServer.getServer();
+     // Get's the current server instance
+     
+     ICommandManager command = server.getCommandManager();
+     ServerCommandManager manager = (ServerCommandManager) command;
+     
+     manager.registerCommand(new CommandModInfo());
+     manager.registerCommand(new CommandChangelog());
+}
 
 /**
  * @return the vILLAGER_ID_1
@@ -722,6 +821,7 @@ public void setVILLAGER_ID_5(int vILLAGER_ID_5) {
 	VILLAGER_ID_5 = vILLAGER_ID_5;
 }
 
+
 @Override
 public void acceptOptions(List<String> arg0, File arg1, File arg2, String arg3) {
 	
@@ -741,7 +841,34 @@ public String getLaunchTarget() {
 public void injectIntoClassLoader(LaunchClassLoader arg0) {
 	
 }
+/**
+ * @return the bIOME_ID_PAT
+ */
+public static int getBIOME_ID_PAT() {
+	return BIOME_ID_PAT;
+}
 
+/**
+ * @param bIOME_ID_PAT the bIOME_ID_PAT to set
+ */
+public static void setBIOME_ID_PAT(int bIOME_ID_PAT) {
+	BIOME_ID_PAT = bIOME_ID_PAT;
+}
+
+/**
+ * @return the bIOME_ID_JEN
+ */
+public static int getBIOME_ID_JEN() {
+	return BIOME_ID_JEN;
+}
+
+/**
+ * @param bIOME_ID_JEN the bIOME_ID_JEN to set
+ */
+public static void setBIOME_ID_JEN(int bIOME_ID_JEN) {
+	BIOME_ID_JEN = bIOME_ID_JEN;
+}
+{
 
 
 
@@ -763,5 +890,18 @@ public void modsLoaded(FMLPostInitializationEvent event) {
 
 }
 			 		*/
+	if(ENABLE_DEVLOGGING == true){
+		
+		System.out.println("***********************WARNING***********************");
+		System.out.println("Developer Logging Enabled, Let the Console Spam begin");
+		System.out.println("*****************************************************");
+		
+	}
+		}
 
+@SuppressWarnings("unchecked")
+public class DimEpicProportions {
+	public Object instance;
+	public int DIMID = DIM_EPICPROPORTIONS;
 }
+	}

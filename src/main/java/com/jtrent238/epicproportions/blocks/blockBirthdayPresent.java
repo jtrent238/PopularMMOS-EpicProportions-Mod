@@ -12,6 +12,7 @@ import com.jtrent238.epicproportions.CustomPresentDrops;
 import com.jtrent238.epicproportions.EpicProportionsMod;
 import com.jtrent238.epicproportions.ItemLoader;
 import com.jtrent238.epicproportions.Stats;
+import com.jtrent238.epicproportions.VersionChecker;
 
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
@@ -33,8 +34,10 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.stats.StatList;
 import net.minecraft.util.ChatComponentText;
+import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MovingObjectPosition;
+import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.event.ForgeEventFactory;
@@ -301,7 +304,15 @@ public class blockBirthdayPresent extends Block{
         }
     }
     
-    
+    public void onBlockClicked(World par1World, int par2, int par3, int par4, EntityPlayer p5EP) {
+    	
+		Item item = null;
+		if(p5EP.inventory.currentItem == item.getIdFromItem(ItemLoader.ItemBirthdayPresentTester)){
+
+			p5EP.addChatMessage(new ChatComponentText(EnumChatFormatting.GREEN + StatCollector.translateToLocal("This Present is safe")));
+	    	
+    	}
+    }
 }
     
 

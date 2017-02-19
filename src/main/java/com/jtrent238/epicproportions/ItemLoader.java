@@ -34,6 +34,7 @@ import com.jtrent238.epicproportions.items.armor.ItemPatArmor;
 import com.jtrent238.epicproportions.items.armor.ItemSuperJenArmor;
 import com.jtrent238.epicproportions.items.armor.ItemSuperPatArmor;
 import com.jtrent238.epicproportions.items.blockplacers.itemBirthdayPresent;
+import com.jtrent238.epicproportions.items.blockplacers.itemBirthdayPresent_Bad;
 import com.jtrent238.epicproportions.items.blockplacers.itemBirthdayPresent_Green;
 import com.jtrent238.epicproportions.items.buckets.ItemJenBucket;
 import com.jtrent238.epicproportions.items.buckets.ItemJenBucket_lava;
@@ -91,6 +92,7 @@ import com.jtrent238.epicproportions.items.structureplacers.itemJensHoleStructur
 import com.jtrent238.epicproportions.items.structureplacers.itemPatWellPlacer;
 import com.jtrent238.epicproportions.items.structureplacers.itemTNTCastlePlacer;
 import com.jtrent238.epicproportions.items.structureplacers.itemTNTSwordPlacer;
+import com.jtrent238.epicproportions.items.tools.ItemBirthdayPresentTester;
 import com.jtrent238.epicproportions.items.tools.itemAxeOfEpicProportions;
 import com.jtrent238.epicproportions.items.tools.itemHoeOfEpicProportions;
 import com.jtrent238.epicproportions.items.tools.itemJenAxe;
@@ -199,6 +201,7 @@ public class ItemLoader {
 	public static Item itemJenArrow;
 	public static Item itemBirthdayPresent;
 	public static Item itemBirthdayPresent_Green;
+	public static Item itemBirthdayPresent_Bad;
 	public static Item itempat;
 	public static Item itemjen;
 	public static Item itemTNTSwordPlacer;
@@ -247,6 +250,7 @@ public class ItemLoader {
 	public static Item ItemJenBucket;
 	public static Item ItemJenBucket_water;
 	public static Item ItemJenBucket_lava;
+	public static Item ItemBirthdayPresentTester;
 
 
 	
@@ -382,6 +386,7 @@ public static void LoadItems() {
 	itemJenArrow = new itemJenArrow().setUnlocalizedName("itemJenArrow").setTextureName("epicproportionsmod:itemJenArrow").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itemBirthdayPresent = new itemBirthdayPresent().setUnlocalizedName("itemBirthdayPresent").setTextureName("epicproportionsmod:itemBirthdayPresent").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itemBirthdayPresent_Green = new itemBirthdayPresent_Green().setUnlocalizedName("itemBirthdayPresent_Green").setTextureName("epicproportionsmod:itemBirthdayPresent_Green").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	itemBirthdayPresent_Bad = new itemBirthdayPresent_Bad().setUnlocalizedName("itemBirthdayPresent_Bad").setTextureName("epicproportionsmod:itemBirthdayPresent_Bad").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itemHouseOfEpicProportionsPlacer = new itemHouseOfEpicProportionsPlacer(0).setUnlocalizedName("itemHouseOfEpicProportionsPlacer").setTextureName("epicproportionsmod:itemHouseOfEpicProportionsPlacer").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itemBombyStructurePlacer = new itemBombyStructurePlacer(0).setUnlocalizedName("itemBombyStructurePlacer").setTextureName("epicproportionsmod:itemBombyStructurePlacer").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itempat = new itempat().setUnlocalizedName("itempat").setTextureName("epicproportionsmod:itempat")/*/.setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
@@ -445,6 +450,7 @@ public static void LoadItems() {
 	ItemJenBucket  = new ItemJenBucket(Blocks.air).setUnlocalizedName("ItemJenBucket").setTextureName("epicproportionsmod:ItemJenBucket").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	ItemJenBucket_water  = new ItemJenBucket_water(Blocks.flowing_water).setUnlocalizedName("ItemJenBucket_water").setTextureName("epicproportionsmod:ItemJenBucket_water").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	ItemJenBucket_lava  = new ItemJenBucket_lava(Blocks.flowing_lava).setUnlocalizedName("ItemJenBucket_lava").setTextureName("epicproportionsmod:ItemJenBucket_lava").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	ItemBirthdayPresentTester  = new ItemBirthdayPresentTester().setUnlocalizedName("ItemBirthdayPresentTester").setTextureName("epicproportionsmod:ItemBirthdayPresentTester").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	
 	
 	//Weapons & Tools
@@ -555,6 +561,7 @@ private static void registerItems(){
 	GameRegistry.registerItem(itemJenArrow, itemJenArrow.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemBirthdayPresent, itemBirthdayPresent.getUnlocalizedName().substring(5));
 	//GameRegistry.registerItem(itemBirthdayPresent_Green, itemBirthdayPresent_Green.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(itemBirthdayPresent_Bad, itemBirthdayPresent_Bad.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemHouseOfEpicProportionsPlacer, itemHouseOfEpicProportionsPlacer.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemBombyStructurePlacer, itemBombyStructurePlacer.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itempat, itempat.getUnlocalizedName().substring(5));
@@ -618,6 +625,12 @@ private static void registerItems(){
 	GameRegistry.registerItem(ItemPatBucket_lava, ItemPatBucket_lava.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(ItemJenBucket_water, ItemJenBucket_water.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(ItemJenBucket_lava, ItemJenBucket_lava.getUnlocalizedName().substring(5));
+	
+	if(EpicProportionsMod.ENABLE_PRESENT_TESTER == true){
+		
+		GameRegistry.registerItem(ItemBirthdayPresentTester, ItemBirthdayPresentTester.getUnlocalizedName().substring(5));
+		
+	}
 	
 	
 

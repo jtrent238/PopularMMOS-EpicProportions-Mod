@@ -34,14 +34,14 @@ public class CommandModInfo extends CommandBase
 
     public String getCommandUsage(ICommandSender p_71518_1_)
     {
-        return EpicProportionsMod.MODID + "commands.modinfo.usage";
+        return EpicProportionsMod.MODID + ".commands.modinfo.usage";
     }
 
     public void processCommand(ICommandSender p_71515_1_, String[] p_71515_2_)
     {
         EntityPlayerMP entityplayermp = getCommandSenderAsPlayer(p_71515_1_);
-        entityplayermp.attackEntityFrom(DamageSource.outOfWorld, Float.MAX_VALUE);
-        p_71515_1_.addChatMessage(new ChatComponentTranslation(EpicProportionsMod.MODID +  "commands.modinfo.success", new Object[0]));
+        //entityplayermp.attackEntityFrom(DamageSource.outOfWorld, Float.MAX_VALUE);
+        p_71515_1_.addChatMessage(new ChatComponentTranslation(EpicProportionsMod.MODID +  ".commands.modinfo.success", new Object[0]));
         p_71515_1_.addChatMessage(new ChatComponentText(/*/event.player.getDisplayName() + /*/"§a§l" + EpicProportionsMod.MODNAME + " " + "§2§lMade By:jtrent238"));
         p_71515_1_.addChatMessage(new ChatComponentText(/*/event.player.getDisplayName() + /*/"§6§lYou are running" + "§b§l" + " " + EpicProportionsMod.MODVERSION + " " + "§6§lof" + "§6§l" + " " + EpicProportionsMod.MODNAME + "!"));
         p_71515_1_.addChatMessage(new ChatComponentText(/*/event.player.getDisplayName() + /*/"§d§lThe Latest version is:" + "§b§l" + " " + VersionChecker.latestVersion +  "§d§l" + "!"));

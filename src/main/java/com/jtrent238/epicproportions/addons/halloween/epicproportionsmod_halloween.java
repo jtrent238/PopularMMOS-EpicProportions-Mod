@@ -3,6 +3,7 @@ package com.jtrent238.epicproportions.addons.halloween;
 
 import com.jtrent238.epicproportions.ForgeSubscribe;
 import com.jtrent238.epicproportions.addons.halloween.common.CommonProxy;
+import com.jtrent238.epicproportions.api.API;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Instance;
@@ -25,6 +26,8 @@ import net.minecraftforge.common.ChestGenHooks;
 import net.minecraftforge.common.MinecraftForge;
 
 @Mod(modid="epicproportionsmod_halloween", name="jtrent238's EpicProportions Mod - Halloween Addon", version=(epicproportionsmod_halloween.MODVERSION), dependencies="after:epicproportionsmod")
+@API(owner = "jtrent238", provides = "EpicproportionsModAPI", apiVersion = com.jtrent238.epicproportions.EpicProportionsMod.APIVERSION, addonName = epicproportionsmod_halloween.ADDONNAME, addonID = epicproportionsmod_halloween.ADDONID)
+
 public class epicproportionsmod_halloween
 {
 

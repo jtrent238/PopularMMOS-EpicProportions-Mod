@@ -204,6 +204,7 @@ public class EntityClown  extends EntityMob
      * Called frequently so the entity can update its state every tick as required. For example, zombies and skeletons
      * use this to react to sunlight and start to burn.
      */
+    	/*
     public void onLivingUpdate()
     {
         if (this.worldObj.isDaytime() && !this.worldObj.isRemote && !this.isChild())
@@ -245,7 +246,7 @@ public class EntityClown  extends EntityMob
 
         super.onLivingUpdate();
     }
-
+    	*/
     /**
      * Called when the entity is attacked.
      */
