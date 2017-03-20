@@ -28,12 +28,12 @@ public class BiomeGenJen extends BiomeGenBase
     public BiomeGenJen(int p_i1986_1_)
     {
         super(p_i1986_1_);
-        this.setTemperatureRainfall(0.8F, 0.4F);
-        this.setHeight(height_LowPlains);
-        this.spawnableCreatureList.add(new BiomeGenBase.SpawnListEntry(EntityHorse.class, 5, 2, 6));
-        this.theBiomeDecorator.treesPerChunk = -999;
+        //this.setTemperatureRainfall(0.8F, 0.4F);
+        //this.setHeight(height_LowPlains);
+        //this.spawnableCreatureList.add(new BiomeGenBase.SpawnListEntry(EntityHorse.class, 5, 2, 6));
+        //this.theBiomeDecorator.treesPerChunk = -999;
         this.theBiomeDecorator.flowersPerChunk = 4;
-        this.theBiomeDecorator.grassPerChunk = 10;
+        //this.theBiomeDecorator.grassPerChunk = 10;
         
         this.color = /*255 182 193 */12695295;
         this.waterColorMultiplier = 0;
@@ -52,7 +52,7 @@ public class BiomeGenJen extends BiomeGenBase
         //this.addFlower(Blocks.red_flower,    8, 20);
         //this.addFlower(Blocks.yellow_flower, 0, 30);
     }
-
+/*
     public String func_150572_a(Random p_150572_1_, int p_150572_2_, int p_150572_3_, int p_150572_4_)
     {
         double d0 = plantNoise.func_151601_a((double)p_150572_2_ / 200.0D, (double)p_150572_4_ / 200.0D);
@@ -117,6 +117,6 @@ public class BiomeGenJen extends BiomeGenBase
 
         super.decorate(p_76728_1_, p_76728_2_, p_76728_3_, p_76728_4_);
     }
-
+*/
     
 }

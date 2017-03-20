@@ -1,5 +1,11 @@
 Epic Proportions Mod ChangeLog
 
+
+1.3.7.7
+- Added 10 New Trades for EpicProportions Villager and jtrent238
+- Fixed Trade with EpicProportions Villager and jtrent238 being an invalid number
+- Fixed Crash when Creating New World or Generating New Terrain
+
 1.3.7.6
 - Added WebBrowser
 - Added ChangeLog Command

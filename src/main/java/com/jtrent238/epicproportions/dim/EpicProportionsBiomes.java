@@ -9,8 +9,9 @@ import net.minecraft.world.gen.layer.IntCache;
 public class EpicProportionsBiomes extends GenLayer {
 	
     protected BiomeGenBase[] allowedBiomes = {
-        EpicProportionsMod.jen,
-        EpicProportionsMod.pat,
+    		//BiomeGenBase.getBiome(EpicProportionsMod.getBIOME_ID_PAT()),
+    		//BiomeGenBase.getBiome(EpicProportionsMod.getBIOME_ID_JEN())
+    		BiomeGenBase.desert
     };
     
     public EpicProportionsBiomes(long seed) {

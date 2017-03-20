@@ -41,9 +41,9 @@ public class WorldChunkManagerEpicProportions extends WorldChunkManager {
 		this();
 		// i changed this to my GenLayerTutorial
 		GenLayer[] agenlayer = EpicProportionsGenLayer.makeTheWorld(seed, worldType);
-		agenlayer = getModdedBiomeGenerators(worldType, seed, agenlayer);
-		this.genBiomes = agenlayer[0];
-		this.biomeIndexLayer = agenlayer[1];
+		//agenlayer = getModdedBiomeGenerators(worldType, seed, agenlayer);
+		//this.genBiomes = agenlayer[0];
+		//this.biomeIndexLayer = agenlayer[1];
 	}
 
 	public WorldChunkManagerEpicProportions(World world)

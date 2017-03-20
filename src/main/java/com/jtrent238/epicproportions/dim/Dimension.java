@@ -7,7 +7,7 @@ public class Dimension {
 	/**
 	 * Sets Dimensions ID's
 	 */
-	private static final int CANDYLANDDIMENSION = 7;
+	private static final int EPICDIMENSTION = 7;
 
 	/**
 	 * Register dimensions.

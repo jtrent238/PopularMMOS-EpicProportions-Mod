@@ -108,7 +108,7 @@ public class EpicProportionsMod implements ITweaker
 	@Instance(MODID)
     public static EpicProportionsMod instance;
 
-	public static final String MODVERSION = "1.3.7.6";
+	public static final String MODVERSION = "pre-1.3.7.7";
 
 	public static final String APIVERSION = "1.0.0.0";
 	public static final String MODNAME = "jtrent238's EpicProportions Mod";
@@ -234,14 +234,14 @@ public class EpicProportionsMod implements ITweaker
 	private static int BIOME_ID_PAT;
 	private static int BIOME_ID_JEN;
 	
-	public static final BiomeGenBase pat = (new BiomeGenPat(BIOME_ID_PAT)).setColor(9286496).setBiomeName("FuriousDestroyer");
-	public static final BiomeGenBase jen = (new BiomeGenJen(BIOME_ID_JEN)).setColor(9286496).setBiomeName("SuperGirlyGamer");
+	public static final BiomeGenBase BIOMEPAT = (new BiomeGenPat(getBIOME_ID_PAT())).setColor(9286496).setBiomeName("FuriousDestroyer");
+	public static final BiomeGenBase BIOMEJEN = (new BiomeGenJen(getBIOME_ID_JEN())).setColor(9286496).setBiomeName("SuperGirlyGamer");
 	
 	
 	@ForgeSubscribe(priority = EventPriority.NORMAL)
     public void eventHandler(RenderGameOverlayEvent event) {
 		
-		
+		//Thread.currentThread().setName("EpicProportionsMod");
 		
 	}
 	
@@ -262,7 +262,7 @@ public class EpicProportionsMod implements ITweaker
 @Mod.EventHandler
 public void preInit(FMLPreInitializationEvent event) throws IOException
 {
-	
+	//Thread.currentThread().setName("EpicProportionsMod");
 	//ModInfoFileData.main(args);
 	//LogHelper.init();
 	//LogHelper.main(args);
@@ -445,7 +445,7 @@ public void preInit(FMLPreInitializationEvent event) throws IOException
 	
 	//Dimenstion IDS
 	
-	config.addCustomCategoryComment(CATEGORY_INFO, "This Configfile is still [WIP] and may not work properly. ***Some things won't work!");
+	//config.addCustomCategoryComment(CATEGORY_INFO, "This Configfile is still [WIP] and may not work properly. ***Some things won't work!");
 	config.addCustomCategoryComment(CATEGORY_DEVMODE, "Developer Mode Settings ***WARNING MAY BREAK YOUR GAME!***");
 	//config.getCategoryNames();
 		
@@ -519,6 +519,7 @@ public void init(FMLInitializationEvent event)
 {
 	proxy.init(event);
 	
+	//Thread.currentThread().setName("EpicProportionsMod");
 	
 	ItemLoader.LoadItems();
 	BlockLoader.loadBlocks();
@@ -704,6 +705,8 @@ public static CreativeTabs EpicProportionsMod_Dev = new CreativeTabs("EpicPropor
 @Mod.EventHandler
 public void postInit(FMLPostInitializationEvent event) {
 	{
+		//Thread.currentThread().setName("EpicProportionsMod");
+		
 		MinecraftForge.EVENT_BUS.register(new WorldGenModFlower(BlockLoader.blockFlowerChocolate));
 		MinecraftForge.EVENT_BUS.register(new WorldGenModFlower(BlockLoader.blockFlowerForJen));
 		MinecraftForge.EVENT_BUS.register(new WorldGenModFlower(BlockLoader.blockFlowerLove));
@@ -721,12 +724,12 @@ public void postInit(FMLPostInitializationEvent event) {
 		//MinecraftForge.EVENT_BUS.register(new Yggdrasil());
 		MinecraftForge.EVENT_BUS.register(new LogHelper());
 		//MinecraftForge.EVENT_BUS.register(new CommandModInfo());
-        MinecraftForge.EVENT_BUS.register(new BiomeGenPat(63));
-        MinecraftForge.EVENT_BUS.register(new BiomeGenJen(64));
-        MinecraftForge.EVENT_BUS.register(new WorldProviderEpicProportions());
+        //MinecraftForge.EVENT_BUS.register(new BiomeGenPat(getBIOME_ID_PAT()));
+        //MinecraftForge.EVENT_BUS.register(new BiomeGenJen(getBIOME_ID_JEN()));
+        //MinecraftForge.EVENT_BUS.register(new WorldProviderEpicProportions());
         //MinecraftForge.EVENT_BUS.register(new EpicProportionsBiomes(ENTITY_ID_0, null));
 		//MinecraftForge.EVENT_BUS.register(new RenderGuiHandler());
-		MinecraftForge.ORE_GEN_BUS.register(new BiomeDecorator());
+		//MinecraftForge.ORE_GEN_BUS.register(new BiomeDecorator());
         
 	    Recipes.registerRecpies();
 
@@ -741,6 +744,7 @@ public void postInit(FMLPostInitializationEvent event) {
 @EventHandler
 public void serverStart(FMLServerStartingEvent event)
 {
+	//Thread.currentThread().setName("EpicProportionsMod");
      MinecraftServer server = MinecraftServer.getServer();
      // Get's the current server instance
      

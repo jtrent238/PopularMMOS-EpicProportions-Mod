@@ -6,7 +6,16 @@ import net.minecraft.world.gen.layer.GenLayer;
 import net.minecraft.world.gen.layer.GenLayerVoronoiZoom;
 import net.minecraft.world.gen.layer.GenLayerZoom;
 
-public class EpicProportionsGenLayer extends GenLayer {
+public class EpicProportionsGenLayer 
+
+{
+
+	public static GenLayer[] makeTheWorld(long seed, WorldType worldType) {
+		return null;
+	}
+	}
+/*
+extends GenLayer {
 
 	public EpicProportionsGenLayer(long seed){
 		super(seed);
@@ -29,5 +38,4 @@ public class EpicProportionsGenLayer extends GenLayer {
 	@Override
 	public int[] getInts(int p_75904_1_, int p_75904_2_, int p_75904_3_, int p_75904_4_) {
 		return null;
-	}
-}
+	}*/
