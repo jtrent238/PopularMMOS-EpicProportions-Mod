@@ -57,7 +57,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.VillagerRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import jdk.nashorn.internal.objects.annotations.Getter;
+//import jdk.nashorn.internal.objects.annotations.Getter;
 import net.fybertech.meddle.MeddleMod;
 import net.minecraft.block.Block;
 import net.minecraft.command.CommandBase;
@@ -108,7 +108,7 @@ public class EpicProportionsMod implements ITweaker
 	@Instance(MODID)
     public static EpicProportionsMod instance;
 
-	public static final String MODVERSION = "pre-1.3.7.7";
+	public static final String MODVERSION = "1.3.8.7";
 
 	public static final String APIVERSION = "1.0.0.0";
 	public static final String MODNAME = "jtrent238's EpicProportions Mod";
@@ -190,12 +190,61 @@ public class EpicProportionsMod implements ITweaker
 
 	private boolean ENABLE_BOMBY_STRUCTURE_GEN;
 
+	static int ENTITY_ID_PGOLEM;
+
+	static int ENTITY_ID_JGOLEM;
+
+	 static int ENTITY_ID_CPTCOOKIE;
+
+	 static int ENTITY_ID_PAT;
+
+	 static int ENTITY_ID_JEN;
+
+	 static int ENTITY_ID_FRED;
+
+	 static int ENTITY_ID_NMASTER;
+
+	 static int ENTITY_ID_CMAN;
+
+	 static int ENTITY_ID_CPTCOOKIELITTLE;
+
+	 static int ENTITY_ID_JTRENT238;
+
+	 static int ENTITY_ID_PTNT;
+
+	 static int ENTITY_ID_PARROW;
+
+	 static int ENTITY_ID_JARROW;
+
+	 static int ENTITY_ID_CLOWN;
+
+	 static int ENTITY_ID_CPOPPER;
+
+	 static int ENTITY_ID_SPARKY;
+
+	 static int ENTITY_ID_KITTY;
+
+	 static int ENTITY_ID_KAMI;
+
+	 static int ENTITY_ID_POPO;
+
+	 static int ENTITY_ID_BANANA;
+
+	 static int ENTITY_ID_BLOCKLING;
+
+	 static int ENTITY_ID_BLOCKLINGSML;
+
+	static int ENTITY_ID_BOMBY;
+
 	public static int DIM_EPICPROPORTIONS;
 
 	
 
 	static boolean ENABLE_PRESENT_TESTER;
-
+	static boolean ENABLE_PRESENT_NORMAL;
+	static boolean ENABLE_PRESENT_BAD;
+	static boolean ENABLE_PRESENT_MEGA;
+	
 	static boolean ENABLE_SUPER_PAT_MULTITOOL;
 	static boolean ENABLE_SUPER_JEN_MULTITOOL;
 	static boolean ENABLE_SUPER_JEN_SWORD;
@@ -388,15 +437,43 @@ public void preInit(FMLPreInitializationEvent event) throws IOException
 	ENABLE_SUPER_JEN_HOE = config.get(CATEGORY_TWEAKS, "Enable Super SuperGirlyGamer Hoe", true).getBoolean(true);
 	ENABLE_SUPER_JEN_MULTITOOL = config.get(CATEGORY_TWEAKS, "Enable Super SuperGirlyGamer MultiTool", true).getBoolean(true);
 	
-	ENABLE_BOMBY_STRUCTURE_GEN =  config.get(CATEGORY_TWEAKS, "Enable Bomby Structure Generation", true).getBoolean(true);
+	ENABLE_BOMBY_STRUCTURE_GEN =  config.get(CATEGORY_TWEAKS, "Enable Bomby Structure Generation **Bugged**", false).getBoolean(false);
 	
 	ENABLE_DETAILED_MOD_INFO = config.get(CATEGORY_TWEAKS, "Enable Detail Mod Info", false).getBoolean(false);
 	ENABLE_DEVMODE = config.get(CATEGORY_DEVMODE, "Enable Dev Mode", false).getBoolean(false);
 	ENABLE_DEVLOGGING = config.get(CATEGORY_DEVMODE, "Enable Dev Logging", false).getBoolean(false);
 	
 	ENABLE_PRESENT_TESTER  =  config.get(CATEGORY_TWEAKS, "Enable Birthday Present Tester", true).getBoolean(true);
+	ENABLE_PRESENT_NORMAL  =  config.get(CATEGORY_TWEAKS, "Enable Normal Birthday Present", true).getBoolean(true);
+	ENABLE_PRESENT_BAD  =  config.get(CATEGORY_TWEAKS, "Enable Bad Birthday Present", true).getBoolean(true);
+	ENABLE_PRESENT_MEGA  =  config.get(CATEGORY_TWEAKS, "Enable Mega Birthday Present", true).getBoolean(true);
+
 	
 		//Entity Ids
+	ENTITY_ID_BOMBY = config.getInt("Bomby", CATEGORY_ENTITYIDS, 660, 256, 65535, "Entity ID:");
+	ENTITY_ID_CPTCOOKIE = (config.getInt("Captian Cookie", CATEGORY_ENTITYIDS, 661, 256, 65535, "Entity ID:"));
+	ENTITY_ID_PAT = config.getInt("FuriousDestroyer", CATEGORY_ENTITYIDS, 662, 256, 65535, "Entity ID:");
+	ENTITY_ID_JEN = config.getInt("SuperGirlyGamer", CATEGORY_ENTITYIDS, 663, 256, 65535, "Entity ID:");
+	ENTITY_ID_FRED = config.getInt("Fred 2.0", CATEGORY_ENTITYIDS, 664, 256, 65535, "Entity ID:");
+	ENTITY_ID_NMASTER = config.getInt("Ninja Master", CATEGORY_ENTITYIDS, 665, 256, 65535, "Entity ID:");
+	ENTITY_ID_CMAN = config.getInt("Candy Man", CATEGORY_ENTITYIDS, 666, 256, 65535, "Entity ID:");
+	ENTITY_ID_CPTCOOKIELITTLE = config.getInt("Captian Cookie Little", CATEGORY_ENTITYIDS, 667, 256, 65535, "Entity ID:");
+	ENTITY_ID_JTRENT238 = config.getInt("jtrent238", CATEGORY_ENTITYIDS, 668, 256, 65535, "Entity ID:");
+	ENTITY_ID_PTNT = config.getInt("EntilyPatTNTPrimed", CATEGORY_ENTITYIDS, 669, 256, 65535, "Entity ID:");
+	ENTITY_ID_PARROW = config.getInt("EntilyPatArrow", CATEGORY_ENTITYIDS, 670, 256, 65535, "Entity ID:");
+	ENTITY_ID_JARROW = config.getInt("EntilyJenArrow", CATEGORY_ENTITYIDS, 671, 256, 65535, "Entity ID:");
+	ENTITY_ID_CLOWN = config.getInt("Clown", CATEGORY_ENTITYIDS, 672, 256, 65535, "Entity ID:");
+	ENTITY_ID_CPOPPER = config.getInt("Candy Popper", CATEGORY_ENTITYIDS, 673, 256, 65535, "Entity ID:");
+	ENTITY_ID_SPARKY = config.getInt("Sparky", CATEGORY_ENTITYIDS, 674, 256, 65535, "Entity ID:");
+	ENTITY_ID_KITTY = config.getInt("Kitty", CATEGORY_ENTITYIDS, 675, 256, 65535, "Entity ID:");
+	ENTITY_ID_KAMI = config.getInt("Kami", CATEGORY_ENTITYIDS, 676, 256, 65535, "Entity ID:");
+	ENTITY_ID_POPO = config.getInt("Popo", CATEGORY_ENTITYIDS, 677, 256, 65535, "Entity ID:");
+	ENTITY_ID_BANANA = config.getInt("Banana", CATEGORY_ENTITYIDS, 678, 256, 65535, "Entity ID:");
+	ENTITY_ID_BLOCKLING = config.getInt("EntityBlockling", CATEGORY_ENTITYIDS, 679, 256, 65535, "Entity ID:");
+	ENTITY_ID_BLOCKLINGSML = config.getInt("EntityBlockling_Small", CATEGORY_ENTITYIDS, 680, 256, 65535, "Entity ID:");
+	ENTITY_ID_PGOLEM = config.getInt("FuriousDestroyer Golem", CATEGORY_ENTITYIDS, 681, 256, 65535, "Entity ID:");
+	ENTITY_ID_JGOLEM = config.getInt("SuperGirlyGamer Golem", CATEGORY_ENTITYIDS, 682, 256, 65535, "Entity ID:");
+	
 			/*
 	ENTITY_ID_1 = config.getInt("Bomby", CATEGORY_ENTITYIDS, 1, 0, 50, "Entity ID:");
 	ENTITY_ID_2 = config.getInt("Captian Cookie", CATEGORY_ENTITYIDS, 2, 0, 50, "Entity ID:");
@@ -448,7 +525,8 @@ public void preInit(FMLPreInitializationEvent event) throws IOException
 	//config.addCustomCategoryComment(CATEGORY_INFO, "This Configfile is still [WIP] and may not work properly. ***Some things won't work!");
 	config.addCustomCategoryComment(CATEGORY_DEVMODE, "Developer Mode Settings ***WARNING MAY BREAK YOUR GAME!***");
 	//config.getCategoryNames();
-		
+	config.addCustomCategoryComment(CATEGORY_ENTITYIDS, "Entity IDS ***Changeing IDS currently does nothing untill I figure out a way to set this so it don't courrupt worlds where the mod was preveously played with old ids.!***");
+	
 	config.save();
 	
 	event.getModLog();
@@ -486,6 +564,9 @@ public void preInit(FMLPreInitializationEvent event) throws IOException
 
 	
 	
+
+
+
 
 	private void DIM_EPICPROPORTIONS(int int1) {
 	
@@ -872,6 +953,7 @@ public static int getBIOME_ID_JEN() {
 public static void setBIOME_ID_JEN(int bIOME_ID_JEN) {
 	BIOME_ID_JEN = bIOME_ID_JEN;
 }
+
 {
 
 

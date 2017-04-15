@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 
 import com.jtrent238.epicproportions.Achievements;
 import com.jtrent238.epicproportions.CustomPresentDrops;
@@ -66,6 +67,11 @@ public class blockBirthdayPresent_Bad extends Block{
 	
 	String droptype;
 	int drop = n;
+	private int min = 0;
+	private int max = 2;
+	// nextInt is normally exclusive of the top value,
+	// so add 1 to make it inclusive
+	int randomNum = ThreadLocalRandom.current().nextInt(min , max  + 1);
 	
 	 
 	
@@ -81,14 +87,16 @@ public class blockBirthdayPresent_Bad extends Block{
 		
 		return true;
 	}
-	/*
+	
 	public void breakBlock(World par1World, int par2, int par3, int par4, EntityLivingBase par5EntityLivingBase, ItemStack par6ItemStack)
-	  {
+	  {/*
 	    ((EntityPlayer)par5EntityLivingBase).triggerAchievement(Achievements.achievementpresent);
 	    ((EntityPlayer)par5EntityLivingBase).addStat(Stats.presentsbroken, 1);
+	    
+	    par5EntityLivingBase.setFire(16);*/
 	  }
-	*/
 	
+
 	   /**
      * Called when the player destroys a block with an item that can harvest it. (i, j, k) are the coordinates of the
      * block and l is the block's subtype/damage.
@@ -101,17 +109,60 @@ public class blockBirthdayPresent_Bad extends Block{
         p_149636_2_.addExperience(15);
         p_149636_2_.addExhaustion(0.025F);
         
-        switch (drop) {
+/*
+ * if "this.rand.nextInt(3)" then it will have 2
+ */
+        switch (this.rand.nextInt(3)) {
         case 0:  droptype = "Explode";
-                 break;
+        
+			double p_72876_2_ = 0;
+			double p_72876_4_ = 0;
+			double p_72876_6_ = 0;
+			float p_72876_8_ = 5;
+			boolean p_72876_9_ = false;
+		
+        	p_149636_1_.createExplosion(p_149636_2_, p_72876_2_, p_72876_4_, p_72876_6_, p_72876_8_, p_72876_9_);
+                 
+        	break;
+                 
         case 1:  droptype = "Lava";
-                 break;
+        		int max = 25;
+        		int min = 4;
+        		int p_147449_1_ = (int) p_149636_2_.posX + rand.nextInt((max - min) + 1) + min;
+        		int p_147449_2_ = (int) p_149636_2_.posY;
+        		int p_147449_3_ = (int) p_149636_2_.posZ;
+        		Block p_147449_4_ = Blocks.flowing_lava;
+		
+        		p_149636_1_.setBlock(p_147449_1_, p_147449_2_, p_147449_3_, p_147449_4_);
+        		p_149636_1_.setBlock(p_147449_1_, p_147449_2_, p_147449_3_, p_147449_4_);
+        		p_149636_1_.setBlock(p_147449_1_, p_147449_2_, p_147449_3_, p_147449_4_);
+        		p_149636_1_.setBlock(p_147449_1_, p_147449_2_, p_147449_3_, p_147449_4_);
+        		p_149636_1_.setBlock(p_147449_1_, p_147449_2_, p_147449_3_, p_147449_4_);
+        		p_149636_1_.setBlock(p_147449_1_, p_147449_2_, p_147449_3_, p_147449_4_);
+        		p_149636_1_.setBlock(p_147449_1_, p_147449_2_, p_147449_3_, p_147449_4_);
+        		p_149636_1_.setBlock(p_147449_1_, p_147449_2_, p_147449_3_, p_147449_4_);
+        		p_149636_1_.setBlock(p_147449_1_, p_147449_2_, p_147449_3_, p_147449_4_);
+        		p_149636_1_.setBlock(p_147449_1_, p_147449_2_, p_147449_3_, p_147449_4_);
+        		p_149636_1_.setBlock(p_147449_1_, p_147449_2_, p_147449_3_, p_147449_4_);
+        		p_149636_1_.setBlock(p_147449_1_, p_147449_2_, p_147449_3_, p_147449_4_);
+        		p_149636_1_.setBlock(p_147449_1_, p_147449_2_, p_147449_3_, p_147449_4_);
+        		p_149636_1_.setBlock(p_147449_1_, p_147449_2_, p_147449_3_, p_147449_4_);
+        		p_149636_1_.setBlock(p_147449_1_, p_147449_2_, p_147449_3_, p_147449_4_);
+        		
+        		break;
+                 
+        case 2:	 droptype = "Fire";
+        
+        		p_149636_2_.setFire(16);
+        			
+        		break;
+        		 
         default: droptype = "Invalid Drop";
                  break;
 	}
 		
 		};
-
+				/*
 		public void drop(World p_149636_1_, EntityPlayer p_149636_2_){
 			
 			if(drop == 0){
@@ -156,7 +207,11 @@ public class blockBirthdayPresent_Bad extends Block{
 			}
 			
 
+			if(drop == 2){
+				p_149636_2_.setFire(16);
+			}
     }
+    			*/
 	public ItemStack getPickBlock(MovingObjectPosition target, World world, int x, int y, int z)
 	  {
 	    return new ItemStack(ItemLoader.itemBirthdayPresent_Bad);

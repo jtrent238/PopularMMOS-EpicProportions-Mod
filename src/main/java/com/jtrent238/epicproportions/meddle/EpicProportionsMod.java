@@ -13,7 +13,7 @@ import net.fybertech.meddleapi.MeddleAPI;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.CraftingManager;
 
-@MeddleMod(id="epicproportionsmod1", name="jtrent238's EpicProportions Mod", version=(com.jtrent238.epicproportions.EpicProportionsMod.MODVERSION), author="jtrennt238")
+@MeddleMod(id="epicproportionsmod1", name="jtrent238's EpicProportions Mod", version=(com.jtrent238.epicproportions.EpicProportionsMod.MODVERSION), author="jtrent238")
 
 public class EpicProportionsMod {
 	

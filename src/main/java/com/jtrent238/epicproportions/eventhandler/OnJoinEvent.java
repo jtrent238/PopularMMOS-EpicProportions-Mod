@@ -5,8 +5,8 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.ChatComponentText;
-import sun.applet.Main;
-import sun.rmi.runtime.Log;
+//import sun.applet.Main;
+//import sun.rmi.runtime.Log;
 
 import java.sql.Date;
 import java.time.Month;

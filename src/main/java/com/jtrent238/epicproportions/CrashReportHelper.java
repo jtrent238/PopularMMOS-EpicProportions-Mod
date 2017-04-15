@@ -1,7 +1,7 @@
 package com.jtrent238.epicproportions;
 
 import com.mojang.realmsclient.dto.PlayerInfo;
-import com.sun.javafx.image.impl.ByteIndexed.Getter;
+//import com.sun.javafx.image.impl.ByteIndexed.Getter;
 
 import cpw.mods.fml.common.gameevent.PlayerEvent;
 import ibxm.Player;

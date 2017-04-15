@@ -30,7 +30,7 @@ public class EntilyNukePrimed extends Entity
         this.motionX = (double)(-((float)Math.sin((double)f)) * 0.02F);
         this.motionY = 0.20000000298023224D;
         this.motionZ = (double)(-((float)Math.cos((double)f)) * 0.02F);
-        this.fuse = 240;
+        this.fuse = 24;//240;
         this.prevPosX = p_i1730_2_;
         this.prevPosY = p_i1730_4_;
         this.prevPosZ = p_i1730_6_;
@@ -94,7 +94,7 @@ public class EntilyNukePrimed extends Entity
 
     private void explode()
     {
-        float f = 1000F;
+        float f = 800F;
         this.worldObj.createExplosion(this, this.posX, this.posY, this.posZ, f, true);
     }
 

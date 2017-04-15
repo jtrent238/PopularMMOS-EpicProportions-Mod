@@ -38,7 +38,7 @@ import com.jtrent238.epicproportions.blocks.statues.BlockSparkyStatue;
 import com.jtrent238.epicproportions.items.itemgemofepicproportions;
 
 import cpw.mods.fml.common.registry.GameRegistry;
-import javafx.scene.paint.Color;
+//import javafx.scene.paint.Color;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockFlower;
 import net.minecraft.block.material.MapColor;

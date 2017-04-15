@@ -70,6 +70,7 @@ item.ItemJenBucket.name=SuperGirlyGamer Bucket
 item.ItemJenBucket_water.name=SuperGirlyGamer Bucket of Water
 item.ItemJenBucket_lava.name=SuperGirlyGamer Bucket of Lava
 item.ItemBirthdayPresentTester.name=Birthday Present Tester
+item.ItemCircusCoin.name=Circus Coin
 
 	/Weapons & Tools
 item.itemPatSword.name=FuriousDestroyer's Sword

@@ -46,8 +46,8 @@ public class Recipes {
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemJenHoe), "XXB", "BSB", "BSB", 'X', ItemLoader.itemJenIngot, 'S' , Items.stick);
 		//GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemPatBow), "XXB", "XSB", "BSB", 'X', ItemLoader.itemPatIngot, 'S' , Items.string);
 		//GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemJenBow), "XXB", "XSB", "BSB", 'X', ItemLoader.itemJenIngot, 'S' , Items.string);
-		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemPatMultiTool), "HAS", "PDR", "BBR", 'S', ItemLoader.itemPatSword, 'H' , ItemLoader.itemPatHoe, 'A' , ItemLoader.itemPatAxe, 'P' , ItemLoader.itemPatPick, 'D' , ItemLoader.itemPatShovel, 'R', Items.blaze_rod);
-		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemJenMultiTool), "HAS", "PDR", "BBR", 'S', ItemLoader.itemJenSword, 'H', ItemLoader.itemJenHoe, 'A', ItemLoader.itemJenAxe, 'P', ItemLoader.itemJenPick, 'D', ItemLoader.itemJenShovel, 'R', Items.blaze_rod);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemPatMultiTool), "HAS", "PRD", "BRB", 'S', ItemLoader.itemPatSword, 'H' , ItemLoader.itemPatHoe, 'A' , ItemLoader.itemPatAxe, 'P' , ItemLoader.itemPatPick, 'D' , ItemLoader.itemPatShovel, 'R', Items.blaze_rod);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemJenMultiTool), "HAS", "PRD", "BRB", 'S', ItemLoader.itemJenSword, 'H', ItemLoader.itemJenHoe, 'A', ItemLoader.itemJenAxe, 'P', ItemLoader.itemJenPick, 'D', ItemLoader.itemJenShovel, 'R', Items.blaze_rod);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemEpicProportionsStar), "JBP", "JNP", "JBP", 'P', ItemLoader.itemPatStar, 'J' , ItemLoader.itemJenStar, 'N' , Items.nether_star);
 		GameRegistry.addShapedRecipe(new ItemStack(Blocks.beacon), "GGG", "GPG", "OOO", 'P', ItemLoader.itemPatStar, 'G' , Blocks.glass, 'O' , Blocks.obsidian);
 		GameRegistry.addShapedRecipe(new ItemStack(Blocks.beacon), "GGG", "GJG", "OOO", 'J', ItemLoader.itemJenStar, 'G' , Blocks.glass, 'O' , Blocks.obsidian);
@@ -99,9 +99,11 @@ public class Recipes {
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itempatapple), "PPP", "PXP", "PPP", 'X', Items.apple, 'P', ItemLoader.itemPatIngot);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemjenapple), "JJJ", "JXJ", "JJJ", 'X', Items.apple, 'J', ItemLoader.itemJenIngot);
 		GameRegistry.addShapedRecipe(new ItemStack(BlockLoader.blockPatTNT), "XXX", "XTX", "XXX", 'X', ItemLoader.itemPatIngot, 'T' , Blocks.tnt);
+		GameRegistry.addShapedRecipe(new ItemStack(BlockLoader.blockJenTNT), "XXX", "XTX", "XXX", 'X', ItemLoader.itemJenIngot, 'T' , Blocks.tnt);
 		GameRegistry.addShapedRecipe(new ItemStack(BlockLoader.blockTrollTNT), "XXX", "XTX", "XXX", 'X', Blocks.dirt, 'T' , Blocks.tnt);
 		GameRegistry.addShapedRecipe(new ItemStack(BlockLoader.blockFartBomb), "XXX", "GTG", "XXX", 'X', Blocks.dirt, 'T' , Blocks.tnt, 'G', Blocks.gravel);
 		GameRegistry.addShapedRecipe(new ItemStack(BlockLoader.BlockNuke), "XXX", "XTX", "XXX", 'X', BlockLoader.blockPatTNT, 'T' , ItemLoader.itemPatStar);
+		GameRegistry.addShapedRecipe(new ItemStack(BlockLoader.BlockNuke), "XXX", "XTX", "XXX", 'X', BlockLoader.blockJenTNT, 'T' , ItemLoader.itemJenStar);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemJenBucket), "XBX", "BXB", 'X', ItemLoader.itemJenIngot);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemPatBucket), "XBX", "BXB", 'X', ItemLoader.itemPatIngot);
 		

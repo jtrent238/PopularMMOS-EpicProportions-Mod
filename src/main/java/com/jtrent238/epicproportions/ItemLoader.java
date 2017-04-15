@@ -1,5 +1,6 @@
 package com.jtrent238.epicproportions;
 
+import com.jtrent238.epicproportions.items.ItemCircusCoin;
 import com.jtrent238.epicproportions.items.ItemEpicProportionsPainting;
 import com.jtrent238.epicproportions.items.ItemJenDoor;
 import com.jtrent238.epicproportions.items.ItemModDoor;
@@ -251,6 +252,7 @@ public class ItemLoader {
 	public static Item ItemJenBucket_water;
 	public static Item ItemJenBucket_lava;
 	public static Item ItemBirthdayPresentTester;
+	public static Item ItemCircusCoin;
 
 
 	
@@ -451,6 +453,7 @@ public static void LoadItems() {
 	ItemJenBucket_water  = new ItemJenBucket_water(Blocks.flowing_water).setUnlocalizedName("ItemJenBucket_water").setTextureName("epicproportionsmod:ItemJenBucket_water").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	ItemJenBucket_lava  = new ItemJenBucket_lava(Blocks.flowing_lava).setUnlocalizedName("ItemJenBucket_lava").setTextureName("epicproportionsmod:ItemJenBucket_lava").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	ItemBirthdayPresentTester  = new ItemBirthdayPresentTester().setUnlocalizedName("ItemBirthdayPresentTester").setTextureName("epicproportionsmod:ItemBirthdayPresentTester").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	ItemCircusCoin  = new ItemCircusCoin().setUnlocalizedName("ItemCircusCoin").setTextureName("epicproportionsmod:ItemCircusCoin").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	
 	
 	//Weapons & Tools
@@ -559,9 +562,14 @@ private static void registerItems(){
 	GameRegistry.registerItem(itemEpicProportionsStar, itemEpicProportionsStar.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemPatArrow, itemPatArrow.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemJenArrow, itemJenArrow.getUnlocalizedName().substring(5));
-	GameRegistry.registerItem(itemBirthdayPresent, itemBirthdayPresent.getUnlocalizedName().substring(5));
+	
+	if(EpicProportionsMod.ENABLE_PRESENT_NORMAL == true){
+		GameRegistry.registerItem(itemBirthdayPresent, itemBirthdayPresent.getUnlocalizedName().substring(5));
+	}
 	//GameRegistry.registerItem(itemBirthdayPresent_Green, itemBirthdayPresent_Green.getUnlocalizedName().substring(5));
-	GameRegistry.registerItem(itemBirthdayPresent_Bad, itemBirthdayPresent_Bad.getUnlocalizedName().substring(5));
+	if(EpicProportionsMod.ENABLE_PRESENT_BAD == true){
+		GameRegistry.registerItem(itemBirthdayPresent_Bad, itemBirthdayPresent_Bad.getUnlocalizedName().substring(5));
+	}
 	GameRegistry.registerItem(itemHouseOfEpicProportionsPlacer, itemHouseOfEpicProportionsPlacer.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemBombyStructurePlacer, itemBombyStructurePlacer.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itempat, itempat.getUnlocalizedName().substring(5));
@@ -618,7 +626,9 @@ private static void registerItems(){
 	GameRegistry.registerItem(ItemPatCake, ItemPatCake.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(ItemJenCake, ItemJenCake.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(ItemEpicProportionsPainting, ItemEpicProportionsPainting.getUnlocalizedName().substring(5));
-	GameRegistry.registerItem(ItemMegaBirthdayPresentPlacer, ItemMegaBirthdayPresentPlacer.getUnlocalizedName().substring(5));
+	if(EpicProportionsMod.ENABLE_PRESENT_MEGA == true){
+		GameRegistry.registerItem(ItemMegaBirthdayPresentPlacer, ItemMegaBirthdayPresentPlacer.getUnlocalizedName().substring(5));
+	}
 	GameRegistry.registerItem(ItemPatBucket, ItemPatBucket.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(ItemJenBucket, ItemJenBucket.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(ItemPatBucket_water, ItemPatBucket_water.getUnlocalizedName().substring(5));
@@ -631,6 +641,7 @@ private static void registerItems(){
 		GameRegistry.registerItem(ItemBirthdayPresentTester, ItemBirthdayPresentTester.getUnlocalizedName().substring(5));
 		
 	}
+	GameRegistry.registerItem(ItemCircusCoin, ItemCircusCoin.getUnlocalizedName().substring(5));
 	
 	
 

@@ -85,7 +85,7 @@ import com.jtrent238.epicproportions.tileentity.TileEntityJenStatue;
 import com.jtrent238.epicproportions.tileentity.TileEntityLoader;
 import com.jtrent238.epicproportions.tileentity.TileEntityPatChest;
 import com.jtrent238.epicproportions.tileentity.TileEntityPatStatue;
-import com.sun.media.jfxmedia.logging.Logger;
+//import com.sun.media.jfxmedia.logging.Logger;
 
 import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.client.registry.RenderingRegistry;

@@ -1,5 +1,19 @@
 Epic Proportions Mod ChangeLog
 
+1.3.8.7
+- Added Config option to Enable/Disable Birthday Presents
+- Added Sound Sparky Growl
+- Added Sound Sparky Hurt
+- Added Sound Clown Hurt
+- Added Sound Clown Death
+- Added Circus Coin
+- Added Crafting Recipe for SuperGirlyGamer TNT
+- Added Stat FuriousDestroyer's Killed
+- Added Stat SuperGirlyGamer's Killed
+- Added Stat Captian Cookie's Killed
+- Changed Crafting Recipe for FuriousDestroyer MultiTool
+- Changed Crafting Recipe for SuperGirlyGamer MultiTool
+- Fixed Nuke not exploding
 
 1.3.7.7
 - Added 10 New Trades for EpicProportions Villager and jtrent238

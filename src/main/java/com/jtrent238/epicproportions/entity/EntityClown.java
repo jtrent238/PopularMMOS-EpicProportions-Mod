@@ -4,6 +4,8 @@ import java.util.Calendar;
 import java.util.List;
 import java.util.UUID;
 
+import com.jtrent238.epicproportions.ItemLoader;
+
 import cpw.mods.fml.common.eventhandler.Event.Result;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -387,7 +389,7 @@ public class EntityClown  extends EntityMob
 
     protected Item getDropItem()
     {
-        return Items.rotten_flesh;
+        return ItemLoader.ItemCircusCoin;
     }
 
     /**

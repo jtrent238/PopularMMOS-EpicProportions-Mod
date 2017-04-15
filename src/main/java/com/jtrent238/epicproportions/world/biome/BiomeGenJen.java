@@ -5,7 +5,7 @@ import java.util.Random;
 import com.jtrent238.epicproportions.BlockLoader;
 import com.jtrent238.epicproportions.EpicProportionsMod;
 
-import javafx.scene.paint.Color;
+//import javafx.scene.paint.Color;
 import net.minecraft.block.BlockFlower;
 import net.minecraft.entity.passive.EntityHorse;
 import net.minecraft.init.Blocks;
