@@ -20,6 +20,7 @@ import com.jtrent238.epicproportions.common.CommonProxy;
 import com.jtrent238.epicproportions.dim.Dimension;
 import com.jtrent238.epicproportions.dim.EpicProportionsBiomes;
 import com.jtrent238.epicproportions.dim.WorldProviderEpicProportions;
+import com.jtrent238.epicproportions.entity.EntityCaptianCookie;
 import com.jtrent238.epicproportions.eventhandler.OnJoinEvent;
 import com.jtrent238.epicproportions.items.structureplacers.itemTNTSwordSpawner;
 import com.jtrent238.epicproportions.lib.LogHelper;
@@ -108,7 +109,7 @@ public class EpicProportionsMod implements ITweaker
 	@Instance(MODID)
     public static EpicProportionsMod instance;
 
-	public static final String MODVERSION = "1.3.8.7";
+	public static final String MODVERSION = "1.3.8.8";
 
 	public static final String APIVERSION = "1.0.0.0";
 	public static final String MODNAME = "jtrent238's EpicProportions Mod";
@@ -116,7 +117,7 @@ public class EpicProportionsMod implements ITweaker
 	public static final String MC = "1.7.10";
 	
 	public static final String WIKI_URL = "https://github.com/jtrent238/PopularMMOS-EpicProportions-Mod/wiki";
-	public static final String CHANGELOG_URL = "";
+	public static final String CHANGELOG_URL = "https://raw.githubusercontent.com/jtrent238/PopularMMOS-EpicProportions-Mod/master/ChangeLog.txt";
 	
 	//public static final LogManager logger = LogManager.getLogManager();
 	public static final Class<LogHelper> logger = LogHelper.class;
@@ -171,7 +172,7 @@ public class EpicProportionsMod implements ITweaker
 	static boolean JTRENT238_SPAWN;
 
 	static boolean ENABLE_SWORD_OF_EPICPROPORTIONS;
-	private boolean PRESENT_ON_JOIN_CHANCE;
+	public static boolean PRESENT_ON_JOIN;
 	public static boolean BIRTHDAYPRESENT_CUSTOM;
 	public static boolean ENABLE_DEVMODE;
 	public static boolean ENABLE_DEVLOGGING;
@@ -189,6 +190,8 @@ public class EpicProportionsMod implements ITweaker
 	private ServerCommandManager command;
 
 	private boolean ENABLE_BOMBY_STRUCTURE_GEN;
+
+	public static boolean PRESENT_ON_DEVBIRTHDAY;
 
 	static int ENTITY_ID_PGOLEM;
 
@@ -285,6 +288,7 @@ public class EpicProportionsMod implements ITweaker
 	
 	public static final BiomeGenBase BIOMEPAT = (new BiomeGenPat(getBIOME_ID_PAT())).setColor(9286496).setBiomeName("FuriousDestroyer");
 	public static final BiomeGenBase BIOMEJEN = (new BiomeGenJen(getBIOME_ID_JEN())).setColor(9286496).setBiomeName("SuperGirlyGamer");
+	
 	
 	
 	@ForgeSubscribe(priority = EventPriority.NORMAL)
@@ -417,7 +421,8 @@ public void preInit(FMLPreInitializationEvent event) throws IOException
 	BIRTHDAYPRESENT_CREATIVE = config.get(CATEGORY_TWEAKS, "Allow Present Drops in Creative", false).getBoolean(false);
 	BIRTHDAYPRESENT_CUSTOM_DROPS = config.get(CATEGORY_TWEAKS, "Allow Custom Present Drops", false).getBoolean(false);
 	BIRTHDAYPRESENT_CUSTOM = config.get(CATEGORY_TWEAKS, "Allow Custom Birthday Presents", false).getBoolean(false);
-	PRESENT_ON_JOIN_CHANCE= config.get(CATEGORY_TWEAKS, "Chance to get a present on Join New world", 100) != null;
+	PRESENT_ON_JOIN = config.get(CATEGORY_TWEAKS, "Give player a Free Birthday Present when joining a New world", true).getBoolean(true);
+	PRESENT_ON_DEVBIRTHDAY = config.get(CATEGORY_TWEAKS, "Give player a Free Birthday Present on jtrent238's Birthday (April 4)", true).getBoolean(true);
 	JTRENT238_SPAWN = config.get(CATEGORY_TWEAKS, "Allow jtrent238 to Spawn", true).getBoolean(true);
 	ENABLE_SWORD_OF_EPICPROPORTIONS = config.get(CATEGORY_TWEAKS, "Enable Sword of Epic Proportions", true).getBoolean(true);
 	ENABLE_SUPER_JEN_ARMOR = config.get(CATEGORY_TWEAKS, "Enable Super FuriousDestroyer Armor", true).getBoolean(true);
@@ -707,7 +712,14 @@ public void init(FMLInitializationEvent event)
 		}*/
 		
 		
-
+			/*
+	try {
+		ganymedes01.headcrumbs.utils.HeadUtils.createHeadFor("jtrent238");
+     }
+     catch (Throwable e) {
+        System.err.println(e);
+     }
+			*/
 }
 
 

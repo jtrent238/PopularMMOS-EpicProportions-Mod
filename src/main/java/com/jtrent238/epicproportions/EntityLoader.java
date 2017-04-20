@@ -208,8 +208,8 @@ public class EntityLoader {
     	VillagerRegistry.instance().getClass();
 	
     	//Santa Registry
-	    VillagerRegistry.instance().registerVillagerId(64/*/EpicProportionsMod.getVILLAGER_ID_5()/*/);
-    	VillagerRegistry.instance().registerVillageTradeHandler(64/*/EpicProportionsMod.getVILLAGER_ID_5()/*/, new TradeHandler());
+	    VillagerRegistry.instance().registerVillagerId(/*64*/29627/*/EpicProportionsMod.getVILLAGER_ID_5()/*/);
+    	VillagerRegistry.instance().registerVillageTradeHandler(/*64*/29627 /*/EpicProportionsMod.getVILLAGER_ID_5()/*/, new TradeHandler());
     	VillagerRegistry.instance().getRegisteredVillagers(); 
     	VillagerRegistry.instance().getClass();
 
