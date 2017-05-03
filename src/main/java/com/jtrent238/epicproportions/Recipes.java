@@ -106,6 +106,7 @@ public class Recipes {
 		GameRegistry.addShapedRecipe(new ItemStack(BlockLoader.BlockNuke), "XXX", "XTX", "XXX", 'X', BlockLoader.blockJenTNT, 'T' , ItemLoader.itemJenStar);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemJenBucket), "XBX", "BXB", 'X', ItemLoader.itemJenIngot);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemPatBucket), "XBX", "BXB", 'X', ItemLoader.itemPatIngot);
+		GameRegistry.addShapedRecipe(new ItemStack(BlockLoader.BlockOfEpicProportions), "XXX", "XXX","XXX", 'X', ItemLoader.itemgemofepicproportions);
 		
 	}
 	

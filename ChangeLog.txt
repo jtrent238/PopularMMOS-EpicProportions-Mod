@@ -1,5 +1,18 @@
 Epic Proportions Mod ChangeLog
 
+1.3.8.9
+- Added Bellie
+- Added Block Of Epic Proportions
+- Added Molten SuperGirlyGamer Ingot
+- Added Molten FuriousDestroyer Ingot
+- Added FuriousDestroyer Dust
+- Added SuperGirlyGamer Dust
+- Added Stat Sword Of EpicProportions Crafted
+- Added Number of Super Tools Crafted
+- Added Number of Super Armor Crafted
+
+
+
 1.3.8.8
 - Added Config option to disable giving player a Present on join
 - Added Config option to disable giving player a Present on jtrent238's Birthday (April 4)

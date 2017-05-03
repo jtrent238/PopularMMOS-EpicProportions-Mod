@@ -39,6 +39,7 @@ import com.jtrent238.epicproportions.entity.EntilyJenArrow;
 import com.jtrent238.epicproportions.entity.EntilyPatArrow;
 import com.jtrent238.epicproportions.entity.Entilyjtrent238;
 import com.jtrent238.epicproportions.entity.EntityBanana;
+import com.jtrent238.epicproportions.entity.EntityBellie;
 import com.jtrent238.epicproportions.entity.EntityBlockling_Small;
 import com.jtrent238.epicproportions.entity.EntityBomby;
 import com.jtrent238.epicproportions.entity.EntityCandyMan;
@@ -145,7 +146,8 @@ public class ClientProxy extends CommonProxy {
 	    RenderingRegistry.registerEntityRenderingHandler(EntityFred2_0.class, new RenderLiving(new ModelFred2_0(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityFred2_0.png");}});//Small Blockling Render
 	    RenderingRegistry.registerEntityRenderingHandler(EntityPatGolem.class, new RenderLiving(new ModelPatGolem(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityPatGolem.png");}});//Pat Golem Render
 	    RenderingRegistry.registerEntityRenderingHandler(EntityJenGolem.class, new RenderLiving(new ModelJenGolem(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityJenGolem.png");}});//Jen Golem Render
-		   
+	    RenderingRegistry.registerEntityRenderingHandler(EntityBellie.class, new RenderLiving(new ModelBiped(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityBellie.png");}});//Sets Bellie Render
+	    
 	    RenderingRegistry.registerEntityRenderingHandler(EntilyPatArrow.class, new RenderPatArrow(){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityPatArrow.png");}});//Pat Arrow Render #1
 	    RenderingRegistry.registerEntityRenderingHandler(EntilyJenArrow.class, new RenderJenArrow(){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityJenArrow.png");}});//Jen Arrow Render #1
 	    RenderingRegistry.registerEntityRenderingHandler(EntilyPatArrow.class, new RenderPatArrow());//Pat Arrow Render #2

@@ -5,6 +5,7 @@ import com.jtrent238.epicproportions.entity.EntilyPatArrow;
 import com.jtrent238.epicproportions.entity.EntilyPatTNTPrimed;
 import com.jtrent238.epicproportions.entity.Entilyjtrent238;
 import com.jtrent238.epicproportions.entity.EntityBanana;
+import com.jtrent238.epicproportions.entity.EntityBellie;
 import com.jtrent238.epicproportions.entity.EntityBlockling;
 import com.jtrent238.epicproportions.entity.EntityBlockling_Small;
 import com.jtrent238.epicproportions.entity.EntityBomby;
@@ -77,34 +78,34 @@ public class EntityLoader {
 	//Captian Cookie Registry
 	    EntityRegistry.registerGlobalEntityID(EntityCaptianCookie.class, "EntityCaptianCookie",EntityRegistry.findGlobalUniqueEntityId());
 	    //RenderingRegistry.registerEntityRenderingHandler(EntityCaptianCookie.class, new RenderLiving(new ModelBiped(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityCaptianCookie.png");}});//Sets CaptianCookie Texture
-	    EntityRegistry.addSpawn(EntityCaptianCookie.class, 5, 4, 6, EnumCreatureType.creature, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.forest, BiomeGenBase.plains, BiomeGenBase.beach, BiomeGenBase.mesa, BiomeGenBase.savanna, BiomeGenBase.desert, BiomeGenBase.desertHills);
+	    EntityRegistry.addSpawn(EntityCaptianCookie.class, 5, 4, 6, EnumCreatureType.creature, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.forest, BiomeGenBase.plains, BiomeGenBase.beach, BiomeGenBase.mesa, BiomeGenBase.savanna, BiomeGenBase.desert, BiomeGenBase.desertHills, BiomeGenBase.mushroomIsland);
 		
 	//Evil Captian Cookie Registry
 	    EntityRegistry.registerGlobalEntityID(EntityCaptianCookie_Evil.class, "EntityCaptianCookie_Evil",EntityRegistry.findGlobalUniqueEntityId());
 	//Pat Registry
 	    EntityRegistry.registerGlobalEntityID(EntityPat.class, "EntityPat",EntityRegistry.findGlobalUniqueEntityId());
 	    //RenderingRegistry.registerEntityRenderingHandler(EntityPat.class, new RenderLiving(new ModelBiped(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityPat.png");}});//Sets Pat Texture
-	    EntityRegistry.addSpawn(EntityPat.class, 8, 4, 6, EnumCreatureType.creature, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.forest, BiomeGenBase.plains, BiomeGenBase.beach, BiomeGenBase.mesa, BiomeGenBase.savanna, BiomeGenBase.desert, BiomeGenBase.desertHills);
+	    EntityRegistry.addSpawn(EntityPat.class, 8, 4, 6, EnumCreatureType.creature, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.forest, BiomeGenBase.plains, BiomeGenBase.beach, BiomeGenBase.mesa, BiomeGenBase.savanna, BiomeGenBase.desert, BiomeGenBase.desertHills, BiomeGenBase.mushroomIsland);
 		
 	//Jen Registry
 	    EntityRegistry.registerGlobalEntityID(EntityJen.class, "EntityJen",EntityRegistry.findGlobalUniqueEntityId());
 	    //RenderingRegistry.registerEntityRenderingHandler(EntityJen.class, new RenderLiving(new ModelBiped(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityJen.png");}});//Sets Jen Texture
-	    EntityRegistry.addSpawn(EntityJen.class, 8, 4, 6, EnumCreatureType.creature, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.forest, BiomeGenBase.plains, BiomeGenBase.beach, BiomeGenBase.mesa, BiomeGenBase.savanna, BiomeGenBase.desert, BiomeGenBase.desertHills);
+	    EntityRegistry.addSpawn(EntityJen.class, 8, 4, 6, EnumCreatureType.creature, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.forest, BiomeGenBase.plains, BiomeGenBase.beach, BiomeGenBase.mesa, BiomeGenBase.savanna, BiomeGenBase.desert, BiomeGenBase.desertHills, BiomeGenBase.mushroomIsland);
 		
 	//Fred 2.0 Registry
 	    EntityRegistry.registerGlobalEntityID(EntityFred2_0.class, "EntityFred2_0",EntityRegistry.findGlobalUniqueEntityId());
 	    //RenderingRegistry.registerEntityRenderingHandler(EntityFred2_0.class, new RenderLiving(new ModelFred2_0(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityFred2_0.png");}});//Fred 2.0 Texture
-	    EntityRegistry.addSpawn(EntityFred2_0.class, 8, 4, 6, EnumCreatureType.monster, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.forest, BiomeGenBase.plains, BiomeGenBase.beach, BiomeGenBase.mesa, BiomeGenBase.savanna, BiomeGenBase.desert, BiomeGenBase.desertHills);
+	    EntityRegistry.addSpawn(EntityFred2_0.class, 8, 4, 6, EnumCreatureType.monster, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.forest, BiomeGenBase.plains, BiomeGenBase.beach, BiomeGenBase.mesa, BiomeGenBase.savanna, BiomeGenBase.desert, BiomeGenBase.desertHills, BiomeGenBase.mushroomIsland);
 		
 	//Ninja Master Registry
 	    EntityRegistry.registerGlobalEntityID(EntityNinjaMaster.class, "EntityNinjaMaster",EntityRegistry.findGlobalUniqueEntityId());
 	    //RenderingRegistry.registerEntityRenderingHandler(EntityNinjaMaster.class, new RenderLiving(new ModelBiped(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityNinjaMaster.png");}});//NinjaMaster Texture
-	    EntityRegistry.addSpawn(EntityNinjaMaster.class, 2, 4, 6, EnumCreatureType.creature, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.forest, BiomeGenBase.plains, BiomeGenBase.beach, BiomeGenBase.mesa, BiomeGenBase.savanna, BiomeGenBase.desert, BiomeGenBase.desertHills);
+	    EntityRegistry.addSpawn(EntityNinjaMaster.class, 2, 4, 6, EnumCreatureType.creature, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.forest, BiomeGenBase.plains, BiomeGenBase.beach, BiomeGenBase.mesa, BiomeGenBase.savanna, BiomeGenBase.desert, BiomeGenBase.desertHills, BiomeGenBase.mushroomIsland);
 		
 	//The Candy Man Master Registry
 	    EntityRegistry.registerGlobalEntityID(EntityCandyMan.class, "EntityCandyMan",EntityRegistry.findGlobalUniqueEntityId());
 	    //RenderingRegistry.registerEntityRenderingHandler(EntityCandyMan.class, new RenderLiving(new ModelBiped(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityCandyMan.png");}});//The Candy Man Texture
-	    EntityRegistry.addSpawn(EntityCandyMan.class, 5, 4, 6, EnumCreatureType.creature, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.forest, BiomeGenBase.plains, BiomeGenBase.beach, BiomeGenBase.mesa, BiomeGenBase.savanna, BiomeGenBase.desert, BiomeGenBase.desertHills);
+	    EntityRegistry.addSpawn(EntityCandyMan.class, 5, 4, 6, EnumCreatureType.creature, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.forest, BiomeGenBase.plains, BiomeGenBase.beach, BiomeGenBase.mesa, BiomeGenBase.savanna, BiomeGenBase.desert, BiomeGenBase.desertHills, BiomeGenBase.mushroomIsland);
 		
 	//Captian Cookie Little Registry
 	    EntityRegistry.registerGlobalEntityID(EntityCaptianCookieLittle.class, "EntityCaptianCookieLittle",EntityRegistry.findGlobalUniqueEntityId());
@@ -115,7 +116,7 @@ public class EntityLoader {
 	   // RenderingRegistry.registerEntityRenderingHandler(Entilyjtrent238.class, new RenderLiving(new ModelBiped(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:Entilyjtrent238.png");}});//jtrent238 Texture
 	   
 	    if(EpicProportionsMod.JTRENT238_SPAWN == true){
-	    EntityRegistry.addSpawn(Entilyjtrent238.class, 1, 1, 1, EnumCreatureType.creature, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.forest, BiomeGenBase.plains, BiomeGenBase.beach, BiomeGenBase.mesa, BiomeGenBase.savanna, BiomeGenBase.desert, BiomeGenBase.desertHills);
+	    EntityRegistry.addSpawn(Entilyjtrent238.class, 1, 1, 1, EnumCreatureType.creature, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.forest, BiomeGenBase.plains, BiomeGenBase.beach, BiomeGenBase.mesa, BiomeGenBase.savanna, BiomeGenBase.desert, BiomeGenBase.desertHills, BiomeGenBase.mushroomIsland);
 	    	}
 	    /*VillagerRegistry.instance().registerVillagerId(jtrent238);
 	    	VillagerRegistry.instance().registerVillageTradeHandler(8, new TradeHandler());
@@ -135,7 +136,7 @@ public class EntityLoader {
 	  //Clown Registry
 	    EntityRegistry.registerGlobalEntityID(EntityClown.class, "EntityClown",EntityRegistry.findGlobalUniqueEntityId());
 	    //RenderingRegistry.registerEntityRenderingHandler(EntityClown.class, new RenderLiving(new ModelBiped(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityClown.png");}});//jtrent238 Texture
-	    EntityRegistry.addSpawn(EntityClown.class, 1, 4, 6, EnumCreatureType.monster, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.forest, BiomeGenBase.plains, BiomeGenBase.beach, BiomeGenBase.mesa, BiomeGenBase.savanna, BiomeGenBase.desert, BiomeGenBase.desertHills);
+	    EntityRegistry.addSpawn(EntityClown.class, 1, 4, 6, EnumCreatureType.monster, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.forest, BiomeGenBase.plains, BiomeGenBase.beach, BiomeGenBase.mesa, BiomeGenBase.savanna, BiomeGenBase.desert, BiomeGenBase.desertHills, BiomeGenBase.mushroomIsland);
 	  
 	   //CandyPopper Registry
 	    EntityRegistry.registerGlobalEntityID(EntityCandyPopper.class, "EntityCandyPopper",EntityRegistry.findGlobalUniqueEntityId());
@@ -148,22 +149,22 @@ public class EntityLoader {
 	    //Kitty Registry
 	    EntityRegistry.registerGlobalEntityID(EntityKitty.class, "EntityKitty",EntityRegistry.findGlobalUniqueEntityId());
 	    //RenderingRegistry.registerEntityRenderingHandler(EntityKitty.class, new RenderLiving(new ModelKitty(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityKitty.png");}});//Kitty Texture
-	    EntityRegistry.addSpawn(EntityKitty.class, 1, 4, 6, EnumCreatureType.creature, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.forest, BiomeGenBase.plains, BiomeGenBase.beach, BiomeGenBase.mesa, BiomeGenBase.savanna, BiomeGenBase.desert, BiomeGenBase.desertHills);
+	    EntityRegistry.addSpawn(EntityKitty.class, 1, 4, 6, EnumCreatureType.creature, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.forest, BiomeGenBase.plains, BiomeGenBase.beach, BiomeGenBase.mesa, BiomeGenBase.savanna, BiomeGenBase.desert, BiomeGenBase.desertHills, BiomeGenBase.mushroomIsland);
 		  
 	  //Kami Registry
 	    EntityRegistry.registerGlobalEntityID(EntityKami.class, "EntityKami",EntityRegistry.findGlobalUniqueEntityId());
 	    //RenderingRegistry.registerEntityRenderingHandler(EntityKami.class, new RenderLiving(new ModelSheep1(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityKami.png");}});//Kami Texture
-	    EntityRegistry.addSpawn(EntityKami.class, 1, 4, 6, EnumCreatureType.creature, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.forest, BiomeGenBase.plains, BiomeGenBase.beach, BiomeGenBase.mesa, BiomeGenBase.savanna, BiomeGenBase.desert, BiomeGenBase.desertHills);
+	    EntityRegistry.addSpawn(EntityKami.class, 1, 4, 6, EnumCreatureType.creature, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.forest, BiomeGenBase.plains, BiomeGenBase.beach, BiomeGenBase.mesa, BiomeGenBase.savanna, BiomeGenBase.desert, BiomeGenBase.desertHills, BiomeGenBase.mushroomIsland);
 		
 	  //Popo Registry
 	    EntityRegistry.registerGlobalEntityID(EntityPopo.class, "EntityPopo",EntityRegistry.findGlobalUniqueEntityId());
 	   // RenderingRegistry.registerEntityRenderingHandler(EntityPopo.class, new RenderLiving(new ModelPopo1(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityPopo.png");}});//Popo Texture
-	    EntityRegistry.addSpawn(EntityPopo.class, 1, 4, 6, EnumCreatureType.creature, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.forest, BiomeGenBase.plains, BiomeGenBase.beach, BiomeGenBase.mesa, BiomeGenBase.savanna, BiomeGenBase.desert, BiomeGenBase.desertHills);
+	    EntityRegistry.addSpawn(EntityPopo.class, 1, 4, 6, EnumCreatureType.creature, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.forest, BiomeGenBase.plains, BiomeGenBase.beach, BiomeGenBase.mesa, BiomeGenBase.savanna, BiomeGenBase.desert, BiomeGenBase.desertHills, BiomeGenBase.mushroomIsland);
 		
 	  //Banana Registry
 	    EntityRegistry.registerGlobalEntityID(EntityBanana.class, "EntityBanana",EntityRegistry.findGlobalUniqueEntityId());
 	   // RenderingRegistry.registerEntityRenderingHandler(EntityBanana.class, new RenderLiving(new ModelCow(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityBanana.png");}});//Banana Texture
-	    EntityRegistry.addSpawn(EntityPopo.class, 1, 4, 6, EnumCreatureType.creature, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.forest, BiomeGenBase.plains, BiomeGenBase.beach, BiomeGenBase.mesa, BiomeGenBase.savanna, BiomeGenBase.desert, BiomeGenBase.desertHills);
+	    EntityRegistry.addSpawn(EntityPopo.class, 1, 4, 6, EnumCreatureType.creature, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.forest, BiomeGenBase.plains, BiomeGenBase.beach, BiomeGenBase.mesa, BiomeGenBase.savanna, BiomeGenBase.desert, BiomeGenBase.desertHills, BiomeGenBase.mushroomIsland);
 		
 	  //Blockling Registry
 	    EntityRegistry.registerGlobalEntityID(EntityBlockling.class, "EntityBlockling",EntityRegistry.findGlobalUniqueEntityId());
@@ -179,6 +180,10 @@ public class EntityLoader {
 	  //Jen Golem Registry
 	    EntityRegistry.registerGlobalEntityID(EntityJenGolem.class, "EntityJenGolem",EntityRegistry.findGlobalUniqueEntityId());
 	   
+	    EntityRegistry.registerGlobalEntityID(EntityBellie.class, "EntityBellie",EntityRegistry.findGlobalUniqueEntityId());
+	    //RenderingRegistry.registerEntityRenderingHandler(EntityCaptianCookie.class, new RenderLiving(new ModelBiped(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityCaptianCookie.png");}});//Sets CaptianCookie Texture
+	    EntityRegistry.addSpawn(EntityBellie.class, 5, 4, 6, EnumCreatureType.creature, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.forest, BiomeGenBase.plains, BiomeGenBase.beach, BiomeGenBase.mesa, BiomeGenBase.savanna, BiomeGenBase.desert, BiomeGenBase.desertHills, BiomeGenBase.mushroomIsland);
+		
 	    
 	    
 	  //VillagerOfEpicProportions Registry

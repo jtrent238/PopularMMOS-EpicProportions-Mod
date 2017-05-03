@@ -71,6 +71,8 @@ item.ItemJenBucket_water.name=SuperGirlyGamer Bucket of Water
 item.ItemJenBucket_lava.name=SuperGirlyGamer Bucket of Lava
 item.ItemBirthdayPresentTester.name=Birthday Present Tester
 item.ItemCircusCoin.name=Circus Coin
+item.ItemJenDust.name=SuperGirlyGamer Dust
+item.ItemPatDust.name=FuriousDestroyer Dust
 
 	/Weapons & Tools
 item.itemPatSword.name=FuriousDestroyer's Sword
@@ -157,6 +159,7 @@ item.itemSpawnJenVillager.name=Spawn SuperGirlyGamer Villager [WIP]
 item.itemSpawnJenGolem.name=Spawn SuperGirlyGamer Golem
 item.itemSpawnPatGolem.name=Spawn FuriousDestroyer Golem
 item.itemSpawnCaptianCookie_Evil.name=Spawn Evil Captian Cookie [WIP]
+item.itemSpawnBellie.name=Spawn Bellie
 
 //Blocks
 tile.blockFartBomb.name=Fart Bomb
@@ -192,7 +195,9 @@ tile.BlockPatGrass.name=FuriousDestroyer Grass
 tile.BlockPatDirt.name=FuriousDestroyer Dirt
 tile.BlockJenGrass.name=SuperGirlyGamer Grass 
 tile.BlockJenDirt.name=SuperGirlyGamer Dirt 
-
+tile.blockMoltenPat.name=Molten FuriousDestroyer Ingot
+tile.blockMoltenJen.name=Molten SuperGirlyGamer Ingot
+tile.BlockOfEpicProportions.name=Block Of Epic Proportions
 
 //Entitys
 entity.EntityBomby.name=Bomby
@@ -211,6 +216,7 @@ entity.EntityKami.name=Kami
 entity.EntityPopo.name=Popo
 entity.EntityBanana.name=Banana
 entity.EntityBlockling_Small.name=Small Blockling
+entity.EntityBellie.name=Bellie
 
 //Mod Devs And Helpers
 entity.Entityjtrent238.name=jtrent238

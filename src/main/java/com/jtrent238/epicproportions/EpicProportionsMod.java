@@ -109,7 +109,7 @@ public class EpicProportionsMod implements ITweaker
 	@Instance(MODID)
     public static EpicProportionsMod instance;
 
-	public static final String MODVERSION = "1.3.8.8";
+	public static final String MODVERSION = "1.3.8.9";
 
 	public static final String APIVERSION = "1.0.0.0";
 	public static final String MODNAME = "jtrent238's EpicProportions Mod";
@@ -618,6 +618,7 @@ public void init(FMLInitializationEvent event)
 	BiomeDict.registerBiomes();
 	Dimension.registerWorldProvider();
 	Dimension.registerDimensions();
+	//FluidLoader.RegisterFluids();
 	
 	/*
 	isTConstructModLoaded = Loader.isModLoaded("TConstruct");

@@ -8,6 +8,7 @@ import com.jtrent238.epicproportions.blocks.BlockJenGrass;
 import com.jtrent238.epicproportions.blocks.BlockModDoor;
 import com.jtrent238.epicproportions.blocks.BlockModStem;
 import com.jtrent238.epicproportions.blocks.BlockNuke;
+import com.jtrent238.epicproportions.blocks.BlockOfEpicProportions;
 import com.jtrent238.epicproportions.blocks.BlockPatDirt;
 import com.jtrent238.epicproportions.blocks.BlockPatDoor;
 import com.jtrent238.epicproportions.blocks.BlockPatGrass;
@@ -31,6 +32,8 @@ import com.jtrent238.epicproportions.blocks.blockPatTNT;
 import com.jtrent238.epicproportions.blocks.blockTrollTNT;
 import com.jtrent238.epicproportions.blocks.cakes.BlockJenCake;
 import com.jtrent238.epicproportions.blocks.cakes.BlockPatCake;
+import com.jtrent238.epicproportions.blocks.liquid.blockMoltenPat;
+import com.jtrent238.epicproportions.blocks.liquid.blockMoltenJen;
 import com.jtrent238.epicproportions.blocks.statues.BlockCaptianCookieStatue;
 import com.jtrent238.epicproportions.blocks.statues.BlockJenStatue;
 import com.jtrent238.epicproportions.blocks.statues.BlockPatStatue;
@@ -91,6 +94,10 @@ public class BlockLoader {
 	public static Block BlockJenDirt;
 	public static Block BlockEpicProportionsPortal;
 	public static Block blockJenTNT;
+	public static Block BlockOfEpicProportions;
+	
+	public static Block blockMoltenPat;
+	public static Block blockMoltenJen;
 	
 	
 	
@@ -150,7 +157,13 @@ public class BlockLoader {
 		BlockJenDirt = new BlockJenDirt().setBlockName("BlockJenDirt").setBlockTextureName("epicproportionsmod:BlockJenDirt").setHardness(1.5F).setStepSound(Block.soundTypeGravel).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 		BlockEpicProportionsPortal = new BlockEpicProportionsPortal(Material.portal).setBlockName("BlockEpicProportionsPortal").setBlockTextureName("epicproportionsmod:BlockEpicProportionsPortal").setHardness(0F).setStepSound(Block.soundTypeStone)/*/.setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
 		blockJenTNT = new blockJenTNT().setBlockName("blockJenTNT").setBlockTextureName("epicproportionsmod:blockJenTNT").setHardness(0F).setStepSound(Block.soundTypeGrass).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+		BlockOfEpicProportions = new BlockOfEpicProportions(Material.iron).setBlockName("BlockOfEpicProportions").setBlockTextureName("epicproportionsmod:BlockOfEpicProportions").setHardness(3F).setStepSound(Block.soundTypeStone).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 		
+		blockMoltenPat = new blockMoltenPat(Material.lava).setBlockName("blockMoltenPat").setBlockTextureName("epicproportionsmod:blockMoltenPat");
+		blockMoltenJen = new blockMoltenJen(Material.lava).setBlockName("blockMoltenJen").setBlockTextureName("epicproportionsmod:blockMoltenJen");
+
+		
+
 		registerBlocks();
 	}
 
@@ -200,6 +213,10 @@ public class BlockLoader {
 		GameRegistry.registerBlock(BlockJenDirt, "BlockJenDirt");
 		GameRegistry.registerBlock(BlockEpicProportionsPortal, "BlockEpicProportionsPortal");
 		GameRegistry.registerBlock(blockJenTNT, "blockJenTNT");
+		GameRegistry.registerBlock(BlockOfEpicProportions, "BlockOfEpicProportions");
+		
+		GameRegistry.registerBlock(blockMoltenPat, "blockMoltenPat");
+		GameRegistry.registerBlock(blockMoltenJen, "blockMoltenJen");
 
 		
 

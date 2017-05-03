@@ -32,5 +32,7 @@
 	"NukeLauncher_boom": {"category": "master","sounds": [{"name": "NukeLauncher_boom","stream": false}]},
 	"Launcher_boom": {"category": "master","sounds": [{"name": "Launcher_boom","stream": false}]},
 	"sword_swing": {"category": "master","sounds": [{"name": "sword_swing","stream": false}]},
-	"evil_laugh": {"category": "master","sounds": [{"name": "evil_laugh","stream": false}]}
+	"evil_laugh": {"category": "master","sounds": [{"name": "evil_laugh","stream": false}]},
+	"bellie_hurt": {"category": "master","sounds": [{"name": "bellie_hurt","stream": false}]},
+	"bellie_death": {"category": "master","sounds": [{"name": "bellie_death","stream": false}]}
 	}
