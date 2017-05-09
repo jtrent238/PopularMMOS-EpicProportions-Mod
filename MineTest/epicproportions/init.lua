@@ -27,6 +27,7 @@ end)
 --
 
 
+
 minetest.register_tool("epicproportions:pick_pat", {
 	description = "FuriousDestryoer Pickaxe",
 	inventory_image = "itemPatPick.png",
@@ -38,7 +39,7 @@ minetest.register_tool("epicproportions:pick_pat", {
 	},
 })
 
-minetest.register_tool("epicproportions:jen_pat", {
+minetest.register_tool("epicproportions:pick_jen", {
 	description = "SuperGirlyGamer Pickaxe",
 	inventory_image = "itemJenPick.png",
 	tool_capabilities = {
@@ -47,4 +48,37 @@ minetest.register_tool("epicproportions:jen_pat", {
 			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
 		}
 	},
+})
+
+-- ITEMS
+minetest.register_craftitem('epicproportions:ingot_jen', {
+    description = 'SuperGirlyGamer Ingot',
+    inventory_image = 'itemJenIngot.png',
+    stack_max = 64,
+})
+
+minetest.register_craftitem('epicproportions:ingot_pat', {
+    description = 'FuriousDestryoer Ingot',
+    inventory_image = 'itemPatIngot.png',
+    stack_max = 64,
+})
+
+-- CRAFTS
+
+minetest.register_craft({
+    output = 'epicproportions:pick_pat',
+    recipe = {
+      {'epicproportions:ingot_pat','epicproportions:ingot_pat','epicproportions:ingot_pat'},
+      {'', 'group:stick', ''},
+      {'', 'group:stick', ''},
+    }
+})
+
+minetest.register_craft({
+    output = 'epicproportions:pick_jen',
+    recipe = {
+      {'epicproportions:ingot_jen','epicproportions:ingot_jen','epicproportions:ingot_jen'},
+      {'', 'group:stick', ''},
+      {'', 'group:stick', ''},
+    }
 })
