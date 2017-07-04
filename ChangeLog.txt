@@ -1,5 +1,55 @@
 Epic Proportions Mod ChangeLog
 
+1.4.8.9
+- Added Trophy Support for ObsTrophies [All EpicProportions Mobs]
+- Added FuriousDestroyer Grass [Plant]
+- Added SuperGirlyGamer Grass [Plant]
+- Added FuriousDestroyer Grass Tall [Plant]
+- Added SuperGirlyGamer Grass Tall [Plant]
+- Added FuriousDestroyer Rail
+- Added SuperGirlyGamer Rail
+- Added FuriousDestroyer Lamp
+- Added SuperGirlyGamer Lamp
+- Added FuriousDestroyer Log
+- Added FuriousDestroyer Planks
+- Added FuriousDestroyer Leaves
+- Added SuperGirlyGamer Log
+- Added SuperGirlyGamer Planks
+- Added SuperGirlyGamer Leaves
+- Added FuriousDestroyer Biome [Incomplete]
+- Added SuperGirlyGamer Biome [Incomplete]
+- Added EpicProportions Dimension [Incomplete]
+- Added Lucky Chicken
+- Added Lucky Egg
+- Added Ninja Star
+- Added Pizza Structure
+- Added Pizza Structure Placer
+- Added FuriousDestroyer Flint
+- Added SuperGirlyGamer Flint
+- Added EpicProportions Wand
+- Added Crafting Recipe For FuriousDestroyer Arrow
+- Added Crafting Recipe For SuperGirlyGamer Arrow
+- Added Crafting Recipe For FuriousDestroyer Bow
+- Added Crafting Recipe For SuperGirlyGamer Bow
+- Added PopularMMOS Full Intro CD
+- Added PopularMMOS Intro CD
+- Added A Piece of Paper [Credit: Ertyez] CD
+- Fixed Captian Cookie CD Not Working
+- Fixed Bomby Structure Spawning Underground
+- Fixed FuriousDestroyer Well Not Generating
+- Fixed SuperGirlyGamer Well Not Generating
+- Fixed House Of Epic Proportions Not Generating
+- Fixed When Spawning House Of Epic Proportons Not Taking Item
+- Fixed When Spawning Bomby Structure Not Taking Item
+- Fixed When Spawning SuperGirlyGamer Well Not Taking Item
+- Fixed When Spawning FuriousDestroyer Well Not Taking Item
+- Fixed When Spawning TNT Sword Not Taking Item
+- Fixed When Spawning Mega Birthday Present Not Taking Item
+- Fixed FuriousDestroyer Arrow Not Rendering
+- Fixed SuperGirlyGamer Arrow Not Rendering
+
+
+
 1.3.8.9
 - Added Bellie
 - Added Block Of Epic Proportions
