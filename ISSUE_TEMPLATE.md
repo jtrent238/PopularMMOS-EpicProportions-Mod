@@ -1,34 +1,31 @@
-* **I'm submitting a ... **
-  - [ ] bug report
-  - [ ] feature request
-  - [ ] support request => Please do not submit support request here, see note at the top of this template.
+Your issue may already be reported!
+Please search on the [issue track](../) before creating one.
 
+## Expected Behavior
+<!--- If you're describing a bug, tell us what should happen -->
+<!--- If you're suggesting a change/improvement, tell us how it should work -->
 
-* **Do you want to request a *feature* or report a *bug*?**
+## Current Behavior
+<!--- If describing a bug, tell us what happens instead of the expected behavior -->
+<!--- If suggesting a change/improvement, explain the difference from current behavior -->
 
+## Possible Solution
+<!--- Not obligatory, but suggest a fix/reason for the bug, -->
+<!--- or ideas how to implement the addition or change -->
 
+## Steps to Reproduce (for bugs)
+<!--- Provide a link to a live example, or an unambiguous set of steps to -->
+<!--- reproduce this bug. Include code to reproduce, if relevant -->
+1.
+2.
+3.
+4.
 
-* **What is the current behavior?**
+## Context
+<!--- How has this issue affected you? What are you trying to accomplish? -->
+<!--- Providing context helps us come up with a solution that is most useful in the real world -->
 
-
-
-* **If the current behavior is a bug, please provide the steps to reproduce and if possible a minimal demo of the problem** via
-https://plnkr.co or similar (you can use this template as a starting point: http://plnkr.co/edit/tpl:AvJOMERrnz94ekVua0u5).
-
-
-
-* **What is the expected behavior?**
-
-
-
-* **What is the motivation / use case for changing the behavior?**
-
-
-
-* **Please tell us about your environment:**
-
-- version: x.x.x.x
-
-
-
-* **Other information** (e.g. detailed explanation, stacktraces, related issues, suggestions how to fix, links for us to have context, eg. stackoverflow, gitter, etc)
+## Your Environment
+<!--- Include as many relevant details about the environment you experienced the bug in -->
+* Version used:
+* Operating System and version (desktop or mobile):
