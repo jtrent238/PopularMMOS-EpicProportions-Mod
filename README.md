@@ -19,4 +19,7 @@ I am working very hard on this mod making all the textures, models ,editing and 
 
 ## [F.A.Q.?](https://github.com/jtrent238/PopularMMOS-EpicProportions-Mod/wiki/FAQ)
 
+### Want to play the mod without installing forge?
+Just download a preinstalled Version of it. Find Instructions [Here](https://github.com/jtrent238/PopularMMOS-EpicProportions-Mod/wiki/Play-The-Mod-Without-Installing-Forge).
+
 <center><a href="https://www.patreon.com/jtrent238" title=""><br /><img src="http://project2nd.com/img/Logo_Patreon.png" alt="" border="0"/><br/></a></center>
