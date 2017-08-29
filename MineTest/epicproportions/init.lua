@@ -63,6 +63,17 @@ minetest.register_craftitem('epicproportions:ingot_pat', {
     stack_max = 64,
 })
 
+-- DECORATIONS
+
+minetest.register_decoration({
+	deco_type = "simple",
+	--place_on = "epicproportions:blockJenIngot.png",
+	--sidelen = 16,
+	--fill_ratio = 0.03,
+	--biomes = {"grassland"},
+	decoration = "epicproportions:blockJenIngot.png",
+	--height = 1,
+})
 -- CRAFTS
 
 minetest.register_craft({
