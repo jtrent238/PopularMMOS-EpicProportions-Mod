@@ -1,9 +1,9 @@
 A similar PR may already be submitted!
-Please search among the [Pull request](../) before creating one.
+Please search among the [Pull request](https://github.com/jtrent238/PopularMMOS-EpicProportions-Mod/pulls) before creating one.
 
 Thanks for submitting a pull request! Please provide enough information so that others can review your pull request:
 
-For more information, see the `CONTRIBUTING` guide.
+For more information, see the [`CONTRIBUTING`](https://github.com/jtrent238/PopularMMOS-EpicProportions-Mod/blob/master/CONTRIBUTING.md) guide.
 
 
 **Summary**
