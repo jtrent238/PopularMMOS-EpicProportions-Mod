@@ -1,8 +1,11 @@
 package com.jtrent238.epicproportions.addons.halloween.client;
 
 import com.jtrent238.epicproportions.addons.halloween.common.CommonProxy;
+import com.jtrent238.epicproportions.addons.halloween.entity.EntityGhost;
+import com.jtrent238.epicproportions.addons.halloween.entity.EntitySpookyCaptianCookie;
 import com.jtrent238.epicproportions.addons.halloween.entity.EntitySpookyJen;
 import com.jtrent238.epicproportions.addons.halloween.entity.EntitySpookyPat;
+import com.jtrent238.epicproportions.addons.halloween.model.ModelGhost;
 import com.jtrent238.epicproportions.entity.EntityJen;
 import com.jtrent238.epicproportions.entity.EntityPat;
 
@@ -22,6 +25,8 @@ public class ClientProxy extends CommonProxy {
 
     RenderingRegistry.registerEntityRenderingHandler(EntitySpookyPat.class, new RenderLiving(new ModelBiped(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod_halloween:EntitySpookyPat.png");}});//Sets Pat Render
     RenderingRegistry.registerEntityRenderingHandler(EntitySpookyJen.class, new RenderLiving(new ModelBiped(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod_halloween:EntitySpookyJen.png");}});//Sets Jen Render
+    RenderingRegistry.registerEntityRenderingHandler(EntitySpookyCaptianCookie.class, new RenderLiving(new ModelBiped(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod_halloween:EntitySpookyCaptianCookie.png");}});//Sets Captain Cookie Render
+    RenderingRegistry.registerEntityRenderingHandler(EntityGhost.class, new RenderLiving(new ModelGhost(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod_halloween:EntityGhost.png");}});//Sets Captain Cookie Render
     
 	}
 

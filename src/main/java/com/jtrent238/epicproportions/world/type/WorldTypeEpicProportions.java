@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.jtrent238.epicproportions.EpicProportionsMod;
-import com.jtrent238.epicproportions.world.biome.BiomeGenPat;
-import com.jtrent238.epicproportions.world.biome.BiomeGenJen;
-
 import net.minecraft.util.WeightedRandom;
 import net.minecraft.world.WorldType;
 import net.minecraft.world.biome.BiomeGenBase;

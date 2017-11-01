@@ -109,12 +109,15 @@ public class blockBirthdayPresent_Bad extends Block{
         p_149636_2_.addExperience(15);
         p_149636_2_.addExhaustion(0.025F);
         
+        
+        Random random = new Random();
+        int randomNumber = random.nextInt(2 - 0) + 0;
 /*
  * if "this.rand.nextInt(3)" then it will have 2
  */
-        switch (this.rand.nextInt(3)) {
-        case 0:  droptype = "Explode";
-        
+        switch (randomNumber) {
+        case 0:  //droptype = "Explode";
+        /*
 			double p_72876_2_ = 0;
 			double p_72876_4_ = 0;
 			double p_72876_6_ = 0;
@@ -122,15 +125,15 @@ public class blockBirthdayPresent_Bad extends Block{
 			boolean p_72876_9_ = false;
 		
         	p_149636_1_.createExplosion(p_149636_2_, p_72876_2_, p_72876_4_, p_72876_6_, p_72876_8_, p_72876_9_);
-                 
+               */  
         	break;
                  
-        case 1:  droptype = "Lava";
+        case 1:  //droptype = "Lava";
         		int max = 25;
         		int min = 4;
         		int p_147449_1_ = (int) p_149636_2_.posX + rand.nextInt((max - min) + 1) + min;
-        		int p_147449_2_ = (int) p_149636_2_.posY;
-        		int p_147449_3_ = (int) p_149636_2_.posZ;
+        		int p_147449_2_ = (int) p_149636_2_.posY + rand.nextInt((max - min) + 1) + min;
+        		int p_147449_3_ = (int) p_149636_2_.posZ + rand.nextInt((max - min) + 1) + min;
         		Block p_147449_4_ = Blocks.flowing_lava;
 		
         		p_149636_1_.setBlock(p_147449_1_, p_147449_2_, p_147449_3_, p_147449_4_);
@@ -151,13 +154,13 @@ public class blockBirthdayPresent_Bad extends Block{
         		
         		break;
                  
-        case 2:	 droptype = "Fire";
+        case 2:	 //droptype = "Fire";
         
         		p_149636_2_.setFire(16);
         			
         		break;
         		 
-        default: droptype = "Invalid Drop";
+        default: //droptype = "Invalid Drop";
                  break;
 	}
 		

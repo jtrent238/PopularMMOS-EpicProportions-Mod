@@ -42,12 +42,16 @@ public class TradeHandler implements IVillageTradeHandler
 			recipeList.add(new MerchantRecipe(new ItemStack(Blocks.tnt, 2), new ItemStack(ItemLoader.itemPatIngot, 16), new ItemStack(BlockLoader.blockPatTNT, 1)));
 			recipeList.add(new MerchantRecipe(new ItemStack(Blocks.tnt, 2), new ItemStack(Blocks.dirt, 16), new ItemStack(BlockLoader.blockTrollTNT, 1)));
 			recipeList.add(new MerchantRecipe(new ItemStack(Blocks.tnt, 2), new ItemStack(ItemLoader.itemEpicProportionsStar, 16), new ItemStack(BlockLoader.BlockNuke, 1)));
+			recipeList.add(new MerchantRecipe(new ItemStack(ItemLoader.ItemCircusCoin, 2), new ItemStack(ItemLoader.itemBirthdayPresent, 1)));
 			
 			
 			
 			
 			break;
 		
+		case 64:
+			recipeList.add(new MerchantRecipe(new ItemStack(ItemLoader.ItemCircusCoin, 2), new ItemStack(ItemLoader.itemBirthdayPresent, 1)));
+			
 		default:
 			break;
 		

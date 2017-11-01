@@ -8,6 +8,7 @@ item.itemHalloweenPail.name=Halloween Pail
 item.itemHalloweenPail_Pat.name=FuriousDestroyer Halloween Pail
 item.itemHalloweenPail_Jen.name=SuperGirlyGamer Halloween Pail
 item.itemHalloweenPail_Creeper.name=Creeper Halloween Pail
+item.itemHalloweenPail_Cow.name=Cow Halloween Pail
 item.itemCandy_0.name=Chocolate Bar
 item.itemCandy_1.name=White Chocolate Bar
 item.itemCandy_2.name=Red Lollipop
@@ -35,13 +36,18 @@ item.itemCandy_15.name=Twix Bar
 	/Spawn Eggs
 item.itemSpawnSpookyPat.name=Spawn Spooky FuriousDestroyer
 item.itemSpawnSpookyJen.name=Spawn Spooky SuperGirlyGamer
+item.itemSpawnSpookyCaptainCookie.name=Spawn Spooky Captain Cookie
+item.itemSpawnGhost.name=Spawn Ghost
 
+//Blocks
 tile.blockSpookyIngot.name=Spooky Ingot Block
 tile.blockSpookyEssenceOre.name=Spooky Essence Ore
 
 //Entitys
 entity.EntitySpookyPat.name=Spooky FuriousDestroyer
 entity.EntitySpookyJen.name=Spooky SuperGirlyGamer
+entity.EntitySpookyCaptianCookie.name=Spooky Captain Cookie
+entity.EntityGhost.name=Ghost
 
 //Mod Devs And Helpers
 entity.Entityjtrent238.name=jtrent238

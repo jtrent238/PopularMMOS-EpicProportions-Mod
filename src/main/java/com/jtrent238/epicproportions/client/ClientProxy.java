@@ -17,6 +17,7 @@ import net.minecraft.crash.CrashReport;
 import net.minecraft.entity.Entity;
 import net.minecraft.event.ClickEvent;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.ChatComponentText;
@@ -31,6 +32,7 @@ import java.util.Date;
 import com.jtrent238.epicproportions.Achievements;
 import com.jtrent238.epicproportions.BlockLoader;
 import com.jtrent238.epicproportions.EpicProportionsMod;
+import com.jtrent238.epicproportions.ItemLoader;
 import com.jtrent238.epicproportions.ServerProxy;
 import com.jtrent238.epicproportions.TradeHandler;
 import com.jtrent238.epicproportions.VersionChecker;
@@ -53,7 +55,10 @@ import com.jtrent238.epicproportions.entity.EntityJen;
 import com.jtrent238.epicproportions.entity.EntityJenGolem;
 import com.jtrent238.epicproportions.entity.EntityKami;
 import com.jtrent238.epicproportions.entity.EntityKitty;
+import com.jtrent238.epicproportions.entity.EntityLuckyChicken;
+import com.jtrent238.epicproportions.entity.EntityLuckyEgg;
 import com.jtrent238.epicproportions.entity.EntityNinjaMaster;
+import com.jtrent238.epicproportions.entity.EntityNinjaStar;
 import com.jtrent238.epicproportions.entity.EntityPat;
 import com.jtrent238.epicproportions.entity.EntityPatGolem;
 import com.jtrent238.epicproportions.entity.EntityPopo;
@@ -68,6 +73,7 @@ import com.jtrent238.epicproportions.model.ModelCandyPopper;
 import com.jtrent238.epicproportions.model.ModelFred2_0;
 import com.jtrent238.epicproportions.model.ModelJenGolem;
 import com.jtrent238.epicproportions.model.ModelKitty;
+import com.jtrent238.epicproportions.model.ModelLuckyChicken;
 import com.jtrent238.epicproportions.model.ModelPatGolem;
 import com.jtrent238.epicproportions.model.ModelPopo1;
 import com.jtrent238.epicproportions.render.ItemRenderJenChest;
@@ -78,6 +84,7 @@ import com.jtrent238.epicproportions.render.RenderChests;
 import com.jtrent238.epicproportions.render.RenderJenArrow;
 import com.jtrent238.epicproportions.render.RenderJenChest;
 import com.jtrent238.epicproportions.render.RenderJenStatue;
+import com.jtrent238.epicproportions.render.RenderNinjaStar;
 import com.jtrent238.epicproportions.render.RenderPatArrow;
 import com.jtrent238.epicproportions.render.RenderPatChest;
 import com.jtrent238.epicproportions.render.RenderPatStatue;
@@ -147,13 +154,16 @@ public class ClientProxy extends CommonProxy {
 	    RenderingRegistry.registerEntityRenderingHandler(EntityPatGolem.class, new RenderLiving(new ModelPatGolem(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityPatGolem.png");}});//Pat Golem Render
 	    RenderingRegistry.registerEntityRenderingHandler(EntityJenGolem.class, new RenderLiving(new ModelJenGolem(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityJenGolem.png");}});//Jen Golem Render
 	    RenderingRegistry.registerEntityRenderingHandler(EntityBellie.class, new RenderLiving(new ModelBiped(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityBellie.png");}});//Sets Bellie Render
+	    RenderingRegistry.registerEntityRenderingHandler(EntityLuckyChicken.class, new RenderLiving(new ModelLuckyChicken(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityLuckyChicken.png");}});//Sets Bellie Render
 	    
 	    RenderingRegistry.registerEntityRenderingHandler(EntilyPatArrow.class, new RenderPatArrow(){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityPatArrow.png");}});//Pat Arrow Render #1
 	    RenderingRegistry.registerEntityRenderingHandler(EntilyJenArrow.class, new RenderJenArrow(){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityJenArrow.png");}});//Jen Arrow Render #1
 	    RenderingRegistry.registerEntityRenderingHandler(EntilyPatArrow.class, new RenderPatArrow());//Pat Arrow Render #2
 	    RenderingRegistry.registerEntityRenderingHandler(EntilyJenArrow.class, new RenderJenArrow());//Jen Arrow Render #2
+	    //RenderingRegistry.registerEntityRenderingHandler(EntityNinjaStar.class, new RenderSnowball(new ItemStack(ItemLoader.ItemNinjaStar).getItem()));
+	    //RenderingRegistry.registerEntityRenderingHandler(EntityNinjaStar.class, new RenderSnowball(ItemLoader.ItemNinjaStar));
 	    
-    	VillagerRegistry.instance().registerVillagerSkin(22, new ResourceLocation("epicproportionsmod", "VillagerOfEpicProportions.png"));
+	    VillagerRegistry.instance().registerVillagerSkin(22, new ResourceLocation("epicproportionsmod", "VillagerOfEpicProportions.png"));
     	VillagerRegistry.instance().registerVillagerSkin(23, new ResourceLocation("epicproportionsmod", "JenVillager.png"));
     	VillagerRegistry.instance().registerVillagerSkin(24, new ResourceLocation("epicproportionsmod", "PatVillager.png"));
     	VillagerRegistry.instance().registerVillagerSkin(25, new ResourceLocation("epicproportionsmod", "TESTVILLAGER.png"));
@@ -212,4 +222,16 @@ public class ClientProxy extends CommonProxy {
     
   }
   
-}
+  @Override
+  public void registerRenderThings()
+  {
+  RenderingRegistry.registerEntityRenderingHandler(EntityNinjaStar.class, new RenderSnowball(ItemLoader.ItemNinjaStar));
+  RenderingRegistry.registerEntityRenderingHandler(EntityLuckyEgg.class, new RenderSnowball(ItemLoader.ItemLuckyEgg));
+  RenderingRegistry.registerEntityRenderingHandler(EntilyPatArrow.class, new RenderPatArrow());
+  RenderingRegistry.registerEntityRenderingHandler(EntilyJenArrow.class, new RenderJenArrow());
+  }
+
+  @Override
+  public void registerSounds() {}
+  }
+

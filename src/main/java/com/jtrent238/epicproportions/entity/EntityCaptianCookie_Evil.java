@@ -29,10 +29,12 @@ import net.minecraft.entity.ai.EntityAINearestAttackableTarget;
 import net.minecraft.entity.ai.EntityAIWander;
 import net.minecraft.entity.ai.EntityAIWatchClosest;
 import net.minecraft.entity.boss.BossStatus;
+import net.minecraft.entity.boss.EntityWither;
 import net.minecraft.entity.boss.IBossDisplayData;
 import net.minecraft.entity.effect.EntityLightningBolt;
 import net.minecraft.entity.item.EntityXPOrb;
 import net.minecraft.entity.monster.EntityGolem;
+import net.minecraft.entity.monster.EntityMob;
 import net.minecraft.entity.monster.IMob;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
@@ -95,6 +97,10 @@ public class EntityCaptianCookie_Evil extends EntityGolem implements IBossDispla
 	        //DungeonHooks.addDungeonMob("Captian Cookie", 180);
 	    }
 	    
+
+
+		
+
 	    @SideOnly(Side.CLIENT)
 		public int getBossHealth() {
 			return (int) this.getHealth();

@@ -107,8 +107,22 @@ public class Recipes {
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemJenBucket), "XBX", "BXB", 'X', ItemLoader.itemJenIngot);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemPatBucket), "XBX", "BXB", 'X', ItemLoader.itemPatIngot);
 		GameRegistry.addShapedRecipe(new ItemStack(BlockLoader.BlockOfEpicProportions), "XXX", "XXX","XXX", 'X', ItemLoader.itemgemofepicproportions);
+		GameRegistry.addShapedRecipe(new ItemStack(Items.pumpkin_pie), "PSB", "XBB","BBB", 'X', ItemLoader.ItemLuckyEgg, 'P', Blocks.pumpkin, 'S', Items.sugar);
+		GameRegistry.addShapedRecipe(new ItemStack(Items.cake), "MMM", "SXS","WWW", 'X', ItemLoader.ItemLuckyEgg, 'M', Items.milk_bucket, 'W', Items.wheat, 'S', Items.sugar);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemEpicProportionsWand), "BPB", "BJB","BSB", 'P', ItemLoader.itemPatStar, 'J', ItemLoader.itemJenStar, 'S', Items.stick);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemNinjaStar, 32), "BIB", "III","BIB", 'I', Items.iron_ingot);
+		GameRegistry.addShapedRecipe(new ItemStack(BlockLoader.BlockPatLamp), "III", "ILI","III", 'I', ItemLoader.itemPatIngot, 'L', Blocks.redstone_lamp);
+		GameRegistry.addShapedRecipe(new ItemStack(BlockLoader.BlockJenLamp), "III", "ILI","III", 'I', ItemLoader.itemJenIngot, 'L', Blocks.redstone_lamp);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemPatDust, 4), "I",'I', ItemLoader.itemPatIngot);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemJenDust, 4), "I",'I', ItemLoader.itemJenIngot);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemPatFlint), "FD", 'F', Items.flint, 'D', ItemLoader.ItemPatDust);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemJenFlint), "FD", 'F', Items.flint, 'D', ItemLoader.ItemJenDust);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemPatArrow), "X", "S", "F", 'F', Items.feather, 'X', ItemLoader.ItemPatFlint, 'S', Items.stick);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemJenArrow), "X", "S", "F", 'F', Items.feather, 'X', ItemLoader.ItemJenFlint, 'S', Items.stick);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemPatBow), "BSX", "IBX", "BSX", 'X', Items.string, 'I', ItemLoader.itemPatIngot, 'S', Items.stick);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemJenBow), "BSX", "IBX", "BSX", 'X', Items.string, 'I', ItemLoader.itemJenIngot, 'S', Items.stick);
 		
-	}
+		}
 	
 	/**
 	 * Add Shapeless Recipes.

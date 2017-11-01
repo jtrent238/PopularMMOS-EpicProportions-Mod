@@ -1195,6 +1195,7 @@ if(place){
 	world.setBlock(x+6, y+14, z+12, Block.getBlockById(46));
 
 }
+--itemStack.stackSize;
 }
 
 return true;

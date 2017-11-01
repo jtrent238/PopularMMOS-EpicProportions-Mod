@@ -1607,6 +1607,7 @@ if(place){
 	world.setBlock(i+11, j+7, k+13, Block.getBlockById(0), 0, 2);
 	world.setBlock(i+12, j+7, k+13, Block.getBlockById(0), 0, 2);
 }
+--itemStack.stackSize;
 }
 
 

@@ -2,12 +2,20 @@ package com.jtrent238.epicproportions;
 
 import com.jtrent238.epicproportions.items.ItemCircusCoin;
 import com.jtrent238.epicproportions.items.ItemEpicProportionsPainting;
+import com.jtrent238.epicproportions.items.ItemEpicProportionsWand;
 import com.jtrent238.epicproportions.items.ItemJenDoor;
 import com.jtrent238.epicproportions.items.ItemJenDust;
+import com.jtrent238.epicproportions.items.ItemJenFlint;
+import com.jtrent238.epicproportions.items.ItemLuckyEgg;
 import com.jtrent238.epicproportions.items.ItemModDoor;
 import com.jtrent238.epicproportions.items.ItemModInfo;
+import com.jtrent238.epicproportions.items.ItemNinjaStar;
+import com.jtrent238.epicproportions.items.ItemPatCD1;
+import com.jtrent238.epicproportions.items.ItemPatCD2;
+import com.jtrent238.epicproportions.items.ItemPatCD3;
 import com.jtrent238.epicproportions.items.ItemPatDoor;
 import com.jtrent238.epicproportions.items.ItemPatDust;
+import com.jtrent238.epicproportions.items.ItemPatFlint;
 import com.jtrent238.epicproportions.items.itemCaptainCookieCookie;
 import com.jtrent238.epicproportions.items.itemEpicProportionsStar;
 import com.jtrent238.epicproportions.items.itemJenIngot;
@@ -65,6 +73,7 @@ import com.jtrent238.epicproportions.items.spawners.itemSpawnJenGolem;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnJenVillager;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnKami;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnKitty;
+import com.jtrent238.epicproportions.items.spawners.itemSpawnLuckyChicken;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnNinjaMaster;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnPat;
 import com.jtrent238.epicproportions.items.spawners.itemSpawnPatGolem;
@@ -84,6 +93,7 @@ import com.jtrent238.epicproportions.items.statues.itembombyStatue;
 import com.jtrent238.epicproportions.items.statues.itemjtrent238Statue;
 import com.jtrent238.epicproportions.items.statues.itemkittyStatue;
 import com.jtrent238.epicproportions.items.statues.itemsparkyStatue;
+import com.jtrent238.epicproportions.items.structureplacers.ItemGiantPizzaPlacer;
 import com.jtrent238.epicproportions.items.structureplacers.ItemMegaBirthdayPresentPlacer;
 import com.jtrent238.epicproportions.items.structureplacers.itemBombyStructurePlacer;
 import com.jtrent238.epicproportions.items.structureplacers.itemHouseOfEpicProportionsPlacer;
@@ -258,7 +268,16 @@ public class ItemLoader {
 	public static Item ItemCircusCoin;
 	public static Item ItemPatDust;
 	public static Item ItemJenDust;
-
+	public static Item ItemPatCD1;
+	public static Item ItemPatCD2;
+	public static Item ItemPatCD3;
+	public static Item ItemLuckyEgg;
+	public static Item ItemEpicProportionsWand;
+	public static Item ItemNinjaStar;
+	public static Item ItemGiantPizzaPlacer;
+	public static Item ItemPatFlint;
+	public static Item ItemJenFlint;
+	
 
 	
 	
@@ -312,6 +331,7 @@ public class ItemLoader {
 	public static Item itemTrollTNTLauncher;
 	public static Item itemFartBombLauncher;
 	public static Item itemNukeLauncher;
+	
 
 	
 	
@@ -342,6 +362,7 @@ public class ItemLoader {
 	public static Item itemSpawnJenGolem;
 	public static Item itemSpawnCaptianCookie_Evil;
 	public static Item itemSpawnBellie;
+	public static Item itemSpawnLuckyChicken;
 	
 	//Armor
 		//Pat Armor
@@ -462,8 +483,16 @@ public static void LoadItems() {
 	ItemCircusCoin  = new ItemCircusCoin().setUnlocalizedName("ItemCircusCoin").setTextureName("epicproportionsmod:ItemCircusCoin").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	ItemPatDust  = new ItemPatDust().setUnlocalizedName("ItemPatDust").setTextureName("epicproportionsmod:ItemPatDust").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	ItemJenDust  = new ItemJenDust().setUnlocalizedName("ItemJenDust").setTextureName("epicproportionsmod:ItemJenDust").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	ItemPatCD1  = new ItemPatCD1("pat_themesong_full").setUnlocalizedName("ItemPatCD1").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	ItemPatCD2  = new ItemPatCD2("pat_themesong").setUnlocalizedName("ItemPatCD2").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	ItemPatCD3  = new ItemPatCD3("pat_papersong").setUnlocalizedName("ItemPatCD3").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	ItemLuckyEgg  = new ItemLuckyEgg().setUnlocalizedName("ItemLuckyEgg").setTextureName("epicproportionsmod:ItemLuckyEgg").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	ItemEpicProportionsWand  = new ItemEpicProportionsWand().setUnlocalizedName("ItemEpicProportionsWand").setTextureName("epicproportionsmod:ItemEpicProportionsWand").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	ItemNinjaStar  = new ItemNinjaStar().setUnlocalizedName("ItemNinjaStar").setTextureName("epicproportionsmod:ItemNinjaStar").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	ItemGiantPizzaPlacer  = new ItemGiantPizzaPlacer(0).setUnlocalizedName("ItemGiantPizzaPlacer").setTextureName("epicproportionsmod:ItemGiantPizzaPlacer").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	ItemPatFlint  = new ItemPatFlint().setUnlocalizedName("ItemPatFlint").setTextureName("epicproportionsmod:ItemPatFlint").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	ItemJenFlint  = new ItemJenFlint().setUnlocalizedName("ItemJenFlint").setTextureName("epicproportionsmod:ItemJenFlint").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 
-	
 	//Weapons & Tools
 	itemPatSword = new itemPatSword(ToolMaterial.EMERALD).setUnlocalizedName("itemPatSword").setTextureName("epicproportionsmod:itemPatSword").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itemJenSword = new itemJenSword(ToolMaterial.EMERALD).setUnlocalizedName("itemJenSword").setTextureName("epicproportionsmod:itemJenSword").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
@@ -525,7 +554,7 @@ public static void LoadItems() {
 	itemSpawnJenGolem = new itemSpawnJenGolem().setUnlocalizedName("itemSpawnJenGolem").setTextureName("epicproportionsmod:itemSpawnJenGolem").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itemSpawnCaptianCookie_Evil = new itemSpawnCaptianCookie_Evil().setUnlocalizedName("itemSpawnCaptianCookie_Evil").setTextureName("epicproportionsmod:itemSpawnCaptianCookie_Evil").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itemSpawnBellie = new itemSpawnBellie().setUnlocalizedName("itemSpawnBellie").setTextureName("epicproportionsmod:itemSpawnBellie").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
-	
+	itemSpawnLuckyChicken = new itemSpawnLuckyChicken().setUnlocalizedName("itemSpawnLuckyChicken").setTextureName("epicproportionsmod:itemSpawnLuckyChicken").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	
 	//Armor
 		//PatArmor
@@ -654,8 +683,17 @@ private static void registerItems(){
 	GameRegistry.registerItem(ItemPatDust, ItemPatDust.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(ItemJenDust, ItemJenDust.getUnlocalizedName().substring(5));
 	
-
+	GameRegistry.registerItem(ItemPatCD1, ItemPatCD1.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(ItemPatCD2, ItemPatCD2.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(ItemPatCD3, ItemPatCD3.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(ItemLuckyEgg, ItemLuckyEgg.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(ItemEpicProportionsWand, ItemEpicProportionsWand.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(ItemNinjaStar, ItemNinjaStar.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(ItemGiantPizzaPlacer, ItemGiantPizzaPlacer.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(ItemPatFlint, ItemPatFlint.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(ItemJenFlint, ItemJenFlint.getUnlocalizedName().substring(5));
 	
+
 	//Weapons & Tools
 	GameRegistry.registerItem(itemPatSword, itemPatSword.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemJenSword, itemJenSword.getUnlocalizedName().substring(5));
@@ -786,6 +824,7 @@ private static void registerItems(){
 	GameRegistry.registerItem(itemSpawnJenGolem, itemSpawnJenGolem.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemSpawnCaptianCookie_Evil, itemSpawnCaptianCookie_Evil.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemSpawnBellie, itemSpawnBellie.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(itemSpawnLuckyChicken, itemSpawnLuckyChicken.getUnlocalizedName().substring(5));
 	
 	
 	

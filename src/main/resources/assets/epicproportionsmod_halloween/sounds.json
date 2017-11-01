@@ -1,0 +1,5 @@
+{
+    "ghost_say": {"category": "master","sounds": [{"name": "ghost_say","stream": false}]},
+	"ghost_hurt": {"category": "master","sounds": [{"name": "ghost_hurt","stream": false}]},
+	"ghost_death": {"category": "master","sounds": [{"name": "ghost_death","stream": false}]}
+	}

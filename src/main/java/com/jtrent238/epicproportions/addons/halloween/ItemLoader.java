@@ -1,5 +1,7 @@
 package com.jtrent238.epicproportions.addons.halloween;
 
+import com.jtrent238.epicproportions.addons.halloween.items.itemHalloweenEssence;
+import com.jtrent238.epicproportions.addons.halloween.items.itemHalloweenIngot;
 import com.jtrent238.epicproportions.addons.halloween.items.itemSpookyEssence;
 import com.jtrent238.epicproportions.addons.halloween.items.itemSpookyIngot;
 import com.jtrent238.epicproportions.addons.halloween.items.candy.itemCandy;
@@ -20,9 +22,12 @@ import com.jtrent238.epicproportions.addons.halloween.items.candy.itemCandy_7;
 import com.jtrent238.epicproportions.addons.halloween.items.candy.itemCandy_8;
 import com.jtrent238.epicproportions.addons.halloween.items.candy.itemCandy_9;
 import com.jtrent238.epicproportions.addons.halloween.items.pails.itemHalloweenPail;
+import com.jtrent238.epicproportions.addons.halloween.items.pails.itemHalloweenPail_Cow;
 import com.jtrent238.epicproportions.addons.halloween.items.pails.itemHalloweenPail_Creeper;
 import com.jtrent238.epicproportions.addons.halloween.items.pails.itemHalloweenPail_Jen;
 import com.jtrent238.epicproportions.addons.halloween.items.pails.itemHalloweenPail_Pat;
+import com.jtrent238.epicproportions.addons.halloween.items.spawners.itemSpawnGhost;
+import com.jtrent238.epicproportions.addons.halloween.items.spawners.itemSpawnSpookyCaptainCookie;
 import com.jtrent238.epicproportions.addons.halloween.items.spawners.itemSpawnSpookyJen;
 import com.jtrent238.epicproportions.addons.halloween.items.spawners.itemSpawnSpookyPat;
 
@@ -33,10 +38,13 @@ public class ItemLoader {
 
 	public static Item itemSpookyEssence;
 	public static Item itemSpookyIngot;
+	public static Item itemHalloweenEssence;
+	public static Item itemHalloweenIngot;
 	public static Item itemHalloweenPail;
 	public static Item itemHalloweenPail_Pat;
 	public static Item itemHalloweenPail_Jen;
 	public static Item itemHalloweenPail_Creeper;
+	public static Item itemHalloweenPail_Cow;
 	public static Item itemCandy_0;
 	public static Item itemCandy_1;
 	public static Item itemCandy_2;
@@ -57,7 +65,8 @@ public class ItemLoader {
 	//SpawnEggs//
 	public static Item itemSpawnSpookyPat;
 	public static Item itemSpawnSpookyJen;
-	
+	public static Item itemSpawnSpookyCaptainCookie;
+	public static Item itemSpawnGhost;
 
 	/**
 	 * Load Items.
@@ -66,10 +75,13 @@ public static void LoadItems() {
 
 	itemSpookyEssence = new itemSpookyEssence().setUnlocalizedName("itemSpookyEssence").setTextureName("epicproportionsmod_halloween:itemSpookyEssence").setCreativeTab(epicproportionsmod_halloween.EpicProportionsMod_Halloween);
 	itemSpookyIngot = new itemSpookyIngot().setUnlocalizedName("itemSpookyIngot").setTextureName("epicproportionsmod_halloween:itemSpookyIngot").setCreativeTab(epicproportionsmod_halloween.EpicProportionsMod_Halloween);
-	itemHalloweenPail = new itemHalloweenPail().setUnlocalizedName("itemHalloweenPail").setTextureName("epicproportionsmod_halloween:itemHalloweenPail").setCreativeTab(epicproportionsmod_halloween.EpicProportionsMod_Halloween);
-	itemHalloweenPail_Pat = new itemHalloweenPail_Pat().setUnlocalizedName("itemHalloweenPail_Pat").setTextureName("epicproportionsmod_halloween:itemHalloweenPail_Pat").setCreativeTab(epicproportionsmod_halloween.EpicProportionsMod_Halloween);
-	itemHalloweenPail_Jen = new itemHalloweenPail_Jen().setUnlocalizedName("itemHalloweenPail_Jen").setTextureName("epicproportionsmod_halloween:itemHalloweenPail_Jen").setCreativeTab(epicproportionsmod_halloween.EpicProportionsMod_Halloween);
-	itemHalloweenPail_Creeper = new itemHalloweenPail_Creeper().setUnlocalizedName("itemHalloweenPail_Creeper").setTextureName("epicproportionsmod_halloween:itemHalloweenPail_Creeper").setCreativeTab(epicproportionsmod_halloween.EpicProportionsMod_Halloween);
+	itemHalloweenEssence = new itemHalloweenEssence().setUnlocalizedName("itemHalloweenEssence").setTextureName("epicproportionsmod_halloween:itemHalloweenEssence").setCreativeTab(epicproportionsmod_halloween.EpicProportionsMod_Halloween);
+	itemHalloweenIngot = new itemHalloweenIngot().setUnlocalizedName("itemHalloweenIngot").setTextureName("epicproportionsmod_halloween:itemHalloweenIngot").setCreativeTab(epicproportionsmod_halloween.EpicProportionsMod_Halloween);
+	itemHalloweenPail = new itemHalloweenPail(0).setUnlocalizedName("itemHalloweenPail").setTextureName("epicproportionsmod_halloween:itemHalloweenPail").setCreativeTab(epicproportionsmod_halloween.EpicProportionsMod_Halloween);
+	itemHalloweenPail_Pat = new itemHalloweenPail_Pat(1).setUnlocalizedName("itemHalloweenPail_Pat").setTextureName("epicproportionsmod_halloween:itemHalloweenPail_Pat").setCreativeTab(epicproportionsmod_halloween.EpicProportionsMod_Halloween);
+	itemHalloweenPail_Jen = new itemHalloweenPail_Jen(2).setUnlocalizedName("itemHalloweenPail_Jen").setTextureName("epicproportionsmod_halloween:itemHalloweenPail_Jen").setCreativeTab(epicproportionsmod_halloween.EpicProportionsMod_Halloween);
+	itemHalloweenPail_Creeper = new itemHalloweenPail_Creeper(3).setUnlocalizedName("itemHalloweenPail_Creeper").setTextureName("epicproportionsmod_halloween:itemHalloweenPail_Creeper").setCreativeTab(epicproportionsmod_halloween.EpicProportionsMod_Halloween);
+	itemHalloweenPail_Cow = new itemHalloweenPail_Cow(4).setUnlocalizedName("itemHalloweenPail_Cow").setTextureName("epicproportionsmod_halloween:itemHalloweenPail_Cow").setCreativeTab(epicproportionsmod_halloween.EpicProportionsMod_Halloween);
 	itemCandy_0 = new itemCandy_0(22, 22, false).setUnlocalizedName("itemCandy_0").setTextureName("epicproportionsmod_halloween:itemCandy_0").setCreativeTab(epicproportionsmod_halloween.EpicProportionsMod_Halloween);
 	itemCandy_1 = new itemCandy_1(22, 22, false).setUnlocalizedName("itemCandy_1").setTextureName("epicproportionsmod_halloween:itemCandy_1").setCreativeTab(epicproportionsmod_halloween.EpicProportionsMod_Halloween);
 	itemCandy_2 = new itemCandy_2(22, 22, false).setUnlocalizedName("itemCandy_2").setTextureName("epicproportionsmod_halloween:itemCandy_2").setCreativeTab(epicproportionsmod_halloween.EpicProportionsMod_Halloween);
@@ -91,6 +103,8 @@ public static void LoadItems() {
 	//SpawnEggs//
 	itemSpawnSpookyPat = new itemSpawnSpookyPat().setUnlocalizedName("itemSpawnSpookyPat").setTextureName("epicproportionsmod_halloween:itemSpawnSpookyPat").setCreativeTab(epicproportionsmod_halloween.EpicProportionsMod_Halloween);
 	itemSpawnSpookyJen = new itemSpawnSpookyJen().setUnlocalizedName("itemSpawnSpookyJen").setTextureName("epicproportionsmod_halloween:itemSpawnSpookyJen").setCreativeTab(epicproportionsmod_halloween.EpicProportionsMod_Halloween);
+	itemSpawnSpookyCaptainCookie = new itemSpawnSpookyCaptainCookie().setUnlocalizedName("itemSpawnSpookyCaptainCookie").setTextureName("epicproportionsmod_halloween:itemSpawnSpookyCaptainCookie").setCreativeTab(epicproportionsmod_halloween.EpicProportionsMod_Halloween);
+	itemSpawnGhost = new itemSpawnGhost().setUnlocalizedName("itemSpawnGhost").setTextureName("epicproportionsmod_halloween:itemSpawnGhost").setCreativeTab(epicproportionsmod_halloween.EpicProportionsMod_Halloween);
 	
 	
 		registerItems();
@@ -103,10 +117,13 @@ private static void registerItems(){
 
 	GameRegistry.registerItem(itemSpookyEssence, itemSpookyEssence.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemSpookyIngot, itemSpookyIngot.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(itemHalloweenEssence, itemHalloweenEssence.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(itemHalloweenIngot, itemHalloweenIngot.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemHalloweenPail, itemHalloweenPail.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemHalloweenPail_Pat, itemHalloweenPail_Pat.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemHalloweenPail_Jen, itemHalloweenPail_Jen.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemHalloweenPail_Creeper, itemHalloweenPail_Creeper.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(itemHalloweenPail_Cow, itemHalloweenPail_Cow.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemCandy_0, itemCandy_0.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemCandy_1, itemCandy_1.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemCandy_2, itemCandy_2.getUnlocalizedName().substring(5));
@@ -128,6 +145,8 @@ private static void registerItems(){
 	//SpawnEggs//
 	GameRegistry.registerItem(itemSpawnSpookyPat, itemSpawnSpookyPat.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(itemSpawnSpookyJen, itemSpawnSpookyJen.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(itemSpawnSpookyCaptainCookie, itemSpawnSpookyCaptainCookie.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(itemSpawnGhost, itemSpawnGhost.getUnlocalizedName().substring(5));
 	
 }
 

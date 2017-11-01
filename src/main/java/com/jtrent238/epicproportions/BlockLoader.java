@@ -1,17 +1,39 @@
 package com.jtrent238.epicproportions;
 
+
 import com.jtrent238.epicproportions.blocks.BlockBirthdayPresent_Custom;
+import com.jtrent238.epicproportions.blocks.BlockCustomPlant_grass;
+import com.jtrent238.epicproportions.blocks.BlockEpicProportionsPortal;
 import com.jtrent238.epicproportions.blocks.BlockFred2_0Spawner;
+import com.jtrent238.epicproportions.blocks.BlockJenCraftingTable;
 import com.jtrent238.epicproportions.blocks.BlockJenDirt;
 import com.jtrent238.epicproportions.blocks.BlockJenDoor;
 import com.jtrent238.epicproportions.blocks.BlockJenGrass;
+import com.jtrent238.epicproportions.blocks.BlockJenGrassTall_Plant;
+import com.jtrent238.epicproportions.blocks.plants.BlockJenGrass_Plant;
+import com.jtrent238.epicproportions.blocks.BlockJenLamp;
+import com.jtrent238.epicproportions.blocks.BlockJenLeaves;
+import com.jtrent238.epicproportions.blocks.BlockJenLog;
+import com.jtrent238.epicproportions.blocks.BlockJenPlanks;
+import com.jtrent238.epicproportions.blocks.BlockJenRail;
+import com.jtrent238.epicproportions.blocks.BlockJenStone;
 import com.jtrent238.epicproportions.blocks.BlockModDoor;
+import com.jtrent238.epicproportions.blocks.BlockModFire;
 import com.jtrent238.epicproportions.blocks.BlockModStem;
 import com.jtrent238.epicproportions.blocks.BlockNuke;
 import com.jtrent238.epicproportions.blocks.BlockOfEpicProportions;
+import com.jtrent238.epicproportions.blocks.BlockPatCraftingTable;
 import com.jtrent238.epicproportions.blocks.BlockPatDirt;
 import com.jtrent238.epicproportions.blocks.BlockPatDoor;
 import com.jtrent238.epicproportions.blocks.BlockPatGrass;
+import com.jtrent238.epicproportions.blocks.BlockPatGrassTall_Plant;
+import com.jtrent238.epicproportions.blocks.plants.BlockPatGrass_Plant;
+import com.jtrent238.epicproportions.blocks.BlockPatLamp;
+import com.jtrent238.epicproportions.blocks.BlockPatLeaves;
+import com.jtrent238.epicproportions.blocks.BlockPatLog;
+import com.jtrent238.epicproportions.blocks.BlockPatPlanks;
+import com.jtrent238.epicproportions.blocks.BlockPatRail;
+import com.jtrent238.epicproportions.blocks.BlockPatStone;
 import com.jtrent238.epicproportions.blocks.BlockPumpkinJen;
 import com.jtrent238.epicproportions.blocks.BlockPumpkinPat;
 import com.jtrent238.epicproportions.blocks.BlockStatue;
@@ -95,12 +117,31 @@ public class BlockLoader {
 	public static Block BlockEpicProportionsPortal;
 	public static Block blockJenTNT;
 	public static Block BlockOfEpicProportions;
-	
+	public static Block BlockPatLog;
+	public static Block BlockPatPlanks;
+	public static Block BlockPatLeaves;
+	public static Block BlockJenLog;
+	public static Block BlockJenPlanks;
+	public static Block BlockJenLeaves;
 	public static Block blockMoltenPat;
 	public static Block blockMoltenJen;
-	
-	
-	
+	public static Block BlockJenGrass_Plant;
+	public static Block BlockPatGrass_Plant;
+	public static Block BlockJenGrassTall_Plant;
+	public static Block BlockPatGrassTall_Plant;
+	public static Block BlockPatCraftingTable;
+	public static Block BlockJenCraftingTable;
+	public static Block BlockPatRail;
+	public static Block BlockJenRail;
+	public static Block BlockTestTrophy;
+	public static Block BlockPatLamp;
+	public static Block BlockJenLamp;
+	public static Block BlockPatLamp_lit;
+	public static Block BlockJenLamp_lit;
+	public static Block BlockPatStone;
+	public static Block BlockJenStone;
+	public static Block BlockModFire;
+	public static Object lightPortal;
 	
 	
 	public static final Block.SoundType soundTypeStone = new Block.SoundType("block_squish", 1.0F, 1.0F);
@@ -155,14 +196,36 @@ public class BlockLoader {
 		BlockPatDirt = new BlockPatDirt().setBlockName("BlockPatDirt").setBlockTextureName("epicproportionsmod:BlockPatDirt").setHardness(1.5F).setStepSound(Block.soundTypeGravel).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 		BlockJenGrass = new BlockJenGrass().setBlockName("BlockJenGrass").setBlockTextureName("epicproportionsmod:BlockJenGrass").setHardness(1.6F).setStepSound(Block.soundTypeGrass).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 		BlockJenDirt = new BlockJenDirt().setBlockName("BlockJenDirt").setBlockTextureName("epicproportionsmod:BlockJenDirt").setHardness(1.5F).setStepSound(Block.soundTypeGravel).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
-		BlockEpicProportionsPortal = new BlockEpicProportionsPortal(Material.portal).setBlockName("BlockEpicProportionsPortal").setBlockTextureName("epicproportionsmod:BlockEpicProportionsPortal").setHardness(0F).setStepSound(Block.soundTypeStone)/*/.setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
+		BlockEpicProportionsPortal = new BlockEpicProportionsPortal("BlockEpicProportionsPortal").setBlockName("BlockEpicProportionsPortal").setBlockTextureName("epicproportionsmod:BlockEpicProportionsPortal").setHardness(0F).setStepSound(Block.soundTypeStone)/*/.setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
 		blockJenTNT = new blockJenTNT().setBlockName("blockJenTNT").setBlockTextureName("epicproportionsmod:blockJenTNT").setHardness(0F).setStepSound(Block.soundTypeGrass).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 		BlockOfEpicProportions = new BlockOfEpicProportions(Material.iron).setBlockName("BlockOfEpicProportions").setBlockTextureName("epicproportionsmod:BlockOfEpicProportions").setHardness(3F).setStepSound(Block.soundTypeStone).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+		BlockPatLog = new BlockPatLog().setBlockName("BlockPatLog").setBlockTextureName("epicproportionsmod:BlockPatLog").setHardness(2.5F).setStepSound(Block.soundTypeWood).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+		BlockPatPlanks = new BlockPatPlanks(Material.wood).setBlockName("BlockPatPlanks").setBlockTextureName("epicproportionsmod:BlockPatPlanks").setHardness(2.5F).setStepSound(Block.soundTypeWood).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+		BlockPatLeaves = new BlockPatLeaves().setBlockName("BlockPatLeaves").setBlockTextureName("epicproportionsmod:BlockPatLeaves").setHardness(1F).setStepSound(Block.soundTypeStone).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+		BlockJenLog = new BlockJenLog().setBlockName("BlockJenLog").setBlockTextureName("epicproportionsmod:BlockJenLog").setHardness(2.5F).setStepSound(Block.soundTypeStone).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+		BlockJenPlanks = new BlockJenPlanks(Material.wood).setBlockName("BlockJenPlanks").setBlockTextureName("epicproportionsmod:BlockJenPlanks").setHardness(2.5F).setStepSound(Block.soundTypeStone).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+		BlockJenLeaves = new BlockJenLeaves().setBlockName("BlockJenLeaves").setBlockTextureName("epicproportionsmod:BlockJenLeaves").setHardness(1F).setStepSound(Block.soundTypeStone).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+		BlockJenGrass_Plant = new BlockJenGrass_Plant().setBlockName("BlockJenGrass_Plant").setBlockTextureName("epicproportionsmod:BlockJenGrass_Plant").setStepSound(Block.soundTypeGrass).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+		BlockPatGrass_Plant = new BlockPatGrass_Plant().setBlockName("BlockPatGrass_Plant").setBlockTextureName("epicproportionsmod:BlockPatGrass_Plant").setStepSound(Block.soundTypeGrass).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+		//BlockJenGrassTall_Plant = new BlockJenGrassTall_Plant().setBlockName("BlockJenGrassTall_Plant").setBlockTextureName("epicproportionsmod:BlockJenGrassTall_Plant").setStepSound(Block.soundTypeGrass)/*.setCreativeTab(EpicProportionsMod.EpicProportionsMod)*/;
+		//BlockPatGrassTall_Plant = new BlockPatGrassTall_Plant().setBlockName("BlockPatGrassTall_Plant").setBlockTextureName("epicproportionsmod:BlockPatGrassTall_Plant").setStepSound(Block.soundTypeGrass)/*.setCreativeTab(EpicProportionsMod.EpicProportionsMod)*/;
+		BlockPatCraftingTable = new BlockPatCraftingTable().setBlockName("BlockPatCraftingTable").setBlockTextureName("epicproportionsmod:BlockPatCraftingTable").setStepSound(Block.soundTypeGrass)/*.setCreativeTab(EpicProportionsMod.EpicProportionsMod)*/;
+		BlockJenCraftingTable = new BlockJenCraftingTable().setBlockName("BlockJenCraftingTable").setBlockTextureName("epicproportionsmod:BlockJenCraftingTable").setStepSound(Block.soundTypeGrass)/*.setCreativeTab(EpicProportionsMod.EpicProportionsMod)*/;
+		BlockPatRail = new BlockPatRail().setBlockName("BlockPatRail").setBlockTextureName("epicproportionsmod:BlockPatRail").setStepSound(Block.soundTypeGrass)/*.setCreativeTab(EpicProportionsMod.EpicProportionsMod)*/;
+		BlockJenRail = new BlockJenRail().setBlockName("BlockJenRail").setBlockTextureName("epicproportionsmod:BlockJenRail").setStepSound(Block.soundTypeGrass)/*.setCreativeTab(EpicProportionsMod.EpicProportionsMod)*/;
+		BlockPatLamp = new BlockPatLamp(false).setBlockName("BlockPatLamp").setBlockTextureName("epicproportionsmod:BlockPatLamp").setStepSound(Block.soundTypeGrass).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+		BlockPatLamp_lit = new BlockPatLamp(true).setBlockName("BlockPatLamp").setBlockTextureName("epicproportionsmod:BlockPatLamp").setStepSound(Block.soundTypeGrass)/*.setCreativeTab(EpicProportionsMod.EpicProportionsMod)*/;
+		BlockJenLamp = new BlockJenLamp(false).setBlockName("BlockJenLamp").setBlockTextureName("epicproportionsmod:BlockJenLamp").setStepSound(Block.soundTypeGrass).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+		BlockJenLamp_lit = new BlockJenLamp(true).setBlockName("BlockJenLamp").setBlockTextureName("epicproportionsmod:BlockJenLamp").setStepSound(Block.soundTypeGrass)/*.setCreativeTab(EpicProportionsMod.EpicProportionsMod)*/;
+		BlockPatStone = new BlockPatStone(Material.ground).setBlockName("BlockPatStone").setBlockTextureName("epicproportionsmod:BlockPatStone").setStepSound(Block.soundTypeMetal).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+		BlockJenStone = new BlockJenStone(Material.ground).setBlockName("BlockJenStone").setBlockTextureName("epicproportionsmod:BlockJenStone").setStepSound(Block.soundTypeMetal).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+		BlockModFire = new BlockModFire("lightFire").setBlockName("BlockModFire").setBlockTextureName("epicproportionsmod:BlockModFire").setStepSound(Block.soundTypeGrass)/*.setCreativeTab(EpicProportionsMod.EpicProportionsMod)*/;
+
+
 		
 		blockMoltenPat = new blockMoltenPat(Material.lava).setBlockName("blockMoltenPat").setBlockTextureName("epicproportionsmod:blockMoltenPat");
 		blockMoltenJen = new blockMoltenJen(Material.lava).setBlockName("blockMoltenJen").setBlockTextureName("epicproportionsmod:blockMoltenJen");
 
-		
 
 		registerBlocks();
 	}
@@ -214,6 +277,30 @@ public class BlockLoader {
 		GameRegistry.registerBlock(BlockEpicProportionsPortal, "BlockEpicProportionsPortal");
 		GameRegistry.registerBlock(blockJenTNT, "blockJenTNT");
 		GameRegistry.registerBlock(BlockOfEpicProportions, "BlockOfEpicProportions");
+		GameRegistry.registerBlock(BlockPatLog, "BlockPatLog");
+		GameRegistry.registerBlock(BlockPatPlanks, "BlockPatPlanks");
+		GameRegistry.registerBlock(BlockPatLeaves, "BlockPatLeaves");
+		GameRegistry.registerBlock(BlockJenLog, "BlockJenLog");
+		GameRegistry.registerBlock(BlockJenPlanks, "BlockJenPlanks");
+		GameRegistry.registerBlock(BlockJenLeaves, "BlockJenLeaves");
+		GameRegistry.registerBlock(BlockJenGrass_Plant, "BlockJenGrass_Plant");
+		GameRegistry.registerBlock(BlockPatGrass_Plant, "BlockPatGrass_Plant");
+		//GameRegistry.registerBlock(BlockJenGrassTall_Plant, "BlockJenGrassTall_Plant");
+		//GameRegistry.registerBlock(BlockPatGrassTall_Plant, "BlockPatGrassTall_Plant");
+		GameRegistry.registerBlock(BlockPatCraftingTable, "BlockPatCraftingTable");
+		GameRegistry.registerBlock(BlockJenCraftingTable, "BlockJenCraftingTable");
+		GameRegistry.registerBlock(BlockPatRail, "BlockPatRail");
+		GameRegistry.registerBlock(BlockJenRail, "BlockJenRail");
+		GameRegistry.registerBlock(BlockPatLamp, "BlockPatLamp");
+		GameRegistry.registerBlock(BlockJenLamp, "BlockJenLamp");
+		GameRegistry.registerBlock(BlockPatLamp_lit, "BlockPatLamp_lit");
+		GameRegistry.registerBlock(BlockJenLamp_lit, "BlockJenLamp_lit");
+		GameRegistry.registerBlock(BlockPatStone, "BlockPatStone");
+		GameRegistry.registerBlock(BlockJenStone, "BlockJenStone");
+		//GameRegistry.registerBlock(BlockModFire, "BlockModFire");
+		
+
+		
 		
 		GameRegistry.registerBlock(blockMoltenPat, "blockMoltenPat");
 		GameRegistry.registerBlock(blockMoltenJen, "blockMoltenJen");

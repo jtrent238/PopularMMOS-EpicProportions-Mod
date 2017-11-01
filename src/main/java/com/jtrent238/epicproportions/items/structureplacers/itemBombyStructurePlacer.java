@@ -1836,6 +1836,7 @@ if(place){
 	world.setBlock(i+8, j+17, k+9, Block.getBlockById(0), 0, 2);
 			
 }
+--itemStack.stackSize;
 }
 
 return true;

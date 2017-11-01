@@ -2,6 +2,8 @@ package com.jtrent238.epicproportions.entity;
 
 import java.util.UUID;
 
+import com.jtrent238.epicproportions.ItemLoader;
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -10,7 +12,9 @@ import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.EnumCreatureAttribute;
 import net.minecraft.entity.IEntityLivingData;
+import net.minecraft.entity.IRangedAttackMob;
 import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.ai.EntityAIArrowAttack;
 import net.minecraft.entity.ai.EntityAIAttackOnCollide;
 import net.minecraft.entity.ai.EntityAIBreakDoor;
 import net.minecraft.entity.ai.EntityAIHurtByTarget;
@@ -92,7 +96,7 @@ import net.minecraftforge.common.ForgeModContainer;
 import net.minecraftforge.event.ForgeEventFactory;
 import net.minecraftforge.event.entity.living.ZombieEvent.SummonAidEvent;
 
-public class EntityNinjaMaster extends EntityMob
+public class EntityNinjaMaster extends EntityMob implements IRangedAttackMob
 {
     protected static final IAttribute field_110186_bp = (new RangedAttribute("zombie.spawnReinforcements", 0.0D, 0.0D, 1.0D)).setDescription("Spawn Reinforcements Chance");
     private static final UUID babySpeedBoostUUID = UUID.fromString("B9766B59-9566-4402-BC1F-2EE2A276D836");
@@ -119,9 +123,16 @@ public class EntityNinjaMaster extends EntityMob
         this.tasks.addTask(8, new EntityAILookIdle(this));
         this.targetTasks.addTask(1, new EntityAIHurtByTarget(this, true));
         this.targetTasks.addTask(2, new EntityAINearestAttackableTarget(this, EntityPlayer.class, 0, true));
-        this.targetTasks.addTask(2, new EntityAINearestAttackableTarget(this, EntityVillager.class, 0, false));
+        //this.targetTasks.addTask(2, new EntityAINearestAttackableTarget(this, EntityVillager.class, 0, false));
+        this.tasks.addTask(1, new EntityAIArrowAttack(this, 1.0D, 20, 60, 15.0F));
+
         this.setSize(0.6F, 1.8F);
     }
+
+    public void attackEntityWithRangedAttack(EntityLivingBase target, float flval) {
+    	EntityNinjaStar entityarrow = new EntityNinjaStar(this.worldObj, this);
+		this.worldObj.spawnEntityInWorld(entityarrow);
+	}
 
     protected void applyEntityAttributes()
     {
@@ -425,11 +436,20 @@ public class EntityNinjaMaster extends EntityMob
         this.playSound("mob.zombie.step", 0.15F, 1.0F);
     }
 
+    /*
     protected Item getDropItem()
     {
-        return Items.rotten_flesh;
+        return ItemLoader.ItemNinjaStar;
     }
+    */
 
+    /**
+     * Drop items of this living's type
+     */
+    protected void dropFewItems(boolean var1, int var2)
+    {
+    	this.entityDropItem(new ItemStack(ItemLoader.ItemNinjaStar, 2), 0F);
+    }
     /**
      * Get this Entity's EnumCreatureAttribute
      */

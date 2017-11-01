@@ -22,6 +22,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraft.world.gen.feature.WorldGenFlowers;
 import net.minecraftforge.common.EnumPlantType;
 
 public class blockModFlower  extends BlockBush
@@ -156,4 +157,17 @@ public class blockModFlower  extends BlockBush
         return this;
     }
     
+    public void generateSurface(World world, java.util.Random randomGenerator, int chunkX, int chunkZ) {
+		for (int i = 0; i < 20; i++) {
+			int l6 = chunkX + randomGenerator.nextInt(16) + 8;
+			int i11 = randomGenerator.nextInt(128);
+			int l14 = chunkZ + randomGenerator.nextInt(16) + 8;
+			(new WorldGenFlowers(BlockLoader.blockFlowerChocolate)).generate(world, randomGenerator, l6, i11, l14);
+			(new WorldGenFlowers(BlockLoader.blockFlowerForJen)).generate(world, randomGenerator, l6, i11, l14);
+			(new WorldGenFlowers(BlockLoader.blockFlowerLove)).generate(world, randomGenerator, l6, i11, l14);
+			(new WorldGenFlowers(BlockLoader.blockFlowerPinkHeart)).generate(world, randomGenerator, l6, i11, l14);
+			(new WorldGenFlowers(BlockLoader.blockFlowerRainbow)).generate(world, randomGenerator, l6, i11, l14);
+			(new WorldGenFlowers(BlockLoader.blockFlowerRedHeart)).generate(world, randomGenerator, l6, i11, l14);
+			}
+	}
 }

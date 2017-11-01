@@ -39,16 +39,16 @@ public class WorldGenBomby extends WorldGenerator implements IWorldGenerator
 		spawner.func_145881_a().setEntityName(entityName);
 		//Logger.info("%s spawner at %d %d %d", entityName, x, y, z);
 	}
-    
-	@Override
-	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator,
+    public void generate(Random random, int i2, int k2, World world, IChunkProvider chunkGenerator,
 			IChunkProvider chunkProvider) {
 		
 
-        
-		int i = chunkX;
-		int j = 0;
-		int k = chunkZ;
+		int i = i2 + random.nextInt(15);
+		int k = k2 + random.nextInt(15);
+		int j = world.getHeightValue(i, k) - 1;
+		//int i = chunkX;
+		//int j = 0;
+		//int k = chunkZ;
 		world.getHeightValue(j, j);
 		
 		while (world.isAirBlock(i, j, k) && j > 2000)
@@ -755,11 +755,13 @@ public class WorldGenBomby extends WorldGenerator implements IWorldGenerator
 		
 		if(EpicProportionsMod.ENABLE_DEVLOGGING == true){
 			
-		System.out.println(EpicProportionsMod.MODID + ">> Bomby Structure Generated at: " + chunkX + "," + chunkZ);
+		System.out.println(EpicProportionsMod.MODID + ">> Bomby Structure Generated at: " + i2 + "," + k2);
 		
 		}
 		}
 	}
+
+
 	
 	
 }

@@ -28,7 +28,9 @@ public class CommonProxy {
 	
 	private static final String modid = EpicProportionsMod.MODID;
 	private String owner;
-
+	public void registerRenderThings() {}
+	public void registerSounds() {}
+	
 	public void init(FMLInitializationEvent e) {
 	    //GameRegistry.registerWorldGenerator(new ModWorldGen(), 0);
 	    //FMLCommonHandler.instance().bus().register(new MyEventHandler());
@@ -107,4 +109,6 @@ private static final String modid = "epicproportionsmod";
 
 		
 	}
+	
+	
 }

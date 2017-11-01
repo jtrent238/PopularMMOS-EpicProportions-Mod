@@ -20,7 +20,9 @@ import com.jtrent238.epicproportions.entity.EntityJen;
 import com.jtrent238.epicproportions.entity.EntityJenGolem;
 import com.jtrent238.epicproportions.entity.EntityKami;
 import com.jtrent238.epicproportions.entity.EntityKitty;
+import com.jtrent238.epicproportions.entity.EntityLuckyChicken;
 import com.jtrent238.epicproportions.entity.EntityNinjaMaster;
+import com.jtrent238.epicproportions.entity.EntityNinjaStar;
 import com.jtrent238.epicproportions.entity.EntityPat;
 import com.jtrent238.epicproportions.entity.EntityPatGolem;
 import com.jtrent238.epicproportions.entity.EntityPopo;
@@ -68,7 +70,8 @@ public class EntityLoader {
 	private static int jtrent238;
 	public static int Ted;
 	private static String MyEntityID_1;
-
+	public Object instance;
+	
 	public static void LoadEntitys() {
 		
 	//Bomby Registry
@@ -129,9 +132,9 @@ public class EntityLoader {
 	    EntityRegistry.registerGlobalEntityID(EntilyPatTNTPrimed.class, "EntilyPatTNTPrimed",EntityRegistry.findGlobalUniqueEntityId());
 	   
 	  //Pat Arrow Registry
-	    EntityRegistry.registerGlobalEntityID(EntilyPatArrow.class, "EntilyPatArrow",EntityRegistry.findGlobalUniqueEntityId());
+	    //EntityRegistry.registerGlobalEntityID(EntilyPatArrow.class, "EntilyPatArrow",EntityRegistry.findGlobalUniqueEntityId());
 	  //Jen Arrow Registry
-	    EntityRegistry.registerGlobalEntityID(EntilyJenArrow.class, "EntilyJenArrow",EntityRegistry.findGlobalUniqueEntityId());
+	    //EntityRegistry.registerGlobalEntityID(EntilyJenArrow.class, "EntilyJenArrow",EntityRegistry.findGlobalUniqueEntityId());
 	   
 	  //Clown Registry
 	    EntityRegistry.registerGlobalEntityID(EntityClown.class, "EntityClown",EntityRegistry.findGlobalUniqueEntityId());
@@ -184,8 +187,13 @@ public class EntityLoader {
 	    //RenderingRegistry.registerEntityRenderingHandler(EntityCaptianCookie.class, new RenderLiving(new ModelBiped(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityCaptianCookie.png");}});//Sets CaptianCookie Texture
 	    EntityRegistry.addSpawn(EntityBellie.class, 5, 4, 6, EnumCreatureType.creature, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.forest, BiomeGenBase.plains, BiomeGenBase.beach, BiomeGenBase.mesa, BiomeGenBase.savanna, BiomeGenBase.desert, BiomeGenBase.desertHills, BiomeGenBase.mushroomIsland);
 		
-	    
-	    
+
+	    EntityRegistry.registerGlobalEntityID(EntityLuckyChicken.class, "EntityLuckyChicken",EntityRegistry.findGlobalUniqueEntityId());
+	    //RenderingRegistry.registerEntityRenderingHandler(EntityCaptianCookie.class, new RenderLiving(new ModelBiped(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityCaptianCookie.png");}});//Sets CaptianCookie Texture
+	    EntityRegistry.addSpawn(EntityLuckyChicken.class, 15, 14, 16, EnumCreatureType.creature, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.forest, BiomeGenBase.plains, BiomeGenBase.beach, BiomeGenBase.mesa, BiomeGenBase.savanna, BiomeGenBase.desert, BiomeGenBase.desertHills, BiomeGenBase.mushroomIsland);
+		
+	    //EntityRegistry.registerModEntity(EntityNinjaStar.class, "NinjaStar", 4, 967, 80, 3, true);
+    	
 	  //VillagerOfEpicProportions Registry
 	    VillagerRegistry.instance().registerVillagerId(EpicProportionsMod.getVILLAGER_ID_1());
     	VillagerRegistry.instance().registerVillageTradeHandler(EpicProportionsMod.getVILLAGER_ID_1(), new TradeHandler());

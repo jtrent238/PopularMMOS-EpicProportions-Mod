@@ -16,6 +16,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraftforge.common.IPlantable;
+import net.minecraftforge.common.util.ForgeDirection;
 
 public class BlockJenDirt  extends Block
 {
@@ -24,11 +26,18 @@ public class BlockJenDirt  extends Block
     private IIcon field_150008_b;
     @SideOnly(Side.CLIENT)
     private IIcon field_150010_M;
+	private IBlockAccess world;
+	private int x;
+	private int y;
+	private int z;
+	private ForgeDirection direction;
+	private IPlantable plantable;
     private static final String __OBFID = "CL_00000228";
 
     public BlockJenDirt()
     {
         super(Material.ground);
+        //this.canSustainPlant(world, x, y, z, direction, plantable);
         //this.setCreativeTab(CreativeTabs.tabBlock);
     }
 

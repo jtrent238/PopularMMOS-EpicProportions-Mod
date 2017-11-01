@@ -12,15 +12,19 @@ import java.util.logging.Level;
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
-import com.jtrent238.epicproportions.biome.BiomeDecorator;
+import com.jtrent238.epicproportions.biome.BiomeRegistry;
+import com.jtrent238.epicproportions.biome.WorldTypeEpic;
+import com.jtrent238.epicproportions.blocks.BlockCustomPlant_grass.BlockCustomFlower;
 import com.jtrent238.epicproportions.blocks.blockModFlower;
 import com.jtrent238.epicproportions.command.CommandChangelog;
 import com.jtrent238.epicproportions.command.CommandModInfo;
 import com.jtrent238.epicproportions.common.CommonProxy;
-import com.jtrent238.epicproportions.dim.Dimension;
-import com.jtrent238.epicproportions.dim.EpicProportionsBiomes;
-import com.jtrent238.epicproportions.dim.WorldProviderEpicProportions;
+import com.jtrent238.epicproportions.dim.DimensionRegistry;
+import com.jtrent238.epicproportions.entity.EntilyJenArrow;
+import com.jtrent238.epicproportions.entity.EntilyPatArrow;
 import com.jtrent238.epicproportions.entity.EntityCaptianCookie;
+import com.jtrent238.epicproportions.entity.EntityLuckyEgg;
+import com.jtrent238.epicproportions.entity.EntityNinjaStar;
 import com.jtrent238.epicproportions.eventhandler.OnJoinEvent;
 import com.jtrent238.epicproportions.items.structureplacers.itemTNTSwordSpawner;
 import com.jtrent238.epicproportions.lib.LogHelper;
@@ -29,8 +33,6 @@ import com.jtrent238.epicproportions.lib.WriteModInfoToFile;
 import com.jtrent238.epicproportions.network.MyMessage;
 import com.jtrent238.epicproportions.render.RenderGuiHandler;
 import com.jtrent238.epicproportions.tileentity.TileEntityLoader;
-import com.jtrent238.epicproportions.world.biome.BiomeGenJen;
-import com.jtrent238.epicproportions.world.biome.BiomeGenPat;
 import com.jtrent238.epicproportions.world.type.WorldTypeEpicProportions;
 import com.jtrent238.epicproportions.worldgen.ModWorldGen;
 import com.jtrent238.epicproportions.worldgen.WorldGenModFlower;
@@ -38,6 +40,9 @@ import com.jtrent238.epicproportions.worldgen.WorldGenPumpkin_Jen;
 import com.jtrent238.epicproportions.worldgen.WorldGenPumpkin_Pat;
 import com.jtrent238.epicproportions.worldgen.structures.StructureVillagePieces;
 import com.jtrent238.epicproportions.worldgen.structures.WorldGenBomby;
+import com.jtrent238.epicproportions.worldgen.structures.WorldGenHouseOfEpicProportions;
+import com.jtrent238.epicproportions.worldgen.structures.WorldGenJenWell;
+import com.jtrent238.epicproportions.worldgen.structures.WorldGenPatWell;
 import com.jtrent238.epicproportions.worldgen.structures.structureTntSword;
 
 import akka.Main;
@@ -54,6 +59,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
 import cpw.mods.fml.common.eventhandler.EventPriority;
 import cpw.mods.fml.common.network.NetworkRegistry;
+import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.VillagerRegistry;
 import cpw.mods.fml.relauncher.Side;
@@ -74,8 +80,10 @@ import net.minecraft.launchwrapper.LaunchClassLoader;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.WeightedRandomChestContent;
+import net.minecraft.world.World;
 import net.minecraft.world.WorldType;
 import net.minecraft.world.biome.BiomeGenBase;
+import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraft.world.gen.structure.MapGenStructureIO;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
@@ -84,6 +92,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.common.config.Property;
 import net.minecraftforge.event.terraingen.BiomeEvent;
+
 
 @Mod(modid="epicproportionsmod", name="jtrent238's EpicProportions Mod", version=(EpicProportionsMod.MODVERSION))
 @MeddleMod(id="epicproportionsmod", name="jtrent238's EpicProportions Mod", version=(EpicProportionsMod.MODVERSION), author="jtrent238")
@@ -109,7 +118,7 @@ public class EpicProportionsMod implements ITweaker
 	@Instance(MODID)
     public static EpicProportionsMod instance;
 
-	public static final String MODVERSION = "1.3.8.9";
+	public static final String MODVERSION = "1.5.8.9";
 
 	public static final String APIVERSION = "1.0.0.0";
 	public static final String MODNAME = "jtrent238's EpicProportions Mod";
@@ -286,11 +295,25 @@ public class EpicProportionsMod implements ITweaker
 	private static int BIOME_ID_PAT;
 	private static int BIOME_ID_JEN;
 	
-	public static final BiomeGenBase BIOMEPAT = (new BiomeGenPat(getBIOME_ID_PAT())).setColor(9286496).setBiomeName("FuriousDestroyer");
-	public static final BiomeGenBase BIOMEJEN = (new BiomeGenJen(getBIOME_ID_JEN())).setColor(9286496).setBiomeName("SuperGirlyGamer");
+	//public static final BiomeGenBase BIOMEPAT = (new BiomeGenPat(getBIOME_ID_PAT())).setColor(9286496).setBiomeName("FuriousDestroyer");
+	//public static final BiomeGenBase BIOMEJEN = (new BiomeGenJen(getBIOME_ID_JEN())).setColor(9286496).setBiomeName("SuperGirlyGamer");
 	
+	//PatBiome patbiome = new PatBiome();
+	//JenBiome jenbiome = new JenBiome();
+	//com.jtrent238.epicproportions.blocks.BlockCustomPlant_grass BlockCustomPlant_grass = new com.jtrent238.epicproportions.blocks.BlockCustomPlant_grass();
+	//DimEpicProportions dimepicproportions = new DimEpicProportions();
+
+	private boolean ENABLE_PAT_WELL_GEN;
+
+	private boolean ENABLE_JEN_WELL_GEN;
+
+	private boolean ENABLE_HOEP_GEN;
+
+	private boolean isObsTrohpyModLoaded;
+
+	private boolean isHeadCrumbsModLoaded;
 	
-	
+
 	@ForgeSubscribe(priority = EventPriority.NORMAL)
     public void eventHandler(RenderGameOverlayEvent event) {
 		
@@ -310,8 +333,9 @@ public class EpicProportionsMod implements ITweaker
 	
 	//@Getter
 		
-	public static WorldType WorldTypeEpicProportions = new WorldTypeEpicProportions(15, "EpicProportions");
-
+	public static WorldType WorldTypeEpicProportions = new WorldTypeEpic(15, "EpicProportions");
+	public static WorldType WorldTypeEpic = new WorldTypeEpic(16, "WorldTypeEpic");
+	
 @Mod.EventHandler
 public void preInit(FMLPreInitializationEvent event) throws IOException
 {
@@ -320,6 +344,9 @@ public void preInit(FMLPreInitializationEvent event) throws IOException
 	//LogHelper.init();
 	//LogHelper.main(args);
 	
+	//jenbiome.preInit(event);
+	//patbiome.preInit(event);
+	//dimepicproportions.preInit(event);
 	//***********************************************************************************
 	/*
 	 * Is Mods Loaded Start
@@ -443,6 +470,9 @@ public void preInit(FMLPreInitializationEvent event) throws IOException
 	ENABLE_SUPER_JEN_MULTITOOL = config.get(CATEGORY_TWEAKS, "Enable Super SuperGirlyGamer MultiTool", true).getBoolean(true);
 	
 	ENABLE_BOMBY_STRUCTURE_GEN =  config.get(CATEGORY_TWEAKS, "Enable Bomby Structure Generation **Bugged**", false).getBoolean(false);
+	ENABLE_PAT_WELL_GEN =  config.get(CATEGORY_TWEAKS, "Enable FuriousDestroyer Well Generation **Bugged**", false).getBoolean(false);
+	ENABLE_JEN_WELL_GEN =  config.get(CATEGORY_TWEAKS, "Enable SuperGirlyGamer Well Generation **Bugged**", false).getBoolean(false);
+	ENABLE_HOEP_GEN =  config.get(CATEGORY_TWEAKS, "Enable House Of EpicProportions Generation **Bugged**", false).getBoolean(false);
 	
 	ENABLE_DETAILED_MOD_INFO = config.get(CATEGORY_TWEAKS, "Enable Detail Mod Info", false).getBoolean(false);
 	ENABLE_DEVMODE = config.get(CATEGORY_DEVMODE, "Enable Dev Mode", false).getBoolean(false);
@@ -523,7 +553,7 @@ public void preInit(FMLPreInitializationEvent event) throws IOException
 	//Biome IDS
 	
 	//Dimenstion IDS
-	DIM_EPICPROPORTIONS(config.getInt("EpicProportions Dim", CATEGORY_DIMIDS, 206, 200, 300, "Dimention ID:"));
+	setDIM_EPICPROPORTIONS(config.getInt("EpicProportions Dim", CATEGORY_DIMIDS, 8, 4, 300, "Dimention ID:"));
 	
 	//Dimenstion IDS
 	
@@ -558,7 +588,7 @@ public void preInit(FMLPreInitializationEvent event) throws IOException
      // ...
 	
 	 
-	 
+
 }
 
 /*
@@ -573,9 +603,9 @@ public void preInit(FMLPreInitializationEvent event) throws IOException
 
 
 
-	private void DIM_EPICPROPORTIONS(int int1) {
-	
-}
+
+
+
 
 	/**
 	 * Load our config file and set default values
@@ -605,6 +635,20 @@ public void init(FMLInitializationEvent event)
 {
 	proxy.init(event);
 	
+	class MaxMemory {
+	    {
+	        Runtime rt = Runtime.getRuntime();
+	        long totalMem = rt.totalMemory();
+	        long maxMem = rt.maxMemory();
+	        long freeMem = rt.freeMemory();
+	        double megs = 1048576.0;
+
+	        System.out.println ("Total Memory: " + totalMem + " (" + (totalMem/megs) + " MiB)");
+	        System.out.println ("Max Memory:   " + maxMem + " (" + (maxMem/megs) + " MiB)");
+	        System.out.println ("Free Memory:  " + freeMem + " (" + (freeMem/megs) + " MiB)");
+	    }
+	}
+	
 	//Thread.currentThread().setName("EpicProportionsMod");
 	
 	ItemLoader.LoadItems();
@@ -616,9 +660,37 @@ public void init(FMLInitializationEvent event)
 	CrashReportHelper.getCrash();
 	OreDict.addores();
 	BiomeDict.registerBiomes();
-	Dimension.registerWorldProvider();
-	Dimension.registerDimensions();
+	BiomeLoader.loadBiomes();
+	BiomeRegistry.mainRegsitry();
+	DimensionRegistry.mainRegistry();
+	//Dimension.registerWorldProvider();
+	//Dimension.registerDimensions();
 	//FluidLoader.RegisterFluids();
+	
+	EntityRegistry.registerModEntity(EntityNinjaStar.class, "NinjaStar", 4, MODID, 80, 3, true);
+	EntityRegistry.registerModEntity(EntityLuckyEgg.class, "LuckyEgg", 5, MODID, 80, 3, true);
+	EntityRegistry.registerModEntity(EntilyPatArrow.class, "PatArrow", 6, MODID, 80, 3, true);
+	EntityRegistry.registerModEntity(EntilyJenArrow.class, "PatArrow", 7, MODID, 80, 3, true);
+	
+	
+	proxy.registerRenderThings();
+	proxy.registerSounds();
+	/*
+	isObsTrohpyModLoaded = Loader.isModLoaded("obstrophiesaoa");
+	
+	if (isObsTrohpyModLoaded) {
+		
+		TrophyLoader.loadTrophys();
+		
+        }
+	*/
+isHeadCrumbsModLoaded = Loader.isModLoaded("headcrumbs");
+	
+	if (isHeadCrumbsModLoaded) {
+		
+		//HeadLoader.loadHeads();
+		
+        }
 	
 	/*
 	isTConstructModLoaded = Loader.isModLoaded("TConstruct");
@@ -630,7 +702,9 @@ public void init(FMLInitializationEvent event)
         }
     */
 		
-	
+	//jenbiome.load();
+	//patbiome.load();
+	//dimepicproportions.load();
 	
 	//BlockLoader.loadBlocks();
 	//ItemLoader.LoadItems();
@@ -658,7 +732,31 @@ public void init(FMLInitializationEvent event)
     	}
     }
     
+    if(ENABLE_JEN_WELL_GEN == true){
+    MapGenStructureIO.registerStructure(WorldGenJenWell.class, "generateJenWellStructure");
+	GameRegistry.registerWorldGenerator(new WorldGenJenWell(), 0);
+	
+	if(ENABLE_DEVLOGGING == true){
+		System.out.println("SuperGirlyGamer Well Structure Registered");
+		}
+    }
+    if(ENABLE_PAT_WELL_GEN == true){
+	MapGenStructureIO.registerStructure(WorldGenPatWell.class, "generatePatWellStructure");
+	GameRegistry.registerWorldGenerator(new WorldGenPatWell(), 0);
     
+	if(ENABLE_DEVLOGGING == true){
+		System.out.println("FuriousDestroyer Well Structure Registered");
+		}
+    }
+    
+    if(ENABLE_HOEP_GEN == true){
+	MapGenStructureIO.registerStructure(WorldGenHouseOfEpicProportions.class, "generateHouseOfEpicProportionsStructure");
+	GameRegistry.registerWorldGenerator(new WorldGenHouseOfEpicProportions(), 0);
+    
+	if(ENABLE_DEVLOGGING == true){
+		System.out.println("House Of Epic Proportions Structure Registered");
+		}
+    }
     /*
     GameRegistry.registerWorldGenerator((IWorldGenerator) new WorldGenPumpkin_Pat(), 0);
     GameRegistry.registerWorldGenerator((IWorldGenerator) new WorldGenPumpkin_Jen(), 0);
@@ -688,6 +786,28 @@ public void init(FMLInitializationEvent event)
 	ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemMegaBirthdayPresentPlacer), 1, 3, 10));
 	ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemMegaBirthdayPresentPlacer), 1, 3, 10));
 	ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemMegaBirthdayPresentPlacer), 1, 3, 10));
+	ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemPatCD1), 1, 3, 10));
+	ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemPatCD1), 1, 3, 10));
+	ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemPatCD1), 1, 3, 10));
+	ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemPatCD1), 1, 3, 10));
+	ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_JUNGLE_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemPatCD1), 1, 3, 10));
+	ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemPatCD1), 1, 3, 10));
+	ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemPatCD2), 1, 3, 10));
+	ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemPatCD2), 1, 3, 10));
+	ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemPatCD2), 1, 3, 10));
+	ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemPatCD2), 1, 3, 10));
+	ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemPatCD2), 1, 3, 10));
+	ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_JUNGLE_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemPatCD2), 1, 3, 10));
+	ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemPatCD2), 1, 3, 10));
+	ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemPatCD2), 1, 3, 10));
+	ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemPatCD3), 1, 3, 10));
+	ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemPatCD3), 1, 3, 10));
+	ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemPatCD3), 1, 3, 10));
+	ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemPatCD3), 1, 3, 10));
+	ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_JUNGLE_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemPatCD3), 1, 3, 10));
+	ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemPatCD3), 1, 3, 10));
+	ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemPatCD3), 1, 3, 10));
+	
 	
 	ChestGenHooks bombyStructure = ChestGenHooks.getInfo("bombyStructure");
 	bombyStructure.addItem(new WeightedRandomChestContent(new ItemStack(Items.gunpowder), 0, 3, 15));
@@ -967,6 +1087,24 @@ public static void setBIOME_ID_JEN(int bIOME_ID_JEN) {
 	BIOME_ID_JEN = bIOME_ID_JEN;
 }
 
+
+
+
+/**
+ * @return the bIOME_ID_JEN
+ */
+public static int getDIM_EPICPROPORTIONS() {
+	return DIM_EPICPROPORTIONS;
+}
+
+/**
+ * @param bIOME_ID_JEN the DIM_EPICPROPORTIONS to set
+ */
+public static void setDIM_EPICPROPORTIONS(int DIM_ID_EP) {
+	DIM_EPICPROPORTIONS = DIM_ID_EP;
+}
+
+
 {
 
 
@@ -997,10 +1135,12 @@ public void modsLoaded(FMLPostInitializationEvent event) {
 		
 	}
 		}
-
+/*
 @SuppressWarnings("unchecked")
 public class DimEpicProportions {
 	public Object instance;
 	public int DIMID = DIM_EPICPROPORTIONS;
-}
+}*/
+
+
 	}

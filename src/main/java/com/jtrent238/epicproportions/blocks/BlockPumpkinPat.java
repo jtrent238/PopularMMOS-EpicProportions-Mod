@@ -19,6 +19,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
+import net.minecraft.world.gen.feature.WorldGenFlowers;
 
 public class BlockPumpkinPat extends BlockDirectional
 {
@@ -196,4 +197,13 @@ public class BlockPumpkinPat extends BlockDirectional
         this.field_149984_b = p_149651_1_.registerIcon(this.getTextureName() + "_top");
         this.blockIcon = p_149651_1_.registerIcon(this.getTextureName() + "_side");
     }
+    
+    public void generateSurface(World world, java.util.Random randomGenerator, int chunkX, int chunkZ) {
+		for (int i = 0; i < 20; i++) {
+			int l6 = chunkX + randomGenerator.nextInt(16) + 8;
+			int i11 = randomGenerator.nextInt(128);
+			int l14 = chunkZ + randomGenerator.nextInt(16) + 8;
+			(new WorldGenFlowers(BlockLoader.BlockPumpkinPat)).generate(world, randomGenerator, l6, i11, l14);
+		}
+}
 }

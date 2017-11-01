@@ -20,6 +20,8 @@ import net.minecraft.util.IIcon;
 import net.minecraft.world.ColorizerGrass;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraftforge.common.IPlantable;
+import net.minecraftforge.common.util.ForgeDirection;
 
 public class BlockJenGrass extends Block implements IGrowable
 {
@@ -30,12 +32,19 @@ public class BlockJenGrass extends Block implements IGrowable
     private IIcon field_149993_M;
     @SideOnly(Side.CLIENT)
     private IIcon field_149994_N;
+	private IBlockAccess world;
+	private int x;
+	private int y;
+	private int z;
+	private ForgeDirection direction;
+	private IPlantable plantable;
     private static final String __OBFID = "CL_00000251";
 
     public BlockJenGrass()
     {
         super(Material.grass);
         this.setTickRandomly(true);
+        //this.canSustainPlant(world, x, y, z, direction, plantable);
         //this.setCreativeTab(CreativeTabs.tabBlock);
     }
 

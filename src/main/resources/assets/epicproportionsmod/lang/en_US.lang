@@ -73,6 +73,11 @@ item.ItemBirthdayPresentTester.name=Birthday Present Tester
 item.ItemCircusCoin.name=Circus Coin
 item.ItemJenDust.name=SuperGirlyGamer Dust
 item.ItemPatDust.name=FuriousDestroyer Dust
+item.ItemLuckyEgg.name=Lucky Egg
+item.BlockEpicProportionsPortal.name=EpicPropotions Wand
+item.ItemNinjaStar.name=NinjaStar
+item.ItemPatFlint.name=FuriousDestroyer Flint
+item.ItemJenFlint.name=SuperGirlyGamer Flint
 
 	/Weapons & Tools
 item.itemPatSword.name=FuriousDestroyer's Sword
@@ -111,6 +116,14 @@ item.itemPickOfEpicProportions.name=Pickaxe Of Epic Proportions
 item.itemShovelOfEpicProportions.name=Shovel Of Epic Proportions
 item.itemHoeOfEpicProportions.name=Hoe Of Epic Proportions
 item.itemAxeOfEpicProportions.name=Axe Of Epic Proportions
+
+	/Records
+item.ItemPatCD1.name=PopularMMOS CD #1
+item.ItemPatCD1.desc=PopularMMOS Full Intro
+item.ItemPatCD2.name=PopularMMOS CD #2
+item.ItemPatCD2.desc=PopularMMOS Intro
+item.ItemPatCD3.name=PopularMMOS CD #3
+item.ItemPatCD3.desc=A Piece of Paper [Credit: Ertyez]
 
 	/Armor
 		/Pat
@@ -160,6 +173,7 @@ item.itemSpawnJenGolem.name=Spawn SuperGirlyGamer Golem
 item.itemSpawnPatGolem.name=Spawn FuriousDestroyer Golem
 item.itemSpawnCaptianCookie_Evil.name=Spawn Evil Captian Cookie [WIP]
 item.itemSpawnBellie.name=Spawn Bellie
+item.itemSpawnLuckyChicken.name=Spawn Lucky Chicken
 
 //Blocks
 tile.blockFartBomb.name=Fart Bomb
@@ -198,6 +212,16 @@ tile.BlockJenDirt.name=SuperGirlyGamer Dirt
 tile.blockMoltenPat.name=Molten FuriousDestroyer Ingot
 tile.blockMoltenJen.name=Molten SuperGirlyGamer Ingot
 tile.BlockOfEpicProportions.name=Block Of Epic Proportions
+tile.BlockPatLog.name=FuriousDestroyer Log
+tile.BlockPatPlanks.name=FuriousDestroyer Planks
+tile.BlockPatLeaves.name=FuriousDestroyer Leaves
+tile.BlockJenLog.name=SuperGirlyGamer Log
+tile.BlockJenPlanks.name=SuperGirlyGamer Planks
+tile.BlockJenLeaves.name=SuperGirlyGamer Leaves
+tile.BlockPatLamp.name=FuriousDestroyer Lamp
+tile.BlockJenLamp.name=SuperGirlyGamer Lamp
+tile.BlockPatStone.name=FuriousDestroyer Stone
+tile.BlockJenStone.name=SuperGirlyGamer Stone
 
 //Entitys
 entity.EntityBomby.name=Bomby
@@ -217,9 +241,13 @@ entity.EntityPopo.name=Popo
 entity.EntityBanana.name=Banana
 entity.EntityBlockling_Small.name=Small Blockling
 entity.EntityBellie.name=Bellie
+entity.EntityLuckyChicken.name=Lucky Chicken
+entity.EntityCaptianCookie_Evil.name=Evil Captain Cookie
+entity.EntityJenGolem.name=SuperGirlyGamer Golem
+entity.EntityPatGolem.name= FuriousDestroyer Golem
 
 //Mod Devs And Helpers
-entity.Entityjtrent238.name=jtrent238
+entity.Entilyjtrent238.name=jtrent238
 
 //Container
 container.Patchest=FuriousDestroyer's Chest [WIP]
@@ -325,6 +353,8 @@ tooltip.epicproportionsmod.itemNukeLauncher.ammotype=Consumes Nuke
 tooltip.epicproportionsmod.ItemMegaBirthdayPresentPlacer.bday=Happy Birthday!
 tooltip.epicproportionsmod.ItemMegaBirthdayPresentPlacer.inside=I wonder what could be inside?
 tooltip.epicproportionsmod.ItemMegaBirthdayPresentPlacer.big=Happy Birthday!
+tooltip.epicproportionsmod.ItemEpicProportionsWand.info=Use to light to portal of Epic Proportions!
+
 
 	/Pat Chest Warning
 tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.0=****************WARNING************************

@@ -98,6 +98,7 @@ if(place){
 
 	
 	}
+--itemStack.stackSize;
 }
 
 

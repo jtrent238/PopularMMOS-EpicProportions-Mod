@@ -1,5 +1,19 @@
 Epic Proportions Mod ChangeLog
 
+1.5.8.9
+- Removed Trophy Support for ObsTrophies [Now Requires MoreTrophies]
+- Added Cow Halloween Pail [Halloween Addon]
+- Added Spooky Captian Cookie [Halloween Addon]
+- Added Spooky Ingot to OreDictonary [Halloween Addon]
+- Added Halloween Essence [Halloween Addon]
+- Added Halloween Essence Block [Halloween Addon]
+- Added Halloween Essence Ore [Halloween Addon]
+- Added Creepy Block [Halloween Addon]
+- Added Ghost [Halloween Addon]
+- Fixed Spooky Essence Ore Not Generating [Halloween Addon]
+- Fixed Missing Dependency of Main Mod in the Halloween Addon
+
+
 1.4.8.9
 - Added Trophy Support for ObsTrophies [All EpicProportions Mobs]
 - Added FuriousDestroyer Grass [Plant]

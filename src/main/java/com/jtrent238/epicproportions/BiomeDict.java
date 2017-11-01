@@ -15,8 +15,8 @@ public class BiomeDict {
 	
 	public static void registerBiomes() {
 		
-		BiomeDictionary.registerBiomeType(EpicProportionsMod.BIOMEPAT, BiomeDictionary.Type.PLAINS);
-		BiomeDictionary.registerBiomeType(EpicProportionsMod.BIOMEJEN, BiomeDictionary.Type.PLAINS);
+		//BiomeDictionary.registerBiomeType(EpicProportionsMod.BIOMEPAT, BiomeDictionary.Type.PLAINS);
+		//BiomeDictionary.registerBiomeType(EpicProportionsMod.BIOMEJEN, BiomeDictionary.Type.PLAINS);
 		
 	}
 

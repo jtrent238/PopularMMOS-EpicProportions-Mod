@@ -456,7 +456,9 @@ if(place){
 	world.setBlockMetadataWithNotify(i+5, j+5, k+6, 14, 14);
 	world.setBlock(i+6, j+5, k+6, Block.getBlockById(35));
 	world.setBlockMetadataWithNotify(i+6, j+5, k+6, 14, 14);
+	
 }
+--itemStack.stackSize;
 }
 
 

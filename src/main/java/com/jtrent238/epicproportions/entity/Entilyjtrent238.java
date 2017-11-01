@@ -144,6 +144,7 @@ public class Entilyjtrent238 extends EntityVillager// implements IBossDisplayDat
 	private int meta;
 	private int least_quantity;
 	private int most_quantity;
+    public ModelRenderer bipedCloak;
     public Entilyjtrent238(World var1)
     {
         super(var1);
@@ -176,7 +177,7 @@ public class Entilyjtrent238 extends EntityVillager// implements IBossDisplayDat
         this.registerVillageTradeHandler(22, new TradeHandler());
         this.getProfession();
         //this.addEntityCrashInfo(CrashInfo_Entilyjtrent238);
-
+        
         
 
     }
@@ -190,12 +191,19 @@ public class Entilyjtrent238 extends EntityVillager// implements IBossDisplayDat
 	}
 
 
-
+	/**
+     * Renders the cloak of the current biped (in most cases, it's a player)
+     */
+    public void renderCloak(float p_78111_1_)
+    {
+        this.bipedCloak.render(p_78111_1_);
+    }
 
 	@SideOnly(Side.CLIENT)
 	public void registerRenderers(){
 		RenderingRegistry.registerEntityRenderingHandler(Entilyjtrent238.class, new RenderLiving(new ModelBiped(), 0){private int jtrent238;
-
+		
+		
 		protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:Entilyjtrent238.png");}
 		/*
 		@SideOnly(Side.CLIENT)
@@ -571,6 +579,12 @@ this.dropItem(ItemLoader.itemSwordOfEpicProportions_Part1, 1);
 public int getMaxSpawnedInChunk()
 {
    return 1;
+}
+
+@SideOnly(Side.CLIENT)
+public String getBackgroundImageName() 
+{
+	return "jtrent238.png";
 }
 
 /**

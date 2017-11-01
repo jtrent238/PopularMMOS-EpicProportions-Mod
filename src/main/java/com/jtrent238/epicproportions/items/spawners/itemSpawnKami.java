@@ -5,6 +5,7 @@ import com.jtrent238.epicproportions.entity.EntityKitty;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.entity.passive.EntitySheep;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -15,6 +16,7 @@ public class itemSpawnKami     extends Item
 {
     @SideOnly(Side.CLIENT)
     private IIcon theIcon;
+
     private static final String __OBFID = "CL_00000070";
 
     
@@ -23,8 +25,10 @@ public class itemSpawnKami     extends Item
     {
     if(!world.isRemote)
     {
-    	EntityKami par1 = new EntityKami(world); //Just change"MyEntityCow" to any entity you would like to spawn
-    par1.setPosition(entityplayer.posX, entityplayer.posY+2,entityplayer.posZ+2); //These are the coordinates where he will appear 
+    	EntitySheep par1 = new EntitySheep(world); //Just change"MyEntityCow" to any entity you would like to spawn
+    	par1.setFleeceColor(060);
+    	par1.setCustomNameTag("Kami");
+    	par1.setPosition(entityplayer.posX, entityplayer.posY+2,entityplayer.posZ+2); //These are the coordinates where he will appear 
     world.spawnEntityInWorld(par1);
     }
     //entityplayer.addChatMessage("Its Captian Cookie!"); //This is a message you can add when he is spawned

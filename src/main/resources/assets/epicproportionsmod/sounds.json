@@ -5,7 +5,7 @@
 	"ninjamaster_attack": {"category": "master","sounds": [{"name": "ninjamaster_attack","stream": false}]},
 	"captaincookie_hurt": {"category": "master","sounds": [{"name": "captaincookie_hurt","stream": false}]},
 	"captaincookie_death": {"category": "master","sounds": [{"name": "captaincookie_death","stream": false}]},
-	"cookie_cd": {"category": "record","sounds": [{"name": "cookie_cd","stream": true}]},
+	"records.cookie_cd": {"category": "record","sounds": [{"name": "records.cookie_cd","stream": true}]},
 	"candyman_hurt": {"category": "master","sounds": [{"name": "candyman_hurt","stream": false}]},
 	"candyman_death": {"category": "master","sounds": [{"name": "candyman_death","stream": false}]},
 	"fartbomb_1": {"category": "master","sounds": [{"name": "fartbomb_1","stream": false}]},
@@ -34,5 +34,9 @@
 	"sword_swing": {"category": "master","sounds": [{"name": "sword_swing","stream": false}]},
 	"evil_laugh": {"category": "master","sounds": [{"name": "evil_laugh","stream": false}]},
 	"bellie_hurt": {"category": "master","sounds": [{"name": "bellie_hurt","stream": false}]},
-	"bellie_death": {"category": "master","sounds": [{"name": "bellie_death","stream": false}]}
+	"bellie_death": {"category": "master","sounds": [{"name": "bellie_death","stream": false}]},
+	"records.pat_themesong_full": {"category": "master","sounds": [{"name": "records.pat_themesong_full","stream": true}]},
+	"records.pat_themesong": {"category": "master","sounds": [{"name": "records.pat_themesong","stream": true}]},
+	"records.pat_papersong": {"category": "master","sounds": [{"name": "records.pat_papersong","stream": true}]},
+	"NinjaStarHit": {"category": "master","sounds": [{"name": "NinjaStarHit","stream": false}]}
 	}
