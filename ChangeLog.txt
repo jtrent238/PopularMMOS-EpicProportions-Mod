@@ -1,5 +1,18 @@
 Epic Proportions Mod ChangeLog
 
+1.5.8.10
+- Added Achievement for Big Snowball [Christmas Addon]
+- Added Gingerbread Carpet [Christmas Addon]
+- Added Gingerbread House Structure [Christmas Addon]
+- Added Christmas Painting [Christmas Addon]
+- Fixed Big Snowball rendering [Christmas Addon]
+- Fixed Snow Wand not throwing Snowballs [Christmas Addon]
+- Fixed Frosted Glass Break Sound [Christmas Addon]
+- Fixed Frosted Glass Pane Break Sound [Christmas Addon]
+- Removed Gingerbread Door [Christmas Addon]
+- Removed Red Christmas Presents [Christmas Addon]
+- Changed the Hurt and Death sounds for Fred 2.0
+
 1.5.8.9
 - Removed Trophy Support for ObsTrophies [Now Requires MoreTrophies]
 - Added Cow Halloween Pail [Halloween Addon]

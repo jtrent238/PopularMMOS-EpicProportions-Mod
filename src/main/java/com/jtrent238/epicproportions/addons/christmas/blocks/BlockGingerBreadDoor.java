@@ -11,6 +11,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.IconFlipped;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.IIcon;
@@ -19,7 +20,7 @@ import net.minecraft.util.Vec3;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlockGingerBreadDoor  extends Block
+public class BlockGingerBreadDoor extends Block
 {
     @SideOnly(Side.CLIENT)
     private IIcon[] field_150017_a;
@@ -112,8 +113,8 @@ public class BlockGingerBreadDoor  extends Block
     {
         this.field_150017_a = new IIcon[2];
         this.field_150016_b = new IIcon[2];
-        this.field_150017_a[0] = p_149651_1_.registerIcon("epicproportionsmod_christmas:BlockGingerBreadDoor_upper");
-        this.field_150016_b[0] = p_149651_1_.registerIcon("epicproportionsmod_christmas:BlockGingerBreadDoor_lower");
+        this.field_150017_a[0] = p_149651_1_.registerIcon(this.getTextureName() + "_upper");
+        this.field_150016_b[0] = p_149651_1_.registerIcon(this.getTextureName() + "_lower");
         this.field_150017_a[1] = new IconFlipped(this.field_150017_a[0], true, false);
         this.field_150016_b[1] = new IconFlipped(this.field_150016_b[0], true, false);
     }
@@ -287,7 +288,7 @@ public class BlockGingerBreadDoor  extends Block
      */
     public boolean onBlockActivated(World p_149727_1_, int p_149727_2_, int p_149727_3_, int p_149727_4_, EntityPlayer p_149727_5_, int p_149727_6_, float p_149727_7_, float p_149727_8_, float p_149727_9_)
     {
-        if (this.blockMaterial == Material.cake)
+        if (this.blockMaterial == Material.iron)
         {
             return false; //Allow items to interact with the door
         }
@@ -400,7 +401,7 @@ public class BlockGingerBreadDoor  extends Block
 
     public Item getItemDropped(int p_149650_1_, Random p_149650_2_, int p_149650_3_)
     {
-        return (p_149650_1_ & 8) != 0 ? null : (this.blockMaterial == Material.cake ? ItemLoader.ItemGingerBreadDoor : ItemLoader.ItemCandyCaneDoor);
+        return (p_149650_1_ & 8) != 0 ? null : (this.blockMaterial == Material.iron ? ItemLoader.ItemGingerBreadDoor : ItemLoader.ItemGingerBreadDoor);
     }
 
     /**
@@ -458,7 +459,7 @@ public class BlockGingerBreadDoor  extends Block
     @SideOnly(Side.CLIENT)
     public Item getItem(World p_149694_1_, int p_149694_2_, int p_149694_3_, int p_149694_4_)
     {
-        return this.blockMaterial == Material.cake ? ItemLoader.ItemGingerBreadDoor : ItemLoader.ItemCandyCaneDoor;
+        return this.blockMaterial == Material.iron ? ItemLoader.ItemGingerBreadDoor : ItemLoader.ItemGingerBreadDoor;
     }
 
     /**

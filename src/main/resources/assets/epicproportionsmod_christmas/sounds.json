@@ -4,5 +4,6 @@
 	"Santa_Hit": {"category": "master","sounds": [{"name": "Santa_Hit","stream": false}]},
 	"GingerBreadMan_Hit": {"category": "master","sounds": [{"name": "GingerBreadMan_Hit","stream": false}]},
 	"JingleBells_Jingle": {"category": "master","sounds": [{"name": "JingleBells_Jingle","stream": false}]},
-	"SnowWand_Blow": {"category": "master","sounds": [{"name": "SnowWand_Blow","stream": false}]}
+	"SnowWand_Blow": {"category": "master","sounds": [{"name": "SnowWand_Blow","stream": false}]},
+	"bigsnowball_hit": {"category": "master","sounds": [{"name": "bigsnowball_hit","stream": false}]}
 	}

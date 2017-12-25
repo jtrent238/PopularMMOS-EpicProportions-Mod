@@ -40,7 +40,7 @@ item.ItemGingerBreadChest.name=Gingerbread Chestplate
 item.ItemGingerBreadLegs.name=Gingerbread Leggings
 item.ItemGingerBreadBoots.name=Gingerbread Boots
 item.ItemGiantSnowball.name=Giant Snowball
-item.ItemGingerbreadHousePlacer.name=GingerBread House
+
 
 
 
@@ -81,9 +81,6 @@ tile.BlockBulb.blue.name=Blue Christmas Light
 tile.BlockBulb.pink.name=Pink Christmas Light
 tile.BlockBulb.yellow.name=Yellow Christmas Light
 tile.BlockBulb.cyan.name=Cyan Christmas Light
-tile.BlockGingerBreadStairs.name=GingerBread Stairs
-tile.BlockGingerBreadSlab.name=GingerBread Slab
-itel.BLockGingerBreadCarpet.name=GingerBread Carpet
 
 //Entitys
 entity.EntitySanta.name=Santa

@@ -358,7 +358,7 @@ public class EntityFred2_0 extends EntityMob
      */
     protected String getLivingSound()
     {
-        return "mob.zombie.say";
+        return "null";
     }
 
     /**
@@ -366,7 +366,7 @@ public class EntityFred2_0 extends EntityMob
      */
     protected String getHurtSound()
     {
-        return "mob.zombie.hurt";
+        return "epicproportionsmod:fred_hurt";
     }
 
     /**
@@ -374,7 +374,7 @@ public class EntityFred2_0 extends EntityMob
      */
     protected String getDeathSound()
     {
-        return "mob.zombie.death";
+        return "epicproportionsmod:fred_death";
     }
 
     protected void func_145780_a(int p_145780_1_, int p_145780_2_, int p_145780_3_, Block p_145780_4_)
@@ -384,7 +384,7 @@ public class EntityFred2_0 extends EntityMob
 
     protected Item getDropItem()
     {
-        return Items.rotten_flesh;
+        return null;
     }
 
     /**

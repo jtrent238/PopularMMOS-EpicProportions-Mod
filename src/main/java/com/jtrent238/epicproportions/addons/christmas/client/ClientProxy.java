@@ -1,10 +1,8 @@
 package com.jtrent238.epicproportions.addons.christmas.client;
 
-
-import com.jtrent238.epicproportions.EpicProportionsMod;
-import com.jtrent238.epicproportions.VersionChecker;
 import com.jtrent238.epicproportions.addons.christmas.BlockLoader;
 import com.jtrent238.epicproportions.addons.christmas.ItemLoader;
+import com.jtrent238.epicproportions.addons.christmas.epicproportionsmod_christmas;
 import com.jtrent238.epicproportions.addons.christmas.common.CommonProxy;
 import com.jtrent238.epicproportions.addons.christmas.entity.EntityGiantSnowBall;
 import com.jtrent238.epicproportions.addons.christmas.entity.EntityGingerBreadMan;
@@ -17,23 +15,26 @@ import com.jtrent238.epicproportions.addons.christmas.render.RenderBlockChristma
 import com.jtrent238.epicproportions.addons.christmas.render.RenderBlockChristmasTree;
 import com.jtrent238.epicproportions.addons.christmas.render.RenderBlockLights;
 import com.jtrent238.epicproportions.addons.christmas.render.entity.RenderGiantSnowBall;
+import com.jtrent238.epicproportions.addons.christmas.render.tileentity.TileEntityBulbRender;
 import com.jtrent238.epicproportions.addons.christmas.tileentity.TileEntityBlockChristmasPresents_Red;
-import com.jtrent238.epicproportions.entity.EntityBomby;
-import com.jtrent238.epicproportions.render.RenderPatStatue;
-import com.jtrent238.epicproportions.tileentity.TileEntityPatStatue;
+import com.jtrent238.epicproportions.addons.christmas.tileentity.TileEntityBulb;
 
 import cpw.mods.fml.client.registry.ClientRegistry;
+import cpw.mods.fml.client.registry.ISimpleBlockRenderingHandler;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.client.model.ModelBiped;
 import net.minecraft.client.model.ModelCreeper;
 import net.minecraft.client.renderer.RenderBlocks;
 import net.minecraft.client.renderer.entity.RenderLiving;
+import net.minecraft.client.renderer.entity.RenderSnowball;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.IBlockAccess;
+import net.minecraftforge.client.MinecraftForgeClient;
 
 public class ClientProxy extends CommonProxy {
   
@@ -45,8 +46,8 @@ public class ClientProxy extends CommonProxy {
 	public void init(FMLInitializationEvent e) {
     super.init (e);
 
-    TileEntitySpecialRenderer render0 = new RenderBlockChristmasPresents_Red(0, 0, 0, 0, null, owner);
-	ClientRegistry.bindTileEntitySpecialRenderer(TileEntityBlockChristmasPresents_Red.class, render0);
+    //TileEntitySpecialRenderer render0 = new RenderBlockChristmasPresents_Red(0, 0, 0, 0, null, owner);
+	//ClientRegistry.bindTileEntitySpecialRenderer(TileEntityBlockChristmasPresents_Red.class, render0);
 	
 	
 	RenderingRegistry.registerEntityRenderingHandler(EntitySanta.class, new RenderLiving(new ModelBiped(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod_christmas:EntitySanta.png");}});//Sets Santa Render
@@ -56,36 +57,53 @@ public class ClientProxy extends CommonProxy {
 	RenderingRegistry.registerEntityRenderingHandler(EntityXmasJen.class, new RenderLiving(new ModelBiped(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod_christmas:EntityXmasJen.png");}});
 	RenderingRegistry.registerEntityRenderingHandler(EntityGiantSnowBall.class, new RenderGiantSnowBall(ItemLoader.ItemGiantSnowball, 0)); 
 	
-	RenderChristmasTree(null, null, 0, 0, 0);
-	RenderChristmasPresents_Red(null, null, 0, 0, 0);
-	RenderChristmasLights(null, null, 0, 0, 0);
+	//RenderChristmasTree(null, null, 0, 0, 0);
+	//RenderChristmasPresents_Red(null, null, 0, 0, 0);
+	//RenderChristmasLights(null, null, 0, 0, 0);
+	
+	//TileEntitySpecialRenderer renderbulb = new TileEntityBulbRender();
+	//ClientRegistry.bindTileEntitySpecialRenderer(TileEntityBulb.class, renderbulb);
+	//ClientRegistry.bindTileEntitySpecialRenderer(TileEntityBulb.class, new TileEntityBulbRender());
 	}
+	
   
-
+	public void registerRenderInformation()
+    {
+		epicproportionsmod_christmas.BulbModelID = RenderingRegistry.instance().getNextAvailableRenderId();
+        RenderingRegistry.instance().registerBlockHandler(epicproportionsmod_christmas.BulbModelID , (ISimpleBlockRenderingHandler) new TileEntityBulbRender());
+        }
+	
+	/*
 private void RenderChristmasLights(RenderBlocks RenderXmasLights, IBlockAccess world, int x, int y, int z) {
 	RenderingRegistry.instance().renderWorldBlock(RenderXmasLights, world, x, y, z, BlockLoader.BlockLights, 656);
 	
 	}
+	 */
 
-
+	/*
 private void RenderChristmasPresents_Red(RenderBlocks RenderXmasPresents_Red, IBlockAccess world, int x, int y, int z) {
 	RenderingRegistry.instance().renderWorldBlock(RenderXmasPresents_Red, world, x, y, z, BlockLoader.BlockChristmasPresents_Red, 655);
 	
 	}
+	*/
 
-
+	/*
 private void RenderChristmasTree(RenderBlocks RenderXmasTree, IBlockAccess world, int x, int y, int z) {
 	RenderingRegistry.instance().renderWorldBlock(RenderXmasTree, world, x, y, z, BlockLoader.BlockChristmasTree, 654);
 	
 	}
-
+	*/
 
 
 public void postInit(FMLPostInitializationEvent e) {
 	 
 	  
   }
-  
-  
-  
+
+@Override
+public void registerRenderThings()
+{
+RenderingRegistry.registerEntityRenderingHandler(EntityGiantSnowBall.class, new RenderSnowball(ItemLoader.ItemGiantSnowball));
+}
+ 
 }

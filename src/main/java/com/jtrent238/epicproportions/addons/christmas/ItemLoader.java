@@ -1,6 +1,7 @@
 package com.jtrent238.epicproportions.addons.christmas;
 
 import com.jtrent238.epicproportions.EpicProportionsMod;
+import com.jtrent238.epicproportions.addons.christmas.entity.EntityXmasPainting;
 import com.jtrent238.epicproportions.addons.christmas.items.ItemBulb;
 import com.jtrent238.epicproportions.addons.christmas.items.ItemCandyCaneArmor;
 import com.jtrent238.epicproportions.addons.christmas.items.ItemCandyCaneDoor;
@@ -18,6 +19,7 @@ import com.jtrent238.epicproportions.addons.christmas.items.spawners.ItemSpawnSa
 import com.jtrent238.epicproportions.addons.christmas.items.spawners.ItemSpawnXmasCapitanCookie;
 import com.jtrent238.epicproportions.addons.christmas.items.spawners.ItemSpawnXmasJen;
 import com.jtrent238.epicproportions.addons.christmas.items.spawners.ItemSpawnXmasPat;
+import com.jtrent238.epicproportions.addons.christmas.items.structureplacers.ItemGingerbreadHousePlacer;
 import com.jtrent238.epicproportions.addons.christmas.items.tools.ItemCandyCaneAxe;
 import com.jtrent238.epicproportions.addons.christmas.items.tools.ItemCandyCaneHoe;
 import com.jtrent238.epicproportions.addons.christmas.items.tools.ItemCandyCanePickaxe;
@@ -31,11 +33,13 @@ import com.jtrent238.epicproportions.addons.christmas.items.tools.weapons.ItemGi
 import com.jtrent238.epicproportions.addons.christmas.items.ItemFilament;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.material.Material;
+import net.minecraft.entity.item.EntityPainting;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemAxe;
 import net.minecraft.item.ItemFood;
+import net.minecraft.item.ItemHangingEntity;
 import net.minecraft.item.ItemHoe;
 import net.minecraft.item.ItemMonsterPlacer;
 import net.minecraft.item.ItemPickaxe;
@@ -77,14 +81,14 @@ public class ItemLoader {
 	public static Item ItemCandyCaneLegs;
 	public static Item ItemCandyCaneBoots;
 	public static Item ItemGiantSnowball;
-	
+	public static Item ItemXmasPaintng;
 	public static Item ItemSpawnSanta;
 	public static Item ItemSpawnGingerBreadMan;
 	public static Item ItemSpawnXmasCapitanCookie;
 	public static Item ItemSpawnXmasPat;
 	public static Item ItemSpawnXmasJen;
 
-
+	public static Item ItemGingerbreadHousePlacer;
 
 	
 	
@@ -105,13 +109,13 @@ public class ItemLoader {
 		ItemGingerBreadAxe = new ItemGingerBreadAxe(ToolMaterial.EMERALD).setUnlocalizedName("ItemGingerBreadAxe").setTextureName("epicproportionsmod_christmas:ItemGingerBreadAxe").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
 		ItemGingerBreadShovel = new ItemGingerBreadShovel(ToolMaterial.EMERALD).setUnlocalizedName("ItemGingerBreadShovel").setTextureName("epicproportionsmod_christmas:ItemGingerBreadShovel").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
 		ItemGingerBreadHoe = new ItemGingerBreadHoe(ToolMaterial.EMERALD).setUnlocalizedName("ItemGingerBreadHoe").setTextureName("epicproportionsmod_christmas:ItemGingerBreadHoe").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
-		ItemGingerBreadDoor = new ItemGingerBreadDoor(Material.cake).setUnlocalizedName("ItemGingerBreadDoor").setTextureName("epicproportionsmod_christmas:ItemGingerBreadDoor");//.setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
+		ItemGingerBreadDoor = new ItemGingerBreadDoor(Material.cake, DoorType.gingerbread).setUnlocalizedName("ItemGingerBreadDoor").setTextureName("epicproportionsmod_christmas:ItemGingerBreadDoor");//.setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
 		ItemCandyCaneSword = new ItemCandyCaneSword(ToolMaterial.EMERALD).setUnlocalizedName("ItemCandyCaneSword").setTextureName("epicproportionsmod_christmas:ItemCandyCaneSword").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
 		ItemCandyCanePickaxe = new ItemCandyCanePickaxe(ToolMaterial.EMERALD).setUnlocalizedName("ItemCandyCanePickaxe").setTextureName("epicproportionsmod_christmas:ItemCandyCanePickaxe").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
 		ItemCandyCaneAxe = new ItemCandyCaneAxe(ToolMaterial.EMERALD).setUnlocalizedName("ItemCandyCaneAxe").setTextureName("epicproportionsmod_christmas:ItemCandyCaneAxe").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
 		ItemCandyCaneShovel = new ItemCandyCaneShovel(ToolMaterial.EMERALD).setUnlocalizedName("ItemCandyCaneShovel").setTextureName("epicproportionsmod_christmas:ItemCandyCaneShovel").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
 		ItemCandyCaneHoe = new ItemCandyCaneHoe(ToolMaterial.EMERALD).setUnlocalizedName("ItemCandyCaneHoe").setTextureName("epicproportionsmod_christmas:ItemCandyCaneHoe").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
-		ItemCandyCaneDoor = new ItemCandyCaneDoor(Material.cake).setUnlocalizedName("ItemCandyCaneDoor").setTextureName("epicproportionsmod_christmas:ItemCandyCaneDoor");//.setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
+		ItemCandyCaneDoor = new ItemCandyCaneDoor(Material.cake, DoorType.peppermint).setUnlocalizedName("ItemCandyCaneDoor").setTextureName("epicproportionsmod_christmas:ItemCandyCaneDoor").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
 		ItemGingerBreadHelm = new ItemGingerBreadArmor(ItemArmor.ArmorMaterial.DIAMOND, 0, 0).setUnlocalizedName("ItemGingerBreadHelm").setTextureName("epicproportionsmod_christmas:ItemGingerBreadHelm").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
 		ItemGingerBreadChest = new ItemGingerBreadArmor(ItemArmor.ArmorMaterial.DIAMOND, 1, 1).setUnlocalizedName("ItemGingerBreadChest").setTextureName("epicproportionsmod_christmas:ItemGingerBreadChest").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
 		ItemGingerBreadLegs = new ItemGingerBreadArmor(ItemArmor.ArmorMaterial.DIAMOND, 2, 2).setUnlocalizedName("ItemGingerBreadLegs").setTextureName("epicproportionsmod_christmas:ItemGingerBreadLegs").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
@@ -120,15 +124,14 @@ public class ItemLoader {
 		ItemCandyCaneChest = new ItemCandyCaneArmor(ItemArmor.ArmorMaterial.DIAMOND, 1, 1).setUnlocalizedName("ItemCandyCaneChest").setTextureName("epicproportionsmod_christmas:ItemCandyCaneChest").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
 		ItemCandyCaneLegs = new ItemCandyCaneArmor(ItemArmor.ArmorMaterial.DIAMOND, 2, 2).setUnlocalizedName("ItemCandyCaneLegs").setTextureName("epicproportionsmod_christmas:ItemCandyCaneLegs").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
 		ItemCandyCaneBoots = new ItemCandyCaneArmor(ItemArmor.ArmorMaterial.DIAMOND, 3, 3).setUnlocalizedName("ItemCandyCaneBoots").setTextureName("epicproportionsmod_christmas:ItemCandyCaneBoots").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
-		ItemGiantSnowball = new ItemGiantSnowball().setUnlocalizedName("ItemGiantSnowball").setTextureName("epicproportionsmod_christmas:ItemGiantSnowball").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
-		
-		
 		//ItemPepperMintDoor = new ItemPepperMintDoor(ToolMaterial.EMERALD).setUnlocalizedName("ItemPepperMintDoor").setTextureName("epicproportionsmod_christmas:ItemPepperMintDoor").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
 		ItemBulb = new ItemBulb(0, ItemBulb, null, null, null).setUnlocalizedName("ItemBulb").setTextureName("epicproportionsmod_christmas:ItemBulb").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas).setHasSubtypes(true);
 		ItemFilament = new ItemFilament().setUnlocalizedName("ItemFilament").setTextureName("epicproportionsmod_christmas:ItemFilament").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
 		ItemFruitCake = new ItemFood(6, 6, false).setUnlocalizedName("ItemFruitCake").setTextureName("epicproportionsmod_christmas:ItemFruitCake").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
 		ItemJingleBells = new ItemJingleBells().setUnlocalizedName("ItemJingleBells").setTextureName("epicproportionsmod_christmas:ItemJingleBells").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
 		ItemSnowWand = new ItemSnowWand().setUnlocalizedName("ItemSnowWand").setTextureName("epicproportionsmod_christmas:ItemSnowWand").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
+		ItemGiantSnowball = new ItemGiantSnowball().setUnlocalizedName("ItemGiantSnowball").setTextureName("epicproportionsmod_christmas:ItemGiantSnowball").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
+		ItemXmasPaintng = new ItemHangingEntity(EntityXmasPainting.class).setUnlocalizedName("ItemXmasPaintng").setTextureName("epicproportionsmod_christmas:ItemXmasPanting");//.setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
 		
 		
 		ItemSpawnSanta = new ItemSpawnSanta().setUnlocalizedName("ItemSpawnSanta").setTextureName("epicproportionsmod_christmas:ItemSpawnSanta").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
@@ -136,6 +139,9 @@ public class ItemLoader {
 		ItemSpawnXmasCapitanCookie = new ItemSpawnXmasCapitanCookie().setUnlocalizedName("ItemSpawnXmasCapitanCookie").setTextureName("epicproportionsmod_christmas:ItemSpawnXmasCapitanCookie").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
 		ItemSpawnXmasPat = new ItemSpawnXmasPat().setUnlocalizedName("ItemSpawnXmasPat").setTextureName("epicproportionsmod_christmas:ItemSpawnXmasPat").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
 		ItemSpawnXmasJen = new ItemSpawnXmasJen().setUnlocalizedName("ItemSpawnXmasJen").setTextureName("epicproportionsmod_christmas:ItemSpawnXmasJen").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
+		
+		ItemGingerbreadHousePlacer = new ItemGingerbreadHousePlacer(0).setUnlocalizedName("ItemGingerbreadHousePlacer").setTextureName("epicproportionsmod_christmas:ItemGingerbreadHousePlacer").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
+		
 		registerItems();
 	}
 
@@ -176,12 +182,15 @@ public class ItemLoader {
 		GameRegistry.registerItem(ItemCandyCaneLegs, ItemCandyCaneLegs.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemCandyCaneBoots, ItemCandyCaneBoots.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemGiantSnowball, ItemGiantSnowball.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemXmasPaintng, ItemXmasPaintng.getUnlocalizedName().substring(5));
 		
 		GameRegistry.registerItem(ItemSpawnSanta, ItemSpawnSanta.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemSpawnGingerBreadMan, ItemSpawnGingerBreadMan.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemSpawnXmasCapitanCookie, ItemSpawnXmasCapitanCookie.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemSpawnXmasPat, ItemSpawnXmasPat.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemSpawnXmasJen, ItemSpawnXmasJen.getUnlocalizedName().substring(5));
+		
+		GameRegistry.registerItem(ItemGingerbreadHousePlacer, ItemGingerbreadHousePlacer.getUnlocalizedName().substring(5));
 		
 	}
 }

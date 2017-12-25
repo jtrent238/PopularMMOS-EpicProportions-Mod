@@ -63,6 +63,7 @@ public class Recipes {
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemGingerBreadChest), "XBX", "XXX","XXX", 'X', ItemLoader.ItemGingerBreadMan);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemGingerBreadLegs), "XXX", "XBX","XBX", 'X', ItemLoader.ItemGingerBreadMan);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemGingerBreadBoots), "XBX", "XBX", 'X', ItemLoader.ItemGingerBreadMan);
+		GameRegistry.addShapedRecipe(new ItemStack(BlockLoader.BlockGingerBreadCarpet, 2), "XX", 'X', BlockLoader.BlockGingerBread);
 				
 	}
 	

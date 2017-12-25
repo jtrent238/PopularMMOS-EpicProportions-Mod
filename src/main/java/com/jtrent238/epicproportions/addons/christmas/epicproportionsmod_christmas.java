@@ -3,9 +3,13 @@ package com.jtrent238.epicproportions.addons.christmas;
 
 import com.jtrent238.epicproportions.ForgeSubscribe;
 import com.jtrent238.epicproportions.addons.christmas.common.CommonProxy;
+import com.jtrent238.epicproportions.addons.christmas.entity.EntityGiantSnowBall;
+import com.jtrent238.epicproportions.addons.christmas.tileentity.TileEntityBulb;
 import com.jtrent238.epicproportions.addons.halloween.epicproportionsmod_halloween;
 import com.jtrent238.epicproportions.api.API;
+import com.jtrent238.epicproportions.entity.EntilyJenArrow;
 
+import cpw.mods.fml.common.IWorldGenerator;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.SidedProxy;
@@ -13,18 +17,25 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.eventhandler.EventPriority;
+import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.RenderBlocks;
+import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.crash.CrashReportCategory;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.common.ChestGenHooks;
+import net.minecraftforge.common.ForgeHooks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;
 
@@ -44,12 +55,13 @@ public class epicproportionsmod_christmas
 
 	@Instance(MODID)
     public static epicproportionsmod_christmas instance;
-	public static final String MODVERSION = "1.0.0.0";
+	public static final String MODVERSION = "1.0.1.0";
 	public static final String MODNAME = "jtrent238's EpicProportions Mod - Christmas Addon";
 	public static final String ADDONNAME = "Christmas Addon";
 	public static final String MODAUTHOR = "jtrent238";
 	public static final String MC = "1.7.10";
 	
+	public static int BulbModelID;
 	
 	@ForgeSubscribe(priority = EventPriority.NORMAL)
     public void eventHandler(RenderGameOverlayEvent event) {
@@ -82,9 +94,17 @@ public void init(FMLInitializationEvent event)
 	OreDict.addores();
 	Achievements.loadAchievements();
 	Stats.RegisterStats();
-
 	
-}
+	
+	EntityRegistry.registerModEntity(EntityGiantSnowBall.class, "GiantSnowBall", EntityRegistry.findGlobalUniqueEntityId(), MODID, 80, 3, true);
+
+	proxy.registerRenderThings();
+	
+	GameRegistry.registerTileEntity(TileEntityBulb.class, "Bulb");
+	TileEntity.addMapping(TileEntityBulb.class, "Bulb_Mapping");
+	BulbModelID = 72;
+	
+	}
 
 
 public static CreativeTabs EpicProportionsMod_Christmas = new CreativeTabs("EpicProportionsMod_Christmas")

@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Writer;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.logging.Level;
@@ -118,7 +119,7 @@ public class EpicProportionsMod implements ITweaker
 	@Instance(MODID)
     public static EpicProportionsMod instance;
 
-	public static final String MODVERSION = "1.5.8.9";
+	public static final String MODVERSION = "1.5.8.10";
 
 	public static final String APIVERSION = "1.0.0.0";
 	public static final String MODNAME = "jtrent238's EpicProportions Mod";
@@ -348,6 +349,8 @@ public void preInit(FMLPreInitializationEvent event) throws IOException
 	//patbiome.preInit(event);
 	//dimepicproportions.preInit(event);
 	//***********************************************************************************
+	
+	AddonManager.registerAddons();
 	/*
 	 * Is Mods Loaded Start
 	 */
@@ -667,10 +670,10 @@ public void init(FMLInitializationEvent event)
 	//Dimension.registerDimensions();
 	//FluidLoader.RegisterFluids();
 	
-	EntityRegistry.registerModEntity(EntityNinjaStar.class, "NinjaStar", 4, MODID, 80, 3, true);
-	EntityRegistry.registerModEntity(EntityLuckyEgg.class, "LuckyEgg", 5, MODID, 80, 3, true);
-	EntityRegistry.registerModEntity(EntilyPatArrow.class, "PatArrow", 6, MODID, 80, 3, true);
-	EntityRegistry.registerModEntity(EntilyJenArrow.class, "PatArrow", 7, MODID, 80, 3, true);
+	EntityRegistry.registerModEntity(EntityNinjaStar.class, "NinjaStar", EntityRegistry.findGlobalUniqueEntityId(), MODID, 80, 3, true);
+	EntityRegistry.registerModEntity(EntityLuckyEgg.class, "LuckyEgg", EntityRegistry.findGlobalUniqueEntityId(), MODID, 80, 3, true);
+	EntityRegistry.registerModEntity(EntilyPatArrow.class, "PatArrow", EntityRegistry.findGlobalUniqueEntityId(), MODID, 80, 3, true);
+	EntityRegistry.registerModEntity(EntilyJenArrow.class, "JenArrow", EntityRegistry.findGlobalUniqueEntityId(), MODID, 80, 3, true);
 	
 	
 	proxy.registerRenderThings();

@@ -57,7 +57,7 @@ public class ItemEpicProportionsWand extends Item {
 		Block i1 = par3World.getBlock(par4, par5, par6);
 		if (i1 == Blocks.air) {
 			par3World.playSoundEffect(par4 + 0.5D, par5 + 0.5D, par6 + 0.5D, "fire.ignite", 1.0F, itemRand.nextFloat() * 0.4F + 0.8F);
-			portal.tryTroCreatePortal(par3World, par4, par5, par6);
+			//portal.tryTroCreatePortal(par3World, par2EntityPlayer.serverPosX, par2EntityPlayer.serverPosY, par2EntityPlayer.serverPosZ);
 		}
 		par1ItemStack.damageItem(1, par2EntityPlayer);
 		return true;

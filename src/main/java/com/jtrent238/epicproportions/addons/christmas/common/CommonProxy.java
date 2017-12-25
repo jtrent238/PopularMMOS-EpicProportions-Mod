@@ -1,7 +1,7 @@
 package com.jtrent238.epicproportions.addons.christmas.common;
 
 
-import com.jtrent238.epicproportions.addons.halloween.epicproportionsmod_halloween;
+import com.jtrent238.epicproportions.addons.christmas.epicproportionsmod_christmas;
 
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -11,18 +11,17 @@ import cpw.mods.fml.common.network.NetworkRegistry;
 public class CommonProxy {
 	
 	
-	private static final String modid = epicproportionsmod_halloween.MODID;
+	private static final String modid = epicproportionsmod_christmas.MODID;
 	private String owner;
-
+	public void registerRenderThings() {}
+	public void registerSounds() {}
+	
 	public void init(FMLInitializationEvent e) {
 		 
 	}
 	
 	@EventHandler
-	public void serverLoad(FMLServerStartingEvent event)
-	{
+	public void serverLoad(FMLServerStartingEvent event){
 	    
 	}
-
-	
 }

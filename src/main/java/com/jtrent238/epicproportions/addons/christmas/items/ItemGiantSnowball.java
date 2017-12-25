@@ -1,42 +1,53 @@
 package com.jtrent238.epicproportions.addons.christmas.items;
 
-import com.jtrent238.epicproportions.addons.christmas.epicproportionsmod_christmas;
+import com.jtrent238.epicproportions.addons.christmas.Achievements;
+import com.jtrent238.epicproportions.addons.christmas.Stats;
 import com.jtrent238.epicproportions.addons.christmas.entity.EntityGiantSnowBall;
+import com.jtrent238.epicproportions.entity.EntityNinjaStar;
 
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.projectile.EntitySnowball;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
 public class ItemGiantSnowball extends Item
 {
-    private static final String __OBFID = "CL_00000069";
+public ItemGiantSnowball()
+{
+//this.setUnlocalizedName("grenade"); //Sets the name of this item, Has to be unique!
+//this.setCreativeTab(CreativeTabs.tabCombat); //This Item will be in the Combat Creative Tab!
+//this.setTextureName(GrenadeMod.MODID + ":" + "grenade"); //The texture for this item is the Grenade!
+}
 
-    public ItemGiantSnowball()
-    {
-        this.maxStackSize = 8;
-        this.setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
-    }
+/**
+ * Called whenever this item is equipped and the right mouse button is pressed. Args: itemStack, world, entityPlayer
+ */
+public ItemStack onItemRightClick(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer)
+{
+	
+	par3EntityPlayer.addStat(Stats.BigSnowBallsThrown, 1);
+	par3EntityPlayer.triggerAchievement(Achievements.achievementBigSnowBall);
+	
+//This if statement is here to check that the Server is working
+if (!par2World.isRemote)
+{
+/* This method in World spawn in an entity,
+* You can use with anything that extends
+* the Entity class, in this case it's
+* the EntityGrenade class
+*/
+par2World.spawnEntityInWorld(new EntityGiantSnowBall(par2World, par3EntityPlayer));
+//Decrease an item from the stack because you used it!
+ --par1ItemStack.stackSize;
+} return par1ItemStack;
+}
 
-    /**
-     * Called whenever this item is equipped and the right mouse button is pressed. Args: itemStack, world, entityPlayer
-     */
-    public ItemStack onItemRightClick(ItemStack p_77659_1_, World p_77659_2_, EntityPlayer p_77659_3_)
-    {
-        if (!p_77659_3_.capabilities.isCreativeMode)
-        {
-            --p_77659_1_.stackSize;
-        }
-
-        p_77659_2_.playSoundAtEntity(p_77659_3_, "random.bow", 0.5F, 0.4F / (itemRand.nextFloat() * 0.4F + 0.8F));
-
-        if (!p_77659_2_.isRemote)
-        {
-            p_77659_2_.spawnEntityInWorld(new EntityGiantSnowBall(p_77659_2_, p_77659_3_));
-        }
-
-        return p_77659_1_;
-    }
+/**
+ * Render Pass sensitive version of hasEffect()
+ */
+public boolean hasEffect(ItemStack par1ItemStack, int pass)
+{
+//This means it will look "special" in the inventory
+return false;
+}
 }

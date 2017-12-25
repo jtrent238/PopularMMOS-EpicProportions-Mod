@@ -38,5 +38,7 @@
 	"records.pat_themesong_full": {"category": "master","sounds": [{"name": "records.pat_themesong_full","stream": true}]},
 	"records.pat_themesong": {"category": "master","sounds": [{"name": "records.pat_themesong","stream": true}]},
 	"records.pat_papersong": {"category": "master","sounds": [{"name": "records.pat_papersong","stream": true}]},
-	"NinjaStarHit": {"category": "master","sounds": [{"name": "NinjaStarHit","stream": false}]}
+	"NinjaStarHit": {"category": "master","sounds": [{"name": "NinjaStarHit","stream": false}]},
+	"fred_hurt": {"category": "master","sounds": [{"name": "fred_hurt","stream": false}]},
+	"fred_death": {"category": "master","sounds": [{"name": "fred_death","stream": false}]}
 	}
