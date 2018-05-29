@@ -65,8 +65,6 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.VillagerRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-//import jdk.nashorn.internal.objects.annotations.Getter;
-import net.fybertech.meddle.MeddleMod;
 import net.minecraft.block.Block;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.ICommandManager;
@@ -96,7 +94,7 @@ import net.minecraftforge.event.terraingen.BiomeEvent;
 
 
 @Mod(modid="epicproportionsmod", name="jtrent238's EpicProportions Mod", version=(EpicProportionsMod.MODVERSION))
-@MeddleMod(id="epicproportionsmod", name="jtrent238's EpicProportions Mod", version=(EpicProportionsMod.MODVERSION), author="jtrent238")
+//@MeddleMod(id="epicproportionsmod", name="jtrent238's EpicProportions Mod", version=(EpicProportionsMod.MODVERSION), author="jtrent238")
 public class EpicProportionsMod implements ITweaker
 {
 
@@ -119,7 +117,7 @@ public class EpicProportionsMod implements ITweaker
 	@Instance(MODID)
     public static EpicProportionsMod instance;
 
-	public static final String MODVERSION = "1.5.8.10";
+	public static final String MODVERSION = "1.5.8.11";
 
 	public static final String APIVERSION = "1.0.0.0";
 	public static final String MODNAME = "jtrent238's EpicProportions Mod";
@@ -669,6 +667,7 @@ public void init(FMLInitializationEvent event)
 	//Dimension.registerWorldProvider();
 	//Dimension.registerDimensions();
 	//FluidLoader.RegisterFluids();
+	LootRegistry.registerLoot();
 	
 	EntityRegistry.registerModEntity(EntityNinjaStar.class, "NinjaStar", EntityRegistry.findGlobalUniqueEntityId(), MODID, 80, 3, true);
 	EntityRegistry.registerModEntity(EntityLuckyEgg.class, "LuckyEgg", EntityRegistry.findGlobalUniqueEntityId(), MODID, 80, 3, true);

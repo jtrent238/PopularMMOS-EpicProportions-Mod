@@ -83,7 +83,8 @@ public class itemCaptainCookieCookie extends ItemRecord
  @SideOnly(Side.CLIENT)
  public String getRecordNameLocal()
  {
-     return StatCollector.translateToLocal("Captain Cookie Music CD");
+	 return StatCollector.translateToLocal("hmm... Something seems odd about this cookie.");
+	 //return StatCollector.translateToLocal("Captain Cookie Music CD");
  }
 
 

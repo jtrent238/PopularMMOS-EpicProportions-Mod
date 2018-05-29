@@ -1,5 +1,13 @@
 Epic Proportions Mod ChangeLog
 
+1.5.8.11
+- Fixed a server crash
+- Removed FuriousDestroyer Rail
+- Removed SuperGirlyGamer Rail
+- Removed FuriousDestroyer Crafting Table
+- Removed SuperGirlyGamer Crafting Table
+
+
 1.5.8.10
 - Added Achievement for Big Snowball [Christmas Addon]
 - Added Gingerbread Carpet [Christmas Addon]
