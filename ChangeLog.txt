@@ -6,7 +6,7 @@ Epic Proportions Mod ChangeLog
 - Removed SuperGirlyGamer Rail
 - Removed FuriousDestroyer Crafting Table
 - Removed SuperGirlyGamer Crafting Table
-
+- Removed Support for Meddle
 
 1.5.8.10
 - Added Achievement for Big Snowball [Christmas Addon]
