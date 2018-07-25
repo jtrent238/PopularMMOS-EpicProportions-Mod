@@ -28,4 +28,4 @@ Please search on the [issue tracker](https://github.com/jtrent238/PopularMMOS-Ep
 ## Your Environment
 <!--- Include as many relevant details about the environment you experienced the bug in -->
 * Version used:
-* Operating System and version (desktop or mobile):
+* Operating System and version (Windows, Mac, etc.):
