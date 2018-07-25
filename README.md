@@ -1,5 +1,5 @@
 # PopularMMOS-EpicProportions-Mod 
-[![Build Status](https://travis-ci.org/jtrent238/PopularMMOS-EpicProportions-Mod.svg?branch=master)](https://travis-ci.org/jtrent238/PopularMMOS-EpicProportions-Mod) [ ![Codeship Status for jtrent238/PopularMMOS-EpicProportions-Mod](https://codeship.com/projects/1003c190-4e1a-0134-ccf6-4e2c8cfaa9af/status?branch=master)](https://codeship.com/projects/170713) 
+[![Build Status](https://travis-ci.org/jtrent238/PopularMMOS-EpicProportions-Mod.svg?branch=master)](https://travis-ci.org/jtrent238/PopularMMOS-EpicProportions-Mod) [ ![Codeship Status for jtrent238/PopularMMOS-EpicProportions-Mod](https://codeship.com/projects/1003c190-4e1a-0134-ccf6-4e2c8cfaa9af/status?branch=master)](https://codeship.com/projects/170713) [![Coverage Status](https://coveralls.io/repos/github/jtrent238/PopularMMOS-EpicProportions-Mod/badge.svg?branch=master)](https://coveralls.io/github/jtrent238/PopularMMOS-EpicProportions-Mod?branch=master)
 
 
 This is a mod based on PopularMMOS EpicProportions series. 
