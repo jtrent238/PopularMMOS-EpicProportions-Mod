@@ -12,6 +12,7 @@ Epic Proportions Mod ChangeLog
 - Fixed name of the mod saying jtrent238's EpicProportions Mod to PopularMMOS EpicProportions Mod
 - Fixed join message
 - Fixed Evil Birthday Present not doing anything when broken
+- Fixed Bellie not having nametag
 - Fixed Name for Joke Book not being localized
 - Fixed Name for EpicPropotions Painting not being localized
 - Fixed Name for EpicPropotions Wand not being localized
