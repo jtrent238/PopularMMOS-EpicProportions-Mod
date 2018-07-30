@@ -10,7 +10,11 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemPotion;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTBase;
+import net.minecraft.nbt.NBTTagShort;
 import net.minecraft.potion.Potion;
+import net.minecraft.util.EnumChatFormatting;
+import net.minecraft.util.StatCollector;
 
 
 
@@ -107,8 +111,18 @@ public class Recipes {
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemJenBucket), "XBX", "BXB", 'X', ItemLoader.itemJenIngot);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemPatBucket), "XBX", "BXB", 'X', ItemLoader.itemPatIngot);
 		GameRegistry.addShapedRecipe(new ItemStack(BlockLoader.BlockOfEpicProportions), "XXX", "XXX","XXX", 'X', ItemLoader.itemgemofepicproportions);
-		GameRegistry.addShapedRecipe(new ItemStack(Items.pumpkin_pie), "PSB", "XBB","BBB", 'X', ItemLoader.ItemLuckyEgg, 'P', Blocks.pumpkin, 'S', Items.sugar);
-		GameRegistry.addShapedRecipe(new ItemStack(Items.cake), "MMM", "SXS","WWW", 'X', ItemLoader.ItemLuckyEgg, 'M', Items.milk_bucket, 'W', Items.wheat, 'S', Items.sugar);
+			Item lucky_pumpkinpie_item = Items.pumpkin_pie;
+			ItemStack lucky_pumpkinpie_stack = new ItemStack(lucky_pumpkinpie_item ,1);
+			lucky_pumpkinpie_stack.setStackDisplayName(EnumChatFormatting.GOLD + "" + EnumChatFormatting.BOLD + EnumChatFormatting.BOLD + StatCollector.translateToLocal("item.ItemLuckyPumpkinPie.name"));
+			lucky_pumpkinpie_stack.hasEffect();
+			lucky_pumpkinpie_stack.setTagInfo("luckpoints", new NBTTagShort().copy());
+		GameRegistry.addShapedRecipe(lucky_pumpkinpie_stack, "PSB", "XBB","BBB", 'X', ItemLoader.ItemLuckyEgg, 'P', Blocks.pumpkin, 'S', Items.sugar);
+			Item lucky_cake_item = Items.cake;
+			ItemStack lucky_cake_stack = new ItemStack(lucky_cake_item ,1);
+			lucky_cake_stack.setStackDisplayName(EnumChatFormatting.GOLD + "" + EnumChatFormatting.BOLD + StatCollector.translateToLocal("item.ItemLuckyCake.name"));
+			lucky_cake_stack.hasEffect();
+			lucky_cake_stack.setTagInfo("luckpoints", new NBTTagShort().copy());
+		GameRegistry.addShapedRecipe(lucky_cake_stack, "MMM", "SXS","WWW", 'X', ItemLoader.ItemLuckyEgg, 'M', Items.milk_bucket, 'W', Items.wheat, 'S', Items.sugar);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemEpicProportionsWand), "BPB", "BJB","BSB", 'P', ItemLoader.itemPatStar, 'J', ItemLoader.itemJenStar, 'S', Items.stick);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemNinjaStar, 32), "BIB", "III","BIB", 'I', Items.iron_ingot);
 		GameRegistry.addShapedRecipe(new ItemStack(BlockLoader.BlockPatLamp), "III", "ILI","III", 'I', ItemLoader.itemPatIngot, 'L', Blocks.redstone_lamp);
@@ -121,6 +135,8 @@ public class Recipes {
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemJenArrow), "X", "S", "F", 'F', Items.feather, 'X', ItemLoader.ItemJenFlint, 'S', Items.stick);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemPatBow), "BSX", "IBX", "BSX", 'X', Items.string, 'I', ItemLoader.itemPatIngot, 'S', Items.stick);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.itemJenBow), "BSX", "IBX", "BSX", 'X', Items.string, 'I', ItemLoader.itemJenIngot, 'S', Items.stick);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemPatBoat), "PBP", "PPP", 'P', BlockLoader.BlockPatPlanks);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemJenBoat), "PBP", "PPP", 'P', BlockLoader.BlockJenPlanks);
 		
 		}
 	

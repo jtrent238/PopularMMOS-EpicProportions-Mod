@@ -13,9 +13,6 @@ public class ItemNinjaStar extends Item
 {
 public ItemNinjaStar()
 {
-//this.setUnlocalizedName("grenade"); //Sets the name of this item, Has to be unique!
-//this.setCreativeTab(CreativeTabs.tabCombat); //This Item will be in the Combat Creative Tab!
-//this.setTextureName(GrenadeMod.MODID + ":" + "grenade"); //The texture for this item is the Grenade!
 }
 
 /**

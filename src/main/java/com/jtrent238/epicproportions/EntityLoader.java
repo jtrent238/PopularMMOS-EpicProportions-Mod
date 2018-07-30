@@ -15,6 +15,7 @@ import com.jtrent238.epicproportions.entity.EntityCaptianCookie;
 import com.jtrent238.epicproportions.entity.EntityCaptianCookieLittle;
 import com.jtrent238.epicproportions.entity.EntityCaptianCookie_Evil;
 import com.jtrent238.epicproportions.entity.EntityClown;
+import com.jtrent238.epicproportions.entity.EntityEpicProportionsPainting;
 import com.jtrent238.epicproportions.entity.EntityFred2_0;
 import com.jtrent238.epicproportions.entity.EntityJen;
 import com.jtrent238.epicproportions.entity.EntityJenGolem;
@@ -192,6 +193,8 @@ public class EntityLoader {
 	    //RenderingRegistry.registerEntityRenderingHandler(EntityCaptianCookie.class, new RenderLiving(new ModelBiped(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityCaptianCookie.png");}});//Sets CaptianCookie Texture
 	    EntityRegistry.addSpawn(EntityLuckyChicken.class, 15, 14, 16, EnumCreatureType.creature, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.forest, BiomeGenBase.plains, BiomeGenBase.beach, BiomeGenBase.mesa, BiomeGenBase.savanna, BiomeGenBase.desert, BiomeGenBase.desertHills, BiomeGenBase.mushroomIsland);
 		
+		//EntityRegistry.registerGlobalEntityID(EntityEpicProportionsPainting.class, "EntityEpicProportionsPainting", EntityRegistry.findGlobalUniqueEntityId());
+        
 	    //EntityRegistry.registerModEntity(EntityNinjaStar.class, "NinjaStar", 4, 967, 80, 3, true);
     	
 	  //VillagerOfEpicProportions Registry

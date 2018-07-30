@@ -65,7 +65,7 @@ public class EntityBellie extends EntityGolem implements IBossDisplayData
 	        this.targetTasks.addTask(3, new EntityAINearestAttackableTarget(this, EntityLiving.class, 0, false, true, IMob.mobSelector));
 	       
 	        this.hasCustomNameTag();
-	        //this.setCustomNameTag("Captian Cookie");
+	        this.setCustomNameTag("Bellie");
 	        addRandomArmor();
 	        //DungeonHooks.addDungeonMob("Captian Cookie", 180);
 	    }

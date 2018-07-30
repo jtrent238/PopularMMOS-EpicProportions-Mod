@@ -3,9 +3,6 @@ package com.jtrent238.epicproportions.entity;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import java.util.ArrayList;
-
-import com.jtrent238.epicproportions.ItemLoader;
-
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityHanging;
 import net.minecraft.entity.player.EntityPlayer;
@@ -22,6 +19,7 @@ public class EntityEpicProportionsPainting extends EntityHanging
     public EntityEpicProportionsPainting(World p_i1599_1_)
     {
         super(p_i1599_1_);
+        
     }
 
     public EntityEpicProportionsPainting(World p_i1600_1_, int p_i1600_2_, int p_i1600_3_, int p_i1600_4_, int p_i1600_5_)
@@ -133,7 +131,7 @@ public class EntityEpicProportionsPainting extends EntityHanging
             }
         }
 
-        this.entityDropItem(new ItemStack(ItemLoader.ItemEpicProportionsPainting), 0.0F);
+        this.entityDropItem(new ItemStack(Items.painting), 0.0F);
     }
 
     public static enum EnumArt
@@ -164,7 +162,6 @@ public class EntityEpicProportionsPainting extends EntityHanging
         BurningSkull("BurningSkull", 64, 64, 128, 192),
         Skeleton("Skeleton", 64, 48, 192, 64),
         DonkeyKong("DonkeyKong", 64, 48, 192, 112);
-    	
         /** Holds the maximum length of paintings art title. */
         public static final int maxArtTitleLength = "SkullAndRoses".length();
         /** Painting Title. */

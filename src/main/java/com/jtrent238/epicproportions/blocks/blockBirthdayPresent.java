@@ -57,65 +57,40 @@ public class blockBirthdayPresent extends Block{
 	private int most_quantity;
 	private boolean Halloweenloaded;
 	private boolean isTConstructModLoaded;
+	private String get_drops_as_string;
 	
 
     
 	public blockBirthdayPresent(Material ground) {
 		super(ground);
-		this.getEnableStats();
+		//this.getEnableStats();
 		//this.presentOpened();
-		
 		}
 	
 	public boolean enableStats(){
 		
 		return true;
 	}
-	/*
-	public void breakBlock(World par1World, int par2, int par3, int par4, EntityLivingBase par5EntityLivingBase, ItemStack par6ItemStack)
-	  {
-	    ((EntityPlayer)par5EntityLivingBase).triggerAchievement(Achievements.achievementpresent);
-	    ((EntityPlayer)par5EntityLivingBase).addStat(Stats.presentsbroken, 1);
-	  }
-	*/
 	
-	   /**
+	/**
      * Called when the player destroys a block with an item that can harvest it. (i, j, k) are the coordinates of the
      * block and l is the block's subtype/damage.
      */
-    public void breakBlock(World p_149636_1_, EntityPlayer p_149636_2_, int p_149636_3_, int p_149636_4_, int p_149636_5_, int p_149636_6_)
+    /*public void harvestBlock(World p_149636_1_, EntityPlayer p_149636_2_, int p_149636_3_, int p_149636_4_, int p_149636_5_, int p_149636_6_)
     {
         p_149636_2_.addStat(StatList.mineBlockStatArray[getIdFromBlock(this)], 1);
         p_149636_2_.addStat(Stats.presentsbroken, 1);
         p_149636_2_.triggerAchievement(Achievements.achievementpresent);
         p_149636_2_.addExperience(15);
         p_149636_2_.addExhaustion(0.025F);
-/*
-        if (this.canSilkHarvest(p_149636_1_, p_149636_2_, p_149636_3_, p_149636_4_, p_149636_5_, p_149636_6_) && EnchantmentHelper.getSilkTouchModifier(p_149636_2_))
-        {
-            ArrayList<ItemStack> items = new ArrayList<ItemStack>();
-            ItemStack itemstack = this.createStackedBlock(p_149636_6_);
-
-            if (itemstack != null)
-            {
-                items.add(itemstack);
-            }
-
-            ForgeEventFactory.fireBlockHarvesting(items, p_149636_1_, this, p_149636_3_, p_149636_4_, p_149636_5_, p_149636_6_, 0, 1.0f, true, p_149636_2_);
-            for (ItemStack is : items)
-            {
-                this.dropBlockAsItem(p_149636_1_, p_149636_3_, p_149636_4_, p_149636_5_, is);
-            }
+        //this.dropBlockAsItem(p_149636_1_, p_149636_3_, p_149636_4_, p_149636_5_, new ItemStack(this.drop));
+        
+        if(EpicProportionsMod.ENABLE_DEVLOGGING == true){
+        	System.out.println("Birthday Present opened!");
+        	System.out.println("Drops: " + this.drop);
         }
-        else
-        {
-            harvesters.set(p_149636_2_);
-            int i1 = EnchantmentHelper.getFortuneModifier(p_149636_2_);
-            this.dropBlockAsItem(p_149636_1_, p_149636_3_, p_149636_4_, p_149636_5_, p_149636_6_, i1);
-            harvesters.set(null);
-        }
-        */
-    }
+    }*/
+	
 	public ItemStack getPickBlock(MovingObjectPosition target, World world, int x, int y, int z)
 	  {
 	    return new ItemStack(ItemLoader.itemBirthdayPresent);
@@ -162,13 +137,6 @@ public class blockBirthdayPresent extends Block{
         this.most_quantity = most_quantity;
     }
     
-  
-  
-    public static final Item CopperIngot = GameRegistry.findItem("TConstruct", "CopperIngot");
-    public static final ItemStack CopperIngotItemStack = new ItemStack(CopperIngot);
-    public static final Item TinIngot = GameRegistry.findItem("TConstruct", "TinIngot");
-    public static final ItemStack TinIngotItemStack = new ItemStack(TinIngot);
-
     @Override
     public ArrayList<ItemStack> getDrops(World world, int x, int y, int z, int metadata, int fortune) {
         ArrayList<ItemStack> drops = new ArrayList<ItemStack>();
@@ -185,20 +153,6 @@ public class blockBirthdayPresent extends Block{
         if (world.rand.nextFloat() < 0.3F)
             drops.add(new ItemStack(Items.golden_apple));
         
-        isTConstructModLoaded = Loader.isModLoaded("isTConstructModLoaded");
-        
-        if (/*/EpicProportionsMod./*/isTConstructModLoaded) {
-        	
-        	GameRegistry.findItem("TConstruct", "materials:9");
-            GameRegistry.findItem("TConstruct", "materials:10");
-
-        	drops.add(new ItemStack(GameRegistry.findItem("TConstruct", "materials:9"), world.rand.nextInt(1) + 1));
-            drops.add(new ItemStack(GameRegistry.findItem("TConstruct", "materials:10"), world.rand.nextInt(1) + 1));
-            
-            drops.add(new ItemStack(CopperIngot, world.rand.nextInt(1) + 1));
-            drops.add(new ItemStack(TinIngot, world.rand.nextInt(1) + 1));
-    		
-    		}
         
         Halloweenloaded = Loader.isModLoaded("epicproportionsmod_halloween");
     	
@@ -226,6 +180,7 @@ public class blockBirthdayPresent extends Block{
         	System.out.println("Creative Birthday Present Drops Enabled ***This is still Work In Progress!***");
         }
         
+        get_drops_as_string = drops.toString();
         
         return drops;
     }

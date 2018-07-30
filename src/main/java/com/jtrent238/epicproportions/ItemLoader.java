@@ -3,6 +3,7 @@ package com.jtrent238.epicproportions;
 import com.jtrent238.epicproportions.items.ItemCircusCoin;
 import com.jtrent238.epicproportions.items.ItemEpicProportionsPainting;
 import com.jtrent238.epicproportions.items.ItemEpicProportionsWand;
+import com.jtrent238.epicproportions.items.ItemJenBoat;
 import com.jtrent238.epicproportions.items.ItemJenDoor;
 import com.jtrent238.epicproportions.items.ItemJenDust;
 import com.jtrent238.epicproportions.items.ItemJenFlint;
@@ -10,6 +11,7 @@ import com.jtrent238.epicproportions.items.ItemLuckyEgg;
 import com.jtrent238.epicproportions.items.ItemModDoor;
 import com.jtrent238.epicproportions.items.ItemModInfo;
 import com.jtrent238.epicproportions.items.ItemNinjaStar;
+import com.jtrent238.epicproportions.items.ItemPatBoat;
 import com.jtrent238.epicproportions.items.ItemPatCD1;
 import com.jtrent238.epicproportions.items.ItemPatCD2;
 import com.jtrent238.epicproportions.items.ItemPatCD3;
@@ -192,6 +194,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
+import net.minecraft.item.ItemBoat;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.EnumPlantType;
 import net.minecraft.item.ItemFood;
@@ -277,6 +280,8 @@ public class ItemLoader {
 	public static Item ItemGiantPizzaPlacer;
 	public static Item ItemPatFlint;
 	public static Item ItemJenFlint;
+	public static Item ItemPatBoat;
+	public static Item ItemJenBoat;
 	
 
 	
@@ -492,6 +497,8 @@ public static void LoadItems() {
 	ItemGiantPizzaPlacer  = new ItemGiantPizzaPlacer(0).setUnlocalizedName("ItemGiantPizzaPlacer").setTextureName("epicproportionsmod:ItemGiantPizzaPlacer").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	ItemPatFlint  = new ItemPatFlint().setUnlocalizedName("ItemPatFlint").setTextureName("epicproportionsmod:ItemPatFlint").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	ItemJenFlint  = new ItemJenFlint().setUnlocalizedName("ItemJenFlint").setTextureName("epicproportionsmod:ItemJenFlint").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	ItemPatBoat  = new ItemPatBoat().setUnlocalizedName("ItemPatBoat").setTextureName("epicproportionsmod:ItemPatBoat").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	ItemJenBoat  = new ItemJenBoat().setUnlocalizedName("ItemJenBoat").setTextureName("epicproportionsmod:ItemJenBoat").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 
 	//Weapons & Tools
 	itemPatSword = new itemPatSword(ToolMaterial.EMERALD).setUnlocalizedName("itemPatSword").setTextureName("epicproportionsmod:itemPatSword").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
@@ -692,6 +699,8 @@ private static void registerItems(){
 	GameRegistry.registerItem(ItemGiantPizzaPlacer, ItemGiantPizzaPlacer.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(ItemPatFlint, ItemPatFlint.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(ItemJenFlint, ItemJenFlint.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(ItemPatBoat, ItemPatBoat.getUnlocalizedName().substring(5));
+	GameRegistry.registerItem(ItemJenBoat, ItemJenBoat.getUnlocalizedName().substring(5));
 	
 
 	//Weapons & Tools

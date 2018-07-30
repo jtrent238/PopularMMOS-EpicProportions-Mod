@@ -50,8 +50,10 @@ import com.jtrent238.epicproportions.entity.EntityCaptianCookie;
 import com.jtrent238.epicproportions.entity.EntityCaptianCookieLittle;
 import com.jtrent238.epicproportions.entity.EntityCaptianCookie_Evil;
 import com.jtrent238.epicproportions.entity.EntityClown;
+import com.jtrent238.epicproportions.entity.EntityEpicProportionsPainting;
 import com.jtrent238.epicproportions.entity.EntityFred2_0;
 import com.jtrent238.epicproportions.entity.EntityJen;
+import com.jtrent238.epicproportions.entity.EntityJenBoat;
 import com.jtrent238.epicproportions.entity.EntityJenGolem;
 import com.jtrent238.epicproportions.entity.EntityKami;
 import com.jtrent238.epicproportions.entity.EntityKitty;
@@ -60,6 +62,7 @@ import com.jtrent238.epicproportions.entity.EntityLuckyEgg;
 import com.jtrent238.epicproportions.entity.EntityNinjaMaster;
 import com.jtrent238.epicproportions.entity.EntityNinjaStar;
 import com.jtrent238.epicproportions.entity.EntityPat;
+import com.jtrent238.epicproportions.entity.EntityPatBoat;
 import com.jtrent238.epicproportions.entity.EntityPatGolem;
 import com.jtrent238.epicproportions.entity.EntityPopo;
 import com.jtrent238.epicproportions.entity.EntitySparky;
@@ -72,22 +75,29 @@ import com.jtrent238.epicproportions.model.ModelBlockling_Small;
 import com.jtrent238.epicproportions.model.ModelCandyPopper;
 import com.jtrent238.epicproportions.model.ModelFred2_0;
 import com.jtrent238.epicproportions.model.ModelJenGolem;
+import com.jtrent238.epicproportions.model.ModelKami;
+import com.jtrent238.epicproportions.model.ModelKami1;
 import com.jtrent238.epicproportions.model.ModelKitty;
 import com.jtrent238.epicproportions.model.ModelLuckyChicken;
 import com.jtrent238.epicproportions.model.ModelPatGolem;
 import com.jtrent238.epicproportions.model.ModelPopo1;
+import com.jtrent238.epicproportions.model.ModelPopo2;
 import com.jtrent238.epicproportions.render.ItemRenderJenChest;
 import com.jtrent238.epicproportions.render.ItemRenderPatChest;
 import com.jtrent238.epicproportions.render.JenChestRenderer;
 import com.jtrent238.epicproportions.render.PatChestRenderer;
 import com.jtrent238.epicproportions.render.RenderChests;
+import com.jtrent238.epicproportions.render.RenderEpicProportionsPainting;
 import com.jtrent238.epicproportions.render.RenderJenArrow;
+import com.jtrent238.epicproportions.render.RenderJenBoat;
 import com.jtrent238.epicproportions.render.RenderJenChest;
 import com.jtrent238.epicproportions.render.RenderJenStatue;
 import com.jtrent238.epicproportions.render.RenderNinjaStar;
 import com.jtrent238.epicproportions.render.RenderPatArrow;
+import com.jtrent238.epicproportions.render.RenderPatBoat;
 import com.jtrent238.epicproportions.render.RenderPatChest;
 import com.jtrent238.epicproportions.render.RenderPatStatue;
+import com.jtrent238.epicproportions.render.RenderPopo;
 import com.jtrent238.epicproportions.tileentity.TileEntityJenChest;
 import com.jtrent238.epicproportions.tileentity.TileEntityJenStatue;
 import com.jtrent238.epicproportions.tileentity.TileEntityLoader;
@@ -146,8 +156,8 @@ public class ClientProxy extends CommonProxy {
 	    RenderingRegistry.registerEntityRenderingHandler(EntityCandyPopper.class, new RenderLiving(new ModelCandyPopper(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityCandyPopper.png");}});//CandyPopper Render
 	    RenderingRegistry.registerEntityRenderingHandler(EntitySparky.class, new RenderLiving(new ModelWolf(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntitySparky.png");}});//Sparky Render
 	    RenderingRegistry.registerEntityRenderingHandler(EntityKitty.class, new RenderLiving(new ModelKitty(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityKitty.png");}});//Kitty Render
-	    RenderingRegistry.registerEntityRenderingHandler(EntityKami.class, new RenderLiving(new ModelSheep1(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityKami.png");}});//Kami Render
-	    RenderingRegistry.registerEntityRenderingHandler(EntityPopo.class, new RenderLiving(new ModelPopo1(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityPopo.png");}});//Popo Render
+	    RenderingRegistry.registerEntityRenderingHandler(EntityKami.class, new RenderLiving(new ModelKami1(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityKami.png");}});//Kami Render
+	    RenderingRegistry.registerEntityRenderingHandler(EntityPopo.class, new RenderPopo(new ModelPopo1(),new ModelPopo2(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityPopo.png");}});//Popo Render
 	    RenderingRegistry.registerEntityRenderingHandler(EntityBanana.class, new RenderLiving(new ModelCow(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityBanana.png");}});//Banana Render
 	    RenderingRegistry.registerEntityRenderingHandler(EntityBlockling_Small.class, new RenderLiving(new ModelBlockling_Small(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityBlockling_Small.png");}});//Small Blockling Render
 	    RenderingRegistry.registerEntityRenderingHandler(EntityFred2_0.class, new RenderLiving(new ModelFred2_0(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod:EntityFred2_0.png");}});//Small Blockling Render
@@ -163,6 +173,9 @@ public class ClientProxy extends CommonProxy {
 	    //RenderingRegistry.registerEntityRenderingHandler(EntityNinjaStar.class, new RenderSnowball(new ItemStack(ItemLoader.ItemNinjaStar).getItem()));
 	    //RenderingRegistry.registerEntityRenderingHandler(EntityNinjaStar.class, new RenderSnowball(ItemLoader.ItemNinjaStar));
 	    
+	    RenderingRegistry.registerEntityRenderingHandler(EntityPatBoat.class, new RenderPatBoat());
+	    RenderingRegistry.registerEntityRenderingHandler(EntityJenBoat.class, new RenderJenBoat());
+	    
 	    VillagerRegistry.instance().registerVillagerSkin(22, new ResourceLocation("epicproportionsmod", "VillagerOfEpicProportions.png"));
     	VillagerRegistry.instance().registerVillagerSkin(23, new ResourceLocation("epicproportionsmod", "JenVillager.png"));
     	VillagerRegistry.instance().registerVillagerSkin(24, new ResourceLocation("epicproportionsmod", "PatVillager.png"));
@@ -175,6 +188,8 @@ public class ClientProxy extends CommonProxy {
     	ClientRegistry.bindTileEntitySpecialRenderer(TileEntityJenStatue.class, render1);
     	
 	
+    	RenderingRegistry.registerEntityRenderingHandler(EntityEpicProportionsPainting.class, new RenderEpicProportionsPainting());
+    	
 		//return RenderingRegistry.addNewArmourRendererPrefix(armor);
 
 		RenderChests.RenderTileEntitys();

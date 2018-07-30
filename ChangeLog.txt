@@ -1,5 +1,27 @@
 Epic Proportions Mod ChangeLog
 
+1.5.9.11
+- Added FuriousDestroyer Boat
+- Added SuperGirlyGamer Boat
+- Added Language Support for the join message
+- Added Evil Birthday Present to Loot Chests
+- Removed LuckyBlock Config files
+- Changed Villager of EpicProportions Texture
+- Changed name of Crafted Pumpkin Pie with the Lucky egg to Lucky Pumpkin Pie
+- Changed name of Crafted Cake with the Lucky Egg to Lucky Cake
+- Fixed name of the mod saying jtrent238's EpicProportions Mod to PopularMMOS EpicProportions Mod
+- Fixed join message
+- Fixed Evil Birthday Present not doing anything when broken
+- Fixed Name for Joke Book not being localized
+- Fixed Name for EpicPropotions Painting not being localized
+- Fixed Name for EpicPropotions Wand not being localized
+- Fixed Name for Evil Birthday Present not being localized
+- Fixed Name for Giant Pizza Structure not being localized
+- Fixed Name of Super FuriousDestroyer Helmet having Helmet twice
+- Fixed typo in the tool tip of EpicProportions Wand
+- Fixed typo in Stat Presents Opened
+- Fixed Spelling Errors in Various Achievements
+
 1.5.8.11
 - Fixed a server crash
 - Removed FuriousDestroyer Rail
@@ -7,6 +29,7 @@ Epic Proportions Mod ChangeLog
 - Removed FuriousDestroyer Crafting Table
 - Removed SuperGirlyGamer Crafting Table
 - Removed Support for Meddle
+
 
 1.5.8.10
 - Added Achievement for Big Snowball [Christmas Addon]
@@ -511,7 +534,7 @@ Epic Proportions Mod ChangeLog
 
 1.0.1.0
 - Added Captian Cookie Litte
-- Added Bob 2.0
+- Added Fred 2.0
 - Added Ninja Master
 - Added SuperGirlyGamer's Sword
 - Added FuriousDestroyer's Sword

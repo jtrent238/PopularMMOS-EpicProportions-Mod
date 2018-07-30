@@ -17,6 +17,8 @@ import com.jtrent238.epicproportions.blocks.BlockJenLog;
 import com.jtrent238.epicproportions.blocks.BlockJenPlanks;
 import com.jtrent238.epicproportions.blocks.BlockJenRail;
 import com.jtrent238.epicproportions.blocks.BlockJenStone;
+import com.jtrent238.epicproportions.blocks.BlockLuckyBlock_Jen;
+import com.jtrent238.epicproportions.blocks.BlockLuckyBlock_Pat;
 import com.jtrent238.epicproportions.blocks.BlockModDoor;
 import com.jtrent238.epicproportions.blocks.BlockModFire;
 import com.jtrent238.epicproportions.blocks.BlockModStem;
@@ -62,6 +64,7 @@ import com.jtrent238.epicproportions.blocks.statues.BlockPatStatue;
 import com.jtrent238.epicproportions.blocks.statues.BlockSparkyStatue;
 import com.jtrent238.epicproportions.items.itemgemofepicproportions;
 
+import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.registry.GameRegistry;
 //import javafx.scene.paint.Color;
 import net.minecraft.block.Block;
@@ -141,6 +144,8 @@ public class BlockLoader {
 	public static Block BlockPatStone;
 	public static Block BlockJenStone;
 	public static Block BlockModFire;
+	public static Block BlockLuckyBlock_Pat;
+	public static Block BlockLuckyBlock_Jen;
 	public static Object lightPortal;
 	
 	
@@ -220,7 +225,8 @@ public class BlockLoader {
 		BlockPatStone = new BlockPatStone(Material.ground).setBlockName("BlockPatStone").setBlockTextureName("epicproportionsmod:BlockPatStone").setStepSound(Block.soundTypeMetal).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 		BlockJenStone = new BlockJenStone(Material.ground).setBlockName("BlockJenStone").setBlockTextureName("epicproportionsmod:BlockJenStone").setStepSound(Block.soundTypeMetal).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 		BlockModFire = new BlockModFire("lightFire").setBlockName("BlockModFire").setBlockTextureName("epicproportionsmod:BlockModFire").setStepSound(Block.soundTypeGrass)/*.setCreativeTab(EpicProportionsMod.EpicProportionsMod)*/;
-
+		//BlockLuckyBlock_Pat = new BlockLuckyBlock_Pat(Material.ground).setBlockName("BlockLuckyBlock_Pat").setStepSound(Block.soundTypeStone).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+		//BlockLuckyBlock_Jen = new BlockLuckyBlock_Jen(Material.ground).setBlockName("BlockLuckyBlock_Jen").setStepSound(Block.soundTypeStone).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 
 		
 		blockMoltenPat = new blockMoltenPat(Material.lava).setBlockName("blockMoltenPat").setBlockTextureName("epicproportionsmod:blockMoltenPat");
@@ -298,6 +304,12 @@ public class BlockLoader {
 		GameRegistry.registerBlock(BlockPatStone, "BlockPatStone");
 		GameRegistry.registerBlock(BlockJenStone, "BlockJenStone");
 		//GameRegistry.registerBlock(BlockModFire, "BlockModFire");
+		
+		if(Loader.isModLoaded("lucky")){
+			GameRegistry.registerBlock(BlockLuckyBlock_Pat, "BlockLuckyBlock_Pat");
+			GameRegistry.registerBlock(BlockLuckyBlock_Jen, "BlockLuckyBlock_Jen");
+		}
+
 		
 
 		

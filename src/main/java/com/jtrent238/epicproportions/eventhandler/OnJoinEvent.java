@@ -8,6 +8,7 @@ import net.minecraft.util.ChatComponentText;
 //import sun.applet.Main;
 //import sun.rmi.runtime.Log;
 import net.minecraft.util.EnumChatFormatting;
+import net.minecraft.util.StatCollector;
 
 import java.sql.Date;
 import java.time.Month;
@@ -35,9 +36,13 @@ public class OnJoinEvent {
 	@SubscribeEvent
     public void onPlayerLogin(PlayerEvent.PlayerLoggedInEvent event) {
 
-    	event.player.addChatComponentMessage(new ChatComponentText("§b§lHello" + " " + "§e§l" + event.player.getDisplayName() + "§b§l!"));
-    	event.player.addChatComponentMessage(new ChatComponentText(/*/event.player.getDisplayName() + /*/"§a§l" + EpicProportionsMod.MODNAME + " " + "§2§lMade By:jtrent238"));
-    	event.player.addChatComponentMessage(new ChatComponentText(/*/event.player.getDisplayName() + /*/"§6§lYou are running" + "§b§l" + " " + EpicProportionsMod.MODVERSION + " " + "§6§lof" + "§6§l" + " " + EpicProportionsMod.MODNAME + "!"));
+		event.player.addChatComponentMessage(new ChatComponentText(EnumChatFormatting.AQUA + "" + EnumChatFormatting.BOLD + StatCollector.translateToLocal("msg.epicproportionsmod.join." + "hello") + " " + EnumChatFormatting.YELLOW + "" + EnumChatFormatting.BOLD + event.player.getDisplayName() + EnumChatFormatting.AQUA + "" + EnumChatFormatting.BOLD + "!"));
+    	event.player.addChatComponentMessage(new ChatComponentText(/*/event.player.getDisplayName() + /*/EnumChatFormatting.GREEN + "" + EnumChatFormatting.BOLD + EpicProportionsMod.MODNAME + " " + EnumChatFormatting.DARK_GREEN + "" + EnumChatFormatting.BOLD + StatCollector.translateToLocal("msg.epicproportionsmod.join." + "madeby") + ": jtrent238"));
+    	event.player.addChatComponentMessage(new ChatComponentText(/*/event.player.getDisplayName() + /*/EnumChatFormatting.GOLD + "" + EnumChatFormatting.BOLD + StatCollector.translateToLocal("msg.epicproportionsmod.join." + "running") + EnumChatFormatting.AQUA + "" + EnumChatFormatting.BOLD + " " + EpicProportionsMod.MODVERSION + " " + EnumChatFormatting.GOLD + "" + EnumChatFormatting.BOLD + StatCollector.translateToLocal("msg.epicproportionsmod.join." + "of") + EnumChatFormatting.GOLD + "" + EnumChatFormatting.BOLD + " " + StatCollector.translateToLocal("msg.epicproportionsmod.join." + "themod") + "!"));
+    	
+    	//event.player.addChatComponentMessage(new ChatComponentText(EnumChatFormatting.AQUA + "" + EnumChatFormatting.BOLD + "Hello" + " " + EnumChatFormatting.YELLOW + "" + EnumChatFormatting.BOLD + event.player.getDisplayName() + EnumChatFormatting.AQUA + "" + EnumChatFormatting.BOLD + "!"));
+    	//event.player.addChatComponentMessage(new ChatComponentText(/*/event.player.getDisplayName() + /*/EnumChatFormatting.GREEN + "" + EnumChatFormatting.BOLD + EpicProportionsMod.MODNAME + " " + EnumChatFormatting.DARK_GREEN + "" + EnumChatFormatting.BOLD + "Made By:jtrent238"));
+    	//event.player.addChatComponentMessage(new ChatComponentText(/*/event.player.getDisplayName() + /*/EnumChatFormatting.GOLD + "" + EnumChatFormatting.BOLD + "You are running" + EnumChatFormatting.AQUA + "" + EnumChatFormatting.BOLD + " " + EpicProportionsMod.MODVERSION + " " + EnumChatFormatting.GOLD + "" + EnumChatFormatting.BOLD + "of" + EnumChatFormatting.GOLD + "" + EnumChatFormatting.BOLD + " " + "the mod" + "!"));
     	//event.player.addChatComponentMessage(new ChatComponentText("§e§lLearn more at: §b§lhttp://bit.ly/FoodModWiki"));
     	event.player.triggerAchievement(Achievements.achievementinstall);
     	//event.player.addEntityCrashInfo(EpicProportionsMod.CRASHINFO);

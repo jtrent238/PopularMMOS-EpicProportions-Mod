@@ -19,18 +19,7 @@ import net.minecraft.util.ChatComponentText;
 
 public class OnPickupJenFlowerEvent {
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-/*
+
 	private static final Block block = BlockLoader.blockFlowerForJen;
 	private Result ALLOW;
 	private ItemStack MyBlockStack = new ItemStack(Item.getItemFromBlock(block));
@@ -53,5 +42,5 @@ public class OnPickupJenFlowerEvent {
 	}
 	
 }
-*/
+
 }

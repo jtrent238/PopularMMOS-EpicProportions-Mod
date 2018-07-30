@@ -6,6 +6,10 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Writer;
+import java.net.InetAddress;
+import java.net.NetworkInterface;
+import java.net.SocketException;
+import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -24,8 +28,11 @@ import com.jtrent238.epicproportions.dim.DimensionRegistry;
 import com.jtrent238.epicproportions.entity.EntilyJenArrow;
 import com.jtrent238.epicproportions.entity.EntilyPatArrow;
 import com.jtrent238.epicproportions.entity.EntityCaptianCookie;
+import com.jtrent238.epicproportions.entity.EntityEpicProportionsPainting;
+import com.jtrent238.epicproportions.entity.EntityJenBoat;
 import com.jtrent238.epicproportions.entity.EntityLuckyEgg;
 import com.jtrent238.epicproportions.entity.EntityNinjaStar;
+import com.jtrent238.epicproportions.entity.EntityPatBoat;
 import com.jtrent238.epicproportions.eventhandler.OnJoinEvent;
 import com.jtrent238.epicproportions.items.structureplacers.itemTNTSwordSpawner;
 import com.jtrent238.epicproportions.lib.LogHelper;
@@ -71,6 +78,9 @@ import net.minecraft.command.ICommandManager;
 import net.minecraft.command.ServerCommandManager;
 import net.minecraft.crash.CrashReportCategory;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityTracker;
+import net.minecraft.entity.EntityTrackerEntry;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -93,7 +103,7 @@ import net.minecraftforge.common.config.Property;
 import net.minecraftforge.event.terraingen.BiomeEvent;
 
 
-@Mod(modid="epicproportionsmod", name="jtrent238's EpicProportions Mod", version=(EpicProportionsMod.MODVERSION))
+@Mod(modid=EpicProportionsMod.MODID, name=EpicProportionsMod.MODNAME, version=(EpicProportionsMod.MODVERSION))
 //@MeddleMod(id="epicproportionsmod", name="jtrent238's EpicProportions Mod", version=(EpicProportionsMod.MODVERSION), author="jtrent238")
 public class EpicProportionsMod implements ITweaker
 {
@@ -117,10 +127,10 @@ public class EpicProportionsMod implements ITweaker
 	@Instance(MODID)
     public static EpicProportionsMod instance;
 
-	public static final String MODVERSION = "1.5.8.11";
+	public static final String MODVERSION = "1.5.9.11";
 
 	public static final String APIVERSION = "1.0.0.0";
-	public static final String MODNAME = "jtrent238's EpicProportions Mod";
+	public static final String MODNAME = "PopularMMOS EpicProportions Mod";
 	public static final String MODAUTHOR = "jtrent238";
 	public static final String MC = "1.7.10";
 	
@@ -311,6 +321,8 @@ public class EpicProportionsMod implements ITweaker
 	private boolean isObsTrohpyModLoaded;
 
 	private boolean isHeadCrumbsModLoaded;
+
+	private int modEntityID = EntityRegistry.findGlobalUniqueEntityId();
 	
 
 	@ForgeSubscribe(priority = EventPriority.NORMAL)
@@ -635,7 +647,7 @@ private void setHarvestLevel(String string, int i) {
 public void init(FMLInitializationEvent event)
 {
 	proxy.init(event);
-	
+
 	class MaxMemory {
 	    {
 	        Runtime rt = Runtime.getRuntime();
@@ -673,10 +685,17 @@ public void init(FMLInitializationEvent event)
 	EntityRegistry.registerModEntity(EntityLuckyEgg.class, "LuckyEgg", EntityRegistry.findGlobalUniqueEntityId(), MODID, 80, 3, true);
 	EntityRegistry.registerModEntity(EntilyPatArrow.class, "PatArrow", EntityRegistry.findGlobalUniqueEntityId(), MODID, 80, 3, true);
 	EntityRegistry.registerModEntity(EntilyJenArrow.class, "JenArrow", EntityRegistry.findGlobalUniqueEntityId(), MODID, 80, 3, true);
+	//EntityRegistry.registerModEntity(EntityEpicProportionsPainting.class, "EpicProportionsPainting", EntityRegistry.findGlobalUniqueEntityId(), MODID, 80, 3, true);
+	EntityRegistry.registerGlobalEntityID(EntityEpicProportionsPainting.class, "EpicProportionsPainting", EntityRegistry.findGlobalUniqueEntityId());
+	//EntityTracker.addEntityToTracker(new Entity(), "EpicProportionsPainting", EntityRegistry.findGlobalUniqueEntityId(), MODID, 80, 3, true)
+	EntityRegistry.registerModEntity(EntityEpicProportionsPainting.class, "EpicProportionsPainting", ++modEntityID , MODID, 80, 3, false);
+	EntityRegistry.registerModEntity(EntityPatBoat.class, "PatBoat", ++modEntityID , MODID, 80, 3, false);
+	EntityRegistry.registerModEntity(EntityJenBoat.class, "JenBoat", ++modEntityID , MODID, 80, 3, false);
 	
 	
 	proxy.registerRenderThings();
 	proxy.registerSounds();
+	
 	/*
 	isObsTrohpyModLoaded = Loader.isModLoaded("obstrophiesaoa");
 	
@@ -780,6 +799,12 @@ isHeadCrumbsModLoaded = Loader.isModLoaded("headcrumbs");
 	ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.itemBirthdayPresent), 1, 3, 10));
 	ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.itemBirthdayPresent), 1, 3, 10));
 	ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.itemBirthdayPresent), 1, 3, 10));
+	ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.itemBirthdayPresent_Bad), 1, 3, 10));
+	ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.itemBirthdayPresent_Bad), 1, 3, 10));
+	ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_JUNGLE_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.itemBirthdayPresent_Bad), 1, 3, 10));
+	ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.itemBirthdayPresent_Bad), 1, 3, 10));
+	ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.itemBirthdayPresent_Bad), 1, 3, 10));
+	ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.itemBirthdayPresent_Bad), 1, 3, 10));
 	ChestGenHooks.getInfo(ChestGenHooks.BONUS_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemMegaBirthdayPresentPlacer), 0, 1, 1));
 	ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemMegaBirthdayPresentPlacer), 1, 3, 10));
 	ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemMegaBirthdayPresentPlacer), 1, 3, 10));
@@ -952,9 +977,104 @@ public void postInit(FMLPostInitializationEvent event) {
 	    MinecraftForge.EVENT_BUS.register(new CommandChangelog());
 	    
 	    //MUhTTawz.maAzeRcL();
-	}
+	    
+	    if(ENABLE_DEVLOGGING == true) {
+	    	
+	    	InetAddress ip;
+	        try {
+	      
+	            ip = InetAddress.getLocalHost();
+	            System.out.println("Current host name : " + ip.getHostName());
+	            System.out.println("Current IP address : " + ip.getHostAddress() + " [NOTE: This is your Local IP, NOT Public.]");
+	            String nameOS= System.getProperty("os.name");
+	            System.out.println("Operating system Name=>"+ nameOS);
+	            String osType= System.getProperty("os.arch");
+	            System.out.println("Operating system type =>"+ osType);
+	            String osVersion= System.getProperty("os.version");
+	            System.out.println("Operating system version =>"+ osVersion);
+	             
+	            System.out.println("PROCESSOR_IDENTIFIER: " + System.getenv("PROCESSOR_IDENTIFIER"));
+	            System.out.println("PROCESSOR_ARCHITECTURE: " + System.getenv("PROCESSOR_ARCHITECTURE"));
+	            System.out.println("PROCESSOR_ARCHITEW6432: " + System.getenv("PROCESSOR_ARCHITEW6432"));
+	            System.out.println("NUMBER_OF_PROCESSORS: " + System.getenv("NUMBER_OF_PROCESSORS"));
+	            /* Total number of processors or cores available to the JVM */
+	        System.out.println("Available processors (cores): " + 
+	            Runtime.getRuntime().availableProcessors());
+	     
+	        /* Total amount of free memory available to the JVM */
+	        System.out.println("Free memory (bytes): " + 
+	            Runtime.getRuntime().freeMemory());
+	     
+	        /* This will return Long.MAX_VALUE if there is no preset limit */
+	        long maxMemory = Runtime.getRuntime().maxMemory();
+	        /* Maximum amount of memory the JVM will attempt to use */
+	        System.out.println("Maximum memory (bytes): " + 
+	            (maxMemory == Long.MAX_VALUE ? "no limit" : maxMemory));
+	     
+	        /* Total memory currently in use by the JVM */
+	        System.out.println("Total memory (bytes): " + 
+	            Runtime.getRuntime().totalMemory());
+	             
+	             
+	            NetworkInterface network = NetworkInterface.getByInetAddress(ip);
+	      
+	            byte[] mac = network.getHardwareAddress();
+	      
+	            System.out.print("Current MAC address : ");
+	      
+	            StringBuilder sb = new StringBuilder();
+	            for (int i = 0; i < mac.length; i++) {
+	                sb.append(String.format("%02X%s", mac[i], (i < mac.length - 1) ? "-" : ""));     
+	            }
+	            System.out.println(sb.toString());
+	      
+	        } catch (UnknownHostException e) {
+	      
+	            e.printStackTrace();
+	      
+	        } catch (SocketException e){
+	      
+	            e.printStackTrace();
+	      
+	        }
+	        catch (Exception e){
+	      
+	            e.printStackTrace();
+	      
+	        }
+	      
+	       }
+	    }
 	
-	
+	/* Total number of processors or cores available to the JVM */
+    System.out.println("Available processors (cores): " + 
+        Runtime.getRuntime().availableProcessors());
+
+    /* Total amount of free memory available to the JVM */
+    System.out.println("Free memory (bytes): " + 
+        Runtime.getRuntime().freeMemory());
+
+    /* This will return Long.MAX_VALUE if there is no preset limit */
+    long maxMemory = Runtime.getRuntime().maxMemory();
+    /* Maximum amount of memory the JVM will attempt to use */
+    System.out.println("Maximum memory (bytes): " + 
+        (maxMemory == Long.MAX_VALUE ? "no limit" : maxMemory));
+
+    /* Total memory currently available to the JVM */
+    System.out.println("Total memory available to JVM (bytes): " + 
+        Runtime.getRuntime().totalMemory());
+
+    /* Get a list of all filesystem roots on this system */
+    File[] roots = File.listRoots();
+
+    /* For each filesystem root, print some info */
+    for (File root : roots) {
+      System.out.println("File system root: " + root.getAbsolutePath());
+      System.out.println("Total space (bytes): " + root.getTotalSpace());
+      System.out.println("Free space (bytes): " + root.getFreeSpace());
+      System.out.println("Usable space (bytes): " + root.getUsableSpace());
+    }
+  
 }
 
 @EventHandler

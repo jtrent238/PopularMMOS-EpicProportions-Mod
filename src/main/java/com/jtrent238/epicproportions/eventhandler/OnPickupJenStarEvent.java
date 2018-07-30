@@ -26,7 +26,7 @@ public class OnPickupJenStarEvent {
 	
 	if (event.pickedUp.getEntityItem() == itemstack)
 	{
-	event.player.addStat(Achievements.achievementJenStar, 1);
+	//event.player.addStat(Achievements.achievementJenStar, 1);
 	}
 	
 }

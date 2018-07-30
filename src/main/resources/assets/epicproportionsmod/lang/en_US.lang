@@ -78,6 +78,15 @@ item.BlockEpicProportionsPortal.name=EpicPropotions Wand
 item.ItemNinjaStar.name=NinjaStar
 item.ItemPatFlint.name=FuriousDestroyer Flint
 item.ItemJenFlint.name=SuperGirlyGamer Flint
+item.itemTellMeRandomJoke.name=Joke Book
+item.ItemEpicProportionsPainting.name=EpicPropotions Painting
+item.ItemEpicProportionsWand.name=EpicProportions Wand
+item.ItemBirthdayPresent_Bad.name=Evil Birthday Present
+item.ItemGiantPizzaPlacer.name=Giant Pizza Structure
+item.ItemPatBoat.name=FuriousDestroyer Boat
+item.ItemJenBoat.name=SuperGirlyGamer Boat
+item.ItemLuckyPumpkinPie.name=Lucky Pumpkin Pie
+item.ItemLuckyCake.name=Lucky Cake
 
 	/Weapons & Tools
 item.itemPatSword.name=FuriousDestroyer's Sword
@@ -137,7 +146,7 @@ item.itemJenChestplate.name=SuperGirlyGamer's Chestplate
 item.itemJenLeggings.name=SuperGirlyGamer's Leggings
 item.itemJenBoots.name=SuperGirlyGamer's Boots
 		/Super Pat
-item.itemSuperPatHelmet.name=FuriousDestroyer's Helment Helment
+item.itemSuperPatHelmet.name=FuriousDestroyer's Super Helment
 item.itemSuperPatChestplate.name=FuriousDestroyer's Super Chestplate
 item.itemSuperPatLeggings.name=FuriousDestroyer's Super Leggings
 item.itemSuperPatBoots.name=FuriousDestroyer's Super Boots
@@ -222,6 +231,9 @@ tile.BlockPatLamp.name=FuriousDestroyer Lamp
 tile.BlockJenLamp.name=SuperGirlyGamer Lamp
 tile.BlockPatStone.name=FuriousDestroyer Stone
 tile.BlockJenStone.name=SuperGirlyGamer Stone
+tile.blockJenTNT.name=SuperGirlyGamer TNT
+tile.BlockJenGrass_Plant.name=SuperGirlyGamer Grass
+tile.BlockPatGrass_Plant.name=FuriousDestroyer Grass
 
 //Entitys
 entity.EntityBomby.name=Bomby
@@ -307,23 +319,23 @@ achievement.patarmor_super.desc=
 achievement.jenarmor_super=SuperGirlyGamer's Super Armor
 achievement.jenarmor_super.desc=
 	/Sword Of Epic Proportions
-achievement.swordofepicproportions=Sword Of Epic Propotions
-achievement.swordofepicproportions.desc=Craft The Sword Of Epic Propotions
+achievement.swordofepicproportions=Sword Of Epic Proportions
+achievement.swordofepicproportions.desc=Craft The Sword Of Epic Proportions
 	/Pickaxe Of Epic Proportions
-achievement.pickaxeofepicproportions=Pickaxe Of Epic Propotions
-achievement.pickaxeofepicproportions.desc=Craft The Pickaxe Of Epic Propotions
+achievement.pickaxeofepicproportions=Pickaxe Of Epic Proportions
+achievement.pickaxeofepicproportions.desc=Craft The Pickaxe Of Epic Proportions
 	/Axe Of Epic Proportions
-achievement.axeofepicproportions=Axe Of Epic Propotions
-achievement.axeofepicproportions.desc=Craft The Axe Of Epic Propotions
+achievement.axeofepicproportions=Axe Of Epic Proportions
+achievement.axeofepicproportions.desc=Craft The Axe Of Epic Proportions
 	/Shovel Of Epic Proportions
-achievement.shovelofepicproportions=Shovel Of Epic Propotions
-achievement.shovelofepicproportions.desc=Craft The Shovel Of Epic Propotions
+achievement.shovelofepicproportions=Shovel Of Epic Proportions
+achievement.shovelofepicproportions.desc=Craft The Shovel Of Epic Proportions
 	/Hoe Of Epic Proportions
-achievement.hoeofepicproportions=Hoe Of Epic Propotions
-achievement.hoeofepicproportions.desc=Craft The Hoe Of Epic Propotions
+achievement.hoeofepicproportions=Hoe Of Epic Proportions
+achievement.hoeofepicproportions.desc=Craft The Hoe Of Epic Proportions
 
 //Stats
-stat.presentsbroken=Nunber Of Presents Opened
+stat.presentsbroken=Number Of Presents Opened
 
 //Enchantments
 //Potions
@@ -353,7 +365,7 @@ tooltip.epicproportionsmod.itemNukeLauncher.ammotype=Consumes Nuke
 tooltip.epicproportionsmod.ItemMegaBirthdayPresentPlacer.bday=Happy Birthday!
 tooltip.epicproportionsmod.ItemMegaBirthdayPresentPlacer.inside=I wonder what could be inside?
 tooltip.epicproportionsmod.ItemMegaBirthdayPresentPlacer.big=Happy Birthday!
-tooltip.epicproportionsmod.ItemEpicProportionsWand.info=Use to light to portal of Epic Proportions!
+tooltip.epicproportionsmod.ItemEpicProportionsWand.info=Use to light the portal of Epic Proportions!
 
 
 	/Pat Chest Warning
@@ -375,8 +387,57 @@ tooltip.epicproportionsmod.blockJenChest.Warning.noinventory.6=*****************
 
 
 //Creative Tabs
-itemGroup.EpicProportionsMod=jtrent238's Epic Proportions Mod
+itemGroup.EpicProportionsMod=PopularMMOS Epic Proportions Mod
+
+//Jokes
+joke.epicproportionsmod.question.0=What did Steve say when he was angry at a skeleton?
+joke.epicproportionsmod.question.1=What do skeletons order at the village restaurant?
+joke.epicproportionsmod.question.2=What kind of makeup do witches wear?
+joke.epicproportionsmod.question.3=What did the zombie say to the villager?
+joke.epicproportionsmod.question.4=Do you hear about the Minecraft movie?
+joke.epicproportionsmod.question.5=What is a Creepers favorite food?
+joke.epicproportionsmod.question.6=Why can’t the Ender Dragon ever understand a book?
+joke.epicproportionsmod.question.7=How are ocelots like m&m’s?
+joke.epicproportionsmod.question.8=What do witches put in their hair?"
+joke.epicproportionsmod.question.9=Why didn’t the enderman cross the road?
+joke.epicproportionsmod.question.10=How do zombies get so good at Minecraft?
+joke.epicproportionsmod.question.11=Where does Steve rent movies?
+joke.epicproportionsmod.question.12=What did Charlie Brown say when Steve broke his baseball bat?
+joke.epicproportionsmod.question.13=What kind of parties do Minecraft players have?
+joke.epicproportionsmod.question.14=What is Cobblestone’s favorite type of music?
+joke.epicproportionsmod.question.15=Why did the Creeper cross the road?
+joke.epicproportionsmod.question.16=Where do miners sleep?
+joke.epicproportionsmod.question.17=What was the name of the Minecraft boy band?
+joke.epicproportionsmod.question.18=Why can’t you score against Minecraft basketball players?
+joke.epicproportionsmod.question.19=Why didn’t the skeleton like to fly?
+joke.epicproportionsmod.question.20=Why aren’t there cars in Minecraft?
+joke.epicproportionsmod.answer.0=I’ve got a bone to pick with you!
+joke.epicproportionsmod.answer.1=Spare ribs
+joke.epicproportionsmod.answer.2=Mas-scare-a
+joke.epicproportionsmod.answer.3=Nice to eat you.
+joke.epicproportionsmod.answer.4=It’s a blockbuster.
+joke.epicproportionsmod.answer.5=Ssssssssalad
+joke.epicproportionsmod.answer.6=Because he always starts at the end.
+joke.epicproportionsmod.answer.7=You can’t just have one.
+joke.epicproportionsmod.answer.8=Scare spray
+joke.epicproportionsmod.answer.9=Because he teleported.
+joke.epicproportionsmod.answer.10=DEADication.
+joke.epicproportionsmod.answer.11=Blockbuster
+joke.epicproportionsmod.answer.12=You Blockhead!
+joke.epicproportionsmod.answer.13=Block parties.
+joke.epicproportionsmod.answer.14=Rock music.
+joke.epicproportionsmod.answer.15=To get to the other Sssssssssside
+joke.epicproportionsmod.answer.16=On their bed-rocks
+joke.epicproportionsmod.answer.17=New Kids on the Block.
+joke.epicproportionsmod.answer.18=They know how to block.
+joke.epicproportionsmod.answer.19=He had no guts
+joke.epicproportionsmod.answer.20=The streets are blocked off.
 
 //Misc
 com.jtrent238.epicproportions.lib.LogHelper=Epic Proportions Mod Log
 commands.modinfo.usage=/modinfo
+msg.epicproportionsmod.join.hello=Hello
+msg.epicproportionsmod.join.madeby=Made By
+msg.epicproportionsmod.join.running=You are running
+msg.epicproportionsmod.join.of=of
+msg.epicproportionsmod.join.themod=the mod
