@@ -1,6 +1,6 @@
 Epic Proportions Mod ChangeLog
 
-1.x.x.x
+1.5.9.12
 - Fixed FuriousDestroyer Statue
 - Fixed SuperGirlyGamer Statue
 - Fixed Christmas Tree [Christmas Addon]
