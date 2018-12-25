@@ -87,6 +87,8 @@ item.ItemPatBoat.name=FuriousDestroyer Boat
 item.ItemJenBoat.name=SuperGirlyGamer Boat
 item.ItemLuckyPumpkinPie.name=Lucky Pumpkin Pie
 item.ItemLuckyCake.name=Lucky Cake
+item.ItemSecret.name=Secret Item
+
 
 	/Weapons & Tools
 item.itemPatSword.name=FuriousDestroyer's Sword
@@ -366,7 +368,7 @@ tooltip.epicproportionsmod.ItemMegaBirthdayPresentPlacer.bday=Happy Birthday!
 tooltip.epicproportionsmod.ItemMegaBirthdayPresentPlacer.inside=I wonder what could be inside?
 tooltip.epicproportionsmod.ItemMegaBirthdayPresentPlacer.big=Happy Birthday!
 tooltip.epicproportionsmod.ItemEpicProportionsWand.info=Use to light the portal of Epic Proportions!
-
+tooltip.epicproportionsmod.ItemSecret.special=This is a very special item.
 
 	/Pat Chest Warning
 tooltip.epicproportionsmod.blockPatChest.Warning.noinventory.0=****************WARNING************************
@@ -436,6 +438,7 @@ joke.epicproportionsmod.answer.20=The streets are blocked off.
 //Misc
 com.jtrent238.epicproportions.lib.LogHelper=Epic Proportions Mod Log
 commands.modinfo.usage=/modinfo
+commands.EPMAddonsList.usage=/listaddons
 msg.epicproportionsmod.join.hello=Hello
 msg.epicproportionsmod.join.madeby=Made By
 msg.epicproportionsmod.join.running=You are running

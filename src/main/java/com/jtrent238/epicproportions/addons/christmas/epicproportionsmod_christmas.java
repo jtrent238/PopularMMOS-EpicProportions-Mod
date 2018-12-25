@@ -4,10 +4,14 @@ package com.jtrent238.epicproportions.addons.christmas;
 import com.jtrent238.epicproportions.ForgeSubscribe;
 import com.jtrent238.epicproportions.addons.christmas.common.CommonProxy;
 import com.jtrent238.epicproportions.addons.christmas.entity.EntityGiantSnowBall;
+import com.jtrent238.epicproportions.addons.christmas.entity.EntitySled;
 import com.jtrent238.epicproportions.addons.christmas.tileentity.TileEntityBulb;
+import com.jtrent238.epicproportions.addons.christmas.world.Dimension;
+import com.jtrent238.epicproportions.addons.christmas.world.biomes.ModBiomes;
 import com.jtrent238.epicproportions.addons.halloween.epicproportionsmod_halloween;
 import com.jtrent238.epicproportions.api.API;
 import com.jtrent238.epicproportions.entity.EntilyJenArrow;
+import com.jtrent238.epicproportions.entity.EntityJenBoat;
 
 import cpw.mods.fml.common.IWorldGenerator;
 import cpw.mods.fml.common.Mod;
@@ -55,11 +59,13 @@ public class epicproportionsmod_christmas
 
 	@Instance(MODID)
     public static epicproportionsmod_christmas instance;
-	public static final String MODVERSION = "1.0.1.0";
+	public static final String MODVERSION = "1.0.2.0";
 	public static final String MODNAME = "jtrent238's EpicProportions Mod - Christmas Addon";
 	public static final String ADDONNAME = "Christmas Addon";
 	public static final String MODAUTHOR = "jtrent238";
 	public static final String MC = "1.7.10";
+	
+	private int modEntityID = EntityRegistry.findGlobalUniqueEntityId();
 	
 	public static int BulbModelID;
 	
@@ -95,15 +101,19 @@ public void init(FMLInitializationEvent event)
 	Achievements.loadAchievements();
 	Stats.RegisterStats();
 	
+	ModBiomes.registerWithBiomeDictionary();
+	Dimension.registerWorldProvider();
+	Dimension.registerDimensions();
 	
 	EntityRegistry.registerModEntity(EntityGiantSnowBall.class, "GiantSnowBall", EntityRegistry.findGlobalUniqueEntityId(), MODID, 80, 3, true);
 
 	proxy.registerRenderThings();
 	
-	GameRegistry.registerTileEntity(TileEntityBulb.class, "Bulb");
-	TileEntity.addMapping(TileEntityBulb.class, "Bulb_Mapping");
+	//GameRegistry.registerTileEntity(TileEntityBulb.class, "Bulb");
+	//TileEntity.addMapping(TileEntityBulb.class, "Bulb_Mapping");
 	BulbModelID = 72;
 	
+	EntityRegistry.registerModEntity(EntitySled.class, "Sled", ++modEntityID , MODID, 80, 3, false);
 	}
 
 

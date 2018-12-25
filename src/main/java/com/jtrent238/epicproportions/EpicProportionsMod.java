@@ -11,7 +11,9 @@ import java.net.NetworkInterface;
 import java.net.SocketException;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
+import java.util.Enumeration;
 import java.util.List;
+import java.util.Properties;
 import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.LogManager;
@@ -21,6 +23,7 @@ import com.jtrent238.epicproportions.biome.BiomeRegistry;
 import com.jtrent238.epicproportions.biome.WorldTypeEpic;
 import com.jtrent238.epicproportions.blocks.BlockCustomPlant_grass.BlockCustomFlower;
 import com.jtrent238.epicproportions.blocks.blockModFlower;
+import com.jtrent238.epicproportions.command.CommandAddonList;
 import com.jtrent238.epicproportions.command.CommandChangelog;
 import com.jtrent238.epicproportions.command.CommandModInfo;
 import com.jtrent238.epicproportions.common.CommonProxy;
@@ -73,6 +76,7 @@ import cpw.mods.fml.common.registry.VillagerRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
+import net.minecraft.client.Minecraft;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.ICommandManager;
 import net.minecraft.command.ServerCommandManager;
@@ -127,7 +131,7 @@ public class EpicProportionsMod implements ITweaker
 	@Instance(MODID)
     public static EpicProportionsMod instance;
 
-	public static final String MODVERSION = "1.5.9.11";
+	public static final String MODVERSION = "1.5.9.12";
 
 	public static final String APIVERSION = "1.0.0.0";
 	public static final String MODNAME = "PopularMMOS EpicProportions Mod";
@@ -203,7 +207,7 @@ public class EpicProportionsMod implements ITweaker
 
 	public boolean isChristmasLoaded;
 
-	private String[] args;
+	private String[] args =  new String[0];
 
 	private ServerCommandManager command;
 
@@ -212,49 +216,27 @@ public class EpicProportionsMod implements ITweaker
 	public static boolean PRESENT_ON_DEVBIRTHDAY;
 
 	static int ENTITY_ID_PGOLEM;
-
 	static int ENTITY_ID_JGOLEM;
-
-	 static int ENTITY_ID_CPTCOOKIE;
-
-	 static int ENTITY_ID_PAT;
-
-	 static int ENTITY_ID_JEN;
-
-	 static int ENTITY_ID_FRED;
-
-	 static int ENTITY_ID_NMASTER;
-
-	 static int ENTITY_ID_CMAN;
-
-	 static int ENTITY_ID_CPTCOOKIELITTLE;
-
-	 static int ENTITY_ID_JTRENT238;
-
-	 static int ENTITY_ID_PTNT;
-
-	 static int ENTITY_ID_PARROW;
-
-	 static int ENTITY_ID_JARROW;
-
-	 static int ENTITY_ID_CLOWN;
-
-	 static int ENTITY_ID_CPOPPER;
-
-	 static int ENTITY_ID_SPARKY;
-
-	 static int ENTITY_ID_KITTY;
-
-	 static int ENTITY_ID_KAMI;
-
-	 static int ENTITY_ID_POPO;
-
-	 static int ENTITY_ID_BANANA;
-
-	 static int ENTITY_ID_BLOCKLING;
-
-	 static int ENTITY_ID_BLOCKLINGSML;
-
+	static int ENTITY_ID_CPTCOOKIE;
+	static int ENTITY_ID_PAT;
+	static int ENTITY_ID_JEN;
+	static int ENTITY_ID_FRED;
+	static int ENTITY_ID_NMASTER;
+	static int ENTITY_ID_CMAN;
+	static int ENTITY_ID_CPTCOOKIELITTLE;
+	static int ENTITY_ID_JTRENT238;
+	static int ENTITY_ID_PTNT;
+	static int ENTITY_ID_PARROW;
+	static int ENTITY_ID_JARROW;
+	static int ENTITY_ID_CLOWN;
+	static int ENTITY_ID_CPOPPER;
+	static int ENTITY_ID_SPARKY;
+	static int ENTITY_ID_KITTY;
+	static int ENTITY_ID_KAMI;
+	static int ENTITY_ID_POPO;
+	static int ENTITY_ID_BANANA;
+	static int ENTITY_ID_BLOCKLING;
+	static int ENTITY_ID_BLOCKLINGSML;
 	static int ENTITY_ID_BOMBY;
 
 	public static int DIM_EPICPROPORTIONS;
@@ -284,7 +266,6 @@ public class EpicProportionsMod implements ITweaker
 	public static boolean ENABLE_DETAILED_MOD_INFO;
 
 	static boolean ENABLE_SUPER_JEN_ARMOR;
-
 	static boolean ENABLE_SUPER_PAT_ARMOR;
 
 	private static int VILLAGER_ID_5;
@@ -300,6 +281,8 @@ public class EpicProportionsMod implements ITweaker
 	public static final String CATEGORY_DEVMODE = "Developer Mode";
 	public static final String CATEGORY_BIOMEIDS = "BiomeIds";
 	public static final String CATEGORY_DIMIDS = "DimentionIds";
+	public static final String CATEGORY_ENABLE_ENTITIES = "EnableEntitySpawns";
+	public static final String CATEGORY_SECRETS = "secrets";
 	
 	private static int BIOME_ID_PAT;
 	private static int BIOME_ID_JEN;
@@ -313,18 +296,37 @@ public class EpicProportionsMod implements ITweaker
 	//DimEpicProportions dimepicproportions = new DimEpicProportions();
 
 	private boolean ENABLE_PAT_WELL_GEN;
-
 	private boolean ENABLE_JEN_WELL_GEN;
-
 	private boolean ENABLE_HOEP_GEN;
-
 	private boolean isObsTrohpyModLoaded;
-
 	private boolean isHeadCrumbsModLoaded;
-
-	private int modEntityID = EntityRegistry.findGlobalUniqueEntityId();
+	private boolean ENABLE_BOMBY_SPAWN;
+	private boolean ENABLE_CPTCOOKIE_SPAWN;
+	private boolean ENABLE_PAT_SPAWN;
+	private boolean ENABLE_JEN_SPAWN;
+	private boolean ENABLE_FRED_SPAWN;
+	private boolean ENABLE_NMASTER_SPAWN;
+	private boolean ENABLE_CMAN_SPAWN;
+	private boolean ENABLE_CPTCOOKIELITTLE_SPAWN;
+	private boolean ENABLE_JTRENT238_SPAWN;
+	private boolean ENABLE_CLOWN_SPAWN;
+	private boolean ENABLE_CPOPPER_SPAWN;
+	private boolean ENABLE_SPARKY_SPAWN;
+	private boolean ENABLE_KITTY_SPAWN;
+	private boolean ENABLE_KAMI_SPAWN;
+	private boolean ENABLE_POPO_SPAWN;
+	private boolean ENABLE_BANANA_SPAWN;
+	private boolean ENABLE_PGOLEM_SPAWN;
+	private boolean ENABLE_JGOLEM_SPAWN;
+	public static Object SECRET_SETTINGS;
 	
+	private int modEntityID = EntityRegistry.findGlobalUniqueEntityId();
 
+	private void populateStringArray()
+	{
+	    args[0] = "--username=ForgeDevName";
+	}
+	
 	@ForgeSubscribe(priority = EventPriority.NORMAL)
     public void eventHandler(RenderGameOverlayEvent event) {
 		
@@ -350,6 +352,10 @@ public class EpicProportionsMod implements ITweaker
 @Mod.EventHandler
 public void preInit(FMLPreInitializationEvent event) throws IOException
 {
+	if(ENABLE_DEVMODE == true) {
+		net.minecraft.client.main.Main.main(getLaunchArguments());
+	}
+	
 	//Thread.currentThread().setName("EpicProportionsMod");
 	//ModInfoFileData.main(args);
 	//LogHelper.init();
@@ -395,6 +401,7 @@ public void preInit(FMLPreInitializationEvent event) throws IOException
 		System.out.println("Halloween Addon Loaded");
 		try {
             LogHelper.log(Level.INFO, "Loaded Halloween Addon");
+            //AddonManager.LoadedAddons.add("Halloween Addon");
         }
         catch (Exception e) {
             LogHelper.log(Level.SEVERE, "Could not load Halloween Addon");
@@ -410,6 +417,7 @@ public void preInit(FMLPreInitializationEvent event) throws IOException
 		System.out.println("Christmas Addon Loaded");
 		try {
             LogHelper.log(Level.INFO, "Loaded Christmas Addon");
+            
         }
         catch (Exception e) {
             LogHelper.log(Level.SEVERE, "Could not load Christmas Addon");
@@ -495,7 +503,28 @@ public void preInit(FMLPreInitializationEvent event) throws IOException
 	ENABLE_PRESENT_NORMAL  =  config.get(CATEGORY_TWEAKS, "Enable Normal Birthday Present", true).getBoolean(true);
 	ENABLE_PRESENT_BAD  =  config.get(CATEGORY_TWEAKS, "Enable Bad Birthday Present", true).getBoolean(true);
 	ENABLE_PRESENT_MEGA  =  config.get(CATEGORY_TWEAKS, "Enable Mega Birthday Present", true).getBoolean(true);
-
+	//SOEP_DAMAGE = config.getInt("SwordOfEpicProportions Damage", CATEGORY_TWEAKS, 50000, 6, 164000, bonus);
+	
+		//Entity Spawns
+			/*
+	ENABLE_BOMBY_SPAWN = config.get(CATEGORY_ENABLE_ENTITIES, "Enable Bomby Spawn", true).getBoolean(true);
+	ENABLE_CPTCOOKIE_SPAWN = config.get(CATEGORY_ENABLE_ENTITIES, "Enable Captian Cookie Spawn", true).getBoolean(true);
+	ENABLE_PAT_SPAWN = config.get(CATEGORY_ENABLE_ENTITIES, "Enable FuriousDestroyer Spawn", true).getBoolean(true);
+	ENABLE_JEN_SPAWN = config.get(CATEGORY_ENABLE_ENTITIES, "Enable SuperGirlyGamer Spawn", true).getBoolean(true);
+	ENABLE_FRED_SPAWN = config.get(CATEGORY_ENABLE_ENTITIES, "Enable Fred 2.0 Spawn", true).getBoolean(true);
+	ENABLE_NMASTER_SPAWN = config.get(CATEGORY_ENABLE_ENTITIES, "Enable Ninja Master Spawn", true).getBoolean(true);
+	ENABLE_CMAN_SPAWN = config.get(CATEGORY_ENABLE_ENTITIES, "Enable Candy Man Spawn", true).getBoolean(true);
+	ENABLE_CPTCOOKIELITTLE_SPAWN = config.get(CATEGORY_ENABLE_ENTITIES, "Enable Captian Cookie Little Spawn", true).getBoolean(true);
+	ENABLE_CLOWN_SPAWN = config.get(CATEGORY_ENABLE_ENTITIES, "Enable Clown Spawn", true).getBoolean(true);
+	ENABLE_CPOPPER_SPAWN = config.get(CATEGORY_ENABLE_ENTITIES, "Enable Candy Popper Spawn", true).getBoolean(true);
+	ENABLE_SPARKY_SPAWN = config.get(CATEGORY_ENABLE_ENTITIES, "Enable Sparky Spawn", true).getBoolean(true);
+	ENABLE_KITTY_SPAWN = config.get(CATEGORY_ENABLE_ENTITIES, "Enable Kitty Spawn", true).getBoolean(true);
+	ENABLE_KAMI_SPAWN = config.get(CATEGORY_ENABLE_ENTITIES, "Enable Kami Spawn", true).getBoolean(true);
+	ENABLE_POPO_SPAWN = config.get(CATEGORY_ENABLE_ENTITIES, "Enable Popo Spawn", true).getBoolean(true);
+	ENABLE_BANANA_SPAWN = config.get(CATEGORY_ENABLE_ENTITIES, "Enable Banana Spawn", true).getBoolean(true);
+	ENABLE_PGOLEM_SPAWN = config.get(CATEGORY_ENABLE_ENTITIES, "Enable FuriousDestroyer Golem Spawn", true).getBoolean(true);
+	ENABLE_JGOLEM_SPAWN = config.get(CATEGORY_ENABLE_ENTITIES, "Enable SuperGirlyGamer Golem Spawn", true).getBoolean(true);
+	 	*/
 	
 		//Entity Ids
 	ENTITY_ID_BOMBY = config.getInt("Bomby", CATEGORY_ENTITYIDS, 660, 256, 65535, "Entity ID:");
@@ -574,6 +603,8 @@ public void preInit(FMLPreInitializationEvent event) throws IOException
 	config.addCustomCategoryComment(CATEGORY_DEVMODE, "Developer Mode Settings ***WARNING MAY BREAK YOUR GAME!***");
 	//config.getCategoryNames();
 	config.addCustomCategoryComment(CATEGORY_ENTITYIDS, "Entity IDS ***Changeing IDS currently does nothing untill I figure out a way to set this so it don't courrupt worlds where the mod was preveously played with old ids.!***");
+	
+	SECRET_SETTINGS = config.get(CATEGORY_SECRETS, "Is this a secret?", "yes");
 	
 	config.save();
 	
@@ -656,9 +687,12 @@ public void init(FMLInitializationEvent event)
 	        long freeMem = rt.freeMemory();
 	        double megs = 1048576.0;
 
+	        if(ENABLE_DEVLOGGING == true){
+	        	
 	        System.out.println ("Total Memory: " + totalMem + " (" + (totalMem/megs) + " MiB)");
 	        System.out.println ("Max Memory:   " + maxMem + " (" + (maxMem/megs) + " MiB)");
 	        System.out.println ("Free Memory:  " + freeMem + " (" + (freeMem/megs) + " MiB)");
+	        }
 	    }
 	}
 	
@@ -778,6 +812,15 @@ isHeadCrumbsModLoaded = Loader.isModLoaded("headcrumbs");
 		System.out.println("House Of Epic Proportions Structure Registered");
 		}
     }
+    
+    if(SECRET_SETTINGS == "yes") {
+    	System.out.println("No secrets here. Move along!");
+    }
+    
+    if(SECRET_SETTINGS == "no") {
+    	System.out.println("WHAT! YOU FOUND THE SECRET!!");
+    }
+    
     /*
     GameRegistry.registerWorldGenerator((IWorldGenerator) new WorldGenPumpkin_Pat(), 0);
     GameRegistry.registerWorldGenerator((IWorldGenerator) new WorldGenPumpkin_Jen(), 0);
@@ -1044,36 +1087,46 @@ public void postInit(FMLPostInitializationEvent event) {
 	        }
 	      
 	       }
+		   
+			/* Total number of processors or cores available to the JVM */
+			System.out.println("Available processors (cores): " + 
+				Runtime.getRuntime().availableProcessors());
+
+			/* Total amount of free memory available to the JVM */
+			System.out.println("Free memory (bytes): " + 
+				Runtime.getRuntime().freeMemory());
+
+			/* This will return Long.MAX_VALUE if there is no preset limit */
+			long maxMemory = Runtime.getRuntime().maxMemory();
+			/* Maximum amount of memory the JVM will attempt to use */
+			System.out.println("Maximum memory (bytes): " + 
+				(maxMemory == Long.MAX_VALUE ? "no limit" : maxMemory));
+
+			/* Total memory currently available to the JVM */
+			System.out.println("Total memory available to JVM (bytes): " + 
+				Runtime.getRuntime().totalMemory());
+
+			/* Get a list of all filesystem roots on this system */
+			File[] roots = File.listRoots();
+
+			/* For each filesystem root, print some info */
+			for (File root : roots) {
+			  System.out.println("File system root: " + root.getAbsolutePath());
+			  System.out.println("Total space (bytes): " + root.getTotalSpace());
+			  System.out.println("Free space (bytes): " + root.getFreeSpace());
+			  System.out.println("Usable space (bytes): " + root.getUsableSpace());
+			}
+			
+				Properties p = System.getProperties();
+			Enumeration keys = p.keys();
+			while (keys.hasMoreElements()) {
+				String key = (String)keys.nextElement();
+				String value = (String)p.get(key);
+				System.out.println(key + ": " + value);
+			}
 	    }
 	
-	/* Total number of processors or cores available to the JVM */
-    System.out.println("Available processors (cores): " + 
-        Runtime.getRuntime().availableProcessors());
-
-    /* Total amount of free memory available to the JVM */
-    System.out.println("Free memory (bytes): " + 
-        Runtime.getRuntime().freeMemory());
-
-    /* This will return Long.MAX_VALUE if there is no preset limit */
-    long maxMemory = Runtime.getRuntime().maxMemory();
-    /* Maximum amount of memory the JVM will attempt to use */
-    System.out.println("Maximum memory (bytes): " + 
-        (maxMemory == Long.MAX_VALUE ? "no limit" : maxMemory));
-
-    /* Total memory currently available to the JVM */
-    System.out.println("Total memory available to JVM (bytes): " + 
-        Runtime.getRuntime().totalMemory());
-
-    /* Get a list of all filesystem roots on this system */
-    File[] roots = File.listRoots();
-
-    /* For each filesystem root, print some info */
-    for (File root : roots) {
-      System.out.println("File system root: " + root.getAbsolutePath());
-      System.out.println("Total space (bytes): " + root.getTotalSpace());
-      System.out.println("Free space (bytes): " + root.getFreeSpace());
-      System.out.println("Usable space (bytes): " + root.getUsableSpace());
-    }
+	
   
 }
 
@@ -1089,6 +1142,9 @@ public void serverStart(FMLServerStartingEvent event)
      
      manager.registerCommand(new CommandModInfo());
      manager.registerCommand(new CommandChangelog());
+     manager.registerCommand(new CommandAddonList());
+     //manager.registerCommand(new CommandAddonEnable());
+     //manager.registerCommand(new CommandAddonDisable());
 }
 
 /**
@@ -1169,7 +1225,7 @@ public void acceptOptions(List<String> arg0, File arg1, File arg2, String arg3) 
 
 @Override
 public String[] getLaunchArguments() {
-	return null;
+	return args;
 }
 
 @Override

@@ -22,7 +22,7 @@ item.ItemBulb.blue.name=Blue Christmas Light
 item.ItemBulb.pink.name=Pink Christmas Light
 item.ItemBulb.yellow.name=Yellow Christmas Light
 item.ItemBulb.cyan.name=Cyan Christmas Light
-Item.ItemFilament.name=Filament
+item.ItemFilament.name=Filament
 item.ItemFruitCake.name=Fruit Cake
 item.ItemJingleBells.name=Jingle Bells
 item.ItemSnowWand.name=Snow Wand
@@ -41,8 +41,16 @@ item.ItemGingerBreadLegs.name=Gingerbread Leggings
 item.ItemGingerBreadBoots.name=Gingerbread Boots
 item.ItemGiantSnowball.name=Giant Snowball
 item.ItemGingerbreadHousePlacer.name=GingerBread House
-
-
+item.ItemSled.name=Sled
+item.ItemBulbHolder.name=Bulb Holder
+item.ItemFrozenIronIngot.name=Frozen Iron Ingot
+item.ItemFrozenGoldIngot.name=Frozen Gold Ingot
+item.ItemFrozenEmerald.name=Frozen Emerald
+item.ItemFrozenDiamond.name=Frozen Diamond
+item.ItemFrozenCoal.name=Frozen Coal
+item.ItemFrozenLapis.name=Frozen Lapis
+item.ItemFrozenRedstone.name=Frozen Redstone
+item.ItemChristmasPresent.name=Christmas Present
 
 	/Weapons & Tools
 item.ItemGingerBreadSword.name=Gingerbread Sword
@@ -83,7 +91,36 @@ tile.BlockBulb.yellow.name=Yellow Christmas Light
 tile.BlockBulb.cyan.name=Cyan Christmas Light
 tile.BlockGingerBreadStairs.name=GingerBread Stairs
 tile.BlockGingerBreadSlab.name=GingerBread Slab
-itel.BLockGingerBreadCarpet.name=GingerBread Carpet
+tile.BLockGingerBreadCarpet.name=GingerBread Carpet
+tile.BlockBulb_red.name=Red Chistmas Light [Placeable]
+tile.BlockBulb_green.name=Green Christmas Light [Placeable]
+tile.BlockBulb_orange.name=Orange Christmas Light [Placeable]
+tile.BlockBulb_lime.name=Lime Christmas Light [Placeable]
+tile.BlockBulb_lightBlue.name=Light blue Christmas Light [Placeable]
+tile.BlockBulb_white.name=White Christmas Light [Placeable]
+tile.BlockBulb_magenta.name=Magenta Christmas Light [Placeable]
+tile.BlockBulb_purple.name=Purple Christmas Light [Placeable]
+tile.BlockBulb_blue.name=Blue Christmas Light [Placeable]
+tile.BlockBulb_pink.name=Pink Christmas Light [Placeable]
+tile.BlockBulb_yellow.name=Yellow Christmas Light [Placeable]
+tile.BlockBulb_cyan.name=Cyan Christmas Light [Placeable]
+tile.BlockFrozenIronIngot.name=Frozen Iron Block
+tile.BlockFrozenGoldIngot.name=Frozen Gold Block
+tile.BlockFrozenEmerald.name=Frozen Emerald Block
+tile.BlockFrozenDiamond.name=Frozen Diamond Block
+tile.BlockFrozenCoal.name=Frozen Coal Block
+tile.BlockFrozenLapis.name=Frozen Lapis Block
+tile.BlockFrozenRedstone.name=Frozen Redstone Block
+tile.BlockFrozenIronIngotOre.name=Frozen Iron Ore
+tile.BlockFrozenGoldIngotOre.name=Frozen Gold Ore
+tile.BlockFrozenEmeraldOre.name=Frozen Emerald Ore
+tile.BlockFrozenDiamondOre.name=Frozen Diamond Ore
+tile.BlockFrozenCoalOre.name=Frozen Coal Ore
+tile.BlockFrozenLapisOre.name=Frozen Lapis Ore
+tile.BlockFrozenRedstoneOre.name=Frozen Redstone Ore
+tile.BlockFrozenStone.name=Frozen Stone
+tile.BlockFrozenCobbleStone.name=Frozen CobbleStone
+tile.BlockChristmasPresent.name=Christmas Presents
 
 //Entitys
 entity.EntitySanta.name=Santa
@@ -104,6 +141,8 @@ entity.Entityjtrent238.name=jtrent238
 //ToolTips
 tooltip.epicproportionsmod_christmas.ItemStocking.texture=I Know Its Horrable,
 tooltip.epicproportionsmod_christmas.ItemStocking.dealwithit=Deal With It!
+tooltip.epicproportionsmod_christmas.ItemChristmasPresent.xmas=Merry Christmas!
+tooltip.epicproportionsmod_christmas.ItemChristmasPresent.inside=I wonder what could be inside?
 
 //Creative Tabs
 itemGroup.EpicProportionsMod_Christmas=jtrent238's Epic Proportions Mod Christmas Addon

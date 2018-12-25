@@ -1,10 +1,13 @@
 package com.jtrent238.epicproportions.blocks.statues;
 
+import com.jtrent238.epicproportions.ItemLoader;
 import com.jtrent238.epicproportions.tileentity.TileEntityPatStatue;
 
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
+import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.World;
 
 public class BlockPatStatue extends BlockContainer{
@@ -31,4 +34,8 @@ public class BlockPatStatue extends BlockContainer{
 		return new TileEntityPatStatue();
 	}
 
+	public ItemStack getPickBlock(MovingObjectPosition target, World world, int x, int y, int z)
+	  {
+	    return new ItemStack(ItemLoader.itemPatStatue);
+	  }
 }

@@ -7,6 +7,7 @@ import com.jtrent238.epicproportions.addons.christmas.common.CommonProxy;
 import com.jtrent238.epicproportions.addons.christmas.entity.EntityGiantSnowBall;
 import com.jtrent238.epicproportions.addons.christmas.entity.EntityGingerBreadMan;
 import com.jtrent238.epicproportions.addons.christmas.entity.EntitySanta;
+import com.jtrent238.epicproportions.addons.christmas.entity.EntitySled;
 import com.jtrent238.epicproportions.addons.christmas.entity.EntityXmasCaptainCookie;
 import com.jtrent238.epicproportions.addons.christmas.entity.EntityXmasJen;
 import com.jtrent238.epicproportions.addons.christmas.entity.EntityXmasPat;
@@ -15,9 +16,18 @@ import com.jtrent238.epicproportions.addons.christmas.render.RenderBlockChristma
 import com.jtrent238.epicproportions.addons.christmas.render.RenderBlockChristmasTree;
 import com.jtrent238.epicproportions.addons.christmas.render.RenderBlockLights;
 import com.jtrent238.epicproportions.addons.christmas.render.entity.RenderGiantSnowBall;
+import com.jtrent238.epicproportions.addons.christmas.render.entity.RenderSled;
+import com.jtrent238.epicproportions.addons.christmas.render.tileentity.RenderBulb;
+import com.jtrent238.epicproportions.addons.christmas.render.tileentity.RenderTileEntityBlockChristmasTree;
+import com.jtrent238.epicproportions.addons.christmas.render.tileentity.RenderTileEntityBlockNorthPole;
 import com.jtrent238.epicproportions.addons.christmas.render.tileentity.TileEntityBulbRender;
 import com.jtrent238.epicproportions.addons.christmas.tileentity.TileEntityBlockChristmasPresents_Red;
+import com.jtrent238.epicproportions.addons.christmas.tileentity.TileEntityBlockChristmasTree;
+import com.jtrent238.epicproportions.addons.christmas.tileentity.TileEntityBlockNorthPole;
 import com.jtrent238.epicproportions.addons.christmas.tileentity.TileEntityBulb;
+import com.jtrent238.epicproportions.addons.christmas.tileentity.TileEntitySled;
+import com.jtrent238.epicproportions.entity.EntityJenBoat;
+import com.jtrent238.epicproportions.render.RenderJenBoat;
 
 import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.client.registry.ISimpleBlockRenderingHandler;
@@ -56,6 +66,8 @@ public class ClientProxy extends CommonProxy {
 	RenderingRegistry.registerEntityRenderingHandler(EntityXmasPat.class, new RenderLiving(new ModelBiped(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod_christmas:EntityXmasPat.png");}});
 	RenderingRegistry.registerEntityRenderingHandler(EntityXmasJen.class, new RenderLiving(new ModelBiped(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod_christmas:EntityXmasJen.png");}});
 	RenderingRegistry.registerEntityRenderingHandler(EntityGiantSnowBall.class, new RenderGiantSnowBall(ItemLoader.ItemGiantSnowball, 0)); 
+	
+	//RenderingRegistry.registerEntityRenderingHandler(EntitySled.class, new RenderSled());
 	
 	//RenderChristmasTree(null, null, 0, 0, 0);
 	//RenderChristmasPresents_Red(null, null, 0, 0, 0);
@@ -102,8 +114,20 @@ public void postInit(FMLPostInitializationEvent e) {
 
 @Override
 public void registerRenderThings()
-{
-RenderingRegistry.registerEntityRenderingHandler(EntityGiantSnowBall.class, new RenderSnowball(ItemLoader.ItemGiantSnowball));
-}
+	{
+		RenderingRegistry.registerEntityRenderingHandler(EntityGiantSnowBall.class, new RenderSnowball(ItemLoader.ItemGiantSnowball));
+
+		GameRegistry.registerTileEntity(TileEntityBlockChristmasTree.class, "TileEntityBlockChristmasTree");
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityBlockChristmasTree.class, new RenderTileEntityBlockChristmasTree());
+		
+		GameRegistry.registerTileEntity(TileEntitySled.class, "TileEntitySled");
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntitySled.class, new RenderSled());
+		
+		GameRegistry.registerTileEntity(TileEntityBulb.class, "TileEntityBulb");
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityBulb.class, new RenderBulb());
+		
+		/*GameRegistry.registerTileEntity(TileEntityBlockNorthPole.class, "TileEntityBlockNorthPole");
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityBlockNorthPole.class, new RenderTileEntityBlockNorthPole());*/
+	}
  
 }

@@ -1,109 +1,125 @@
 package com.jtrent238.epicproportions.addons.christmas.blocks;
 
-import java.util.Random;
+import java.util.List;
 
+import com.jtrent238.epicproportions.addons.christmas.ItemLoader;
 import com.jtrent238.epicproportions.addons.christmas.epicproportionsmod_christmas;
+import com.jtrent238.epicproportions.addons.christmas.tileentity.TileEntityBlockChristmasTree;
 import com.jtrent238.epicproportions.addons.christmas.tileentity.TileEntityBulb;
 
-import cpw.mods.fml.client.registry.ClientRegistry;
-import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import cpw.mods.fml.common.event.FMLServerStartingEvent;
-import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockContainer;
+import net.minecraft.block.BlockFlower;
+import net.minecraft.block.BlockSourceImpl;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.IIcon;
+import net.minecraft.util.MovingObjectPosition;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraftforge.common.EnumPlantType;
 
-public class BlockBulb extends Block{
-
-	int a1 = 0,a2 = 0,a3 = 0,a4 = 0,a5 = 0,a6 = 0;
-
-	Random field_149942_b = new Random();
-
-	IIcon gor = null, dol = null, st1 = null, st2 = null, st3 = null, st4 = null;
-
-	boolean red = false;
+public class BlockBulb extends BlockContainer
+{
+	public static final String[][] bulbBlocks = new String[][] {{"BlockBulb_blue"}, {"BlockBulb_cyan"}, {"BlockBulb_green"}, {"BlockBulb_lightBlue"}, {"BlockBulb_lime"}, {"BlockBulb_magenta"}, {"BlockBulb_orange"}, {"BlockBulb_pink"}, {"BlockBulb_purple"}, {"BlockBulb_red"}, {"BlockBulb_white"}, {"BlockBulb_yellow"} };
+	   
+	public static final String[] field_149859_a = new String[] {};
+    public static final String[] field_149858_b = new String[] {};
+   
+    private World p_149941_1_;
+	private int p_149941_2_;
+	private int p_149941_3_;
+	private int p_149941_4_;
 	
-	public BlockBulb(Material p_i45394_1_) {
-		super(p_i45394_1_);
-		//this.setHardness(2.0F);
-		this.setResistance(10.0F);
-		this.setLightLevel(6F);
-		//this.setBlockName("BlockLight");
-		//this.setBlockTextureName("BlockBulb_red");
-		this.setLightOpacity(0);
-		this.setStepSound(Block.soundTypeStone);
-		this.setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
-		this.setBlockBounds(0.0F,0.0F,0.0F,1.0F,1.0F,1.0F);
-		//this.blockRegistry.addObject(176, "BlockLight", block);
-		this.setHarvestLevel("pickaxe", 0);
-	}
-	
-	public TileEntity createNewTileEntity(World var1, int var2){return new TileEntityBulb();}
-	@SideOnly(Side.CLIENT)
-	@Override
-	public IIcon getIcon(int i, int par2){
+	BlockSourceImpl blocksourceimpl = new BlockSourceImpl(p_149941_1_, p_149941_2_, p_149941_3_, p_149941_4_);
+    
+    @SideOnly(Side.CLIENT)
+    private IIcon[] field_149861_N;
+    private int field_149862_O;
+    private static final String __OBFID = "CL_00000246";
 
-	if (i == 0)
-	return gor;
+    public BlockBulb(int p_i2173_1_)
+    {
+        super(Material.plants);
+        this.field_149862_O = p_i2173_1_;
+        //this.setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
+        //this.setBlockName(bulbBlocks.toString());
+        //this.setBlockTextureName(epicproportionsmod_christmas.MODID + ":" + bulbBlocks);
+    }
 
-	else if (i == 1)
-	return dol;
+    /**
+     * Gets the block's texture. Args: side, meta
+     */
+    @SideOnly(Side.CLIENT)
+    public IIcon getIcon(int p_149691_1_, int p_149691_2_)
+    {
+        if (p_149691_2_ >= this.field_149861_N.length)
+        {
+            p_149691_2_ = 0;
+        }
 
-	else if (i == 2)
-	return st1;
+        return this.field_149861_N[p_149691_2_];
+    }
 
-	else if (i == 3)
-	return st2;
+    @SideOnly(Side.CLIENT)
+    public void registerBlockIcons(IIconRegister p_149651_1_)
+    {
+        this.field_149861_N = new IIcon[bulbBlocks[this.field_149862_O].length];
 
-	else if (i == 4)
-	return st4;
+        for (int i = 0; i < this.field_149861_N.length; ++i)
+        {
+            this.field_149861_N[i] = p_149651_1_.registerIcon(bulbBlocks[this.field_149862_O][i]);
+        }
+    }
 
-	else if (i == 5)
-	return st3;
+    /**
+     * Determines the damage on the item the block drops. Used in cloth and wood.
+     */
+    public int damageDropped(int p_149692_1_)
+    {
+        return p_149692_1_;
+    }
 
-	else
-	return gor;
+    /**
+     * returns a list of blocks with the same ID, but different meta (eg: wood returns 4 blocks)
+     */
+    @SideOnly(Side.CLIENT)
+    public void getSubBlocks(Item p_149666_1_, CreativeTabs p_149666_2_, List p_149666_3_)
+    {
+        for (int i = 0; i < this.field_149861_N.length; ++i)
+        {
+            p_149666_3_.add(new ItemStack(p_149666_1_, 1, i));
+        }
+    }
 
-	}
+    @Override
+    public boolean renderAsNormalBlock(){
+        return false;
+    }
 
+    @Override
+    public int getRenderType(){
+        return -1;
+    }
 
-@SideOnly(Side.CLIENT)
-@Override
-public void registerBlockIcons(IIconRegister reg){
-this.gor = reg.registerIcon("BlockBulb_red");
-this.dol = reg.registerIcon("BlockBulb_red");
-this.st1 = reg.registerIcon("BlockBulb_red");
-this.st2 = reg.registerIcon("BlockBulb_red");
-this.st3 = reg.registerIcon("BlockBulb_red");
-this.st4 = reg.registerIcon("BlockBulb_red");
-}
-public boolean isOpaqueCube()
-{
-return false;
-}
+    @Override
+    public boolean isOpaqueCube(){
+        return false;
+    }
 
-public boolean renderAsNormalBlock()
-{
-return false;
-}
-
-public int getRenderType(){
-return -1;
-}
-@Override
-public int tickRate(World world)
-{
-    return 10;
-}
-
-public int quantityDropped(Random par1Random){
-return 1;
-}
-
+    public TileEntity createNewTileEntity(World world, int par2) {
+        return new TileEntityBulb();
+    }
+    
+/*	public ItemStack getPickBlock(MovingObjectPosition target, World world, int x, int y, int z)
+	  {
+	    return new ItemStack(ItemLoader.ItemBulb);
+	  }*/
 }

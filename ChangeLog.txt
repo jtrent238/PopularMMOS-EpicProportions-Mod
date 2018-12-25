@@ -1,5 +1,37 @@
 Epic Proportions Mod ChangeLog
 
+1.x.x.x
+- Fixed FuriousDestroyer Statue
+- Fixed SuperGirlyGamer Statue
+- Fixed Christmas Tree [Christmas Addon]
+- Added command "listaddons"
+- Added placable bulbs [Christmas Addon]
+- Added Bulb stand [Christmas Addon]
+- Added Frozen Iron Ingot [Christmas Addon]
+- Added Frozen Gold Ingot [Christmas Addon]
+- Added Frozen Emerald [Christmas Addon]
+- Added Frozen Diamond [Christmas Addon]
+- Added Frozen Coal [Christmas Addon]
+- Added Frozen Lapis [Christmas Addon]
+- Added Frozen Redstone [Christmas Addon]
+- Added Frozen Iron Block [Christmas Addon]
+- Added Frozen Gold Block [Christmas Addon]
+- Added Frozen Emerald Block [Christmas Addon]
+- Added Frozen Diamond Block [Christmas Addon]
+- Added Frozen Coal Block [Christmas Addon]
+- Added Frozen Lapis Block [Christmas Addon]
+- Added Frozen Redstone Block [Christmas Addon]
+- Added Frozen Iron Ore [Christmas Addon]
+- Added Frozen Gold Ore [Christmas Addon]
+- Added Frozen Emerald Ore [Christmas Addon]
+- Added Frozen Diamond Ore [Christmas Addon]
+- Added Frozen Coal Ore [Christmas Addon]
+- Added Frozen Lapis Ore [Christmas Addon]
+- Added Frozen Redstone Ore [Christmas Addon]
+- Added Frozen Stone [Christmas Addon]
+- Added Frozen CobbleStone [Christmas Addon]
+- Added Winter Wonderland Dimension [Christmas Addon]
+
 1.5.9.11
 - Added FuriousDestroyer Boat
 - Added SuperGirlyGamer Boat

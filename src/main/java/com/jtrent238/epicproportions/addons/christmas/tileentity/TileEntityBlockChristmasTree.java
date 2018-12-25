@@ -1,26 +1,31 @@
 package com.jtrent238.epicproportions.addons.christmas.tileentity;
 
+import com.jtrent238.epicproportions.addons.christmas.ItemLoader;
+
 import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.tileentity.TileEntityFurnace;
 
 public class TileEntityBlockChristmasTree extends TileEntity {
-	
-	private ItemStack theitem;
 
-	public void writeToNBT(NBTTagCompound p_145841_1_, Class p_145826_0_, String p_145826_1_)
-    {
-		addMapping(TileEntityBlockChristmasTree.class, "ChristmasTree");
-    }
+	/* Rotation */
+    public float rotation = 0;
+   /* Scale */
+   public float scale = (float) 0.5;
 
-	public int getSize() {
-		return 0;
-	}
+   @Override
+   public void updateEntity(){
+       /* Increments 0.5  This can be changed */
+       if (worldObj.isRemote) rotation += 0.5;
+       /* Whatever you want your scale to be */
+      if (worldObj.isRemote) scale = (float) 0.5;
+   }
 
-	public ItemStack getItem(int i) {
-		return theitem;
-	}
+public int getSize() {
+	// TODO Auto-generated method stub
+	return 0;
+}
 
-
+public ItemStack getItem(int i) {
+	return new ItemStack(ItemLoader.ItemChristmasTree);
+}
 }

@@ -3,16 +3,26 @@ package com.jtrent238.epicproportions.addons.christmas;
 import com.jtrent238.epicproportions.EpicProportionsMod;
 import com.jtrent238.epicproportions.addons.christmas.entity.EntityXmasPainting;
 import com.jtrent238.epicproportions.addons.christmas.items.ItemBulb;
+import com.jtrent238.epicproportions.addons.christmas.items.ItemBulbHolder;
 import com.jtrent238.epicproportions.addons.christmas.items.ItemCandyCaneArmor;
 import com.jtrent238.epicproportions.addons.christmas.items.ItemCandyCaneDoor;
 import com.jtrent238.epicproportions.addons.christmas.items.ItemCandyCaneIngot;
 import com.jtrent238.epicproportions.addons.christmas.items.ItemFilament;
+import com.jtrent238.epicproportions.addons.christmas.items.ItemFrozenCoal;
+import com.jtrent238.epicproportions.addons.christmas.items.ItemFrozenDiamond;
+import com.jtrent238.epicproportions.addons.christmas.items.ItemFrozenEmerald;
+import com.jtrent238.epicproportions.addons.christmas.items.ItemFrozenGoldIngot;
+import com.jtrent238.epicproportions.addons.christmas.items.ItemFrozenIronIngot;
+import com.jtrent238.epicproportions.addons.christmas.items.ItemFrozenLapis;
+import com.jtrent238.epicproportions.addons.christmas.items.ItemFrozenRedstone;
 import com.jtrent238.epicproportions.addons.christmas.items.ItemGiantSnowball;
 import com.jtrent238.epicproportions.addons.christmas.items.ItemGingerBreadArmor;
 import com.jtrent238.epicproportions.addons.christmas.items.ItemGingerBreadDoor;
 import com.jtrent238.epicproportions.addons.christmas.items.ItemJingleBells;
+import com.jtrent238.epicproportions.addons.christmas.items.ItemSled;
 import com.jtrent238.epicproportions.addons.christmas.items.ItemSnowWand;
 import com.jtrent238.epicproportions.addons.christmas.items.ItemStocking;
+import com.jtrent238.epicproportions.addons.christmas.items.blockplacers.ItemChristmasPresent;
 import com.jtrent238.epicproportions.addons.christmas.items.blockplacers.ItemChristmasTree;
 import com.jtrent238.epicproportions.addons.christmas.items.spawners.ItemSpawnGingerBreadMan;
 import com.jtrent238.epicproportions.addons.christmas.items.spawners.ItemSpawnSanta;
@@ -87,7 +97,17 @@ public class ItemLoader {
 	public static Item ItemSpawnXmasCapitanCookie;
 	public static Item ItemSpawnXmasPat;
 	public static Item ItemSpawnXmasJen;
-
+	public static Item ItemSled;
+	public static Item ItemBulbHolder;
+	public static Item ItemFrozenIronIngot;
+	public static Item ItemFrozenGoldIngot;
+	public static Item ItemFrozenEmerald;
+	public static Item ItemFrozenDiamond;
+	public static Item ItemFrozenCoal;
+	public static Item ItemFrozenLapis;
+	public static Item ItemFrozenRedstone;
+	public static Item ItemChristmasPresent;
+	
 	public static Item ItemGingerbreadHousePlacer;
 
 	
@@ -132,7 +152,16 @@ public class ItemLoader {
 		ItemSnowWand = new ItemSnowWand().setUnlocalizedName("ItemSnowWand").setTextureName("epicproportionsmod_christmas:ItemSnowWand").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
 		ItemGiantSnowball = new ItemGiantSnowball().setUnlocalizedName("ItemGiantSnowball").setTextureName("epicproportionsmod_christmas:ItemGiantSnowball").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
 		ItemXmasPaintng = new ItemHangingEntity(EntityXmasPainting.class).setUnlocalizedName("ItemXmasPaintng").setTextureName("epicproportionsmod_christmas:ItemXmasPanting");//.setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
-		
+		ItemSled = new ItemSled().setUnlocalizedName("ItemSled").setTextureName("epicproportionsmod_christmas:ItemSled");//.setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
+		ItemBulbHolder = new ItemBulbHolder().setUnlocalizedName("ItemBulbHolder").setTextureName("epicproportionsmod_christmas:ItemBulbHolder").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
+		ItemFrozenIronIngot = new ItemFrozenIronIngot().setUnlocalizedName("ItemFrozenIronIngot").setTextureName("epicproportionsmod_christmas:ItemFrozenIronIngot").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
+		ItemFrozenGoldIngot = new ItemFrozenGoldIngot().setUnlocalizedName("ItemFrozenGoldIngot").setTextureName("epicproportionsmod_christmas:ItemFrozenGoldIngot").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
+		ItemFrozenEmerald = new ItemFrozenEmerald().setUnlocalizedName("ItemFrozenEmerald").setTextureName("epicproportionsmod_christmas:ItemFrozenEmerald").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
+		ItemFrozenDiamond = new ItemFrozenDiamond().setUnlocalizedName("ItemFrozenDiamond").setTextureName("epicproportionsmod_christmas:ItemFrozenDiamond").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
+		ItemFrozenCoal = new ItemFrozenCoal().setUnlocalizedName("ItemFrozenCoal").setTextureName("epicproportionsmod_christmas:ItemFrozenCoal").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
+		ItemFrozenLapis = new ItemFrozenLapis().setUnlocalizedName("ItemFrozenLapis").setTextureName("epicproportionsmod_christmas:ItemFrozenLapis").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
+		ItemFrozenRedstone = new ItemFrozenRedstone().setUnlocalizedName("ItemFrozenRedstone").setTextureName("epicproportionsmod_christmas:ItemFrozenRedstone").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
+		ItemChristmasPresent = new ItemChristmasPresent().setUnlocalizedName("ItemChristmasPresent").setTextureName("epicproportionsmod_christmas:ItemChristmasPresent").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
 		
 		ItemSpawnSanta = new ItemSpawnSanta().setUnlocalizedName("ItemSpawnSanta").setTextureName("epicproportionsmod_christmas:ItemSpawnSanta").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
 		ItemSpawnGingerBreadMan = new ItemSpawnGingerBreadMan().setUnlocalizedName("ItemSpawnGingerBreadMan").setTextureName("epicproportionsmod_christmas:ItemSpawnGingerBreadMan").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
@@ -183,6 +212,16 @@ public class ItemLoader {
 		GameRegistry.registerItem(ItemCandyCaneBoots, ItemCandyCaneBoots.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemGiantSnowball, ItemGiantSnowball.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemXmasPaintng, ItemXmasPaintng.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemSled, ItemSled.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemBulbHolder, ItemBulbHolder.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemFrozenIronIngot, ItemFrozenIronIngot.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemFrozenGoldIngot, ItemFrozenGoldIngot.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemFrozenEmerald, ItemFrozenEmerald.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemFrozenDiamond, ItemFrozenDiamond.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemFrozenCoal, ItemFrozenCoal.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemFrozenLapis, ItemFrozenLapis.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemFrozenRedstone, ItemFrozenRedstone.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemChristmasPresent, ItemChristmasPresent.getUnlocalizedName().substring(5));
 		
 		GameRegistry.registerItem(ItemSpawnSanta, ItemSpawnSanta.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemSpawnGingerBreadMan, ItemSpawnGingerBreadMan.getUnlocalizedName().substring(5));

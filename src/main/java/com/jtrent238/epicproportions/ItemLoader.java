@@ -18,6 +18,7 @@ import com.jtrent238.epicproportions.items.ItemPatCD3;
 import com.jtrent238.epicproportions.items.ItemPatDoor;
 import com.jtrent238.epicproportions.items.ItemPatDust;
 import com.jtrent238.epicproportions.items.ItemPatFlint;
+import com.jtrent238.epicproportions.items.ItemSecret;
 import com.jtrent238.epicproportions.items.itemCaptainCookieCookie;
 import com.jtrent238.epicproportions.items.itemEpicProportionsStar;
 import com.jtrent238.epicproportions.items.itemJenIngot;
@@ -282,7 +283,7 @@ public class ItemLoader {
 	public static Item ItemJenFlint;
 	public static Item ItemPatBoat;
 	public static Item ItemJenBoat;
-	
+	public static Item ItemSecret;
 
 	
 	
@@ -461,8 +462,8 @@ public static void LoadItems() {
 	itemTellMeRandomJoke = new itemTellMeRandomJoke().setUnlocalizedName("itemTellMeRandomJoke").setTextureName("book_normal"/*/"epicproportionsmod:itemTellMeRandomJoke"/*/).setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itemTNTCastlePlacer = new itemTNTCastlePlacer(0).setUnlocalizedName("itemTNTCastlePlacer").setTextureName("epicproportionsmod:itemTNTCastlePlacer").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itemStatue = new itemStatue().setUnlocalizedName("itemStatue").setTextureName("epicproportionsmod:itemStatue")/*/.setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
-	itemPatStatue = new itemPatStatue().setUnlocalizedName("itemPatStatue").setTextureName("epicproportionsmod:itemPatStatue")/*/.setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
-	itemJenStatue = new itemJenStatue().setUnlocalizedName("itemJenStatue").setTextureName("epicproportionsmod:itemJenStatue")/*/.setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
+	itemPatStatue = new itemPatStatue().setUnlocalizedName("itemPatStatue").setTextureName("epicproportionsmod:itemPatStatue").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	itemJenStatue = new itemJenStatue().setUnlocalizedName("itemJenStatue").setTextureName("epicproportionsmod:itemJenStatue").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	itemCaptianCookieStatue = new itemCaptianCookieStatue().setUnlocalizedName("itemCaptianCookieStatue").setTextureName("epicproportionsmod:itemCaptianCookieStatue")/*/.setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
 	itemNinjaMasterStatue = new itemNinjaMasterStatue().setUnlocalizedName("itemNinjaMasterStatue").setTextureName("epicproportionsmod:itemNinjaMasterStatue")/*/.setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
 	itemTheCandyManStatue = new itemTheCandyManStatue().setUnlocalizedName("itemTheCandyManStatue").setTextureName("epicproportionsmod:itemTheCandyManStatue")/*/.setCreativeTab(EpicProportionsMod.EpicProportionsMod)/*/;
@@ -499,6 +500,7 @@ public static void LoadItems() {
 	ItemJenFlint  = new ItemJenFlint().setUnlocalizedName("ItemJenFlint").setTextureName("epicproportionsmod:ItemJenFlint").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	ItemPatBoat  = new ItemPatBoat().setUnlocalizedName("ItemPatBoat").setTextureName("epicproportionsmod:ItemPatBoat").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 	ItemJenBoat  = new ItemJenBoat().setUnlocalizedName("ItemJenBoat").setTextureName("epicproportionsmod:ItemJenBoat").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
+	ItemSecret  = new ItemSecret().setUnlocalizedName("ItemSecret").setTextureName("epicproportionsmod:ItemSecret").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
 
 	//Weapons & Tools
 	itemPatSword = new itemPatSword(ToolMaterial.EMERALD).setUnlocalizedName("itemPatSword").setTextureName("epicproportionsmod:itemPatSword").setCreativeTab(EpicProportionsMod.EpicProportionsMod);
@@ -702,6 +704,9 @@ private static void registerItems(){
 	GameRegistry.registerItem(ItemPatBoat, ItemPatBoat.getUnlocalizedName().substring(5));
 	GameRegistry.registerItem(ItemJenBoat, ItemJenBoat.getUnlocalizedName().substring(5));
 	
+    if(EpicProportionsMod.SECRET_SETTINGS == "no") {
+    	GameRegistry.registerItem(ItemSecret, ItemSecret.getUnlocalizedName().substring(5));
+    }
 
 	//Weapons & Tools
 	GameRegistry.registerItem(itemPatSword, itemPatSword.getUnlocalizedName().substring(5));

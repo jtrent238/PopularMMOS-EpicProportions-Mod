@@ -1,9 +1,14 @@
 package com.jtrent238.epicproportions.addons.christmas.items;
 
+import java.util.Random;
+
 import com.jtrent238.epicproportions.addons.christmas.entity.EntityGiantSnowBall;
 
+import net.minecraft.block.Block;
+import net.minecraft.entity.item.EntityFallingBlock;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.projectile.EntityLargeFireball;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.EnumAction;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -15,6 +20,8 @@ public class ItemSnowWand extends Item{
 
 	
 	
+	Random rand = new Random();
+
 	public ItemStack onItemRightClick(ItemStack itemstack, World world, EntityPlayer entityplayer)
 	{
 		itemstack.damageItem(10, entityplayer);
@@ -34,6 +41,29 @@ public class ItemSnowWand extends Item{
 				world.playSoundAtEntity(entityplayer, "epicproportionsmod_christmas:SnowWand_Blow", 1.0F, 1.0F);
 				this.setItemDamage(ItemSnowWand.getItemDamage() - 1);
 					
+				
+				Block block = Blocks.snow_layer;
+	    		int snow_posX = (int) entityplayer.posX;
+	    		int snow_posY = (int) entityplayer.posY;
+	    		int snow_posZ = (int) entityplayer.posZ;
+	            
+	            for (int SnowLoop = 0; SnowLoop < 100; SnowLoop++) {
+	        		int snowmax = 250;
+	        		int snowmin = -250;
+	                int randomSnow = rand.nextInt((snowmax - snowmin) + 1) + snowmin;
+	            	world.setBlock(snow_posX + randomSnow, snow_posY + randomSnow, snow_posZ - randomSnow, block);
+	            	world.setBlock(snow_posX - randomSnow, snow_posY - randomSnow, snow_posZ + randomSnow, block);
+	            	world.setBlock(snow_posX - randomSnow, snow_posY + randomSnow, snow_posZ - randomSnow, block);
+	            	world.setBlock(snow_posX + randomSnow, snow_posY - randomSnow, snow_posZ + randomSnow, block);
+	            
+					EntityFallingBlock FallingSnow = new EntityFallingBlock(world, snow_posX, snow_posY, snow_posZ, Blocks.snow, randomSnow);
+					FallingSnow.setPosition(
+							snow_posX, snow_posY, snow_posZ);
+					FallingSnow.lastTickPosX = snow_posX * randomSnow;
+					FallingSnow.lastTickPosY = snow_posY * randomSnow;
+					FallingSnow.lastTickPosZ = snow_posZ * randomSnow;
+					world.spawnEntityInWorld(FallingSnow);
+	            }
 			}
 			
 			return itemstack;

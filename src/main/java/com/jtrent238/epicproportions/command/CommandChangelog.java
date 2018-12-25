@@ -39,8 +39,9 @@ public class CommandChangelog extends CommandBase
     public void processCommand(ICommandSender p_71515_1_, String[] p_71515_2_)
     {
 
-        //p_71515_1_.addChatMessage(new ChatComponentTranslation("TEST", new Object[0]));
+        p_71515_1_.addChatMessage(new ChatComponentTranslation("A new window has opened in the background.", new Object[0]));
         
+        System.out.println("A new window has opened in the background.");
         
         try {
         	Browser.main();

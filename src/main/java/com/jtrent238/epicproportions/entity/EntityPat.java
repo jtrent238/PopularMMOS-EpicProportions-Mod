@@ -84,6 +84,7 @@ protected void addRandomArmor(){
 protected void dropRareDrop(int par1){
 this.dropItem(ItemLoader.itemPatSword, 1);
 this.dropItem(ItemLoader.itemPatStar, 1);
+this.dropItem(ItemLoader.itemPatStatue, 1);
 }
 
 
