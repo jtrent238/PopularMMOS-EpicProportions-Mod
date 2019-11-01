@@ -49,8 +49,8 @@ public class epicproportionsmod_halloween
 	/** This is used to keep track of GUIs that we make*/
 	private static int modGuiIndex = 0;
 	
-	public static final String MODVERSION = "1.0.1.1";
-	public static final String MODNAME = "jtrent238's EpicProportions Mod - Halloween Addon";
+	public static final String MODVERSION = "1.0.1.2";
+	public static final String MODNAME = "PopularMMOS EpicProportions Mod - Halloween Addon";
 	public static final String ADDONNAME = "Halloween Addon";
 	public static final String MODAUTHOR = "jtrent238";
 	public static final String MC = "1.7.10";
@@ -110,13 +110,13 @@ public static CreativeTabs EpicProportionsMod_Halloween = new CreativeTabs("Epic
 	{
 		return "EpicProportionsMod_Halloween.png";
 	}
-	/*
+	
 	@SideOnly(Side.CLIENT)
 	public boolean drawInForegroundOfTab() 
 	{
 		return false;
 	}
-	*/
+	
 	}
 	
 ;

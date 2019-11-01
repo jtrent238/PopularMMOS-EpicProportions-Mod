@@ -17,7 +17,7 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "1.5.9.12"
+version = "1.5.9.13"
 group= "com.jtrent238.epicproportionsmod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "epicproportionsmod"
 

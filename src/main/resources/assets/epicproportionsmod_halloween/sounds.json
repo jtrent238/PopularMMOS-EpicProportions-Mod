@@ -1,5 +1,9 @@
 {
     "ghost_say": {"category": "master","sounds": [{"name": "ghost_say","stream": false}]},
 	"ghost_hurt": {"category": "master","sounds": [{"name": "ghost_hurt","stream": false}]},
-	"ghost_death": {"category": "master","sounds": [{"name": "ghost_death","stream": false}]}
+	"ghost_death": {"category": "master","sounds": [{"name": "ghost_death","stream": false}]},
+	"scarecrow_say": {"category": "master","sounds": [{"name": "scarecrow_say","stream": false}]},
+	"scarecrow_hurt": {"category": "master","sounds": [{"name": "scarecrow_hurt","stream": false}]},
+	"scarecrow_death": {"category": "master","sounds": [{"name": "scarecrow_death","stream": false}]},
+	"ambient_creepy_1": {"category": "master","sounds": [{"name": "ambient_creepy_1","stream": false}]}
 	}

@@ -2,10 +2,14 @@ package com.jtrent238.epicproportions.addons.halloween.client;
 
 import com.jtrent238.epicproportions.addons.halloween.common.CommonProxy;
 import com.jtrent238.epicproportions.addons.halloween.entity.EntityGhost;
+import com.jtrent238.epicproportions.addons.halloween.entity.EntityPumpkinHead;
+import com.jtrent238.epicproportions.addons.halloween.entity.EntityScareCrow;
 import com.jtrent238.epicproportions.addons.halloween.entity.EntitySpookyCaptianCookie;
 import com.jtrent238.epicproportions.addons.halloween.entity.EntitySpookyJen;
 import com.jtrent238.epicproportions.addons.halloween.entity.EntitySpookyPat;
 import com.jtrent238.epicproportions.addons.halloween.model.ModelGhost;
+import com.jtrent238.epicproportions.addons.halloween.model.ModelPumpkinHead;
+import com.jtrent238.epicproportions.addons.halloween.model.ModelScareCrow;
 import com.jtrent238.epicproportions.entity.EntityJen;
 import com.jtrent238.epicproportions.entity.EntityPat;
 
@@ -27,7 +31,9 @@ public class ClientProxy extends CommonProxy {
     RenderingRegistry.registerEntityRenderingHandler(EntitySpookyJen.class, new RenderLiving(new ModelBiped(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod_halloween:EntitySpookyJen.png");}});//Sets Jen Render
     RenderingRegistry.registerEntityRenderingHandler(EntitySpookyCaptianCookie.class, new RenderLiving(new ModelBiped(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod_halloween:EntitySpookyCaptianCookie.png");}});//Sets Captain Cookie Render
     RenderingRegistry.registerEntityRenderingHandler(EntityGhost.class, new RenderLiving(new ModelGhost(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod_halloween:EntityGhost.png");}});//Sets Captain Cookie Render
-    
+    RenderingRegistry.registerEntityRenderingHandler(EntityScareCrow.class, new RenderLiving(new ModelScareCrow(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod_halloween:EntityScareCrow.png");}});//Sets Captain Cookie Render
+    RenderingRegistry.registerEntityRenderingHandler(EntityPumpkinHead.class, new RenderLiving(new ModelPumpkinHead(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("epicproportionsmod_halloween:EntityPumpkinHead.png");}});//Sets Captain Cookie Render
+
 	}
 
   public void postInit(FMLPostInitializationEvent e) {

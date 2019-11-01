@@ -4,6 +4,8 @@
 //Items
 item.itemSpookyEssence.name=Spooky Essence
 item.itemSpookyIngot.name=Spooky Ingot
+item.itemHalloweenEssence.name=Halloween Essence
+item.itemHalloweenIngot.name=Halloween Ingot
 item.itemHalloweenPail.name=Halloween Pail
 item.itemHalloweenPail_Pat.name=FuriousDestroyer Halloween Pail
 item.itemHalloweenPail_Jen.name=SuperGirlyGamer Halloween Pail
@@ -25,6 +27,15 @@ item.itemCandy_12.name=Jelly Beans
 item.itemCandy_13.name=Halloween Peeps
 item.itemCandy_14.name=Snickers Bar
 item.itemCandy_15.name=Twix Bar
+item.itemCandy_16.name=Kit Kat
+item.itemCandy_17.name=Reeses Cup
+item.itemCandy_18.name=Butterfinger
+item.itemCandy_19.name=Milk Duds
+item.itemCandy_20.name=MilkyWay
+item.itemCandy_21.name=MilkyWay Midnight Dark
+item.itemCandy_22.name=PayDay
+item.itemAlterPlacer.name=Alter
+item.itemWitchesCauldron.name=Witches Cauldron
 
 	/Weapons & Tools
 	/Armor
@@ -38,16 +49,22 @@ item.itemSpawnSpookyPat.name=Spawn Spooky FuriousDestroyer
 item.itemSpawnSpookyJen.name=Spawn Spooky SuperGirlyGamer
 item.itemSpawnSpookyCaptainCookie.name=Spawn Spooky Captain Cookie
 item.itemSpawnGhost.name=Spawn Ghost
+item.itemSpawnScareCrow.name=Spawn Scarecrow
 
 //Blocks
 tile.blockSpookyIngot.name=Spooky Ingot Block
 tile.blockSpookyEssenceOre.name=Spooky Essence Ore
+tile.blockHalloweenIngot.name=Halloween Ingot Block
+tile.blockHalloweenEssenceOre.name=Halloween Essence Block
+tile.blockCreepy.name=Creepy Block
+tile.blockWitchesCauldron.name=Witches Cauldron
 
 //Entitys
 entity.EntitySpookyPat.name=Spooky FuriousDestroyer
 entity.EntitySpookyJen.name=Spooky SuperGirlyGamer
 entity.EntitySpookyCaptianCookie.name=Spooky Captain Cookie
 entity.EntityGhost.name=Ghost
+entity.EntityScareCrow.name=Scarecrow
 
 //Mod Devs And Helpers
 entity.Entityjtrent238.name=jtrent238
@@ -60,5 +77,5 @@ entity.Entityjtrent238.name=jtrent238
 //ToolTips
 
 //Creative Tabs
-itemGroup.EpicProportionsMod_Halloween=jtrent238's Epic Proportions Mod Halloween Addon
+itemGroup.EpicProportionsMod_Halloween=PopularMMOS Epic Proportions Mod - Halloween Addon
 //Misc

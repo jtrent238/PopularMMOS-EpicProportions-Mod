@@ -1,5 +1,19 @@
 Epic Proportions Mod ChangeLog
 
+1.5.9.13
+- Changed Multitool Classes so it now uses one class the Universal class from my core mod
+- Added Scarecrow [Halloween Addon]
+- Added Kit Kat (Candy) [Halloween Addon]
+- Added Reeses Cup (Candy) [Halloween Addon]
+- Added Butterfinger (Candy) [Halloween Addon]
+- Added Milk Duds (Candy) [Halloween Addon]
+- Added MilkyWay (Candy) [Halloween Addon]
+- Added MilkyWay Midnight Dark (Candy) [Halloween Addon]
+- Added PayDay (Candy) [Halloween Addon]
+- Added Witches Cauldron [Halloween Addon]
+- Fixed some blocks not having correct localization in en_US.lang [Halloween Addon]
+- Changed jtrent238 to PopularMMOS in the mod name [Halloween Addon]
+
 1.5.9.12
 - Fixed FuriousDestroyer Statue
 - Fixed SuperGirlyGamer Statue

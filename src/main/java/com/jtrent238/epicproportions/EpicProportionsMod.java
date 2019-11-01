@@ -131,7 +131,7 @@ public class EpicProportionsMod implements ITweaker
 	@Instance(MODID)
     public static EpicProportionsMod instance;
 
-	public static final String MODVERSION = "1.5.9.12";
+	public static final String MODVERSION = "1.5.9.13";
 
 	public static final String APIVERSION = "1.0.0.0";
 	public static final String MODNAME = "PopularMMOS EpicProportions Mod";

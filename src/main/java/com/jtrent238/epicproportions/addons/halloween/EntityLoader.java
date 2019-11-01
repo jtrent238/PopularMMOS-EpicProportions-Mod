@@ -1,6 +1,7 @@
 package com.jtrent238.epicproportions.addons.halloween;
 
 import com.jtrent238.epicproportions.addons.halloween.entity.EntityGhost;
+import com.jtrent238.epicproportions.addons.halloween.entity.EntityPumpkinHead;
 import com.jtrent238.epicproportions.addons.halloween.entity.EntityScareCrow;
 import com.jtrent238.epicproportions.addons.halloween.entity.EntitySpookyCaptianCookie;
 import com.jtrent238.epicproportions.addons.halloween.entity.EntitySpookyJen;
@@ -34,6 +35,10 @@ public class EntityLoader {
 	//Ghost Registry
 	    EntityRegistry.registerGlobalEntityID(EntityGhost.class, "EntityGhost",EntityRegistry.findGlobalUniqueEntityId());
 	    EntityRegistry.addSpawn(EntityGhost.class, 8, 4, 6, EnumCreatureType.creature, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.forest, BiomeGenBase.plains, BiomeGenBase.beach, BiomeGenBase.mesa, BiomeGenBase.savanna, BiomeGenBase.desert, BiomeGenBase.desertHills);
+		
+	//Pumpkin Head Registry
+	    //EntityRegistry.registerGlobalEntityID(EntityPumpkinHead.class, "EntityPumpkinHead",EntityRegistry.findGlobalUniqueEntityId());
+	    //EntityRegistry.addSpawn(EntityGhost.class, 8, 4, 6, EnumCreatureType.creature, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.forest, BiomeGenBase.plains, BiomeGenBase.beach, BiomeGenBase.mesa, BiomeGenBase.savanna, BiomeGenBase.desert, BiomeGenBase.desertHills);
 		
     	}
 	{

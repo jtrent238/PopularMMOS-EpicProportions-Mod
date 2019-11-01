@@ -11,9 +11,9 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-public class EntityScareCrow extends EntityGolem{
+public class EntityPumpkinHead extends EntityGolem{
 
-	public EntityScareCrow(World p_i1686_1_) {
+	public EntityPumpkinHead(World p_i1686_1_) {
 		super(p_i1686_1_);
 	}
 
@@ -23,7 +23,7 @@ public class EntityScareCrow extends EntityGolem{
     protected String getLivingSound()
     {
         //return "epicproportionsmod_halloween:scarecrow_say";
-        return "epicproportionsmod_halloween:scarecrow_say";
+        return "epicproportionsmod_halloween:pumpkinhead_say";
     }
 
     /**
@@ -31,7 +31,7 @@ public class EntityScareCrow extends EntityGolem{
      */
     protected String getHurtSound()
     {
-        return "epicproportionsmod_halloween:scarecrow_hurt";
+        return "epicproportionsmod_halloween:pumpkinhead_hurt";
     }
 
     /**
@@ -39,7 +39,7 @@ public class EntityScareCrow extends EntityGolem{
      */
     protected String getDeathSound()
     {
-        return "epicproportionsmod_halloween:scarecrow_death";
+        return "epicproportionsmod_halloween:pumpkinhead_death";
     }
     
     /**
@@ -51,7 +51,7 @@ public class EntityScareCrow extends EntityGolem{
     	int max = 6;
     	int min = 1;
     	int result = rn.nextInt(max - min + 1) + min;
-    	//System.out.println(result);
+    	System.out.println(result);
     	
     	int dropAmount = result;
     	int dropType = rn.nextInt((max - 1) - (min - 1) + 1) + (min - 1);
@@ -60,19 +60,19 @@ public class EntityScareCrow extends EntityGolem{
     	if(dropType < 0 || dropType > 2) {
     		//Logger.logMsg(Logger.INFO, "Droptype was not between 0 and 2! Setting to 0!");
     		dropType = 0;
-    		System.out.println(dropType);
+    		//System.out.println(dropType);
     	}
     	
 		switch(dropType){
 			case 0:
-				this.entityDropItem(new ItemStack(Blocks.hay_block, dropAmount), 1F);
+				this.entityDropItem(new ItemStack(Blocks.lit_pumpkin, dropAmount), 1F);
 				break;
 			case 1:
-				this.entityDropItem(new ItemStack(Blocks.planks, dropAmount), 1F);
+				this.entityDropItem(new ItemStack(Blocks.pumpkin, dropAmount), 1F);
 				break;
 			case 2:
-				this.entityDropItem(new ItemStack(Blocks.hay_block, dropAmount), 1F);
-				this.entityDropItem(new ItemStack(Blocks.planks, dropAmount), 1F);
+				this.entityDropItem(new ItemStack(Blocks.lit_pumpkin, dropAmount), 1F);
+				this.entityDropItem(new ItemStack(Blocks.pumpkin, dropAmount), 1F);
 				break;
 			default:
 				break;

@@ -5,6 +5,7 @@ import com.jtrent238.epicproportions.addons.halloween.blocks.blockHalloweenEssen
 import com.jtrent238.epicproportions.addons.halloween.blocks.blockHalloweenIngot;
 import com.jtrent238.epicproportions.addons.halloween.blocks.blockSpookyEssenceOre;
 import com.jtrent238.epicproportions.addons.halloween.blocks.blockSpookyIngot;
+import com.jtrent238.epicproportions.addons.halloween.blocks.blockWitchesCauldron;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
@@ -18,6 +19,7 @@ public class BlockLoader {
 	public static Block blockHalloweenIngot;
 	public static Block blockHalloweenEssenceOre;
 	public static Block blockCreepy;
+	public static Block blockWitchesCauldron;
 	
 	
 	
@@ -32,7 +34,7 @@ public class BlockLoader {
 		blockHalloweenIngot = new blockHalloweenIngot(MapColor.brownColor).setBlockName("blockHalloweenIngot").setBlockTextureName("epicproportionsmod_halloween:blockHalloweenIngot").setHardness(3F).setStepSound(Block.soundTypeStone).setCreativeTab(epicproportionsmod_halloween.EpicProportionsMod_Halloween);
 		blockHalloweenEssenceOre = new blockHalloweenEssenceOre(Material.ground).setBlockName("blockHalloweenEssenceOre").setBlockTextureName("epicproportionsmod_halloween:blockHalloweenEssenceOre").setHardness(3F).setStepSound(Block.soundTypeStone).setCreativeTab(epicproportionsmod_halloween.EpicProportionsMod_Halloween);
 		blockCreepy = new blockCreepy(Material.ground).setBlockName("blockCreepy").setBlockTextureName("epicproportionsmod_halloween:blockCreepy").setHardness(3F).setStepSound(Block.soundTypeStone).setCreativeTab(epicproportionsmod_halloween.EpicProportionsMod_Halloween);
-		
+		blockWitchesCauldron = new blockWitchesCauldron().setBlockName("blockWitchesCauldron").setBlockTextureName("epicproportionsmod_halloween:blockWitchesCauldron").setHardness(3F).setStepSound(Block.soundTypeStone).setCreativeTab(epicproportionsmod_halloween.EpicProportionsMod_Halloween);
 		
 		
 		registerBlocks();
@@ -48,6 +50,7 @@ public class BlockLoader {
 		GameRegistry.registerBlock(blockHalloweenIngot, "blockHalloweenIngot");
 		GameRegistry.registerBlock(blockHalloweenEssenceOre, "blockHalloweenEssenceOre");
 		GameRegistry.registerBlock(blockCreepy, "blockCreepy");
+		GameRegistry.registerBlock(blockWitchesCauldron, "blockWitchesCauldron");
 		
 	}
 	
