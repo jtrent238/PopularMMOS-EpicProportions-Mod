@@ -1,9 +1,9 @@
 package com.jtrent238.epicproportions.addons.christmas.blocks;
 
-import com.jtrent238.epicproportions.addons.christmas.ItemLoader;
-import com.jtrent238.epicproportions.addons.christmas.epicproportionsmod_christmas;
-import com.jtrent238.epicproportions.addons.christmas.tileentity.TileEntityBlockNorthPole;
 
+import com.jtrent238.epicproportions.addons.christmas.epicproportionsmod_christmas;
+
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.BlockSourceImpl;
 import net.minecraft.block.material.Material;
@@ -26,45 +26,17 @@ import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.util.RegistryDefaulted;
 import net.minecraft.world.World;
 
-public class BlockNorthPole extends BlockContainer{
+public class BlockNorthPole extends Block{
 
-    private World p_149941_1_;
-	private int p_149941_2_;
-	private int p_149941_3_;
-	private int p_149941_4_;
-	
-	BlockSourceImpl blocksourceimpl = new BlockSourceImpl(p_149941_1_, p_149941_2_, p_149941_3_, p_149941_4_);
-
-	public BlockNorthPole(Material material) {
+	public BlockNorthPole(Material material, String blockColor) {
+		
         super(material);
 
-        this.setBlockName("BlockNorthPole");
+        this.setBlockName("BlockNorthPole" + "_" + blockColor);
+        this.setBlockTextureName(epicproportionsmod_christmas.MODID + ":BlockNorthPole_" + blockColor);
+        this.setHardness(0.1F);
+        this.setStepSound(Block.soundTypeStone);
+        this.setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
     }
 
-    @Override
-    public boolean renderAsNormalBlock(){
-        return false;
-    }
-
-    @Override
-    public int getRenderType(){
-        return -1;
-    }
-
-    @Override
-    public boolean isOpaqueCube(){
-        return false;
-    }
-
-    @Override
-    public TileEntity createNewTileEntity(World world, int par2) {
-        return new TileEntityBlockNorthPole();
-    }
-    
-	public ItemStack getPickBlock(MovingObjectPosition target, World world, int x, int y, int z)
-	  {
-		return null;
-	    //return new ItemStack(ItemLoader.ItemNorthPole);
-	  }
 }
- 

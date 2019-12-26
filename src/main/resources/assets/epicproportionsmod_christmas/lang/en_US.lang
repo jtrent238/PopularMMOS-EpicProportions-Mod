@@ -51,6 +51,8 @@ item.ItemFrozenCoal.name=Frozen Coal
 item.ItemFrozenLapis.name=Frozen Lapis
 item.ItemFrozenRedstone.name=Frozen Redstone
 item.ItemChristmasPresent.name=Christmas Present
+item.ItemEggNog.name=Egg Nog
+item.ItemPepperMintBark.name=Peppermint Bark
 
 	/Weapons & Tools
 item.ItemGingerBreadSword.name=Gingerbread Sword
@@ -91,7 +93,7 @@ tile.BlockBulb.yellow.name=Yellow Christmas Light
 tile.BlockBulb.cyan.name=Cyan Christmas Light
 tile.BlockGingerBreadStairs.name=GingerBread Stairs
 tile.BlockGingerBreadSlab.name=GingerBread Slab
-tile.BLockGingerBreadCarpet.name=GingerBread Carpet
+tile.BlockGingerBreadCarpet.name=GingerBread Carpet
 tile.BlockBulb_red.name=Red Chistmas Light [Placeable]
 tile.BlockBulb_green.name=Green Christmas Light [Placeable]
 tile.BlockBulb_orange.name=Orange Christmas Light [Placeable]
@@ -121,6 +123,8 @@ tile.BlockFrozenRedstoneOre.name=Frozen Redstone Ore
 tile.BlockFrozenStone.name=Frozen Stone
 tile.BlockFrozenCobbleStone.name=Frozen CobbleStone
 tile.BlockChristmasPresent.name=Christmas Presents
+tile.BlockNorthPole_red.name=North Pole
+tile.BlockNorthPole_white.name=North Pole
 
 //Entitys
 entity.EntitySanta.name=Santa

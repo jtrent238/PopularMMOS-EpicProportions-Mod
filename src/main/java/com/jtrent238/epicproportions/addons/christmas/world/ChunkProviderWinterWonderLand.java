@@ -5,6 +5,7 @@ import java.util.Random;
 import java.util.logging.Level;
 
 import com.jtrent238.epicproportions.addons.christmas.world.biomes.ModBiomes;
+import com.jtrent238.epicproportions.addons.christmas.world.gen.structures.StructureNorthPole;
 import com.jtrent238.epicproportions.lib.GameLogHelper;
 
 import cpw.mods.fml.common.eventhandler.Event.Result;
@@ -418,6 +419,11 @@ public class ChunkProviderWinterWonderLand implements IChunkProvider {
 				}
 			}
 		}
+		
+		// Generate North Pole
+		new StructureNorthPole();
+		
+		
 		MinecraftForge.EVENT_BUS.post(new PopulateChunkEvent.Post(par1IChunkProvider, worldObj, rand, par2, par3, flag));
 		BlockFalling.fallInstantly = false;
 	}

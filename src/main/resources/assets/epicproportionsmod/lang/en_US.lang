@@ -335,7 +335,9 @@ achievement.shovelofepicproportions.desc=Craft The Shovel Of Epic Proportions
 	/Hoe Of Epic Proportions
 achievement.hoeofepicproportions=Hoe Of Epic Proportions
 achievement.hoeofepicproportions.desc=Craft The Hoe Of Epic Proportions
-
+	/TNT
+achievement.tnt=TNT!
+achievement.tnt.desc=Blow something up!
 //Stats
 stat.presentsbroken=Number Of Presents Opened
 

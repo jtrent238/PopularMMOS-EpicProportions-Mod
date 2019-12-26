@@ -17,6 +17,7 @@ public class BiomeWinterWonderLand extends ModBiomes{
 		
 		this.topBlock = Blocks.snow;
 		this.fillerBlock = BlockLoader.BlockFrozenStone;
+		
 	}
 	
 	/**

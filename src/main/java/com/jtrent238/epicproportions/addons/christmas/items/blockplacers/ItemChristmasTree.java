@@ -55,7 +55,7 @@ public class ItemChristmasTree extends Item
         else
         {
             ++p_77648_5_;
-            BlockChristmasTree present = (BlockChristmasTree)BlockLoader.BlockChristmasTree;
+            BlockChristmasTree block = (BlockChristmasTree)BlockLoader.BlockChristmasTree;
             int i1 = MathHelper.floor_double((double)(p_77648_2_.rotationYaw * 4.0F / 360.0F) + 0.5D) & 3;
             byte b0 = 0;
             byte b1 = 0;
@@ -81,7 +81,7 @@ public class ItemChristmasTree extends Item
             }
 */
             
-                        p_77648_3_.setBlock(p_77648_4_ + b0, p_77648_5_, p_77648_6_ + b1, present, i1 + 8, 3);
+                        p_77648_3_.setBlock(p_77648_4_ + b0, p_77648_5_, p_77648_6_ + b1, block, i1 + 8, 3);
 
                     --p_77648_1_.stackSize;
                     return true;

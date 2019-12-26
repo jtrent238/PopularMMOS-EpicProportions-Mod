@@ -1,5 +1,11 @@
 Epic Proportions Mod ChangeLog
 
+1.5.9.14
+- Added Achievement TNT
+- Changed jtrent238 to PopularMMOS in the mod name [Christmas Addon]
+- Added Egg Nog [Christmans Addon]
+- Added Peppermint Bark [Christmas Addon]
+
 1.5.9.13
 - Changed Multitool Classes so it now uses one class the Universal class from my core mod
 - Added Scarecrow [Halloween Addon]

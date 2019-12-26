@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import com.jtrent238.epicproportions.addons.christmas.world.genlayer.WinterWonderLandGenLayer;
+import com.jtrent238.epicproportions.addons.christmas.worldgen.genlayer.WinterWonderLandGenLayer;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

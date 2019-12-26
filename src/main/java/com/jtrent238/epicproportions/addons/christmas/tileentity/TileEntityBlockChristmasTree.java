@@ -20,12 +20,12 @@ public class TileEntityBlockChristmasTree extends TileEntity {
       if (worldObj.isRemote) scale = (float) 0.5;
    }
 
-public int getSize() {
-	// TODO Auto-generated method stub
-	return 0;
-}
-
-public ItemStack getItem(int i) {
-	return new ItemStack(ItemLoader.ItemChristmasTree);
-}
+	public int getSize() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	public ItemStack getItem(int i) {
+		return new ItemStack(ItemLoader.ItemChristmasTree);
+	}
 }

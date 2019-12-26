@@ -34,6 +34,8 @@ import com.jtrent238.epicproportions.addons.christmas.blocks.BlockGingerBread_Me
 import com.jtrent238.epicproportions.addons.christmas.blocks.BlockLights;
 import com.jtrent238.epicproportions.addons.christmas.blocks.BlockNorthPole;
 import com.jtrent238.epicproportions.addons.christmas.blocks.BlockPortalWinterWonderLand;
+import com.jtrent238.epicproportions.addons.christmas.blocks.BlockSnowman;
+import com.jtrent238.epicproportions.addons.christmas.blocks.BlockSnowmanCreepy;
 import com.jtrent238.epicproportions.addons.christmas.items.ItemBulb;
 import com.jtrent238.epicproportions.addons.christmas.util.WinterWonderLandDimensionTeleporter;
 import com.jtrent238.epicproportions.blocks.BlockModStairs;
@@ -62,7 +64,8 @@ public class BlockLoader {
 	public static Block BlockGingerBread_Meta;
 	public static Block BlockGingerBreadStairs;
 	public static Block BlockGingerBreadSlab;
-	public static Block BlockNorthPole;
+	public static Block BlockNorthPoleRed;
+	public static Block BlockNorthPoleWhite;
 	public static Block Block0Bulb;
 	public static Block BlockBulb_blue;
 	public static Block BlockBulb_cyan;
@@ -93,6 +96,9 @@ public class BlockLoader {
 	public static Block BlockFrozenStone;
 	public static Block BlockFrozenCobbleStone;
 	public static Block BlockPortalWinterWonderLand;
+	public static Block BlockSnowman;
+	public static Block BlockSnowmanCreepy;
+	
 	/**
 	 * Load Blocks.
 	 * @param meta 
@@ -114,7 +120,8 @@ public class BlockLoader {
 		BlockGingerBreadCarpet = new BlockGingerBreadCarpet().setBlockName("BlockGingerBreadCarpet").setBlockTextureName(epicproportionsmod_christmas.MODID + ":BlockGingerBreadCarpet");
 		BlockGingerBreadStairs = new BlockModStairs(BlockGingerBread, 0).setBlockName("BlockGingerBreadStairs").setBlockTextureName(epicproportionsmod_christmas.MODID + ":BlockGingerBread");//.setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
 		//BlockGingerBreadSlab = new BlockGingerBreadSlab().setBlockName("BlockGingerBreadSlab").setBlockTextureName(epicproportionsmod_christmas.MODID + ":BlockGingerBread");
-		//BlockNorthPole = new BlockNorthPole(Material.cloth).setBlockName("BlockNorthPole").setHardness(0.1F).setStepSound(Block.soundTypeStone).setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
+		BlockNorthPoleRed = new BlockNorthPole(Material.iron, "red");
+		BlockNorthPoleWhite = new BlockNorthPole(Material.iron, "white");
 		BlockBulb_blue = new BlockBulb(0).setBlockName("BlockBulb_blue").setBlockTextureName(epicproportionsmod_christmas.MODID + ":BlockBulb_blue").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
 		BlockBulb_cyan = new BlockBulb(1).setBlockName("BlockBulb_cyan").setBlockTextureName(epicproportionsmod_christmas.MODID + ":BlockBulb_cyan").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
 		BlockBulb_green = new BlockBulb(2).setBlockName("BlockBulb_green").setBlockTextureName(epicproportionsmod_christmas.MODID + ":BlockBulb_green").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
@@ -145,6 +152,9 @@ public class BlockLoader {
 		BlockFrozenCobbleStone = new BlockFrozenCobbleStone(Material.rock).setBlockName("BlockFrozenCobbleStone").setBlockTextureName(epicproportionsmod_christmas.MODID + ":BlockFrozenCobbleStone").setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas);
 		BlockPortalWinterWonderLand = new BlockPortalWinterWonderLand("WinterWonderLand").setBlockName("BlockPortalWinterWonderLand").setBlockTextureName(epicproportionsmod_christmas.MODID + ":BlockPortalWinterWonderLand")/*.setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas)*/;
 		
+		BlockSnowman = new BlockSnowman(Material.cloth).setBlockName("BlockSnowman").setHardness(0.1F).setStepSound(Block.soundTypeStone)/*.setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas)*/;
+		BlockSnowmanCreepy = new BlockSnowmanCreepy(Material.cloth).setBlockName("BlockSnowmanCreepy").setHardness(0.1F).setStepSound(Block.soundTypeStone)/*.setCreativeTab(epicproportionsmod_christmas.EpicProportionsMod_Christmas)*/;
+		
 		registerBlocks();
 	}
 	
@@ -166,7 +176,8 @@ public class BlockLoader {
 		//GameRegistry.registerBlock(BlockBulb, "BlockBulb");
 		GameRegistry.registerBlock(BlockGingerBreadCarpet, "BlockGingerBreadCarpet");
 		GameRegistry.registerBlock(BlockGingerBreadStairs, "BlockGingerBreadStairs");
-		//GameRegistry.registerBlock(BlockNorthPole, "BlockNorthPole");
+		GameRegistry.registerBlock(BlockNorthPoleRed, "BlockNorthPoleRed");
+		GameRegistry.registerBlock(BlockNorthPoleWhite, "BlockNorthPoleWhite");
 		//GameRegistry.registerBlock(BlockGingerBreadSlab, "BlockGingerBreadSlab");
 		GameRegistry.registerBlock(BlockBulb_blue, "BlockBulb_blue");
 		GameRegistry.registerBlock(BlockBulb_cyan, "BlockBulb_cyan");
@@ -198,6 +209,8 @@ public class BlockLoader {
 		GameRegistry.registerBlock(BlockFrozenCobbleStone, "BlockFrozenCobbleStone");
 		GameRegistry.registerBlock(BlockPortalWinterWonderLand, "BlockPortalWinterWonderLand");
 		
+		GameRegistry.registerBlock(BlockSnowman, "BlockSnowman");
+		GameRegistry.registerBlock(BlockSnowmanCreepy, "BlockSnowmanCreepy");
 		
 		//GameRegistry.registerBlock(BlockGingerBread = new BlockGingerBread(Material.cake), "BlockGingerBread");
 

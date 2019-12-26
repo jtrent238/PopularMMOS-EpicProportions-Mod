@@ -20,10 +20,14 @@ import com.jtrent238.epicproportions.addons.christmas.render.entity.RenderSled;
 import com.jtrent238.epicproportions.addons.christmas.render.tileentity.RenderBulb;
 import com.jtrent238.epicproportions.addons.christmas.render.tileentity.RenderTileEntityBlockChristmasTree;
 import com.jtrent238.epicproportions.addons.christmas.render.tileentity.RenderTileEntityBlockNorthPole;
+import com.jtrent238.epicproportions.addons.christmas.render.tileentity.RenderTileEntityBlockSnowman;
+import com.jtrent238.epicproportions.addons.christmas.render.tileentity.RenderTileEntityBlockSnowmanCreepy;
 import com.jtrent238.epicproportions.addons.christmas.render.tileentity.TileEntityBulbRender;
 import com.jtrent238.epicproportions.addons.christmas.tileentity.TileEntityBlockChristmasPresents_Red;
 import com.jtrent238.epicproportions.addons.christmas.tileentity.TileEntityBlockChristmasTree;
 import com.jtrent238.epicproportions.addons.christmas.tileentity.TileEntityBlockNorthPole;
+import com.jtrent238.epicproportions.addons.christmas.tileentity.TileEntityBlockSnowman;
+import com.jtrent238.epicproportions.addons.christmas.tileentity.TileEntityBlockSnowmanCreepy;
 import com.jtrent238.epicproportions.addons.christmas.tileentity.TileEntityBulb;
 import com.jtrent238.epicproportions.addons.christmas.tileentity.TileEntitySled;
 import com.jtrent238.epicproportions.entity.EntityJenBoat;
@@ -120,14 +124,21 @@ public void registerRenderThings()
 		GameRegistry.registerTileEntity(TileEntityBlockChristmasTree.class, "TileEntityBlockChristmasTree");
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityBlockChristmasTree.class, new RenderTileEntityBlockChristmasTree());
 		
-		GameRegistry.registerTileEntity(TileEntitySled.class, "TileEntitySled");
-		ClientRegistry.bindTileEntitySpecialRenderer(TileEntitySled.class, new RenderSled());
+		/*GameRegistry.registerTileEntity(TileEntitySled.class, "TileEntitySled");
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntitySled.class, new RenderSled());*/
 		
 		GameRegistry.registerTileEntity(TileEntityBulb.class, "TileEntityBulb");
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityBulb.class, new RenderBulb());
 		
 		/*GameRegistry.registerTileEntity(TileEntityBlockNorthPole.class, "TileEntityBlockNorthPole");
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityBlockNorthPole.class, new RenderTileEntityBlockNorthPole());*/
+		
+		GameRegistry.registerTileEntity(TileEntityBlockSnowman.class, "TileEntityBlockSnowman");
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityBlockSnowman.class, new RenderTileEntityBlockSnowman());
+		
+		GameRegistry.registerTileEntity(TileEntityBlockSnowmanCreepy.class, "TileEntityBlockSnowmanCreepy");
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityBlockSnowmanCreepy.class, new RenderTileEntityBlockSnowmanCreepy());
+		
 	}
  
 }
