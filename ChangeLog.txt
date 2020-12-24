@@ -1,10 +1,16 @@
 Epic Proportions Mod ChangeLog
 
-indev-1.5.9.13
+indev-1.5.9.14
 - Added more drops to Evil Birthday Present
 - Fixed Enchantments for Super SuperGirlyGamer Armor and Tools
 - Fixed Enchantments for Super FuriousDestroyer Armor and Tools
 - Fixed Enchantments for EpicProportions Armor and Tools
+
+1.5.9.14
+- Added Achievement TNT
+- Changed jtrent238 to PopularMMOS in the mod name [Christmas Addon]
+- Added Egg Nog [Christmans Addon]
+- Added Peppermint Bark [Christmas Addon]
 
 1.5.9.13
 - Changed Multitool Classes so it now uses one class the Universal class from my core mod

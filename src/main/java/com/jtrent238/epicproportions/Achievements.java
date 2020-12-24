@@ -46,6 +46,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
     public static Achievement achievementShovelOfEpicProportions;
     public static Achievement achievementHoeOfEpicProportions;
     public static Achievement achievementNinjaStar;
+    public static Achievement achievementTnt;
 
 
     
@@ -77,7 +78,8 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
     	achievementShovelOfEpicProportions = new Achievement("achievement." + modid + ".shovelofepicproportions", "shovelofepicproportions", 1, 9, new ItemStack(ItemLoader.itemShovelOfEpicProportions), (Achievement)achievementinstall).initIndependentStat().registerStat();
     	achievementHoeOfEpicProportions = new Achievement("achievement." + modid + ".hoeofepicproportions", "hoeofepicproportions", 2, 0, new ItemStack(ItemLoader.itemHoeOfEpicProportions), (Achievement)achievementinstall).initIndependentStat().registerStat();
     	achievementNinjaStar = new Achievement("achievement." + modid + ".achievementNinjaStar", "achievementNinjaStar", 2, 1, new ItemStack(ItemLoader.ItemNinjaStar), (Achievement)achievementinstall).initIndependentStat().registerStat();
-    	
+    	achievementTnt = new Achievement("achievement." + modid + ".tnt", "achievementTnt", 2, 2, new ItemStack(Blocks.tnt), (Achievement)achievementinstall).initIndependentStat().registerStat();
+
     	
     	AchievementPage.registerAchievementPage(new AchievementPage(EpicProportionsMod.MODID + EpicProportionsMod.MODVERSION + "Achievements", new Achievement[]{
     			achievementinstall, 
@@ -101,7 +103,8 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
     			achievementAxeOfEpicProportions,
     			achievementShovelOfEpicProportions,
     			achievementHoeOfEpicProportions,
-    			achievementNinjaStar
+    			achievementNinjaStar,
+    			achievementTnt
     			}));
 
     }
