@@ -10,6 +10,8 @@ import com.jtrent238.epicproportions.ItemLoader;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.enchantment.Enchantment;
+import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.player.EntityPlayer;
@@ -73,18 +75,45 @@ public class itemSwordOfEpicProportions extends ItemSword
         multimap.put(SharedMonsterAttributes.attackDamage.getAttributeUnlocalizedName(), new AttributeModifier(field_111210_e, "Weapon modifier", (double)this.field_150934_a, 0));
         return multimap;
     }
-    /*
-    public void onCreated(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer)
-    {
-		par1ItemStack.addEnchantment(Enchantment.unbreaking, enchant);
-		par1ItemStack.addEnchantment(Enchantment.fireAspect, enchant);
-		par1ItemStack.addEnchantment(Enchantment.knockback, enchant);
-		par1ItemStack.addEnchantment(Enchantment.looting, enchant);
-		par1ItemStack.addEnchantment(Enchantment.smite, enchant);
-		par1ItemStack.addEnchantment(Enchantment.sharpness, enchant);
-    }
-    */
     
+    public void onCreated(ItemStack stack, World par2World, EntityPlayer par3EntityPlayer)
+    {
+		stack.addEnchantment(Enchantment.unbreaking, enchant);
+		stack.addEnchantment(Enchantment.fireAspect, enchant);
+		stack.addEnchantment(Enchantment.knockback, enchant);
+		stack.addEnchantment(Enchantment.looting, enchant);
+		stack.addEnchantment(Enchantment.smite, enchant);
+		stack.addEnchantment(Enchantment.sharpness, enchant);
+    }
+    
+    public void onUsingTick(ItemStack stack, EntityPlayer player, int count) {
+	    int lvl = EnchantmentHelper.getEnchantmentLevel(Enchantment.unbreaking.effectId, stack);
+	    if (lvl <= 0) {
+			stack.addEnchantment(Enchantment.unbreaking, enchant);
+			stack.addEnchantment(Enchantment.fireAspect, enchant);
+			stack.addEnchantment(Enchantment.knockback, enchant);
+			stack.addEnchantment(Enchantment.looting, enchant);
+			stack.addEnchantment(Enchantment.smite, enchant);
+			stack.addEnchantment(Enchantment.sharpness, enchant);
+	    } 
+	  }
+	/**
+     * Called each tick as long the item is on a player inventory. Uses by maps to check if is on a player hand and
+     * update it's contents.
+     */
+public void onUpdate(ItemStack stack, World p_77663_2_, Entity p_77663_3_, int p_77663_4_, boolean p_77663_5_) 
+    {
+		int lvl = EnchantmentHelper.getEnchantmentLevel(Enchantment.unbreaking.effectId, stack);
+	    if (lvl <= 0) {
+			stack.addEnchantment(Enchantment.unbreaking, enchant);
+			stack.addEnchantment(Enchantment.fireAspect, enchant);
+			stack.addEnchantment(Enchantment.knockback, enchant);
+			stack.addEnchantment(Enchantment.looting, enchant);
+			stack.addEnchantment(Enchantment.smite, enchant);
+			stack.addEnchantment(Enchantment.sharpness, enchant);
+	    } 
+    }
+
     @Override
 	 @SideOnly(Side.CLIENT)
 	 public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean isHeld) {

@@ -2,7 +2,6 @@ package com.jtrent238.epicproportions.addons.halloween.entity;
 
 import java.util.Random;
 
-import com.sun.media.jfxmedia.logging.Logger;
 
 import net.minecraft.entity.monster.EntityGolem;
 import net.minecraft.init.Blocks;

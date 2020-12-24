@@ -11,6 +11,8 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.enchantment.Enchantment;
+import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
@@ -88,18 +90,32 @@ public class itemSuperPatSword extends ItemSword
 		par1ItemStack.addEnchantment(Enchantment.sharpness, enchant);
     }
     
-    /**
-     * Adds an enchantment with a desired level on the ItemStack.
-     * @param par1ItemStack 
+    public void onUsingTick(ItemStack stack, EntityPlayer player, int count) {
+	    int lvl = EnchantmentHelper.getEnchantmentLevel(Enchantment.unbreaking.effectId, stack);
+	    if (lvl <= 0) {
+			stack.addEnchantment(Enchantment.unbreaking, enchant);
+			stack.addEnchantment(Enchantment.fireAspect, enchant);
+			stack.addEnchantment(Enchantment.knockback, enchant);
+			stack.addEnchantment(Enchantment.looting, enchant);
+			stack.addEnchantment(Enchantment.smite, enchant);
+			stack.addEnchantment(Enchantment.sharpness, enchant);
+	    } 
+	  }
+	/**
+     * Called each tick as long the item is on a player inventory. Uses by maps to check if is on a player hand and
+     * update it's contents.
      */
- /*   public void addEnchantment(Enchantment p_77966_1_, int p_77966_2_, ItemStack par1ItemStack)
+public void onUpdate(ItemStack stack, World p_77663_2_, Entity p_77663_3_, int p_77663_4_, boolean p_77663_5_) 
     {
-    	par1ItemStack.addEnchantment(Enchantment.unbreaking, enchant);
-		par1ItemStack.addEnchantment(Enchantment.fireAspect, enchant);
-		par1ItemStack.addEnchantment(Enchantment.knockback, enchant);
-		par1ItemStack.addEnchantment(Enchantment.looting, enchant);
-		par1ItemStack.addEnchantment(Enchantment.smite, enchant);
-		par1ItemStack.addEnchantment(Enchantment.sharpness, enchant);
-    }*/
+		int lvl = EnchantmentHelper.getEnchantmentLevel(Enchantment.unbreaking.effectId, stack);
+	    if (lvl <= 0) {
+			stack.addEnchantment(Enchantment.unbreaking, enchant);
+			stack.addEnchantment(Enchantment.fireAspect, enchant);
+			stack.addEnchantment(Enchantment.knockback, enchant);
+			stack.addEnchantment(Enchantment.looting, enchant);
+			stack.addEnchantment(Enchantment.smite, enchant);
+			stack.addEnchantment(Enchantment.sharpness, enchant);
+	    } 
+    }
 }
 

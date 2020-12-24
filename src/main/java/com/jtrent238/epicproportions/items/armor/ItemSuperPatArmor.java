@@ -5,6 +5,7 @@ import com.jtrent238.epicproportions.ItemLoader;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.enchantment.Enchantment;
+import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemArmor;
@@ -81,32 +82,42 @@ public class ItemSuperPatArmor  extends ItemArmor{
 	}
 	 
 	 
-	    /**
+	 public void onUsingTick(ItemStack stack, EntityPlayer player, int count) {
+		    int lvl = EnchantmentHelper.getEnchantmentLevel(Enchantment.unbreaking.effectId, stack);
+		    if (lvl <= 0) {
+		    	stack.addEnchantment(Enchantment.unbreaking, enchant);
+				stack.addEnchantment(Enchantment.aquaAffinity, enchant);
+				stack.addEnchantment(Enchantment.blastProtection, enchant);
+				stack.addEnchantment(Enchantment.featherFalling, enchant);
+				stack.addEnchantment(Enchantment.fireProtection, enchant);
+				stack.addEnchantment(Enchantment.projectileProtection, enchant);
+				stack.addEnchantment(Enchantment.protection, enchant);
+				stack.addEnchantment(Enchantment.respiration, enchant);
+				stack.addEnchantment(Enchantment.thorns, enchant);
+		    } 
+		  }
+		/**
 	     * Called each tick as long the item is on a player inventory. Uses by maps to check if is on a player hand and
 	     * update it's contents.
 	     */
-	 /*   public void onUpdate(ItemStack p_77663_1_, World p_77663_2_, Entity p_77663_3_, int p_77663_4_, boolean p_77663_5_) 
+	public void onUpdate(ItemStack stack, World p_77663_2_, Entity p_77663_3_, int p_77663_4_, boolean p_77663_5_) 
 	    {
-	    	if(hasenchanted == false){
-	    	p_77663_1_.addEnchantment(Enchantment.unbreaking, enchant);
-	    	p_77663_1_.addEnchantment(Enchantment.aquaAffinity, enchant);
-	    	p_77663_1_.addEnchantment(Enchantment.blastProtection, enchant);
-	    	p_77663_1_.addEnchantment(Enchantment.featherFalling, enchant);
-	    	p_77663_1_.addEnchantment(Enchantment.fireProtection, enchant);
-	    	p_77663_1_.addEnchantment(Enchantment.projectileProtection, enchant);
-	    	p_77663_1_.addEnchantment(Enchantment.protection, enchant);
-	    	p_77663_1_.addEnchantment(Enchantment.respiration, enchant);
-	    	p_77663_1_.addEnchantment(Enchantment.thorns, enchant);
-	    	this.hasenchanted(true);
-	    	}
-	    	
-	    	return;
+			int lvl = EnchantmentHelper.getEnchantmentLevel(Enchantment.unbreaking.effectId, stack);
+		    if (lvl <= 0) {
+		    	stack.addEnchantment(Enchantment.unbreaking, enchant);
+				stack.addEnchantment(Enchantment.aquaAffinity, enchant);
+				stack.addEnchantment(Enchantment.blastProtection, enchant);
+				stack.addEnchantment(Enchantment.featherFalling, enchant);
+				stack.addEnchantment(Enchantment.fireProtection, enchant);
+				stack.addEnchantment(Enchantment.projectileProtection, enchant);
+				stack.addEnchantment(Enchantment.protection, enchant);
+				stack.addEnchantment(Enchantment.respiration, enchant);
+				stack.addEnchantment(Enchantment.thorns, enchant);
+		    } 
 	    }
 
 
-		private void hasenchanted(boolean b) {
-			
-		}
-*/
+		
+
 
 }

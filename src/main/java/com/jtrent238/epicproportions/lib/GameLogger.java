@@ -1,6 +1,7 @@
 package com.jtrent238.epicproportions.lib;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.logging.Level;
@@ -102,13 +103,15 @@ public class GameLogger {
 	 * @param level
 	 * @param text
 	 */
+	@SuppressWarnings("resource")
 	public static void writeToFile(Level level, String text) {
 		File file;
 		FileWriter writer;
 		String newLine = System.getProperty("line.separator");
 		try {
 			file = new File(EpicProportionsMod.MODID, EpicProportionsMod.MODID + ".log");
-			
+			file.createNewFile(); // if file already exists will do nothing 
+			FileOutputStream oFile = new FileOutputStream(file, true); 
 			writer = new FileWriter(file, true);
 			writer.write("[" + EpicProportionsMod.MODID + "]" + "[" + level + "]" + " : " + text + newLine);
 			writer.close();
