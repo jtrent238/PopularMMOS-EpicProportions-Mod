@@ -1,10 +1,11 @@
 Epic Proportions Mod ChangeLog
 
-indev-1.5.9.14
+1.5.9.15
 - Added more drops to Evil Birthday Present
 - Fixed Enchantments for Super SuperGirlyGamer Armor and Tools
 - Fixed Enchantments for Super FuriousDestroyer Armor and Tools
 - Fixed Enchantments for EpicProportions Armor and Tools
+- Fixed Issue #3 Mod Crashes on Server
 
 1.5.9.14
 - Added Achievement TNT

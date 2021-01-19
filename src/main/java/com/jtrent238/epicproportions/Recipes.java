@@ -114,13 +114,13 @@ public class Recipes {
 			Item lucky_pumpkinpie_item = Items.pumpkin_pie;
 			ItemStack lucky_pumpkinpie_stack = new ItemStack(lucky_pumpkinpie_item ,1);
 			lucky_pumpkinpie_stack.setStackDisplayName(EnumChatFormatting.GOLD + "" + EnumChatFormatting.BOLD + EnumChatFormatting.BOLD + StatCollector.translateToLocal("item.ItemLuckyPumpkinPie.name"));
-			lucky_pumpkinpie_stack.hasEffect();
+			//lucky_pumpkinpie_stack.hasEffect();
 			lucky_pumpkinpie_stack.setTagInfo("luckpoints", new NBTTagShort().copy());
 		GameRegistry.addShapedRecipe(lucky_pumpkinpie_stack, "PSB", "XBB","BBB", 'X', ItemLoader.ItemLuckyEgg, 'P', Blocks.pumpkin, 'S', Items.sugar);
 			Item lucky_cake_item = Items.cake;
 			ItemStack lucky_cake_stack = new ItemStack(lucky_cake_item ,1);
 			lucky_cake_stack.setStackDisplayName(EnumChatFormatting.GOLD + "" + EnumChatFormatting.BOLD + StatCollector.translateToLocal("item.ItemLuckyCake.name"));
-			lucky_cake_stack.hasEffect();
+			//lucky_cake_stack.hasEffect();
 			lucky_cake_stack.setTagInfo("luckpoints", new NBTTagShort().copy());
 		GameRegistry.addShapedRecipe(lucky_cake_stack, "MMM", "SXS","WWW", 'X', ItemLoader.ItemLuckyEgg, 'M', Items.milk_bucket, 'W', Items.wheat, 'S', Items.sugar);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemEpicProportionsWand), "BPB", "BJB","BSB", 'P', ItemLoader.itemPatStar, 'J', ItemLoader.itemJenStar, 'S', Items.stick);

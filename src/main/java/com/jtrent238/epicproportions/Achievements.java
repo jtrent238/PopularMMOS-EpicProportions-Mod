@@ -2,6 +2,7 @@
 package com.jtrent238.epicproportions;
 
 import net.minecraft.enchantment.Enchantment;
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.stats.Achievement;
