@@ -1,11 +1,7 @@
 package com.jtrent238.epicproportions.addons.halloween.blocks;
 
-import java.util.List;
-import java.util.Random;
-
 import com.jtrent238.epicproportions.addons.halloween.BlockLoader;
 import com.jtrent238.epicproportions.addons.halloween.ItemLoader;
-
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -15,7 +11,6 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
-import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
@@ -23,7 +18,11 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
+import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.World;
+
+import java.util.List;
+import java.util.Random;
 
 public class blockWitchesCauldron extends Block
 {
@@ -84,6 +83,10 @@ public class blockWitchesCauldron extends Block
         return (IIcon) (p_150026_0_.equals("inner") ? BlockLoader.blockWitchesCauldron : (p_150026_0_.equals("bottom") ? BlockLoader.blockWitchesCauldron : null));
     }
 
+    public ItemStack getPickBlock(MovingObjectPosition target, World world, int x, int y, int z)
+    {
+        return new ItemStack(ItemLoader.itemWitchesCauldron);
+    }
     /**
      * Sets the block's bounds for rendering it as an item
      */
@@ -98,7 +101,7 @@ public class blockWitchesCauldron extends Block
      */
     public boolean isOpaqueCube()
     {
-        return false;
+        return true;
     }
 
     /**

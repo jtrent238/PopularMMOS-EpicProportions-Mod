@@ -1,5 +1,8 @@
 Epic Proportions Mod ChangeLog
 
+indev-1.5.9.15
+- Cleaned up some code [Halloween Addon]
+
 1.5.9.15
 - Added more drops to Evil Birthday Present
 - Fixed Enchantments for Super SuperGirlyGamer Armor and Tools

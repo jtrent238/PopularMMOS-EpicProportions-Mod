@@ -1,13 +1,11 @@
 package com.jtrent238.epicproportions.addons.halloween.entity;
 
-import java.util.concurrent.ThreadLocalRandom;
-
 import com.jtrent238.epicproportions.addons.halloween.ItemLoader;
 import com.jtrent238.epicproportions.entity.EntityCaptianCookie;
-
-import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
+
+import java.util.concurrent.ThreadLocalRandom;
 
 public class EntitySpookyCaptianCookie extends EntityCaptianCookie{
 

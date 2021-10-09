@@ -10,8 +10,6 @@ import com.jtrent238.epicproportions.addons.halloween.entity.EntitySpookyPat;
 import com.jtrent238.epicproportions.addons.halloween.model.ModelGhost;
 import com.jtrent238.epicproportions.addons.halloween.model.ModelPumpkinHead;
 import com.jtrent238.epicproportions.addons.halloween.model.ModelScareCrow;
-import com.jtrent238.epicproportions.entity.EntityJen;
-import com.jtrent238.epicproportions.entity.EntityPat;
 
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.event.FMLInitializationEvent;

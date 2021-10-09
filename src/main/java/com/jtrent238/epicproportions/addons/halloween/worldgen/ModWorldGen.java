@@ -1,23 +1,13 @@
 package com.jtrent238.epicproportions.addons.halloween.worldgen;
 
-import java.util.Random;
-import java.util.logging.Level;
-
 import com.jtrent238.epicproportions.addons.halloween.BlockLoader;
-
 import cpw.mods.fml.common.IWorldGenerator;
-import cpw.mods.fml.common.Loader;
-import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
-import net.minecraft.world.gen.feature.WorldGenBigMushroom;
-import net.minecraft.world.gen.feature.WorldGenCactus;
-import net.minecraft.world.gen.feature.WorldGenFlowers;
 import net.minecraft.world.gen.feature.WorldGenMinable;
-import net.minecraft.world.gen.feature.WorldGenReed;
-import net.minecraft.world.gen.feature.WorldGenSand;
-import net.minecraft.world.gen.feature.WorldGenWaterlily;
 import net.minecraft.world.gen.feature.WorldGenerator;
+
+import java.util.Random;
 
 
 public class ModWorldGen implements IWorldGenerator {
@@ -39,8 +29,8 @@ public class ModWorldGen implements IWorldGenerator {
 	    }
 	}
 	
-	private WorldGenerator gen_HalloweenEssence_ore;
-	private WorldGenerator gen_SpookyEssence_ore;
+	private final WorldGenerator gen_HalloweenEssence_ore;
+	private final WorldGenerator gen_SpookyEssence_ore;
 
 
 	

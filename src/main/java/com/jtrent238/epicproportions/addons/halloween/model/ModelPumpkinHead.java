@@ -1,6 +1,5 @@
 package com.jtrent238.epicproportions.addons.halloween.model;
 
-import org.lwjgl.opengl.GL11;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelBox;
 import net.minecraft.client.model.ModelRenderer;
@@ -22,7 +21,6 @@ public class ModelPumpkinHead extends ModelBase {
 	private final ModelRenderer layer11;
 	private final ModelRenderer sides;
 	private final ModelRenderer facelayer0;
-	private final ModelRenderer facelayer2;
 	private final ModelRenderer facelayer3;
 	private final ModelRenderer facelayer4;
 	private final ModelRenderer facelayer5;
@@ -154,7 +152,7 @@ public class ModelPumpkinHead extends ModelBase {
 		facelayer0.cubeList.add(new ModelBox(facelayer0, 0, 0, 8.0F, -10.0F, -10.0F, 1, 1, 1, 0.0F));
 		facelayer0.cubeList.add(new ModelBox(facelayer0, 0, 0, 9.0F, -10.0F, -10.0F, 1, 1, 1, 0.0F));
 
-		facelayer2 = new ModelRenderer(this);
+		ModelRenderer facelayer2 = new ModelRenderer(this);
 		facelayer2.setRotationPoint(0.0F, 0.0F, 0.0F);
 		sides.addChild(facelayer2);
 		facelayer2.cubeList.add(new ModelBox(facelayer2, 0, 0, -10.0F, -9.0F, -10.0F, 1, 1, 1, 0.0F));

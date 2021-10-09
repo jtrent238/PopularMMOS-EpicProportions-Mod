@@ -1,18 +1,15 @@
 package com.jtrent238.epicproportions.addons.halloween.blocks;
 
-import java.util.Random;
-
 import com.jtrent238.epicproportions.addons.halloween.BlockLoader;
 import com.jtrent238.epicproportions.addons.halloween.ItemLoader;
-
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockOre;
 import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
-import net.minecraft.util.MathHelper;
 import net.minecraft.world.IBlockAccess;
+
+import java.util.Random;
 
 public class blockSpookyEssenceOre extends BlockOre{
 

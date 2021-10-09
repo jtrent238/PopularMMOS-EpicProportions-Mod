@@ -1,21 +1,12 @@
-package com.jtrent238.epicproportions.addons.halloween.items.pails;
-
-import java.util.UUID;
+package com.jtrent238.epicproportions.addons.halloween.items;
 
 import com.jtrent238.epicproportions.addons.halloween.epicproportionsmod_halloween;
 import com.jtrent238.epicproportions.addons.halloween.inventory.InventoryPail;
-
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
-import net.minecraft.inventory.IInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.nbt.NBTTagList;
 import net.minecraft.world.World;
-import net.minecraftforge.common.util.Constants;
 
 public class itemHalloweenPail extends Item
 {

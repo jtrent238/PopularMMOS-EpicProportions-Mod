@@ -1,25 +1,16 @@
 package com.jtrent238.epicproportions.addons.halloween.items.spawners;
 
 import com.jtrent238.epicproportions.addons.halloween.entity.EntitySpookyCaptianCookie;
-import com.jtrent238.epicproportions.addons.halloween.entity.EntitySpookyJen;
-
-
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 
 public class itemSpawnSpookyCaptainCookie       extends Item
 {
-    @SideOnly(Side.CLIENT)
-    private IIcon theIcon;
-    private static final String __OBFID = "CL_00000070";
 
-    
-  //This allows Right Click to spawn entity
+
+    //This allows Right Click to spawn entity
     public ItemStack onItemRightClick(ItemStack itemstack, World world,EntityPlayer entityplayer)
     {
     if(!world.isRemote)

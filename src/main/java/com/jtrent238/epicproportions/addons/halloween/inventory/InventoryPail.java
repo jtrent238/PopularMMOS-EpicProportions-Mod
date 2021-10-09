@@ -1,24 +1,20 @@
 package com.jtrent238.epicproportions.addons.halloween.inventory;
 
 
-import java.util.UUID;
-
-import com.jtrent238.epicproportions.addons.halloween.items.pails.itemHalloweenPail;
+import com.jtrent238.epicproportions.addons.halloween.items.itemHalloweenPail;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraftforge.common.util.Constants;
-import net.minecraftforge.common.util.Constants.NBT;
 import net.minecraftforge.event.entity.item.ItemEvent;
 
 @SuppressWarnings("null")
 public class InventoryPail implements IInventory
 {
-	private String name = "Inventory Pail";
+	private final String name = "Inventory Pail";
 	
 	/** Provides NBT Tag Compound to reference */
 	private final ItemStack invItem;
@@ -27,7 +23,7 @@ public class InventoryPail implements IInventory
 	public static final int INV_SIZE = 8;
 
 	/** Inventory's size must be same as number of slots you add to the Container class */
-	private ItemStack[] inventory = new ItemStack[INV_SIZE];
+	private final ItemStack[] inventory = new ItemStack[INV_SIZE];
 
 	/**
 	 * @param itemstack - the ItemStack to which this inventory belongs
@@ -219,8 +215,7 @@ public class InventoryPail implements IInventory
 		// Add the TagList to the ItemStack's Tag Compound with the name "ItemInventory"
 		tagcompound.setTag("PailInventory", items);
 	}
-{
-	}
+
 /*
 If you want to be able to place your inventory-holding Item within another
 instance of itself, you'll need to have a way to distinguish between each

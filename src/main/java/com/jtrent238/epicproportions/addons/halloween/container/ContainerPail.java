@@ -2,7 +2,7 @@ package com.jtrent238.epicproportions.addons.halloween.container;
 
 
 import com.jtrent238.epicproportions.addons.halloween.inventory.InventoryPail;
-import com.jtrent238.epicproportions.addons.halloween.items.pails.itemHalloweenPail;
+import com.jtrent238.epicproportions.addons.halloween.items.itemHalloweenPail;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;

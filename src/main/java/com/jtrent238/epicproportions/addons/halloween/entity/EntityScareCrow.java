@@ -1,14 +1,11 @@
 package com.jtrent238.epicproportions.addons.halloween.entity;
 
-import java.util.Random;
-
-
 import net.minecraft.entity.monster.EntityGolem;
 import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
+
+import java.util.Random;
 
 public class EntityScareCrow extends EntityGolem{
 

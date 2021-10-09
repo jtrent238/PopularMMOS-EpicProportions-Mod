@@ -1,4 +1,4 @@
-package com.jtrent238.epicproportions.addons.halloween.items.candy;
+package com.jtrent238.epicproportions.addons.halloween.items;
 
 import net.minecraft.item.ItemFood;
 import net.minecraft.potion.Potion;

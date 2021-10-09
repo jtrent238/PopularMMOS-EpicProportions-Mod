@@ -1,11 +1,8 @@
 package com.jtrent238.epicproportions.addons.halloween.blocks;
 
 import com.jtrent238.epicproportions.addons.halloween.BlockLoader;
-
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockCompressed;
 import net.minecraft.block.material.MapColor;
-import net.minecraft.block.material.Material;
 import net.minecraft.world.IBlockAccess;
 
 public class blockHalloweenIngot extends BlockCompressed{
