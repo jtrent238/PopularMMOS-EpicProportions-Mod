@@ -8,6 +8,7 @@ indev-1.5.9.15
 - Fixed Enchantments for Super SuperGirlyGamer Armor and Tools
 - Fixed Enchantments for Super FuriousDestroyer Armor and Tools
 - Fixed Enchantments for EpicProportions Armor and Tools
+- Fixed Issue #1 Evil Birthday Present sometimes crashes
 - Fixed Issue #3 Mod Crashes on Server
 
 1.5.9.14
